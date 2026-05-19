@@ -1,0 +1,6 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/attendance/myTeam/79fc68b2-cee0-4408-ba15-3c4a2cb78dd1"
+url: "{{hrmsBaseUrl}}/attendance/myTeam/{{userId}}"
+method: GET
+examples: ./.resources/{{hrmsBaseUrl}}-attendance-myTeam-79fc68b2-cee0-4408-ba15-3c4a2c.resources/examples
+order: 19000

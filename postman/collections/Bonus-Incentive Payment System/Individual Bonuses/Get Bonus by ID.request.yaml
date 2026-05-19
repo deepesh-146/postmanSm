@@ -1,0 +1,11 @@
+$kind: http-request
+description: Get detailed information about a specific bonus
+url: "{{base_url}}/api/bonus/:id"
+method: GET
+headers:
+  Authorization: Bearer {{access_token}}
+pathVariables:
+  - key: id
+    value: "{{bonus_id}}"
+    description: Bonus UUID
+order: 2000

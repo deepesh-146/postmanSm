@@ -1,0 +1,26 @@
+$kind: http-request
+description: "Manager submits ratings (1-5) and comments for each response. Note: field is 'appraisalResponeId' (typo in codebase)."
+url: "{{baseUrl}}/appraisal/cycle/{{cycleId}}/employee/{{employeeId}}/bulk-manager-review"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+        "managerResponse": [
+            {
+                "appraisalResponeId": "{{responseId1}}",
+                "managerRating": 4,
+                "managerComments": "Strong performance. Revenue target nearly met with strategic approach.",
+                "managerSubmitted": true
+            },
+            {
+                "appraisalResponeId": "{{responseId2}}",
+                "managerRating": 3,
+                "managerComments": "Good effort on client acquisition. Focus on closing pipeline faster.",
+                "managerSubmitted": true
+            }
+        ]
+    }
+order: 2000

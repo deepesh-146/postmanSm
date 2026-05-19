@@ -1,0 +1,62 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/payrolls/calculateIncomeTaxV4"
+url: "{{hrmsBaseUrl}}/payrolls/calculateIncomeTaxV4"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"ctc\": 1300000,\r
+
+    \    \"regime\": \"OLD\",\r
+
+    \    \"country\": \"INDIA\",\r
+
+    \    \"selectedAllowances\": [\r
+
+    \        // {\r
+
+    \        //     \"allowanceId\": \"96d02500-fe81-4e16-a26c-630493a3fa34\",\r
+
+    \        //     \"amount\": 1000\r
+
+    \        // }\r
+
+    \    ],\r
+
+    \    \"gender\": \"male\",\r
+
+    \    \"employeeState\": \"GUJARAT\",\r
+
+    \    \"employeeCity\": \"Vadodara\",\r
+
+    \    \"isEpsMember\": false\r
+
+    \    ,\r
+
+    \    \"declarations\": [\r
+
+    \        {\r
+
+    \            \"section\": \"80c\", // Section 80C - ₹1.5L combined limit with 80CCC and 80CCD(1)\r
+
+    \            \"subsection\": [\r
+
+    \                {\r
+
+    \                    \"key\": \"ppf\",\r
+
+    \                    \"value\": 50000,\r
+
+    \                    \"comment\": \"Public Provident Fund contribution\"\r
+
+    \                }\r
+
+    \            ]\r
+
+    \        }\r
+
+    \    ]\r
+
+    }"
+order: 5000

@@ -1,0 +1,22 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/employee/actionEducation"
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"employeeId\": \"903bd690-61f3-43db-9edd-d38d531c1c67\",\r
+
+    \    \"source\": \"By Call\",\r
+
+    \    \"action\": \"APPROVED\",\r
+
+    \    \"recruiterId\": \"903bd690-61f3-43db-9edd-d38d531c1c67\",\r
+
+    \    \"educationId\": \"dd1106ba-0ddd-43db-9eb2-cf7d29ab0cb7\",\r
+
+    \    \"comments\": \"No comments\"\r
+
+    }"
+examples: ./.resources/Recruiter Action On Education.resources/examples
+order: 18000

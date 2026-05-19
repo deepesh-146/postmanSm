@@ -1,0 +1,31 @@
+$kind: http-example
+request:
+  url: "{{hrmsBaseUrl}}/job_application/recruiter/accept/:jobApplicationId"
+  method: PATCH
+  pathVariables:
+    jobApplicationId: 4c4053a9-75c4-420d-b918-b71622a1ed16
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "100"
+    ETag: W/"64-ZCFRr/QTqzSX+qUF0QeSI3r+4z4"
+    Date: Wed, 09 Oct 2024 17:56:07 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "status": {
+              "success": true,
+              "code": 200,
+              "message": "Application Accepted By Recruiter",
+              "failure": false
+          }
+      }
+order: 1000

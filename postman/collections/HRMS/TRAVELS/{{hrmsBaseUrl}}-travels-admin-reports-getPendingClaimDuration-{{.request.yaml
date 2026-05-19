@@ -1,0 +1,6 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/travels/admin/reports/getPendingClaimDuration/{{userId}}"
+url: "{{hrmsBaseUrl}}/travels/admin/reports/getPendingClaimDuration/{{userId}}"
+method: GET
+examples: ./.resources/{{hrmsBaseUrl}}-travels-admin-reports-getPendingClaimDuration-{{.resources/examples
+order: 14000

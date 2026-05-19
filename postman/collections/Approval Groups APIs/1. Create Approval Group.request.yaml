@@ -1,0 +1,19 @@
+$kind: http-request
+description: Create a new approval group with optional initial members
+url: "{{baseUrl}}/approval-groups"
+method: POST
+headers:
+  Authorization: Bearer {{authToken}}
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "name": "Finance Approval Team",
+      "key": "FINANCE_APPROVERS",
+      "description": "Finance team members who can approve financial workflows",
+      "memberIds": [
+        "29959c16-2f55-4aa2-935f-5ff54bca02f7"
+      ]
+    }
+order: 1000

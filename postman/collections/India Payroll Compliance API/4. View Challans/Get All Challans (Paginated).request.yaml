@@ -1,0 +1,24 @@
+$kind: http-request
+description: Get all challans with pagination. Returns list of challans with generator and payroll info.
+url: "{{hrmsBaseUrl}}/compliance/challans?page=1&limit=20"
+method: GET
+headers:
+  Authorization: Bearer {{token}}
+queryParams:
+  page: "1"
+  limit: "20"
+scripts:
+  - type: afterResponse
+    code: |-
+      pm.test('Status code is 200', function () {
+          pm.response.to.have.status(200);
+      });
+
+      pm.test('Response has pagination', function () {
+          var jsonData = pm.response.json();
+          pm.expect(jsonData).to.have.property('totalItems');
+          pm.expect(jsonData).to.have.property('totalPages');
+          pm.expect(jsonData).to.have.property('currentPage');
+      });
+    language: text/javascript
+order: 1000

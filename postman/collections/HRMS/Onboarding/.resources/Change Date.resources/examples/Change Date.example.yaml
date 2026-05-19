@@ -1,0 +1,38 @@
+$kind: http-example
+request:
+  url: "{{hrmsBaseUrl}}/onboarding/changeDate"
+  method: PUT
+  body:
+    type: json
+    content: "{\r
+
+      \    \"onboardingId\": \"f778b358-2db2-4561-9c0b-dc1eda013258\",\r
+
+      \    \"newOnboardingDate\": \"2024-10-20\"\r
+
+      }"
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "105"
+    ETag: W/"69-9hOrINq1HJAzvyc3sBWns0idtn0"
+    Date: Mon, 14 Oct 2024 16:55:30 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "status": {
+              "success": true,
+              "code": 200,
+              "message": "Onboarding Date Changed and Email Sent",
+              "failure": false
+          }
+      }
+order: 1000

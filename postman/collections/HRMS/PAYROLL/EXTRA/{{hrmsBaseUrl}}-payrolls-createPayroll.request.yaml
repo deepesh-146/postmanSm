@@ -1,0 +1,12 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/payrolls/createPayroll"
+url: "{{hrmsBaseUrl}}/payrolls/createPayroll"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"date\" : \"2025-02-04\"\r
+
+    }"
+order: 2000

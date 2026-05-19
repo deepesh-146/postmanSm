@@ -1,0 +1,9 @@
+$kind: http-request
+description: Get current tenant and organization context from token.
+url: "{{hrmsBaseUrl}}/organizations/auth/current-context"
+method: GET
+auth:
+  type: bearer
+  credentials:
+    token: "{{platformAdmin}}"
+order: 6000

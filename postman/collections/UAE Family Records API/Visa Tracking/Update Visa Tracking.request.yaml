@@ -1,0 +1,15 @@
+$kind: http-request
+url: "{{base_url}}/api/family/visa/tracking/1"
+method: PUT
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "status": "APPROVED",
+      "approvalDate": "2025-01-15",
+      "expiryDate": "2026-12-31",
+      "notes": "Visa renewal approved by MOHRE"
+    }
+order: 3000

@@ -1,0 +1,16 @@
+$kind: http-request
+name: Add Internal Note (HR/Admin Only)
+description: Internal notes are NEVER visible to the complainant. Only HR, Admin, and the assigned handler can see these.
+url: "{{base_url}}/grievances/internal-note"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+        "grievanceId": "{{grievanceId}}",
+        "message": "Spoke with the payroll team. The deduction was due to a tax calculation error in the system. Will be reversed next cycle.",
+        "attachments": []
+    }
+order: 3000

@@ -1,0 +1,13 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/attendance/saveAttendanceTime"
+url: "{{hrmsBaseUrl}}/attendance/saveAttendanceTime"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"totalWorkingHouses\": 8\r
+
+    }"
+examples: ./.resources/{{hrmsBaseUrl}}-attendance-saveAttendanceTime.resources/examples
+order: 4000

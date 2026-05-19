@@ -1,0 +1,5 @@
+$kind: http-request
+description: List all active performance bands for the organization, sorted by sortOrder.
+url: "{{baseUrl}}/bands"
+method: GET
+order: 2000

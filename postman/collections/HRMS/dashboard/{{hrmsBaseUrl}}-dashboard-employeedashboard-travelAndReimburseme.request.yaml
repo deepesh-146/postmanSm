@@ -1,0 +1,6 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/dashboard/employeedashboard/travelAndReimbursement/{{userId}}"
+url: "{{hrmsBaseUrl}}/dashboard/employeedashboard/travelAndReimbursement/{{userId}}"
+method: GET
+examples: ./.resources/{{hrmsBaseUrl}}-dashboard-employeedashboard-travelAndReimburseme.resources/examples
+order: 27000

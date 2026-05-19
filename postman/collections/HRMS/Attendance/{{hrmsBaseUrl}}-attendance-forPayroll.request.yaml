@@ -1,0 +1,21 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/attendance/forPayroll"
+url: "{{hrmsBaseUrl}}/attendance/forPayroll"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"employeeId\": \"9a6b2d0c-57b7-4da2-9025-b64b6e2f4323\",\r
+
+    \    // \"month\": \"12\",\r
+
+    \    // \"year\": \"2025\"\r
+
+    \    \"startDate\": \"2025-11-26\", // Optional\r
+
+    \    \"endDate\": \"2025-12-25\" // Optional\r
+
+    }"
+examples: ./.resources/{{hrmsBaseUrl}}-attendance-forPayroll.resources/examples
+order: 13000

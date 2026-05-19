@@ -1,0 +1,30 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/fcm/notifications"
+url: "{{hrmsBaseUrl}}/fcm/notifications"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"userId\": \"{{userId}}\",\r
+
+    \  \"title\": \"Leave Request Approved\",\r
+
+    \  \"body\": \"Your leave for 12th June has been approved.\",\r
+
+    \  \"category\": \"approval\",        // Can be: \"system\", \"approval\", \"reminder\", etc.\r
+
+    \  \"label\": \"success\",            // Can be: \"urgent\", \"warning\", \"info\", \"success\", \"action\"\r
+
+    \  \"data\": {\r
+
+    \    \"leaveId\": \"LV-234\",\r
+
+    \    \"type\": \"leave\",\r
+
+    \    \"approvedBy\": \"HR Manager\"\r
+
+    \  }\r
+
+    }"
+order: 3000

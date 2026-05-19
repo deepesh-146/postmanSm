@@ -1,0 +1,15 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/attendance/attendanceStatus"
+url: "{{hrmsBaseUrl}}/attendance/attendanceStatus"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"month\": \"01\",\r
+
+    \    \"year\": \"2025\"\r
+
+    }"
+examples: ./.resources/{{hrmsBaseUrl}}-attendance-attendanceStatus.resources/examples
+order: 16000

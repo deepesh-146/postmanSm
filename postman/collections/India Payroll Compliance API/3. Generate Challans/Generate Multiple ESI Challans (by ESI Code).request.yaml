@@ -1,0 +1,33 @@
+$kind: http-request
+description: Generate multiple ESI challans grouped by ESI code. Each ESI code gets separate challan and Excel file.
+url: "{{hrmsBaseUrl}}/compliance/generate"
+method: POST
+headers:
+  Content-Type: application/json
+  Authorization: Bearer {{token}}
+body:
+  type: text
+  content: |-
+    {
+      "empPayrollId": "{{payrollId}}",
+      "reportType": "ESIC_CHALLAN",
+      "challanMode": "MULTIPLE_CHALLAN",
+      "filters": {
+        "departmentIds": ["{{departmentId1}}"]
+      }
+    }
+scripts:
+  - type: afterResponse
+    code: |-
+      pm.test('Status code is 200', function () {
+          pm.response.to.have.status(200);
+      });
+
+      pm.test('Multiple challans generated', function () {
+          var jsonData = pm.response.json();
+          pm.expect(jsonData.success).to.be.true;
+          pm.expect(jsonData.data.challans).to.be.an('array');
+          pm.expect(jsonData.data.challans.length).to.be.at.least(1);
+      });
+    language: text/javascript
+order: 2000

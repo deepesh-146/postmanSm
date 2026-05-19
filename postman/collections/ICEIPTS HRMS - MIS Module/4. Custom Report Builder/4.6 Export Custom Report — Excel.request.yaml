@@ -1,0 +1,27 @@
+$kind: http-request
+description: Export employee report to Excel (.xlsx). Response is a file download. In Postman, click 'Send and Download'.
+url: "{{baseUrl}}/mis/custom-report/export"
+method: POST
+headers:
+  Content-Type: application/json
+  x-organization-id: "{{organizationId}}"
+body:
+  type: text
+  content: |-
+    {
+      "reportConfig": {
+        "dataSource": "employee",
+        "fields": ["firstName", "lastName", "email", "gender", "joiningDate", "employeeCode"],
+        "filters": {
+          "isActive": true
+        },
+        "sortBy": "firstName",
+        "sortOrder": "ASC",
+        "dateRange": {
+          "from": "2020-01-01",
+          "to": "2026-03-13"
+        }
+      },
+      "exportFormat": "EXCEL"
+    }
+order: 6000

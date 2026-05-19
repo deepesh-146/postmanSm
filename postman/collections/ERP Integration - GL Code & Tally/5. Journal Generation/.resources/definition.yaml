@@ -1,0 +1,3 @@
+$kind: collection
+description: Generate GL journal entries from finalized payroll
+order: 5000

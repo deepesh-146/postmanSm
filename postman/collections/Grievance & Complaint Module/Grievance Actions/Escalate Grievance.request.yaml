@@ -1,0 +1,15 @@
+$kind: http-request
+description: Escalates to a higher authority. Increments escalationLevel. Status changes to ESCALATED.
+url: "{{base_url}}/grievances/escalate"
+method: PATCH
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+        "grievanceId": "{{grievanceId}}",
+        "escalateToEmployeeId": "{{employeeId}}",
+        "reason": "Unable to resolve at current level. Requires senior management intervention."
+    }
+order: 10000

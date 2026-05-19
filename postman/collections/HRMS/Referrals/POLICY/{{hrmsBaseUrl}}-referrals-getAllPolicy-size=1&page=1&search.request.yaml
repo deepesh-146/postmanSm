@@ -1,0 +1,9 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/referrals/getAllPolicy?size=1&page=1&search"
+url: "{{hrmsBaseUrl}}/referrals/getAllPolicy?size=1&page=1&search"
+method: GET
+queryParams:
+  size: "1"
+  page: "1"
+  search: ""
+order: 2000

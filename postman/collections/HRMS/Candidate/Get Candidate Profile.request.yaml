@@ -1,0 +1,7 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/candidate/detail/:candidateId"
+method: GET
+pathVariables:
+  candidateId: 3ac79187-4de7-407c-9af4-7d4deae78c48
+examples: ./.resources/Get Candidate Profile.resources/examples
+order: 10000

@@ -1,0 +1,14 @@
+$kind: http-request
+url: "{{base_url}}/api/family/records/1"
+method: PUT
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "recordType": "GRANDFATHER",
+      "notes": "Updated to grandfather status due to legacy visa rules",
+      "isCompliant": true
+    }
+order: 3000

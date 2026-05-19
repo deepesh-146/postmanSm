@@ -1,0 +1,36 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/leave/assign"
+url: "{{hrmsBaseUrl}}/leave/assign"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"employeeMainId\": \"0c5b5932-a5df-4aea-a782-0bd76a246bbb\",\r
+
+    \    \"leaves\": [\r
+
+    \        {\r
+
+    \            \"leaveTypeId\": \"7c1f16b5-d1c3-42b2-bc9f-877f8b7dfe70\",\r
+
+    \            \"maxLeaves\": 12,\r
+
+    \            \"carryForward\": true\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"leaveTypeId\": \"a6931b63-c8d2-477d-8e9f-e346196549b1\",\r
+
+    \            \"maxLeaves\": 5,\r
+
+    \            \"carryForward\": true\r
+
+    \        }\r
+
+    \    ]\r
+
+    }"
+order: 1000

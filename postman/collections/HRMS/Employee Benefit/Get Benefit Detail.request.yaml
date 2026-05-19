@@ -1,0 +1,7 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/employee_benefit/:benefitId"
+method: GET
+pathVariables:
+  benefitId: 3aef11de-b0bb-4ba7-b564-2bfbcf699254
+examples: ./.resources/Get Benefit Detail.resources/examples
+order: 4000

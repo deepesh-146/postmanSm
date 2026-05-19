@@ -1,0 +1,43 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/assets/updateAsset/83e45692-c76b-4e35-b164-abfe4b179d3e"
+url: "{{hrmsBaseUrl}}/assets/updateAsset/83e45692-c76b-4e35-b164-abfe4b179d3e"
+method: PUT
+queryParams:
+  - key: search
+    value: ""
+    disabled: true
+body:
+  type: json
+  content: "{\r
+
+    \  \"name\": \"MacBook Pro M21 sujay\",\r
+
+    \  \"category\": \"Laptop\",\r
+
+    \  \"assetType\": \"PHYSICAL\",\r
+
+    \  \"serialNumber\": \"MBP2023-XYZ9\",\r
+
+    \  \"brand\": \"Apple\",\r
+
+    \  \"model\": \"M2 Pro 14-inch\",\r
+
+    \  \"purchaseDate\": \"2023-11-15\",\r
+
+    \  \"warrantyEndDate\": \"2026-11-15\",\r
+
+    \  \"purchasePrice\": 220000,\r
+
+    \  \"supplier\": \"Tech Distributors Pvt Ltd\",\r
+
+    \  \"condition\": \"NEW\",\r
+
+    \  \"status\": \"AVAILABLE\",\r
+
+    \  \"location\": \"HQ - IT Storage\",\r
+
+    \  \"notes\": \"New device for development team\"\r
+
+    }\r\n"
+examples: ./.resources/{{hrmsBaseUrl}}-assets-updateAsset-83e45692-c76b-4e35-b164-abfe4.resources/examples
+order: 6000

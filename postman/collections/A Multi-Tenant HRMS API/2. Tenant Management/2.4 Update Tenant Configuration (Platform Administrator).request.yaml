@@ -1,0 +1,24 @@
+$kind: http-request
+description: Update tenant configuration (branding, features, settings).
+url: "{{hrmsBaseUrl}}/tenants/{{tenantId}}/configuration"
+method: PUT
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "logoUrl": "https://example.com/logo.png",
+      "primaryColor": "#007bff",
+      "secondaryColor": "#6c757d",
+      "featureFlags": {
+        "attendance": true,
+        "payroll": true,
+        "recruitment": false
+      },
+      "customSettings": {
+        "timezone": "Asia/Kolkata",
+        "currency": "INR"
+      }
+    }
+order: 4000

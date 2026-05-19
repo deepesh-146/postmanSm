@@ -1,0 +1,493 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/employee/addExistingEmployee"
+url: "{{hrmsBaseUrl}}/employee/addExistingEmployee"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"employee\": {\r
+
+    \        \"fName\": \"Riya\",\r
+
+    \        \"lName\": \"Patel\",\r
+
+    \        \"officialEmail\": \"riya@mail.com\",\r
+
+    \        \"mobile\": \"998877621\",\r
+
+    \        \"officalMobile\": \"998877621\",\r
+
+    \        \"gender\": \"Male\",\r
+
+    \        \"password\": \"9988\",\r
+
+    \        \"dateOfBirth\": \"1993-09-29\",\r
+
+    \        \"marital\": \"Married\",\r
+
+    \        \"religion\": \"Hindu\",\r
+
+    \        \"birth\": \"Patna\",\r
+
+    \        \"nationality\": \"Indian\",\r
+
+    \        \"domicile\": \"Patna\",\r
+
+    \        \"disability\": false,\r
+
+    \        \"disabilityDetail\": \"NA\",\r
+
+    \        \"passport\": true,\r
+
+    \        \"passportNo\": \"H847322\",\r
+
+    \        \"passportExpiryDate\": \"2033-09-26\",\r
+
+    \        \"passportIssuedDate\": \"2023-09-26\",\r
+
+    \        \"joiningDate\": \"2024-11-27 08:42:21\",\r
+
+    \        \"hrId\": null,\r
+
+    \        \"managerId\": null,\r
+
+    \        \"departmentId\": null,\r
+
+    \        \"jobId\": null,\r
+
+    \        \"countryId\": 1,\r
+
+    \        \"probationEndDate\": \"2033-09-26\",\r
+
+    \        \"officeId\": \"565962e1-00c4-47c3-bea8-55c736c9eaeb\"\r
+
+    \    },\r
+
+    \    \"personalData\": {\r
+
+    \        \"pAddress\": \"Test\",\r
+
+    \        \"cAddress\": \"Test\",\r
+
+    \        \"aadharNum\": \"585855758475\",\r
+
+    \        \"panNum\": \"AWYRSS8587R\",\r
+
+    \        \"bankAcntNum\": \"858785855855\",\r
+
+    \        \"bankAcntName\": \"HDFC\",\r
+
+    \        \"bankIfsc\": \"HDFC0000858\",\r
+
+    \        \"bankBranch\": \"Patna\",\r
+
+    \        \"profileImage\": \"xyz\",\r
+
+    \        \"bankAccountHolderName\": \"dscs\",\r
+
+    \        \"mohreId\": \"dscs\",\r
+
+    \        \"emiratesId\": \"dscs\",\r
+
+    \        \"passportNo\": \"dscs\"\r
+
+    \    },\r
+
+    \    \"educationData\": [\r
+
+    \        {\r
+
+    \            \"clgName\": \"RPSIT\",\r
+
+    \            \"univName\": \"Magadh\",\r
+
+    \            \"clgLocation\": \"Patna\",\r
+
+    \            \"specialization\": \"Computer Engineering\",\r
+
+    \            \"degName\": \"B.Tech\",\r
+
+    \            \"courseName\": \"Graduation\",\r
+
+    \            \"startDate\": \"2016-02-02\",\r
+
+    \            \"endDate\": \"2019-02-02\",\r
+
+    \            \"currPursuing\": false\r
+
+    \        }\r
+
+    \    ],\r
+
+    \    \"employmentData\": [\r
+
+    \        {\r
+
+    \            \"compName\": \"CSK\",\r
+
+    \            \"jobTitle\": \"Software Developer\",\r
+
+    \            \"location\": \"Patna\",\r
+
+    \            \"responsibility\": \"Android, Laravel\",\r
+
+    \            \"startDate\": \"2019-09-25\",\r
+
+    \            \"endDate\": \"2020-09-26\",\r
+
+    \            \"currentCompany\": false\r
+
+    \        }\r
+
+    \    ],\r
+
+    \    \"salaryData\": {\r
+
+    \        \"annualCtc\": 400,\r
+
+    \        \"basicPercent\": 12,\r
+
+    \        \"basicYearly\": 100,\r
+
+    \        \"hraPercent\": 2,\r
+
+    \        \"hraYearly\": 100,\r
+
+    \        \"pf\": 0,\r
+
+    \        \"professionalTax\": 0,\r
+
+    \        \"esi\": 0,\r
+
+    \        \"gratuity\": 0,\r
+
+    \        \"specialAllowance\": 0,\r
+
+    \        \"bonus\": 0,\r
+
+    \        \"otherAllowance\": 0,\r
+
+    \        \"transportAllowance\": 0,\r
+
+    \        \"totalTax\": 200,\r
+
+    \        \"totalRebate\": 20,\r
+
+    \        \"finalTax\": 2000,\r
+
+    \        \"age\": \"nclkasc\",\r
+
+    \        \"regime\": \"OLD\",\r
+
+    \        \"GPSSA\": 1,\r
+
+    \        \"noOfDependents\": \"1\",\r
+
+    \        \"daBasedOn\": \"basic\",\r
+
+    \        \"hraBasedOn\": \"basic\",\r
+
+    \        \"bonusBasedOn\": \"basic\",\r
+
+    \        \"contractType\": \"1\", // DataTypes.ENUM(\"UNLIMITED\", \"LIMITED\", \"PARTTIME\"),\r
+
+    \        \"isGpssa\": true,\r
+
+    \        \"salaryBreakdown\": {\r
+
+    \            \"totalCTC\": 250000,\r
+
+    \            \"components\": {\r
+
+    \                \"basic\": {\r
+
+    \                    \"annual\": 100000,\r
+
+    \                    \"monthly\": 8333.333333333334,\r
+
+    \                    \"percentage\": 40\r
+
+    \                },\r
+
+    \                \"hra\": {\r
+
+    \                    \"annual\": 50000,\r
+
+    \                    \"monthly\": 4166.666666666667,\r
+
+    \                    \"percentage\": 50,\r
+
+    \                    \"basedOn\": \"basic\"\r
+
+    \                },\r
+
+    \                \"da\": {\r
+
+    \                    \"annual\": 5000,\r
+
+    \                    \"monthly\": 416.6666666666667,\r
+
+    \                    \"percentage\": 5,\r
+
+    \                    \"basedOn\": \"basic\"\r
+
+    \                },\r
+
+    \                \"bonus\": {\r
+
+    \                    \"annual\": 8330,\r
+
+    \                    \"monthly\": 694.1666666666666,\r
+
+    \                    \"percentage\": 8.33,\r
+
+    \                    \"basedOn\": \"basic\"\r
+
+    \                },\r
+
+    \                \"allowances\": {},\r
+
+    \                \"specialAllowance\": {\r
+
+    \                    \"annual\": 86670,\r
+
+    \                    \"monthly\": 7222.5,\r
+
+    \                    \"description\": \"Balancing amount after all other components\"\r
+
+    \                }\r
+
+    \            },\r
+
+    \            \"totals\": {\r
+
+    \                \"annualGross\": 250000,\r
+
+    \                \"monthlyGross\": 20833.333333333332,\r
+
+    \                \"taxableComponents\": {}\r
+
+    \            }\r
+
+    \        },\r
+
+    \        \"deductions\": {\r
+
+    \            \"statutory\": {\r
+
+    \                \"pf\": {\r
+
+    \                    \"employee\": {\r
+
+    \                        \"monthly\": 1050,\r
+
+    \                        \"annual\": 12600\r
+
+    \                    },\r
+
+    \                    \"employer\": {\r
+
+    \                        \"monthly\": 1050,\r
+
+    \                        \"annual\": 12600\r
+
+    \                    },\r
+
+    \                    \"baseAmount\": 8750,\r
+
+    \                    \"ceiling\": 15000\r
+
+    \                },\r
+
+    \                \"esi\": {\r
+
+    \                    \"employee\": {\r
+
+    \                        \"monthly\": 156.24999999999997,\r
+
+    \                        \"annual\": 1874.9999999999995\r
+
+    \                    },\r
+
+    \                    \"employer\": {\r
+
+    \                        \"monthly\": 677.0833333333334,\r
+
+    \                        \"annual\": 8125\r
+
+    \                    },\r
+
+    \                    \"eligibilityLimit\": 21000\r
+
+    \                },\r
+
+    \                \"professionalTax\": {\r
+
+    \                    \"monthly\": 200,\r
+
+    \                    \"annual\": 2400,\r
+
+    \                    \"maxLimit\": 2500,\r
+
+    \                    \"note\": \"State-specific calculation required\"\r
+
+    \                }\r
+
+    \            },\r
+
+    \            \"voluntary\": {},\r
+
+    \            \"totals\": {\r
+
+    \                \"statutory\": {\r
+
+    \                    \"monthly\": 1406.25,\r
+
+    \                    \"annual\": 16875\r
+
+    \                }\r
+
+    \            }\r
+
+    \        },\r
+
+    \        \"taxCalculation\": {\r
+
+    \            \"ctc\": 250000,\r
+
+    \            \"regime\": \"NEW\",\r
+
+    \            \"totalTax\": 0,\r
+
+    \            \"totalRebate\": 0,\r
+
+    \            \"finalTax\": 0,\r
+
+    \            \"breakdown\": {\r
+
+    \                \"grossIncome\": 250000,\r
+
+    \                \"standardDeduction\": 75000,\r
+
+    \                \"taxableIncome\": 175000,\r
+
+    \                \"regime\": \"NEW\",\r
+
+    \                \"rebateEligible\": false,\r
+
+    \                \"slabWiseCalculation\": [\r
+
+    \                    {\r
+
+    \                        \"slabRange\": \"0 - 400,000\",\r
+
+    \                        \"rate\": 0,\r
+
+    \                        \"applicableIncome\": 175000,\r
+
+    \                        \"taxOnSlab\": 0\r
+
+    \                    }\r
+
+    \                ],\r
+
+    \                \"baseTaxAmount\": 0,\r
+
+    \                \"surchargeAmount\": 0,\r
+
+    \                \"cessAmount\": 0,\r
+
+    \                \"totalBeforeRebate\": 0,\r
+
+    \                \"marginalReliefApplied\": false,\r
+
+    \                \"effectiveTaxRate\": \"0.00\"\r
+
+    \            },\r
+
+    \            \"monthly\": {\r
+
+    \                \"grossIncome\": 20833.333333333332,\r
+
+    \                \"taxableIncome\": 14583.333333333334,\r
+
+    \                \"baseTax\": 0,\r
+
+    \                \"surcharge\": 0,\r
+
+    \                \"cess\": 0,\r
+
+    \                \"rebate\": 0,\r
+
+    \                \"tax\": 0,\r
+
+    \                \"postTaxIncome\": 20833.333333333332\r
+
+    \            },\r
+
+    \            \"configurationUsed\": {}\r
+
+    \        },\r
+
+    \        \"summary\": {\r
+
+    \            \"annual\": {\r
+
+    \                \"grossSalary\": 250000,\r
+
+    \                \"totalDeductions\": 16875,\r
+
+    \                \"incomeTax\": 0,\r
+
+    \                \"netSalary\": 233125\r
+
+    \            },\r
+
+    \            \"monthly\": {\r
+
+    \                \"grossSalary\": 20833.333333333332,\r
+
+    \                \"totalDeductions\": 1406.25,\r
+
+    \                \"incomeTax\": 0,\r
+
+    \                \"netSalary\": 19427.083333333332\r
+
+    \            },\r
+
+    \            \"takeHome\": {\r
+
+    \                \"monthly\": 19427.083333333332,\r
+
+    \                \"annual\": 233125\r
+
+    \            }\r
+
+    \        }\r
+
+    \    },\r
+
+    \    \"allowanceData\": [],\r
+
+    \    \"paymentData\": {\r
+
+    \        \"bankName\": \"SBI\",\r
+
+    \        \"accNo\": \"4242342\",\r
+
+    \        \"ifsc\": \"fdf\",\r
+
+    \        \"branchName\": \"fsdf\",\r
+
+    \        \"bankAccountHolderName\": \"sc\",\r
+
+    \        \"paymentType\": \"BANK\", //('BANK', 'CHEQUE', 'UPI'),\r
+
+    \        \"paymentFrequency\": \"MONTHLY\" //('MONTHLY', 'WEEKLY')\r
+
+    \    }\r
+
+    }"
+examples: ./.resources/{{hrmsBaseUrl}}-employee-addExistingEmployee.resources/examples
+order: 4000

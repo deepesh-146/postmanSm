@@ -1,0 +1,15 @@
+$kind: http-request
+name: "Approve Enrollment (Step 1: Manager)"
+description: Manager approves step 1. System auto-forwards to HR (step 2).
+url: "{{baseUrl}}/approvals/{{enrollmentId}}"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "action": "APPROVED",
+      "comment": "Approved by manager. Good to proceed."
+    }
+order: 3000

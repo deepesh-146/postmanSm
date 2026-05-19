@@ -1,0 +1,15 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/tickets/reject"
+url: "{{hrmsBaseUrl}}/tickets/reject"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"comments\": \"Test\",\r
+
+    \    \"ticketId\": \"09d53797-9f74-478e-8557-be72bcec16bc\"\r
+
+    }"
+examples: ./.resources/{{hrmsBaseUrl}}-tickets-reject.resources/examples
+order: 8000

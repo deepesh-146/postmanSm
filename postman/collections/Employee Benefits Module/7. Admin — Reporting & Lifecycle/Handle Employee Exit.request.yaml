@@ -1,0 +1,5 @@
+$kind: http-request
+description: Cancels all active enrollments and pending claims for the employee
+url: "{{baseUrl}}/admin/employee-exit/{{employeeId}}"
+method: POST
+order: 7000

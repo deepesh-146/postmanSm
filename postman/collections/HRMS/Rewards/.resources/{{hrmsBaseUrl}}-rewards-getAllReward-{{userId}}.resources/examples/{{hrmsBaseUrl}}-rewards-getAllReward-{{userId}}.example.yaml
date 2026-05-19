@@ -1,0 +1,50 @@
+$kind: http-example
+name: "{{hrmsBaseUrl}}/rewards/getAllReward/{{userId}}"
+request:
+  url: "{{hrmsBaseUrl}}/rewards/getAllReward/{{userId}}"
+  method: GET
+  queryParams:
+    - key: page
+      value: "1"
+      disabled: true
+    - key: size
+      value: "1"
+      disabled: true
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "469"
+    ETag: W/"1d5-a7eefn/RHhW3bzw2r2cdYMxDE3A"
+    Date: Tue, 17 Dec 2024 15:51:57 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "success": true,
+          "status": 200,
+          "message": [
+              {
+                  "id": "0d6330e0-9673-4e11-b75b-ff5b7d1bfb28",
+                  "name": "pp",
+                  "description": "pp",
+                  "rewardType": "GIFT_CARD",
+                  "pointsRequired": 2000,
+                  "quantityAvailable": 10,
+                  "validityStartDate": "2024-12-03T06:17:09.000Z",
+                  "validityEndDate": "2024-12-03T06:17:09.000Z",
+                  "status": "ACTIVE",
+                  "createdAt": "2024-12-17T15:49:36.000Z",
+                  "updatedAt": "2024-12-17T15:49:36.000Z",
+                  "employeeMainId": "9b048ebe-ea22-4097-8a55-cf8dbef55bc4"
+              }
+          ],
+          "data": "Reward fetched successfully"
+      }
+order: 1000

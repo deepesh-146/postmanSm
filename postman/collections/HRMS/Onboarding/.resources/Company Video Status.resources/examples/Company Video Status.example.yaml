@@ -1,0 +1,46 @@
+$kind: http-example
+request:
+  url: "{{hrmsBaseUrl}}/onboarding/videoCompany"
+  method: PUT
+  body:
+    type: json
+    content: "{\r
+
+      \    \"onboardingId\": \"f778b358-2db2-4561-9c0b-dc1eda013258\",\r
+
+      \    \"videoSeen\": true,\r
+
+      \    \"idsAssignedVideo\": \"a19a390f-3ec8-434f-846f-f8d13c554e8e\",\r
+
+      \    \"idsValueVideo\": \"Completed\",\r
+
+      \    \"currentStep\": 2,\r
+
+      \    \"stepLeft\": 1\r
+
+      }"
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "92"
+    ETag: W/"5c-T84n6/R4C7SY00jnkgVE9/kyHmg"
+    Date: Mon, 14 Oct 2024 17:10:07 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "status": {
+              "success": true,
+              "code": 200,
+              "message": "Onboarding Status Updated",
+              "failure": false
+          }
+      }
+order: 1000

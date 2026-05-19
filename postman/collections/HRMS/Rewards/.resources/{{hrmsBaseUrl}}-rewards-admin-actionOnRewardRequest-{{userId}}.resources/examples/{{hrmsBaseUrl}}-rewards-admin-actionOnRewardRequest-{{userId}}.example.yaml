@@ -1,0 +1,46 @@
+$kind: http-example
+name: "{{hrmsBaseUrl}}/rewards/admin/actionOnRewardRequest/{{userId}}"
+request:
+  url: "{{hrmsBaseUrl}}/rewards/admin/actionOnRewardRequest/{{userId}}"
+  method: POST
+  body:
+    type: json
+    content: "{\r
+
+      \    \"status\":\"ACCEPTED\",\r
+
+      \    \"requestId\":\"bda5da2b-6931-47f7-99a9-0e85da00ed5b\"\r
+
+      }"
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "409"
+    ETag: W/"199-6uW3zTGi/kXzVKwji05HBUGS9Qw"
+    Date: Fri, 20 Dec 2024 14:02:28 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "success": true,
+          "status": 200,
+          "message": "data fetched successfully",
+          "data": {
+              "id": "bda5da2b-6931-47f7-99a9-0e85da00ed5b",
+              "status": "ACCEPTED",
+              "pointsRedeemed": 500,
+              "createdAt": "2024-12-20T13:40:34.000Z",
+              "updatedAt": "2024-12-20T14:02:28.512Z",
+              "employeeMainId": "9b048ebe-ea22-4097-8a55-cf8dbef55bc4",
+              "rewardsettlerId": "add34dfb-06ee-4bd4-ae15-2d0f921e6909",
+              "rewardcatelogId": "48b9cd5a-968d-4d01-8a12-bb7f210337ce"
+          }
+      }
+order: 1000

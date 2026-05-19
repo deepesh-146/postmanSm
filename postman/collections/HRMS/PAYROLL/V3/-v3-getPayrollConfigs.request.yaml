@@ -1,0 +1,7 @@
+$kind: http-request
+name: /v3/getPayrollConfigs
+url: "{{hrmsBaseUrl}}/payrolls//v3/getPayrollConfigs?financialYear=2025-26"
+method: GET
+queryParams:
+  financialYear: 2025-26
+order: 6000

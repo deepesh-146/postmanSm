@@ -1,0 +1,17 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/getJwt"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"cid\": \"safsdkfds566asdsa\",\r
+
+    \    \"firstName\": \"Sanat Mishra\",\r
+
+    \    \"id\": \"bb7a2d70831e16ce54fb0a322a459f22bf\",\r
+
+    \    \"role\": \"EMPLOYEE\"\r
+
+    }"
+order: 1000

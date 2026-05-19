@@ -1,0 +1,24 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/candidate/"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"candidateData\": {\r
+
+    \        \"firstName\": \"yash\",\r
+
+    \        \"lastName\": \"Kumar\",\r
+
+    \        \"mobile\": \"9904580801\",\r
+
+    \        \"email\": \"yash@gmail.com\",\r
+
+    \        \"password\": \"9988\"\r
+
+    \    }\r
+
+    }"
+examples: ./.resources/Add Candidate.resources/examples
+order: 2000

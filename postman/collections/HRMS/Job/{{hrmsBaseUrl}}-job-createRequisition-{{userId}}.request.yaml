@@ -1,0 +1,83 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/job/createRequisition/{{userId}}"
+url: "{{hrmsBaseUrl}}/job/createRequisition/{{userId}}"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"jobData\": {\r
+
+    \        \"title\": \"Software Engineer112222222222222222\",\r
+
+    \        \"type\": \"Full-time\",\r
+
+    \        \"jobMode\": \"WorkFromOffice\", //WorkFromOffice\r
+
+    \        \"location\": \"Pune\",\r
+
+    \        \"shifts\": \"Morning\",\r
+
+    \        \"description\": \"We need an experienced developer\",\r
+
+    \        \"experience\": \"3-5 years\",\r
+
+    \        \"education\": \"B.Tech\",\r
+
+    \        \"salary\": \"6-8 LPA\",\r
+
+    \        \"minSalary\": 600000,\r
+
+    \        \"maxSalary\": 800000,\r
+
+    \        \"validTill\": \"2025-12-31\",\r
+
+    \        \"position\": \"Backend Developer\",\r
+
+    \        \"minthreshold\": 70,\r
+
+    \        \"matchthreshold\": 85\r
+
+    \        // \"designationId\": \"844f938b-cf34-4c02-836b-b9a852e0ccde\",\r
+
+    \        // \"recuiterId\": \"{{userId}}\",\r
+
+    \        // \"departmentId\": \"bd9c3041-bcf5-42e1-9d03-f0af6ba6efb3\",\r
+
+    \        // \"shiftId\": \"1517abcf-2722-4ebf-990f-8596afbb62cf\",\r
+
+    \        // \"jobDescription\": \"ddddd\",\r
+
+    \        // \"requirements\": \"fdefsdf\",\r
+
+    \        // \"responsibilities\": \"sdfsd\",\r
+
+    \        // \"managerId\": \"{{userId}}\"\r
+
+    \        },\r
+
+    \    // \"approvers\": {\r
+
+    \    //     \"managerId\": \"25b2a02a-7f16-4a93-a897-5d71a3842bf0\"\r
+
+    \    // },\r
+
+    \    \"skills\": [\r
+
+    \        \"1\",\r
+
+    \        \"2\"\r
+
+    \    ],\r
+
+    \    \"benefits\": [\r
+
+    \        \"092941a2-89ee-4af3-867f-144bb5877228\",\r
+
+    \        \"2\"\r
+
+    \    ]\r
+
+    }"
+examples: ./.resources/{{hrmsBaseUrl}}-job-createRequisition-{{userId}}.resources/examples
+order: 1000

@@ -1,0 +1,11 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/announcements/policy-circular/getPolicyCircularById/:id"
+url: "{{hrmsBaseUrl}}/announcements/policy-circular/getPolicyCircularById/:id"
+method: GET
+queryParams:
+  - key: search
+    value: ""
+    disabled: true
+pathVariables:
+  id: 25d4961e-e5ab-44fb-a033-80fc34f86096
+order: 3000

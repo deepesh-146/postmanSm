@@ -1,0 +1,30 @@
+$kind: collection
+description: |-
+  Complete end-to-end appraisal testing flow: Cycle Creation → KRA → KPI → Self Appraisal → Manager Review → Score Calculation → Calibration → Recommendations → Finalization → Employee Acknowledgement → Dashboard & Export.
+
+  Excludes PIP.
+variables:
+  baseUrl: http://localhost:3000/api/v1
+  token: YOUR_JWT_TOKEN_HERE
+  employeeToken: EMPLOYEE_JWT_TOKEN_HERE
+  managerToken: MANAGER_JWT_TOKEN_HERE
+  cycleId: ""
+  departmentId: ""
+  employeeId: ""
+  managerId: ""
+  kraId: ""
+  kpiId1: ""
+  kpiId2: ""
+  questionId: ""
+  responseId1: ""
+  responseId2: ""
+  bandId: ""
+  finalScoreId: ""
+  recommendationId: ""
+  ackId: ""
+auth:
+  - id: ec0bf7e0-7719-4178-80e9-b36289911210
+    type: bearer
+    name: bearer auth
+    credentials:
+      token: "{{clientToken}}"

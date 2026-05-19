@@ -1,0 +1,65 @@
+$kind: http-example
+name: "{{hrmsBaseUrl}}/dashboard/payrolldashboard/payrollSummary/{{userId}}"
+request:
+  url: "{{hrmsBaseUrl}}/dashboard/payrolldashboard/payrollSummary/{{userId}}"
+  method: GET
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "855"
+    ETag: W/"357-B4OydEWxipPvapmZBlu0ApG/BDE"
+    Date: Fri, 06 Jun 2025 12:22:32 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "success": true,
+          "status": 200,
+          "data": {
+              "totalProcessedAmount": "465674.08",
+              "totalEmployees": 25,
+              "pendingProcessing": 17,
+              "processed": 8,
+              "DeductionsSummary": {
+                  "pf": "6666.67",
+                  "tds": "92499.73",
+                  "esi": "29208.33"
+              },
+              "departmentPayrollCosts": [
+                  {
+                      "departmentId": "58bcf94a-8075-433e-b363-161c761d9648",
+                      "departmentName": "Network",
+                      "totalPayrollCost": "330750.08"
+                  },
+                  {
+                      "departmentId": "716e68ea-3d9e-4705-9387-720472042906",
+                      "departmentName": "IT",
+                      "totalPayrollCost": "5000.00"
+                  },
+                  {
+                      "departmentId": "34a85de2-729b-4a54-b903-0c699819dfc4",
+                      "departmentName": "Biology",
+                      "totalPayrollCost": "20424.00"
+                  },
+                  {
+                      "departmentId": "3a70d10c-4130-4bb3-946a-33b7aa47af9c",
+                      "departmentName": "Quality Assuran 1",
+                      "totalPayrollCost": "90000.00"
+                  },
+                  {
+                      "departmentId": "8ff5bd79-a370-4852-95fd-773f54fff306",
+                      "departmentName": "Sales and Marketing",
+                      "totalPayrollCost": "19500.00"
+                  }
+              ],
+              "month": "start: 2025-05-01, end: 2025-05-31"
+          }
+      }
+order: 1000

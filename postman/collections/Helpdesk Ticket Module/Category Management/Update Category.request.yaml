@@ -1,0 +1,16 @@
+$kind: http-request
+url: "{{baseUrl}}/ticket/category/{{categoryId}}"
+method: PATCH
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "name": "IT Support Updated",
+      "description": "Updated description",
+      "priority": "HIGH",
+      "slaDays": 5,
+      "departmentId": "DEPARTMENT_UUID_HERE"
+    }
+order: 5000

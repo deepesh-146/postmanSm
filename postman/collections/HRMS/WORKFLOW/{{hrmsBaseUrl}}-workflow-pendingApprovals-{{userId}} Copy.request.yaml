@@ -1,0 +1,9 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/workflow/pendingApprovals/{{userId}} Copy"
+url: "{{hrmsBaseUrl}}/workflow/pendingApprovals/{{userId}}?key=leave_request"
+method: GET
+queryParams:
+  - key: key
+    value: leave_request
+    description: job_requisitions or leave_request or travel_request or reimbursement_request, offerletter_request
+order: 5000

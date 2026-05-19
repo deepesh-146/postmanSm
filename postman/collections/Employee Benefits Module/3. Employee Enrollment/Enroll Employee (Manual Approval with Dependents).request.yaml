@@ -1,0 +1,29 @@
+$kind: http-request
+url: "{{baseUrl}}/enroll"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+        "benefitId": "{{benefitId}}",
+        "employeeId": "{{employeeId}}",
+        "enrollmentPeriodId": "{{periodId}}",
+        "remarks": "HR enrolled on behalf of employee",
+        "dependents": [
+            {
+                "dependentName": "Priya Sharma",
+                "relationship": "SPOUSE",
+                "dateOfBirth": "1992-05-15",
+                "gender": "Female"
+            },
+            {
+                "dependentName": "Arjun Sharma",
+                "relationship": "CHILD",
+                "dateOfBirth": "2018-09-20",
+                "gender": "Male"
+            }
+        ]
+    }
+order: 4000

@@ -1,0 +1,15 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/holidays/updateThought/{{thoughtId}}"
+url: "{{hrmsBaseUrl}}/holidays/updateThought/{{thoughtId}}"
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"description\": \"Success usually comes to those who are too busy to be looking for it.\",\r
+
+    \    \"author\": \"Henry David Thoreau\"\r
+
+    }"
+examples: ./.resources/{{hrmsBaseUrl}}-holidays-updateThought-{{thoughtId}}.resources/examples
+order: 6000

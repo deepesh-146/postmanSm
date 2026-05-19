@@ -1,0 +1,50 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/payrollsV4/payroll-structure"
+url: "{{hrmsBaseUrl}}/payrollsV4/payroll-structure"
+method: POST
+body:
+  type: json
+  content: "\r
+
+    {\r
+
+    \  \"country\": \"USA\",\r
+
+    \  \"data\": [\r
+
+    \    {\r
+
+    \      \"config_type\": \"salary_structure\",\r
+
+    \      \"key\": \"basic_percentage\",\r
+
+    \      \"value\": \"40\",\r
+
+    \      \"formula\": \"CTC * 0.4\",\r
+
+    \      \"financial_year\": \"2025-26\",\r
+
+    \      \"country\": \"USA\"\r
+
+    \    },\r
+
+    \    {\r
+
+    \      \"config_type\": \"salary_structure\",\r
+
+    \      \"key\": \"hra_percentage\",\r
+
+    \      \"value\": \"20\",\r
+
+    \      \"formula\": \"Basic * 0.2\",\r
+
+    \      \"financial_year\": \"2025-26\",\r
+
+    \      \"country\": \"USA\"\r
+
+    \    }\r
+
+    \  ]\r
+
+    }\r\n"
+order: 1000

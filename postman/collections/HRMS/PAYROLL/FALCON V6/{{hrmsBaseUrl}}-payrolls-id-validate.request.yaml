@@ -1,0 +1,20 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/payrolls/:id/validate"
+url: "{{hrmsBaseUrl}}/payrolls/:id/validate"
+method: POST
+pathVariables:
+  id: 4bf72cd5-5ad5-4e82-a97a-e532fd1d70ec
+body:
+  type: json
+  content: "{\r
+
+    \    //   \"employeeIds\": [\"ALL\"]\r
+
+    \    \"employeeIds\": [\r
+
+    \        \"0c5b5932-a5df-4aea-a782-0bd76a246bbb\"\r
+
+    \    ]\r
+
+    }"
+order: 3000

@@ -1,0 +1,27 @@
+$kind: http-request
+description: Update schedule frequency, recipients, or deactivate.
+url: "{{baseUrl}}/mis/schedules/{{scheduleId}}"
+method: PUT
+headers:
+  Content-Type: application/json
+  x-organization-id: "{{organizationId}}"
+body:
+  type: text
+  content: |-
+    {
+      "reportName": "Daily Dashboard Summary — Updated",
+      "frequency": "WEEKLY",
+      "recipients": [
+        {
+          "email": "hr-manager@company.com"
+        },
+        {
+          "email": "ceo@company.com"
+        },
+        {
+          "email": "cto@company.com"
+        }
+      ],
+      "isActive": true
+    }
+order: 7000

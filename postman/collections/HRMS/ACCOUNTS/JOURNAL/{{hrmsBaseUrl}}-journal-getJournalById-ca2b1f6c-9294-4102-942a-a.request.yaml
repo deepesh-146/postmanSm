@@ -1,0 +1,56 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/journal/getJournalById/ca2b1f6c-9294-4102-942a-aa2149cc15a6"
+url: "{{hrmsBaseUrl}}/journal/getJournalById/ca2b1f6c-9294-4102-942a-aa2149cc15a6"
+method: GET
+body:
+  type: json
+  content: "{\r
+
+    \    \"entryType\": \"Salary Payment\",\r
+
+    \    \"companyName\": \"NeuralHR Pvt Ltd\",\r
+
+    \    \"postingDate\": \"2025-10-14\",\r
+
+    \    \"referenceNumber\": \"REF101\",\r
+
+    \    \"referenceDate\": \"2025-10-14\",\r
+
+    \    \"paymentMode\": \"net\",\r
+
+    \    \"isOpen\": false,\r
+
+    \    \"remark\": \"Monthly payroll for October\",\r
+
+    \    \"status\": \"Posted\",\r
+
+    \    \"lines\": [\r
+
+    \        {\r
+
+    \            \"accountName\": \"Salary Account\",\r
+
+    \            \"partyType\": \"Employee\",\r
+
+    \            \"debit\": 50000,\r
+
+    \            \"credit\": 0\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"accountName\": \"Bank Account\",\r
+
+    \            \"partyType\": \"Bank\",\r
+
+    \            \"debit\": 0,\r
+
+    \            \"credit\": 50000\r
+
+    \        }\r
+
+    \    ]\r
+
+    }"
+order: 3000

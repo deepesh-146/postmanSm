@@ -1,0 +1,5 @@
+$kind: http-request
+description: Get full audit trail of all calibration adjustments for a final score record.
+url: "{{baseUrl}}/scores/{{finalScoreId}}/calibration-history"
+method: GET
+order: 2000

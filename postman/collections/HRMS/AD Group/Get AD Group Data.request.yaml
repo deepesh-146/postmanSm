@@ -1,0 +1,7 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/ad_group/:adGroupId"
+method: GET
+pathVariables:
+  adGroupId: 9284f618-45f4-4adf-b705-50f2ded871d2
+examples: ./.resources/Get AD Group Data.resources/examples
+order: 15000

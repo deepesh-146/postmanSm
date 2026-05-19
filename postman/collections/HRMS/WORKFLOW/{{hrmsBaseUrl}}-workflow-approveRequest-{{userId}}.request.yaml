@@ -1,0 +1,22 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/workflow/approveRequest/{{userId}}"
+url: "{{hrmsBaseUrl}}/workflow/approveRequest/{{userId}}?key=job_requisitions"
+method: POST
+queryParams:
+  - key: key
+    value: job_requisitions
+    description: job_requisitions or leave_request
+body:
+  type: json
+  content: "{\r
+
+    \    \"approvalId\": \"0e458c6a-156d-46f7-84f3-13b5fc1a9c1d\",\r
+
+    \    \"action\": \"APPROVED\",\r
+
+    \    \"comments\": \"Personal Data Chnges approved\",\r
+
+    \    \"isTenantApproved\": false\r
+
+    }"
+order: 12000

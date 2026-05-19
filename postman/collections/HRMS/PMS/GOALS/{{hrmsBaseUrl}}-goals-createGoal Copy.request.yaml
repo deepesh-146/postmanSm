@@ -1,0 +1,8 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/goals/createGoal Copy"
+url: "{{hrmsBaseUrl}}/goals/getAllGoal/{{userId}}?size=10&page=1"
+method: GET
+queryParams:
+  size: "10"
+  page: "1"
+order: 5000

@@ -1,0 +1,5 @@
+$kind: http-request
+description: Get list of all tenants. Requires SUPERADMIN role.
+url: "{{hrmsBaseUrl}}/tenants"
+method: GET
+order: 2000

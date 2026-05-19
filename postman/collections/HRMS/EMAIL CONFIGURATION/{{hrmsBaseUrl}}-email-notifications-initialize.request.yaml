@@ -1,0 +1,664 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/email-notifications/initialize"
+url: "{{hrmsBaseUrl}}/email-notifications/initialize"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"configs\": [\r
+
+    \        {\r
+
+    \            \"module\": \"leave_request\",\r
+
+    \            \"event\": \"request_submitted\",\r
+
+    \            \"enabled\": true\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"module\": \"leave_request\",\r
+
+    \            \"event\": \"request_raised\",\r
+
+    \            \"enabled\": true\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"module\": \"leave_request\",\r
+
+    \            \"event\": \"approved\",\r
+
+    \            \"enabled\": true\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"module\": \"leave_request\",\r
+
+    \            \"event\": \"rejected\",\r
+
+    \            \"enabled\": true\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"module\": \"loan_request\",\r
+
+    \            \"event\": \"request_raised\",\r
+
+    \            \"enabled\": true\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"module\": \"loan_request\",\r
+
+    \            \"event\": \"manager_approved\",\r
+
+    \            \"enabled\": true\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"module\": \"loan_request\",\r
+
+    \            \"event\": \"manager_rejected\",\r
+
+    \            \"enabled\": true\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"module\": \"loan_request\",\r
+
+    \            \"event\": \"finance_approved\",\r
+
+    \            \"enabled\": true\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"module\": \"loan_request\",\r
+
+    \            \"event\": \"finance_rejected\",\r
+
+    \            \"enabled\": true\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"module\": \"personal_data_change\",\r
+
+    \            \"event\": \"request_submitted\",\r
+
+    \            \"enabled\": true\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"module\": \"personal_data_change\",\r
+
+    \            \"event\": \"request_raised\",\r
+
+    \            \"enabled\": true\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"module\": \"personal_data_change\",\r
+
+    \            \"event\": \"approved\",\r
+
+    \            \"enabled\": true\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"module\": \"personal_data_change\",\r
+
+    \            \"event\": \"rejected\",\r
+
+    \            \"enabled\": true\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"module\": \"job_requisitions\",\r
+
+    \            \"event\": \"request_submitted\",\r
+
+    \            \"enabled\": true\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"module\": \"job_requisitions\",\r
+
+    \            \"event\": \"request_raised\",\r
+
+    \            \"enabled\": true\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"module\": \"job_requisitions\",\r
+
+    \            \"event\": \"approved\",\r
+
+    \            \"enabled\": true\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"module\": \"job_requisitions\",\r
+
+    \            \"event\": \"rejected\",\r
+
+    \            \"enabled\": true\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"module\": \"travel_request\",\r
+
+    \            \"event\": \"request_submitted\",\r
+
+    \            \"enabled\": true\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"module\": \"travel_request\",\r
+
+    \            \"event\": \"request_raised\",\r
+
+    \            \"enabled\": true\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"module\": \"travel_request\",\r
+
+    \            \"event\": \"approved\",\r
+
+    \            \"enabled\": true\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"module\": \"travel_request\",\r
+
+    \            \"event\": \"rejected\",\r
+
+    \            \"enabled\": true\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"module\": \"bank_account_change\",\r
+
+    \            \"event\": \"request_submitted\",\r
+
+    \            \"enabled\": true\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"module\": \"bank_account_change\",\r
+
+    \            \"event\": \"request_raised\",\r
+
+    \            \"enabled\": true\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"module\": \"bank_account_change\",\r
+
+    \            \"event\": \"approved\",\r
+
+    \            \"enabled\": true\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"module\": \"bank_account_change\",\r
+
+    \            \"event\": \"rejected\",\r
+
+    \            \"enabled\": true\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"module\": \"reimbursement_request\",\r
+
+    \            \"event\": \"request_submitted\",\r
+
+    \            \"enabled\": true\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"module\": \"reimbursement_request\",\r
+
+    \            \"event\": \"request_raised\",\r
+
+    \            \"enabled\": true\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"module\": \"reimbursement_request\",\r
+
+    \            \"event\": \"approved\",\r
+
+    \            \"enabled\": true\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"module\": \"reimbursement_request\",\r
+
+    \            \"event\": \"rejected\",\r
+
+    \            \"enabled\": true\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"module\": \"employee_bonus\",\r
+
+    \            \"event\": \"request_submitted\",\r
+
+    \            \"enabled\": true\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"module\": \"employee_bonus\",\r
+
+    \            \"event\": \"request_raised\",\r
+
+    \            \"enabled\": true\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"module\": \"employee_bonus\",\r
+
+    \            \"event\": \"approved\",\r
+
+    \            \"enabled\": true\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"module\": \"employee_bonus\",\r
+
+    \            \"event\": \"rejected\",\r
+
+    \            \"enabled\": true\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"module\": \"employee_arrear\",\r
+
+    \            \"event\": \"request_submitted\",\r
+
+    \            \"enabled\": true\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"module\": \"employee_arrear\",\r
+
+    \            \"event\": \"request_raised\",\r
+
+    \            \"enabled\": true\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"module\": \"employee_arrear\",\r
+
+    \            \"event\": \"approved\",\r
+
+    \            \"enabled\": true\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"module\": \"employee_arrear\",\r
+
+    \            \"event\": \"rejected\",\r
+
+    \            \"enabled\": true\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"module\": \"resignation\",\r
+
+    \            \"event\": \"request_submitted\",\r
+
+    \            \"enabled\": true\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"module\": \"resignation\",\r
+
+    \            \"event\": \"request_raised\",\r
+
+    \            \"enabled\": true\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"module\": \"resignation\",\r
+
+    \            \"event\": \"manager_approved\",\r
+
+    \            \"enabled\": true\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"module\": \"resignation\",\r
+
+    \            \"event\": \"hr_approved\",\r
+
+    \            \"enabled\": true\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"module\": \"resignation\",\r
+
+    \            \"event\": \"rejected\",\r
+
+    \            \"enabled\": true\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"module\": \"resignation\",\r
+
+    \            \"event\": \"clearance_completed\",\r
+
+    \            \"enabled\": true\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"module\": \"resignation\",\r
+
+    \            \"event\": \"clearance_pending\",\r
+
+    \            \"enabled\": true\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"module\": \"resignation\",\r
+
+    \            \"event\": \"fnf_generated\",\r
+
+    \            \"enabled\": true\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"module\": \"resignation\",\r
+
+    \            \"event\": \"fnf_approved\",\r
+
+    \            \"enabled\": true\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"module\": \"resignation\",\r
+
+    \            \"event\": \"exit_completed\",\r
+
+    \            \"enabled\": true\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"module\": \"appraisal\",\r
+
+    \            \"event\": \"cycle_started\",\r
+
+    \            \"enabled\": true\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"module\": \"appraisal\",\r
+
+    \            \"event\": \"self_appraisal_submitted\",\r
+
+    \            \"enabled\": true\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"module\": \"appraisal\",\r
+
+    \            \"event\": \"self_appraisal_pending_review\",\r
+
+    \            \"enabled\": true\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"module\": \"appraisal\",\r
+
+    \            \"event\": \"manager_review_completed\",\r
+
+    \            \"enabled\": true\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"module\": \"appraisal\",\r
+
+    \            \"event\": \"cycle_completed\",\r
+
+    \            \"enabled\": true\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"module\": \"expense\",\r
+
+    \            \"event\": \"request_raised\",\r
+
+    \            \"enabled\": true\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"module\": \"expense\",\r
+
+    \            \"event\": \"approved\",\r
+
+    \            \"enabled\": true\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"module\": \"expense\",\r
+
+    \            \"event\": \"rejected\",\r
+
+    \            \"enabled\": true\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"module\": \"shift_change_request\",\r
+
+    \            \"event\": \"request_raised\",\r
+
+    \            \"enabled\": true\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"module\": \"shift_change_request\",\r
+
+    \            \"event\": \"approved\",\r
+
+    \            \"enabled\": true\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"module\": \"shift_change_request\",\r
+
+    \            \"event\": \"rejected\",\r
+
+    \            \"enabled\": true\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"module\": \"kpi_request\",\r
+
+    \            \"event\": \"request_raised\",\r
+
+    \            \"enabled\": true\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"module\": \"kpi_request\",\r
+
+    \            \"event\": \"approved\",\r
+
+    \            \"enabled\": true\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"module\": \"kpi_request\",\r
+
+    \            \"event\": \"rejected\",\r
+
+    \            \"enabled\": true\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"module\": \"attendance_regularization\",\r
+
+    \            \"event\": \"request_submitted\",\r
+
+    \            \"enabled\": true\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"module\": \"attendance_regularization\",\r
+
+    \            \"event\": \"request_raised\",\r
+
+    \            \"enabled\": true\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"module\": \"attendance_regularization\",\r
+
+    \            \"event\": \"approved\",\r
+
+    \            \"enabled\": true\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"module\": \"attendance_regularization\",\r
+
+    \            \"event\": \"rejected\",\r
+
+    \            \"enabled\": true\r
+
+    \        }\r
+
+    \    ]\r
+
+    }"
+order: 1000

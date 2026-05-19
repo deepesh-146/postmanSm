@@ -1,0 +1,40 @@
+$kind: http-example
+request:
+  url: "{{hrmsBaseUrl}}/employee/addBenefit"
+  method: POST
+  body:
+    type: json
+    content: "{\r
+
+      \    \"employeeId\": \"903bd690-61f3-43db-9edd-d38d531c1c67\",\r
+
+      \    \"benefitId\": \"3aef11de-b0bb-4ba7-b564-2bfbcf699254\",\r
+
+      \    \"generatedById\": \"903bd690-61f3-43db-9edd-d38d531c1c67\"    \r
+
+      }"
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "100"
+    ETag: W/"64-UOeLsXlc9yXzkZSt+SWQCsUObts"
+    Date: Mon, 14 Oct 2024 03:44:08 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "status": {
+              "success": false,
+              "code": 200,
+              "message": "Employee Benefit Added or Updated",
+              "failure": true
+          }
+      }
+order: 1000

@@ -1,0 +1,21 @@
+$kind: http-request
+url: "{{baseUrl}}/ticket/exportTicket?search=&status=&category=&priority=&startDate=&endDate="
+method: GET
+queryParams:
+  - key: search
+    value: ""
+  - key: status
+    value: ""
+    description: PENDING | OPEN | IN_PROGRESS | RESOLVED | CLOSED
+  - key: category
+    value: ""
+  - key: priority
+    value: ""
+    description: LOW | MEDIUM | HIGH | URGENT
+  - key: startDate
+    value: ""
+    description: YYYY-MM-DD
+  - key: endDate
+    value: ""
+    description: YYYY-MM-DD
+order: 2000

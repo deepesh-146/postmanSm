@@ -1,0 +1,40 @@
+$kind: http-example
+request:
+  url: "{{hrmsBaseUrl}}/candidate/validateOtp"
+  method: POST
+  body:
+    type: json
+    content: "{\r
+
+      \    \"candidateData\": \"9801345259\",\r
+
+      \    \"otp\": \"434126\",\r
+
+      \    \"validateType\": \"mobile\"\r
+
+      }"
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "95"
+    ETag: W/"5f-ph/FCzm1yqN8ijjCtu5Hpl5uFr0"
+    Date: Wed, 09 Oct 2024 17:28:44 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "status": {
+              "success": true,
+              "code": 200,
+              "message": "Candiate Mobile OTP Verified",
+              "failure": false
+          }
+      }
+order: 1000

@@ -1,0 +1,5 @@
+$kind: http-request
+description: Downloads .xlsx file with all finalized scores, bands, acknowledgement status, and recommendations.
+url: "{{baseUrl}}/appraisal-finalization/cycle/{{cycleId}}/export"
+method: GET
+order: 2000

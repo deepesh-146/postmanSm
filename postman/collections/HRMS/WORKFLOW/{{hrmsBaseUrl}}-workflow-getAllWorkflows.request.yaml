@@ -1,0 +1,10 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/workflow/getAllWorkflows"
+url: "{{hrmsBaseUrl}}/workflow/getAllWorkflows"
+method: GET
+queryParams:
+  - key: key
+    value: job_requisitions
+    disabled: true
+    description: job_requisitions or leave_request
+order: 3000

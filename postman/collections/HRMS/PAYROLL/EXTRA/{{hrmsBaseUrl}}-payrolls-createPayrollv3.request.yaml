@@ -1,0 +1,24 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/payrolls/createPayrollv3"
+url: "{{hrmsBaseUrl}}/payrolls/createPayrollv3"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"payrollData\": {\r
+
+    \        \"countryId\": 1,\r
+
+    \        \"date\": \"2026-01-05T11:59:03.857Z\"\r
+
+    \    },\r
+
+    \    \"employeeData\": [\r
+
+    \        \"9a6b2d0c-57b7-4da2-9025-b64b6e2f4323\"\r
+
+    \    ]\r
+
+    }"
+order: 5000

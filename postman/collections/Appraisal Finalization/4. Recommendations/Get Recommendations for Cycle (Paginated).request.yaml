@@ -1,0 +1,18 @@
+$kind: http-request
+description: List all recommendations for a cycle. Supports pagination and filtering by type and status.
+url: "{{baseUrl}}/cycle/{{cycleId}}/recommendations?page=0&size=10"
+method: GET
+queryParams:
+  - key: page
+    value: "0"
+  - key: size
+    value: "10"
+  - key: type
+    value: ""
+    disabled: true
+    description: PROMOTION | INCREMENT | BONUS | TRAINING | PIP | WARNING | NO_ACTION
+  - key: status
+    value: ""
+    disabled: true
+    description: PROPOSED | APPROVED | REJECTED | IMPLEMENTED
+order: 2000

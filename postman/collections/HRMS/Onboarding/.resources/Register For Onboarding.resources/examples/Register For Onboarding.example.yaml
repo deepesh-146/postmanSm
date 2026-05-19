@@ -1,0 +1,101 @@
+$kind: http-example
+request:
+  url: "{{hrmsBaseUrl}}/onboarding/register"
+  method: POST
+  body:
+    type: json
+    content: "{\r
+
+      \    \"jobOfferId\": \"a2ece94b-798f-4d72-b399-8edbf164b6a3\",\r
+
+      \    \"onboardingHrId\": \"05109fb2-0f20-4c69-bbbf-f46203b01d54\",\r
+
+      \    \"onboardingDate\": \"2024-10-10\",\r
+
+      \    \"stepIdsComp\": \"a19a390f-3ec8-434f-846f-f8d13c554e8e\",\r
+
+      \    \"stepIdsTut\": \"79929a35-7b08-45e5-a835-2aaa455fb81b\",\r
+
+      \    \"stepIdsHr\": \"2ea5dd73-ceaa-402f-af76-db9ef3bf96d7\"\r
+
+      }"
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "1573"
+    ETag: W/"625-B+OP59qucvqZk0wXQVKGSlvQWVE"
+    Date: Thu, 10 Oct 2024 18:48:26 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "status": {
+              "success": true,
+              "code": 200,
+              "message": "Candidate Onboarded",
+              "failure": false
+          },
+          "data": {
+              "onboardingInfo": {
+                  "id": "f778b358-2db2-4561-9c0b-dc1eda013258",
+                  "jobId": "cb5d4bf6-a1a3-42a5-8065-183796fd6c76",
+                  "jobAppId": "4c4053a9-75c4-420d-b918-b71622a1ed16",
+                  "candidateId": "6979e151-2542-445c-88bd-fdc2248a8da3",
+                  "recruiterId": "05109fb2-0f20-4c69-bbbf-f46203b01d54",
+                  "jobOfferId": "a2ece94b-798f-4d72-b399-8edbf164b6a3",
+                  "onboardingHr": "05109fb2-0f20-4c69-bbbf-f46203b01d54",
+                  "tempPass": "./Yw!:Q$AD4P8x<",
+                  "accountActive": false,
+                  "password": null,
+                  "onboardingDate": "2024-10-10T00:00:00.000Z",
+                  "companyVideoSeen": false,
+                  "tutorialVideoSeen": false,
+                  "hrVideoSeen": false,
+                  "currentStep": 0,
+                  "stepLeft": 3,
+                  "totalStep": 3,
+                  "stepIdsAssignedCompVideo": "a19a390f-3ec8-434f-846f-f8d13c554e8e, a19a390f-3ec8-434f-846f-f8d13c554e8e",
+                  "stepIdsValueCompVideo": "Not Started, Not Started",
+                  "stepIdsAssignedTutVideo": "79929a35-7b08-45e5-a835-2aaa455fb81b",
+                  "stepIdsValueTutVideo": "Not Started",
+                  "stepIdsAssignedHrVideo": "2ea5dd73-ceaa-402f-af76-db9ef3bf96d7",
+                  "stepIdsValueHrVideo": "Not Started",
+                  "onboardingStatus": "PASS_RESET",
+                  "updatedAt": "2024-10-10T18:48:24.949Z",
+                  "createdAt": "2024-10-10T18:48:24.949Z"
+              },
+              "emailRes": {
+                  "accepted": [
+                      "sanatmishra29@gmail.com"
+                  ],
+                  "rejected": [],
+                  "ehlo": [
+                      "PIPELINING",
+                      "8BITMIME",
+                      "ENHANCEDSTATUSCODES",
+                      "CHUNKING",
+                      "AUTH LOGIN CRAM-MD5 PLAIN",
+                      "SIZE 20971520"
+                  ],
+                  "envelopeTime": 233,
+                  "messageTime": 301,
+                  "messageSize": 48799,
+                  "response": "250 2.0.0 OK: queued as <519ed19f-f9e8-0307-0f6e-6acd038ee9ff@gmail.com>",
+                  "envelope": {
+                      "from": "iceiptstechnology@gmail.com",
+                      "to": [
+                          "sanatmishra29@gmail.com"
+                      ]
+                  },
+                  "messageId": "<519ed19f-f9e8-0307-0f6e-6acd038ee9ff@gmail.com>"
+              }
+          }
+      }
+order: 1000

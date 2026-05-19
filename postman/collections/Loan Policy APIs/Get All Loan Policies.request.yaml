@@ -1,0 +1,11 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/policy/getAllLoans"
+method: GET
+headers:
+  Content-Type: application/json
+auth:
+  type: bearer
+  credentials:
+    token: "{{clientToken}}"
+examples: ./.resources/Get All Loan Policies.resources/examples
+order: 2000

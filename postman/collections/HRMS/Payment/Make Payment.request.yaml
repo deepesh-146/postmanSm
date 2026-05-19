@@ -1,0 +1,20 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/payment/makePayment"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"employeeId\": \"903bd690-61f3-43db-9edd-d38d531c1c67\",\r
+
+    \    \"paymentId\": \"29357926-9aa0-44a9-85ac-8923ff1c1b6f\",\r
+
+    \    \"transactionId\": \"TRAHS45456A\",\r
+
+    \    \"screenshot\": \"https://morth.nic.in/sites/default/files/dd12-13_0.pdf\",\r
+
+    \    \"note\": \"Sent\"\r
+
+    }"
+examples: ./.resources/Make Payment.resources/examples
+order: 1000

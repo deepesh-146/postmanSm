@@ -1,0 +1,5 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/ad_group/"
+method: GET
+examples: ./.resources/Get All AD Group.resources/examples
+order: 11000

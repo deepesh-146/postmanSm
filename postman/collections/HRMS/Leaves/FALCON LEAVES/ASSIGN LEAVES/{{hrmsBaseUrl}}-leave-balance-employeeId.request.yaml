@@ -1,0 +1,7 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/leave/balance/:employeeId"
+url: "{{hrmsBaseUrl}}/leave/balance/:employeeId"
+method: GET
+pathVariables:
+  employeeId: 07a37b94-58b2-498d-a1ac-b9d63a8649f8
+order: 2000

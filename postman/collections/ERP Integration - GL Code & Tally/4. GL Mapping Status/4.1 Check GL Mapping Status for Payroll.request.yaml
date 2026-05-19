@@ -1,0 +1,17 @@
+$kind: http-request
+description: |-
+  Checks if all salary components used in a payroll have GL account mappings.
+
+  Returns:
+  - isValid: whether all mappings are complete
+  - mappedComponents: components with GL accounts
+  - unmappedComponents: components missing GL accounts
+  - missingMappings: critical statutory mappings missing (PF, ESI, TDS, etc.)
+  - summary: counts and flags for active deductions
+
+  Fix missing mappings:
+  - Use POST /salarycomponents to create components
+  - Use the salarycomponentsacc table to map them to GL accounts
+url: "{{baseUrl}}/erp/gl-mapping-status/{{payrollId}}"
+method: GET
+order: 1000

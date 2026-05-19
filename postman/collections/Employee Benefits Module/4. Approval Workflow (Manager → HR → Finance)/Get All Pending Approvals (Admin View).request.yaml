@@ -1,0 +1,13 @@
+$kind: http-request
+description: Returns ALL pending approvals across the organization (HR/Admin use)
+url: "{{baseUrl}}/approvals/all-pending?page=0&size=10&role="
+method: GET
+queryParams:
+  - key: page
+    value: "0"
+  - key: size
+    value: "10"
+  - key: role
+    value: ""
+    description: "Filter by role: MANAGER, HR, FINANCE"
+order: 2000

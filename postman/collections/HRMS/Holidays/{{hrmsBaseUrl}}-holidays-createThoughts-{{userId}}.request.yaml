@@ -1,0 +1,785 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/holidays/createThoughts/{{userId}}"
+url: "{{hrmsBaseUrl}}/holidays/createThoughts/{{userId}}"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"thoughts\": [\r
+
+    \        //dont call this api or else it will duplicate the values in db\r
+
+    \        {\r
+
+    \            \"description\": \"Success usually comes to those who are too busy to be looking for it.\",\r
+
+    \            \"author\": \"Henry David Thoreau\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"description\": \"Don't watch the clock; do what it does. Keep going.\",\r
+
+    \            \"author\": \"Sam Levenson\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"description\": \"Whether you think you can or you think you can’t, you’re right.\",\r
+
+    \            \"author\": \"Henry Ford\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"description\": \"Opportunities don't happen. You create them.\",\r
+
+    \            \"author\": \"Chris Grosser\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"description\": \"It is never too late to be what you might have been.\",\r
+
+    \            \"author\": \"George Eliot\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"description\": \"Hustle in silence and let your success make the noise.\",\r
+
+    \            \"author\": \"Unknown\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"description\": \"The road to success and the road to failure are almost exactly the same.\",\r
+
+    \            \"author\": \"Colin R. Davis\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"description\": \"Success is not the key to happiness. Happiness is the key to success.\",\r
+
+    \            \"author\": \"Albert Schweitzer\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"description\": \"The harder you work for something, the greater you'll feel when you achieve it.\",\r
+
+    \            \"author\": \"Unknown\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"description\": \"Don’t let yesterday take up too much of today.\",\r
+
+    \            \"author\": \"Will Rogers\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"description\": \"You learn more from failure than from success. Don’t let it stop you.\",\r
+
+    \            \"author\": \"Unknown\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"description\": \"If you are working on something that you really care about, you don’t have to be pushed.\",\r
+
+    \            \"author\": \"Steve Jobs\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"description\": \"Success seems to be connected with action. Successful people keep moving.\",\r
+
+    \            \"author\": \"Conrad Hilton\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"description\": \"What you get by achieving your goals is not as important as what you become by achieving your goals.\",\r
+
+    \            \"author\": \"Zig Ziglar\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"description\": \"Success is walking from failure to failure with no loss of enthusiasm.\",\r
+
+    \            \"author\": \"Winston Churchill\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"description\": \"Innovation distinguishes between a leader and a follower.\",\r
+
+    \            \"author\": \"Steve Jobs\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"description\": \"Don’t settle for what life gives you; make life better and build something.\",\r
+
+    \            \"author\": \"Ashton Kutcher\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"description\": \"Failure will never overtake me if my determination to succeed is strong enough.\",\r
+
+    \            \"author\": \"Og Mandino\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"description\": \"Only put off until tomorrow what you are willing to die having left undone.\",\r
+
+    \            \"author\": \"Pablo Picasso\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"description\": \"I find that the harder I work, the more luck I seem to have.\",\r
+
+    \            \"author\": \"Thomas Jefferson\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"description\": \"Don’t wish it were easier. Wish you were better.\",\r
+
+    \            \"author\": \"Jim Rohn\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"description\": \"When we strive to become better than we are, everything around us becomes better too.\",\r
+
+    \            \"author\": \"Paulo Coelho\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"description\": \"The future depends on what you do today.\",\r
+
+    \            \"author\": \"Mahatma Gandhi\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"description\": \"Act as if what you do makes a difference. It does.\",\r
+
+    \            \"author\": \"William James\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"description\": \"You don't have to be great to start, but you have to start to be great.\",\r
+
+    \            \"author\": \"Zig Ziglar\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"description\": \"Believe you can and you're halfway there.\",\r
+
+    \            \"author\": \"Theodore Roosevelt\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"description\": \"Limit your ‘always’ and your ‘nevers.’\",\r
+
+    \            \"author\": \"Amy Poehler\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"description\": \"Keep your eyes on the stars, and your feet on the ground.\",\r
+
+    \            \"author\": \"Theodore Roosevelt\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"description\": \"Be so good they can't ignore you.\",\r
+
+    \            \"author\": \"Steve Martin\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"description\": \"Happiness is not something readymade. It comes from your own actions.\",\r
+
+    \            \"author\": \"Dalai Lama\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"description\": \"Everything you’ve ever wanted is on the other side of fear.\",\r
+
+    \            \"author\": \"George Addair\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"description\": \"We generate fears while we sit. We overcome them by action.\",\r
+
+    \            \"author\": \"Dr. Henry Link\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"description\": \"Dream big and dare to fail.\",\r
+
+    \            \"author\": \"Norman Vaughan\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"description\": \"What lies behind us and what lies before us are tiny matters compared to what lies within us.\",\r
+
+    \            \"author\": \"Ralph Waldo Emerson\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"description\": \"Nothing is impossible. The word itself says ‘I’m possible!'\",\r
+
+    \            \"author\": \"Audrey Hepburn\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"description\": \"You are never too old to set another goal or to dream a new dream.\",\r
+
+    \            \"author\": \"C.S. Lewis\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"description\": \"Do one thing every day that scares you.\",\r
+
+    \            \"author\": \"Eleanor Roosevelt\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"description\": \"Hardships often prepare ordinary people for an extraordinary destiny.\",\r
+
+    \            \"author\": \"C.S. Lewis\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"description\": \"If you can dream it, you can do it.\",\r
+
+    \            \"author\": \"Walt Disney\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"description\": \"It always seems impossible until it’s done.\",\r
+
+    \            \"author\": \"Nelson Mandela\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"description\": \"Don’t stop when you’re tired. Stop when you’re done.\",\r
+
+    \            \"author\": \"Unknown\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"description\": \"The best way to get started is to quit talking and begin doing.\",\r
+
+    \            \"author\": \"Walt Disney\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"description\": \"The man who has confidence in himself gains the confidence of others.\",\r
+
+    \            \"author\": \"Hasidic Proverb\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"description\": \"People who are crazy enough to think they can change the world, are the ones who do.\",\r
+
+    \            \"author\": \"Rob Siltanen\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"description\": \"Never give up. Great things take time. Be patient.\",\r
+
+    \            \"author\": \"Unknown\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"description\": \"The only limit to our realization of tomorrow will be our doubts of today.\",\r
+
+    \            \"author\": \"Franklin D. Roosevelt\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"description\": \"Do what you can with all you have, wherever you are.\",\r
+
+    \            \"author\": \"Theodore Roosevelt\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"description\": \"You don’t need to see the whole staircase, just take the first step.\",\r
+
+    \            \"author\": \"Martin Luther King Jr.\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"description\": \"Life is 10% what happens to us and 90% how we react to it.\",\r
+
+    \            \"author\": \"Charles R. Swindoll\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"description\": \"You can’t cross the sea merely by standing and staring at the water.\",\r
+
+    \            \"author\": \"Rabindranath Tagore\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"description\": \"The secret of getting ahead is getting started.\",\r
+
+    \            \"author\": \"Mark Twain\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"description\": \"Do not wait; the time will never be ‘just right.’\",\r
+
+    \            \"author\": \"Napoleon Hill\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"description\": \"A journey of a thousand miles begins with a single step.\",\r
+
+    \            \"author\": \"Lao Tzu\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"description\": \"What you do today can improve all your tomorrows.\",\r
+
+    \            \"author\": \"Ralph Marston\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"description\": \"You must do the things you think you cannot do.\",\r
+
+    \            \"author\": \"Eleanor Roosevelt\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"description\": \"Do something today that your future self will thank you for.\",\r
+
+    \            \"author\": \"Sean Patrick Flanery\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"description\": \"Start where you are. Use what you have. Do what you can.\",\r
+
+    \            \"author\": \"Arthur Ashe\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"description\": \"Believe in yourself and all that you are.\",\r
+
+    \            \"author\": \"Christian D. Larson\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"description\": \"Failure is simply the opportunity to begin again, this time more intelligently.\",\r
+
+    \            \"author\": \"Henry Ford\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"description\": \"If opportunity doesn’t knock, build a door.\",\r
+
+    \            \"author\": \"Milton Berle\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"description\": \"Don’t wait for opportunity. Create it.\",\r
+
+    \            \"author\": \"Unknown\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"description\": \"You are braver than you believe, stronger than you seem, and smarter than you think.\",\r
+
+    \            \"author\": \"A.A. Milne\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"description\": \"Your time is limited, don’t waste it living someone else’s life.\",\r
+
+    \            \"author\": \"Steve Jobs\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"description\": \"Dream it. Wish it. Do it.\",\r
+
+    \            \"author\": \"Unknown\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"description\": \"It’s going to be hard, but hard does not mean impossible.\",\r
+
+    \            \"author\": \"Unknown\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"description\": \"Push yourself, because no one else is going to do it for you.\",\r
+
+    \            \"author\": \"Unknown\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"description\": \"Sometimes later becomes never. Do it now.\",\r
+
+    \            \"author\": \"Unknown\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"description\": \"Great things never come from comfort zones.\",\r
+
+    \            \"author\": \"Unknown\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"description\": \"Success doesn’t just find you. You have to go out and get it.\",\r
+
+    \            \"author\": \"Unknown\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"description\": \"The harder you work, the luckier you get.\",\r
+
+    \            \"author\": \"Gary Player\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"description\": \"Don’t be afraid to give up the good to go for the great.\",\r
+
+    \            \"author\": \"John D. Rockefeller\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"description\": \"If you want to achieve greatness, stop asking for permission.\",\r
+
+    \            \"author\": \"Unknown\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"description\": \"Go the extra mile. It’s never crowded.\",\r
+
+    \            \"author\": \"Wayne Dyer\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"description\": \"Do what you love and success will follow. Passion is the fuel behind a successful career.\",\r
+
+    \            \"author\": \"Meg Whitman\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"description\": \"You don’t drown by falling in the water; you drown by staying there.\",\r
+
+    \            \"author\": \"Edwin Louis Cole\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"description\": \"It’s not whether you get knocked down, it’s whether you get up.\",\r
+
+    \            \"author\": \"Vince Lombardi\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"description\": \"Your limitation—it’s only your imagination.\",\r
+
+    \            \"author\": \"Unknown\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"description\": \"Work hard in silence, let your success be your noise.\",\r
+
+    \            \"author\": \"Frank Ocean\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"description\": \"If you get tired, learn to rest, not quit.\",\r
+
+    \            \"author\": \"Banksy\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"description\": \"The best revenge is massive success.\",\r
+
+    \            \"author\": \"Frank Sinatra\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"description\": \"Every accomplishment starts with the decision to try.\",\r
+
+    \            \"author\": \"John F. Kennedy\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"description\": \"Perseverance is not a long race; it is many short races one after another.\",\r
+
+    \            \"author\": \"Walter Elliot\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"description\": \"You can’t go back and change the beginning, but you can start where you are and change the ending.\",\r
+
+    \            \"author\": \"C.S. Lewis\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"description\": \"Success isn’t overnight. It’s when every day you get a little better than the day before. It all adds up.\",\r
+
+    \            \"author\": \"Dwayne Johnson\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"description\": \"Courage doesn’t always roar. Sometimes courage is the quiet voice at the end of the day saying, ‘I will try again tomorrow.’\",\r
+
+    \            \"author\": \"Mary Anne Radmacher\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"description\": \"Our greatest glory is not in never falling, but in rising every time we fall.\",\r
+
+    \            \"author\": \"Confucius\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"description\": \"Don’t let the fear of losing be greater than the excitement of winning.\",\r
+
+    \            \"author\": \"Robert Kiyosaki\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"description\": \"In order to succeed, we must first believe that we can.\",\r
+
+    \            \"author\": \"Nikos Kazantzakis\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"description\": \"Set your goals high, and don’t stop till you get there.\",\r
+
+    \            \"author\": \"Bo Jackson\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"description\": \"Your life does not get better by chance, it gets better by change.\",\r
+
+    \            \"author\": \"Jim Rohn\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"description\": \"Act as if it were impossible to fail.\",\r
+
+    \            \"author\": \"Dorothea Brande\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"description\": \"If you change nothing, nothing will change.\",\r
+
+    \            \"author\": \"Unknown\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"description\": \"If you want to fly, give up everything that weighs you down.\",\r
+
+    \            \"author\": \"Buddha\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"description\": \"Challenges are what make life interesting and overcoming them is what makes life meaningful.\",\r
+
+    \            \"author\": \"Joshua J. Marine\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"description\": \"The only way to achieve the impossible is to believe it is possible.\",\r
+
+    \            \"author\": \"Charles Kingsleigh\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"description\": \"It’s not what happens to you but how you react to it that matters.\",\r
+
+    \            \"author\": \"Epictetus\"\r
+
+    \        }\r
+
+    \    ]\r
+
+    }"
+examples: ./.resources/{{hrmsBaseUrl}}-holidays-createThoughts-{{userId}}.resources/examples
+order: 5000

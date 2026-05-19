@@ -1,0 +1,24 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/claims/getExpenseById/3585c04c-eb99-497a-993a-c4fc14563ca8 Copy"
+url: "{{hrmsBaseUrl}}/claims/updateExpenses/3585c04c-eb99-497a-993a-c4fc14563ca8"
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \  \"category\": \"Food\",\r
+
+    \  \"expenseAmount\": \"250.00\",\r
+
+    \  \"endDate\": \"2023-12-01\",\r
+
+    \  \"paymentMode\": \"CARD\",\r
+
+    \  \"description\": \"Dinner with client to discuss project\",\r
+
+    \  \"uploadDocument\": \"this is documnet here\",\r
+
+    \  \"userId\": \"{{userId}}\"\r
+
+    }"
+order: 7000

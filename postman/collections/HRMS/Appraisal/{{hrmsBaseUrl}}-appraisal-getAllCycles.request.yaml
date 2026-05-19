@@ -1,0 +1,7 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/appraisal/getAllCycles"
+url: "{{hrmsBaseUrl}}/appraisal/getAllCycles"
+method: GET
+headers:
+  Content-Type: application/json
+order: 14000

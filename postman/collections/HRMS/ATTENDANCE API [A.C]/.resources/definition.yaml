@@ -1,0 +1,293 @@
+$kind: collection
+description: |-
+  StartFragment
+
+  ## 1. `POST /attendance/punch` — Smart Punch Toggle
+
+  Automatically punches IN if no active punch, or punches OUT if already punched in.
+
+  **Request Body:**
+
+  ```
+  {
+    "employeeId": "uuid-string",          // required
+    "mode": "MANUAL",                      // optional: "MANUAL" | "BIOMETRIC" | "RFID" | "MOBILE_APP" (default: "MANUAL")
+    "workLocationType": "OFFICE",          // optional: "OFFICE" | "WFH" | "REMOTE" (default: "OFFICE")
+    "locationJSON": { "lat": 28.6, "lng": 77.2 },  // optional
+    "empComment": "Starting morning shift" // optional
+  }
+
+   ```
+
+  **Response (Punch In):**
+
+  ```
+  {
+    "success": true,
+    "message": "Punch-in recorded successfully (punch #1)",
+    "data": {
+      "attendanceId": "uuid",
+      "punchId": "uuid",
+      "punchSequence": 1,
+      "punchIn": "2026-03-24T14:30:00.000Z",
+      "attDate": "2026-03-24"
+    }
+  }
+
+   ```
+
+  **Response (Punch Out):**
+
+  ```
+  {
+    "success": true,
+    "message": "Punch-out recorded successfully. Total work: 8.50 hours",
+    "data": {
+      "attendanceId": "uuid",
+      "punchId": "uuid",
+      "punchOut": "2026-03-24T23:00:00.000Z",
+      "durationMinutes": 510,
+      "totalWorkHours": 8.5,
+      "totalBreakMinutes": 30,
+      "overtimeMinutes": 30,
+      "isOvertime": true,
+      "isDoubleShift": false,
+      "isMultiShift": false,
+      "shiftsCovered": 1,
+      "isAllPunchedOut": true,
+      "daysCoveredJSON": null
+    }
+  }
+
+   ```
+
+  ---
+
+  ## 2. `GET /attendance/activePunch` — Get Active Punch
+
+  **Query Params:**
+
+  ```
+  ?employeeId=uuid-string
+
+   ```
+
+  **Response:**
+
+  ```
+  {
+    "success": true,
+    "data": {
+      "isActive": true,
+      "punch": {
+        "id": "uuid",
+        "attendanceId": "uuid",
+        "employeeId": "uuid",
+        "punchIn": "2026-03-24T14:30:00.000Z",
+        "punchOut": null,
+        "punchSequence": 2,
+        "durationMinutes": null,
+        "mode": "MANUAL",
+        "attendance": { /* parent attendance record */ }
+      }
+    }
+  }
+
+   ```
+
+  ---
+
+  ## 3. `GET /attendance/punchHistory` — Get All Punches for a Date
+
+  **Query Params:**
+
+  ```
+  ?employeeId=uuid-string&date=2026-03-24
+
+   ```
+
+  **Response:**
+
+  ```
+  {
+    "success": true,
+    "data": {
+      "attendance": {
+        "id": "uuid",
+        "attDate": "2026-03-24",
+        "status": "PRESENT",
+        "totalWorkHours": 16.5,
+        "totalBreakMinutes": 45,
+        "totalPunchCount": 4,
+        "firstPunchIn": "2026-03-24T20:00:00.000Z",
+        "lastPunchOut": "2026-03-25T12:30:00.000Z",
+        "isOvertime": false,
+        "isDoubleShift": true,
+        "isMultiShift": false,
+        "shiftsCovered": 2,
+        "overtimeMinutes": 30,
+        "daysCoveredJSON": ["2026-03-24", "2026-03-25"]
+      },
+      "punches": [
+        {
+          "id": "uuid",
+          "punchSequence": 1,
+          "punchIn": "2026-03-24T20:00:00.000Z",
+          "punchOut": "2026-03-25T04:00:00.000Z",
+          "durationMinutes": 480,
+          "mode": "MANUAL",
+          "workLocationType": "OFFICE"
+        },
+        {
+          "id": "uuid",
+          "punchSequence": 2,
+          "punchIn": "2026-03-25T04:30:00.000Z",
+          "punchOut": "2026-03-25T12:30:00.000Z",
+          "durationMinutes": 480,
+          "mode": "MANUAL",
+          "workLocationType": "OFFICE"
+        }
+      ]
+    }
+  }
+
+   ```
+
+  ---
+
+  ## 4. `GET /attendance/dayCoverage` — Get Day Coverage Records
+
+  **Query Params:**
+
+  ```
+  ?employeeId=uuid-string&startDate=2026-03-01&endDate=2026-03-31
+
+   ```
+
+  **Response:**
+
+  ```
+  {
+    "success": true,
+    "data": [
+      {
+        "id": "uuid",
+        "employeeId": "uuid",
+        "coveredDate": "2026-03-25",
+        "sourceDate": "2026-03-24",
+        "coverageType": "DOUBLE_SHIFT",
+        "totalWorkHours": 16.5,
+        "sourceAttendance": {
+          "id": "uuid",
+          "attDate": "2026-03-24",
+          "totalWorkHours": 16.5,
+          "shiftsCovered": 2,
+          "status": "PRESENT"
+        }
+      }
+    ]
+  }
+
+   ```
+
+  ---
+
+  ## 5. `GET /attendance/dayCoverageSummary` — Coverage Summary for Payroll
+
+  **Query Params:**
+
+  ```
+  ?employeeId=uuid-string&startDate=2026-03-01&endDate=2026-03-31
+
+   ```
+
+  **Response:**
+
+  ```
+  {
+    "success": true,
+    "data": {
+      "totalCoveredDays": 3,
+      "doubleShiftDays": 2,
+      "multiShiftDays": 1,
+      "coveredDates": ["2026-03-25", "2026-03-26", "2026-03-28"]
+    }
+  }
+
+   ```
+
+  ---
+
+  ## 6. `POST /attendance/overtimeConfig` — Create/Update Config
+
+  **Request Body:**
+
+  ```
+  {
+    "level": "OFFICE",                     // required: "ORGANIZATION" | "OFFICE" | "DEPARTMENT"
+    "levelId": "uuid-of-office",           // required: UUID of the org/office/dept
+    "standardShiftHours": 8,               // optional (default: 8, min: 1, max: 24)
+    "overtimeEnabled": true,               // optional (default: false)
+    "overtimePayEnabled": true,            // optional (default: false)
+    "overtimeMultiplier": 1.5,             // optional (default: 1.25, min: 1, max: 10) — pay multiplier for OT
+    "doubleShiftEnabled": true,            // optional (default: true)
+    "doubleShiftPayEnabled": true,         // optional (default: true)
+    "doubleShiftThresholdHours": 16,       // optional (default: 16, min: 8, max: 48)
+    "doubleShiftLeaveCredit": true,        // optional (default: true) — auto-credit leave for double shift
+    "doubleShiftLeaveTypeId": "uuid",      // optional — which leave type to credit (null = auto-find DSCL)
+    "maxDailyWorkHours": 32,              // optional (default: 32, min: 8, max: 48) — cap for extreme shifts
+    "multiPunchEnabled": true              // optional (default: true)
+  }
+
+   ```
+
+  **Response:**
+
+  ```
+  {
+    "success": true,
+    "message": "Configuration created successfully",
+    "data": { /* full config object */ }
+  }
+
+   ```
+
+  ---
+
+  ## 7. `GET /attendance/overtimeConfig` — Get Config (Auto-resolves hierarchy)
+
+  **Query Params (optional):**
+
+  ```
+  ?level=OFFICE&levelId=uuid
+
+   ```
+
+  If omitted, auto-resolves: Department → Office → Organization from `req.user`.
+
+  ---
+
+  ## 8. `GET /attendance/overtimeConfig/all` — Get All Configs
+
+  No params needed. Returns all configs ordered by level.
+
+  ---
+
+  ## 9. `DELETE /attendance/overtimeConfig/:id` — Delete Config
+
+  **URL Param:** `:id` = UUID of the config to delete.
+
+  ---
+
+  ### Key Business Logic Recap
+
+  | Hours Worked | Classification | Result |
+  | --- | --- | --- |
+  | 0–8 hrs | Normal shift | 1 day attendance |
+  | 8–16 hrs | Overtime | Extra pay (if enabled by admin) |
+  | 16+ hrs | Double shift | Covers next working day + 1 leave credited |
+  | 24+ hrs | Multi shift (3x) | Covers 2 more days + 2 leaves credited |
+  | 32 hrs | Quad shift (4x) | Covers 3 more days + 3 leaves credited |
+
+  EndFragment
+order: 58000

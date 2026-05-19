@@ -1,0 +1,41 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/job/updatePosition/8b8931a3-3460-460a-8034-ef1ee71021c1"
+url: "{{hrmsBaseUrl}}/job/updatePosition/2fb1f8e7-ab20-4cef-a757-c1614708f3a1"
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"positionData\": {\r
+
+    \        \"title\": \"pp222222222222\",\r
+
+    \        \"code\": \"pp1\",\r
+
+    \        \"departmentId\": \"f1ebe2f8-9d4b-47f4-8de9-0f1712473871\",\r
+
+    \        \"reportstoId\": \"eb6df26e-e0d3-4d10-8714-873fef6e213c\",\r
+
+    \        \"gradeId\": \"27649137-1a03-43dd-b9ae-cac352b893d8\",\r
+
+    \        \"location\": \"pune\",\r
+
+    \        \"compensationrange\": \"100-200\",\r
+
+    \        \"employeementType\": \"FULLTIME/PARTTIME\",\r
+
+    \        \"positionStatus\": \"ACTIVE\",\r
+
+    \        \"jobdescription\": \"link\"\r
+
+    \    },\r
+
+    \    \"skills\": [\r
+
+    \        \"7805cad5-a54e-45d7-83dc-593c70544a6d\"\r
+
+    \    ]\r
+
+    }"
+examples: ./.resources/{{hrmsBaseUrl}}-job-updatePosition-8b8931a3-3460-460a-8034-ef1ee.resources/examples
+order: 15000

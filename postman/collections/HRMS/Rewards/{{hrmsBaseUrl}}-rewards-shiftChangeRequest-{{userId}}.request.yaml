@@ -1,0 +1,13 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/rewards/shiftChangeRequest/{{userId}}"
+url: "{{hrmsBaseUrl}}/rewards/shiftChangeRequest/{{userId}}"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"requestedShiftId\": \"f56f7776-fc98-41d5-813f-a69942cb32bd\"\r
+
+    }"
+examples: ./.resources/{{hrmsBaseUrl}}-rewards-shiftChangeRequest-{{userId}}.resources/examples
+order: 7000

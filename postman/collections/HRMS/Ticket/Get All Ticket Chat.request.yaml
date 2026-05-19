@@ -1,0 +1,7 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/tickets/chat/:ticketId"
+method: GET
+pathVariables:
+  ticketId: 2582dd41-8782-4f2a-b3a7-bd752769d618
+examples: ./.resources/Get All Ticket Chat.resources/examples
+order: 18000

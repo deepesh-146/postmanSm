@@ -1,0 +1,225 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/candidate/updateCandidateProfile/{{candidateId}}"
+url: "{{hrmsBaseUrl}}/candidate/updateCandidateProfile/{{candidateId}}"
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"firstName\": \"John1\",\r
+
+    \    \"lastName\": \"Doe\",\r
+
+    \    \"email\": \"john@example.com\",\r
+
+    \    \"mobile\": \"9999999999\",\r
+
+    \    \"dob\": \"1990-01-01\",\r
+
+    \    \"gender\": \"MALE\",\r
+
+    \    \"nationality\": \"Indian\",\r
+
+    \    \"address\": \"123 Street\",\r
+
+    \    \"city\": \"New York\",\r
+
+    \    \"state\": \"NY\",\r
+
+    \    \"zipcode\": \"10001\",\r
+
+    \    \"skills\": \"JavaScript,Node.js,React\",\r
+
+    \    \"linkedIn\": \"https://linkedin.com/in/john\",\r
+
+    \    \"portfolioWebsite\": \"https://johnsportfolio.com\",\r
+
+    \    \"github\": \"https://github.com/johndoe\",\r
+
+    \    \"resumePath\" : \"link\",\r
+
+    \    \"education\": [\r
+
+    \        {\r
+
+    \            \"id\": null,\r
+
+    \            \"degree\": \"B.Tech\",\r
+
+    \            \"specialization\": \"Computer Science\",\r
+
+    \            \"institute\": \"ABC University\",\r
+
+    \            \"startDate\": \"2010-06-01\",\r
+
+    \            \"endDate\": \"2014-05-31\",\r
+
+    \            \"image\": \"fdsfs\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"id\": null,\r
+
+    \            \"degree\": \"M.Tech\",\r
+
+    \            \"specialization\": \"AI\",\r
+
+    \            \"institute\": \"XYZ University\",\r
+
+    \            \"startDate\": \"2015-06-01\",\r
+
+    \            \"endDate\": \"2017-05-31\",\r
+
+    \            \"image\": \"fdsfs\"\r
+
+    \        }\r
+
+    \    ],\r
+
+    \    \"workExperience\": [\r
+
+    \        {\r
+
+    \            \"id\": null,\r
+
+    \            \"company\": \"Tech Corp\",\r
+
+    \            \"jobTitle\": \"Software Engineer\",\r
+
+    \            \"startDate\": \"2017-06-01\",\r
+
+    \            \"endDate\": \"2019-08-31\",\r
+
+    \            \"responsibility\": \"Worked on frontend development.\",\r
+
+    \            \"image\": \"fdsfs\"\r
+
+    \        }\r
+
+    \    ],\r
+
+    \    \"certificates\": [\r
+
+    \        {\r
+
+    \            \"id\": null,\r
+
+    \            \"certificateName\": \"AWS Certified Developer1\",\r
+
+    \            \"issuingOrganization\": \"Amazon\",\r
+
+    \            \"issueDate\": \"2020-01-01\",\r
+
+    \            \"expiryDate\": \"2023-01-01\",\r
+
+    \            \"image\": \"fdsfs\"\r
+
+    \        }\r
+
+    \    ],\r
+
+    \    \"identityDocuments\": [\r
+
+    \        {\r
+
+    \            \"id\": null,\r
+
+    \            \"type\": \"PASSPORT\",\r
+
+    \            \"passportNumber\": \"A1234567\",\r
+
+    \            \"issuingCountry\": \"India\",\r
+
+    \            \"issueDate\": \"2015-01-01\",\r
+
+    \            \"expiryDate\": \"2025-01-01\",\r
+
+    \            \"image\": \"fdsfs\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"id\": null,\r
+
+    \            \"type\": \"AADHAAR\",\r
+
+    \            \"aadhaarNumber\": \"123456789012\",\r
+
+    \            \"nameOnAadhaar\": \"John Doe\",\r
+
+    \            \"linkedPhoneNumber\": \"9999999999\",\r
+
+    \            \"image\": \"fdsfs\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"id\": null,\r
+
+    \            \"type\": \"PAN\",\r
+
+    \            \"panNumber\": \"ABCDE1234F\",\r
+
+    \            \"nameOnPan\": \"John Doe\",\r
+
+    \            \"fathersName\": \"Richard Doe\",\r
+
+    \            \"image\": \"fdsfs\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"id\": null,\r
+
+    \            \"type\": \"VISA\",\r
+
+    \            \"visaType\": \"work visa\",\r
+
+    \            \"visaNumber\": \"1233132\",\r
+
+    \            \"issueDate\": \"2015-01-01\",\r
+
+    \            \"expiryDate\": \"2025-01-01\",\r
+
+    \            \"image\": \"fdsfs\"\r
+
+    \        }\r
+
+    \    ],\r
+
+    \    \"uploadedFiles\": [\r
+
+    \        {\r
+
+    \            \"id\": null,\r
+
+    \            \"documentType\":\"degree\",\r
+
+    \            \"fileName\": \"DegreeCertificate.pdf\",\r
+
+    \            \"filePath\": \"/uploads/degree.pdf\",\r
+
+    \            \"uploadedAt\": \"2024-12-01T10:00:00Z\"\r
+
+    \        }\r
+
+    \    ],\r
+
+    \    \"deletedEducationIds\": [],\r
+
+    \    \"deletedWorkExperience\": [],\r
+
+    \    \"deletedCertificates\": [],\r
+
+    \    \"deletedIdentityDocuments\": [],\r
+
+    \    \"deletedUploadedFileIds\": []\r
+
+    }"
+examples: ./.resources/{{hrmsBaseUrl}}-candidate-updateCandidateProfile-{{candidateId}}.resources/examples
+order: 1000

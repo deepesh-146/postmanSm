@@ -1,0 +1,20 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/report/attendance/report/dynamic?startDate=2025-12-01&endDate=2025-12-17"
+url: "{{hrmsBaseUrl}}/report/attendance/report/dynamic?startDate=2026-01-01&endDate=2026-03-17&status=PRESENT&size=5&page=1"
+method: GET
+queryParams:
+  - key: startDate
+    value: 2026-01-01
+  - key: endDate
+    value: 2026-03-17
+  - key: columns
+    value: employeeName,employeeId,date,status,totalWorkHours
+    disabled: true
+  - key: status
+    value: PRESENT
+  - key: size
+    value: "5"
+  - key: page
+    value: "1"
+examples: ./.resources/{{hrmsBaseUrl}}-report-attendance-report-dynamic-startDate=2025-.resources/examples
+order: 3000

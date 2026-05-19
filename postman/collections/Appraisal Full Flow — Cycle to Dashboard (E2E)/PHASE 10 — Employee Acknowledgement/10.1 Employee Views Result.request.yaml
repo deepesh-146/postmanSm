@@ -1,0 +1,5 @@
+$kind: http-request
+description: Employee views their finalized result — score, band, KRA breakdown. PIP/WARNING recommendations are hidden.
+url: "{{baseUrl}}/appraisal-finalization/my/cycle/{{cycleId}}/result"
+method: GET
+order: 1000

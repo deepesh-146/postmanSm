@@ -1,0 +1,13 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/employee/getPincode/390010"
+url: "{{hrmsBaseUrl}}/employee/getPincode/390010"
+method: GET
+body:
+  type: formdata
+  content:
+    - type: file
+      key: file
+      src:
+        - /C:/Users/mehta/Desktop/cimpl/DOCS/iceiptPincode1.xlsx
+examples: ./.resources/{{hrmsBaseUrl}}-employee-getPincode-390010.resources/examples
+order: 6000

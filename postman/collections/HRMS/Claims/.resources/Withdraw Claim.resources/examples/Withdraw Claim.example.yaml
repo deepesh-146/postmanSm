@@ -1,0 +1,40 @@
+$kind: http-example
+request:
+  url: "{{hrmsBaseUrl}}/claims/withdraw"
+  method: PUT
+  body:
+    type: json
+    content: "{\r
+
+      \    \"employeeId\": \"903bd690-61f3-43db-9edd-d38d531c1c67\",\r
+
+      \    \"claimId\": \"44d57429-b244-48dc-a55c-4eba826cde3f\",\r
+
+      \    \"comment\": \"Will Submit again\"\r
+
+      }"
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "82"
+    ETag: W/"52-EbwXvom0/nTn5knVzQ1hSb7eezc"
+    Date: Mon, 14 Oct 2024 18:45:08 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "status": {
+              "success": true,
+              "code": 200,
+              "message": "Claim Withdrawn",
+              "failure": false
+          }
+      }
+order: 1000

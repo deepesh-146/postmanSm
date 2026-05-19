@@ -1,0 +1,5 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/report/department-wise-leave-report"
+url: "{{hrmsBaseUrl}}/report/department-wise-leave-report"
+method: GET
+order: 4000

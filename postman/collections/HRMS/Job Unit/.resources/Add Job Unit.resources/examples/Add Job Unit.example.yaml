@@ -1,0 +1,40 @@
+$kind: http-example
+request:
+  url: "{{hrmsBaseUrl}}/jobUnit/"
+  method: POST
+  body:
+    type: json
+    content: "{\r
+
+      \    \"name\": \"DX\",\r
+
+      \    \"code\": \"DX-8587\",\r
+
+      \    \"unitHead\": \"ADMIN\"\r
+
+      }"
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "81"
+    ETag: W/"51-eYnhfuMuJ7lDZrMT0+STGgzAhHg"
+    Date: Wed, 09 Oct 2024 15:49:22 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "status": {
+              "success": true,
+              "code": 200,
+              "message": "Job Unit Added",
+              "failure": false
+          }
+      }
+order: 1000

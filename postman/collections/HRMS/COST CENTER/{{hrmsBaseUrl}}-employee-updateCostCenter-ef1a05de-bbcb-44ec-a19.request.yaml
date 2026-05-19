@@ -1,0 +1,16 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/employee/updateCostCenter/ef1a05de-bbcb-44ec-a198-87ccff379ab0"
+url: "{{hrmsBaseUrl}}/employee/updateCostCenter/ef1a05de-bbcb-44ec-a198-87ccff379ab0"
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"costCenterCode\": \"FIN-004\",\r
+
+    \    \"costCenterName\": \"Finance Cost Center\",\r
+
+    \    \"description\": \"Handles finance & accounting related costs\"\r
+
+    }"
+order: 4000

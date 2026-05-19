@@ -1,0 +1,46 @@
+$kind: http-example
+request:
+  url: "{{base_url}}/promotions/dashboard"
+  method: GET
+response:
+  statusCode: 200
+  statusText: OK
+  body:
+    type: text
+    content: |-
+      {
+        "success": true,
+        "status": 200,
+        "data": {
+          "statusCounts": {
+            "DRAFT": 5,
+            "PENDING_APPROVAL": 8,
+            "APPROVED": 3,
+            "EFFECTIVE": 42,
+            "REJECTED": 7,
+            "CANCELLED": 2
+          },
+          "byDepartment": [
+            {
+              "fromDepartmentId": "uuid",
+              "count": 15,
+              "fromDepartment": { "id": "uuid", "name": "Engineering" }
+            },
+            {
+              "fromDepartmentId": "uuid",
+              "count": 8,
+              "fromDepartment": { "id": "uuid", "name": "Sales" }
+            }
+          ],
+          "recentPromotions": [
+            {
+              "id": "uuid",
+              "effectiveDate": "2026-02-15",
+              "employee": { "firstName": "John", "lastName": "Doe", "employeeCode": "EMP001" },
+              "fromDesignation": { "name": "Software Engineer" },
+              "toDesignation": { "name": "Senior Software Engineer" }
+            }
+          ]
+        }
+      }
+order: 1000

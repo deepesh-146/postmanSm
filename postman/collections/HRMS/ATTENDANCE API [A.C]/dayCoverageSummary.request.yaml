@@ -1,0 +1,8 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/attendance/dayCoverageSummary?employeeId=uuid-string&startDate=2026-03-01&endDate=2026-03-31"
+method: GET
+queryParams:
+  employeeId: uuid-string
+  startDate: 2026-03-01
+  endDate: 2026-03-31
+order: 5000

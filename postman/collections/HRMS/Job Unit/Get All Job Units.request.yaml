@@ -1,0 +1,8 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/jobUnit/?size=1&page=1"
+method: GET
+queryParams:
+  size: "1"
+  page: "1"
+examples: ./.resources/Get All Job Units.resources/examples
+order: 3000

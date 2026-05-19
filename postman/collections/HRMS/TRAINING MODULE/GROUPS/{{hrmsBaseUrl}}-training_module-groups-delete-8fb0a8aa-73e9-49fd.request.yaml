@@ -1,0 +1,28 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/training_module/groups/delete/8fb0a8aa-73e9-49fd-a42c-bb23eb42d2c8"
+url: "{{hrmsBaseUrl}}/training_module/groups/delete/8fb0a8aa-73e9-49fd-a42c-bb23eb42d2c8"
+method: DELETE
+body:
+  type: json
+  content: "{\r
+
+    \    \"groupName\": \"Backend Team\",\r
+
+    \    \"groupType\": \"TRAINING_GROUP\",\r
+
+    \    \"groupCode\": \"BT-001\",\r
+
+    \    \"createdDate\": \"2025-12-11T10:00:00Z\",\r
+
+    \    \"status\": \"ACTIVE\",\r
+
+    \    \"groupDescription\": \"Group for backend developers training\",\r
+
+    \    \"employeeIds\": [\r
+
+    \        \"07a37b94-58b2-498d-a1ac-b9d63a8649f8\"\r
+
+    \    ]\r
+
+    }"
+order: 5000

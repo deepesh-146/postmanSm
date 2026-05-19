@@ -1,0 +1,34 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/attendance/getAllPendingRegularizationRequests?status=PENDING"
+url: "{{hrmsBaseUrl}}/attendance/getAllPendingRegularizationRequests?status=PENDING"
+method: GET
+queryParams:
+  - key: status
+    value: PENDING
+  - key: search
+    value: ""
+    disabled: true
+body:
+  type: json
+  content: "{\r
+
+    \    \"reason\": \"Forgot to check in due to network issue\",\r
+
+    \    \"checkInTime\": \"2025-03-13\",\r
+
+    \    \"checkOutTime\": \"2025-03-13\",\r
+
+    \    \"status\": \"PENDING\",\r
+
+    \    \"empComment\": \"Was present in office, missed check-in due to app crash.\",\r
+
+    \    \"hrComment\": \"\",\r
+
+    \    \"userId\": \"{{userId}}\",\r
+
+    \    \"parentId\": \"9ad6c0b8-f11d-4803-9591-39b13f87f335\",\r
+
+    \    \"attendanceId\": \"acd239ea-3d96-48a7-a591-322fb883fad7\"\r
+
+    }"
+order: 2000

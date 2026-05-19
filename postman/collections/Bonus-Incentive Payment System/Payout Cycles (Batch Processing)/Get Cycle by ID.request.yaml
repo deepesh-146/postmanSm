@@ -1,0 +1,11 @@
+$kind: http-request
+description: Get detailed information about a payout cycle including all linked bonuses
+url: "{{base_url}}/api/bonus/payout-cycles/:id"
+method: GET
+headers:
+  Authorization: Bearer {{access_token}}
+pathVariables:
+  - key: id
+    value: "{{cycle_id}}"
+    description: Cycle UUID
+order: 2000

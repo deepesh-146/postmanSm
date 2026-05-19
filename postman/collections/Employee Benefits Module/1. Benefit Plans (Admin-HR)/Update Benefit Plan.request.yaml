@@ -1,0 +1,14 @@
+$kind: http-request
+url: "{{baseUrl}}/plans/{{benefitId}}"
+method: PUT
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "amount": 18000,
+      "description": "Updated health insurance premium benefit",
+      "maxEnrollments": 500
+    }
+order: 6000

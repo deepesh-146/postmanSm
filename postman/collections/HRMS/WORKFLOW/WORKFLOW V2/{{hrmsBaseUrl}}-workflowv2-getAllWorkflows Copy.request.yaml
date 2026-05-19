@@ -1,0 +1,5 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/workflowv2/getAllWorkflows Copy"
+url: "{{hrmsBaseUrl}}/workflowv2/getAllWorkflows"
+method: GET
+order: 2000

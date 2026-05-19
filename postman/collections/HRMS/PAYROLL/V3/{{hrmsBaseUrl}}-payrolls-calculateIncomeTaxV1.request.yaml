@@ -1,0 +1,668 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/payrolls/calculateIncomeTaxV1"
+url: "{{hrmsBaseUrl}}/payrolls/calculateIncomeTaxV1"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"ctc\": 1200000,\r
+
+    \    \"regime\": \"OLD\", // \"OLD\" or \"NEW\" - NEW regime has limited deductions\r
+
+    \    \"country\": \"INDIA\",\r
+
+    \    // \"employeeId\": \"emp-uuid-123\", // Optional for calculation, required for saving\r
+
+    \    \"declarations\": [\r
+
+    \        {\r
+
+    \            \"section\": \"80c\", // Section 80C - ₹1.5L combined limit with 80CCC and 80CCD(1)\r
+
+    \            \"subsection\": [\r
+
+    \                {\r
+
+    \                    \"key\": \"ppf\",\r
+
+    \                    \"value\": 50000,\r
+
+    \                    \"comment\": \"Public Provident Fund contribution\"\r
+
+    \                },\r
+
+    \                {\r
+
+    \                    \"key\": \"lic\",\r
+
+    \                    \"value\": 25000,\r
+
+    \                    \"comment\": \"Life Insurance Premium\"\r
+
+    \                },\r
+
+    \                {\r
+
+    \                    \"key\": \"elss\",\r
+
+    \                    \"value\": 75000,\r
+
+    \                    \"comment\": \"Equity Linked Savings Scheme\"\r
+
+    \                },\r
+
+    \                {\r
+
+    \                    \"key\": \"epf\",\r
+
+    \                    \"value\": 0,\r
+
+    \                    \"comment\": \"Employee Provident Fund (usually auto-calculated)\"\r
+
+    \                },\r
+
+    \                {\r
+
+    \                    \"key\": \"home_loan_principal\",\r
+
+    \                    \"value\": 0,\r
+
+    \                    \"comment\": \"Home loan principal repayment\"\r
+
+    \                },\r
+
+    \                {\r
+
+    \                    \"key\": \"tuition_fees\",\r
+
+    \                    \"value\": 0,\r
+
+    \                    \"comment\": \"Children tuition fees (max 2 children)\"\r
+
+    \                },\r
+
+    \                {\r
+
+    \                    \"key\": \"sukanya_samriddhi\",\r
+
+    \                    \"value\": 0,\r
+
+    \                    \"comment\": \"Sukanya Samriddhi Yojana\"\r
+
+    \                },\r
+
+    \                {\r
+
+    \                    \"key\": \"post_office_deposit\",\r
+
+    \                    \"value\": 0,\r
+
+    \                    \"comment\": \"5-year Post Office Time Deposit\"\r
+
+    \                },\r
+
+    \                {\r
+
+    \                    \"key\": \"bank_fd\",\r
+
+    \                    \"value\": 0,\r
+
+    \                    \"comment\": \"5-year Bank Fixed Deposit\"\r
+
+    \                },\r
+
+    \                {\r
+
+    \                    \"key\": \"term_deposit\",\r
+
+    \                    \"value\": 0,\r
+
+    \                    \"comment\": \"Term deposits qualifying under 80C\"\r
+
+    \                },\r
+
+    \                {\r
+
+    \                    \"key\": \"stamp_duty\",\r
+
+    \                    \"value\": 0,\r
+
+    \                    \"comment\": \"Stamp duty and registration charges\"\r
+
+    \                }\r
+
+    \            ]\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"section\": \"80ccc\", // Section 80CCC - Pension Fund (shares 80C limit)\r
+
+    \            \"subsection\": [\r
+
+    \                {\r
+
+    \                    \"key\": \"pension_fund\",\r
+
+    \                    \"value\": 0,\r
+
+    \                    \"comment\": \"Contribution to approved pension funds\"\r
+
+    \                }\r
+
+    \            ]\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"section\": \"80ccd1\", // Section 80CCD(1) - Employee NPS (shares 80C limit)\r
+
+    \            \"subsection\": [\r
+
+    \                {\r
+
+    \                    \"key\": \"nps_employee\",\r
+
+    \                    \"value\": 0,\r
+
+    \                    \"comment\": \"Employee contribution to NPS (within 80C limit)\"\r
+
+    \                }\r
+
+    \            ]\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"section\": \"80d\", // Section 80D - Health Insurance\r
+
+    \            \"subsection\": [\r
+
+    \                {\r
+
+    \                    \"key\": \"medical_self_family\",\r
+
+    \                    \"value\": 45000,\r
+
+    \                    \"comment\": \"Medical insurance for self and family (₹25K limit, ₹50K for senior)\"\r
+
+    \                },\r
+
+    \                {\r
+
+    \                    \"key\": \"medical_parents\",\r
+
+    \                    \"value\": 45000,\r
+
+    \                    \"comment\": \"Medical insurance for parents (₹25K limit, ₹50K for senior)\"\r
+
+    \                },\r
+
+    \                {\r
+
+    \                    \"key\": \"preventive_health_self\",\r
+
+    \                    \"value\": 5000,\r
+
+    \                    \"comment\": \"Preventive health checkup for self/family (₹5K limit)\"\r
+
+    \                },\r
+
+    \                {\r
+
+    \                    \"key\": \"preventive_health_parents\",\r
+
+    \                    \"value\": 5000,\r
+
+    \                    \"comment\": \"Preventive health checkup for parents (₹5K limit)\"\r
+
+    \                },\r
+
+    \                {\r
+
+    \                    \"key\": \"self_senior_citizen\",\r
+
+    \                    \"value\": 1,\r
+
+    \                    \"comment\": \"1 if self/spouse is senior citizen (60+), 0 otherwise\"\r
+
+    \                },\r
+
+    \                {\r
+
+    \                    \"key\": \"parents_senior_citizen\",\r
+
+    \                    \"value\": 1,\r
+
+    \                    \"comment\": \"1 if parents are senior citizens (60+), 0 otherwise\"\r
+
+    \                }\r
+
+    \            ]\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"section\": \"80ccd1b\", // Section 80CCD(1B) - Additional NPS (₹50K limit, available in both regimes)\r
+
+    \            \"subsection\": [\r
+
+    \                {\r
+
+    \                    \"key\": \"nps_additional\",\r
+
+    \                    \"value\": 50000,\r
+
+    \                    \"comment\": \"Additional NPS contribution above 80C limit\"\r
+
+    \                }\r
+
+    \            ]\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"section\": \"80ccd2\", // Section 80CCD(2) - Employer NPS (auto-calculated, no limit)\r
+
+    \            \"subsection\": [\r
+
+    \                {\r
+
+    \                    \"key\": \"employer_nps\",\r
+
+    \                    \"value\": 0,\r
+
+    \                    \"comment\": \"Employer NPS contribution (usually auto-calculated from salary)\"\r
+
+    \                }\r
+
+    \            ]\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"section\": \"24b\", // Section 24(b) - Housing Loan Interest (₹2L limit for self-occupied)\r
+
+    \            \"subsection\": [\r
+
+    \                {\r
+
+    \                    \"key\": \"home_loan_interest\",\r
+
+    \                    \"value\": 180000,\r
+
+    \                    \"comment\": \"Interest on housing loan for self-occupied property\"\r
+
+    \                }\r
+
+    \            ]\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"section\": \"80ee\", // Section 80EE - First-time Home Buyer (₹50K additional)\r
+
+    \            \"subsection\": [\r
+
+    \                {\r
+
+    \                    \"key\": \"first_home_interest\",\r
+
+    \                    \"value\": 0,\r
+
+    \                    \"comment\": \"Additional interest deduction for first-time home buyers\"\r
+
+    \                }\r
+
+    \            ]\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"section\": \"80eea\", // Section 80EEA - Affordable Housing (₹1.5L limit)\r
+
+    \            \"subsection\": [\r
+
+    \                {\r
+
+    \                    \"key\": \"affordable_housing_interest\",\r
+
+    \                    \"value\": 0,\r
+
+    \                    \"comment\": \"Interest on loan for affordable housing\"\r
+
+    \                }\r
+
+    \            ]\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"section\": \"80eeb\", // Section 80EEB - Electric Vehicle Loan (₹1.5L limit)\r
+
+    \            \"subsection\": [\r
+
+    \                {\r
+
+    \                    \"key\": \"electric_vehicle_interest\",\r
+
+    \                    \"value\": 0,\r
+
+    \                    \"comment\": \"Interest on electric vehicle loan\"\r
+
+    \                }\r
+
+    \            ]\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"section\": \"80e\", // Section 80E - Education Loan (No limit)\r
+
+    \            \"subsection\": [\r
+
+    \                {\r
+
+    \                    \"key\": \"education_loan_interest\",\r
+
+    \                    \"value\": 45000,\r
+
+    \                    \"comment\": \"Interest on education loan (no upper limit)\"\r
+
+    \                }\r
+
+    \            ]\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"section\": \"80dd\", // Section 80DD - Dependent with Disability\r
+
+    \            \"subsection\": [\r
+
+    \                {\r
+
+    \                    \"key\": \"dependent_disability\",\r
+
+    \                    \"value\": 0,\r
+
+    \                    \"comment\": \"Expenses for dependent with disability\"\r
+
+    \                },\r
+
+    \                {\r
+
+    \                    \"key\": \"severe_disability\",\r
+
+    \                    \"value\": 0,\r
+
+    \                    \"comment\": \"1 if severe disability (₹1.25L limit), 0 for normal (₹75K limit)\"\r
+
+    \                }\r
+
+    \            ]\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"section\": \"80ddb\", // Section 80DDB - Medical Treatment\r
+
+    \            \"subsection\": [\r
+
+    \                {\r
+
+    \                    \"key\": \"medical_treatment\",\r
+
+    \                    \"value\": 0,\r
+
+    \                    \"comment\": \"Medical treatment for specified diseases\"\r
+
+    \                },\r
+
+    \                {\r
+
+    \                    \"key\": \"senior_citizen\",\r
+
+    \                    \"value\": 0,\r
+
+    \                    \"comment\": \"1 if senior citizen (₹1L limit), 0 otherwise (₹40K limit)\"\r
+
+    \                }\r
+
+    \            ]\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"section\": \"80u\", // Section 80U - Person with Disability\r
+
+    \            \"subsection\": [\r
+
+    \                {\r
+
+    \                    \"key\": \"self_disability\",\r
+
+    \                    \"value\": 0,\r
+
+    \                    \"comment\": \"Deduction for person with disability\"\r
+
+    \                },\r
+
+    \                {\r
+
+    \                    \"key\": \"severe_disability\",\r
+
+    \                    \"value\": 0,\r
+
+    \                    \"comment\": \"1 if severe disability (₹1.25L), 0 for normal (₹75K)\"\r
+
+    \                }\r
+
+    \            ]\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"section\": \"80g\", // Section 80G - Donations\r
+
+    \            \"subsection\": [\r
+
+    \                {\r
+
+    \                    \"key\": \"pm_cares_fund\",\r
+
+    \                    \"value\": 10000,\r
+
+    \                    \"comment\": \"PM CARES Fund (100% deduction)\"\r
+
+    \                },\r
+
+    \                {\r
+
+    \                    \"key\": \"chief_minister_relief_fund\",\r
+
+    \                    \"value\": 0,\r
+
+    \                    \"comment\": \"CM Relief Fund (100% deduction)\"\r
+
+    \                },\r
+
+    \                {\r
+
+    \                    \"key\": \"prime_minister_relief_fund\",\r
+
+    \                    \"value\": 0,\r
+
+    \                    \"comment\": \"PM Relief Fund (100% deduction)\"\r
+
+    \                },\r
+
+    \                {\r
+
+    \                    \"key\": \"educational_institution\",\r
+
+    \                    \"value\": 20000,\r
+
+    \                    \"comment\": \"Approved educational institutions (50% deduction)\"\r
+
+    \                },\r
+
+    \                {\r
+
+    \                    \"key\": \"hospital\",\r
+
+    \                    \"value\": 0,\r
+
+    \                    \"comment\": \"Government hospitals (50% deduction)\"\r
+
+    \                },\r
+
+    \                {\r
+
+    \                    \"key\": \"charitable_institution\",\r
+
+    \                    \"value\": 0,\r
+
+    \                    \"comment\": \"Approved charitable institutions (50% deduction)\"\r
+
+    \                },\r
+
+    \                {\r
+
+    \                    \"key\": \"religious_institution\",\r
+
+    \                    \"value\": 0,\r
+
+    \                    \"comment\": \"Approved religious institutions (50% deduction)\"\r
+
+    \                }\r
+
+    \            ]\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"section\": \"80gg\", // Section 80GG - Rent Paid (alternative to HRA)\r
+
+    \            \"subsection\": [\r
+
+    \                {\r
+
+    \                    \"key\": \"rent_paid\",\r
+
+    \                    \"value\": 0,\r
+
+    \                    \"comment\": \"Rent paid if HRA not received (min of actual, ₹5K/month, or 25% income)\"\r
+
+    \                }\r
+
+    \            ]\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"section\": \"80tta\", // Section 80TTA - Savings Interest (₹10K limit for non-seniors)\r
+
+    \            \"subsection\": [\r
+
+    \                {\r
+
+    \                    \"key\": \"savings_interest\",\r
+
+    \                    \"value\": 0,\r
+
+    \                    \"comment\": \"Interest on savings account (₹10K limit for non-senior citizens)\"\r
+
+    \                }\r
+
+    \            ]\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"section\": \"80ttb\", // Section 80TTB - Senior Citizen Interest (₹50K limit)\r
+
+    \            \"subsection\": [\r
+
+    \                {\r
+
+    \                    \"key\": \"deposit_interest_senior\",\r
+
+    \                    \"value\": 0,\r
+
+    \                    \"comment\": \"Interest on deposits for senior citizens (₹50K limit)\"\r
+
+    \                }\r
+
+    \            ]\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"section\": \"80rrb\", // Section 80RRB - Patent Royalty\r
+
+    \            \"subsection\": [\r
+
+    \                {\r
+
+    \                    \"key\": \"patent_royalty\",\r
+
+    \                    \"value\": 400000,\r
+
+    \                    \"comment\": \"Royalty income from patents (₹3L limit)\"\r
+
+    \                }\r
+
+    \            ]\r
+
+    \        }\r
+
+    \    ],\r
+
+    \    \"exemptions\": {\r
+
+    \        \"comment\": \"These are exemptions, not deductions - they reduce gross salary before tax calculation\",\r
+
+    \        \"hra\": {\r
+
+    \            \"rent_paid\": 0,\r
+
+    \            \"city_type\": \"METRO\", // \"METRO\" or \"NON_METRO\"\r
+
+    \            \"comment\": \"HRA exemption based on rent paid and city type\"\r
+
+    \        },\r
+
+    \        \"lta\": {\r
+
+    \            \"amount_claimed\": 0,\r
+
+    \            \"comment\": \"Leave Travel Allowance with bills\"\r
+
+    \        }\r
+
+    \    },\r
+
+    \    \"selectedAllowances\" : []\r
+
+    }"
+order: 1000

@@ -1,0 +1,8 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/appraisal/questions"
+method: GET
+queryParams:
+  - key: cycleId
+    value: ""
+    disabled: true
+order: 1000

@@ -1,0 +1,10 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/employee/v4/getPendingSalaryApproval?size=10&page=1 Copy"
+url: "{{hrmsBaseUrl}}/employee/v4/approveSalary/:salaryId"
+method: POST
+pathVariables:
+  salaryId: ""
+body:
+  type: json
+  content: "{\r\n    \"isApproved\": true\r\n}"
+order: 3000

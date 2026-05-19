@@ -1,0 +1,6 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/assessments/candidate/getAssessmentById/f8c82a2d-3ea9-428e-af31-e47690128052"
+url: "{{hrmsBaseUrl}}/assessments/candidate/getAssessmentById/f8c82a2d-3ea9-428e-af31-e47690128052"
+method: GET
+examples: ./.resources/{{hrmsBaseUrl}}-assessments-candidate-getAssessmentById-f8c82a2d.resources/examples
+order: 6000

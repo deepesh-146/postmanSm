@@ -1,0 +1,134 @@
+$kind: http-example
+name: "{{hrmsBaseUrl}}/employee/getEmployeeCount/userId"
+request:
+  url: "{{hrmsBaseUrl}}/employee/getEmployeeCount/{{userId}}"
+  method: GET
+  body:
+    type: formdata
+    content:
+      - type: file
+        key: upload
+        src:
+          - /C:/Users/mehta/Downloads/49a0ab01-22ed-46cb-aaea-07a87adcbdb7.jpg
+      - type: file
+        key: upload
+        src:
+          - /C:/Users/mehta/Downloads/49a0ab01-22ed-46cb-aaea-07a87adcbdb7.jpg
+      - type: file
+        key: upload
+        src:
+          - /C:/Users/mehta/Downloads/05734c98-2f92-4b6a-8430-1a73168f5eb9.jpg
+      - type: file
+        key: upload
+        src:
+          - /C:/Users/mehta/Downloads/b66c7f0a-5ce2-44e2-8e76-8809a4ec307a.jpg
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "1708"
+    ETag: W/"6ac-dRMq5CXOUtUCJLU2yulRHEZo73I"
+    Date: Thu, 05 Jun 2025 17:01:36 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "success": true,
+          "status": 200,
+          "data": {
+              "msg": "Employee Count",
+              "data": {
+                  "activeEmployee": {
+                      "activeEmployeeCount": 21
+                  },
+                  "inActiveEmployee": {
+                      "inactiveEmployeeCount": 0
+                  },
+                  "probationCount": {
+                      "probationCount": 0
+                  },
+                  "totalEmployee": {
+                      "countTotal": 21
+                  },
+                  "joinedThisMonthCount": 11,
+                  "joinedThisMonthEmployees": [
+                      {
+                          "id": "431f8121-f9e3-4843-b255-8ad52e98f6b7",
+                          "firstName": "Dragon",
+                          "lastName": "Doe",
+                          "createdAt": "2025-06-04T11:57:14.000Z"
+                      },
+                      {
+                          "id": "772c11df-7df4-47cd-90c5-fc0198a22a29",
+                          "firstName": "Dipak",
+                          "lastName": "More",
+                          "createdAt": "2025-06-05T11:26:29.000Z"
+                      },
+                      {
+                          "id": "a7797853-a737-407f-9f39-bc17e8233e8e",
+                          "firstName": "Sonali",
+                          "lastName": "Bendre",
+                          "createdAt": "2025-06-02T11:04:40.000Z"
+                      },
+                      {
+                          "id": "a835f310-4b6d-4056-8e02-c869b9fdc0c2",
+                          "firstName": "Komal",
+                          "lastName": "Patil",
+                          "createdAt": "2025-06-04T11:58:58.000Z"
+                      },
+                      {
+                          "id": "ac6f452f-c4fe-4812-a79b-443562339f7d",
+                          "firstName": "Madhuri",
+                          "lastName": "Dikshit",
+                          "createdAt": "2025-06-02T09:42:06.000Z"
+                      },
+                      {
+                          "id": "b6d2df58-076f-4405-88bf-b2e7fcc08fbf",
+                          "firstName": "Pravin",
+                          "lastName": "Patil",
+                          "createdAt": "2025-06-03T12:20:51.000Z"
+                      },
+                      {
+                          "id": "d93dce7b-027d-4d7c-9b6b-ada9356f804a",
+                          "firstName": "Ankita",
+                          "lastName": "Deshmukh",
+                          "createdAt": "2025-06-02T09:30:26.000Z"
+                      },
+                      {
+                          "id": "db9bed80-92e7-44b0-b123-f3cabcf1a918",
+                          "firstName": "Mrunal",
+                          "lastName": "Patil",
+                          "createdAt": "2025-06-05T12:05:41.000Z"
+                      },
+                      {
+                          "id": "e08adb78-3d2d-496c-ae30-a0a0bc1e89a2",
+                          "firstName": "Gerald",
+                          "lastName": "Cotten",
+                          "createdAt": "2025-06-02T10:52:46.000Z"
+                      },
+                      {
+                          "id": "e812207b-2649-4f9c-b084-e8e868057774",
+                          "firstName": "Anup",
+                          "lastName": "Dahake",
+                          "createdAt": "2025-06-02T06:36:58.000Z"
+                      },
+                      {
+                          "id": "fff2f149-dc78-429f-aff9-b881d1c1d18a",
+                          "firstName": "Vikas",
+                          "lastName": "Patil",
+                          "createdAt": "2025-06-04T13:38:06.000Z"
+                      }
+                  ],
+                  "resignedThisMonth": {
+                      "resignedThisMonth": 1
+                  }
+              }
+          }
+      }
+order: 1000

@@ -1,0 +1,13 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/tickets/category"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"name\": \"HR\",\r
+
+    \    \"description\": \"Human Resources related tickets\"\r
+
+    }"
+order: 1000

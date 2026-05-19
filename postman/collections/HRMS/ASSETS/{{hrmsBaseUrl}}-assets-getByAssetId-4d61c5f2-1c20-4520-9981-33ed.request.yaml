@@ -1,0 +1,14 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/assets/getByAssetId/4d61c5f2-1c20-4520-9981-33edb7be16d6"
+url: "{{hrmsBaseUrl}}/assets/getByAssetId/83e45692-c76b-4e35-b164-abfe4b179d3e"
+method: GET
+queryParams:
+  - key: search
+    value: MBP2023
+    disabled: true
+  - key: status
+    value: AVAILABLE
+    disabled: true
+    description: ('AVAILABLE', 'ASSIGNED', 'IN_REPAIR', 'RETIRED'),
+examples: ./.resources/{{hrmsBaseUrl}}-assets-getByAssetId-4d61c5f2-1c20-4520-9981-33ed.resources/examples
+order: 3000

@@ -1,0 +1,17 @@
+$kind: http-request
+description: |-
+  Manually apply an APPROVED promotion.
+
+  This triggers:
+  1. Update employee designationId, gradeId, departmentId
+  2. Update emp_salarydetails if salary revision provided
+  3. Update linked PMS recommendation to IMPLEMENTED
+  4. Mark promotion as EFFECTIVE
+  5. Create audit trail entry
+  6. Send notification to employee
+
+  Note: Future-dated promotions are auto-applied by the daily cron job.
+url: "{{base_url}}/promotions/{{promotion_id}}/apply"
+method: POST
+examples: ./.resources/Apply Promotion (Mark Effective).resources/examples
+order: 3000

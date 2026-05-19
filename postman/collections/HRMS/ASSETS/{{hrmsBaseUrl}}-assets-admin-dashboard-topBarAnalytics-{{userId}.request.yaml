@@ -1,0 +1,6 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/assets/admin/dashboard/topBarAnalytics/{{userId}}"
+url: "{{hrmsBaseUrl}}/assets/admin/dashboard/topBarAnalytics/{{userId}}"
+method: GET
+examples: ./.resources/{{hrmsBaseUrl}}-assets-admin-dashboard-topBarAnalytics-{{userId}.resources/examples
+order: 4000

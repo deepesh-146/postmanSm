@@ -1,0 +1,14 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/payrolls/employee/getPaySlipData/{{userId}}"
+url: "{{hrmsBaseUrl}}/payrolls/employee/getPaySlipDataEmployee/772cb964-9944-4b62-9ba6-de8ca164cf01"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"month\": 1,\r
+
+    \    \"year\": 2025\r
+
+    }"
+order: 13000

@@ -1,0 +1,51 @@
+$kind: http-example
+name: "{{hrmsBaseUrl}}/rewards/getResponses/{{surveyId}}"
+request:
+  url: "{{hrmsBaseUrl}}/rewards/getResponses/{{surveyId}}"
+  method: GET
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "439"
+    ETag: W/"1b7-LoG06EMwCSR5vRHIoxCUGZ/oIP0"
+    Date: Fri, 20 Dec 2024 11:27:20 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "success": true,
+          "status": 200,
+          "message": "Responses fetched successfully.",
+          "data": [
+              {
+                  "id": "e877dee9-cdcd-49a7-9f7c-9af11a318399",
+                  "responses": [
+                      {
+                          "answer": "5",
+                          "question": "How satisfied are you?"
+                      },
+                      {
+                          "answer": "Communication.",
+                          "question": "What can we improve?"
+                      },
+                      {
+                          "answer": "Workshop",
+                          "question": "Choose the best activity?"
+                      }
+                  ],
+                  "createdAt": "2024-12-17T19:49:28.000Z",
+                  "employee_main": {
+                      "id": "9b048ebe-ea22-4097-8a55-cf8dbef55bc4",
+                      "firstName": "Deepesh"
+                  }
+              }
+          ]
+      }
+order: 1000

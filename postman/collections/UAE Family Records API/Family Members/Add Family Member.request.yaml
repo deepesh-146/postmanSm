@@ -1,0 +1,22 @@
+$kind: http-request
+url: "{{base_url}}/family/members"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+        "familyRecordId": "4920b2c6-d6ab-426e-818a-6b696b191e2f",
+        "fullName": "Fatima Al-Rashid",
+        "relationshipType": "SPOUSE",
+        "emiratesId": "784-1990-1234567-8",
+        "passportNumber": "A1234567",
+        "dateOfBirth": "1990-05-15",
+        "nationality": "UAE",
+        "visaNumber": "VN123456789",
+        "visaExpiryDate": "2025-12-31",
+        "visaStatus": "ACTIVE",
+        "medicalInsuranceNumber": "MI789012345"
+    }
+order: 1000

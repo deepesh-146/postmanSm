@@ -1,0 +1,18 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/jobUnit/:jobUnitId"
+method: PUT
+pathVariables:
+  jobUnitId: e71f8b2c-1c10-46f1-99a5-05c8bbfe4539
+body:
+  type: json
+  content: "{\r
+
+    \    \"name\": \"DX\",\r
+
+    \    \"code\": \"DX-6855\",\r
+
+    \    \"unitHead\": \"ADMIN\"\r
+
+    }"
+examples: ./.resources/Update Job Unit.resources/examples
+order: 2000

@@ -1,0 +1,5 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/attendance/countAll"
+method: GET
+examples: ./.resources/Count All.resources/examples
+order: 18000

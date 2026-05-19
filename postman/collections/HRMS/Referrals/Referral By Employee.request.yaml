@@ -1,0 +1,11 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/referrals/employee/:employeeId"
+method: GET
+queryParams:
+  - key: search
+    value: sau@gmail.com
+    disabled: true
+pathVariables:
+  employeeId: f0927aad-5807-4796-97b2-0a0cfa56d10c
+examples: ./.resources/Referral By Employee.resources/examples
+order: 11000

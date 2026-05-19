@@ -1,0 +1,9 @@
+$kind: http-request
+description: List only pending approval promotions.
+url: "{{base_url}}/promotions?page=1&size=10&status=PENDING_APPROVAL"
+method: GET
+queryParams:
+  page: "1"
+  size: "10"
+  status: PENDING_APPROVAL
+order: 4000

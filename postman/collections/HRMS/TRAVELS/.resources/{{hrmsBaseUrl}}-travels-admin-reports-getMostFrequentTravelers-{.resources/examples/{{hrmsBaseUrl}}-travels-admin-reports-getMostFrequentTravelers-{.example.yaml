@@ -1,0 +1,38 @@
+$kind: http-example
+name: "{{hrmsBaseUrl}}/travels/admin/reports/getMostFrequentTravelers/{{userId}}"
+request:
+  url: "{{hrmsBaseUrl}}/travels/admin/reports/getMostFrequentTravelers/{{userId}}"
+  method: GET
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "240"
+    ETag: W/"f0-C2LZFqbw0cBGcOSc/mZsv2b3nRw"
+    Date: Mon, 12 May 2025 12:09:21 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "success": true,
+          "status": 200,
+          "message": "Most frequent travelers fetched successfully.",
+          "data": [
+              {
+                  "travelCount": 1,
+                  "employee_main": {
+                      "id": "d59277f5-83f4-473a-966d-4f319d46531f",
+                      "firstName": "Deepesh",
+                      "lastName": "Kushwaha",
+                      "employeeCode": null
+                  }
+              }
+          ]
+      }
+order: 1000

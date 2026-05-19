@@ -1,0 +1,32 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/report/monthly-payroll-summary?size=10&page=1"
+url: "{{hrmsBaseUrl}}/report/monthly-payroll-summary?page=1&size=10&search=in&month=3&year=2026"
+method: GET
+queryParams:
+  - key: page
+    value: "1"
+  - key: search
+    value: ""
+    disabled: true
+  - key: payrollId
+    value: ""
+    disabled: true
+  - key: departmentId
+    value: ""
+    disabled: true
+  - key: paymentStatus
+    value: ""
+    disabled: true
+  - key: size
+    value: "10"
+  - key: search
+    value: in
+  - key: month
+    value: "3"
+  - key: year
+    value: "2026"
+auth:
+  type: bearer
+  credentials:
+    token: "{{clientToken}}"
+order: 3000

@@ -1,0 +1,16 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/job_application/reuploadJobApplicationDocument/{{applicationId}}"
+url: "{{hrmsBaseUrl}}/job_application/reuploadJobApplicationDocument/{{applicationId}}"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"documentType\": \"EDUCATION\",     // or \"EXPERIENCE\"\r
+
+    \  \"documentId\": \"a1b2c3d4-1234-5678-90ab-abcdef123456\",  // UUID from candidate_educations or candidate_work_experiences\r
+
+    \  \"image\": \"uploads/documents/certificate.pdf\"\r
+
+    }\r\n"
+order: 10000

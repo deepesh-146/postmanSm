@@ -1,0 +1,13 @@
+$kind: http-request
+description: Employee accepts their appraisal result. Updates final score status to ACKNOWLEDGED.
+url: "{{baseUrl}}/my/cycle/{{cycleId}}/acknowledge"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+        "status": "ACCEPTED"
+    }
+order: 2000

@@ -1,0 +1,13 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/job_application/admin/respondOffer/{{applicationId}}"
+url: "{{hrmsBaseUrl}}/job_application/admin/respondOffer/{{applicationId}}"
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \  \"action\": \"ACCEPTED\" //ACCEPTED or REJECTED\r
+
+    }\r\n"
+examples: ./.resources/{{hrmsBaseUrl}}-job_application-admin-respondOffer-{{application.resources/examples
+order: 9000

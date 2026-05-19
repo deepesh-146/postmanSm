@@ -1,0 +1,16 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/candidate/validateOtp"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"candidateData\": \"9801345259\",\r
+
+    \    \"otp\": \"434126\",\r
+
+    \    \"validateType\": \"mobile\"\r
+
+    }"
+examples: ./.resources/Validate Candidate OTP Mobile.resources/examples
+order: 8000

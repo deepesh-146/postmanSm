@@ -1,0 +1,97 @@
+$kind: http-example
+request:
+  url: "{{hrmsBaseUrl}}/employee/employment"
+  method: POST
+  body:
+    type: json
+    content: "{\r
+
+      \    \"onboardingId\": \"f778b358-2db2-4561-9c0b-dc1eda013258\",\r
+
+      \    \"employeeId\": \"f406f8fd-6b92-4e88-9dbe-5985f248cdb4\",\r
+
+      \    \"employmentData\": [\r
+
+      \        {\r
+
+      \            \"compName\": \"CSK\",\r
+
+      \            \"jobTitle\": \"Software Developer\",\r
+
+      \            \"location\": \"Patna\",\r
+
+      \            \"responsibility\": \"Android, Laravel\",\r
+
+      \            \"startDate\": \"2019-09-25\",\r
+
+      \            \"endDate\": \"2020-09-26\",\r
+
+      \            \"hrEmail\": \"hr@csk.com\",\r
+
+      \            \"hrMobile\": \"999999999\",\r
+
+      \            \"currentCompany\": \"NO\",\r
+
+      \            \"relLetterPath\": \"https://morth.nic.in/sites/default/files/dd12-13_0.pdf\",\r
+
+      \            \"expLetterPath\": \"https://morth.nic.in/sites/default/files/dd12-13_0.pdf\"\r
+
+      \        }\r
+
+      \    ]\r
+
+      }"
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "925"
+    ETag: W/"39d-ZZp1m4/IXHRbzlhrgXctQkq5tbc"
+    Date: Fri, 11 Oct 2024 09:03:56 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "status": {
+              "success": true,
+              "code": 200,
+              "message": "Employment Data Added",
+              "failure": false
+          },
+          "data": [
+              {
+                  "id": "4e73fbe9-efbf-454b-b673-6e40c7980dd2",
+                  "employeeId": "f406f8fd-6b92-4e88-9dbe-5985f248cdb4",
+                  "onboardingId": "f778b358-2db2-4561-9c0b-dc1eda013258",
+                  "companyName": "CSK",
+                  "jobTitle": "Software Developer",
+                  "jobLocation": "Patna",
+                  "responsibility": "Android, Laravel",
+                  "startDate": "2019-09-25T00:00:00.000Z",
+                  "endDate": "2020-09-26T00:00:00.000Z",
+                  "companyHrEmail": "hr@csk.com",
+                  "companyHrMobile": "999999999",
+                  "currentCompany": false,
+                  "relievingLetterPath": "https://morth.nic.in/sites/default/files/dd12-13_0.pdf",
+                  "experienceLetterPath": "https://morth.nic.in/sites/default/files/dd12-13_0.pdf",
+                  "sourceVerRej": null,
+                  "approved": false,
+                  "approvedDate": null,
+                  "approvedById": null,
+                  "rejected": false,
+                  "rejectedDate": null,
+                  "rejectById": null,
+                  "comments": null,
+                  "createdAt": "2024-10-11T09:03:56.000Z",
+                  "updatedAt": "2024-10-11T09:03:56.000Z",
+                  "employeeMainId": null
+              }
+          ]
+      }
+order: 1000

@@ -1,0 +1,14 @@
+$kind: http-request
+name: Add Private Comment (HR/Manager only)
+url: "{{baseUrl}}/pip/{{pipId}}/comments"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "comment": "Internal note: Employee is making effort but still struggling with prioritization.",
+      "isPrivate": true
+    }
+order: 2000

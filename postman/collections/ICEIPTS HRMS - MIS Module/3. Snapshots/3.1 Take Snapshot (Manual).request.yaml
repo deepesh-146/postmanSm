@@ -1,0 +1,15 @@
+$kind: http-request
+description: "Manually trigger a metric snapshot. snapshotType: DAILY | WEEKLY | MONTHLY | QUARTERLY | YEARLY"
+url: "{{baseUrl}}/mis/snapshots"
+method: POST
+headers:
+  Content-Type: application/json
+  x-organization-id: "{{organizationId}}"
+body:
+  type: text
+  content: |-
+    {
+      "snapshotType": "DAILY"
+    }
+examples: ./.resources/3.1 Take Snapshot (Manual).resources/examples
+order: 1000

@@ -1,0 +1,168 @@
+$kind: http-request
+description: Create a new organization. TenantId is automatically set from token.
+url: "{{hrmsBaseUrl}}/organizations/createOrganizationFull"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    // {
+    //   "orgName": "Code To Test",
+    //   "orgEmail": "org@codetotest.com",
+    //   "adminFirstName": "Deepesh",
+    //   "adminLastName": "Mehta",
+    //   "adminEmail": "deepesh72@codetotest.com",
+    //   "adminMobile": "9876543210",
+    //   "adminPassword": "5684",
+    //   "adminGender": "Male",
+    //   "adminDob": "1990-01-01",
+    //   "nationality": "Indian",
+    //   "maritalStatus": "Single"
+    // }
+
+
+    // [
+    //   {
+    //     "orgName": "Neural HR",
+    //     "orgEmail": "org@freight.com",
+    //     "adminFirstName": "Deepesh",
+    //     "adminLastName": "Mehta",
+    //     "adminEmail": "deepesh72@freight.com",
+    //     "adminMobile": "9876543210",
+    //     "adminPassword": "5684",
+    //     "adminGender": "Male",
+    //     "adminDob": "1990-01-01",
+    //     "nationality": "Indian",
+    //     "maritalStatus": "Single"
+    //   },
+    //   {
+    //     "orgName": "Falcon Realstate",
+    //     "orgEmail": "org@falconrealstate.com",
+    //     "adminFirstName": "Deepesh",
+    //     "adminLastName": "Mehta",
+    //     "adminEmail": "deepesh72@falconrealstate.com",
+    //     "adminMobile": "9876543210",
+    //     "adminPassword": "5684",
+    //     "adminGender": "Male",
+    //     "adminDob": "1990-01-01",
+    //     "nationality": "Indian",
+    //     "maritalStatus": "Single"
+    //   }
+    //   {
+    //     "orgName": "Little AI Master",
+    //     "orgEmail": "org@littleaimaster.com",
+    //     "adminFirstName": "Deepesh",
+    //     "adminLastName": "Mehta",
+    //     "adminEmail": "deepesh72@littleaimaster.com",
+    //     "adminMobile": "9876543210",
+    //     "adminPassword": "5684",
+    //     "adminGender": "Male",
+    //     "adminDob": "1990-01-01",
+    //     "nationality": "Indian",
+    //     "maritalStatus": "Single"
+    //   }
+    //   {
+    //     "orgName": "Local AI Master",
+    //     "orgEmail": "org@localaimaster.com",
+    //     "adminFirstName": "Deepesh",
+    //     "adminLastName": "Mehta",
+    //     "adminEmail": "deepesh72@localaimaster.com",
+    //     "adminMobile": "9876543210",
+    //     "adminPassword": "5684",
+    //     "adminGender": "Male",
+    //     "adminDob": "1990-01-01",
+    //     "nationality": "Indian",
+    //     "maritalStatus": "Single"
+    //   }
+    //   {
+    //     "orgName": "Code To Test",
+    //     "orgEmail": "org@codetotest.com",
+    //     "adminFirstName": "Deepesh",
+    //     "adminLastName": "Mehta",
+    //     "adminEmail": "deepesh72@codetotest.com",
+    //     "adminMobile": "9876543210",
+    //     "adminPassword": "5684",
+    //     "adminGender": "Male",
+    //     "adminDob": "1990-01-01",
+    //     "nationality": "Indian",
+    //     "maritalStatus": "Single"
+    //   },
+    //   {
+    //     "orgName": "Lyfe Hotels",
+    //     "orgEmail": "org@lyfehotels.com",
+    //     "adminFirstName": "Deepesh",
+    //     "adminLastName": "Mehta",
+    //     "adminEmail": "deepesh72@lyfehotels.com",
+    //     "adminMobile": "9876543210",
+    //     "adminPassword": "5684",
+    //     "adminGender": "Male",
+    //     "adminDob": "1990-01-01",
+    //     "nationality": "Indian",
+    //     "maritalStatus": "Single"
+    //   },
+    //   {
+    //     "orgName": "Fold Health",
+    //     "orgEmail": "org@foldhealth.com",
+    //     "adminFirstName": "Deepesh",
+    //     "adminLastName": "Mehta",
+    //     "adminEmail": "deepesh72@foldhealth.com",
+    //     "adminMobile": "9876543210",
+    //     "adminPassword": "5684",
+    //     "adminGender": "Male",
+    //     "adminDob": "1990-01-01",
+    //     "nationality": "Indian",
+    //     "maritalStatus": "Single"
+    //   }
+    //   {
+    //     "orgName": "GRM",
+    //     "orgEmail": "org@grm.com",
+    //     "adminFirstName": "Deepesh",
+    //     "adminLastName": "Mehta",
+    //     "adminEmail": "deepesh72@grm.com",
+    //     "adminMobile": "9876543210",
+    //     "adminPassword": "5684",
+    //     "adminGender": "Male",
+    //     "adminDob": "1990-01-01",
+    //     "nationality": "Indian",
+    //     "maritalStatus": "Single"
+    //   },
+    //   {
+    //     "orgName": "Globex",
+    //     "orgEmail": "org@globex.com",
+    //     "adminFirstName": "Deepesh",
+    //     "adminLastName": "Mehta",
+    //     "adminEmail": "deepesh72@globex.com",
+    //     "adminMobile": "9876543210",
+    //     "adminPassword": "5684",
+    //     "adminGender": "Male",
+    //     "adminDob": "1990-01-01",
+    //     "nationality": "Indian",
+    //     "maritalStatus": "Single"
+    //   },
+    //   {
+    //     "orgName": "Falcon Group",
+    //     "orgEmail": "org@falcon.com",
+    //     "adminFirstName": "Deepesh",
+    //     "adminLastName": "Mehta",
+    //     "adminEmail": "deepesh72@falcon.com",
+    //     "adminMobile": "9876543210",
+    //     "adminPassword": "5684",
+    //     "adminGender": "Male",
+    //     "adminDob": "1990-01-01",
+    //     "nationality": "Indian",
+    //     "maritalStatus": "Single"
+    //   }
+    // ]
+scripts:
+  - type: afterResponse
+    code: |-
+      if (pm.response.code === 200) {
+          const response = pm.response.json();
+          if (response.data && response.data.id) {
+              pm.environment.set('organizationId', response.data.id);
+              console.log('✅ New organization ID saved:', response.data.name);
+          }
+      }
+    language: text/javascript
+order: 4000

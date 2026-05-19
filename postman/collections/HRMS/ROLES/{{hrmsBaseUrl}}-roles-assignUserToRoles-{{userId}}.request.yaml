@@ -1,0 +1,24 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/roles/assignUserToRoles/{{userId}}"
+url: "{{hrmsBaseUrl}}/roles/assignUserToRoles/{{userId}}"
+method: POST
+queryParams:
+  - key: navigationBarData
+    value: "true"
+    disabled: true
+body:
+  type: json
+  content: "{\r
+
+    \    \"roles\": [\r
+
+    \        {\r
+
+    \            \"roleId\": 2\r
+
+    \        }\r
+
+    \    ]\r
+
+    }"
+order: 7000

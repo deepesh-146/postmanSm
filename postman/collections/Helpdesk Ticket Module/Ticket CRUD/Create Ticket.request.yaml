@@ -1,0 +1,18 @@
+$kind: http-request
+url: "{{baseUrl}}/ticket"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "employeeId": "{{employeeId}}",
+      "subject": "Laptop not turning on",
+      "description": "My laptop is not powering on since morning. Tried charging but no response.",
+      "category": "IT Support",
+      "subCategory": "Hardware Issue",
+      "attachments": ["https://s3.amazonaws.com/bucket/photo1.jpg"],
+      "priority": "HIGH"
+    }
+order: 1000

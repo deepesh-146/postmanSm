@@ -1,0 +1,20 @@
+$kind: http-request
+description: "HR adjusts a final score with mandatory reason. Creates audit log entry. Cannot calibrate finalized/acknowledged scores. calibratorRole: HR | ADMIN | DEPARTMENT_HEAD. newScore: 0-5."
+url: "{{baseUrl}}/scores/{{finalScoreId}}/calibrate"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+        "newScore": 4.2,
+        "reason": "Adjusted based on peer comparison and project impact assessment",
+        "calibratorRole": "HR",
+        "metadata": {
+            "originalRank": 5,
+            "newRank": 3,
+            "notes": "Cross-team normalization"
+        }
+    }
+order: 1000

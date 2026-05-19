@@ -1,0 +1,51 @@
+$kind: http-example
+name: "{{hrmsBaseUrl}}/dashboard/financedashboard/statutoryDeductions/{{userId}}"
+request:
+  url: "{{hrmsBaseUrl}}/dashboard/financedashboard/statutoryDeductions/{{userId}}"
+  method: GET
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "303"
+    ETag: W/"12f-lPFOpRD4w3SMMWuBfk6eERYVFg8"
+    Date: Thu, 12 Jun 2025 12:26:11 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "success": true,
+          "status": 200,
+          "data": {
+              "total": "160441.40",
+              "breakdown": [
+                  {
+                      "label": "Provident Fund (PF)",
+                      "value": "7108.33",
+                      "percentage": 4
+                  },
+                  {
+                      "label": "ESI",
+                      "value": "29625.00",
+                      "percentage": 18
+                  },
+                  {
+                      "label": "TDS",
+                      "value": "94166.40",
+                      "percentage": 59
+                  },
+                  {
+                      "label": "Professional Tax",
+                      "value": "29541.67",
+                      "percentage": 18
+                  }
+              ]
+          }
+      }
+order: 1000

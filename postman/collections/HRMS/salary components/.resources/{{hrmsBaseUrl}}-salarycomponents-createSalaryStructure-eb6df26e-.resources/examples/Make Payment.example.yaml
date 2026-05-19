@@ -1,0 +1,44 @@
+$kind: http-example
+request:
+  url: "{{hrmsBaseUrl}}/payment/makePayment"
+  method: POST
+  body:
+    type: json
+    content: "{\r
+
+      \    \"employeeId\": \"903bd690-61f3-43db-9edd-d38d531c1c67\",\r
+
+      \    \"paymentId\": \"29357926-9aa0-44a9-85ac-8923ff1c1b6f\",\r
+
+      \    \"transactionId\": \"TRAHS45456A\",\r
+
+      \    \"screenshot\": \"https://morth.nic.in/sites/default/files/dd12-13_0.pdf\",\r
+
+      \    \"note\": \"Sent\"\r
+
+      }"
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "82"
+    ETag: W/"52-DHhHVSbxvmh4uqgjpoeoA1J+nA8"
+    Date: Mon, 14 Oct 2024 18:50:16 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "status": {
+              "success": true,
+              "code": 200,
+              "message": "Payment Settled",
+              "failure": false
+          }
+      }
+order: 1000

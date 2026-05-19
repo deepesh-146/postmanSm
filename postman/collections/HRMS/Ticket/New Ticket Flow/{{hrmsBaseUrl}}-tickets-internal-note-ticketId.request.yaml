@@ -1,0 +1,7 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/tickets/internal-note/:ticketId"
+url: "{{hrmsBaseUrl}}/tickets/internal-note/:ticketId"
+method: GET
+pathVariables:
+  ticketId: 2b153b75-739f-4352-acde-7141c0abc4dd
+order: 8000

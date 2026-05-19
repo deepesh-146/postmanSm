@@ -1,0 +1,20 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/tickets?page=1&size=10"
+url: "{{hrmsBaseUrl}}/tickets?page=1&size=10"
+method: GET
+queryParams:
+  - key: search
+    value: ""
+    disabled: true
+    description: ticket number, category
+  - key: page
+    value: "1"
+  - key: size
+    value: "10"
+  - key: status
+    value: PENDING
+    disabled: true
+  - key: priority
+    value: HIGH
+    disabled: true
+order: 2000

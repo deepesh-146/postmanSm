@@ -1,0 +1,42 @@
+$kind: http-example
+request:
+  url: "{{hrmsBaseUrl}}/ad_group/owner-action"
+  method: PATCH
+  body:
+    type: json
+    content: "{\r
+
+      \    \"adRequestId\": \"19f96192-2cb6-4eda-84b8-8020e0a961d0\",\r
+
+      \    \"action\": true,\r
+
+      \    \"comments\": \"APPROVED\",\r
+
+      \    \"ownerId\": \"903bd690-61f3-43db-9edd-d38d531c1c67\"\r
+
+      }"
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "141"
+    ETag: W/"8d-VslgD/3wHmrkZriYcjMCU2mQoNk"
+    Date: Mon, 14 Oct 2024 17:49:30 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "status": {
+              "success": true,
+              "code": 200,
+              "message": "Ad Group Request Approved By Owner and Employee added to the Group Members",
+              "failure": false
+          }
+      }
+order: 1000

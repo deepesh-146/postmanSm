@@ -1,0 +1,5 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/resignation Copy"
+url: "{{hrmsBaseUrl}}/resignation/52920c8f-1b15-436d-bf2e-0986d069c871"
+method: GET
+order: 2000

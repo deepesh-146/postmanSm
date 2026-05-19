@@ -1,0 +1,48 @@
+$kind: http-example
+request:
+  url: "{{hrmsBaseUrl}}/referrals/"
+  method: GET
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "593"
+    ETag: W/"251-a5EqWVozjLM9hvNX56koMIwJpm8"
+    Date: Mon, 14 Oct 2024 18:52:29 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "status": {
+              "success": true,
+              "code": 200,
+              "message": "Referral List",
+              "failure": false
+          },
+          "data": [
+              {
+                  "id": "7d8e66bf-65b6-4ccc-a762-fa8c0fd0866e",
+                  "employeeId": "903bd690-61f3-43db-9edd-d38d531c1c67",
+                  "jobId": "cb5d4bf6-a1a3-42a5-8065-183796fd6c76",
+                  "name": "Mukesh",
+                  "email": "mukesh@gmail.com",
+                  "mobile": 857565858,
+                  "dateOfBirth": "1993-10-14",
+                  "resumeLink": "https://morth.nic.in/sites/default/files/dd12-13_0.pdf",
+                  "comment": "Excellent",
+                  "refDate": "2024-10-14T13:22:03.000Z",
+                  "refStatus": "SUBMITTED",
+                  "withdrawn": false,
+                  "withdrawnDate": null,
+                  "createdAt": "2024-10-14T18:52:03.000Z",
+                  "updatedAt": "2024-10-14T18:52:03.000Z"
+              }
+          ]
+      }
+order: 1000

@@ -1,0 +1,12 @@
+$kind: http-request
+url: "{{baseUrl}}/enrollments/{{enrollmentId}}/cancel"
+method: PATCH
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "reason": "Employee requested cancellation"
+    }
+order: 7000

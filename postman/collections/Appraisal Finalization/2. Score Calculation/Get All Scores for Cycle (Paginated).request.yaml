@@ -1,0 +1,24 @@
+$kind: http-request
+description: List all final scores for a cycle. Supports pagination, filtering by band/status/department, and search by employee name/code.
+url: "{{baseUrl}}/cycle/{{cycleId}}/scores?page=0&size=10"
+method: GET
+queryParams:
+  - key: page
+    value: "0"
+  - key: size
+    value: "10"
+  - key: bandId
+    value: ""
+    disabled: true
+  - key: status
+    value: ""
+    disabled: true
+    description: DRAFT | PENDING_REVIEW | CALIBRATED | FINALIZED | ACKNOWLEDGED
+  - key: search
+    value: ""
+    disabled: true
+    description: Search by employee name or code
+  - key: departmentId
+    value: ""
+    disabled: true
+order: 3000

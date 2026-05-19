@@ -1,0 +1,6 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/salarycomponents/getSingleAllowance/{{allowanceId}}"
+url: "{{hrmsBaseUrl}}/salarycomponents/getSingleAllowance/{{allowanceId}}"
+method: GET
+examples: ./.resources/{{hrmsBaseUrl}}-salarycomponents-getSingleAllowance-{{allowanceI.resources/examples
+order: 20000

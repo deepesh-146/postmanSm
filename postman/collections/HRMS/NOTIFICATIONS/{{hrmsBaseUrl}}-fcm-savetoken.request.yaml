@@ -1,0 +1,16 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/fcm/savetoken"
+url: "{{hrmsBaseUrl}}/fcm/savetoken"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"userId\": \"3bfa2da7-2932-4860-bf7c-30488eab49b6\",\r
+
+    \    \"token\": \"eLyI2HtDoeWnzRQO9sIezZ:APA91bFc1EZT4sw7JmmxfDlc4O45dAJJwboQGO1pzq8JJpwijGsNtdrF8tWJERMVJEPuxJ5I7KeTIEO5X8ubqVZu0k6r3WRNfv3XwgRJGoT2tda5QktuXPk\",\r
+
+    \    \"deviceType\": \"web\"\r
+
+    }"
+order: 1000

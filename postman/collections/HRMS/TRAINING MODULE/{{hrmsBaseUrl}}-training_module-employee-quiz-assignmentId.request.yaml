@@ -1,0 +1,8 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/training_module/employee/quiz/:assignmentId"
+url: "{{hrmsBaseUrl}}/training_module/employee/quiz/:assignmentId"
+method: GET
+pathVariables:
+  assignmentId: "4"
+examples: ./.resources/{{hrmsBaseUrl}}-training_module-employee-quiz-assignmentId.resources/examples
+order: 11000

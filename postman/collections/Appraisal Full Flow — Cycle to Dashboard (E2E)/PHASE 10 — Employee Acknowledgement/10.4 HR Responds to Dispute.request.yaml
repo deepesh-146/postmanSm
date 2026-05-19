@@ -1,0 +1,13 @@
+$kind: http-request
+description: HR responds to disputed acknowledgement.
+url: "{{baseUrl}}/appraisal-finalization/acknowledgements/{{ackId}}/respond"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+        "hrResponse": "Your dispute has been reviewed. After consulting with your manager and reviewing project deliverables, the score has been maintained. A one-on-one feedback session has been scheduled for next week."
+    }
+order: 4000

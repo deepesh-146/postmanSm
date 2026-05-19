@@ -1,0 +1,22 @@
+$kind: http-request
+description: Manager behaviour category. SKIPS manager, routes to HR. Sensitive + anonymous allowed.
+url: "{{base_url}}/grievances/categories"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+        "name": "Manager Behaviour",
+        "code": "MANAGER_BEHAVIOUR",
+        "description": "Issues with manager conduct, bias, unfair treatment",
+        "routeTo": "HR",
+        "skipManager": true,
+        "skipHr": false,
+        "isSensitive": true,
+        "allowAnonymous": true,
+        "defaultPriority": "HIGH",
+        "slaDays": 5
+    }
+order: 3000

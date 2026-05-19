@@ -1,0 +1,14 @@
+$kind: http-request
+description: "HR/Admin can change priority. Values: LOW, MEDIUM, HIGH, CRITICAL."
+url: "{{base_url}}/grievances/priority"
+method: PATCH
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+        "grievanceId": "{{grievanceId}}",
+        "priority": "CRITICAL"
+    }
+order: 11000

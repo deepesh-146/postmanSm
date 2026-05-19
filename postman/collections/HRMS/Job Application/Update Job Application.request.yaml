@@ -1,0 +1,30 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/job_application/:jobApplicationId"
+method: PUT
+pathVariables:
+  jobApplicationId: 4c4053a9-75c4-420d-b918-b71622a1ed16
+body:
+  type: json
+  content: "{\r
+
+    \    \"jobId\": \"cb5d4bf6-a1a3-42a5-8065-183796fd6c76\",\r
+
+    \    \"candidateId\": \"6979e151-2542-445c-88bd-fdc2248a8da3\",\r
+
+    \    \"resume\": \"path/resume.pdf\",\r
+
+    \    \"related\": \"Yes\",\r
+
+    \    \"currentJobTitle\": \"Tech Analyst\",\r
+
+    \    \"currentCompany\": \"Infosys\",\r
+
+    \    \"relevantExp\": \"5.5 years\",\r
+
+    \    \"recruiterId\": \"05109fb2-0f20-4c69-bbbf-f46203b01d54\",\r
+
+    \    \"notes\": \"Working in IT Industry\"\r
+
+    }"
+examples: ./.resources/Update Job Application.resources/examples
+order: 5000

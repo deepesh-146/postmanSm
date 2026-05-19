@@ -1,0 +1,55 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/employee_benefit/createBenefit"
+url: "{{hrmsBaseUrl}}/employee_benefit/createBenefit"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"name\": \"Health Insurance\",\r
+
+    \    \"code\": \"BEN001\",\r
+
+    \    \"description\": \"Company-provided health insurance for employees and their families.\",\r
+
+    \    \"applicableEmployeeTypes\": [\r
+
+    \        \"FULL_TIME\",\r
+
+    \        \"PART_TIME\"\r
+
+    \    ],\r
+
+    \    \"benefitCategory\":\"HEALT\", //category field\r
+
+    \    \"employmentGrade\": \"A1\",\r
+
+    \    \"eligibleAfterMonths\": 3,\r
+
+    \    \"valueType\": \"Fixed\",\r
+
+    \    \"amount\": 15000,\r
+
+    \    \"frequency\": \"Yearly\",\r
+
+    \    \"isTaxable\": false,\r
+
+    \    \"proofRequired\": true,\r
+
+    \    \"approvalType\": \"MANUAL\",\r
+
+    \    \"approvalFlow\": \"Manager→HR→Finance\",\r
+
+    \    \"visibleInPortal\": true,\r
+
+    \    \"isActive\": true,\r
+
+    \    \"visibleToEmployee\": true,\r
+
+    \    \"active\": true,\r
+
+    \    \"addedBy\": \"{{userId}}\"\r
+
+    }"
+examples: ./.resources/{{hrmsBaseUrl}}-employee_benefit-createBenefit.resources/examples
+order: 1000

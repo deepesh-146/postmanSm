@@ -1,0 +1,60 @@
+$kind: http-example
+request:
+  url: "{{hrmsBaseUrl}}/candidate/"
+  method: GET
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "781"
+    ETag: W/"30d-BC7XGGjzAY9HHTxRyYHoEXMCXGg"
+    Date: Wed, 09 Oct 2024 17:28:53 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "status": {
+              "success": true,
+              "code": 200,
+              "message": "Candidate List",
+              "failure": false
+          },
+          "data": [
+              {
+                  "id": "6979e151-2542-445c-88bd-fdc2248a8da3",
+                  "firstName": "Sanat",
+                  "lastName": "Kumar",
+                  "mobile": "9801345259",
+                  "email": "sanatmishra29@gmail.com",
+                  "address": "412, Sector 9",
+                  "gender": null,
+                  "dateOfBirth": null,
+                  "city": "Panchkula",
+                  "state": "Haryana",
+                  "country": "India",
+                  "password": "$2a$10$55Xtxi1DczSgfP25axh.ouu8QTjdZiQgypxES23D2amLin1cqQE8G",
+                  "education": "B.Tech CSE",
+                  "profession": "iCeipts",
+                  "skills": "JAVA, NODE, Flutter, PHP",
+                  "idcard": "Aadhar",
+                  "picture": "NA",
+                  "otp": null,
+                  "otpExpires": "2024-10-09T17:30:55.000Z",
+                  "isActive": true,
+                  "isVerified": true,
+                  "userType": "CANDIDATE",
+                  "mobileotp": "434126",
+                  "emailotp": "053017",
+                  "isDeleted": false,
+                  "createdAt": "2024-10-09T17:25:55.000Z",
+                  "updatedAt": "2024-10-09T17:28:44.000Z"
+              }
+          ]
+      }
+order: 1000

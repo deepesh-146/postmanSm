@@ -1,0 +1,6 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/incometax/getAllIncometax/eb6df26e-e0d3-4d10-8714-873fef6e213c"
+url: "{{hrmsBaseUrl}}/incometax/getAllIncometax/eb6df26e-e0d3-4d10-8714-873fef6e213c"
+method: GET
+examples: ./.resources/{{hrmsBaseUrl}}-incometax-getAllIncometax-eb6df26e-e0d3-4d10-871.resources/examples
+order: 3000

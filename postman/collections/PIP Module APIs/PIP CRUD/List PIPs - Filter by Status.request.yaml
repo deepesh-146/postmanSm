@@ -1,0 +1,8 @@
+$kind: http-request
+url: "{{baseUrl}}/pip?status=ACTIVE"
+method: GET
+queryParams:
+  - key: status
+    value: ACTIVE
+    description: DRAFT | PENDING_APPROVAL | ACTIVE | COMPLETED | FAILED | CANCELLED
+order: 5000

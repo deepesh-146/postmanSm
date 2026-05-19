@@ -1,0 +1,17 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/tickets/updateTicket/7f4d7798-11b1-4004-9a11-83a5886bbfdb"
+url: "{{hrmsBaseUrl}}/tickets/updateTicket/7f4d7798-11b1-4004-9a11-83a5886bbfdb"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"description\": \"Just a check Man\",\r
+
+    \    \"employeeId\": \"903bd690-61f3-43db-9edd-d38d531c1c67\",\r
+
+    \    \"ticketCatId\": \"dfd24da3-253f-4f83-ab1c-c6527e1de830\"\r
+
+    }"
+examples: ./.resources/{{hrmsBaseUrl}}-tickets-updateTicket-7f4d7798-11b1-4004-9a11-83a.resources/examples
+order: 4000

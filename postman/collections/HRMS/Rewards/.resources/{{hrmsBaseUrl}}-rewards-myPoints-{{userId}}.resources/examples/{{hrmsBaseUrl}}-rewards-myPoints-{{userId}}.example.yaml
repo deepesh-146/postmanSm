@@ -1,0 +1,31 @@
+$kind: http-example
+name: "{{hrmsBaseUrl}}/rewards/myPoints/{{userId}}"
+request:
+  url: "{{hrmsBaseUrl}}/rewards/myPoints/{{userId}}"
+  method: GET
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "146"
+    ETag: W/"92-vfCbvbh1nZZagzy9/ePJZcoFOjk"
+    Date: Mon, 14 Jul 2025 06:55:06 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "success": true,
+          "status": 200,
+          "message": "My points retrieved successfully",
+          "data": {
+              "id": "b05dfe95-a152-409e-b089-c230733fa410",
+              "totalPoints": 3850
+          }
+      }
+order: 1000

@@ -1,0 +1,21 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/job_application/applicationHistory/69db2600-d11d-4f90-a8d6-bb81647f9783"
+url: "{{hrmsBaseUrl}}/job_application/applicationHistory/8410cd7e-8289-47f5-b9b3-7e904ab6a94e"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"star\": 2,\r
+
+    \    \"date\": \"2025-02-20\",\r
+
+    \    \"notes\": \"Tech Analyst\",\r
+
+    \    \"status\": \"INTERVIEW\",\r
+
+    \    \"isWhatsapp\": true\r
+
+    }"
+examples: ./.resources/{{hrmsBaseUrl}}-job_application-applicationHistory-69db2600-d11d.resources/examples
+order: 3000

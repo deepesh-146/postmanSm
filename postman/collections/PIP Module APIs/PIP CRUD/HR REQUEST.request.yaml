@@ -1,0 +1,6 @@
+$kind: http-request
+url: "{{baseUrl}}/pip/hr-requests/:hrId"
+method: GET
+pathVariables:
+  hrId: "{{userId}}"
+order: 4000

@@ -1,0 +1,5 @@
+$kind: http-request
+description: Finalize ALL DRAFT/PENDING_REVIEW/CALIBRATED scores in a cycle. Sets status to FINALIZED, creates PENDING acknowledgements for each employee, and auto-locks the cycle.
+url: "{{baseUrl}}/cycle/{{cycleId}}/finalize"
+method: POST
+order: 1000

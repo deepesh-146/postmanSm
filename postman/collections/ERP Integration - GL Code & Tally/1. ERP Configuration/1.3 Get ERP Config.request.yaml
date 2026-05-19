@@ -1,0 +1,5 @@
+$kind: http-request
+description: Returns all ERP configurations for the current organization.
+url: "{{baseUrl}}/erp/config"
+method: GET
+order: 3000

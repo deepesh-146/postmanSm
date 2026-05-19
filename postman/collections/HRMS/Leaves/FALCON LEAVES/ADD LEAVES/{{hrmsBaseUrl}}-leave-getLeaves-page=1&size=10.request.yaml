@@ -1,0 +1,29 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/leave/getLeaves?page=1&size=10"
+url: "{{hrmsBaseUrl}}/leave/getLeaves?page=1&size=10"
+method: GET
+queryParams:
+  - key: search
+    value: CL
+    disabled: true
+  - key: page
+    value: "1"
+  - key: size
+    value: "10"
+  - key: orderBy
+    value: leave_Code:DESC
+    disabled: true
+body:
+  type: json
+  content: "{\r
+
+    \    \"type\": \"CASUAL_LEAVE\",\r
+
+    \    \"leave_Code\": \"CL\",\r
+
+    \    \"leave_Category\": \"PAID\",\r
+
+    \    \"leave_Description\": \"Casual Leave\"\r
+
+    }"
+order: 2000

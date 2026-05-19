@@ -1,0 +1,17 @@
+$kind: http-request
+description: "Generate LWF return grouped by state. Creates one challan per state. Note: LWF deduction happens only in applicable months (half-yearly/annual)."
+url: "{{hrmsBaseUrl}}/compliance/generate"
+method: POST
+headers:
+  Content-Type: application/json
+  Authorization: Bearer {{token}}
+body:
+  type: text
+  content: |-
+    {
+      "empPayrollId": "{{payrollId}}",
+      "reportType": "LWF_RETURN",
+      "challanMode": "MULTIPLE_CHALLAN",
+      "filters": {}
+    }
+order: 3000

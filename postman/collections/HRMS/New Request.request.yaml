@@ -1,0 +1,10 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/serversetup/bankUpload"
+method: GET
+body:
+  type: formdata
+  content:
+    - type: file
+      key: file
+      src: []
+order: 60000

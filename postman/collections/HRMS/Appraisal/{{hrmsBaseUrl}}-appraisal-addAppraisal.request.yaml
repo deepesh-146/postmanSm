@@ -1,0 +1,84 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/appraisal/addAppraisal"
+url: "{{hrmsBaseUrl}}/appraisal/addAppraisal"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"adminId\": \"{{userId}}\",\r
+
+    \    // \"departmentId\": \"074171f6-0427-4bb2-9085-36a4a66535e2\",\r
+
+    \    \"questions\": [\r
+
+    \        {\r
+
+    \            \"question\": \"How would you rate your performance this quarter?\",\r
+
+    \            \"category\": \"PERFORMANCE_RESULTS\",\r
+
+    \            \"questionType\": \"RATING\",\r
+
+    \            \"visibleTo\": \"BOTH\",\r
+
+    \            \"department\": {\r
+
+    \                \"type\": \"all\"\r
+
+    \            },\r
+
+    \            \"required\": true,\r
+
+    \            \"description\": \"Rate your overall performance for the current quarter\",\r
+
+    \            \"options\": [\r
+
+    \                {\r
+
+    \                    \"text\": \"Excellent\",\r
+
+    \                    \"rating\": 5\r
+
+    \                },\r
+
+    \                {\r
+
+    \                    \"text\": \"Good\",\r
+
+    \                    \"rating\": 4\r
+
+    \                },\r
+
+    \                {\r
+
+    \                    \"text\": \"Average\",\r
+
+    \                    \"rating\": 3\r
+
+    \                },\r
+
+    \                {\r
+
+    \                    \"text\": \"Below Average\",\r
+
+    \                    \"rating\": 2\r
+
+    \                },\r
+
+    \                {\r
+
+    \                    \"text\": \"Poor\",\r
+
+    \                    \"rating\": 1\r
+
+    \                }\r
+
+    \            ]\r
+
+    \        }\r
+
+    \    ]\r
+
+    }"
+order: 2000

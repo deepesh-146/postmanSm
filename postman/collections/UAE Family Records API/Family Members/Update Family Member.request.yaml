@@ -1,0 +1,14 @@
+$kind: http-request
+url: "{{base_url}}/api/family/members/1"
+method: PUT
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "visaExpiryDate": "2026-12-31",
+      "medicalInsuranceNumber": "MI345678902",
+      "educationStatus": "MIDDLE_SCHOOL"
+    }
+order: 3000

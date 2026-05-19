@@ -1,0 +1,14 @@
+$kind: http-request
+url: "{{baseUrl}}/ticket/assign"
+method: PATCH
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "employeeId": "ASSIGNEE_UUID_HERE",
+      "ticketId": "{{ticketId}}",
+      "comment": "Assigning to IT team lead for hardware inspection"
+    }
+order: 1000

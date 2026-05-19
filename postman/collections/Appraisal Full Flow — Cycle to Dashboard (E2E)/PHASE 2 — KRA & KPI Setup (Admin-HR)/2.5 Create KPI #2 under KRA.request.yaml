@@ -1,0 +1,30 @@
+$kind: http-request
+description: Create second KPI. kpiWeightage = 40% (total 60+40=100% under this KRA). Save returned id as kpiId2.
+url: "{{baseUrl}}/goals/addKpis/"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+        "title": "New Client Acquisition",
+        "kraId": "{{kraId}}",
+        "description": "Acquire 10 new clients",
+        "kpiWeightage": "40",
+        "targetValue": "10",
+        "uniteMeasurement": "Count",
+        "startDate": "2026-01-01",
+        "endDate": "2026-03-31",
+        "status": "PENDING"
+    }
+scripts:
+  - type: afterResponse
+    code: |-
+      var res = pm.response.json();
+      if (res.data && res.data.id) {
+          pm.collectionVariables.set('kpiId2', res.data.id);
+          console.log('kpiId2 set:', res.data.id);
+      }
+    language: text/javascript
+order: 5000

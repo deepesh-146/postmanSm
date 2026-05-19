@@ -1,0 +1,24 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/rewards/submitResponse/:surveyId/:employeeId"
+url: "{{hrmsBaseUrl}}/rewards/submitResponse/:surveyId/:employeeId"
+method: POST
+pathVariables:
+  surveyId: 11f44621-59de-4ed7-8d24-0dba5ea7937f
+  employeeId: "{{userId}}"
+body:
+  type: json
+  content: "{\r
+
+    \    \"responses\": [\r
+
+    \        { \"question\": \"How satisfied are you?\", \"answer\": \"5\" },\r
+
+    \        { \"question\": \"What can we improve?\", \"answer\": \"Communication.\" },\r
+
+    \        { \"question\": \"Choose the best activity?\", \"answer\": \"Workshop\" }\r
+
+    \    ]\r
+
+    }\r\n"
+examples: ./.resources/{{hrmsBaseUrl}}-rewards-submitResponse-surveyId-employeeId.resources/examples
+order: 22000

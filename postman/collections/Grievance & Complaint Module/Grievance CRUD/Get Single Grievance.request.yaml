@@ -1,0 +1,5 @@
+$kind: http-request
+description: Returns full grievance details including complainant info (masked if anonymous and viewer is not Admin/HR).
+url: "{{base_url}}/grievances/{{grievanceId}}"
+method: GET
+order: 10000

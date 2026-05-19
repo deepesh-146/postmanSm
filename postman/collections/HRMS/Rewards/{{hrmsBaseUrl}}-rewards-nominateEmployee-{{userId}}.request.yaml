@@ -1,0 +1,16 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/rewards/nominateEmployee/{{userId}}"
+url: "{{hrmsBaseUrl}}/rewards/nominateEmployee/{{userId}}"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"awardId\": \"8a687ab8-56c1-46b8-b297-fc8bcc170840\",\r
+
+    \  \"nominatedToId\": \"017bf1ca-77a0-4814-8eff-20a68aecf68a\",\r
+
+    \  \"remarks\": \"Outstanding team support\"\r
+
+    }\r\n"
+order: 34000

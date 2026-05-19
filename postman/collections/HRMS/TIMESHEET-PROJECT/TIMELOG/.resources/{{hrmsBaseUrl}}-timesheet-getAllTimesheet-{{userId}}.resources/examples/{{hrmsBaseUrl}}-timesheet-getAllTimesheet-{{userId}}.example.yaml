@@ -1,0 +1,179 @@
+$kind: http-example
+name: "{{hrmsBaseUrl}}/timesheet/getAllTimesheet/{{userId}}"
+request:
+  url: "{{hrmsBaseUrl}}/timesheet/getAllTimesheet/{{userId}}"
+  method: GET
+  queryParams:
+    - key: month
+      value: "3"
+      disabled: true
+    - key: status
+      value: SUBMITTED
+      disabled: true
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "4334"
+    ETag: W/"10ee-ILBJA5kyYrY/m/4XYLz5bLP1gZM"
+    Date: Wed, 04 Jun 2025 13:41:48 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "success": true,
+          "status": 200,
+          "data": {
+              "3d4590ee-de63-4027-97b0-30f57b4fa853": [
+                  {
+                      "timesheetId": "c09d2b9a-552f-4ccc-86f9-1b2818e3b68d",
+                      "status": "SUBMITTED",
+                      "timelogId": "858b8a7f-e8b8-4860-9488-9c435ad1051f",
+                      "date": "2025-05-26T00:00:00.000Z",
+                      "hoursWorked": 0.5,
+                      "description": "",
+                      "officeId": "8e2f4467-dff5-4717-932f-bcbc9431f5dc",
+                      "organizationId": "891bb2ae-588c-4518-953e-1e367e3a23df"
+                  },
+                  {
+                      "timesheetId": "c09d2b9a-552f-4ccc-86f9-1b2818e3b68d",
+                      "status": "SUBMITTED",
+                      "timelogId": "90455638-b176-405c-aec0-a09a01d05f61",
+                      "date": "2025-05-27T00:00:00.000Z",
+                      "hoursWorked": 2,
+                      "description": "",
+                      "officeId": "8e2f4467-dff5-4717-932f-bcbc9431f5dc",
+                      "organizationId": "891bb2ae-588c-4518-953e-1e367e3a23df"
+                  },
+                  {
+                      "timesheetId": "c09d2b9a-552f-4ccc-86f9-1b2818e3b68d",
+                      "status": "SUBMITTED",
+                      "timelogId": "14ec7941-609e-4cf8-9b28-0d6ed5b757b1",
+                      "date": "2025-05-28T00:00:00.000Z",
+                      "hoursWorked": 2,
+                      "description": "",
+                      "officeId": "8e2f4467-dff5-4717-932f-bcbc9431f5dc",
+                      "organizationId": "891bb2ae-588c-4518-953e-1e367e3a23df"
+                  },
+                  {
+                      "timesheetId": "c09d2b9a-552f-4ccc-86f9-1b2818e3b68d",
+                      "status": "SUBMITTED",
+                      "timelogId": "682bb1a6-c15e-4769-8ca6-df7a9e5f2cbc",
+                      "date": "2025-05-29T00:00:00.000Z",
+                      "hoursWorked": 1,
+                      "description": "",
+                      "officeId": "8e2f4467-dff5-4717-932f-bcbc9431f5dc",
+                      "organizationId": "891bb2ae-588c-4518-953e-1e367e3a23df"
+                  },
+                  {
+                      "timesheetId": "c09d2b9a-552f-4ccc-86f9-1b2818e3b68d",
+                      "status": "SUBMITTED",
+                      "timelogId": "b1d8b215-a8ee-4bc9-8053-201523205a40",
+                      "date": "2025-05-30T00:00:00.000Z",
+                      "hoursWorked": 3,
+                      "description": "",
+                      "officeId": "8e2f4467-dff5-4717-932f-bcbc9431f5dc",
+                      "organizationId": "891bb2ae-588c-4518-953e-1e367e3a23df"
+                  },
+                  {
+                      "timesheetId": "c09d2b9a-552f-4ccc-86f9-1b2818e3b68d",
+                      "status": "SUBMITTED",
+                      "timelogId": "387fe5d5-e802-450a-afaf-86421aa76e38",
+                      "date": "2025-05-31T00:00:00.000Z",
+                      "hoursWorked": 2,
+                      "description": "",
+                      "officeId": "8e2f4467-dff5-4717-932f-bcbc9431f5dc",
+                      "organizationId": "891bb2ae-588c-4518-953e-1e367e3a23df"
+                  },
+                  {
+                      "timesheetId": "c09d2b9a-552f-4ccc-86f9-1b2818e3b68d",
+                      "status": "SUBMITTED",
+                      "timelogId": "25760fb1-6bf5-4d67-a32f-524696f29f53",
+                      "date": "2025-06-01T00:00:00.000Z",
+                      "hoursWorked": 2.5,
+                      "description": "",
+                      "officeId": "8e2f4467-dff5-4717-932f-bcbc9431f5dc",
+                      "organizationId": "891bb2ae-588c-4518-953e-1e367e3a23df"
+                  }
+              ],
+              "190f6a56-c805-4ff8-a971-3c2d4add2dc4": [
+                  {
+                      "timesheetId": "c09d2b9a-552f-4ccc-86f9-1b2818e3b68d",
+                      "status": "SUBMITTED",
+                      "timelogId": "f123fa02-7933-4e75-b510-828afe35e20f",
+                      "date": "2025-05-26T00:00:00.000Z",
+                      "hoursWorked": 1.5,
+                      "description": "",
+                      "officeId": "8e2f4467-dff5-4717-932f-bcbc9431f5dc",
+                      "organizationId": "891bb2ae-588c-4518-953e-1e367e3a23df"
+                  },
+                  {
+                      "timesheetId": "c09d2b9a-552f-4ccc-86f9-1b2818e3b68d",
+                      "status": "SUBMITTED",
+                      "timelogId": "6c39109e-6d67-434c-b021-7ea274d03a18",
+                      "date": "2025-05-27T00:00:00.000Z",
+                      "hoursWorked": 3.5,
+                      "description": "",
+                      "officeId": "8e2f4467-dff5-4717-932f-bcbc9431f5dc",
+                      "organizationId": "891bb2ae-588c-4518-953e-1e367e3a23df"
+                  },
+                  {
+                      "timesheetId": "c09d2b9a-552f-4ccc-86f9-1b2818e3b68d",
+                      "status": "SUBMITTED",
+                      "timelogId": "2c7d4732-f79a-41ea-84c4-7a80fa3437d0",
+                      "date": "2025-05-28T00:00:00.000Z",
+                      "hoursWorked": 2.5,
+                      "description": "",
+                      "officeId": "8e2f4467-dff5-4717-932f-bcbc9431f5dc",
+                      "organizationId": "891bb2ae-588c-4518-953e-1e367e3a23df"
+                  },
+                  {
+                      "timesheetId": "c09d2b9a-552f-4ccc-86f9-1b2818e3b68d",
+                      "status": "SUBMITTED",
+                      "timelogId": "0f44c66d-6eaa-4c3f-b87c-6bd34a3dcd6f",
+                      "date": "2025-05-29T00:00:00.000Z",
+                      "hoursWorked": 3,
+                      "description": "",
+                      "officeId": "8e2f4467-dff5-4717-932f-bcbc9431f5dc",
+                      "organizationId": "891bb2ae-588c-4518-953e-1e367e3a23df"
+                  },
+                  {
+                      "timesheetId": "c09d2b9a-552f-4ccc-86f9-1b2818e3b68d",
+                      "status": "SUBMITTED",
+                      "timelogId": "1ca5dbec-f14b-436a-b6e2-afa594f8fa89",
+                      "date": "2025-05-30T00:00:00.000Z",
+                      "hoursWorked": 2.5,
+                      "description": "",
+                      "officeId": "8e2f4467-dff5-4717-932f-bcbc9431f5dc",
+                      "organizationId": "891bb2ae-588c-4518-953e-1e367e3a23df"
+                  },
+                  {
+                      "timesheetId": "c09d2b9a-552f-4ccc-86f9-1b2818e3b68d",
+                      "status": "SUBMITTED",
+                      "timelogId": "25a67089-6341-4df7-8c5a-0f505b588fec",
+                      "date": "2025-05-31T00:00:00.000Z",
+                      "hoursWorked": 2.5,
+                      "description": "",
+                      "officeId": "8e2f4467-dff5-4717-932f-bcbc9431f5dc",
+                      "organizationId": "891bb2ae-588c-4518-953e-1e367e3a23df"
+                  },
+                  {
+                      "timesheetId": "c09d2b9a-552f-4ccc-86f9-1b2818e3b68d",
+                      "status": "SUBMITTED",
+                      "timelogId": "cfebc8cf-617a-414f-ad6d-4a052caf4ce5",
+                      "date": "2025-06-01T00:00:00.000Z",
+                      "hoursWorked": 2,
+                      "description": "",
+                      "officeId": "8e2f4467-dff5-4717-932f-bcbc9431f5dc",
+                      "organizationId": "891bb2ae-588c-4518-953e-1e367e3a23df"
+                  }
+              ]
+          }
+      }
+order: 1000

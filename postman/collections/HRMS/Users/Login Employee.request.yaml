@@ -1,0 +1,92 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/employee/login"
+method: POST
+body:
+  type: json
+  content: "//SuperAdmin\r
+
+    {\r
+
+    \    \"clientId\": \"falcon\",\r
+
+    \    \"emailId\": \"inew@yopmail.com\",\r
+
+    \    \"password\": \"5684\",\r
+
+    \    \"ipAddress\": \"127.0.0.1\",\r
+
+    \    \"flag\": true\r
+
+    }\r
+
+    // {\r
+
+    //     \"password\": \"falcon@2025\",\r
+
+    //     \"emailId\": \"admin@falcon.com\",\r
+
+    //     \"ipAddress\": \"127.0.0.1\"\r
+
+    // }\r
+
+    // Manager\r
+
+    // {\r
+
+    //     \"emailId\": \"yakub@gyopmail.com\",\r
+
+    //     \"password\": \"SSSD\",\r
+
+    //     \"ipAddress\": \"127.0.0.1\",\r
+
+    //     \"flag\": true\r
+
+    // }\r
+
+    //EMPLOYEE\r
+
+    // {\r
+
+    //     \"clientId\": \"falcon\",\r
+
+    //     \"emailId\": \"allianceeditz21@yopmail.com\",\r
+
+    //     \"password\": \"5684\",\r
+
+    //     \"ipAddress\": \"127.0.0.1\",\r
+
+    //     \"flag\": true\r
+
+    // }"
+scripts:
+  - type: afterResponse
+    code: "let response = pm.response.json();\r
+
+      \r
+
+      if (response.status.success) {\r
+
+      \    let userId = response.data.loginData.employee.id;\r
+
+      \    let clientToken = response.data.accessToken;\r
+
+      \r
+
+      \    pm.environment.set(\"userId\", userId);\r
+
+      \    pm.environment.set(\"clientToken\", clientToken);\r
+
+      \r
+
+      \    console.log(\"User ID:\", userId);\r
+
+      \    console.log(\"Client Token:\", clientToken);\r
+
+      } else {\r
+
+      \    console.log(\"Request failed, status:\", response.status.message);\r
+
+      }\r\n"
+    language: text/javascript
+examples: ./.resources/Login Employee.resources/examples
+order: 3000

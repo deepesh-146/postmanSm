@@ -1,0 +1,36 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/job_offer/"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"appID\": \"274a7f81-1b10-4287-b9c8-f95ed6e301ec\",\r
+
+    \    \"pointOne\": \"The knowledge you had in the NodeJs platform was also good and we liked the code which you wrote for the assessment also explained that you can tackle any type of complex problems.\",\r
+
+    \    \"pointTwo\": \"Also, the knowlegde in the DBMS part whether its a Relational or Non-Relational you aced both of them.\",\r
+
+    \    \"position\": \"Mobile App Developer - Android\",\r
+
+    \    \"department\": \"IT\",\r
+
+    \    \"salary\": \"Rs. 20,00,000\",\r
+
+    \    \"week\": \"Monday\",\r
+
+    \    \"month\": \"October\",\r
+
+    \    \"date\": \"1st\",\r
+
+    \    \"time\": \"10:00 AM\",\r
+
+    \    \"letterFilePath\": \"https://morth.nic.in/sites/default/files/dd12-13_0.pdf\",\r
+
+    \    \"fileName\": \"dd12-13_0.pdf\",\r
+
+    \    \"joiningDate\": \"2024-10-01\"\r
+
+    }"
+examples: ./.resources/Create Job Offer.resources/examples
+order: 1000

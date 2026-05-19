@@ -1,0 +1,14 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/job/getAllSkills/eb6df26e-e0d3-4d10-8714-873fef6e213c"
+url: "{{hrmsBaseUrl}}/job/getAllSkills/{{userId}}?size=10&page=1"
+method: GET
+queryParams:
+  - key: size
+    value: "10"
+  - key: page
+    value: "1"
+  - key: search
+    value: PHP
+    disabled: true
+examples: ./.resources/{{hrmsBaseUrl}}-job-getAllSkills-eb6df26e-e0d3-4d10-8714-873fef6.resources/examples
+order: 20000

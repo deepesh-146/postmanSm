@@ -1,0 +1,14 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/assessments/candidate/submitAssessment"
+url: "{{hrmsBaseUrl}}/assessments/candidate/submitAssessment"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"submissionId\": \"08ac9878-b6ae-4da0-b8a4-9b27ee3a0b03\",\r
+
+    \    \"candidateId\": \"37968f2f-129f-4d05-9f9b-5f93f55bb2b6\"\r
+
+    }"
+order: 9000

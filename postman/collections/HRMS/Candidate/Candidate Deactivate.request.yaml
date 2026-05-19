@@ -1,0 +1,7 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/candidate/deactivate/:candidateId"
+method: PATCH
+pathVariables:
+  candidateId: 6979e151-2542-445c-88bd-fdc2248a8da3
+examples: ./.resources/Candidate Deactivate.resources/examples
+order: 5000

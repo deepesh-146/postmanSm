@@ -1,0 +1,6 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/onboarding_step/:stepId"
+method: DELETE
+pathVariables:
+  stepId: ""
+order: 5000

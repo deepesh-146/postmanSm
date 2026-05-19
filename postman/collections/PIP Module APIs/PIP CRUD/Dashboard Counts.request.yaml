@@ -1,0 +1,4 @@
+$kind: http-request
+url: "{{baseUrl}}/pip/dashboard/counts"
+method: GET
+order: 7000

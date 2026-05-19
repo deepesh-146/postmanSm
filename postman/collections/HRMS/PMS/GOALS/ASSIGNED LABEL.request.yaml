@@ -1,0 +1,13 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/goals/assignLabel"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"goalId\":75,\r
+
+    \    \"labelId\":1\r
+
+    }"
+order: 3000

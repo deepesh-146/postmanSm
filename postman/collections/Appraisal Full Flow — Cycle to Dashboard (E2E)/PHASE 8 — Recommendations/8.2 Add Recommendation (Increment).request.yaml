@@ -1,0 +1,14 @@
+$kind: http-request
+url: "{{baseUrl}}/appraisal-finalization/scores/{{finalScoreId}}/recommendations"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+        "type": "INCREMENT",
+        "details": "15% salary increment recommended for performance exceeding expectations",
+        "priority": "MEDIUM"
+    }
+order: 2000

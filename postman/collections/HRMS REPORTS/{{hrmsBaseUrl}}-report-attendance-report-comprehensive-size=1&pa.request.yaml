@@ -1,0 +1,8 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/report/attendance/report/comprehensive?size=1&page=1"
+url: "{{hrmsBaseUrl}}/report/attendance/report/comprehensive?size=1&page=1"
+method: GET
+queryParams:
+  size: "1"
+  page: "1"
+order: 4000

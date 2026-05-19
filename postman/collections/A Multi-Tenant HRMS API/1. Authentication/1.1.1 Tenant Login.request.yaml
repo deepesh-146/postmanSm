@@ -1,0 +1,107 @@
+$kind: http-request
+description: |-
+  Login as tenant admin. Returns list of organizations.
+
+  Default credentials:
+  - clientId: default
+  - password: Admin@123
+url: "{{hrmsBaseUrl}}/tenants/auth/tenant-login"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    // FALCON
+    // {
+    //   "email": "admin@lyfehotels.com",
+    //   "password": "5684",
+    //     "clientId": "lyfehotels.com"
+    //     // "password": "12345678"
+    // }
+    // {
+    //   "clientId": "saturn",
+    // "email": "admin@saturn.com",
+    // "password": "5684",
+    // }
+    // {
+    //     "email": "admin@odiware.com",
+    //     "password": "5684",
+    //     "clientId": "odiware"
+    // }
+    // // FALCON
+    // {
+    //   "email": "admin@codetotest.com",
+    //   "password": "5684",
+    //     "clientId": "codetotest"
+    //     // "password": "12345678"
+    // }
+    // [
+    //   {
+    //     "email": "admin@freight.com",
+    //     "password": "5684",
+    //     "clientId": "freight"
+    //   },
+    //   {
+    //     "email": "admin@falconrealstate.com",
+    //     "password": "5684",
+    //     "clientId": "falconrealstate.com"
+    //   }
+    //   {
+    //     "email": "admin@littleaimaster.com",
+    //     "password": "5684",
+    //     "clientId": "littleaimaster.com"
+    //   }
+    //   {
+    //     "email": "admin@localaimaster.com",
+    //     "password": "5684",
+    //     "clientId": "localaimaster.com"
+    //   }
+    //   {
+    //     "email": "admin@codetotest.com",
+    //     "password": "5684",
+    //     "clientId": "codetotest"
+    //   },
+    //   {
+    //     "email": "admin@lyfehotels.com",
+    //     "password": "5684",
+    //     "clientId": "lyfehotels.com"
+    //   }
+    //   {
+    //     "email": "admin@foldhealth.com",
+    //     "password": "5684",
+    //     "clientId": "foldhealth.com"
+    //   }
+    //   {
+    //     "email": "admin@grm.com",
+    //     "password": "5684",
+    //     "clientId": "grm.com"
+    //   }
+    //   {
+    //     "email": "admin@globx.com",
+    //     "password": "5684",
+    //     "clientId": "globx.com"
+    //   }
+      {
+        "email": "admin@falcon.com",
+        "password": "12345678",
+        "clientId": "falcon"
+      }
+    // ]
+scripts:
+  - type: afterResponse
+    code: |-
+      if (pm.response.code === 200) {
+          const response = pm.response.json();
+          if (response.data && response.data.accessToken) {
+             
+              pm.environment.set('tenantToken', response.data.accessToken);
+              console.log('✅ Tenant token saved');
+          }
+          if (response.data && response.data.organizations && response.data.organizations.length > 0) {
+              pm.environment.set('organizationId', response.data.organizations[0].id);
+              console.log('✅ First organization ID saved:', response.data.organizations[0].name);
+          }
+      }
+    language: text/javascript
+order: 4000

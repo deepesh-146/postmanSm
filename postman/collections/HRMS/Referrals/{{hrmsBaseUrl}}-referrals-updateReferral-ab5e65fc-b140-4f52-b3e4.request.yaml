@@ -1,0 +1,29 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/referrals/updateReferral/ab5e65fc-b140-4f52-b3e4-2482fc210545"
+url: "{{hrmsBaseUrl}}/referrals/updateReferral/ab5e65fc-b140-4f52-b3e4-2482fc210545"
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"firstName\": \"Riya\",\r
+
+    \    \"lastName\": \"Patel\",\r
+
+    \    \"email\": \"shiv990mines@yopmail.com\",\r
+
+    \    \"mobile\": \"9876543210\",\r
+
+    \    \"isRefreel\": true,\r
+
+    \    \"refreelByEmployeeName\": \"Riya Patel\",\r
+
+    \    \"resume\": \"This is resume\",\r
+
+    \    \"refreelByEmployeeId\": \"b4beed96-d0fd-451f-b763-22bb40bb9802\",\r
+
+    \    \"parentId\": \"bae24b0d-a05e-43b1-9b8c-f5b43d6942c8\"\r
+
+    }"
+examples: ./.resources/{{hrmsBaseUrl}}-referrals-updateReferral-ab5e65fc-b140-4f52-b3e4.resources/examples
+order: 14000

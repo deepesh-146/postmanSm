@@ -1,0 +1,18 @@
+$kind: http-request
+description: |-
+  Reject a promotion via the workflow engine.
+
+  Same endpoint as approve, with action: REJECTED.
+url: "{{base_url}}/workflow/approve/promotion_request"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "approvalId": "uuid-workflow-approval-id",
+      "action": "REJECTED",
+      "comments": "Insufficient justification. Please provide more details on the performance metrics."
+    }
+order: 3000

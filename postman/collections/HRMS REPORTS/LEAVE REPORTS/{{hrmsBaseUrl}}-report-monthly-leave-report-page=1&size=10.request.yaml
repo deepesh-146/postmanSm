@@ -1,0 +1,15 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/report/monthly-leave-report?page=1&size=10"
+url: "{{hrmsBaseUrl}}/report/monthly-leave-report?size=20&page=1&year=2025"
+method: GET
+queryParams:
+  - key: size
+    value: "20"
+  - key: page
+    value: "1"
+  - key: month
+    value: "11"
+    disabled: true
+  - key: year
+    value: "2025"
+order: 3000

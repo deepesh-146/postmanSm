@@ -1,0 +1,16 @@
+$kind: http-request
+description: Get bonuses available for adding to a payout cycle
+url: "{{base_url}}/api/bonus/payout-cycles/available-bonuses"
+method: GET
+headers:
+  Authorization: Bearer {{access_token}}
+queryParams:
+  - key: employeeId
+    value: "{{employee_id}}"
+    disabled: true
+    description: Filter by employee ID
+  - key: month
+    value: 2025-04
+    disabled: true
+    description: Filter by month (YYYY-MM format)
+order: 4000

@@ -1,0 +1,28 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/goals/addKpis/"
+url: "{{hrmsBaseUrl}}/goals/addKpis/"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"title\": \"Increase Sales\",\r
+
+    \    \"kpiWeightage\": \"90\",\r
+
+    \    \"uniteMeasurement\": \"22\",\r
+
+    \    \"targetValue\": \"In Progress\",\r
+
+    \    \"description\": \"THIS IS KRA KPI\",\r
+
+    \    \"startDate\": \"2025-09-01\",\r
+
+    \    \"endDate\": \"2025-09-10\",\r
+
+    \    \"kraId\": \"1\",\r
+
+    \    \"createdById\": \"{{userId}}\"\r
+
+    }"
+order: 1000

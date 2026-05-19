@@ -1,0 +1,13 @@
+$kind: http-request
+url: "{{baseUrl}}/ticket/priority"
+method: PATCH
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "ticketId": "{{ticketId}}",
+      "priority": "URGENT"
+    }
+order: 4000

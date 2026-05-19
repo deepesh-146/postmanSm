@@ -1,0 +1,39 @@
+$kind: http-example
+request:
+  url: "{{hrmsBaseUrl}}/jobUnit/detail/:jobUnitId"
+  method: GET
+  pathVariables:
+    jobUnitId: e71f8b2c-1c10-46f1-99a5-05c8bbfe4539
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "259"
+    ETag: W/"103-gqppXOfCtqVLDcIka7yOhgMV3WI"
+    Date: Wed, 09 Oct 2024 15:50:37 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "status": {
+              "success": true,
+              "code": 200,
+              "message": "Job Unit Data",
+              "failure": false
+          },
+          "data": {
+              "id": "e71f8b2c-1c10-46f1-99a5-05c8bbfe4539",
+              "name": "DX",
+              "unitHead": "ADMIN",
+              "code": "DX-6855",
+              "createdAt": "2024-10-09T15:49:22.000Z",
+              "updatedAt": "2024-10-09T15:50:11.000Z"
+          }
+      }
+order: 1000

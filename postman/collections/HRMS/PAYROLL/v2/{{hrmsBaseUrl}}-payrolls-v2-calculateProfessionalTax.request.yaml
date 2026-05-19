@@ -1,0 +1,18 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/payrolls/v2/calculateProfessionalTax"
+url: "{{hrmsBaseUrl}}/payrolls/v2/calculateProfessionalTax"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"state\": \"maharashtra\",\r
+
+    \    \"monthlySalary\": 25000,\r
+
+    \    \"gender\": \"female\",\r
+
+    \    \"financialYear\": \"2025-26\"\r
+
+    }"
+order: 4000

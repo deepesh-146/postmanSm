@@ -1,0 +1,20 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/training_module/employee/material/complete"
+url: "{{hrmsBaseUrl}}/training_module/employee/material/complete"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"assignmentId\": 4,\r
+
+    \    \"progressData\": {\r
+
+    \        \"materialsCompleted\": 6,\r
+
+    \        \"isCompleted\": true\r
+
+    \    }\r
+
+    }"
+order: 9000

@@ -1,0 +1,6 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/job_application/getAllJobApplicationCount"
+url: "{{hrmsBaseUrl}}/job_application/getAllJobApplicationCount"
+method: GET
+examples: ./.resources/{{hrmsBaseUrl}}-job_application-getAllJobApplicationCount.resources/examples
+order: 7000

@@ -1,0 +1,6 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/dashboard/payrolldashboard/payrollSummary/{{userId}}"
+url: "{{hrmsBaseUrl}}/dashboard/payrolldashboard/payrollSummary/{{userId}}"
+method: GET
+examples: ./.resources/{{hrmsBaseUrl}}-dashboard-payrolldashboard-payrollSummary-{{user.resources/examples
+order: 20000

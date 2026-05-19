@@ -1,0 +1,8 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/rewards/admin/rewardNeedToResolve/{{managerId}}"
+url: "{{hrmsBaseUrl}}/rewards/admin/rewardNeedToResolve/add34dfb-06ee-4bd4-ae15-2d0f921e6909?status=PENDING"
+method: GET
+queryParams:
+  status: PENDING
+examples: ./.resources/{{hrmsBaseUrl}}-rewards-admin-rewardNeedToResolve-{{managerId}}.resources/examples
+order: 31000

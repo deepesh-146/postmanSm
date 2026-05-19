@@ -1,0 +1,5 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/goals/getGoalById/1"
+url: "{{hrmsBaseUrl}}/goals/getGoalById/1"
+method: GET
+order: 6000

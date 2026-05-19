@@ -1,0 +1,105 @@
+$kind: http-example
+request:
+  url: "{{hrmsBaseUrl}}/employee/educationUpdate"
+  method: PUT
+  body:
+    type: json
+    content: "{\r
+
+      \    \"onboardingId\": \"f778b358-2db2-4561-9c0b-dc1eda013258\",\r
+
+      \    \"employeeId\": \"f406f8fd-6b92-4e88-9dbe-5985f248cdb4\",\r
+
+      \    \"educationData\": [\r
+
+      \        {\r
+
+      \            \"id\": \"25b85377-5368-41c1-8525-b4da5dec30c8\",\r
+
+      \            \"clgName\": \"RPSIT\",\r
+
+      \            \"univName\": \"Magadh\",\r
+
+      \            \"clgLocation\": \"Patna\",\r
+
+      \            \"specialization\": \"Computer Engineering\",\r
+
+      \            \"degName\": \"B.Tech\",\r
+
+      \            \"courseName\": \"Graduation\",\r
+
+      \            \"startDate\": \"2016-02-02\",\r
+
+      \            \"endDate\": \"2019-02-02\",\r
+
+      \            \"officialEmail\": \"info@rpsit.org.in\",\r
+
+      \            \"officialMobile\": \"88888888888\",\r
+
+      \            \"currPursuing\": \"NO\",\r
+
+      \            \"marksheetFilePath\": \"https://morth.nic.in/sites/default/files/dd12-13_0.pdf\",\r
+
+      \            \"certFilePath\": \"https://morth.nic.in/sites/default/files/dd12-13_0.pdf\"\r
+
+      \        }\r
+
+      \    ]\r
+
+      }"
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "993"
+    ETag: W/"3e1-CkKYo0dez05lGzWPKmYXI11pFW8"
+    Date: Fri, 11 Oct 2024 09:01:21 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "status": {
+              "success": true,
+              "code": 200,
+              "message": "Educational Data Updated",
+              "failure": false
+          },
+          "data": [
+              {
+                  "id": "25b85377-5368-41c1-8525-b4da5dec30c8",
+                  "employeeId": "f406f8fd-6b92-4e88-9dbe-5985f248cdb4",
+                  "onboardingId": "f778b358-2db2-4561-9c0b-dc1eda013258",
+                  "collegeName": "RPSIT",
+                  "universityName": "Magadh",
+                  "collegeLocation": "Patna",
+                  "specialization": "Computer Engineering",
+                  "degreeName": "B.Tech",
+                  "courseName": "Graduation",
+                  "startDate": "2016-02-02T00:00:00.000Z",
+                  "endDate": "2019-02-02T00:00:00.000Z",
+                  "collegeOfficialEmail": "info@rpsit.org.in",
+                  "collegeOfficialMobile": "88888888888",
+                  "currentlyPursuing": false,
+                  "marksheetPath": "https://morth.nic.in/sites/default/files/dd12-13_0.pdf",
+                  "certificatePath": "https://morth.nic.in/sites/default/files/dd12-13_0.pdf",
+                  "sourceVerRej": null,
+                  "approved": false,
+                  "approvedDate": null,
+                  "approvedById": null,
+                  "rejected": false,
+                  "rejectedDate": null,
+                  "rejectById": null,
+                  "comments": null,
+                  "createdAt": "2024-10-11T09:00:43.000Z",
+                  "updatedAt": "2024-10-11T09:01:21.000Z",
+                  "employeeMainId": null
+              }
+          ]
+      }
+order: 1000

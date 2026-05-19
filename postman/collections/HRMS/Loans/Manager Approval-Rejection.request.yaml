@@ -1,0 +1,18 @@
+$kind: http-request
+name: Manager Approval/Rejection
+url: "{{hrmsBaseUrl}}/employee_loan/managerApproval/c0874a1e-a732-4f12-a95a-087c2e5bcf39"
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"managerId\": \"{{userId}}\",\r
+
+    \    \"status\": \"Approved\", // or \"Rejected\"\r
+
+    \    \"comments\": \"Optional comments from manager\",\r
+
+    \    \"approvedAmount\": 250\r
+
+    }"
+order: 9000

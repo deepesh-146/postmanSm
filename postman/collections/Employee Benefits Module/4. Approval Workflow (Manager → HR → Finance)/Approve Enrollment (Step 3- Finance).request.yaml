@@ -1,0 +1,15 @@
+$kind: http-request
+name: "Approve Enrollment (Step 3: Finance)"
+description: Finance approves step 3 (final). Enrollment status becomes ACTIVE.
+url: "{{baseUrl}}/approvals/{{enrollmentId}}"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "action": "APPROVED",
+      "comment": "Budget confirmed. Final approval granted."
+    }
+order: 5000

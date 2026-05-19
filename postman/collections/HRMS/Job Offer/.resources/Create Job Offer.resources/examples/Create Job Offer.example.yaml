@@ -1,0 +1,60 @@
+$kind: http-example
+request:
+  url: "{{hrmsBaseUrl}}/job_offer/"
+  method: POST
+  body:
+    type: json
+    content: "{\r
+
+      \    \"appID\": \"4c4053a9-75c4-420d-b918-b71622a1ed16\",\r
+
+      \    \"pointOne\": \"The knowledge you had in the NodeJs platform was also good and we liked the code which you wrote for the assessment also explained that you can tackle any type of complex problems.\",\r
+
+      \    \"pointTwo\": \"Also, the knowlegde in the DBMS part whether its a Relational or Non-Relational you aced both of them.\",\r
+
+      \    \"position\": \"Mobile App Developer - Android\",\r
+
+      \    \"department\": \"IT\",\r
+
+      \    \"salary\": \"Rs. 20,00,000\",\r
+
+      \    \"week\": \"Monday\",\r
+
+      \    \"month\": \"October\",\r
+
+      \    \"date\": \"1st\",\r
+
+      \    \"time\": \"10:00 AM\",\r
+
+      \    \"letterFilePath\": \"https://morth.nic.in/sites/default/files/dd12-13_0.pdf\",\r
+
+      \    \"fileName\": \"dd12-13_0.pdf\",\r
+
+      \    \"joiningDate\": \"2024-10-01\"\r
+
+      }"
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "85"
+    ETag: W/"55-V1/P8b+lRPAj+gAFDyGvbGz96YY"
+    Date: Wed, 09 Oct 2024 17:57:28 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "status": {
+              "success": true,
+              "code": 200,
+              "message": "Offer Letter Sent!",
+              "failure": false
+          }
+      }
+order: 1000

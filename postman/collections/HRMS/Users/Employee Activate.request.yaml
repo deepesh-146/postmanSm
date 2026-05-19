@@ -1,0 +1,18 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/employee/activate"
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"employeeId\": \"903bd690-61f3-43db-9edd-d38d531c1c67\",\r
+
+    \    \"personalMail\": \"sanatmishra29@gmail.com\",\r
+
+    \    \"tempPass\": \"]F9A|~rz`:mxgLP\",\r
+
+    \    \"newPassword\": \"Admin@321\"     \r
+
+    }"
+examples: ./.resources/Employee Activate.resources/examples
+order: 19000

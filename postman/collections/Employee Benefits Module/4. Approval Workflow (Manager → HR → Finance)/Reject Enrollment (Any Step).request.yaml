@@ -1,0 +1,14 @@
+$kind: http-request
+description: Rejection at any step marks enrollment as REJECTED and skips remaining steps.
+url: "{{baseUrl}}/approvals/{{enrollmentId}}"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "action": "REJECTED",
+      "comment": "Budget not available for this quarter"
+    }
+order: 6000

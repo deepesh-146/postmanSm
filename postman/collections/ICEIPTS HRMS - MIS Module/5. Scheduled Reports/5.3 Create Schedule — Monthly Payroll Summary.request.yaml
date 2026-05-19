@@ -1,0 +1,26 @@
+$kind: http-request
+description: Schedule a monthly payroll summary to finance and HR head.
+url: "{{baseUrl}}/mis/schedules"
+method: POST
+headers:
+  Content-Type: application/json
+  x-organization-id: "{{organizationId}}"
+body:
+  type: text
+  content: |-
+    {
+      "reportName": "Monthly Payroll Summary",
+      "reportType": "PAYROLL_SUMMARY",
+      "frequency": "MONTHLY",
+      "recipients": [
+        {
+          "email": "finance@company.com"
+        },
+        {
+          "email": "hr-head@company.com"
+        }
+      ],
+      "filters": {},
+      "exportFormat": "PDF"
+    }
+order: 3000

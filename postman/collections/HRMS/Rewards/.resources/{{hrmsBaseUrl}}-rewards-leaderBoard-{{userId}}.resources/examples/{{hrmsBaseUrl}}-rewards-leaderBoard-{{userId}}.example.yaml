@@ -1,0 +1,47 @@
+$kind: http-example
+name: "{{hrmsBaseUrl}}/rewards/leaderBoard/{{userId}}"
+request:
+  url: "{{hrmsBaseUrl}}/rewards/leaderBoard/{{userId}}"
+  method: GET
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "420"
+    ETag: W/"1a4-RFU5eBJEY2yPaQ32USFF5LZrAuY"
+    Date: Fri, 20 Dec 2024 12:13:33 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "success": true,
+          "status": 200,
+          "message": "Leader board retrieved successfully",
+          "data": [
+              {
+                  "id": "2064399f-91c7-4903-b6d0-ae219f56c621",
+                  "totalPoints": 1000,
+                  "employee_main": {
+                      "id": "001c08f3-7f5a-40bc-bed5-54bb3c62539d",
+                      "firstName": "adsasd",
+                      "lastName": "khaeq"
+                  }
+              },
+              {
+                  "id": "2064399f-91c7-4903-b6d0-ae219f56c626",
+                  "totalPoints": 600,
+                  "employee_main": {
+                      "id": "9b048ebe-ea22-4097-8a55-cf8dbef55bc4",
+                      "firstName": "Deepesh",
+                      "lastName": "Mehta"
+                  }
+              }
+          ]
+      }
+order: 1000

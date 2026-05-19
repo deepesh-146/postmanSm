@@ -1,0 +1,8 @@
+$kind: http-request
+name: overtimeConfig
+url: "{{hrmsBaseUrl}}/attendance/overtimeConfig?level=OFFICE&levelId=uuid"
+method: GET
+queryParams:
+  level: OFFICE
+  levelId: uuid
+order: 7000

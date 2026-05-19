@@ -1,0 +1,6 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/rewards/deleteShift/bb610858-57bb-49b1-97dc-ba19be332da0"
+url: "{{hrmsBaseUrl}}/rewards/deleteShift/bb610858-57bb-49b1-97dc-ba19be332da0"
+method: DELETE
+examples: ./.resources/{{hrmsBaseUrl}}-rewards-deleteShift-bb610858-57bb-49b1-97dc-ba19.resources/examples
+order: 6000

@@ -1,0 +1,12 @@
+$kind: http-request
+url: "{{baseUrl}}/claims/{{claimId}}/reimburse"
+method: PATCH
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "reimbursementReference": "TXN-2026-03-1234"
+    }
+order: 7000

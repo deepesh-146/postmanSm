@@ -1,0 +1,16 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/payrolls/updatePayrollAllowance/c4fb75f2-b519-4e04-8edf-8b7800271650"
+url: "{{hrmsBaseUrl}}/payrolls/updatePayrollAllowance/c4fb75f2-b519-4e04-8edf-8b7800271650"
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"allowanceName\": \"Hello\",\r
+
+    \    \"allowanceDescription\": \"NA\",\r
+
+    \    \"amount\": 24\r
+
+    }"
+order: 17000

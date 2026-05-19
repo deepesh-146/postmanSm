@@ -1,0 +1,14 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/holidays/getAllEvents/{{userId}}"
+url: "{{hrmsBaseUrl}}/holidays/getAllEvents/{{userId}}?size=10&page=1"
+method: GET
+queryParams:
+  - key: size
+    value: "10"
+  - key: page
+    value: "1"
+  - key: search
+    value: Labor Day
+    disabled: true
+examples: ./.resources/{{hrmsBaseUrl}}-holidays-getAllEvents-{{userId}}.resources/examples
+order: 6000

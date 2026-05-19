@@ -1,0 +1,16 @@
+$kind: http-request
+description: |-
+  Pushes all active GL accounts (Chart of Accounts) to Tally as Ledger Masters.
+
+  This should be done BEFORE pushing journal entries, so that Tally recognizes the ledger names.
+
+  Maps account types:
+  - Asset → Current Assets
+  - Liability → Current Liabilities
+  - Expense → Direct Expenses
+  - Income → Direct Incomes
+  - Bank → Bank Accounts
+  - Cash → Cash-in-Hand
+url: "{{baseUrl}}/erp/sync-ledger-masters"
+method: POST
+order: 1000

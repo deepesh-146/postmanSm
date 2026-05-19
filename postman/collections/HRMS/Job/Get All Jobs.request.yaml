@@ -1,0 +1,33 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/job/getJobList?size=3&page=1&validTill=2025-10-14"
+method: GET
+queryParams:
+  - key: size
+    value: "3"
+  - key: page
+    value: "1"
+  - key: search
+    value: pp
+    disabled: true
+  - key: location
+    value: mumbai
+    disabled: true
+  - key: jobType
+    value: Part
+    disabled: true
+  - key: sort
+    value: desc
+    disabled: true
+  - key: minSalary
+    value: "200000"
+    disabled: true
+  - key: maxSalary
+    value: "250000"
+    disabled: true
+  - key: validTill
+    value: 2025-10-14
+  - key: inactiveJobs
+    value: 2025-10-14
+    disabled: true
+examples: ./.resources/Get All Jobs.resources/examples
+order: 9000

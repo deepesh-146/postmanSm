@@ -1,0 +1,37 @@
+$kind: http-example
+name: "{{hrmsBaseUrl}}/employee/convertToEmployee/d2fcf4e0-7eee-441e-a917-626ae3691a93 Copy"
+request:
+  url: "{{hrmsBaseUrl}}/employee/probationActionList/{{userId}}"
+  method: GET
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "269"
+    ETag: W/"10d-ml1N3isAeb7aklTKdocQwlW5/VI"
+    Date: Fri, 03 Jan 2025 07:36:13 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "success": true,
+          "status": 200,
+          "data": [
+              {
+                  "id": "001c08f3-7f5a-40bc-bed5-54bb3c62539d",
+                  "firstName": "adsasd",
+                  "lastName": "khaeq",
+                  "officialMail": "amey2@yopmail.com",
+                  "officialMobileNumber": "8585956858",
+                  "probationEndDate": "2025-01-03T08:42:21.000Z",
+                  "probationAction": "PENDING"
+              }
+          ]
+      }
+order: 1000

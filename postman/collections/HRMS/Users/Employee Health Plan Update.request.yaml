@@ -1,0 +1,22 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/employee/updateHealthPlan/:employeeId"
+method: PUT
+pathVariables:
+  employeeId: 903bd690-61f3-43db-9edd-d38d531c1c67
+body:
+  type: json
+  content: "{\r
+
+    \    \"planName\": \"Gold Plan\",\r
+
+    \    \"planAmount\": \"7500000\",\r
+
+    \    \"planUseAmount\": \"0\",\r
+
+    \    \"expDate\": \"2025-10-01T00:00:00.000Z\",\r
+
+    \    \"startDate\": \"2024-10-01T00:00:00.000Z\"   \r
+
+    }"
+examples: ./.resources/Employee Health Plan Update.resources/examples
+order: 25000

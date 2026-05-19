@@ -1,0 +1,7 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/employee/dashboard/adminattendanceoverview/{{userId}}?year=2025"
+url: "{{hrmsBaseUrl}}/employee/dashboard/adminattendanceoverview/{{userId}}?year=2025"
+method: GET
+queryParams:
+  year: "2025"
+order: 3000

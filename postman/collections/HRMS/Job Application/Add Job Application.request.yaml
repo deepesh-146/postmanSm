@@ -1,0 +1,28 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/job_application/"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"jobId\": \"3b5e186a-4be1-4ad6-9c02-665206772767\",\r
+
+    \    \"candidateId\": \"eb75ff06-c916-484f-bcdf-8fb71f5a701c\",\r
+
+    \    \"resume\": \"path/resume.pdf\",\r
+
+    \    \"related\": \"Yes\",\r
+
+    \    \"currentJobTitle\": \"Tech Analyst\",\r
+
+    \    \"currentCompany\": \"Infosys\",\r
+
+    \    \"relevantExp\": \"5.5 years\",\r
+
+    \    \"recruiterId\": \"asdhoiaushdioas\",\r
+
+    \    \"notes\": \"Working in IT Industry\"\r
+
+    }"
+examples: ./.resources/Add Job Application.resources/examples
+order: 2000

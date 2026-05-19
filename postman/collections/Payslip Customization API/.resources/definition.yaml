@@ -1,0 +1,5 @@
+$kind: collection
+description: API collection for Payslip Customization - Manage which components are visible on payslips
+variables:
+  base_url: http://localhost:3000
+  access_token: ""

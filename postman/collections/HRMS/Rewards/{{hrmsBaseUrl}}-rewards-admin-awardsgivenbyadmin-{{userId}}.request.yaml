@@ -1,0 +1,6 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/rewards/admin/awardsgivenbyadmin/{{userId}}"
+url: "{{hrmsBaseUrl}}/rewards/admin/awardsgivenbyadmin/{{userId}}"
+method: GET
+examples: ./.resources/{{hrmsBaseUrl}}-rewards-admin-awardsgivenbyadmin-{{userId}}.resources/examples
+order: 27000

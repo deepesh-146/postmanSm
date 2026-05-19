@@ -1,0 +1,14 @@
+$kind: http-request
+url: "{{base_url}}/family/records"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+        "employeeId": "{{userId}}",
+        "recordType": "STANDARD",
+        "notes": "Initial family record setup for UAE visa processing"
+    }
+order: 1000

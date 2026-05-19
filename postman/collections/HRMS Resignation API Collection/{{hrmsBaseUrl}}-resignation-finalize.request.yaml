@@ -1,0 +1,19 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/resignation/finalize"
+url: "{{hrmsBaseUrl}}/resignation/finalize"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+        "resignationId": "efef7815-6417-4bd8-a674-e6927f55d77e",
+        "employeeMainId": "{{userId}}",
+        "clearance_type": "ADMIN",
+        "status": "APPROVED",
+        "letter1": "https://example.com/experience-letter.pdf",
+        "letter2": "https://example.com/relieving-letter.pdf",
+        "exit": true
+    }
+order: 6000

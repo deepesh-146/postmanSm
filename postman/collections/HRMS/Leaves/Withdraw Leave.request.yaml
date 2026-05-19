@@ -1,0 +1,16 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/leave/withdraw"
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"employeeId\": \"903bd690-61f3-43db-9edd-d38d531c1c67\",\r
+
+    \    \"comments\": \"By mistake\",\r
+
+    \    \"leaveRequestId\": \"ca7b7c57-2e40-4e7d-bd4e-4d836d39811b\"\r
+
+    }"
+examples: ./.resources/Withdraw Leave.resources/examples
+order: 4000

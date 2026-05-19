@@ -1,0 +1,18 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/resignation/approveResignation"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+        "resignationId": "{{resignationId}}",
+        "approvedBy": "9e32f60e-2228-4fc5-9af4-3ca50cfac4d1",
+        // "hrApprovedDate":"",
+        // "managerApprovedDate":"",
+        // "rejectedBy": "8f950586-d7d9-469b-947b-86141f0b302d",
+        "approverRole": "HR",
+        "status": "HR_APPROVED"
+    }
+order: 3000

@@ -1,0 +1,12 @@
+$kind: http-request
+url: "{{baseUrl}}/enrollment-periods/{{periodId}}"
+method: PUT
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "status": "CLOSED"
+    }
+order: 2000

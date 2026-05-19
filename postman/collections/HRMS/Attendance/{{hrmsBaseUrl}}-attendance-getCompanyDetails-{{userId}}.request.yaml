@@ -1,0 +1,20 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/attendance/getCompanyDetails/{{userId}}"
+url: "{{hrmsBaseUrl}}/attendance/getCompanyDetails/{{userId}}"
+method: GET
+body:
+  type: json
+  content: "{\r
+
+    \    \"gracePeriodMinutes\": 10,\r
+
+    \    \"earlyArrivalMinutes\": 15,\r
+
+    \    \"autoCheckout\": true,\r
+
+    \    \"markMissingCheckout\": true,\r
+
+    \    \"correctionWindowDays\": 3\r
+
+    }"
+order: 28000

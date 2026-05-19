@@ -1,0 +1,32 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/training_module/groups/add"
+url: "{{hrmsBaseUrl}}/training_module/groups/add"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"groupName\": \"Backend Team\",\r
+
+    \    \"groupType\": \"TRAINING_GROUP\",\r
+
+    \    \"groupCode\": \"BT-001\",\r
+
+    \    \"createdById\": \"{{userId}}\",\r
+
+    \    \"createdDate\": \"2026-01-12T10:00:00Z\",\r
+
+    \    \"status\": \"ACTIVE\",\r
+
+    \    \"groupDescription\": \"Group for backend developers training\",\r
+
+    \    \"employeeIds\": [\r
+
+    \        // \"0c5b5932-a5df-4aea-a782-0bd76a246bbb\",\r
+
+    \        // \"07a37b94-58b2-498d-a1ac-b9d63a8649f8\"\r
+
+    \    ]\r
+
+    }"
+order: 1000

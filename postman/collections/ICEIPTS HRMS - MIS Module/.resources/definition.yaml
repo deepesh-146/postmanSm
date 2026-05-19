@@ -1,0 +1,15 @@
+$kind: collection
+description: Management Information System (MIS) APIs for HRMS analytics, dashboards, custom reports, and scheduled reporting.
+variables:
+  baseUrl: http://localhost:3000
+  organizationId: YOUR_ORG_UUID_HERE
+  departmentId: YOUR_DEPT_UUID_HERE
+  officeId: YOUR_OFFICE_UUID_HERE
+  scheduleId: SCHEDULE_UUID_HERE
+  savedReportId: SAVED_REPORT_UUID_HERE
+auth:
+  - id: d127c3f2-cb39-4a30-986f-02059bb96c77
+    type: bearer
+    name: bearer auth
+    credentials:
+      token: "{{clientToken}}"

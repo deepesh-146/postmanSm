@@ -1,0 +1,7 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/appraisal/active-appraisal-questions"
+url: "{{hrmsBaseUrl}}/appraisal/active-appraisal-questions"
+method: GET
+headers:
+  Content-Type: application/json
+order: 16000

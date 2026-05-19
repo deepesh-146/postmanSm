@@ -1,0 +1,14 @@
+$kind: http-request
+description: Get appraisal questions. Auto-creates defaults if none exist. Note the questionId.
+url: "{{baseUrl}}/appraisal/questions"
+method: GET
+scripts:
+  - type: afterResponse
+    code: |-
+      var res = pm.response.json();
+      if (res.data && res.data.length > 0) {
+          pm.collectionVariables.set('questionId', res.data[0].id);
+          console.log('questionId set:', res.data[0].id);
+      }
+    language: text/javascript
+order: 1000

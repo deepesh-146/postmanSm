@@ -1,0 +1,54 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/attendance/updateAttendance"
+url: "{{hrmsBaseUrl}}/attendance/updateAttendance"
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    //\"id\": \"2b623a30-e079-4781-9916-ed6e0e97e33e\",\r
+
+    \    \"Date\": \"2025-12-05\",\r
+
+    \    \"inDateTime\": \"2025-12-05 09:30:00\",\r
+
+    \    \"outDateTime\": \"2025-12-05 18:00:00\",\r
+
+    \    \"empComment\": \"Helle admin is testing\",\r
+
+    \    \"employee_mainId\": \"9a6b2d0c-57b7-4da2-9025-b64b6e2f4323\",\r
+
+    \    \"isPaid\": true,\r
+
+    \    \"mode\": \"office\",\r
+
+    \    \"status\": \"PRESENT\",\r
+
+    \    \"shiftId\": \"0dc4a09a-0dcd-4302-b1f2-bdc60259d739\",\r
+
+    \    \"submitTo\": \"{{userId}}\",\r
+
+    \    \"comments\": \"Manual Entry by amey\",\r
+
+    \    \"leaveTypeId\" : \"\",\r
+
+    \    \"holidayId\" : \"\",\r
+
+    \    \"locationJSON\" : {\r
+
+    \        \"lat\" : \"323\",\r
+
+    \        \"long\" : \"sdsa\",\r
+
+    \        \"image\" : \"asd\"\r
+
+    \    }\r
+
+    \r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{orgToken}}"
+order: 30000

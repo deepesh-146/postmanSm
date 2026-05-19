@@ -1,0 +1,30 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/assets/createLetter/{{userId}}"
+url: "{{hrmsBaseUrl}}/assets/createLetter/{{userId}}"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"employeeMainId\": \"{{userId}}\",\r
+
+    \  \"letterType\": \"OFFER\",   // Can be \"OFFER\", \"APPOINTMENT\", \"RELIEVING\"\r
+
+    \  \"annualCTC\": 1200000,\r
+
+    \  \"joiningDate\": \"2025-06-01\",\r
+
+    \  \"designation\": \"Software Engineer\",\r
+
+    \  \"location\": \"Bangalore\",\r
+
+    \  \"probationPeriod\": \"6 months\",\r
+
+    \  \"performanceBonus\": \"10%\",\r
+
+    \  \"otherBenefits\": \"Health Insurance\",\r
+
+    \  \"sampleData\": \"This is a sample of the letter's body content\"\r
+
+    }\r\n"
+order: 10000

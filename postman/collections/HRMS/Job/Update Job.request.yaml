@@ -1,0 +1,66 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/job/:jobId"
+method: PUT
+pathVariables:
+  jobId: 3b5e186a-4be1-4ad6-9c02-665206772767
+body:
+  type: json
+  content: "{\r
+
+    \    \"jobData\": {\r
+
+    \        \"title\": \"CEO - India6\",\r
+
+    \        \"code\": \"JOB6665822\",\r
+
+    \        \"companyName\": \"iCeipts Technology\",\r
+
+    \        \"type\": \"Full Time\",\r
+
+    \        \"location\": \"Pune, Maharashtra\",\r
+
+    \        \"designationId\": \"d10e48ed-e5f7-4821-9817-8a05d673eab4\",\r
+
+    \        \"jobUnitId\": \"e71f8b2c-1c10-46f1-99a5-05c8bbfe4539\",\r
+
+    \        //\"skills\": \"Dart, Flutter, Google Play Store\",\r
+
+    \        \"shifts\": \"Day Shift\",\r
+
+    \        \"description\": \"We are looking for a skilled Flutter Developer to Join our Team\",\r
+
+    \        \"benefits\": \"Health insurance, Provident Fund, Work From Home\",\r
+
+    \        \"experience\": \"3-5 Year\",\r
+
+    \        \"education\": \"Graduation\",\r
+
+    \        \"related\": \"Do you 3 and above years of experience?\",\r
+
+    \        \"salary\": \"100000 - 200000\",\r
+
+    \        \"recruiterId\": \"null\",\r
+
+    \        \"validTill\": \"2024-10-29 18:00:00\",\r
+
+    \        \"isActive\": true,\r
+
+    \        \"jobMode\": \"WorkFromHome\",\r
+
+    \        \"minthreshold\": 10,\r
+
+    \        \"matchthreshold\": 10\r
+
+    \    },\r
+
+    \    \"skillsData\": [\r
+
+    \        \"ce0f3ada-979a-4c86-b27c-53630d1f8fb5\",\r
+
+    \        \"fe7eb15f-8669-45e7-8217-89efdfd720f8\"\r
+
+    \    ]\r
+
+    }"
+examples: ./.resources/Update Job.resources/examples
+order: 8000

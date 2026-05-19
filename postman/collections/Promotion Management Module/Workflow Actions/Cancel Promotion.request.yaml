@@ -1,0 +1,18 @@
+$kind: http-request
+description: |-
+  Cancel a promotion request.
+
+  Allowed statuses: DRAFT, PENDING_APPROVAL, APPROVED (if not yet applied)
+
+  Cannot cancel EFFECTIVE (already applied) promotions.
+url: "{{base_url}}/promotions/{{promotion_id}}/cancel"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "reason": "Employee has resigned. Cancelling pending promotion."
+    }
+order: 2000

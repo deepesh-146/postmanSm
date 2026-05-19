@@ -1,0 +1,39 @@
+$kind: http-request
+name: List All Promotions (HR / Admin)
+description: |-
+  HR/Admin list view with filters.
+
+  Supports:
+  - Status filter
+  - Employee filter
+  - Department filter
+  - Name/code search (iLike)
+  - Effective date range
+  - Pagination
+url: "{{base_url}}/promotions?page=1&size=10&status=&employeeId=&departmentId=&search=&fromDate=&toDate="
+method: GET
+queryParams:
+  - key: page
+    value: "1"
+  - key: size
+    value: "10"
+  - key: status
+    value: ""
+    description: DRAFT | PENDING_APPROVAL | APPROVED | EFFECTIVE | REJECTED | CANCELLED
+  - key: employeeId
+    value: ""
+    description: Filter by specific employee UUID
+  - key: departmentId
+    value: ""
+    description: Filter by department UUID
+  - key: search
+    value: ""
+    description: Search by employee name or code
+  - key: fromDate
+    value: ""
+    description: Effective date from (YYYY-MM-DD)
+  - key: toDate
+    value: ""
+    description: Effective date to (YYYY-MM-DD)
+examples: ./.resources/List All Promotions (HR - Admin).resources/examples
+order: 3000

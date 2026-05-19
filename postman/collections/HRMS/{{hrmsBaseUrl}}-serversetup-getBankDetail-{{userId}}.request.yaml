@@ -1,0 +1,12 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/serversetup/getBankDetail/{{userId}}"
+url: "{{hrmsBaseUrl}}/serversetup/getBankDetail/{{userId}}"
+method: GET
+body:
+  type: json
+  content: "{\r
+
+    \    \"ifscCode\": \"HDFC0000039\"\r
+
+    }"
+order: 61000

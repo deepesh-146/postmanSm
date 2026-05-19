@@ -1,0 +1,3 @@
+$kind: collection
+description: Push GL accounts to Tally as Ledger masters
+order: 3000

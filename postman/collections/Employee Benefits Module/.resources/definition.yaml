@@ -1,0 +1,16 @@
+$kind: collection
+description: Full end-to-end Employee Benefits APIs — Plans, Enrollment, Approval Workflow, Claims, Dependents, Admin
+variables:
+  baseUrl: http://localhost:3000/api/employee_benefit
+  benefitId: ""
+  enrollmentId: ""
+  periodId: ""
+  claimId: ""
+  employeeId: ""
+  dependentId: ""
+auth:
+  - id: 3ad6168c-bacc-4e4b-bc8d-edff0cdd07e5
+    type: bearer
+    name: bearer auth
+    credentials:
+      token: "{{clientToken}}"

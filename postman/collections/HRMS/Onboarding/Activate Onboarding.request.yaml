@@ -1,0 +1,18 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/onboarding/activate"
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"onboardingId\": \"f778b358-2db2-4561-9c0b-dc1eda013258\",\r
+
+    \    \"candidatePersonalEmail\": \"sanatmishra29@gmail.com\",\r
+
+    \    \"tempPass\": \"./Yw!:Q$AD4P8x<\",\r
+
+    \    \"newPassword\": \"Admin@321\"\r
+
+    }"
+examples: ./.resources/Activate Onboarding.resources/examples
+order: 10000

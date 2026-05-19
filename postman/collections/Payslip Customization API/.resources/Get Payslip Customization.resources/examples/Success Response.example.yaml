@@ -1,0 +1,57 @@
+$kind: http-example
+request:
+  url: "{{base_url}}/api/payrolls/v3/payslip/customization"
+  method: GET
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    Content-Type: application/json
+  body:
+    type: json
+    content: |-
+      {
+        "status": "success",
+        "data": {
+          "componentVisibility": {
+            "employeeInfo": true,
+            "payrollPeriod": true,
+            "earnings": {
+              "basic": true,
+              "hra": true,
+              "da": true,
+              "bonus": true,
+              "specialAllowance": true,
+              "transportAllowance": true,
+              "otherAllowances": true
+            },
+            "deductions": {
+              "pf": true,
+              "esi": true,
+              "professionalTax": true,
+              "gpssa": true,
+              "gratuity": true,
+              "incomeTax": true
+            },
+            "attendance": true,
+            "summary": true,
+            "bankDetails": false,
+            "taxDetails": true,
+            "allowances": true
+          },
+          "componentOrder": [
+            "employeeInfo",
+            "payrollPeriod",
+            "earnings",
+            "deductions",
+            "attendance",
+            "summary",
+            "taxDetails",
+            "allowances",
+            "bankDetails"
+          ],
+          "customLabels": {},
+          "isActive": true
+        }
+      }
+order: 1000

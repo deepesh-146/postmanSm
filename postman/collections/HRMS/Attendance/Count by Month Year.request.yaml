@@ -1,0 +1,14 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/attendance/countByMonthYear"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"month\": \"10\",\r
+
+    \    \"year\": \"2024\"\r
+
+    }"
+examples: ./.resources/Count by Month Year.resources/examples
+order: 23000

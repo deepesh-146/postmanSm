@@ -1,0 +1,13 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/rewards/getShift/bb610858-57bb-49b1-97dc-ba19be332da0"
+url: "{{hrmsBaseUrl}}/rewards/getShift/b79e68d9-453b-4ff3-a01b-12e69fb6ecd4"
+method: GET
+queryParams:
+  - key: page
+    value: "1"
+    disabled: true
+  - key: size
+    value: "1"
+    disabled: true
+examples: ./.resources/{{hrmsBaseUrl}}-rewards-getShift-bb610858-57bb-49b1-97dc-ba19be3.resources/examples
+order: 4000

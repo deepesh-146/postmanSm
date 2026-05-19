@@ -1,0 +1,26 @@
+$kind: collection
+description: Complete API collection for India Payroll Compliance Module - PF, ESI, LWF challan generation and management
+variables:
+  hrmsBaseUrl: http://localhost:3000
+  token: ""
+  payrollId: 12345678-1234-1234-1234-123456789abc
+  challanId: ""
+  departmentId1: d1234567-1234-1234-1234-123456789abc
+  departmentId2: d2234567-1234-1234-1234-123456789abc
+scripts:
+  - type: http:beforeRequest
+    code: |-
+      // Add timestamp to console for debugging
+      console.log('Request at: ' + new Date().toISOString());
+    language: text/javascript
+  - type: http:afterResponse
+    code: |-
+      // Log response time
+      console.log('Response time: ' + pm.response.responseTime + 'ms');
+    language: text/javascript
+auth:
+  - id: 3c943705-23e7-4a56-a8a2-899677e30021
+    type: bearer
+    name: bearer auth
+    credentials:
+      token: "{{orgToken}}"

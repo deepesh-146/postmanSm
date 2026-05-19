@@ -1,0 +1,6 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/dashboard/financedashboard/benefitsAndReimbursements/{{userId}}"
+url: "{{hrmsBaseUrl}}/dashboard/financedashboard/benefitsAndReimbursements/{{userId}}"
+method: GET
+examples: ./.resources/{{hrmsBaseUrl}}-dashboard-financedashboard-benefitsAndReimbursem.resources/examples
+order: 21000

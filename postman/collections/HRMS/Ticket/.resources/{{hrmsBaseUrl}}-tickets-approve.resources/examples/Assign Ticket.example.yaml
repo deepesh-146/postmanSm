@@ -1,0 +1,38 @@
+$kind: http-example
+request:
+  url: "{{hrmsBaseUrl}}/tickets/approve"
+  method: POST
+  body:
+    type: json
+    content: "{\r
+
+      \    \"comments\": \"Test\",\r
+
+      \    \"ticketId\": \"09d53797-9f74-478e-8557-be72bcec16bc\"\r
+
+      }"
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "94"
+    ETag: W/"5e-URXDqtryC9XAbF/Kjhj3EPpwFj4"
+    Date: Tue, 08 Jul 2025 08:48:30 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "success": true,
+          "status": 200,
+          "data": {
+              "success": true,
+              "message": "Ticket approved successfully"
+          }
+      }
+order: 1000

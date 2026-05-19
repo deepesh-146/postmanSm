@@ -1,0 +1,16 @@
+$kind: http-request
+url: "{{baseUrl}}/enrollments/{{enrollmentId}}/dependents"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "dependentName": "Meera Sharma",
+      "relationship": "PARENT",
+      "dateOfBirth": "1960-01-15",
+      "gender": "Female",
+      "documentUrl": null
+    }
+order: 1000

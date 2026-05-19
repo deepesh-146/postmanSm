@@ -1,0 +1,13 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/workflow/tenantOwner/pendingApprovals?key=leave_request&size=10&page=1"
+url: "{{hrmsBaseUrl}}/workflow/tenantOwner/pendingApprovals?key=leave_request&size=10&page=1"
+method: GET
+queryParams:
+  - key: key
+    value: leave_request
+    description: travel_request,leave_request,reimbushment_request
+  - key: size
+    value: "10"
+  - key: page
+    value: "1"
+order: 10000

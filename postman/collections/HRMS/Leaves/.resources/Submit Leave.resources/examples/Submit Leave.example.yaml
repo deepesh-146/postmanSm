@@ -1,0 +1,42 @@
+$kind: http-example
+request:
+  url: "{{hrmsBaseUrl}}/leave/"
+  method: POST
+  body:
+    type: json
+    content: "{\r
+
+      \    \"employeeId\": \"903bd690-61f3-43db-9edd-d38d531c1c67\",\r
+
+      \    \"fromDate\": \"2024-10-15\",\r
+
+      \    \"toDate\": \"2024-10-18\",\r
+
+      \    \"reason\": \"Leave\"\r
+
+      }"
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "82"
+    ETag: W/"52-uAgHI1mOPljfzwEX1uaNOmD452g"
+    Date: Mon, 14 Oct 2024 18:14:22 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "status": {
+              "success": true,
+              "code": 200,
+              "message": "Leave Submitted",
+              "failure": false
+          }
+      }
+order: 1000

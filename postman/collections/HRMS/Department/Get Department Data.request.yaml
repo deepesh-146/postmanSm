@@ -1,0 +1,5 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/department/6afd2570-e296-4ac0-8f7a-1a92141c25dc"
+method: GET
+examples: ./.resources/Get Department Data.resources/examples
+order: 5000

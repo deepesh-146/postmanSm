@@ -1,0 +1,13 @@
+$kind: http-request
+description: Lock an entire appraisal cycle. Prevents score calculation, calibration, and other changes.
+url: "{{baseUrl}}/cycle/{{cycleId}}/lock"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+        "reason": "Locking cycle for final review before publishing results"
+    }
+order: 1000

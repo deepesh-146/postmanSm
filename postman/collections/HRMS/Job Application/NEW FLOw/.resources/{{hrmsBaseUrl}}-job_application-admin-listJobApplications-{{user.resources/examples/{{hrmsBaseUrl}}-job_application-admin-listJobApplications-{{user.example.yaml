@@ -1,0 +1,385 @@
+$kind: http-example
+name: "{{hrmsBaseUrl}}/job_application/admin/listJobApplications/{{userId}}"
+request:
+  url: "{{hrmsBaseUrl}}/job_application/admin/listJobApplications/{{userId}}?size=10&page=1&jobId=1ab77ebf-6a83-49b5-8b77-64f30d855191"
+  method: GET
+  queryParams:
+    size: "10"
+    page: "1"
+    jobId: 1ab77ebf-6a83-49b5-8b77-64f30d855191
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    Server: nginx/1.24.0 (Ubuntu)
+    Date: Tue, 10 Jun 2025 13:34:21 GMT
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "13813"
+    Connection: keep-alive
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    ETag: W/"35f5-aOWFnMWMVpwa8njUoXpn0X+kMcQ"
+  body:
+    type: json
+    content: |-
+      {
+          "success": true,
+          "status": 200,
+          "message": "Job applications fetched.",
+          "data": {
+              "totalrows": 1,
+              "pageData": [
+                  {
+                      "id": "c469c766-d932-4e80-beee-d0725f5fa376",
+                      "status": "INTERVIEW_SCHEDULED",
+                      "remarks": null,
+                      "isDeleted": null,
+                      "isReferred": false,
+                      "atsScore": 54,
+                      "atsDescription": "The Candidate is a Senior Software Developer with a strong front-end background and relevant experience in building and architecting systems. While the candidate's experience aligns with the requirements of the role, the lack of Go experience is a significant drawback. The candidate's educational background is strong. The candidate is not a good fit for the role.",
+                      "atsSkillsMatch": "40%",
+                      "atsExperienceMatch": "60%",
+                      "atsEducationMatch": "80%",
+                      "atsResumeSummary": "**\n\nThe candidate is a Senior Software Developer with approximately 4 years of experience, specializing in front-end technologies. They are currently working at Vesatogo Innovations in Nashik, India, where they built a complete web design system, architected a mono-repo service, optimized CI/CD pipelines, and developed a CMS. Prior to this, they worked as a React Developer at RazrCorp (Xuppi.com), leading the front-end team. They also have experience as a Junior Software Developer at Vesatogo Innovations, where they built dashboards for fleet management and order management.\n\nThe candidate is proficient in ReactJS, JavaScript, CSS, GraphQL, NextJS, GatsbyJS, and other related technologies. They have a Master's degree in Computer Applications from Sandip University and a Bachelor's degree in Computer Science from Savitribai Phule Pune University. They have also received recognition for their contributions, including \"Team member of the year\" and \"Sprint Star\" awards. The candidate has personal projects, including a portfolio website and a browser-based game.",
+                      "atsExplanation": null,
+                      "atsExpSum": "The Candidate has 4 years of experience, which is relevant but not directly in Go or backend development. The experience is primarily front-end focused, which is not a direct match for the backend role. However, the candidate has experience in building and architecting systems, which is transferable.",
+                      "atsEduSum": "The Candidate has a Master's degree in Computer Applications and a Bachelor's degree in Computer Science, which meets the educational requirements.",
+                      "atsSkill": "The Candidate's resume does not list Go as a skill. The skills listed are primarily front-end technologies. This is a significant gap for a backend role. The candidate's experience with related technologies like GraphQL and experience with CI/CD pipelines",
+                      "atsFit": "low",
+                      "createdAt": "2025-06-10T06:36:33.000Z",
+                      "updatedAt": "2025-06-10T07:06:36.000Z",
+                      "jobId": "1ab77ebf-6a83-49b5-8b77-64f30d855191",
+                      "organizationId": "891bb2ae-588c-4518-953e-1e367e3a23df",
+                      "officeId": "8e2f4467-dff5-4717-932f-bcbc9431f5dc",
+                      "newcandidateId": "768f71bc-dc60-4a3b-881d-0274d7f5b150",
+                      "newcandidate": {
+                          "id": "768f71bc-dc60-4a3b-881d-0274d7f5b150",
+                          "firstName": "Malik",
+                          "lastName": "Bagwala",
+                          "email": "bupesh9988@yopmail.com",
+                          "mobile": "+91 9975130529",
+                          "dob": "2025-06-10T00:00:00.000Z",
+                          "gender": "MALE",
+                          "nationality": "Indian",
+                          "address": "Pune",
+                          "city": "Pune",
+                          "state": "Goa",
+                          "zipcode": "522006",
+                          "resumePath": "https://hrms-storage-iceipts.s3.ap-south-1.amazonaws.com/uploadImage/2025-06-10T06%3A35%3A02.969Z-Malik%20Bagwala%20Resume.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT3LXCJC3ZZZWNB37%2F20250610%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20250610T133421Z&X-Amz-Expires=300&X-Amz-Signature=e63c123c50d8b084700afc419ce9a6ac466221d8831cc6c20657fd7f8c6cf1aa&X-Amz-SignedHeaders=host",
+                          "skills": null,
+                          "linkedIn": "https://linkedin.com/in/malikbagwala",
+                          "portfolioWebsite": null,
+                          "github": "https://github.com/MalikBagwala",
+                          "otp": null,
+                          "otpExpires": "2025-06-10T06:38:18.000Z",
+                          "isActive": true,
+                          "isVerified": true,
+                          "userType": "CANDIDATE",
+                          "mobileotp": "914473",
+                          "emailotp": "793734",
+                          "refreelByEmployeeName": null,
+                          "referByEmployeeId": null,
+                          "isRefer": null,
+                          "jobTitle": null,
+                          "jobId": null,
+                          "status": "APPLIED",
+                          "parentId": null,
+                          "isDeleted": false,
+                          "isRefreel": true,
+                          "createdAt": "2025-06-10T06:33:18.000Z",
+                          "updatedAt": "2025-06-10T06:36:33.000Z",
+                          "refreelByEmployeeId": "5021d22c-b5bd-4132-b761-d3b6007f62f8",
+                          "refreelBy": {
+                              "id": "5021d22c-b5bd-4132-b761-d3b6007f62f8",
+                              "firstName": "Riya",
+                              "lastName": "Patel",
+                              "employeeType": "EMPLOYEE",
+                              "onboardingId": null,
+                              "personalMail": null,
+                              "officialMail": "riya@mail.com",
+                              "mobileNumber": null,
+                              "officialMobileNumber": "2234545454",
+                              "officalTempPass": null,
+                              "officalEmailPassSet": null,
+                              "accountActive": true,
+                              "disability": false,
+                              "passportAvailable": true,
+                              "gender": "Male",
+                              "dateOfBirth": "1999-06-20T00:00:00.000Z",
+                              "maritalStatus": "Married",
+                              "religion": null,
+                              "placeOfBith": null,
+                              "nationality": "Indian",
+                              "domicile": null,
+                              "disabilityDetail": null,
+                              "passportNo": null,
+                              "passportExpiryDate": null,
+                              "passportIssuedDate": null,
+                              "jobConfirmed": null,
+                              "confirmedById": null,
+                              "confirmedDate": null,
+                              "confirmedNotes": null,
+                              "confirmedRating": null,
+                              "departmentId": "716e68ea-3d9e-4705-9387-720472042906",
+                              "designationId": null,
+                              "jobUnitId": null,
+                              "providentFundNum": null,
+                              "salBasic": null,
+                              "salHRA": null,
+                              "salDA": null,
+                              "salBonus": null,
+                              "salPfDed": null,
+                              "salOtherEarning": null,
+                              "salOtherDeduction": null,
+                              "salOtherEarningNote": null,
+                              "salOtherDeductionNote": null,
+                              "healthInsPlanName": null,
+                              "healthInsPlanCoverAmount": null,
+                              "healthInsPlanUseAmount": null,
+                              "healthInsPlanExpDate": null,
+                              "healthInsPlanStartDate": null,
+                              "joiningDate": "2024-11-27T03:12:21.000Z",
+                              "probationEndDate": null,
+                              "noticePeriodDay": null,
+                              "probationAction": "PENDING",
+                              "profileImage": null,
+                              "isProfileComplete": false,
+                              "emailotp": null,
+                              "selfReview": false,
+                              "managerReview": false,
+                              "adminReview": false,
+                              "bankName": null,
+                              "branchName": null,
+                              "ifsc": null,
+                              "branchCode": null,
+                              "accountNumber": null,
+                              "employeeCode": "EMP-13C82C",
+                              "createdAt": "2025-05-29T19:22:34.000Z",
+                              "updatedAt": "2025-05-29T19:22:34.000Z",
+                              "candidateId": null,
+                              "countryId": 1,
+                              "organizationId": "891bb2ae-588c-4518-953e-1e367e3a23df",
+                              "officeId": "8e2f4467-dff5-4717-932f-bcbc9431f5dc",
+                              "empOnboardingId": null,
+                              "managerId": "5021d22c-b5bd-4132-b761-d3b6007f62f8",
+                              "hrId": "5021d22c-b5bd-4132-b761-d3b6007f62f8",
+                              "parentId": "3bfa2da7-2932-4860-bf7c-30488eab49b6",
+                              "jobId": null
+                          }
+                      },
+                      "job_application_documents": [
+                          {
+                              "id": "0d34fe2c-ce65-47bf-99e7-33fb4d561002",
+                              "documentType": "EDUCATION",
+                              "documentId": "7e720e59-e210-4af4-8c68-4f28b879c84b",
+                              "isVerified": true,
+                              "status": "VERIFIED",
+                              "verifiedBy": "3bfa2da7-2932-4860-bf7c-30488eab49b6",
+                              "verifiedAt": "2025-06-10T07:05:09.000Z",
+                              "remarks": "VSWJVCS",
+                              "createdAt": "2025-06-10T06:36:33.000Z",
+                              "updatedAt": "2025-06-10T07:05:09.000Z",
+                              "jobApplicationId": "c469c766-d932-4e80-beee-d0725f5fa376",
+                              "educationDocument": {
+                                  "id": "7e720e59-e210-4af4-8c68-4f28b879c84b",
+                                  "degree": "Bachelor of Computer Science",
+                                  "specialization": "",
+                                  "institute": "Savitribai Phule Pune University",
+                                  "startDate": "2016-09-01T00:00:00.000Z",
+                                  "endDate": "2019-06-01T00:00:00.000Z",
+                                  "image": null,
+                                  "createdAt": "2025-06-10T06:35:47.000Z",
+                                  "updatedAt": "2025-06-10T06:36:33.000Z",
+                                  "newcandidateId": "768f71bc-dc60-4a3b-881d-0274d7f5b150",
+                                  "documentId": null
+                              },
+                              "experienceDocument": null
+                          },
+                          {
+                              "id": "1aacdf9b-cfc2-4045-8335-c8836301bde8",
+                              "documentType": "EXPERIENCE",
+                              "documentId": "148386a1-12e5-4db5-a4d6-012a1bcaf546",
+                              "isVerified": true,
+                              "status": "VERIFIED",
+                              "verifiedBy": "3bfa2da7-2932-4860-bf7c-30488eab49b6",
+                              "verifiedAt": "2025-06-10T07:05:14.000Z",
+                              "remarks": "VSWJVCS",
+                              "createdAt": "2025-06-10T06:36:33.000Z",
+                              "updatedAt": "2025-06-10T07:05:14.000Z",
+                              "jobApplicationId": "c469c766-d932-4e80-beee-d0725f5fa376",
+                              "educationDocument": null,
+                              "experienceDocument": {
+                                  "id": "148386a1-12e5-4db5-a4d6-012a1bcaf546",
+                                  "company": "Vesatogo Innovations.",
+                                  "jobTitle": "Senior Software Developer",
+                                  "startDate": null,
+                                  "endDate": null,
+                                  "responsibility": "Built the complete web design system for the company\nfrom scratch using industry-wide best practices \nArchitecture a mono-repo service which houses all the front-\nend apps and libraries, thereby increasing code reusability\nacross the organization and reducing setup time for new\nlibraries and applications. \nOptimized front-end CI/CD pipelines and made them upto\n50% faster \nWrote SOPs for Merge Request guidelines, Coding\nstandards and Development Lifecycle \nBuilt a Content Management System for maintaining all the\ndata of the oﬃcial website",
+                                  "image": null,
+                                  "createdAt": "2025-06-10T06:35:47.000Z",
+                                  "updatedAt": "2025-06-10T06:36:33.000Z",
+                                  "newcandidateId": "768f71bc-dc60-4a3b-881d-0274d7f5b150",
+                                  "documentId": null
+                              }
+                          },
+                          {
+                              "id": "48e88006-0453-4a6f-a0c9-f61a43a487f4",
+                              "documentType": "EXPERIENCE",
+                              "documentId": "6da93244-273e-4d4b-80c2-56f13c4e7bf3",
+                              "isVerified": true,
+                              "status": "VERIFIED",
+                              "verifiedBy": "3bfa2da7-2932-4860-bf7c-30488eab49b6",
+                              "verifiedAt": "2025-06-10T07:05:15.000Z",
+                              "remarks": "VSWJVCS",
+                              "createdAt": "2025-06-10T06:36:33.000Z",
+                              "updatedAt": "2025-06-10T07:05:15.000Z",
+                              "jobApplicationId": "c469c766-d932-4e80-beee-d0725f5fa376",
+                              "educationDocument": null,
+                              "experienceDocument": {
+                                  "id": "6da93244-273e-4d4b-80c2-56f13c4e7bf3",
+                                  "company": "Vesatogo Innovations.",
+                                  "jobTitle": "Junior Software Developer",
+                                  "startDate": null,
+                                  "endDate": null,
+                                  "responsibility": "Built a dashboard from the scratch for ﬂeet management\nhaving advanced features like live vehicle tracking, live\nanalytics, vehicle mangement, vehicle scheduling, produce\ninwarding and resource settlement. tech stack - React,\nGraphQL, Apollo Client, Google Maps, AWS, GitLab,\nBlueprintJs. \nThe dashboard is responsible for the procurement of over\n100,000MT of produce. \nBuilt a dashboard from scratch for managing orders and plot\nharvests. tech stack - React, TailwindCSS, GraphQL, Apollo\nClient, Hasura (for real-time subscriptions) \nBuilt the chrome extension for feeding live data from a\nweighing sensor into the web app.",
+                                  "image": null,
+                                  "createdAt": "2025-06-10T06:35:47.000Z",
+                                  "updatedAt": "2025-06-10T06:36:33.000Z",
+                                  "newcandidateId": "768f71bc-dc60-4a3b-881d-0274d7f5b150",
+                                  "documentId": null
+                              }
+                          },
+                          {
+                              "id": "4de2b6f6-bc72-4a13-82e2-a750bd00bafb",
+                              "documentType": "EXPERIENCE",
+                              "documentId": "7b03a4c8-ef51-43a6-9df5-5f4205ba530d",
+                              "isVerified": true,
+                              "status": "VERIFIED",
+                              "verifiedBy": "3bfa2da7-2932-4860-bf7c-30488eab49b6",
+                              "verifiedAt": "2025-06-10T07:05:16.000Z",
+                              "remarks": "VSWJVCS",
+                              "createdAt": "2025-06-10T06:36:33.000Z",
+                              "updatedAt": "2025-06-10T07:05:16.000Z",
+                              "jobApplicationId": "c469c766-d932-4e80-beee-d0725f5fa376",
+                              "educationDocument": null,
+                              "experienceDocument": {
+                                  "id": "7b03a4c8-ef51-43a6-9df5-5f4205ba530d",
+                                  "company": "RazrCorp (Xuppi.com)",
+                                  "jobTitle": "React Developer",
+                                  "startDate": null,
+                                  "endDate": null,
+                                  "responsibility": "Lead the front-end team on building [xuppi.com](http://stage.inc). A modern\nsuite of products for fans to interact with their favourite\ncreators using live streaming, real time messaging and a\nmarketplace to purchase the creators' premium content\n(photo, video, albums etc.) \nBuilt an industry ﬁrst feature of live stream shopping that\nallows an inﬂuencer to sell products directly from the live\nstream",
+                                  "image": null,
+                                  "createdAt": "2025-06-10T06:35:47.000Z",
+                                  "updatedAt": "2025-06-10T06:36:33.000Z",
+                                  "newcandidateId": "768f71bc-dc60-4a3b-881d-0274d7f5b150",
+                                  "documentId": null
+                              }
+                          },
+                          {
+                              "id": "91b7e140-08be-4d59-9a02-5c23e1ae6197",
+                              "documentType": "EDUCATION",
+                              "documentId": "dc07eead-c3bf-4763-96a4-2d74bcba7ec3",
+                              "isVerified": true,
+                              "status": "VERIFIED",
+                              "verifiedBy": "3bfa2da7-2932-4860-bf7c-30488eab49b6",
+                              "verifiedAt": "2025-06-10T07:05:10.000Z",
+                              "remarks": "VSWJVCS",
+                              "createdAt": "2025-06-10T06:36:33.000Z",
+                              "updatedAt": "2025-06-10T07:05:10.000Z",
+                              "jobApplicationId": "c469c766-d932-4e80-beee-d0725f5fa376",
+                              "educationDocument": {
+                                  "id": "dc07eead-c3bf-4763-96a4-2d74bcba7ec3",
+                                  "degree": "Master of Computer Applications",
+                                  "specialization": "",
+                                  "institute": "Sandip University",
+                                  "startDate": "2020-06-01T00:00:00.000Z",
+                                  "endDate": "2022-06-01T00:00:00.000Z",
+                                  "image": null,
+                                  "createdAt": "2025-06-10T06:35:47.000Z",
+                                  "updatedAt": "2025-06-10T06:36:33.000Z",
+                                  "newcandidateId": "768f71bc-dc60-4a3b-881d-0274d7f5b150",
+                                  "documentId": null
+                              },
+                              "experienceDocument": null
+                          }
+                      ],
+                      "job_offer": null,
+                      "job_interviews": [
+                          {
+                              "id": "3c93d7b0-23af-421e-86dc-75224e1e2a22",
+                              "type": "",
+                              "mode": "",
+                              "date": "2025-06-09",
+                              "time": "13:00:00",
+                              "timeZone": "UTC+5:30 India Standard Time",
+                              "duration": "15 mins",
+                              "notesForCandidate": "abcde\nefgh",
+                              "attachment": "uploads/interview/invite-123e4567.pdf",
+                              "interviewStatus": "SCHEDULED",
+                              "createdAt": "2025-06-10T07:06:36.000Z",
+                              "updatedAt": "2025-06-10T07:06:36.000Z",
+                              "jobApplicationId": "c469c766-d932-4e80-beee-d0725f5fa376"
+                          }
+                      ],
+                      "job_application_status_histories": [
+                          {
+                              "id": "023435ac-bbae-4542-90f1-490d68ec9bf3",
+                              "status": "SHORTLISTED",
+                              "changedBy": "3bfa2da7-2932-4860-bf7c-30488eab49b6",
+                              "changedByRole": null,
+                              "remarks": null,
+                              "createdAt": "2025-06-10T07:05:35.000Z",
+                              "updatedAt": "2025-06-10T07:05:35.000Z",
+                              "organizationId": "891bb2ae-588c-4518-953e-1e367e3a23df",
+                              "officeId": "8e2f4467-dff5-4717-932f-bcbc9431f5dc",
+                              "jobApplicationId": "c469c766-d932-4e80-beee-d0725f5fa376"
+                          },
+                          {
+                              "id": "af8fa164-5ba9-4abb-a085-a86866fd2669",
+                              "status": "INTERVIEW_SCHEDULED",
+                              "changedBy": "3bfa2da7-2932-4860-bf7c-30488eab49b6",
+                              "changedByRole": "ADMIN",
+                              "remarks": "Interview scheduled",
+                              "createdAt": "2025-06-10T07:06:36.000Z",
+                              "updatedAt": "2025-06-10T07:06:36.000Z",
+                              "organizationId": null,
+                              "officeId": null,
+                              "jobApplicationId": "c469c766-d932-4e80-beee-d0725f5fa376"
+                          },
+                          {
+                              "id": "e2ad2047-827d-418f-8ad2-2519196b31c6",
+                              "status": "APPLIED",
+                              "changedBy": "768f71bc-dc60-4a3b-881d-0274d7f5b150",
+                              "changedByRole": "CANDIDATE",
+                              "remarks": null,
+                              "createdAt": "2025-06-10T06:36:33.000Z",
+                              "updatedAt": "2025-06-10T06:36:33.000Z",
+                              "organizationId": "891bb2ae-588c-4518-953e-1e367e3a23df",
+                              "officeId": "8e2f4467-dff5-4717-932f-bcbc9431f5dc",
+                              "jobApplicationId": "c469c766-d932-4e80-beee-d0725f5fa376"
+                          }
+                      ],
+                      "job": {
+                          "id": "1ab77ebf-6a83-49b5-8b77-64f30d855191",
+                          "title": "Sr Golang Developer",
+                          "companyName": null,
+                          "jobUnitId": "cef7f341-5a2b-4c97-8958-41fe7fafe34a",
+                          "location": "Pune, Goa, India",
+                          "job_unit": {
+                              "id": "cef7f341-5a2b-4c97-8958-41fe7fafe34a",
+                              "department": {
+                                  "id": "2afef554-7cb1-41b5-93bd-b7f3abec04a9",
+                                  "name": "Information Technology",
+                                  "code": "IT6362"
+                              }
+                          }
+                      }
+                  }
+              ],
+              "totalPages": 1,
+              "currentPage": 1
+          }
+      }
+order: 1000

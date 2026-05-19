@@ -1,0 +1,43 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/payrolls/test-overtime-calculation Copy"
+url: "{{hrmsBaseUrl}}/payrolls/getAllPayrollsAi?page=1&size=10"
+method: GET
+queryParams:
+  - key: page
+    value: "1"
+  - key: size
+    value: "10"
+  - key: fromMonth
+    value: "8"
+    disabled: true
+  - key: toMonth
+    value: "9"
+    disabled: true
+  - key: officeId
+    value: ""
+    disabled: true
+  - key: departmentId
+    value: 883142dd-f9cb-4f9e-adc1-691c25c616b2
+    disabled: true
+  - key: country
+    value: "2"
+    disabled: true
+  - key: status
+    value: pending
+    disabled: true
+body:
+  type: json
+  content: "{\r
+
+    \    \"employeeId\": \"{{userId}}\",\r
+
+    \    \"month\": 8,\r
+
+    \    \"year\": 2025,\r
+
+    \    \"country\": \"UAE\",\r
+
+    \    \"financialYear\": \"2025-26\"\r
+
+    }"
+order: 21000

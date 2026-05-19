@@ -1,0 +1,4 @@
+$kind: http-request
+url: "{{base_url}}/api/family/allowances/123"
+method: GET
+order: 3000

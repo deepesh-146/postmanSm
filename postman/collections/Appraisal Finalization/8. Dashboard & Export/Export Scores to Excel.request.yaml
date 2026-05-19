@@ -1,0 +1,5 @@
+$kind: http-request
+description: Download finalized scores as an Excel (.xlsx) file. Includes employee details, scores, band, status, acknowledgement, and recommendations.
+url: "{{baseUrl}}/cycle/{{cycleId}}/export"
+method: GET
+order: 2000

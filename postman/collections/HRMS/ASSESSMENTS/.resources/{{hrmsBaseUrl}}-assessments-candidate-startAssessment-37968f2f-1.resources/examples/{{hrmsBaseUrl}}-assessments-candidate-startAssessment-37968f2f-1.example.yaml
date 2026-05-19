@@ -1,0 +1,45 @@
+$kind: http-example
+name: "{{hrmsBaseUrl}}/assessments/candidate/startAssessment/37968f2f-129f-4d05-9f9b-5f93f55bb2b6"
+request:
+  url: "{{hrmsBaseUrl}}/assessments/candidate/startAssessment/37968f2f-129f-4d05-9f9b-5f93f55bb2b6"
+  method: POST
+  body:
+    type: json
+    content: "{\r
+
+      \    \"assessmentId\": \"f8c82a2d-3ea9-428e-af31-e47690128052\"\r
+
+      }"
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "356"
+    ETag: W/"164-LE1FEthh5E9SEZjx+Q2tD/CRpgQ"
+    Date: Mon, 30 Jun 2025 15:44:15 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "success": true,
+          "status": 200,
+          "data": {
+              "success": true,
+              "data": {
+                  "id": "2d8987d9-f181-4b35-9d5a-820420075f1e",
+                  "assessmentId": "f8c82a2d-3ea9-428e-af31-e47690128052",
+                  "newcandidateId": "37968f2f-129f-4d05-9f9b-5f93f55bb2b6",
+                  "startedAt": "2025-06-30T15:44:15.059Z",
+                  "status": "IN_PROGRESS",
+                  "updatedAt": "2025-06-30T15:44:15.059Z",
+                  "createdAt": "2025-06-30T15:44:15.059Z"
+              }
+          }
+      }
+order: 1000

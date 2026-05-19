@@ -1,0 +1,32 @@
+$kind: http-example
+name: "{{hrmsBaseUrl}}/dashboard/recruiterdashboard/topPerformingRecruiters/{{userId}}"
+request:
+  url: "{{hrmsBaseUrl}}/dashboard/recruiterdashboard/topPerformingRecruiters/{{userId}}"
+  method: GET
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "70"
+    ETag: W/"46-oIBZ5VjSY1gEXpUzFc1tEBkB1eo"
+    Date: Thu, 12 Jun 2025 13:35:38 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "success": true,
+          "status": 200,
+          "data": [
+              {
+                  "name": "Riya Patel",
+                  "hires": 2
+              }
+          ]
+      }
+order: 1000

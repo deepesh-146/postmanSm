@@ -1,0 +1,5 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/onboarding_step/"
+method: GET
+examples: ./.resources/Get All Step.resources/examples
+order: 4000

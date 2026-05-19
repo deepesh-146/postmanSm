@@ -1,0 +1,32 @@
+$kind: http-request
+description: |-
+  Update a DRAFT promotion. Only allowed for:
+  - The nominator (manager who created it)
+  - TENANT_OWNER
+  - ORG_SUPERADMIN
+
+  Updatable fields: toDesignationId, toGradeId, toDepartmentId, proposedSalary, salaryRevisionDetails, promotionType, justification, effectiveDate, remarks
+url: "{{base_url}}/promotions/{{promotion_id}}"
+method: PUT
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "toDesignationId": "uuid-updated-designation-id",
+      "toGradeId": "uuid-updated-grade-id",
+      "proposedSalary": 90000,
+      "salaryRevisionDetails": {
+        "salBasic": 55000,
+        "salHRA": 22000,
+        "salDA": 10000,
+        "salBonus": 5000,
+        "salPfDed": 6600
+      },
+      "justification": "Updated justification with additional context on Q4 performance.",
+      "effectiveDate": "2026-05-01",
+      "remarks": "Updated after compensation review",
+      "updateComment": "Revised salary after HR discussion"
+    }
+order: 3000

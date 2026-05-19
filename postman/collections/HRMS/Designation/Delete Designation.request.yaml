@@ -1,0 +1,6 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/designation/:designationId"
+method: DELETE
+pathVariables:
+  designationId: d10e48ed-e5f7-4821-9817-8a05d673eab4
+order: 5000

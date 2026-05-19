@@ -1,0 +1,23 @@
+$kind: http-request
+description: Test validation with invalid report type.
+url: "{{hrmsBaseUrl}}/api/compliance/generate"
+method: POST
+headers:
+  Content-Type: application/json
+  Authorization: Bearer {{token}}
+body:
+  type: text
+  content: |-
+    {
+      "empPayrollId": "{{payrollId}}",
+      "reportType": "INVALID_REPORT_TYPE",
+      "challanMode": "SINGLE_CHALLAN"
+    }
+scripts:
+  - type: afterResponse
+    code: |-
+      pm.test('Status code is 400 Bad Request', function () {
+          pm.response.to.have.status(400);
+      });
+    language: text/javascript
+order: 2000

@@ -1,0 +1,22 @@
+$kind: http-request
+description: Generate challan with filters - specific departments, branches, include left employees and arrears.
+url: "{{hrmsBaseUrl}}/api/compliance/generate"
+method: POST
+headers:
+  Content-Type: application/json
+  Authorization: Bearer {{token}}
+body:
+  type: text
+  content: |-
+    {
+      "empPayrollId": "{{payrollId}}",
+      "reportType": "PF_CHALLAN",
+      "challanMode": "SINGLE_CHALLAN",
+      "filters": {
+        "departmentIds": ["d1234567-1234-1234-1234-123456789abc", "d2234567-1234-1234-1234-123456789abc"],
+        "branchIds": ["b1234567-1234-1234-1234-123456789abc"],
+        "includeLeftEmployees": true,
+        "includeArrears": true
+      }
+    }
+order: 5000

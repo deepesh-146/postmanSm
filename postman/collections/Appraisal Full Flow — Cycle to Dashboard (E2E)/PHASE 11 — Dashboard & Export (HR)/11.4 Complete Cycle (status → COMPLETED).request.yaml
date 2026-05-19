@@ -1,0 +1,13 @@
+$kind: http-request
+description: Mark the appraisal cycle as COMPLETED. This is the final step.
+url: "{{baseUrl}}/appraisal/updateCycle/{{cycleId}}"
+method: PUT
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+        "status": "COMPLETED"
+    }
+order: 4000

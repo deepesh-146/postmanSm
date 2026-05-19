@@ -1,0 +1,7 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/tickets/employee/:employeeId"
+method: GET
+pathVariables:
+  employeeId: add34dfb-06ee-4bd4-ae15-2d0f921e6909
+examples: ./.resources/Get Ticket For Employee.resources/examples
+order: 19000

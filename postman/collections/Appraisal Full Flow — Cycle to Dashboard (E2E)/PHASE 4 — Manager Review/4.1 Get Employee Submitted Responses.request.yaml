@@ -1,0 +1,27 @@
+$kind: http-request
+description: Manager views employee's submitted self-appraisal. Note the response IDs for the next step.
+url: "{{baseUrl}}/appraisal/cycle/{{cycleId}}/employee/{{employeeId}}/submitted-responses"
+method: GET
+scripts:
+  - type: afterResponse
+    code: |-
+      var res = pm.response.json();
+      if (res.data && res.data.responsesByKpi) {
+          var kpis = Object.keys(res.data.responsesByKpi);
+          if (kpis.length > 0) {
+              var firstKpi = res.data.responsesByKpi[kpis[0]];
+              if (firstKpi.responses && firstKpi.responses.length > 0) {
+                  pm.collectionVariables.set('responseId1', firstKpi.responses[0].id);
+                  console.log('responseId1 set:', firstKpi.responses[0].id);
+              }
+          }
+          if (kpis.length > 1) {
+              var secondKpi = res.data.responsesByKpi[kpis[1]];
+              if (secondKpi.responses && secondKpi.responses.length > 0) {
+                  pm.collectionVariables.set('responseId2', secondKpi.responses[0].id);
+                  console.log('responseId2 set:', secondKpi.responses[0].id);
+              }
+          }
+      }
+    language: text/javascript
+order: 1000

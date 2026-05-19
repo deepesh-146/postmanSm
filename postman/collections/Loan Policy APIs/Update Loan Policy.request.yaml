@@ -1,0 +1,9 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}policy/updateLoan/9242fff2-705f-4ea2-a480-cb1a1a336c5a"
+method: PUT
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: "{}"
+order: 4000

@@ -1,0 +1,7 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/job_offer/jobOfferData/:offerId"
+method: GET
+pathVariables:
+  offerId: a2ece94b-798f-4d72-b399-8edbf164b6a3
+examples: ./.resources/Offer Data.resources/examples
+order: 5000

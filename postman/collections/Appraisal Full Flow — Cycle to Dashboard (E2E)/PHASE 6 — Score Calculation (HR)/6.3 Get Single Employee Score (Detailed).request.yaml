@@ -1,0 +1,5 @@
+$kind: http-request
+description: "Full breakdown: selfScore, managerScore, finalScore, band, KRA scores, recommendations, calibration history."
+url: "{{baseUrl}}/appraisal-finalization/cycle/{{cycleId}}/employee/{{employeeId}}/score"
+method: GET
+order: 3000

@@ -1,0 +1,44 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/employee/employment"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"isCandidate\": false,\r
+
+    \    \"employeeId\": \"{{userId}}\",\r
+
+    \    \"employmentData\": [\r
+
+    \        {\r
+
+    \            \"compName\": \"CSK\",\r
+
+    \            \"jobTitle\": \"Software Developer\",\r
+
+    \            \"location\": \"Patna\",\r
+
+    \            \"responsibility\": \"Android, Laravel\",\r
+
+    \            \"startDate\": \"2019-09-25\",\r
+
+    \            \"endDate\": \"2020-09-26\",\r
+
+    \            \"hrEmail\": \"hr@csk.com\",\r
+
+    \            \"hrMobile\": \"999999999\",\r
+
+    \            \"currentCompany\": \"NO\",\r
+
+    \            \"relLetterPath\": \"https://morth.nic.in/sites/default/files/dd12-13_0.pdf\",\r
+
+    \            \"expLetterPath\": \"https://morth.nic.in/sites/default/files/dd12-13_0.pdf\"\r
+
+    \        }\r
+
+    \    ]\r
+
+    }"
+examples: ./.resources/Add Employment Data.resources/examples
+order: 6000

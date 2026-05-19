@@ -1,0 +1,34 @@
+$kind: collection
+description: Complete API collection for UAE grandfather family record management system
+variables:
+  base_url: http://localhost:3000
+  access_token: your_jwt_token_here
+scripts:
+  - type: http:beforeRequest
+    code: |-
+      // Add any pre-request scripts here
+      console.log('Making request to UAE Family Records API');
+    language: text/javascript
+  - type: http:afterResponse
+    code: |-
+      // Basic response validation
+      pm.test('Status code is successful', function () {
+          pm.expect(pm.response.code).to.be.oneOf([200, 201]);
+      });
+
+      pm.test('Response has success property', function () {
+          const jsonData = pm.response.json();
+          pm.expect(jsonData).to.have.property('success');
+      });
+
+      pm.test('Response has message property', function () {
+          const jsonData = pm.response.json();
+          pm.expect(jsonData).to.have.property('message');
+      });
+    language: text/javascript
+auth:
+  - id: fcb6c705-71c6-4fa4-b3b8-9f609dd84c3f
+    type: bearer
+    name: bearer auth
+    credentials:
+      token: "{{clientToken}}"

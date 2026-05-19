@@ -1,0 +1,31 @@
+$kind: http-request
+description: Schedule a daily dashboard summary email to HR manager and CEO.
+url: "{{baseUrl}}/mis/schedules"
+method: POST
+headers:
+  Content-Type: application/json
+  x-organization-id: "{{organizationId}}"
+body:
+  type: text
+  content: |-
+    {
+      "reportName": "Daily Dashboard Summary",
+      "reportType": "DASHBOARD_SUMMARY",
+      "frequency": "DAILY",
+      "recipients": [
+        {
+          "email": "hr-manager@company.com",
+          "employeeId": "UUID_OF_HR_MANAGER"
+        },
+        {
+          "email": "ceo@company.com",
+          "employeeId": "UUID_OF_CEO"
+        }
+      ],
+      "filters": {
+        "dateFrom": "2026-03-01",
+        "dateTo": "2026-03-31"
+      },
+      "exportFormat": "EXCEL"
+    }
+order: 1000

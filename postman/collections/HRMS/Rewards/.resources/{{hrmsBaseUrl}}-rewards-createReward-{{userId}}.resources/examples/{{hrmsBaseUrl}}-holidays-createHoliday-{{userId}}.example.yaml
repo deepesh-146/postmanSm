@@ -1,0 +1,46 @@
+$kind: http-example
+name: "{{hrmsBaseUrl}}/holidays/createHoliday/{{userId}}"
+request:
+  url: "{{hrmsBaseUrl}}/rewards/createReward/{{userId}}"
+  method: POST
+  body:
+    type: json
+    content: "{\r
+
+      \    \"name\": \"pp\",\r
+
+      \    \"description\": \"pp\",\r
+
+      \    \"rewardType\": \"GIFT_CARD\",\r
+
+      \    \"pointsRequired\": 2000,\r
+
+      \    \"quantityAvailable\": 10,\r
+
+      \    \"validityStartDate\": \"2024-12-03 11:47:09\",\r
+
+      \    \"validityEndDate\": \"2024-12-03 11:47:09\"\r
+
+      }"
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "66"
+    ETag: W/"42-aWoAQH2oRvWEqdfuXgbL6s7Pd/0"
+    Date: Tue, 17 Dec 2024 15:49:36 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "success": true,
+          "status": 200,
+          "data": "Reward created successfully"
+      }
+order: 1000

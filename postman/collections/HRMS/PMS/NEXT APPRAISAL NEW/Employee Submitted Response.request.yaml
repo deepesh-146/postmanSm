@@ -1,0 +1,54 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/appraisal/cycle/:cycleId/employee/:employeeId/submitted-responses"
+method: GET
+queryParams:
+  - key: cycleId
+    value: ""
+    disabled: true
+pathVariables:
+  cycleId: 15ff9f35-c849-44d4-a421-80e8cf049977
+  employeeId: 5324cf44-676a-4fe8-acde-1bfcfd3fc289
+body:
+  type: json
+  content: "{\r
+
+    \    \"kpiResponses\": [\r
+
+    \        {\r
+
+    \            \"kpiId\": \"1\",\r
+
+    \            \"responses\": [\r
+
+    \                {\r
+
+    \                    \"questionId\": \"31bb143d-8cd7-48b4-9c39-eb3c2f7360d7\",\r
+
+    \                    \"rating\": 4,\r
+
+    \                    \"textResponse\": \"Achieved 120% of sales target\",\r
+
+    \                    \"comments\": \"Exceeded expectations in Q3\",\r
+
+    \                    \"isSubmitted\": true\r
+
+    \                },\r
+
+    \                {\r
+
+    \                    \"questionId\": \"31bb143d-8cd7-48b4-9c39-eb3c2f7360d7\",\r
+
+    \                    \"textResponse\": \"Key achievements include new client acquisition\",\r
+
+    \                    \"isSubmitted\": true\r
+
+    \                }\r
+
+    \            ]\r
+
+    \        }\r
+
+    \    ]\r
+
+    }"
+order: 5000

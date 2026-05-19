@@ -1,0 +1,93 @@
+$kind: http-example
+request:
+  url: "{{hrmsBaseUrl}}/leave/manager/:employeeId"
+  method: GET
+  pathVariables:
+    employeeId: 903bd690-61f3-43db-9edd-d38d531c1c67
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "1741"
+    ETag: W/"6cd-N1Vusw08qE5R99hRQ1Nye2hvKk4"
+    Date: Mon, 14 Oct 2024 18:18:37 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "status": {
+              "success": true,
+              "code": 200,
+              "message": "Leave Request",
+              "failure": false
+          },
+          "data": [
+              {
+                  "id": "192c3cc3-ba49-465a-97cb-4b8c83e30dfe",
+                  "employeeId": "903bd690-61f3-43db-9edd-d38d531c1c67",
+                  "fromDate": "2024-10-16T00:00:00.000Z",
+                  "toDate": "2024-10-18T00:00:00.000Z",
+                  "empSubmitOn": "2024-10-14T12:46:08.000Z",
+                  "empComment": "Leave",
+                  "submitTo": "903bd690-61f3-43db-9edd-d38d531c1c67",
+                  "withdrawn": null,
+                  "withdrawnDate": null,
+                  "approved": true,
+                  "approvedBy": "903bd690-61f3-43db-9edd-d38d531c1c67",
+                  "approvedOn": "2024-10-14T12:47:33.000Z",
+                  "rejected": false,
+                  "rejectedBy": null,
+                  "rejectedOn": null,
+                  "comments": "Approved",
+                  "createdAt": "2024-10-14T18:16:08.000Z",
+                  "updatedAt": "2024-10-14T18:17:33.000Z"
+              },
+              {
+                  "id": "ca7b7c57-2e40-4e7d-bd4e-4d836d39811b",
+                  "employeeId": "903bd690-61f3-43db-9edd-d38d531c1c67",
+                  "fromDate": "2024-10-15T00:00:00.000Z",
+                  "toDate": "2024-10-18T00:00:00.000Z",
+                  "empSubmitOn": "2024-10-14T12:45:13.000Z",
+                  "empComment": "By mistake",
+                  "submitTo": "903bd690-61f3-43db-9edd-d38d531c1c67",
+                  "withdrawn": true,
+                  "withdrawnDate": "2024-10-14T12:45:45.000Z",
+                  "approved": false,
+                  "approvedBy": null,
+                  "approvedOn": null,
+                  "rejected": null,
+                  "rejectedBy": null,
+                  "rejectedOn": null,
+                  "comments": null,
+                  "createdAt": "2024-10-14T18:14:22.000Z",
+                  "updatedAt": "2024-10-14T18:15:45.000Z"
+              },
+              {
+                  "id": "e942f1fa-10f6-4f0a-b172-beb9bc9fc34f",
+                  "employeeId": "903bd690-61f3-43db-9edd-d38d531c1c67",
+                  "fromDate": "2024-10-24T00:00:00.000Z",
+                  "toDate": "2024-10-24T00:00:00.000Z",
+                  "empSubmitOn": "2024-10-14T12:47:56.000Z",
+                  "empComment": "Leave",
+                  "submitTo": "903bd690-61f3-43db-9edd-d38d531c1c67",
+                  "withdrawn": null,
+                  "withdrawnDate": null,
+                  "approved": false,
+                  "approvedBy": null,
+                  "approvedOn": null,
+                  "rejected": null,
+                  "rejectedBy": null,
+                  "rejectedOn": null,
+                  "comments": null,
+                  "createdAt": "2024-10-14T18:17:56.000Z",
+                  "updatedAt": "2024-10-14T18:17:56.000Z"
+              }
+          ]
+      }
+order: 1000

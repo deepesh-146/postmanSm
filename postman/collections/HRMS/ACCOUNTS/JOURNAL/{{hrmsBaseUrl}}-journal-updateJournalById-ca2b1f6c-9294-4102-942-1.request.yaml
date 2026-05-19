@@ -1,0 +1,72 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/journal/updateJournalById/ca2b1f6c-9294-4102-942a-aa2149cc15a6 Copy"
+url: "{{hrmsBaseUrl}}/journal/updateJournalById/ca2b1f6c-9294-4102-942a-aa2149cc15a6"
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"entryType\": \"Salary Payment\",\r
+
+    \    \"companyName\": \"NeuralHR Pvt\",\r
+
+    \    \"postingDate\": \"2025-10-14\",\r
+
+    \    \"referenceNumber\": \"REF101\",\r
+
+    \    \"referenceDate\": \"2025-10-14\",\r
+
+    \    \"paymentMode\": \"net\",\r
+
+    \    \"isOpen\": false,\r
+
+    \    \"remark\": \"Monthly payroll for October\",\r
+
+    \    \"status\": \"Posted\",\r
+
+    \    \"journalLinesDetails\": [\r
+
+    \        {\r
+
+    \            \"journalLineId\": \"5caf9550-c4f5-428a-aeaa-cc9fde53f8b5\",\r
+
+    \            \"accountName\": \"Salary Account\",\r
+
+    \            \"partyType\": \"Employee\",\r
+
+    \            \"debit\": 55000,\r
+
+    \            \"credit\": 0\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"accountName\": \"New Expense\",\r
+
+    \            \"partyType\": \"Other\",\r
+
+    \            \"debit\": 2000,\r
+
+    \            \"credit\": 0\r
+
+    \        }\r
+
+    \    ],\r
+
+    \r
+
+    \    //To delte additional Entries\r
+
+    \    \"deleteJournalLines\":[\r
+
+    \        {\r
+
+    \            \"journalLineId\":\"1ddeb2ff-1b31-48ed-ac10-51d36fdb6961\"\r
+
+    \        }\r
+
+    \    ]\r
+
+    }"
+order: 5000

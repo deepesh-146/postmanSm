@@ -1,0 +1,45 @@
+$kind: http-example
+request:
+  url: "{{hrmsBaseUrl}}/tickets/chat/:ticketId"
+  method: GET
+  pathVariables:
+    ticketId: 2582dd41-8782-4f2a-b3a7-bd752769d618
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "484"
+    ETag: W/"1e4-On1n0PYjd1rmMtUsXSBYYR0Ip1A"
+    Date: Mon, 14 Oct 2024 19:04:00 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "status": {
+              "success": true,
+              "code": 200,
+              "message": "Chat Found",
+              "failure": false
+          },
+          "data": [
+              {
+                  "id": "bc222792-12fa-4ae6-8c1c-cf3f627ccaa5",
+                  "ticketId": "2582dd41-8782-4f2a-b3a7-bd752769d618",
+                  "fromEmployeeId": "903bd690-61f3-43db-9edd-d38d531c1c67",
+                  "toEmployeeId": "903bd690-61f3-43db-9edd-d38d531c1c67",
+                  "chatType": "TEXT",
+                  "chatText": "Hi, this is a test",
+                  "attachmentLink": "NA",
+                  "chatDateTime": "2024-10-14T13:32:06.000Z",
+                  "createdAt": "2024-10-14T19:02:06.000Z",
+                  "updatedAt": "2024-10-14T19:02:06.000Z"
+              }
+          ]
+      }
+order: 1000

@@ -1,0 +1,12 @@
+$kind: http-request
+description: "Returns: pipeline (open positions, applications, offers accepted/rejected), timeToHire (avg/min/max days), sources, offerAcceptanceRate."
+url: "{{baseUrl}}/mis/recruitment-analytics?dateFrom=2025-01-01&dateTo=2026-03-13"
+method: GET
+headers:
+  Content-Type: application/json
+  x-organization-id: "{{organizationId}}"
+queryParams:
+  dateFrom: 2025-01-01
+  dateTo: 2026-03-13
+examples: ./.resources/2.6 Recruitment Analytics.resources/examples
+order: 6000

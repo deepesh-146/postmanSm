@@ -1,0 +1,11 @@
+$kind: http-request
+description: Mark a FINALIZED cycle as paid. Updates all linked bonuses to PAID status.
+url: "{{base_url}}/api/bonus/payout-cycles/:id/mark-paid"
+method: POST
+headers:
+  Authorization: Bearer {{access_token}}
+pathVariables:
+  - key: id
+    value: "{{cycle_id}}"
+    description: Cycle UUID
+order: 8000

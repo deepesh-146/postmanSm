@@ -1,0 +1,6 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/employee/deactiveEmployees/340890e0-6696-40b3-ab4a-fa4830fa5c9f"
+url: "{{hrmsBaseUrl}}/employee/deactiveEmployees/340890e0-6696-40b3-ab4a-fa4830fa5c9f"
+method: PUT
+examples: ./.resources/{{hrmsBaseUrl}}-employee-deactiveEmployees-340890e0-6696-40b3-ab.resources/examples
+order: 30000

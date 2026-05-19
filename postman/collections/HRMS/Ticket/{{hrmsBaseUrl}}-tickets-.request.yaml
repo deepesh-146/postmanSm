@@ -1,0 +1,97 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/tickets/"
+url: "{{hrmsBaseUrl}}/tickets/"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    //For Employee Benefits\r
+
+    \    // \"employeeId\": \"987286d9-ec40-444e-8968-896e7de93d3b\",\r
+
+    \    // \"ticketCatId\": \"246074d8-328c-4b9d-bfbf-aa1fcb5d08ba\",\r
+
+    \    // \"description\": \"Requesting health insurance coverage for my family\",\r
+
+    \    // \"ticketType\": \"BENEFIT_REQUEST\",\r
+
+    \    // \"typeSpecificData\": {\r
+
+    \    //     \"benefitId\": \"9239efc0-e6ea-4c84-b10c-2ace20ae8df7\",\r
+
+    \    //     \"benefitDetails\": \"Need comprehensive family coverage starting next month\",\r
+
+    \    //     \"approvalType\": \"MANUAL\"\r
+
+    \    // }\r
+
+    \    //For shift change\r
+
+    \    // \"employeeId\": \"c58ec4b0-805a-48a9-b8a8-3477dcd63a85\",\r
+
+    \    // \"ticketCatId\": \"246074d8-328c-4b9d-bfbf-aa1fcb5d08ba\",\r
+
+    \    // \"description\": \"Requesting health insurance coverage for my family\",\r
+
+    \    // \"ticketType\": \"SHIFT_CHANGE\",\r
+
+    \    // \"typeSpecificData\": {\r
+
+    \    //     \"requestedShiftId\": \"2a3ab801-81a5-4088-9cb2-e30b93cc3dfc\",\r
+
+    \    //     \"empComment\": \"Need to switch to evening shift starting from July 1st due to educational commitments\"\r
+
+    \    // }\r
+
+    \    //For Leave Request\r
+
+    \    // \"employeeId\": \"987286d9-ec40-444e-8968-896e7de93d3b\",\r
+
+    \    // \"ticketCatId\": \"246074d8-328c-4b9d-bfbf-aa1fcb5d08ba\",\r
+
+    \    // \"description\": \"Leave request for personal reasons\",\r
+
+    \    // \"ticketType\": \"LEAVE_REQUEST\",\r
+
+    \    // \"typeSpecificData\": {\r
+
+    \    //     \"leaveTypeId\": \"7e546435-23de-44ca-8b1e-033b048af6cb\",\r
+
+    \    //     \"fromDate\": \"2025-05-20\",\r
+
+    \    //     \"toDate\": \"2025-05-22\",\r
+
+    \    //     \"reason\": \"Personal work\"\r
+
+    \    // },\r
+
+    \    //For Loan Request\r
+
+    \    \"employeeId\": \"5021d22c-b5bd-4132-b761-d3b6007f62f8\",\r
+
+    \    \"ticketCatId\": \"246074d8-328c-4b9d-bfbf-aa1fcb5d08ba\",\r
+
+    \    \"description\": \"Leave request for personal reasons\",\r
+
+    \    \"ticketType\": \"LEAVE_REQUEST\",\r
+
+    \    \"typeSpecificData\": {\r
+
+    \        \"loanType\": \"Personal Loan\",\r
+
+    \        \"loanAmount\": 50000.00,\r
+
+    \        \"loanDescription\": \"Need loan for personal expenses and home renovation\",\r
+
+    \        \"tenure\": 24,\r
+
+    \        \"managerId\": \"703514f3-c4b9-449a-bbf3-2ce177f4ff37\",\r
+
+    \        \"hrId\": \"703514f3-c4b9-449a-bbf3-2ce177f4ff37\"\r
+
+    \    }\r
+
+    }"
+examples: ./.resources/{{hrmsBaseUrl}}-tickets-.resources/examples
+order: 3000

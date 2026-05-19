@@ -1,0 +1,34 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/resignation/1ce759ab-94c5-4df7-94f6-acd12fd91fe3/earnings"
+url: "{{hrmsBaseUrl}}/resignation/1ce759ab-94c5-4df7-94f6-acd12fd91fe3/earnings"
+method: POST
+body:
+  type: json
+  content: "[\r
+
+    \    {\r
+
+    \        \"type\": \"EARNING\",\r
+
+    \        \"name\": \"GROSS PAY\",\r
+
+    \        \"amount\": 5000,\r
+
+    \        \"userId\": \"{{userId}}\"\r
+
+    \    },\r
+
+    \    {\r
+
+    \        \"type\": \"DEDUCTION\",\r
+
+    \        \"name\": \"HRA\",\r
+
+    \        \"amount\": 2000,\r
+
+    \        \"userId\": \"{{userId}}\"\r
+
+    \    }\r
+
+    ]"
+order: 7000

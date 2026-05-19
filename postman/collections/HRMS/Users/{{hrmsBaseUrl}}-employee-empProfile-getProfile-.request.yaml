@@ -1,0 +1,6 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/employee/empProfile/getProfile/"
+url: "{{hrmsBaseUrl}}/employee/empProfile/getProfile/"
+method: GET
+examples: ./.resources/{{hrmsBaseUrl}}-employee-empProfile-getProfile-.resources/examples
+order: 18000

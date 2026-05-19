@@ -1,0 +1,10 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/employee/getProfileEMP/TENANT_OWNER"
+description: Get current tenant and organization context from token.
+url: "{{hrmsBaseUrl}}/employee/getProfileEMP/TENANT_OWNER"
+method: GET
+auth:
+  type: bearer
+  credentials:
+    token: "{{tenantToken}}"
+order: 7000

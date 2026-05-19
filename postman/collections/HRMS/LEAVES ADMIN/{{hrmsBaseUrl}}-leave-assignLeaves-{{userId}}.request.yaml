@@ -1,0 +1,198 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/leave/assignLeaves/{{userId}}"
+url: "{{hrmsBaseUrl}}/leave/assignLeaves/{{userId}}"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"assignLeave\": [\r
+
+    \    {\r
+
+    \      \"type\": \"Privilage Leave\",\r
+
+    \      \"leaveAllocated\": 25\r
+
+    \    },\r
+
+    \    {\r
+
+    \      \"type\": \"Compassionate Leave 2nd Degree\",\r
+
+    \      \"leaveAllocated\": 0\r
+
+    \    },\r
+
+    \    {\r
+
+    \      \"type\": \"Compensatory Leave\",\r
+
+    \      \"leaveAllocated\": 35\r
+
+    \    },\r
+
+    \    {\r
+
+    \      \"type\": \"Short Term Sick Leave (Full Paid)\",\r
+
+    \      \"leaveAllocated\": 0\r
+
+    \    },\r
+
+    \    {\r
+
+    \      \"type\": \"Sick Leave\",\r
+
+    \      \"leaveAllocated\": 25\r
+
+    \    },\r
+
+    \    {\r
+
+    \      \"type\": \"Leave without Pay\",\r
+
+    \      \"leaveAllocated\": 0\r
+
+    \    },\r
+
+    \    {\r
+
+    \      \"type\": \"Examination Leave\",\r
+
+    \      \"leaveAllocated\": 0\r
+
+    \    },\r
+
+    \    {\r
+
+    \      \"type\": \"Occupational Injury (Half Paid)\",\r
+
+    \      \"leaveAllocated\": 0\r
+
+    \    },\r
+
+    \    {\r
+
+    \      \"type\": \"Medical Leave (Full Paid)\",\r
+
+    \      \"leaveAllocated\": 0\r
+
+    \    },\r
+
+    \    {\r
+
+    \      \"type\": \"Time Off in Lieu\",\r
+
+    \      \"leaveAllocated\": 10\r
+
+    \    },\r
+
+    \    {\r
+
+    \      \"type\": \"Medical Escort Leave (Abroad)\",\r
+
+    \      \"leaveAllocated\": 10\r
+
+    \    },\r
+
+    \    {\r
+
+    \      \"type\": \"Medical Leave (Half Paid)\",\r
+
+    \      \"leaveAllocated\": 5\r
+
+    \    },\r
+
+    \    {\r
+
+    \      \"type\": \"Compassionate Leave 1st Degree\",\r
+
+    \      \"leaveAllocated\": 4\r
+
+    \    },\r
+
+    \    {\r
+
+    \      \"type\": \"Occupational Injury (Full Paid)\",\r
+
+    \      \"leaveAllocated\": 0\r
+
+    \    },\r
+
+    \    {\r
+
+    \      \"type\": \"COVID Leave\",\r
+
+    \      \"leaveAllocated\": 20\r
+
+    \    },\r
+
+    \    {\r
+
+    \      \"type\": \"Casual Leave\",\r
+
+    \      \"leaveAllocated\": 30\r
+
+    \    },\r
+
+    \    {\r
+
+    \      \"type\": \"Paternity Leave\",\r
+
+    \      \"leaveAllocated\": 15\r
+
+    \    },\r
+
+    \    {\r
+
+    \      \"type\": \"Medical Leave (Unpaid)\",\r
+
+    \      \"leaveAllocated\": 10\r
+
+    \    },\r
+
+    \    {\r
+
+    \      \"type\": \"Short Term Sick Leave (Half Paid)\",\r
+
+    \      \"leaveAllocated\": 2\r
+
+    \    },\r
+
+    \    {\r
+
+    \      \"type\": \"Hajj Leave\",\r
+
+    \      \"leaveAllocated\": 20\r
+
+    \    },\r
+
+    \    {\r
+
+    \      \"type\": \"Short Term Sick Leave (Unpaid)\",\r
+
+    \      \"leaveAllocated\": 6\r
+
+    \    },\r
+
+    \    {\r
+
+    \      \"type\": \"Maternity Leave\",\r
+
+    \      \"leaveAllocated\": 182\r
+
+    \    },\r
+
+    \    {\r
+
+    \      \"type\": \"Medical Escort Leave (within UAE)\",\r
+
+    \      \"leaveAllocated\": 10\r
+
+    \    }\r
+
+    \  ]\r
+
+    }\r\n"
+order: 1000

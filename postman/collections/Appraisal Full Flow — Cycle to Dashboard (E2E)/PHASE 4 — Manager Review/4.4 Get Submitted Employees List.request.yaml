@@ -1,0 +1,8 @@
+$kind: http-request
+description: List of employees who have submitted appraisals.
+url: "{{baseUrl}}/appraisal/cycle/{{cycleId}}/admin/submitted-employees?page=0&size=10"
+method: GET
+queryParams:
+  page: "0"
+  size: "10"
+order: 4000

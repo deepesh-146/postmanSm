@@ -1,0 +1,7 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/payrolls/getPayrollById"
+url: "{{hrmsBaseUrl}}/payrolls/getPayrollById/:id"
+method: GET
+pathVariables:
+  id: d8170636-6c61-4619-991a-c0a3cda6e2f0
+order: 8000

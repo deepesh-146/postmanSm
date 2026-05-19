@@ -1,0 +1,46 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/employee/addIncentives"
+url: "{{hrmsBaseUrl}}/employee/addIncentives"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"profileAmounts\": [\r
+
+    \        {\r
+
+    \            \"employeeMainId\": \"b4beed96-d0fd-451f-b763-22bb40bb9802\",\r
+
+    \            \"type\": \"COMPENSATION\",\r
+
+    \            \"date\": \"2025-03-10\",\r
+
+    \            \"amount\": \"10000\",\r
+
+    \            \"reason\": \"COMPENSATION type\",\r
+
+    \            \"grantType\": \"Stock Options\",\r
+
+    \            \"customGrantName\": \"2025 Stock Grant\",\r
+
+    \            \"grantDate\": \"2025-03-25\",\r
+
+    \            \"vestingStartDate\": \"2025-04-01\",\r
+
+    \            \"equityGranted\": \"1000\",\r
+
+    \            \"strikePrice\": \"50\",\r
+
+    \            \"vestingSchedule\": \"Quarterly\",\r
+
+    \            \"vestingmonth\": \"3\",\r
+
+    \            \"cliffMonth\": \"6\"\r
+
+    \        }\r
+
+    \    ]\r
+
+    }"
+order: 8000

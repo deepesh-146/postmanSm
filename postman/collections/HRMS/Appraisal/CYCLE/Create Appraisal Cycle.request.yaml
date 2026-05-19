@@ -1,0 +1,25 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}appraisal/createCycle/"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+        "cycle_name": "Performance Review Q2 2023",
+        "start_date": "2026-01-01",
+        "end_date": "2026-01-30",
+        "frequency": "QUARTERLY",
+        "department": {
+            "type": "all", // Use "all" for All departments or "specific" for a specific department
+            "id": "6fd9e8b6-6c0a-4e8a-a44a-9547ba68db99" // Include department ID only when type is "specific"
+        },
+        "self_appraisal_Deadline": "2026-01-25",
+        "manager_review_period": "2023-07-29",
+        "description": "Quarterly performance review for Q2 2023",
+        "cycle_period": "Q3 2026",
+        "status": "PENDING",
+        "employeeMainId": "{{userId}}"
+    }
+order: 1000

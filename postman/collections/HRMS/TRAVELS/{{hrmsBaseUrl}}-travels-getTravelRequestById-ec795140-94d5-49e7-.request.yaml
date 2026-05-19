@@ -1,0 +1,6 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/travels/getTravelRequestById/ec795140-94d5-49e7-96a9-f6a4a60ea681"
+url: "{{hrmsBaseUrl}}/travels/getTravelRequestById/3de76184-59f9-43ab-a6f5-62263c7b54ee"
+method: GET
+examples: ./.resources/{{hrmsBaseUrl}}-travels-getTravelRequestById-ec795140-94d5-49e7-.resources/examples
+order: 3000

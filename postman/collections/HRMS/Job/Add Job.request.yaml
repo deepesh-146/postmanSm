@@ -1,0 +1,76 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/job/"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"jobData\": {\r
+
+    \        \"title\": \"Java Developer\",\r
+
+    \        \"code\": null,\r
+
+    \        \"companyName\": \"iCeipts Technology\",\r
+
+    \        \"type\": \"Full Time\",\r
+
+    \        \"location\": \"Pune, Maharashtra\",\r
+
+    \        \"designationId\": \"31d5ca1b-5ec7-4c48-ac64-5013a1253336\",\r
+
+    \        \"jobUnitId\": \"7c2f9078-525b-49d6-9d36-23050df110f8\",\r
+
+    \        \"shifts\": \"Day Shift\",\r
+
+    \        \"description\": \"We are looking for a skilled Flutter Developer to Join our Team\",\r
+
+    \        \"experience\": \"3-5 Year\",\r
+
+    \        \"education\": \"Graduation\",\r
+
+    \        \"related\": \"Do you 3 and above years of experience?\",\r
+
+    \        \"salary\": \"100000 - 200000\",\r
+
+    \        \"minSalary\": 100,\r
+
+    \        \"maxSalary\": 200,\r
+
+    \        \"recruiterId\": \"8ef4161f-cf94-42dc-a2dc-9cd21e9c7029\",\r
+
+    \        \"validTill\": \"2024-10-29 18:00:00\",\r
+
+    \        \"isActive\": true,\r
+
+    \        \"jobMode\": \"WorkFromHome\",\r
+
+    \        \"minthreshold\": 10,\r
+
+    \        \"matchthreshold\": 10,\r
+
+    \        \"position\": \"MANAGER\",\r
+
+    \        \"shiftId\": \"c87378ff-600d-48fc-bc24-47a4f6fadeb9\",\r
+
+    \        \"departmentId\": \"b4c34c12-2f8e-4e1d-abca-91f838ef194b\",\r
+
+    \        \"jobDescription\":\"sd\",\r
+
+    \        \"responsibilities\":\"das\",\r
+
+    \        \"requirements\":\"d\"\r
+
+    \    },\r
+
+    \    \"skillsData\": [\r
+
+    \    ],\r
+
+    \    \"benefitData\": [],\r
+
+    \    \"requisitionId\": \"6ba83362-cecc-4524-b44f-dfd940211230\"\r
+
+    }"
+examples: ./.resources/Add Job.resources/examples
+order: 7000

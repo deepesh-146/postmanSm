@@ -1,0 +1,14 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/job_application/updateApplicationStatus/{{applicationId}}"
+url: "{{hrmsBaseUrl}}/job_application/updateApplicationStatus/{{applicationId}}"
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \  \"status\": \"REJECTED\",\r
+
+    \  \"remarks\": \"Candidate did not meet minimum requirements.\"\r
+
+    }\r\n"
+order: 11000

@@ -1,0 +1,31 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/job_application/admin/scheduleInterview/{{applicationId}} Copy"
+url: "{{hrmsBaseUrl}}/job_application/updateInterview/{{interviewId}}"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"type\": \"TECHNICAL\", //\"HR\", \"TECHNICAL\", \"MANAGERIAL\", \"FINAL\"\r
+
+    \    \"mode\": \"VIDEO\", //\"IN_PERSON\", \"PHONE\", \"VIDEO_CALL\"\r
+
+    \    \"date\": \"2025-06-01\",\r
+
+    \    \"time\": \"14:30:00\",\r
+
+    \    \"timeZone\": \"Asia/Kolkata\",\r
+
+    \    \"duration\": \"45 minutes\",\r
+
+    \    \"notesForCandidate\": \"Please join the meeting link 5 minutes early. Bring your ID proof.\",\r
+
+    \    \"attachment\": \"uploads/interview/invite-123e4567.pdf\",\r
+
+    \    \"interviewStatus\": \"SCHEDULED\", //\"SCHEDULED\", \"COMPLETED\", \"CANCELLED\",\r
+
+    \    \"feedbackDataJSON\": {}\r
+
+    }"
+examples: ./.resources/{{hrmsBaseUrl}}-job_application-admin-scheduleInterview-{{applic-1.resources/examples
+order: 6000

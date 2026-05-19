@@ -1,0 +1,29 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/attendance/forPayrollBulk"
+url: "{{hrmsBaseUrl}}/attendance/forPayrollBulk"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"employeeIds\": [\r
+
+    \        \"{{userId}}\"\r
+
+    \    ], // or [\"ALL\"] for all employees\r
+
+    \    //   \"month\": \"03\",        // Optional if startDate/endDate provided\r
+
+    \    //   \"year\": \"2025,      // Optional if startDate/endDate provided\r
+
+    \    \"startDate\": \"2025-02-26\", // Optional if month/year provided\r
+
+    \    \"endDate\": \"2025-03-25\" // Optional if month/year provided\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{orgToken}}"
+examples: ./.resources/{{hrmsBaseUrl}}-attendance-forPayrollBulk.resources/examples
+order: 14000

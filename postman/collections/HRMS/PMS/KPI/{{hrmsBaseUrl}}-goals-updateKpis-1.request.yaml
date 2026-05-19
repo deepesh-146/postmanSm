@@ -1,0 +1,20 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/goals/updateKpis/1"
+url: "{{hrmsBaseUrl}}/goals/updateKpis/1"
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"title\": \"DECREASE Sales\",\r
+
+    \    \"actualValue\": 5000,\r
+
+    \    \"targetValue\": 10000,\r
+
+    \    \"status\": \"In Progress\",\r
+
+    \    \"userId\": \"{{userId}}\"\r
+
+    }"
+order: 4000

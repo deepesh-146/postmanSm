@@ -1,0 +1,46 @@
+$kind: http-example
+request:
+  url: "{{hrmsBaseUrl}}/onboarding_step/:stepId"
+  method: PUT
+  pathVariables:
+    stepId: a19a390f-3ec8-434f-846f-f8d13c554e8e
+  body:
+    type: json
+    content: "{\r
+
+      \    \"sName\": \"About HR Policy\",\r
+
+      \    \"sType\": \"VIDEO\",\r
+
+      \    \"relatedTo\": \"HR\",\r
+
+      \    \"link\": \"https://www.youtube.com/watch?v=uEWfDKCI6s8\",\r
+
+      \    \"desc\": \"About HR\"\r
+
+      }"
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "79"
+    ETag: W/"4f-OavAqB9GkrHetlcsrtvcMEXNSAw"
+    Date: Thu, 10 Oct 2024 17:37:28 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "status": {
+              "success": true,
+              "code": 200,
+              "message": "Step Udpated",
+              "failure": false
+          }
+      }
+order: 1000

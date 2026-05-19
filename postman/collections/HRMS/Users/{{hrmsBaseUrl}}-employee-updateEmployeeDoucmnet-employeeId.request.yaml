@@ -1,0 +1,46 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/employee/updateEmployeeDoucmnet/:employeeId"
+url: "{{hrmsBaseUrl}}/employee/updateEmployeeDoucmnet/:employeeId"
+method: PUT
+pathVariables:
+  employeeId: 8ae15501-dffd-45cf-b6c2-9107f9137ae5
+body:
+  type: json
+  content: "{\r
+
+    \    \"action\": \"add\", //update //delete\r
+
+    \    \"employeeDocument\": [\r
+
+    \        {\r
+
+    \            \"docType\": \"Passport\",\r
+
+    \            \"fileName\": \"passport.pdf\",\r
+
+    \            \"filePath\": \"/uploads/employee_docs/passport.pdf\",\r
+
+    \            \"uploadedBy\": \"Admin\",\r
+
+    \            \"uploadDate\": \"2025-10-22\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"docType\": \"License\",\r
+
+    \            \"fileName\": \"license.pdf\",\r
+
+    \            \"filePath\": \"/uploads/employee_docs/license.pdf\",\r
+
+    \            \"uploadedBy\": \"Admin\",\r
+
+    \            \"uploadDate\": \"2025-10-22\"\r
+
+    \        }\r
+
+    \    ]\r
+
+    }"
+order: 47000

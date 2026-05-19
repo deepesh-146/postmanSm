@@ -1,0 +1,16 @@
+$kind: http-request
+description: |-
+  Get promotions where current user is either the employee being promoted OR the nominator (manager).
+
+  Paginated response.
+url: "{{base_url}}/promotions/my?page=1&size=10&status="
+method: GET
+queryParams:
+  - key: page
+    value: "1"
+  - key: size
+    value: "10"
+  - key: status
+    value: ""
+    description: "Optional: DRAFT, PENDING_APPROVAL, APPROVED, EFFECTIVE, REJECTED, CANCELLED"
+order: 2000

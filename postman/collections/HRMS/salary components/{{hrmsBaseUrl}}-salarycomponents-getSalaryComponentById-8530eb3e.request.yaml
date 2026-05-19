@@ -1,0 +1,6 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/salarycomponents/getSalaryComponentById/8530eb3e-9e63-48ff-93d8-78c18f5476c1"
+url: "{{hrmsBaseUrl}}/salarycomponents/getSalaryComponentById/8530eb3e-9e63-48ff-93d8-78c18f5476c1"
+method: GET
+examples: ./.resources/{{hrmsBaseUrl}}-salarycomponents-getSalaryComponentById-8530eb3e.resources/examples
+order: 16000

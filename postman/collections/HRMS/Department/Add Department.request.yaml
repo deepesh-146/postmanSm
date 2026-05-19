@@ -1,0 +1,20 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/department/"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"name\": \"Human Resourc1\",\r
+
+    \    \"code\": \"HR002\",\r
+
+    \    \"head\": null,\r
+
+    \    \"under\": null,\r
+
+    \    \"headUser\": true\r
+
+    }"
+examples: ./.resources/Add Department.resources/examples
+order: 1000

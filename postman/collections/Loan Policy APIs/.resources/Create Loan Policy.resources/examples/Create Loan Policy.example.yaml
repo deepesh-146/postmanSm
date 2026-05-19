@@ -1,0 +1,89 @@
+$kind: http-example
+request:
+  url: "{{hrmsBaseUrl}}/policy/addLoan"
+  method: POST
+  headers:
+    Content-Type: application/json
+  body:
+    type: json
+    content: |-
+      {
+          "policy": {
+              "policyType": "LOAN",
+              "policyName":"Loan Benefits",
+              "employeeMainId": "{{userId}}"
+          },
+          "gradeRules": [
+              {
+                  "grade":"A1",
+                  "employeeGrade": "A",
+                  "maxLoanAmount": 500000,
+                  "interestRate": 8.5,
+                  "maxTenureMonths": 60,
+                  "emiStartDelayMonths": 1,
+                  "proofRequired": true
+              }
+          ],
+          "eligibility": {
+              "minServiceMonths": 12,
+              "maxConcurrentLoans": 2,
+              "salaryDeductionCapPercentage": 50,
+              "departments": [
+                  "8ff5bd79-a370-4852-95fd-773f54fff306"
+              ]
+          },
+          "advanceSalary": {
+              "isEnabled": true,
+              "maxRequestsPerYear": 2,
+              "minServiceMonths": 6,
+              "approvalRequired": true,
+              "gradeRules": [
+                  {
+                      "grade":"G1",
+                      "employeeGrade": "A",
+                      "maxMonthsAdvance": 3,
+                      "maxSalaryPercentage": 100
+                  }
+              ],
+              "schedules": [
+                  {
+                      "advanceMonths": 1,
+                      "repaymentMonths": 3
+                  }
+              ]
+          }
+      }
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "350"
+    ETag: W/"15e-xNDVCfx0JTw0OlWpZo5a0mJcfCc"
+    Date: Thu, 12 Jun 2025 18:08:01 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "success": true,
+          "status": 200,
+          "data": {
+              "success": true,
+              "message": "Loan policy created successfully",
+              "data": {
+                  "id": "9242fff2-705f-4ea2-a480-cb1a1a336c5a",
+                  "isActive": true,
+                  "policyType": "LOAN",
+                  "policyName": "Loan Benefits",
+                  "employeeMainId": "3bfa2da7-2932-4860-bf7c-30488eab49b6",
+                  "updatedAt": "2025-06-12T18:08:00.714Z",
+                  "createdAt": "2025-06-12T18:08:00.714Z"
+              }
+          }
+      }
+order: 1000

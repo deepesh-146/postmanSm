@@ -1,0 +1,26 @@
+$kind: http-request
+description: Custom payroll report.
+url: "{{baseUrl}}/mis/custom-report/execute"
+method: POST
+headers:
+  Content-Type: application/json
+  x-organization-id: "{{organizationId}}"
+body:
+  type: text
+  content: |-
+    {
+      "reportConfig": {
+        "dataSource": "payroll",
+        "fields": ["employeeMainId", "payrollMonth", "grossSalary", "netSalary", "totalDeductions", "status"],
+        "filters": {},
+        "sortBy": "payrollMonth",
+        "sortOrder": "DESC",
+        "dateRange": {
+          "from": "2025-01-01",
+          "to": "2026-03-13"
+        }
+      },
+      "page": 1,
+      "size": 20
+    }
+order: 5000

@@ -1,0 +1,36 @@
+$kind: http-example
+name: "{{hrmsBaseUrl}}/dashboard/financedashboard/benefitsAndReimbursements/{{userId}}"
+request:
+  url: "{{hrmsBaseUrl}}/dashboard/financedashboard/benefitsAndReimbursements/{{userId}}"
+  method: GET
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "135"
+    ETag: W/"87-ANr1Pq9I6Bae3qDnvKxmOnbIK18"
+    Date: Thu, 12 Jun 2025 12:15:43 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "success": true,
+          "status": 200,
+          "data": [
+              {
+                  "label": "Travel Allowance",
+                  "value": "45480.17"
+              },
+              {
+                  "label": "Medical Allowance",
+                  "value": "51327.50"
+              }
+          ]
+      }
+order: 1000

@@ -1,0 +1,87 @@
+$kind: http-example
+name: "{{hrmsBaseUrl}}/assets/getAssetsById/8df8cf08-6b95-4b95-ae67-15cf97fb235a Copy"
+request:
+  url: "{{hrmsBaseUrl}}/assets/updateAsset/b5a97bdf-528d-4751-a0bf-78d5c748f468/{{userId}}"
+  method: PUT
+  queryParams:
+    - key: search
+      value: null
+      disabled: true
+  body:
+    type: json
+    content: "{\r
+
+      \  \"name\": \"MacBook Pro M21\",\r
+
+      \  \"category\": \"Laptop\",\r
+
+      \  \"assetType\": \"PHYSICAL\",\r
+
+      \  \"serialNumber\": \"MBP2023-XYZ1\",\r
+
+      \  \"brand\": \"Apple\",\r
+
+      \  \"model\": \"M2 Pro 14-inch\",\r
+
+      \  \"purchaseDate\": \"2023-11-15\",\r
+
+      \  \"warrantyEndDate\": \"2026-11-15\",\r
+
+      \  \"purchasePrice\": 220000,\r
+
+      \  \"supplier\": \"Tech Distributors Pvt Ltd\",\r
+
+      \  \"condition\": \"NEW\",\r
+
+      \  \"status\": \"AVAILABLE\",\r
+
+      \  \"location\": \"HQ - IT Storage\",\r
+
+      \  \"notes\": \"New device for development team\"\r
+
+      }\r\n"
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "749"
+    ETag: W/"2ed-KCc4T7cnreZm9+SDVjzdk49YKBM"
+    Date: Mon, 05 May 2025 20:02:43 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "success": true,
+          "status": 200,
+          "message": "Asset updated successfully",
+          "data": {
+              "id": "b5a97bdf-528d-4751-a0bf-78d5c748f468",
+              "name": "MacBook Pro M21",
+              "category": "Laptop",
+              "assetType": "PHYSICAL",
+              "serialNumber": "MBP2023-XYZ1",
+              "brand": "Apple",
+              "model": "M2 Pro 14-inch",
+              "purchaseDate": "2023-11-15",
+              "warrantyEndDate": "2026-11-15",
+              "purchasePrice": 220000,
+              "supplier": "Tech Distributors Pvt Ltd",
+              "condition": "NEW",
+              "status": "AVAILABLE",
+              "location": "HQ - IT Storage",
+              "notes": "New device for development team",
+              "isDeleted": false,
+              "createdAt": "2025-05-05T20:01:18.000Z",
+              "updatedAt": "2025-05-05T20:02:43.539Z",
+              "organizationId": "3361c67e-ca0d-4a78-a5b4-b3b523c035f0",
+              "officeId": "ee5226c2-97d5-46f3-bf8c-d45ca9a51c69",
+              "employeeMainId": "032d7afc-0481-474c-9e51-4d8bf7141807"
+          }
+      }
+order: 1000

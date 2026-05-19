@@ -1,0 +1,10 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/leave/trend-analysis/department-comparison?year=2026"
+method: GET
+queryParams:
+  year: "2026"
+auth:
+  type: bearer
+  credentials:
+    token: "{{clientToken}}"
+order: 3000

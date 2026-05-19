@@ -1,0 +1,7 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/attendance/punchHistory?employeeId=uuid-string&date=2026-03-24"
+method: GET
+queryParams:
+  employeeId: uuid-string
+  date: 2026-03-24
+order: 3000

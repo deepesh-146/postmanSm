@@ -1,0 +1,38 @@
+$kind: http-example
+name: "{{hrmsBaseUrl}}/rewards/getResponses/{{surveyId}} Copy"
+request:
+  url: "{{hrmsBaseUrl}}/rewards/giveAwardToEmployee/{{userId}}"
+  method: POST
+  body:
+    type: json
+    content: "{\r
+
+      \    \"employeeMainId\": \"{{userId}}\",\r
+
+      \    \"awardId\": \"179d6903-e3d0-4c0b-9baf-7f8893deba95\",\r
+
+      \    \"description\": \"pp1\"\r
+
+      }"
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "63"
+    ETag: W/"3f-9K+uNVIaHa0efW5/KnqFJT9JF6c"
+    Date: Fri, 20 Dec 2024 11:25:04 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "success": true,
+          "status": 200,
+          "data": "Award given successfully"
+      }
+order: 1000

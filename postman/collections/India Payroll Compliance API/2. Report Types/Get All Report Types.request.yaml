@@ -1,0 +1,29 @@
+$kind: http-request
+description: "Get list of all available compliance report types (13 types: PF, ESI, LWF, etc.)"
+url: "{{hrmsBaseUrl}}/compliance/reports"
+method: GET
+scripts:
+  - type: afterResponse
+    code: |-
+      pm.test('Status code is 200', function () {
+          pm.response.to.have.status(200);
+      });
+
+      pm.test('Response has reports array', function () {
+          var jsonData = pm.response.json();
+          pm.expect(jsonData.success).to.be.true;
+          pm.expect(jsonData.data.reports).to.be.an('array');
+          pm.expect(jsonData.data.reports.length).to.be.at.least(13);
+      });
+
+      pm.test('Reports have required fields', function () {
+          var reports = pm.response.json().data.reports;
+          var firstReport = reports[0];
+          pm.expect(firstReport).to.have.property('reportType');
+          pm.expect(firstReport).to.have.property('reportName');
+          pm.expect(firstReport).to.have.property('category');
+          pm.expect(firstReport).to.have.property('supportedModes');
+      });
+    language: text/javascript
+examples: ./.resources/Get All Report Types.resources/examples
+order: 1000

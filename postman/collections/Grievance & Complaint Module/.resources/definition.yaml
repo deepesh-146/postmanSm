@@ -1,0 +1,24 @@
+$kind: collection
+description: |-
+  Complete API collection for Complaint & Grievance Management module.
+
+  Base URL: {{base_url}}/grievances
+
+  Auth: Bearer token required in all requests.
+
+  Roles:
+  - EMPLOYEE: Create, view own, withdraw, reopen
+  - MANAGER: + view assigned, update status
+  - HR: + all grievances, internal notes, assign, escalate
+  - ADMIN: Full access including categories
+variables:
+  base_url: http://localhost:8080
+  grievanceId: ""
+  categoryId: ""
+  employeeId: ""
+auth:
+  - id: 81fcec07-fc85-42bb-bc09-fc63131e33f2
+    type: bearer
+    name: bearer auth
+    credentials:
+      token: "{{clientToken}}"

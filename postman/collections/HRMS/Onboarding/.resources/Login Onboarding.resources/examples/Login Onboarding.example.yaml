@@ -1,0 +1,102 @@
+$kind: http-example
+request:
+  url: "{{hrmsBaseUrl}}/onboarding/login"
+  method: POST
+  body:
+    type: json
+    content: "{\r
+
+      \    \"email\": \"sanatmishra29@gmail.com\",\r
+
+      \    \"password\": \"Admin@321\",\r
+
+      \    \"ipAddress\": \"127.0.0.1\"\r
+
+      }"
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "2315"
+    ETag: W/"90b-e2XYbUB18QHDNg9C1o2mxdQWHJU"
+    Date: Mon, 14 Oct 2024 17:14:59 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "status": {
+              "success": true,
+              "code": 200,
+              "message": "Logged In to Dashboard",
+              "failure": false
+          },
+          "data": {
+              "candidate": {
+                  "id": "6979e151-2542-445c-88bd-fdc2248a8da3",
+                  "firstName": "Sanat",
+                  "lastName": "Kumar",
+                  "mobile": "9801345259",
+                  "email": "sanatmishra29@gmail.com",
+                  "address": "412, Sector 9",
+                  "gender": null,
+                  "dateOfBirth": null,
+                  "city": "Panchkula",
+                  "state": "Haryana",
+                  "country": "India",
+                  "password": "$2a$10$55Xtxi1DczSgfP25axh.ouu8QTjdZiQgypxES23D2amLin1cqQE8G",
+                  "education": "B.Tech CSE",
+                  "profession": "iCeipts",
+                  "skills": "JAVA, NODE, Flutter, PHP",
+                  "idcard": "Aadhar",
+                  "picture": "NA",
+                  "otp": null,
+                  "otpExpires": "2024-10-09T17:30:55.000Z",
+                  "isActive": true,
+                  "isVerified": true,
+                  "userType": "CANDIDATE",
+                  "mobileotp": "434126",
+                  "emailotp": "053017",
+                  "isDeleted": false,
+                  "createdAt": "2024-10-09T17:25:55.000Z",
+                  "updatedAt": "2024-10-09T17:28:44.000Z"
+              },
+              "onboarding": {
+                  "id": "f778b358-2db2-4561-9c0b-dc1eda013258",
+                  "jobId": "cb5d4bf6-a1a3-42a5-8065-183796fd6c76",
+                  "jobAppId": "4c4053a9-75c4-420d-b918-b71622a1ed16",
+                  "candidateId": "6979e151-2542-445c-88bd-fdc2248a8da3",
+                  "recruiterId": "903bd690-61f3-43db-9edd-d38d531c1c67",
+                  "jobOfferId": "a2ece94b-798f-4d72-b399-8edbf164b6a3",
+                  "onboardingHr": "05109fb2-0f20-4c69-bbbf-f46203b01d54",
+                  "tempPass": null,
+                  "accountActive": true,
+                  "password": "$2a$10$tIunyC2ekyYVMU2GDhEaXe0HAhmpSNHUqDhHzhMGfwYcjBHJM.N56",
+                  "onboardingDate": "2024-10-20T00:00:00.000Z",
+                  "companyVideoSeen": true,
+                  "tutorialVideoSeen": true,
+                  "hrVideoSeen": true,
+                  "currentStep": 3,
+                  "stepLeft": 0,
+                  "totalStep": 3,
+                  "stepIdsAssignedCompVideo": "a19a390f-3ec8-434f-846f-f8d13c554e8e",
+                  "stepIdsValueCompVideo": "Completed",
+                  "stepIdsAssignedTutVideo": "79929a35-7b08-45e5-a835-2aaa455fb81b",
+                  "stepIdsValueTutVideo": "Completed",
+                  "stepIdsAssignedHrVideo": "2ea5dd73-ceaa-402f-af76-db9ef3bf96d7",
+                  "stepIdsValueHrVideo": "Completed",
+                  "onboardingStatus": "COMPANY_VIDEO",
+                  "createdAt": "2024-10-10T18:48:24.000Z",
+                  "updatedAt": "2024-10-14T17:11:41.000Z",
+                  "jobApplicationId": null
+              },
+              "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjaWQiOiJmNzc4YjM1OC0yZGIyLTQ1NjEtOWMwYi1kYzFlZGEwMTMyNTgiLCJmaXJzdE5hbWUiOiJTYW5hdCIsImlkIjoiNjk3OWUxNTEtMjU0Mi00NDVjLTg4YmQtZmRjMjI0OGE4ZGEzIiwicm9sZSI6IkNBTkRJREFURV9PTkJPQVJEIiwiaWF0IjoxNzI4OTI2MDk5LCJleHAiOjE3NjA0NjIwOTksImF1ZCI6IlNhbmF0In0.y8yT7MEYIfnWtqt0PaH5Z0wHOtCBVgmWY-CQT2w8ykY",
+              "refreshToken": "7e1ac326a3ef9e1b8edb07535b580632e40eb1ed86ec005f993eff7d8a893c2cdbc5af003ed2e625"
+          }
+      }
+order: 1000

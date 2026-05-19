@@ -1,0 +1,6 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/attendance/getAttendanceTime"
+url: "{{hrmsBaseUrl}}/attendance/getAttendanceTime"
+method: GET
+examples: ./.resources/{{hrmsBaseUrl}}-attendance-getAttendanceTime.resources/examples
+order: 5000

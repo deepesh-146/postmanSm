@@ -1,0 +1,9 @@
+$kind: http-request
+description: Get payslip customization settings for the current organization. Returns default settings if no customization exists.
+url: "{{base_url}}/api/payrolls/v3/payslip/customization"
+method: GET
+headers:
+  Content-Type: application/json
+  Authorization: Bearer {{access_token}}
+examples: ./.resources/Get Payslip Customization.resources/examples
+order: 1000

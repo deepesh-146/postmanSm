@@ -1,0 +1,5 @@
+$kind: http-request
+name: Get Assigned Employees/Departments
+url: "{{hrmsBaseUrl}}/rewards/getAssignments/{{shiftId}}"
+method: GET
+order: 7000

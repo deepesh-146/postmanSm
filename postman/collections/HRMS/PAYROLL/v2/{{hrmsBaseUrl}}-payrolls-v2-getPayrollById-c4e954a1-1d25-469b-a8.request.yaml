@@ -1,0 +1,8 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/payrolls/v2/getPayrollById/c4e954a1-1d25-469b-a83a-205ec4b03ac1"
+url: "{{hrmsBaseUrl}}/payrolls/v2/getPayrollById/d8170636-6c61-4619-991a-c0a3cda6e2f0?page=1&size=10"
+method: GET
+queryParams:
+  page: "1"
+  size: "10"
+order: 3000

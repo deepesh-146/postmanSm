@@ -1,0 +1,56 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/employee/deleteJob?id=b044eef1-747a-4f43-9558-677595082c61"
+url: "{{hrmsBaseUrl}}/employee/deleteJob?id=b044eef1-747a-4f43-9558-677595082c61"
+method: DELETE
+queryParams:
+  id: b044eef1-747a-4f43-9558-677595082c61
+body:
+  type: json
+  content: "{\r
+
+    \    \"visas\": [\r
+
+    \        {\r
+
+    \            \"employeeMainId\": \"b4beed96-d0fd-451f-b763-22bb40bb9802\",\r
+
+    \            \"date\": \"2025-02-27\",\r
+
+    \            \"visa\": \"B1\",\r
+
+    \            \"issuingCountry\": \"United States\",\r
+
+    \            \"issued\": \"2025-04-01\",\r
+
+    \            \"expiration\": \"2025-06-10\",\r
+
+    \            \"status\": \"Active\",\r
+
+    \            \"visaType\": \"Business\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"employeeMainId\": \"b4beed96-d0fd-451f-b763-22bb40bb9802\",\r
+
+    \            \"date\": \"2025-02-28\",\r
+
+    \            \"visa\": \"H1B\",\r
+
+    \            \"issuingCountry\": \"United States\",\r
+
+    \            \"issued\": \"2025-05-01\",\r
+
+    \            \"expiration\": \"2026-05-01\",\r
+
+    \            \"status\": \"Active\",\r
+
+    \            \"visaType\": \"Work\"\r
+
+    \        }\r
+
+    \    ]\r
+
+    }"
+order: 7000

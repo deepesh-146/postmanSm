@@ -1,0 +1,20 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/leave/"
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"employeeId\": \"903bd690-61f3-43db-9edd-d38d531c1c67\",\r
+
+    \    \"fromDate\": \"2024-10-15\",\r
+
+    \    \"toDate\": \"2024-10-18\",\r
+
+    \    \"reason\": \"Leave Test\",\r
+
+    \    \"requestId\": \"ca7b7c57-2e40-4e7d-bd4e-4d836d39811b\"\r
+
+    }"
+examples: ./.resources/Update Leave.resources/examples
+order: 3000

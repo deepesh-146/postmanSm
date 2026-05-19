@@ -1,0 +1,9 @@
+$kind: http-request
+url: "{{baseUrl}}/claims?page=0&size=10&employeeId={{employeeId}}&status="
+method: GET
+queryParams:
+  page: "0"
+  size: "10"
+  employeeId: "{{employeeId}}"
+  status: ""
+order: 9000

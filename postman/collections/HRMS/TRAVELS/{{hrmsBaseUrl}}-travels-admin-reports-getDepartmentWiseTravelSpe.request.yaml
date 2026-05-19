@@ -1,0 +1,6 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/travels/admin/reports/getDepartmentWiseTravelSpend/{{userId}}"
+url: "{{hrmsBaseUrl}}/travels/admin/reports/getDepartmentWiseTravelSpend/{{userId}}"
+method: GET
+examples: ./.resources/{{hrmsBaseUrl}}-travels-admin-reports-getDepartmentWiseTravelSpe.resources/examples
+order: 12000

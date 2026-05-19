@@ -1,0 +1,18 @@
+$kind: http-request
+name: http://localhost:4000/employee/onboard
+url: http://localhost:4000/employee/onboard
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"candidateId\": \"fb3a8e21-de81-4379-b59d-bdf0db97c9d8\",\r
+
+    \    \"jobId\": 12345\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjaWQiOiJhNzc5Nzg1My1hNzM3LTQwN2YtOWYzOS1iYzE3ZTgyMzNlOGUiLCJpZCI6ImE3Nzk3ODUzLWE3MzctNDA3Zi05ZjM5LWJjMTdlODIzM2U4ZSIsImZpcnN0TmFtZSI6IlNvbmFsaSIsImVtYWlsIjoic29uYWxpOTk4OEBnbWFpbC5jb20iLCJyb2xlIjoiRU1QTE9ZRUUiLCJpYXQiOjE3NTMwNzk5NDEsImV4cCI6MTc1MzE2NjM0MSwiYXVkIjoiU29uYWxpIn0.acNWunvHip8JZ8gx9ueT0cD2UBsauBFX4-14tqxoWPI
+order: 3000

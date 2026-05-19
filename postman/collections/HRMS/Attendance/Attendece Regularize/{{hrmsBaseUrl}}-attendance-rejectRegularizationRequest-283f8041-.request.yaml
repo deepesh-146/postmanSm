@@ -1,0 +1,18 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/attendance/rejectRegularizationRequest/283f8041-5a15-4c75-8130-68fe7de6c48f"
+url: "{{hrmsBaseUrl}}/attendance/rejectRegularizationRequest/283f8041-5a15-4c75-8130-68fe7de6c48f"
+method: PUT
+queryParams:
+  - key: search
+    value: ""
+    disabled: true
+body:
+  type: json
+  content: "{\r
+
+    \    \"hrComment\": \"Accepting your request\",\r
+
+    \    \"approvedById\": \"{{userId}}\"\r
+
+    }"
+order: 3000

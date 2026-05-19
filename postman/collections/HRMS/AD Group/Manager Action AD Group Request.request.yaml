@@ -1,0 +1,18 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/ad_group/manager-action"
+method: PATCH
+body:
+  type: json
+  content: "{\r
+
+    \    \"adRequestId\": \"19f96192-2cb6-4eda-84b8-8020e0a961d0\",\r
+
+    \    \"action\": true,\r
+
+    \    \"comments\": \"APPROVED\",\r
+
+    \    \"managerId\": \"903bd690-61f3-43db-9edd-d38d531c1c67\"\r
+
+    }"
+examples: ./.resources/Manager Action AD Group Request.resources/examples
+order: 8000

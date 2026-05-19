@@ -1,0 +1,17 @@
+$kind: http-request
+url: "{{baseUrl}}/ticket/category"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "name": "Hardware Issue",
+      "parentId": "{{categoryId}}",
+      "description": "Laptop, monitor, keyboard issues",
+      "priority": "HIGH",
+      "slaDays": 2,
+      "departmentId": "DEPARTMENT_UUID_HERE"
+    }
+order: 2000

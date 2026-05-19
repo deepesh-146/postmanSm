@@ -1,0 +1,5 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/goals/getLabels"
+url: "{{hrmsBaseUrl}}/goals/getLabels"
+method: GET
+order: 7000

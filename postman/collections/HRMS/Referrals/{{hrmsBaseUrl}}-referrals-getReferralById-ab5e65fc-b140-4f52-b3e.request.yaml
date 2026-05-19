@@ -1,0 +1,6 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/referrals/getReferralById/ab5e65fc-b140-4f52-b3e4-2482fc210545"
+url: "{{hrmsBaseUrl}}/referrals/getReferralById/ab5e65fc-b140-4f52-b3e4-2482fc210545"
+method: GET
+examples: ./.resources/{{hrmsBaseUrl}}-referrals-getReferralById-ab5e65fc-b140-4f52-b3e.resources/examples
+order: 13000

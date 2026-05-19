@@ -1,0 +1,26 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/assets/returnAsset/{{userId}}"
+url: "{{hrmsBaseUrl}}/assets/returnAsset/{{userId}}"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"assetId\": \"341afd56-544c-44fd-9267-0c9bcdab6656\",\r
+
+    \  \"returnCondition\": \"GOOD\",\r
+
+    \  \"returnedAt\": \"2025-05-08T10:30:00Z\"  // Optional; use if you want to set specific return time\r
+
+    }\r
+
+    \r
+
+    \r
+
+    //      let updatedStatus = \"AVAILABLE\";\r
+
+    \ //     if (returnCondition === \"NEEDS_REPAIR\") //updatedStatus = \"IN_REPAIR\";\r
+
+    \  //    if (returnCondition === \"RETIRED\") updatedStatus = \"RETIRED\";"
+order: 9000

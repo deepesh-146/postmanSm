@@ -1,0 +1,15 @@
+$kind: collection
+description: Performance Improvement Plan (PIP) module - CRUD, Workflow Approval, Comments, Progress
+variables:
+  baseUrl: http://localhost:3000/api
+  token: ""
+  pipId: ""
+  goalId: ""
+  userId: ""
+  approverId: ""
+auth:
+  - id: e642770e-aa25-401c-9799-01bf9600e2c2
+    type: bearer
+    name: bearer auth
+    credentials:
+      token: "{{clientToken}}"

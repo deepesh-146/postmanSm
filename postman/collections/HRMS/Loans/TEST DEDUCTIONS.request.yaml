@@ -1,0 +1,15 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/attendance/testLoanDeduction"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"employeeId\": \"703514f3-c4b9-449a-bbf3-2ce177f4ff37\",\r
+
+    \    \"month\": 6,\r
+
+    \    \"year\": 2025\r
+
+    }"
+order: 13000

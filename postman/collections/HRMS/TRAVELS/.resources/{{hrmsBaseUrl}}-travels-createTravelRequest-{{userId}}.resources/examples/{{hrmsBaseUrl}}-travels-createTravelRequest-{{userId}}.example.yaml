@@ -1,0 +1,65 @@
+$kind: http-example
+name: "{{hrmsBaseUrl}}/travels/createTravelRequest/{{userId}}"
+request:
+  url: "{{hrmsBaseUrl}}/travels/createTravelRequest/{{userId}}"
+  method: POST
+  body:
+    type: json
+    content: "{\r
+
+      \  \"travelPurpose\": \"Client meeting and site inspection1111\",\r
+
+      \  \"destination\": \"Mumbai\",\r
+
+      \  \"fromDate\": \"2025-05-20\",\r
+
+      \  \"toDate\": \"2025-05-23\",\r
+
+      \  \"modeOfTravel\": \"Flight\",\r
+
+      \  \"estimatedCost\": 18000,\r
+
+      \  \"advanceRequired\": true,\r
+
+      \  \"description\": \"Visit client office and assess project site condition\"\r
+
+      }\r\n"
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    Server: nginx/1.24.0 (Ubuntu)
+    Date: Thu, 05 Jun 2025 10:09:04 GMT
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "684"
+    Connection: keep-alive
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    ETag: W/"2ac-VOZvmphbvs2NdaCkXUlz7l1TJik"
+  body:
+    type: json
+    content: |-
+      {
+          "success": true,
+          "status": 200,
+          "message": " Travel request created successfully.",
+          "data": {
+              "id": "09a265a1-fe7e-4e7d-b36c-88c3f76e3b56",
+              "status": "PENDING",
+              "travelPurpose": "Client meeting and site inspection1111",
+              "destination": "Mumbai",
+              "fromDate": "2025-05-20T00:00:00.000Z",
+              "toDate": "2025-05-23T00:00:00.000Z",
+              "modeOfTravel": "Flight",
+              "estimatedCost": 18000,
+              "advanceRequired": true,
+              "description": "Visit client office and assess project site condition",
+              "employeeMainId": "3bfa2da7-2932-4860-bf7c-30488eab49b6",
+              "organizationId": "891bb2ae-588c-4518-953e-1e367e3a23df",
+              "officeId": "8e2f4467-dff5-4717-932f-bcbc9431f5dc",
+              "updatedAt": "2025-06-05T10:09:04.947Z",
+              "createdAt": "2025-06-05T10:09:04.947Z"
+          }
+      }
+order: 1000

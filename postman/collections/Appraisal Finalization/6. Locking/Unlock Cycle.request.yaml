@@ -1,0 +1,13 @@
+$kind: http-request
+description: Unlock a previously locked cycle. Admin only.
+url: "{{baseUrl}}/cycle/{{cycleId}}/unlock"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+        "reason": "Unlocking for additional calibration adjustments"
+    }
+order: 3000

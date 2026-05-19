@@ -1,0 +1,16 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/roles/permissions/sync"
+url: "{{hrmsBaseUrl}}/roles/permissions/sync"
+method: POST
+queryParams:
+  - key: deleteOrphans
+    value: "true"
+    disabled: true
+  - key: dryRun
+    value: "true"
+    disabled: true
+auth:
+  type: bearer
+  credentials:
+    token: "{{platformAdmin}}"
+order: 10000

@@ -1,0 +1,42 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/employee/addAssets"
+url: "{{hrmsBaseUrl}}/employee/addAssets"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"assets\": [\r
+
+    \        {\r
+
+    \            \"employeeMainId\": \"b4beed96-d0fd-451f-b763-22bb40bb9802\",\r
+
+    \            \"name\": \"Dell XPS 13\",\r
+
+    \            \"description\": \"Company laptop\",\r
+
+    \            \"dateAssigned\": \"2025-02-11\",\r
+
+    \            \"dateReturned\": null\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"employeeMainId\": \"b4beed96-d0fd-451f-b763-22bb40bb9802\",\r
+
+    \            \"name\": \"iPhone 12\",\r
+
+    \            \"description\": \"Company mobile phone\",\r
+
+    \            \"dateAssigned\": \"2025-03-09\",\r
+
+    \            \"dateReturned\": null\r
+
+    \        }\r
+
+    \    ]\r
+
+    }"
+order: 1000

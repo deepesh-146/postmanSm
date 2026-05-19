@@ -1,0 +1,22 @@
+$kind: http-request
+description: Get aggregated statistics for all challans - grouped by report type and status.
+url: "{{hrmsBaseUrl}}/compliance/statistics"
+method: GET
+headers:
+  Authorization: Bearer {{token}}
+scripts:
+  - type: afterResponse
+    code: |-
+      pm.test('Status code is 200', function () {
+          pm.response.to.have.status(200);
+      });
+
+      pm.test('Statistics returned', function () {
+          var jsonData = pm.response.json();
+          pm.expect(jsonData.success).to.be.true;
+          pm.expect(jsonData.data).to.have.property('byReportType');
+          pm.expect(jsonData.data).to.have.property('byStatus');
+          pm.expect(jsonData.data).to.have.property('totals');
+      });
+    language: text/javascript
+order: 1000

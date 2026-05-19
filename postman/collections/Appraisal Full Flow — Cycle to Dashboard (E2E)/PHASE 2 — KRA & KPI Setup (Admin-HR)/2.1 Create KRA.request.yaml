@@ -1,0 +1,29 @@
+$kind: http-request
+description: Create a KRA (Key Result Area) for an employee. weightage is the percentage weight (e.g. 60 means 60%). Save the returned id as kraId.
+url: "{{baseUrl}}/goals/kra/create"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+        "attribute": "Sales & Revenue",
+        "description": "Achievement of sales and revenue targets",
+        "weightage": "60",
+        "startDate": "2026-01-01",
+        "endDate": "2026-03-31",
+        "status": "Active",
+        "departmentId": "{{departmentId}}",
+        "employeeId": "{{employeeId}}"
+    }
+scripts:
+  - type: afterResponse
+    code: |-
+      var res = pm.response.json();
+      if (res.data && res.data.id) {
+          pm.collectionVariables.set('kraId', res.data.id);
+          console.log('kraId set:', res.data.id);
+      }
+    language: text/javascript
+order: 1000

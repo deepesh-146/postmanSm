@@ -1,0 +1,9 @@
+$kind: http-request
+description: Returns only successful push logs.
+url: "{{baseUrl}}/erp/push-logs?status=SUCCESS&page=0&size=20"
+method: GET
+queryParams:
+  status: SUCCESS
+  page: "0"
+  size: "20"
+order: 4000

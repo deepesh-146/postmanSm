@@ -1,0 +1,51 @@
+$kind: http-example
+request:
+  url: "{{hrmsBaseUrl}}/tickets/escalated/:employeeId"
+  method: GET
+  pathVariables:
+    employeeId: 903bd690-61f3-43db-9edd-d38d531c1c67
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    Server: nginx/1.24.0 (Ubuntu)
+    Date: Mon, 14 Oct 2024 19:24:47 GMT
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "640"
+    Connection: keep-alive
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    ETag: W/"280-R/U1lOZpcT8I2Ob0dy8LEt/YEk4"
+  body:
+    type: json
+    content: |-
+      {
+          "status": {
+              "success": true,
+              "code": 200,
+              "message": "Tickets Found",
+              "failure": false
+          },
+          "data": [
+              {
+                  "id": "2582dd41-8782-4f2a-b3a7-bd752769d618",
+                  "employeeId": "903bd690-61f3-43db-9edd-d38d531c1c67",
+                  "category": "dfd24da3-253f-4f83-ab1c-c6527e1de830",
+                  "description": "Just a check Man",
+                  "assignedTo": "903bd690-61f3-43db-9edd-d38d531c1c67",
+                  "priority": 1,
+                  "reqAddedOn": "2024-10-14T13:31:07.000Z",
+                  "ticketStatus": "CLOSED",
+                  "awaitingRes": null,
+                  "slaDays": 1,
+                  "otherDetails": "Some details for the ticket",
+                  "comments": "Test",
+                  "escalated": true,
+                  "escalateId": "903bd690-61f3-43db-9edd-d38d531c1c67",
+                  "createdAt": "2024-10-14T19:01:07.000Z",
+                  "updatedAt": "2024-10-14T19:10:52.000Z"
+              }
+          ]
+      }
+order: 1000

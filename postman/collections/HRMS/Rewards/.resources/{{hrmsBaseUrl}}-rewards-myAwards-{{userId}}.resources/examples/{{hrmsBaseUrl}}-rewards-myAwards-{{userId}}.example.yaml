@@ -1,0 +1,74 @@
+$kind: http-example
+name: "{{hrmsBaseUrl}}/rewards/myAwards/{{userId}}"
+request:
+  url: "{{hrmsBaseUrl}}/rewards/myAwards/{{userId}}"
+  method: GET
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "992"
+    ETag: W/"3e0-BJ/3/GC4bK/CIF9noCY8qugCo5U"
+    Date: Fri, 20 Dec 2024 11:28:03 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "success": true,
+          "status": 200,
+          "message": "Award retrieved successfully",
+          "data": [
+              {
+                  "id": "32106cf9-eaad-4197-8b04-c60bec6c3f6f",
+                  "date": "2024-12-20T11:25:04.000Z",
+                  "description": "pp1",
+                  "pointsEarned": 200,
+                  "award": {
+                      "id": "179d6903-e3d0-4c0b-9baf-7f8893deba95",
+                      "title": "Employee of the Month"
+                  },
+                  "awardgiver": {
+                      "id": "9b048ebe-ea22-4097-8a55-cf8dbef55bc4",
+                      "firstName": "Deepesh",
+                      "lastName": "Mehta"
+                  }
+              },
+              {
+                  "id": "a9cb5d5b-4c85-43fc-9b1a-a329f66a621e",
+                  "date": "2024-12-20T11:16:14.000Z",
+                  "description": "pp",
+                  "pointsEarned": 200,
+                  "award": {
+                      "id": "179d6903-e3d0-4c0b-9baf-7f8893deba95",
+                      "title": "Employee of the Month"
+                  },
+                  "awardgiver": {
+                      "id": "9b048ebe-ea22-4097-8a55-cf8dbef55bc4",
+                      "firstName": "Deepesh",
+                      "lastName": "Mehta"
+                  }
+              },
+              {
+                  "id": "722f57e3-a5f3-448b-a725-1cb24d2a03aa",
+                  "date": "2024-12-20T11:16:00.000Z",
+                  "description": "pp",
+                  "pointsEarned": 200,
+                  "award": {
+                      "id": "179d6903-e3d0-4c0b-9baf-7f8893deba95",
+                      "title": "Employee of the Month"
+                  },
+                  "awardgiver": {
+                      "id": "9b048ebe-ea22-4097-8a55-cf8dbef55bc4",
+                      "firstName": "Deepesh",
+                      "lastName": "Mehta"
+                  }
+              }
+          ]
+      }
+order: 1000

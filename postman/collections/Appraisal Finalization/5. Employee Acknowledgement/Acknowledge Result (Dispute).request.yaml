@@ -1,0 +1,14 @@
+$kind: http-request
+description: Employee disputes their appraisal result. disputeReason is required (minimum 10 characters).
+url: "{{baseUrl}}/my/cycle/{{cycleId}}/acknowledge"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+        "status": "DISPUTED",
+        "disputeReason": "I believe the manager rating does not accurately reflect my contributions to the Q4 product launch and cross-team collaboration efforts."
+    }
+order: 3000

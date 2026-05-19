@@ -1,0 +1,30 @@
+$kind: http-request
+description: List all bonuses with pagination and filters
+url: "{{base_url}}/api/bonus?page=1&size=10"
+method: GET
+headers:
+  Authorization: Bearer {{access_token}}
+queryParams:
+  - key: page
+    value: "1"
+    description: Page number
+  - key: size
+    value: "10"
+    description: Page size
+  - key: workflow_status
+    value: APPROVED
+    disabled: true
+    description: "Filter by workflow status: PENDING, APPROVED, REJECTED, COMPLETED"
+  - key: paymentStatus
+    value: PENDING
+    disabled: true
+    description: "Filter by payment status: PENDING, PAID, CANCELLED"
+  - key: employeeId
+    value: "{{employee_id}}"
+    disabled: true
+    description: Filter by employee ID
+  - key: month
+    value: 2025-04
+    disabled: true
+    description: Filter by month (YYYY-MM format)
+order: 3000

@@ -1,0 +1,13 @@
+$kind: http-request
+url: "{{baseUrl}}/ticket/reject"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "ticketId": "{{ticketId}}",
+      "comments": "Rejected. Insufficient details provided. Please resubmit with photos."
+    }
+order: 4000

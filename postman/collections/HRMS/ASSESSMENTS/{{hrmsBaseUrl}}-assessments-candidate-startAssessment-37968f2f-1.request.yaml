@@ -1,0 +1,13 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/assessments/candidate/startAssessment/37968f2f-129f-4d05-9f9b-5f93f55bb2b6"
+url: "{{hrmsBaseUrl}}/assessments/candidate/startAssessment/37968f2f-129f-4d05-9f9b-5f93f55bb2b6"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"assessmentId\": \"f8c82a2d-3ea9-428e-af31-e47690128052\"\r
+
+    }"
+examples: ./.resources/{{hrmsBaseUrl}}-assessments-candidate-startAssessment-37968f2f-1.resources/examples
+order: 7000

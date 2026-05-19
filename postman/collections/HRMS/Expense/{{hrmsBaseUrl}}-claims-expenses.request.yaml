@@ -1,0 +1,42 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/claims/expenses"
+url: "{{hrmsBaseUrl}}/expense/createExpense/?type=child_education"
+method: POST
+queryParams:
+  type: child_education
+body:
+  type: json
+  content: "{\r
+
+    \    \"selectedChildId\": \"CHILD_001\",\r
+
+    \    \"claimAgainst\": \"school_fee\",\r
+
+    \    \"selectedFeeType\": \"tuition\",\r
+
+    \    \"claimAmount\": 25000,\r
+
+    \    \"selectedchildRelation\": \"son\",\r
+
+    \    \"selectedchildGrade\": \"5\",\r
+
+    \    \"selectedchildSchool\": \"Delhi Public School\",\r
+
+    \    \"selectedchildBoard\": \"CBSE\",\r
+
+    \    \"paymentMode\": \"online\",\r
+
+    \    \"paymentDate\": \"2025-04-15\",\r
+
+    \    \"durationFromYear\": \"2024\",\r
+
+    \    \"durationToYear\": \"2025\",\r
+
+    \    \"endDate\": \"2025-03-31\",\r
+
+    \    \"uploadDoucment\": \"fee_receipt.pdf\",\r
+
+    \    \"type\":\"child_education\"\r
+
+    }"
+order: 2000

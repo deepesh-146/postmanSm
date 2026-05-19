@@ -1,0 +1,11 @@
+$kind: http-request
+description: |-
+  Get promotion dashboard statistics:
+
+  1. Status counts (DRAFT, PENDING_APPROVAL, APPROVED, EFFECTIVE, REJECTED, CANCELLED)
+  2. Promotions by department
+  3. Recent 10 effective promotions
+url: "{{base_url}}/promotions/dashboard"
+method: GET
+examples: ./.resources/Get Dashboard Stats.resources/examples
+order: 1000

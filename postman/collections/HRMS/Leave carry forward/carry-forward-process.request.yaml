@@ -1,0 +1,60 @@
+$kind: http-request
+name: carry-forward/process
+url: "{{hrmsBaseUrl}}/leave/carry-forward/process"
+method: POST
+body:
+  type: json
+  content: "// {\r
+
+    //     \"fromYear\": 2025,\r
+
+    //     \"toYear\": 2026\r
+
+    // }\r
+
+    // Or for specific employees:\r
+
+    {\r
+
+    \    \"fromYear\": 2025,\r
+
+    \    \"toYear\": 2026,\r
+
+    \    \"employeeIds\": [\r
+
+    \        \"uuid1\",\r
+
+    \        \"uuid2\"\r
+
+    \    ]\r
+
+    }\r
+
+    //yaha pe so bhi balance leave hogi wo carry forward kar lenge\r
+
+    \r
+
+    // {\r
+
+    //   \"fromYear\": 2025,\r
+
+    //   \"toYear\": 2026,\r
+
+    //   \"employeeIds\": [\r
+
+    //     \"uuid-employee-1\",\r
+
+    //     \"uuid-employee-2\"\r
+
+    //   ],\r
+
+    //   \"leaveTypeIds\": [\r
+
+    //     \"uuid-casual-leave\",\r
+
+    //     \"uuid-sick-leave\"\r
+
+    //   ]\r
+
+    // }\r\n"
+order: 2000

@@ -1,0 +1,9 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/employee_benefit/"
+method: GET
+queryParams:
+  - key: search
+    value: Health Insurance
+    disabled: true
+examples: ./.resources/Get Benefit List.resources/examples
+order: 6000

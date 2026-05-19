@@ -1,0 +1,7 @@
+$kind: http-request
+url: "{{baseUrl}}/history/BENEFIT_PLAN/{{benefitId}}?page=0&size=20"
+method: GET
+queryParams:
+  page: "0"
+  size: "20"
+order: 3000

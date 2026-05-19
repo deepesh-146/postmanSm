@@ -1,0 +1,74 @@
+$kind: http-example
+request:
+  url: "{{base_url}}/api/payrolls/v3/payslip/customization"
+  method: PUT
+  body:
+    type: json
+    content: |-
+      {
+        "componentVisibility": {
+          "employeeInfo": true,
+          "payrollPeriod": true,
+          "earnings": {
+            "basic": true,
+            "hra": true,
+            "da": false,
+            "bonus": true,
+            "specialAllowance": true,
+            "transportAllowance": false,
+            "otherAllowances": true
+          },
+          "deductions": {
+            "pf": true,
+            "esi": true,
+            "professionalTax": true,
+            "gpssa": false,
+            "gratuity": true,
+            "incomeTax": true
+          },
+          "attendance": true,
+          "summary": true,
+          "bankDetails": false,
+          "taxDetails": true,
+          "allowances": true
+        },
+        "componentOrder": [
+          "employeeInfo",
+          "payrollPeriod",
+          "earnings",
+          "deductions",
+          "attendance",
+          "summary",
+          "taxDetails",
+          "allowances",
+          "bankDetails"
+        ],
+        "customLabels": {
+          "basic": "Base Salary",
+          "hra": "House Rent Allowance"
+        },
+        "isActive": true
+      }
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    Content-Type: application/json
+  body:
+    type: json
+    content: |-
+      {
+        "status": "success",
+        "data": {
+          "id": "uuid-here",
+          "organizationId": "uuid-here",
+          "componentVisibility": { ... },
+          "componentOrder": [ ... ],
+          "customLabels": { ... },
+          "isActive": true,
+          "createdAt": "2025-01-15T10:00:00.000Z",
+          "updatedAt": "2025-01-15T10:00:00.000Z"
+        },
+        "message": "Payslip customization updated successfully"
+      }
+order: 1000

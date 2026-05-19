@@ -1,0 +1,17 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/employee_loan/skip-month/:loanId"
+method: POST
+pathVariables:
+  loanId: 2f4f9e66-7659-4a88-8274-75a619e4a6fa
+body:
+  type: json
+  content: "{\r
+
+    \    \"month\": 2,\r
+
+    \    \"year\": 2026,\r
+
+    \    \"reason\": \"Financial hardship\"\r
+
+    }"
+order: 17000

@@ -1,0 +1,5 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/payrolls/getSingleSalaryData/3043e01b-ee08-440d-a02d-3b89fe70c255"
+url: "{{hrmsBaseUrl}}/payrolls/getSingleSalaryData/0bbc8f4f-42f9-45bd-8e8c-8cddea8d60d1"
+method: GET
+order: 23000

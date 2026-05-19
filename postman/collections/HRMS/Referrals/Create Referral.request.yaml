@@ -1,0 +1,28 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/referrals/"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"firstName\": \"Rahul\",\r
+
+    \    \"lastName\": \"Sharma\",\r
+
+    \    \"email\": \"shiv990mines@yopmail.com\",\r
+
+    \    \"mobile\": \"9876543210\",\r
+
+    \    \"isRefreel\": true,\r
+
+    \    \"refreelByEmployeeName\": \"Amit Verma\",\r
+
+    \    \"resume\": \"This is resume\",\r
+
+    \    \"employeeMainId\": \"5775a448-4316-43ae-a1e8-a8e2032dec48\",\r
+
+    \    \"jobId\": \"abb26b0f-5f0e-4e44-9549-16472d78ef7f\"\r
+
+    }"
+examples: ./.resources/Create Referral.resources/examples
+order: 2000

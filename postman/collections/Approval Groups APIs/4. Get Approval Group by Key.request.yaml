@@ -1,0 +1,7 @@
+$kind: http-request
+description: Get approval group by its unique key (e.g., FINANCE_APPROVERS, HR_APPROVERS)
+url: "{{baseUrl}}/approval-groups/key/FINANCE_APPROVERS"
+method: GET
+headers:
+  Authorization: Bearer {{authToken}}
+order: 4000

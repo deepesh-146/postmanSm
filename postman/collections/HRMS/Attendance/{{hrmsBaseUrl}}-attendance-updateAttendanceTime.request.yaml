@@ -1,0 +1,15 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/attendance/updateAttendanceTime"
+url: "{{hrmsBaseUrl}}/attendance/updateAttendanceTime"
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"totalWorkingHouses\": \"9:00 AM - 7:00 PM\",\r
+
+    \    \"totalTime\": \"9\"\r
+
+    }"
+examples: ./.resources/{{hrmsBaseUrl}}-attendance-updateAttendanceTime.resources/examples
+order: 6000

@@ -1,0 +1,52 @@
+$kind: http-request
+description: |-
+  Create a new promotion nomination (DRAFT status).
+
+  Auto-runs eligibility checks. Blocks if:
+  - Self-promotion attempted
+  - Employee not found
+  - Active PIP exists
+  - Pending promotion exists
+  - Performance below threshold
+
+  promotionType options:
+  - DESIGNATION
+  - GRADE
+  - DESIGNATION_AND_GRADE
+  - LATERAL
+url: "{{base_url}}/promotions"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "employeeId": "{{employee_id}}",
+      "toDesignationId": "uuid-new-designation-id",
+      "toGradeId": "uuid-new-grade-id",
+      "toDepartmentId": null,
+      "proposedSalary": 85000,
+      "salaryRevisionDetails": {
+        "salBasic": 50000,
+        "salHRA": 20000,
+        "salDA": 10000,
+        "salBonus": 5000,
+        "salPfDed": 6000
+      },
+      "promotionType": "DESIGNATION_AND_GRADE",
+      "justification": "Consistently exceeded targets for the last 3 quarters. Led the Q4 project successfully and mentored 2 junior team members.",
+      "effectiveDate": "2026-04-01",
+      "appraisalCycleId": null,
+      "remarks": "Strong candidate for senior role"
+    }
+scripts:
+  - type: afterResponse
+    code: |-
+      var jsonData = pm.response.json();
+      if (jsonData.data && jsonData.data.id) {
+          pm.collectionVariables.set('promotion_id', jsonData.data.id);
+      }
+    language: text/javascript
+examples: ./.resources/Create Promotion Nomination.resources/examples
+order: 1000

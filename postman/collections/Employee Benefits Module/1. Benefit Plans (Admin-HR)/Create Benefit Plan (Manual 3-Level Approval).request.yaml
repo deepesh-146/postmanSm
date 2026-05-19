@@ -1,0 +1,53 @@
+$kind: http-request
+url: "{{baseUrl}}/plans"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+        "name": "Meal Allowance",
+        "code": "MA-001",
+        "benefitCategory": "ALLOWANCE",
+        "description": "Monthly meal allowance for eligible employees",
+        "applicableEmployeeTypes": [
+            "FULL_TIME"
+        ],
+        "eligibleAfterMonths": 3,
+        "valueType": "FIXED",
+        "amount": 3000,
+        "maxAmount": 3000,
+        "frequency": "MONTHLY",
+        "isTaxable": true,
+        "proofRequired": true,
+        "allowedDocumentTypes": [
+            "PDF",
+            "JPG"
+        ],
+        "approvalType": "MANUAL",
+        "approvalFlow": [
+            "MANAGER",
+            "HR",
+            "FINANCE"
+        ],
+        "autoEnroll": false,
+        "allowDependents": false,
+        "effectiveFrom": "2026-04-01",
+        "effectiveTo": "2027-03-31",
+        "eligibilityRules": [
+            {
+                "ruleType": "EMPLOYEE_TYPE",
+                "operator": "IN",
+                "value": [
+                    "FULL_TIME"
+                ]
+            },
+            {
+                "ruleType": "TENURE_MONTHS",
+                "operator": "GREATER_THAN",
+                "value": 3
+            }
+        ]
+    }
+order: 2000

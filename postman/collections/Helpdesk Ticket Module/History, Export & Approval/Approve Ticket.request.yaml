@@ -1,0 +1,13 @@
+$kind: http-request
+url: "{{baseUrl}}/ticket/approve"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "ticketId": "{{ticketId}}",
+      "comments": "Approved. Proceed with the hardware replacement."
+    }
+order: 3000

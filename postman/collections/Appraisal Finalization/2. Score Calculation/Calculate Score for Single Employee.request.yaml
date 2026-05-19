@@ -1,0 +1,5 @@
+$kind: http-request
+description: Calculate final score for a single employee. Groups responses by KRA, computes weighted averages, assigns performance band.
+url: "{{baseUrl}}/cycle/{{cycleId}}/employee/{{employeeId}}/calculate-score"
+method: POST
+order: 2000

@@ -1,0 +1,34 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/employee/addJobs"
+url: "{{hrmsBaseUrl}}/employee/addJobs"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"jobs\": [\r
+
+    \        {\r
+
+    \            \"employeeMainId\": \"b4beed96-d0fd-451f-b763-22bb40bb9802\",\r
+
+    \            \"effectiveDate\": \"2025-03-01\",\r
+
+    \            \"location\": \"New York Office\",\r
+
+    \            \"division\": \"Sales\",\r
+
+    \            \"department\": \"Marketing\",\r
+
+    \            \"jobtitle\": \"Senior Marketing Manager\",\r
+
+    \            \"reportTo\": \"John Doe\",\r
+
+    \            \"visaType\": \"H1B\"\r
+
+    \        }\r
+
+    \    ]\r
+
+    }"
+order: 9000

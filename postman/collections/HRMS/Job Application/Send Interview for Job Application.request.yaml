@@ -1,0 +1,22 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/job_application/interview/:jobApplicationId"
+method: POST
+pathVariables:
+  jobApplicationId: 4c4053a9-75c4-420d-b918-b71622a1ed16
+body:
+  type: json
+  content: "{\r
+
+    \    \"intDate\": \"28th September 2024\",\r
+
+    \    \"intStartTime\": \"12:00 PM\",\r
+
+    \    \"intEndTime\": \"01:00 PM\",\r
+
+    \    \"dateTime\": \"2024-09-28 12:00:00\",\r
+
+    \    \"link\": \"https://meet.google.com/pnd-shmi-nhh\"\r
+
+    }"
+examples: ./.resources/Send Interview for Job Application.resources/examples
+order: 4000

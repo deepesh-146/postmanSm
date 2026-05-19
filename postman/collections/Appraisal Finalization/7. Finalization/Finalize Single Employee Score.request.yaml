@@ -1,0 +1,5 @@
+$kind: http-request
+description: Finalize a single employee's score. Sets status to FINALIZED and creates a PENDING acknowledgement.
+url: "{{baseUrl}}/scores/{{finalScoreId}}/finalize"
+method: POST
+order: 2000

@@ -1,0 +1,12 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/payrolls/import-payroll/"
+url: "{{hrmsBaseUrl}}/payrolls/import-payroll/"
+method: POST
+body:
+  type: formdata
+  content:
+    - type: file
+      key: file
+      src:
+        - /C:/Users/HP/Downloads/uploadSample payroll.xlsx
+order: 16000

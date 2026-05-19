@@ -1,0 +1,13 @@
+$kind: http-request
+description: Verify cycle was created. Note the cycleId.
+url: "{{baseUrl}}/appraisal/getAllCycles/?page=0&size=10"
+method: GET
+queryParams:
+  - key: page
+    value: "0"
+  - key: size
+    value: "10"
+  - key: status
+    value: ""
+    disabled: true
+order: 2000

@@ -1,0 +1,31 @@
+name: LOCAL
+values:
+  - key: hrmsBaseUrl
+    value: 'http://localhost:3000/'
+  - key: userId
+    value: 96764438-6d93-4d96-ac8b-b5fca1dcb16f
+  - key: clientToken
+    value: ''
+  - key: resignationId
+    value: ss
+  - key: candidateId
+    value: 0e56b7fe-11cd-4f64-951f-fa87df91669q
+  - key: tenantId
+    value: ''
+  - key: orgToken
+    value: ''
+  - key: platformAdmin
+    value: ''
+  - key: tenantToken
+    value: ''
+  - key: organizationId
+    value: ''
+  - key: officeId
+    value: ''
+  - key: payrollId
+    value: ''
+  - key: attEMPID
+    value: ''
+  - key: categoryId
+    value: ''
+color: 0

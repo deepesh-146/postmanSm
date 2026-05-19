@@ -1,0 +1,68 @@
+$kind: http-example
+name: "{{hrmsBaseUrl}}/assessments/admin/assessments"
+request:
+  url: "{{hrmsBaseUrl}}/assessments/admin/assessments"
+  method: GET
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "989"
+    ETag: W/"3dd-hGgeXscCLkxEcdkyZPiUghu0b60"
+    Date: Tue, 01 Jul 2025 06:32:00 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "success": true,
+          "status": 200,
+          "data": [
+              {
+                  "id": "04429c98-3698-4f6b-b81b-94ccd23ba134",
+                  "title": "Full-Stack Web Development (MEAN) Assessment",
+                  "category": "PROBLEM_SOLVING",
+                  "difficulty": "Beginner",
+                  "submitted": 0,
+                  "inProgress": 0,
+                  "createdAt": "2025-07-01T05:51:23.000Z",
+                  "totalCandidates": 0
+              },
+              {
+                  "id": "7385cabf-11e6-49ef-94e2-2de576e889ba",
+                  "title": "Full-Stack Web Development (MEAN) Assessment",
+                  "category": "PROBLEM_SOLVING",
+                  "difficulty": "Beginner",
+                  "submitted": 0,
+                  "inProgress": 0,
+                  "createdAt": "2025-07-01T05:42:42.000Z",
+                  "totalCandidates": 0
+              },
+              {
+                  "id": "82c6627e-ba96-4398-9acf-b06945a0a12a",
+                  "title": "Backend Development Assessment1",
+                  "category": "TECHNICAL_SKILLS",
+                  "difficulty": "Intermediate",
+                  "submitted": 0,
+                  "inProgress": 0,
+                  "createdAt": "2025-06-30T16:58:00.000Z",
+                  "totalCandidates": 0
+              },
+              {
+                  "id": "f8c82a2d-3ea9-428e-af31-e47690128052",
+                  "title": "Backend Development Assessment",
+                  "category": "TECHNICAL_SKILLS",
+                  "difficulty": "Intermediate",
+                  "submitted": 1,
+                  "inProgress": 0,
+                  "createdAt": "2025-06-30T12:27:27.000Z",
+                  "totalCandidates": 1
+              }
+          ]
+      }
+order: 1000

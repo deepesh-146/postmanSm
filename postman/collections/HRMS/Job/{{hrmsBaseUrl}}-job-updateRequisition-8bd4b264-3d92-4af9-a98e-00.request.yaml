@@ -1,0 +1,17 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/job/updateRequisition/8bd4b264-3d92-4af9-a98e-002deadb4c29"
+url: "{{hrmsBaseUrl}}/job/updateRequisition/0167017c-bb56-40a5-9953-3c2c2936e282"
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"minSalary\": 200,\r
+
+    \    \"maxSalary\": 200,\r
+
+    \    \"recuiterId\": \"b4beed96-d0fd-451f-b763-22bb40bb9802\"\r
+
+    }"
+examples: ./.resources/{{hrmsBaseUrl}}-job-updateRequisition-8bd4b264-3d92-4af9-a98e-00.resources/examples
+order: 6000

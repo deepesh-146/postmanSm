@@ -1,0 +1,24 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/payrolls/postEarnings/{{userId}}"
+url: "{{hrmsBaseUrl}}/payrolls/postEarnings/{{userId}}"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"empPayrollsSalaryId\": \"b026047e-d02b-41b9-a31e-09cc1fb56774\",\r
+
+    \    \"payrollId\": \"a94c117e-e80d-41e5-9c75-12dcd60b83b2\",\r
+
+    \    \"allowanceName\": \"pp\",\r
+
+    \    \"allowanceDescription\": \"pp\",\r
+
+    \    \"allowanceType\": \"DEDUCTION\",\r
+
+    \    \"amount\": 200,\r
+
+    \    \"earningType\": \"monthly\"\r
+
+    }"
+order: 5000

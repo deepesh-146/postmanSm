@@ -1,0 +1,16 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/tickets/internal-note"
+url: "{{hrmsBaseUrl}}/tickets/internal-note"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"ticketId\": \"2b153b75-739f-4352-acde-7141c0abc4dd\",\r
+
+    \    \"message\": \"User has history of similar issues. Check network configuration.\",\r
+
+    \    \"attachments\": \"uploadImage/2026-01-05T09:51:28.641Z-Full yt version-Thumbnail.jpg\"\r
+
+    }"
+order: 7000

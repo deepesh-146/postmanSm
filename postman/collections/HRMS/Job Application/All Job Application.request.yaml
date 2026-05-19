@@ -1,0 +1,21 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/job_application/getAllJobApplications?size=10&page=1&currentPhase=SHORTLISTED"
+method: GET
+queryParams:
+  - key: size
+    value: "10"
+  - key: page
+    value: "1"
+  - key: search
+    value: 80589335-aff1-4269-981b-34593777babd
+    disabled: true
+  - key: search
+    value: 8a240742-35ad-4fbc-89d7-85f4c0ce1dc0
+    disabled: true
+  - key: type
+    value: half
+    disabled: true
+  - key: currentPhase
+    value: SHORTLISTED
+examples: ./.resources/All Job Application.resources/examples
+order: 6000

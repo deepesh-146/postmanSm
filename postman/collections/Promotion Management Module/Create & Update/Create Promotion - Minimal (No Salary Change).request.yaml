@@ -1,0 +1,17 @@
+$kind: http-request
+description: Create a promotion with only required fields (no salary revision, no grade change).
+url: "{{base_url}}/promotions"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "employeeId": "{{employee_id}}",
+      "toDesignationId": "uuid-new-designation-id",
+      "promotionType": "DESIGNATION",
+      "justification": "Promotion based on exceptional performance in Q3-Q4 appraisal cycle.",
+      "effectiveDate": "2026-04-01"
+    }
+order: 2000

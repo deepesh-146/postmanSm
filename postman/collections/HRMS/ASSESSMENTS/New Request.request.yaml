@@ -1,0 +1,6 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/assessments/admin/getSubmissionsForAssessment/:assessmentId"
+method: GET
+pathVariables:
+  assessmentId: 2d45b16a-5ea2-40eb-8975-fa34e28fd7e2
+order: 11000

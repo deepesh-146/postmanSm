@@ -1,0 +1,5 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/travels/deleteTravelPolicy/640aabba-53b8-424e-b480-4de187e851a5"
+url: "{{hrmsBaseUrl}}/travels/deleteTravelPolicy/640aabba-53b8-424e-b480-4de187e851a5"
+method: DELETE
+order: 19000

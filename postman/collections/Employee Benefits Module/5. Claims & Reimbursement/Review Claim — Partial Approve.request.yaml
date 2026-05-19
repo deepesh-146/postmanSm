@@ -1,0 +1,14 @@
+$kind: http-request
+url: "{{baseUrl}}/claims/{{claimId}}/review"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "action": "PARTIALLY_APPROVED",
+      "approvedAmount": 3500,
+      "comment": "Only base membership covered, not add-ons"
+    }
+order: 5000

@@ -1,0 +1,19 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/rewards/updateAward/{{awardId}}"
+url: "{{hrmsBaseUrl}}/rewards/updateAward/{{awardId}}"
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"title\": \"Employee of the Month11\",\r
+
+    \    \"description\": \"Awarded to the best performing employee for the month of December11.\",\r
+
+    \    \"color\":\"red\",\r
+
+    \    \"points\": 200\r
+
+    }"
+examples: ./.resources/{{hrmsBaseUrl}}-rewards-updateAward-{{awardId}}.resources/examples
+order: 17000

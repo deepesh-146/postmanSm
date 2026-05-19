@@ -1,0 +1,17 @@
+$kind: http-request
+url: "{{baseUrl}}/plans?page=1&size=10&search=&categoryType=&isActive=true"
+method: GET
+queryParams:
+  - key: page
+    value: "1"
+  - key: size
+    value: "10"
+  - key: search
+    value: ""
+    description: Search by name/code/category/description
+  - key: categoryType
+    value: ""
+    description: HEALTH, INSURANCE, ALLOWANCE, REIMBURSEMENT, WELLNESS, RETIREMENT, OTHER
+  - key: isActive
+    value: "true"
+order: 4000

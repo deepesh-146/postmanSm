@@ -1,0 +1,56 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/resignation"
+url: "{{hrmsBaseUrl}}/resignation/submitResignation"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"last_working_day\": \"2025-03-31\",\r
+
+    \    \"reason_for_resign\": \"Pursuing new career opportunities.\",\r
+
+    \    \"final_pay\": 50000.00,\r
+
+    \    \"regular_pay_schedule\": \"Monthly\",\r
+
+    \    \"on_given_date\": \"2025-03-15\",\r
+
+    \    \"final_settlement_date\": \"2025-04-05\",\r
+
+    \    \"personal_email\": \"employee.personal@example.com\",\r
+
+    \    \"notes\": \"Thank you for the opportunity and support during my tenure.\",\r
+
+    \    \"status\": \"pending\",\r
+
+    \    \"approved_by\": null,\r
+
+    \    \"rejected_by\": null,\r
+
+    \    \"comments\": \"Awaiting final approval.\",\r
+
+    \    \"userId\": \"7313506a-1900-4683-beff-6c9e9d8b2f18\",\r
+
+    \    \"parentId\": \"{{userId}}\",\r
+
+    \    \"noticePeriod\": true,\r
+
+    \    \"payType\": \"Fixed\",\r
+
+    \    \"payTypeAmount\": \"45000\",\r
+
+    \    \"noticeTypeNote\": \"Standard 30-day notice period.\",\r
+
+    \    \"totalPayDay\": \"30\",\r
+
+    \    \"grossPay\": 60000.00,\r
+
+    \    \"netPay\": 55000.00,\r
+
+    \    \"totalDeductions\": 5000.00,\r
+
+    \    \"totalEarnings\": 55000.00\r
+
+    }"
+order: 1000

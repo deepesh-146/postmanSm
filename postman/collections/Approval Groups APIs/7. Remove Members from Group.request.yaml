@@ -1,0 +1,17 @@
+$kind: http-request
+description: Remove members from an approval group (soft delete - sets isActive to false)
+url: "{{baseUrl}}/approval-groups/{{groupId}}/members"
+method: DELETE
+headers:
+  Authorization: Bearer {{authToken}}
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "employeeIds": [
+        "310dbdba-fd25-4345-a97d-1fff7409fb9a"
+       
+      ]
+    }
+order: 7000

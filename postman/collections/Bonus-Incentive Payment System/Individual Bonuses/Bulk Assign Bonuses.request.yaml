@@ -1,0 +1,29 @@
+$kind: http-request
+description: Create multiple bonuses at once (each goes through workflow individually)
+url: "{{base_url}}/api/bonus/bulk-assign"
+method: POST
+headers:
+  Content-Type: application/json
+  Authorization: Bearer {{access_token}}
+body:
+  type: json
+  content: |-
+    {
+      "bonuses": [
+        {
+          "employeeId": "{{employee_id_1}}",
+          "amount": 50000,
+          "currency": "INR",
+          "reason": "Annual bonus 2024",
+          "tdsAmount": 5000
+        },
+        {
+          "employeeId": "{{employee_id_2}}",
+          "amount": 75000,
+          "currency": "INR",
+          "reason": "Annual bonus 2024",
+          "tdsAmount": 7500
+        }
+      ]
+    }
+order: 9000

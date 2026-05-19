@@ -1,0 +1,10 @@
+$kind: http-request
+description: List promotions with effective date in Q1-Q2 2026.
+url: "{{base_url}}/promotions?page=1&size=10&fromDate=2026-01-01&toDate=2026-06-30"
+method: GET
+queryParams:
+  page: "1"
+  size: "10"
+  fromDate: 2026-01-01
+  toDate: 2026-06-30
+order: 6000

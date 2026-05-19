@@ -1,0 +1,28 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/job/candidate/getJobList?size=3&page=1&jobType=part-time"
+url: "{{hrmsBaseUrl}}/job/candidate/getJobList?size=3&page=1&jobType=part-time"
+method: GET
+queryParams:
+  - key: size
+    value: "3"
+  - key: page
+    value: "1"
+  - key: search
+    value: pp
+    disabled: true
+  - key: location
+    value: mumbai
+    disabled: true
+  - key: sort
+    value: desc
+    disabled: true
+  - key: minSalary
+    value: "100"
+    disabled: true
+  - key: maxSalary
+    value: "100"
+    disabled: true
+  - key: jobType
+    value: part-time
+examples: ./.resources/{{hrmsBaseUrl}}-job-candidate-getJobList-size=3&page=1&jobType=p.resources/examples
+order: 10000

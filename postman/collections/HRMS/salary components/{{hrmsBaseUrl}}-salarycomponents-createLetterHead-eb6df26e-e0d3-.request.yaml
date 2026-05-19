@@ -1,0 +1,23 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/salarycomponents/createLetterHead/eb6df26e-e0d3-4d10-8714-873fef6e213c"
+url: "{{hrmsBaseUrl}}/salarycomponents/createLetterHead/{{userId}}"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"name\": \"sujay\",\r
+
+    \    \"isDefault\": true,\r
+
+    \    \"image\": \"EARNING\",\r
+
+    \    \"height\": \"nice\",\r
+
+    \    \"width\": \"eb6df26e-e0d3-4d10-8714-873fef6e213c\",\r
+
+    \    \"align\": \"afcsf\"\r
+
+    }"
+examples: ./.resources/{{hrmsBaseUrl}}-salarycomponents-createLetterHead-eb6df26e-e0d3-.resources/examples
+order: 9000

@@ -1,0 +1,6 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/job/deletePosition/2a8d62af-aba9-4de9-b4a5-d78a1b3c3bfc"
+url: "{{hrmsBaseUrl}}/job/deletePosition/2a8d62af-aba9-4de9-b4a5-d78a1b3c3bfc"
+method: DELETE
+examples: ./.resources/{{hrmsBaseUrl}}-job-deletePosition-2a8d62af-aba9-4de9-b4a5-d78a1.resources/examples
+order: 17000

@@ -1,0 +1,7 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/tickets/category/:ticketCatId"
+method: GET
+pathVariables:
+  ticketCatId: 085069f7-e6d2-4279-b0c2-4bfba6db2e2d
+examples: ./.resources/Get Ticket Category Data.resources/examples
+order: 22000

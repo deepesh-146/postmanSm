@@ -1,0 +1,34 @@
+$kind: http-example
+name: "{{hrmsBaseUrl}}/job_application/getAllJobApplicationCount"
+request:
+  url: "{{hrmsBaseUrl}}/job_application/getAllJobApplicationCount"
+  method: GET
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "121"
+    ETag: W/"79-G4a2eOgMGXUIcS6MfGLK3gVW7qU"
+    Date: Mon, 03 Feb 2025 20:10:45 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "success": true,
+          "status": 200,
+          "data": [
+              {
+                  "rejectedCount": 3,
+                  "shortlistedCount": 2,
+                  "submittedCount": 9,
+                  "totalApplications": 45
+              }
+          ]
+      }
+order: 1000

@@ -1,0 +1,9 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/employee/dashboard/getJobApplicationStats/{{userId}}"
+url: "{{hrmsBaseUrl}}/employee/dashboard/getJobApplicationStats/{{userId}}"
+method: GET
+queryParams:
+  - key: year
+    value: "2025"
+    disabled: true
+order: 6000

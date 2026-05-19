@@ -1,0 +1,13 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/roles/getUserRolePermissions/{{userId}}"
+url: "{{hrmsBaseUrl}}/roles/getUserRolePermissions/:userId?navigationBarData=true"
+method: GET
+queryParams:
+  navigationBarData: "true"
+pathVariables:
+  userId: "{{userId}}"
+auth:
+  type: bearer
+  credentials:
+    token: "{{orgToken}}"
+order: 6000

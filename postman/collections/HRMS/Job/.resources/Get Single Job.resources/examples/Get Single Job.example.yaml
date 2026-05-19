@@ -1,0 +1,73 @@
+$kind: http-example
+request:
+  url: "{{hrmsBaseUrl}}/job/detail/:jobId"
+  method: GET
+  pathVariables:
+    jobId: cb5d4bf6-a1a3-42a5-8065-183796fd6c76
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "1273"
+    ETag: W/"4f9-+tEh19KA3dX68+B4QsMkgyAq7Us"
+    Date: Wed, 09 Oct 2024 17:25:02 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "status": {
+              "success": true,
+              "code": 200,
+              "message": "Job Data",
+              "failure": false
+          },
+          "data": {
+              "job": {
+                  "id": "cb5d4bf6-a1a3-42a5-8065-183796fd6c76",
+                  "title": "CEO - India",
+                  "code": "JOB6665822",
+                  "companyName": "iCeipts Technology",
+                  "type": "Full Time",
+                  "location": "Pune, Maharashtra",
+                  "designationId": "d10e48ed-e5f7-4821-9817-8a05d673eab4",
+                  "jobUnitId": "e71f8b2c-1c10-46f1-99a5-05c8bbfe4539",
+                  "skills": "Dart, Flutter, Google Play Store",
+                  "shifts": "Day Shift",
+                  "description": "We are looking for a skilled Flutter Developer to Join our Team",
+                  "benefits": "Health insurance, Provident Fund, Work From Home",
+                  "experience": "3-5 Year",
+                  "education": "Graduation",
+                  "related": "Do you 3 and above years of experience?",
+                  "salary": "100000 - 200000",
+                  "recruiterId": "null",
+                  "validTill": "2024-10-29T12:30:00.000Z",
+                  "isActive": true,
+                  "createdAt": "2024-10-09T16:52:36.000Z",
+                  "updatedAt": "2024-10-09T16:52:36.000Z"
+              },
+              "unit": {
+                  "id": "e71f8b2c-1c10-46f1-99a5-05c8bbfe4539",
+                  "name": "DX",
+                  "unitHead": "ADMIN",
+                  "code": "DX-6855",
+                  "createdAt": "2024-10-09T15:49:22.000Z",
+                  "updatedAt": "2024-10-09T15:50:11.000Z"
+              },
+              "designation": {
+                  "id": "d10e48ed-e5f7-4821-9817-8a05d673eab4",
+                  "name": "CEO",
+                  "depId": "32e8b17d-29e8-4f8f-8078-8ec006e2766e",
+                  "code": "CEO-2222",
+                  "createdAt": "2024-10-09T15:43:52.000Z",
+                  "updatedAt": "2024-10-09T15:43:52.000Z",
+                  "departmentId": null
+              }
+          }
+      }
+order: 1000

@@ -1,0 +1,10 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/designation/?size=10&page=1&fields=name,department.name&dynamic[name]=Sr manager"
+method: GET
+queryParams:
+  size: "10"
+  page: "1"
+  fields: name,department.name
+  dynamic[name]: Sr manager
+examples: ./.resources/Get All Designation.resources/examples
+order: 3000

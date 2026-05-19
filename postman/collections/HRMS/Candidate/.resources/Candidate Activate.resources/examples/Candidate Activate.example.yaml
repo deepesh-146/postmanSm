@@ -1,0 +1,31 @@
+$kind: http-example
+request:
+  url: "{{hrmsBaseUrl}}/candidate/activate/:candidateId"
+  method: PATCH
+  pathVariables:
+    candidateId: 6979e151-2542-445c-88bd-fdc2248a8da3
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "86"
+    ETag: W/"56-OVa1yPHicWE2/hLiyHr0NkVQo1U"
+    Date: Wed, 09 Oct 2024 17:27:39 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "status": {
+              "success": true,
+              "code": 200,
+              "message": "Candidate Activated",
+              "failure": false
+          }
+      }
+order: 1000

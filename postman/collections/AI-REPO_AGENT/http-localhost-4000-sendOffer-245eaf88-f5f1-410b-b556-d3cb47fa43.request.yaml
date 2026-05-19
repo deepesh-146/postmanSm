@@ -1,0 +1,26 @@
+$kind: http-request
+name: http://localhost:4000/sendOffer/245eaf88-f5f1-410b-b556-d3cb47fa435a
+url: http://localhost:4000/sendOffer/549f538c-0c51-4b7f-9ac9-dddd80253145
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"offerId\": \"549f538c-0c51-4b7f-9ac9-dddd80253145\",\r
+
+    \    \"annualCTC\": 750000,\r
+
+    \    \"joiningDate\": \"2025-06-10\",\r
+
+    \    \"notes\": \"This offer is subject to background verification.\",\r
+
+    \    \"customMessage\": \"We are pleased to offer you the position. Please respond within 3 days.\",\r
+
+    \    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjaWQiOiJlMDhhZGI3OC0zZDJkLTQ5NmMtYWUzMC1hMGEwYmMxZTg5YTIiLCJpZCI6ImUwOGFkYjc4LTNkMmQtNDk2Yy1hZTMwLWEwYTBiYzFlODlhMiIsImZpcnN0TmFtZSI6IkdlcmFsZCIsImVtYWlsIjoiZ2VycnlAZ21haWwuY29tIiwicm9sZSI6IkVNUExPWUVFIiwiaWF0IjoxNzUzMDk3NjkxLCJleHAiOjE3NTMxODQwOTEsImF1ZCI6IkdlcmFsZCJ9.pp7c-H4qm-jUXeFcUIYL_pyqB_-BfiBXdGh-FSKMqM8\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjaWQiOiJlMDhhZGI3OC0zZDJkLTQ5NmMtYWUzMC1hMGEwYmMxZTg5YTIiLCJpZCI6ImUwOGFkYjc4LTNkMmQtNDk2Yy1hZTMwLWEwYTBiYzFlODlhMiIsImZpcnN0TmFtZSI6IkdlcmFsZCIsImVtYWlsIjoiZ2VycnlAZ21haWwuY29tIiwicm9sZSI6IkVNUExPWUVFIiwiaWF0IjoxNzUzMDk3NjkxLCJleHAiOjE3NTMxODQwOTEsImF1ZCI6IkdlcmFsZCJ9.pp7c-H4qm-jUXeFcUIYL_pyqB_-BfiBXdGh-FSKMqM8
+order: 2000

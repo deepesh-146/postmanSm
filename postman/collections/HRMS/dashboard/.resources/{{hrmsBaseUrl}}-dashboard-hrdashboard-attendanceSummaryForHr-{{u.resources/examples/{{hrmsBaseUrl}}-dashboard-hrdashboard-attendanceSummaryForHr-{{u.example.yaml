@@ -1,0 +1,62 @@
+$kind: http-example
+name: "{{hrmsBaseUrl}}/dashboard/hrdashboard/attendanceSummaryForHr/{{userId}}"
+request:
+  url: "{{hrmsBaseUrl}}/dashboard/hrdashboard/attendanceSummaryForHr/{{userId}}"
+  method: GET
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "385"
+    ETag: W/"181-iCynZJMy7/wPMunYBMe2qiORJWU"
+    Date: Fri, 06 Jun 2025 09:53:40 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "success": true,
+          "status": 200,
+          "data": {
+              "presentCount": 0,
+              "absentCount": 25,
+              "lateCount": 0,
+              "recentPunches": [],
+              "deptMap": {
+                  "IT": {
+                      "total": 9,
+                      "present": 0
+                  },
+                  "Biology": {
+                      "total": 1,
+                      "present": 0
+                  },
+                  "Network": {
+                      "total": 6,
+                      "present": 0
+                  },
+                  "Information Technology": {
+                      "total": 5,
+                      "present": 0
+                  },
+                  "Science": {
+                      "total": 2,
+                      "present": 0
+                  },
+                  "Quality Assuran": {
+                      "total": 1,
+                      "present": 0
+                  },
+                  "Sales and Marketing": {
+                      "total": 1,
+                      "present": 0
+                  }
+              }
+          }
+      }
+order: 1000

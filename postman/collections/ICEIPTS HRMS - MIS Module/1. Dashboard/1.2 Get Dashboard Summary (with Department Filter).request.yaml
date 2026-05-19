@@ -1,0 +1,12 @@
+$kind: http-request
+description: Dashboard summary filtered by a specific department.
+url: "{{baseUrl}}/mis/dashboard-summary?dateFrom=2025-01-01&dateTo=2026-03-13&departmentId={{departmentId}}"
+method: GET
+headers:
+  Content-Type: application/json
+  x-organization-id: "{{organizationId}}"
+queryParams:
+  dateFrom: 2025-01-01
+  dateTo: 2026-03-13
+  departmentId: "{{departmentId}}"
+order: 2000

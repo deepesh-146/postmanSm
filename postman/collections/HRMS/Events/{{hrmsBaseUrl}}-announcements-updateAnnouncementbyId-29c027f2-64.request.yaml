@@ -1,0 +1,17 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/announcements/updateAnnouncementbyId/29c027f2-64bc-4c74-9a43-dea276bcbb2e"
+url: "{{hrmsBaseUrl}}/holidays/updateEvent/82c8ad75-4ea5-4d2c-b25b-c53ad37a39bd"
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"eventName\": \"Management Level Issue111234412\",\r
+
+    \    \"description\": \"CATMAN4585\",\r
+
+    \    \"date\": \"2024-11-14 07:12:52\"\r
+
+    }"
+examples: ./.resources/{{hrmsBaseUrl}}-announcements-updateAnnouncementbyId-29c027f2-64.resources/examples
+order: 5000

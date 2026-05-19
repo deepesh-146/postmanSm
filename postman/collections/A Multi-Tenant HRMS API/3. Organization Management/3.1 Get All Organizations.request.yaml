@@ -1,0 +1,7 @@
+$kind: http-request
+description: Get all organizations for current tenant. Automatically scoped.
+url: "{{hrmsBaseUrl}}/organizations"
+method: GET
+headers:
+  Authorization: Bearer {{tenantToken}}
+order: 1000

@@ -1,0 +1,21 @@
+$kind: http-request
+description: View execution history of all scheduled and ad-hoc reports.
+url: "{{baseUrl}}/mis/report-logs?page=1&size=10"
+method: GET
+headers:
+  Content-Type: application/json
+  x-organization-id: "{{organizationId}}"
+queryParams:
+  - key: page
+    value: "1"
+  - key: size
+    value: "10"
+  - key: reportType
+    value: DASHBOARD_SUMMARY
+    disabled: true
+    description: Filter by report type
+  - key: status
+    value: COMPLETED
+    disabled: true
+    description: PENDING | PROCESSING | COMPLETED | FAILED
+order: 1000

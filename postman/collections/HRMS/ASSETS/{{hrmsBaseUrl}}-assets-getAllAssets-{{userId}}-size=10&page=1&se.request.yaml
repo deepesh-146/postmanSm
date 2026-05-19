@@ -1,0 +1,18 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/assets/getAllAssets/{{userId}}?size=10&page=1&search=MBP2023"
+url: "{{hrmsBaseUrl}}/assets/getAllAssets/{{userId}}?size=5&page=1"
+method: GET
+queryParams:
+  - key: size
+    value: "5"
+  - key: page
+    value: "1"
+  - key: search
+    value: Mouse
+    disabled: true
+  - key: status
+    value: AVAILABLE
+    disabled: true
+    description: ('AVAILABLE', 'ASSIGNED', 'IN_REPAIR', 'RETIRED'),
+examples: ./.resources/{{hrmsBaseUrl}}-assets-getAllAssets-{{userId}}-size=10&page=1&se.resources/examples
+order: 2000

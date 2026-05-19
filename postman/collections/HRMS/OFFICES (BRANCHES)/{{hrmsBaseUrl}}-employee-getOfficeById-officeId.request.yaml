@@ -1,0 +1,7 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/employee/getOfficeById/:officeId"
+url: "{{hrmsBaseUrl}}/employee/getOfficeById/:officeId"
+method: GET
+pathVariables:
+  officeId: ""
+order: 4000

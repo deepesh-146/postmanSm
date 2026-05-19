@@ -1,0 +1,50 @@
+$kind: http-example
+request:
+  url: "{{hrmsBaseUrl}}/attendance/countByMonthYear"
+  method: POST
+  body:
+    type: json
+    content: "{\r
+
+      \    \"month\": \"10\",\r
+
+      \    \"year\": \"2024\"\r
+
+      }"
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "414"
+    ETag: W/"19e-XcjVfQntbIW25x3IWTNmqasMqVw"
+    Date: Mon, 14 Oct 2024 17:54:49 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "status": {
+              "success": true,
+              "code": 200,
+              "message": "Attendance Count Found",
+              "failure": false
+          },
+          "data": {
+              "id": "79c3b023-158c-4542-b2b2-aea43254ef06",
+              "month": 10,
+              "year": 2024,
+              "workingDay": 22,
+              "active": true,
+              "addedBy": "903bd690-61f3-43db-9edd-d38d531c1c67",
+              "approvedBy": "903bd690-61f3-43db-9edd-d38d531c1c67",
+              "approvedOn": "2024-10-14T12:24:34.000Z",
+              "createdAt": "2024-10-14T17:52:48.000Z",
+              "updatedAt": "2024-10-14T17:54:34.000Z"
+          }
+      }
+order: 1000

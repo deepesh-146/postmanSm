@@ -1,0 +1,28 @@
+$kind: http-request
+description: Execute a custom employee report with selected fields, filters, sorting, and pagination.
+url: "{{baseUrl}}/mis/custom-report/execute"
+method: POST
+headers:
+  Content-Type: application/json
+  x-organization-id: "{{organizationId}}"
+body:
+  type: text
+  content: |-
+    {
+      "reportConfig": {
+        "dataSource": "employee",
+        "fields": ["firstName", "lastName", "email", "gender", "joiningDate", "isActive"],
+        "filters": {
+          "isActive": true
+        },
+        "sortBy": "joiningDate",
+        "sortOrder": "DESC",
+        "dateRange": {
+          "from": "2025-01-01",
+          "to": "2026-03-13"
+        }
+      },
+      "page": 1,
+      "size": 20
+    }
+order: 1000

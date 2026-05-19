@@ -1,0 +1,6 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/tickets/category/:ticketCatId"
+method: DELETE
+pathVariables:
+  ticketCatId: ""
+order: 16000

@@ -1,0 +1,51 @@
+$kind: http-example
+name: "{{hrmsBaseUrl}}/rewards/getAllAwards/{{userId}}"
+request:
+  url: "{{hrmsBaseUrl}}/rewards/getAllAwards/{{userId}}"
+  method: GET
+  queryParams:
+    - key: page
+      value: "1"
+      disabled: true
+    - key: size
+      value: "3"
+      disabled: true
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "567"
+    ETag: W/"237-tr/atHyd04GufgFk6syW5ZiisFU"
+    Date: Tue, 08 Jul 2025 06:18:27 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "success": true,
+          "status": 200,
+          "message": "Awards fetched successfully",
+          "data": [
+              {
+                  "id": "8a687ab8-56c1-46b8-b297-fc8bcc170840",
+                  "title": "Employee of the Month",
+                  "description": "Awarded to the best performing employee for the month of December.",
+                  "color": "pink",
+                  "awardType": "RECOGNITION",
+                  "status": "ACTIVE",
+                  "comments": null,
+                  "points": 200,
+                  "createdAt": "2025-07-08T06:17:59.000Z",
+                  "updatedAt": "2025-07-08T06:17:59.000Z",
+                  "employeeMainId": "3bfa2da7-2932-4860-bf7c-30488eab49b6",
+                  "organizationId": "891bb2ae-588c-4518-953e-1e367e3a23df",
+                  "officeId": "8e2f4467-dff5-4717-932f-bcbc9431f5dc"
+              }
+          ]
+      }
+order: 1000

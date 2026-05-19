@@ -1,0 +1,16 @@
+$kind: http-request
+url: "{{baseUrl}}/enroll"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "benefitId": "{{benefitId}}",
+      "employeeId": null,
+      "enrollmentPeriodId": null,
+      "remarks": "Self enrollment",
+      "dependents": []
+    }
+order: 3000

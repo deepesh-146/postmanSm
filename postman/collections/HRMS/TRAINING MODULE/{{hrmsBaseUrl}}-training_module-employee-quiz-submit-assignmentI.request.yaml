@@ -1,0 +1,42 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/training_module/employee/quiz/submit/:assignmentId"
+url: "{{hrmsBaseUrl}}/training_module/employee/quiz/submit/:assignmentId"
+method: POST
+pathVariables:
+  assignmentId: "4"
+body:
+  type: json
+  content: "{\r
+
+    \    \"quizId\": 3,\r
+
+    \    \"timeSpent\": 300,\r
+
+    \    \"answers\": [\r
+
+    \        {\r
+
+    \            \"questionId\": 6,\r
+
+    \            \"selectedOptionIds\": [\r
+
+    \                17,\r
+
+    \                16\r
+
+    \            ]\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"questionId\": 5,\r
+
+    \            \"selectedOptionIds\": 14\r
+
+    \        }\r
+
+    \    ]\r
+
+    }"
+order: 12000

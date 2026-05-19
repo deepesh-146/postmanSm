@@ -1,0 +1,10 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/job_offer/allJobOffers/983a39f4-546c-4b5e-b7b1-369d5a94ca94"
+url: "{{hrmsBaseUrl}}/job_offer/allJobOffers/983a39f4-546c-4b5e-b7b1-369d5a94ca94"
+method: GET
+queryParams:
+  - key: search
+    value: ""
+    disabled: true
+examples: ./.resources/{{hrmsBaseUrl}}-job_offer-allJobOffers-983a39f4-546c-4b5e-b7b1-3.resources/examples
+order: 4000

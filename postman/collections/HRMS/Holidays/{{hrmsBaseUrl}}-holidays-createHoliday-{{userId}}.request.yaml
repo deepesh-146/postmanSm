@@ -1,0 +1,21 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/holidays/createHoliday/{{userId}}"
+url: "{{hrmsBaseUrl}}/holidays/createHoliday/{{userId}}"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"holidayName\": \"Management Level Issue111\",\r
+
+    \    \"description\": \"CATMAN4585\",\r
+
+    \    \"date\": \"2024-11-14T13:03:03.334Z\",\r
+
+    \    \"toDate\": \"2024-11-14T13:03:03.334Z\",\r
+
+    \    \"numberOfLeaves\": 3\r
+
+    }"
+examples: ./.resources/{{hrmsBaseUrl}}-holidays-createHoliday-{{userId}}.resources/examples
+order: 1000

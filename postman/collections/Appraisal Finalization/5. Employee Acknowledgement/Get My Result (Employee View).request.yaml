@@ -1,0 +1,5 @@
+$kind: http-request
+description: Employee views their own finalized result. Only shows FINALIZED or ACKNOWLEDGED scores. PIP and WARNING recommendations are hidden from the employee view.
+url: "{{baseUrl}}/my/cycle/{{cycleId}}/result"
+method: GET
+order: 1000

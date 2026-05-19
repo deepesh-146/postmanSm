@@ -1,0 +1,17 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/rewards/assignShift/{{shiftId}}"
+url: "{{hrmsBaseUrl}}/rewards/assignShift/{{shiftId}}"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"employeeArray\": [\r
+
+    \        \"9b048ebe-ea22-4097-8a55-cf8dbef55bc4\"\r
+
+    \    ]\r
+
+    }"
+examples: ./.resources/{{hrmsBaseUrl}}-rewards-assignShift-{{shiftId}}.resources/examples
+order: 2000

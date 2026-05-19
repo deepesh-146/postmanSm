@@ -1,0 +1,22 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/ad_group/"
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"adGroupId\": \"9284f618-45f4-4adf-b705-50f2ded871d2\",\r
+
+    \    \"deptId\": \"32e8b17d-29e8-4f8f-8078-8ec006e2766e\",\r
+
+    \    \"code\": \"JOBADDPERM\",\r
+
+    \    \"description\": \"Permission to Add Jobs\",\r
+
+    \    \"approverId\": \"903bd690-61f3-43db-9edd-d38d531c1c67\",\r
+
+    \    \"comm\": \"This AD Group will be used to Add Jobs\"\r
+
+    }"
+examples: ./.resources/Update AD Group.resources/examples
+order: 2000

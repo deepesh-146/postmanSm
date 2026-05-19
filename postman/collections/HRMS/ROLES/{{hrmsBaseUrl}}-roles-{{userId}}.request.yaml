@@ -1,0 +1,46 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/roles/{{userId}}"
+url: "{{hrmsBaseUrl}}/roles/{{userId}}"
+method: GET
+body:
+  type: json
+  content: "{\r
+
+    \    \"roleName\": \"Painter342\",\r
+
+    \    \"description\": \"this is painter22\",\r
+
+    \    \"permissionsArray\": [\r
+
+    \        {\r
+
+    \            \"adGroupId\": 1,\r
+
+    \            \"create\": false,\r
+
+    \            \"modify\": false,\r
+
+    \            \"read\": false,\r
+
+    \            \"delete\": false\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"adGroupId\": 2,\r
+
+    \            \"create\": false,\r
+
+    \            \"modify\": false,\r
+
+    \            \"read\": false,\r
+
+    \            \"delete\": false\r
+
+    \        }\r
+
+    \    ]\r
+
+    }"
+order: 3000

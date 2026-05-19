@@ -1,0 +1,62 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/payrolls/run"
+url: "{{hrmsBaseUrl}}/payrolls/run"
+method: POST
+body:
+  type: json
+  content: "// {\r
+
+    //   \"month\": 11,\r
+
+    //   \"year\": 2025,\r
+
+    //   \"payrollName\": \"Novemeber 2025 Payroll\",\r
+
+    //   \"paymentMode\": \"Bank Transfer\",\r
+
+    //   \"startDate\": \"2025-11-26\",  // Optional\r
+
+    //   \"endDate\": \"2025-12-25\"     // Optional\r
+
+    // }\r
+
+    \r
+
+    {\r
+
+    \  \"month\": 12,\r
+
+    \  \"year\": 2025,\r
+
+    //   \"organizationId\": \"cb6f0e4f-3ae1-4ed4-bbc9-3329c885bbc9\",\r
+
+    //   \"officeId\": \"1e2ce115-37f6-4ec1-887f-2f8dc443ec81\",\r
+
+    \  \"paymentMode\": \"Bank Transfer\",\r
+
+    \  \"countryId\": \"1\", // India\r
+
+    \  \"country\": \"India\"\r
+
+    }\r
+
+    \r
+
+    // {\r
+
+    //   \"month\": 11,\r
+
+    //   \"year\": 2025,\r
+
+    //   \"payrollName\": \"November 2025 Payroll\",\r
+
+    //   \"startDate\": \"2025-11-26\",\r
+
+    //   \"endDate\": \"2025-12-25\",\r
+
+    //   \"countryId\": 2,\r
+
+    //   \"country\": \"UAE\"\r
+
+    // }"
+order: 2000

@@ -1,0 +1,11 @@
+$kind: http-request
+description: Get all challans for a specific payroll run.
+url: "{{hrmsBaseUrl}}/compliance/challans?empPayrollId={{payrollId}}&page=1&limit=20"
+method: GET
+headers:
+  Authorization: Bearer {{token}}
+queryParams:
+  empPayrollId: "{{payrollId}}"
+  page: "1"
+  limit: "20"
+order: 2000

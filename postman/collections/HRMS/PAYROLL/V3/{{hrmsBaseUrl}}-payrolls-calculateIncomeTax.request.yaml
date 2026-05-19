@@ -1,0 +1,14 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/payrolls/calculateIncomeTax"
+url: "{{hrmsBaseUrl}}/payrolls/calculateIncomeTax"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"ctc\": 300000,\r
+
+    \    \"regime\": \"OLD\"\r
+
+    }"
+order: 4000

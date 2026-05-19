@@ -1,0 +1,19 @@
+$kind: http-request
+url: "{{baseUrl}}/enrollment-periods"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+        "benefitId": "{{benefitId}}",
+        "name": "FY 2026-27 Open Enrollment",
+        "openDate": "2026-03-15",
+        "closeDate": "2026-04-15",
+        "coverageStartDate": "2026-04-01",
+        "coverageEndDate": "2027-03-31",
+        "status": "OPEN",
+        "maxEnrollments": 200
+    }
+order: 1000

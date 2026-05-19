@@ -1,0 +1,124 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/payrolls/v3/updateStateProfessionalTaxSlabs"
+url: "{{hrmsBaseUrl}}/payrolls/v3/updateStateProfessionalTaxSlabs"
+method: PUT
+body:
+  type: json
+  content: "// {\r
+
+    //     \"state\": \"Karnataka\",\r
+
+    //     \"newSlabs\": [\r
+
+    //         {\r
+
+    //             \"min\": 0,\r
+
+    //             \"max\": 24999,\r
+
+    //             \"tax\": 0\r
+
+    //         },\r
+
+    //         {\r
+
+    //             \"min\": 25000,\r
+
+    //             \"max\": 40000,\r
+
+    //             \"tax\": 150\r
+
+    //         },\r
+
+    //         {\r
+
+    //             \"min\": 40001,\r
+
+    //             \"max\": 60000,\r
+
+    //             \"tax\": 200\r
+
+    //         },\r
+
+    //         {\r
+
+    //             \"min\": 60001,\r
+
+    //             \"max\": 100000,\r
+
+    //             \"tax\": 250\r
+
+    //         }\r
+
+    //     ]\r
+
+    // }\r
+
+    {\r
+
+    \    \"state\": \"Maharashtra\",\r
+
+    \    \"newSlabs\": {\r
+
+    \        \"male\": [\r
+
+    \            {\r
+
+    \                \"min\": 0,\r
+
+    \                \"max\": 7500,\r
+
+    \                \"tax\": 0\r
+
+    \            },\r
+
+    \            {\r
+
+    \                \"min\": 7500.01,\r
+
+    \                \"max\": 10000,\r
+
+    \                \"tax\": 175\r
+
+    \            },\r
+
+    \            {\r
+
+    \                \"min\": 10000.01,\r
+
+    \                \"max\": \"Infinity\",\r
+
+    \                \"tax\": 200\r
+
+    \            }\r
+
+    \        ],\r
+
+    \        \"female\": [\r
+
+    \            {\r
+
+    \                \"min\": 0,\r
+
+    \                \"max\": 25000,\r
+
+    \                \"tax\": 0\r
+
+    \            },\r
+
+    \            {\r
+
+    \                \"min\": 25000.01,\r
+
+    \                \"max\": \"Infinity\",\r
+
+    \                \"tax\": 200\r
+
+    \            }\r
+
+    \        ]\r
+
+    \    }\r
+
+    }"
+order: 7000

@@ -1,0 +1,13 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/employee_loan/withdrawLoan/b0e9407c-9b8b-4cd2-8f9a-c151ea45e6df"
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"withdrawnBy\": \"19c85875-914b-4bf5-9eaf-8e9ce50ac6e1\",\r
+
+    \    \"reason\": \"Reason for withdrawing the loan request\"\r
+
+    }"
+order: 11000

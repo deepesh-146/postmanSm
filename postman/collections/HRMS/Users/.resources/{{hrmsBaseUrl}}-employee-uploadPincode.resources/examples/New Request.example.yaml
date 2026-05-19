@@ -1,0 +1,290 @@
+$kind: http-example
+request:
+  url: "{{hrmsBaseUrl}}/employee/adminEmployee"
+  method: POST
+  body:
+    type: json
+    content: "{\r
+
+      \    \"secret\": \"admin78456292@2020234r453543fsdfs\",\r
+
+      \    \"employee\": {\r
+
+      \        \"fName\": \"Sanat\",\r
+
+      \        \"lName\": \"Mishra\",\r
+
+      \        \"officialEmail\": \"sanat.mishra@iciept.com\",\r
+
+      \        \"mobile\": \"9801345259\",\r
+
+      \        \"officalMobile\": \"9801345259\",\r
+
+      \        \"gender\": \"Male\",\r
+
+      \        \"password\": \"Admin@321\",\r
+
+      \        \"dateOfBirth\": \"1993-09-29\",\r
+
+      \        \"marital\": \"Married\",\r
+
+      \        \"religion\": \"Hindu\",\r
+
+      \        \"birth\": \"Patna\",\r
+
+      \        \"nationality\": \"Indian\",\r
+
+      \        \"domicile\": \"Patna\",\r
+
+      \        \"disability\": false,\r
+
+      \        \"disabilityDetail\": \"NA\",\r
+
+      \        \"passport\": true,\r
+
+      \        \"passportNo\": \"H847322\",\r
+
+      \        \"passportExpiryDate\": \"2033-09-26\",\r
+
+      \        \"passportIssuedDate\": \"2023-09-26\"\r
+
+      \    },\r
+
+      \    \"personalData\": {\r
+
+      \        \"pAddress\": \"Test\",\r
+
+      \        \"cAddress\": \"Test\",\r
+
+      \        \"aadharNum\": \"585855758475\",\r
+
+      \        \"panNum\": \"HFYRSS8587R\",\r
+
+      \        \"bankAcntNum\": \"858785855855\",\r
+
+      \        \"bankAcntName\": \"HDFC\",\r
+
+      \        \"bankIfsc\": \"HDFC0000858\",\r
+
+      \        \"bankBranch\": \"Patna\"\r
+
+      \    },\r
+
+      \    \"educationData\": [\r
+
+      \        {\r
+
+      \            \"clgName\": \"RPSIT\",\r
+
+      \            \"univName\": \"Magadh\",\r
+
+      \            \"clgLocation\": \"Patna\",\r
+
+      \            \"specialization\": \"Computer Engineering\",\r
+
+      \            \"degName\": \"B.Tech\",\r
+
+      \            \"courseName\": \"Graduation\",\r
+
+      \            \"startDate\": \"2016-02-02\",\r
+
+      \            \"endDate\": \"2019-02-02\",\r
+
+      \            \"currPursuing\": false\r
+
+      \        }\r
+
+      \    ],\r
+
+      \    \"employmentData\": [\r
+
+      \        {\r
+
+      \            \"compName\": \"CSK\",\r
+
+      \            \"jobTitle\": \"Software Developer\",\r
+
+      \            \"location\": \"Patna\",\r
+
+      \            \"responsibility\": \"Android, Laravel\",\r
+
+      \            \"startDate\": \"2019-09-25\",\r
+
+      \            \"endDate\": \"2020-09-26\",\r
+
+      \            \"currentCompany\": false\r
+
+      \        }\r
+
+      \    ]\r
+
+      }"
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "3594"
+    ETag: W/"e0a-M0/kMU+Z4xG2xkY2drevQFWdDyI"
+    Date: Mon, 21 Oct 2024 05:04:53 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "status": {
+              "success": true,
+              "code": 200,
+              "message": "Admin User Added",
+              "failure": false
+          },
+          "data": {
+              "employee": {
+                  "id": "0a8ca471-9619-4412-8cbc-442a4f3aa56f",
+                  "employeeType": "SUPERADMIN",
+                  "firstName": "Sanat",
+                  "lastName": "Mishra",
+                  "candidateId": null,
+                  "onboardingId": null,
+                  "managerId": null,
+                  "personalMail": null,
+                  "officialMail": "sanat.mishra@iciept.com",
+                  "mobileNumber": "9801345259",
+                  "officialMobileNumber": "9801345259",
+                  "officalTempPass": null,
+                  "officalEmailPassSet": true,
+                  "officialPassword": "$2a$10$H8Mf27Q.IHy292.uacrRLODyazzExeQmHtVcbqDcf9hWqdZXzbDs.",
+                  "accountActive": true,
+                  "gender": "Male",
+                  "dateOfBirth": "1993-09-29",
+                  "maritalStatus": "Married",
+                  "religion": "Hindu",
+                  "placeOfBith": "Patna",
+                  "nationality": "Indian",
+                  "domicile": "Patna",
+                  "disability": false,
+                  "disabilityDetail": "NA",
+                  "passportAvailable": true,
+                  "passportNo": "H847322",
+                  "passportExpiryDate": "2033-09-26T00:00:00.000Z",
+                  "passportIssuedDate": "2023-09-26T00:00:00.000Z",
+                  "jobConfirmed": true,
+                  "confirmedById": "ADMIN",
+                  "confirmedDate": null,
+                  "confirmedNotes": null,
+                  "confirmedRating": null,
+                  "departmentId": null,
+                  "designationId": null,
+                  "jobUnitId": null,
+                  "providentFundNum": null,
+                  "salBasic": null,
+                  "salHRA": null,
+                  "salDA": null,
+                  "salBonus": null,
+                  "salPfDed": null,
+                  "salOtherEarning": null,
+                  "salOtherDeduction": null,
+                  "salOtherEarningNote": null,
+                  "salOtherDeductionNote": null,
+                  "healthInsPlanName": null,
+                  "healthInsPlanCoverAmount": null,
+                  "healthInsPlanUseAmount": null,
+                  "healthInsPlanExpDate": null,
+                  "healthInsPlanStartDate": null,
+                  "updatedAt": "2024-10-21T05:04:52.460Z",
+                  "createdAt": "2024-10-21T05:04:52.460Z"
+              },
+              "personal": {
+                  "id": "a7dd1e4f-3b52-409c-b61f-e144f26646fa",
+                  "employeeId": "0a8ca471-9619-4412-8cbc-442a4f3aa56f",
+                  "onboardingId": null,
+                  "permanentAddress": "Test",
+                  "currentAddress": "Test",
+                  "aadharNum": "585855758475",
+                  "panNum": "HFYRSS8587R",
+                  "bankAccountNum": "858785855855",
+                  "bankAccountName": "HDFC",
+                  "bankAccountIfsc": "HDFC0000858",
+                  "bankAccountBranch": "Patna",
+                  "aadharFrontFilePath": null,
+                  "aadharBackFilePath": null,
+                  "panFilePath": null,
+                  "bankAccountPassbookPath": null,
+                  "sourceVerRej": null,
+                  "approved": true,
+                  "approvedDate": null,
+                  "approvedById": null,
+                  "rejected": false,
+                  "rejectedDate": null,
+                  "rejectById": null,
+                  "comments": "ADMIN",
+                  "updatedAt": "2024-10-21T05:04:52.665Z",
+                  "createdAt": "2024-10-21T05:04:52.665Z"
+              },
+              "education": [
+                  {
+                      "id": "854ed82e-ec9d-4ec2-bb35-dfe1af79e97d",
+                      "employeeId": "0a8ca471-9619-4412-8cbc-442a4f3aa56f",
+                      "onboardingId": null,
+                      "collegeName": "RPSIT",
+                      "universityName": "Magadh",
+                      "collegeLocation": "Patna",
+                      "specialization": "Computer Engineering",
+                      "degreeName": "B.Tech",
+                      "courseName": "Graduation",
+                      "startDate": "2016-02-02T00:00:00.000Z",
+                      "endDate": "2019-02-02T00:00:00.000Z",
+                      "collegeOfficialEmail": null,
+                      "collegeOfficialMobile": null,
+                      "currentlyPursuing": false,
+                      "marksheetPath": null,
+                      "certificatePath": null,
+                      "sourceVerRej": null,
+                      "approved": true,
+                      "approvedDate": null,
+                      "approvedById": null,
+                      "rejected": false,
+                      "rejectedDate": null,
+                      "rejectById": null,
+                      "comments": null,
+                      "createdAt": "2024-10-21T05:04:52.000Z",
+                      "updatedAt": "2024-10-21T05:04:52.000Z",
+                      "employeeMainId": null
+                  }
+              ],
+              "employment": [
+                  {
+                      "id": "50bd8188-f49e-49e3-ba42-9ed6e6c999fd",
+                      "employeeId": "0a8ca471-9619-4412-8cbc-442a4f3aa56f",
+                      "onboardingId": null,
+                      "companyName": "CSK",
+                      "jobTitle": "Software Developer",
+                      "jobLocation": "Patna",
+                      "responsibility": "Android, Laravel",
+                      "startDate": "2019-09-25T00:00:00.000Z",
+                      "endDate": "2020-09-26T00:00:00.000Z",
+                      "companyHrEmail": null,
+                      "companyHrMobile": null,
+                      "currentCompany": false,
+                      "relievingLetterPath": null,
+                      "experienceLetterPath": null,
+                      "sourceVerRej": null,
+                      "approved": true,
+                      "approvedDate": null,
+                      "approvedById": null,
+                      "rejected": false,
+                      "rejectedDate": null,
+                      "rejectById": null,
+                      "comments": null,
+                      "createdAt": "2024-10-21T05:04:53.000Z",
+                      "updatedAt": "2024-10-21T05:04:53.000Z",
+                      "employeeMainId": null
+                  }
+              ]
+          }
+      }
+order: 1000

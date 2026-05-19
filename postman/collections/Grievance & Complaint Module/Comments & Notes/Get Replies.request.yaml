@@ -1,0 +1,5 @@
+$kind: http-request
+description: Returns all replies. Anonymous comment senders are masked for non-admin/HR viewers.
+url: "{{base_url}}/grievances/{{grievanceId}}/replies"
+method: GET
+order: 2000

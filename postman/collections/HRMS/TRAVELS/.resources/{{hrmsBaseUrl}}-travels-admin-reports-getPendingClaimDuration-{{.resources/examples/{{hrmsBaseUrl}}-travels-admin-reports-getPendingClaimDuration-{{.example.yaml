@@ -1,0 +1,45 @@
+$kind: http-example
+name: "{{hrmsBaseUrl}}/travels/admin/reports/getPendingClaimDuration/{{userId}}"
+request:
+  url: "{{hrmsBaseUrl}}/travels/admin/reports/getPendingClaimDuration/{{userId}}"
+  method: GET
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "239"
+    ETag: W/"ef-cLLfjPvdEvU1ISeEF8B1vc03wDE"
+    Date: Mon, 12 May 2025 20:21:34 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "success": true,
+          "status": 200,
+          "message": "Pending claim duration data fetched successfully.",
+          "data": [
+              {
+                  "category": "0-7 days",
+                  "count": 1
+              },
+              {
+                  "category": "8-15 days",
+                  "count": 0
+              },
+              {
+                  "category": "16-30 days",
+                  "count": 0
+              },
+              {
+                  "category": "31+ days",
+                  "count": 0
+              }
+          ]
+      }
+order: 1000

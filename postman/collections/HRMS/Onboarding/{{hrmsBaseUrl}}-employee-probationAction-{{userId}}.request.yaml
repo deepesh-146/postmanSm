@@ -1,0 +1,16 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/employee/probationAction/{{userId}}"
+url: "{{hrmsBaseUrl}}/employee/probationAction/{{userId}}"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"employeeMainId\": \"001c08f3-7f5a-40bc-bed5-54bb3c62539d\",\r
+
+    \    \"probationEndDate\":\"2025-01-03 08:42:21\",\r
+
+    \    \"probationAction\":\"ACCEPTED\"\r
+
+    }"
+order: 13000

@@ -1,0 +1,42 @@
+$kind: http-example
+request:
+  url: "{{hrmsBaseUrl}}/attendance/countAdd"
+  method: POST
+  body:
+    type: json
+    content: "{\r
+
+      \    \"month\": \"10\",\r
+
+      \    \"year\": \"2024\",\r
+
+      \    \"workingDay\": \"22\",\r
+
+      \    \"employeeId\": \"903bd690-61f3-43db-9edd-d38d531c1c67\"\r
+
+      }"
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "111"
+    ETag: W/"6f-qQO6bkjscCzpkSQa9tDOQockjyI"
+    Date: Mon, 14 Oct 2024 17:52:49 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "status": {
+              "success": false,
+              "code": 200,
+              "message": "Attendance Count Added, Pending Verification",
+              "failure": true
+          }
+      }
+order: 1000

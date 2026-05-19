@@ -1,0 +1,20 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/announcements/policy-circular/acknowledgePolicyCircular/:id"
+url: "{{hrmsBaseUrl}}/announcements/policy-circular/acknowledgePolicyCircular/:id"
+method: POST
+queryParams:
+  - key: search
+    value: ""
+    disabled: true
+pathVariables:
+  id: 25d4961e-e5ab-44fb-a033-80fc34f86096
+body:
+  type: json
+  content: "{\r
+
+    \    \"acknowledgementById\": \"{{userId}}\",\r
+
+    \    \"acknowledgementDate\": \"2025-12-26\"\r
+
+    }"
+order: 5000

@@ -1,0 +1,18 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/goals/kra/all"
+url: "{{hrmsBaseUrl}}/goals/kra/all"
+method: GET
+body:
+  type: json
+  content: "{\r
+
+    \    \"attribute\": \"TEST\",\r
+
+    \    \"weightage\": \"55\",\r
+
+    \    \"description\": \"TEST KRA\",\r
+
+    \    \"departmentId\": \"716e68ea-3d9e-4705-9387-720472042906\"\r
+
+    }"
+order: 2000

@@ -1,0 +1,11 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/leave/trend-analysis/kpis?year=2026&departmentId=58a96152-351c-41a5-982d-ec3e0f7ab06a"
+method: GET
+queryParams:
+  year: "2026"
+  departmentId: 58a96152-351c-41a5-982d-ec3e0f7ab06a
+auth:
+  type: bearer
+  credentials:
+    token: "{{clientToken}}"
+order: 2000

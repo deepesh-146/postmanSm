@@ -1,0 +1,5 @@
+$kind: http-request
+description: "Aggregate stats: overall scores, status distribution, band distribution, acknowledgement status, recommendation summary."
+url: "{{baseUrl}}/appraisal-finalization/cycle/{{cycleId}}/dashboard"
+method: GET
+order: 1000

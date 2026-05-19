@@ -1,0 +1,17 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/holidays/createEvent/{{userId}}"
+url: "{{hrmsBaseUrl}}/holidays/createEvent/{{userId}}"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"eventName\": \"Management Level Issue\",\r
+
+    \    \"description\": \"CATMAN4585\",\r
+
+    \    \"date\": \"2024-11-14 07:12:52\"\r
+
+    }"
+examples: ./.resources/{{hrmsBaseUrl}}-holidays-createEvent-{{userId}}.resources/examples
+order: 1000

@@ -1,0 +1,5 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/timesheet/getEmployeeProjects/c482101e-07ee-4ac4-8c55-5207963b3a99"
+url: "{{hrmsBaseUrl}}/timesheet/getEmployeeProjects/c482101e-07ee-4ac4-8c55-5207963b3a99"
+method: GET
+order: 4000

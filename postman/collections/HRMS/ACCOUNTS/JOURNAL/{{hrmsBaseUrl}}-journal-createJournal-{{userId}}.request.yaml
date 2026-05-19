@@ -1,0 +1,50 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/journal/createJournal/{{userId}}"
+url: "{{hrmsBaseUrl}}/journal/createJournal/{{userId}}"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"entryType\": \"Payroll\",\r
+
+    \    \"companyName\": \"iceipts\",\r
+
+    \    \"postingDate\": \"2024-06-30\",\r
+
+    \    \"referenceNumber\": 3004,\r
+
+    \    \"remark\": \"Monthly employee salaries - June 2024\",\r
+
+    \    \"status\": \"Posted\",\r
+
+    \    \"lines\": [\r
+
+    \        {\r
+
+    \            \"accountId\": \"b902f5d2-7ec4-4087-8a2f-0160aed7bda0\",\r
+
+    \            \"accountName\": \"Employee Salaries\",\r
+
+    \            \"debit\": 80000,\r
+
+    \            \"credit\": 0\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"accountId\": \"16396ef8-b54e-435d-bf3c-39d6f32eb0f6\",\r
+
+    \            \"accountName\": \"Cash at Bank\",\r
+
+    \            \"debit\": 0,\r
+
+    \            \"credit\": 80000\r
+
+    \        }\r
+
+    \    ]\r
+
+    }"
+order: 1000

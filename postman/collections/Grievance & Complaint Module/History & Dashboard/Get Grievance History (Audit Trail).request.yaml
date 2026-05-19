@@ -1,0 +1,5 @@
+$kind: http-request
+description: "Permanent audit trail. Tracks: CREATED, ASSIGNED, STATUS_CHANGED, ESCALATED, REOPENED, COMMENT_ADDED, PRIORITY_CHANGED, RESOLVED, CLOSED, WITHDRAWN. Includes fromStatus, toStatus, actor, timestamp, and metadata."
+url: "{{base_url}}/grievances/{{grievanceId}}/history"
+method: GET
+order: 1000

@@ -1,0 +1,12 @@
+$kind: collection
+description: API collection for managing approval groups in HRMS workflow system
+variables:
+  baseUrl: http://localhost:3000
+  authToken: your-auth-token-here
+  groupId: ""
+auth:
+  - id: 7cbc2a32-7f19-468f-884b-c7f8fd3cc213
+    type: bearer
+    name: bearer auth
+    credentials:
+      token: "{{orgToken}}"

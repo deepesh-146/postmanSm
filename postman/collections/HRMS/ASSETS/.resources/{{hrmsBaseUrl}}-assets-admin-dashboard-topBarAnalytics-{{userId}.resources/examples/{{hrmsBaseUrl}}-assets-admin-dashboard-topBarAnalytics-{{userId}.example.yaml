@@ -1,0 +1,33 @@
+$kind: http-example
+name: "{{hrmsBaseUrl}}/assets/admin/dashboard/topBarAnalytics/{{userId}}{{hrmsBaseUrl}}/assets/admin/dashboard/topBarAnalytics/{{userId}}"
+request:
+  url: "{{hrmsBaseUrl}}/assets/admin/dashboard/topBarAnalytics/{{userId}}"
+  method: GET
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "131"
+    ETag: W/"83-wms0/P9zFKJ1rgiH8utHMUoJxnY"
+    Date: Fri, 09 May 2025 11:57:09 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "success": true,
+          "status": 200,
+          "message": "fetched successfully",
+          "data": {
+              "totalAssets": 3,
+              "assignedAssets": 0,
+              "inRepair": 0,
+              "retired": 0
+          }
+      }
+order: 1000

@@ -1,0 +1,16 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/email-notifications/toggle"
+url: "{{hrmsBaseUrl}}/email-notifications/toggle"
+method: PATCH
+body:
+  type: json
+  content: "{\r
+
+    \    \"module\": \"personal_data_change\",\r
+
+    \    \"event\": \"request_raised\",\r
+
+    \    \"enabled\": true\r
+
+    }"
+order: 3000

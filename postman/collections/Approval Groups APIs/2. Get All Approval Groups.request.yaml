@@ -1,0 +1,18 @@
+$kind: http-request
+description: Get all approval groups with pagination and search
+url: "{{baseUrl}}/approval-groups?page=1&size=10"
+method: GET
+headers:
+  Authorization: Bearer {{authToken}}
+queryParams:
+  - key: page
+    value: "1"
+    description: "Page number (default: 1)"
+  - key: size
+    value: "10"
+    description: "Items per page (default: 10)"
+  - key: search
+    value: finance
+    disabled: true
+    description: Search by name, key, or description (optional)
+order: 2000

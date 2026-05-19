@@ -1,0 +1,3 @@
+$kind: collection
+description: Batch processing operations - create cycles, finalize, and mark as paid
+order: 3000

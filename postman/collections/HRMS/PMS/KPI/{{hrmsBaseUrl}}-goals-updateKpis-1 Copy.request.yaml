@@ -1,0 +1,5 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/goals/updateKpis/1 Copy"
+url: "{{hrmsBaseUrl}}/goals/deleteKpis/1"
+method: DELETE
+order: 6000

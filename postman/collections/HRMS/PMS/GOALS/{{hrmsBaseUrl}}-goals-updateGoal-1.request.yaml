@@ -1,0 +1,32 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/goals/updateGoal/1"
+url: "{{hrmsBaseUrl}}/goals/updateGoal/1"
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"title\": \"Achieve 15% Growth in Q4 Sales\",\r
+
+    \    \"startdate\": \"2023-10-01\",\r
+
+    \    \"enddate\": \"2023-12-31\",\r
+
+    \    \"description\": \"Implement targeted outreach, optimize conversion funnels, and introduce limited-time offers to drive a 15% increase in Q4 revenue.\",\r
+
+    \    \"weightage\": 40,\r
+
+    \    \"goal_type\": \"DEPARTMENT\",\r
+
+    \    \"priority\": \"High\",\r
+
+    \    \"assigned_to\": \"Sales & Business Development Team\",\r
+
+    \    \"departmentId\": \"085af46a-57d9-4c68-80b3-086284f90ea2\",\r
+
+    \    \"parentId\": \"{{userId}}\",\r
+
+    \    \"userId\": \"9b048ebe-ea22-4097-8a55-cf8dbef55bc4\"\r
+
+    }"
+order: 8000

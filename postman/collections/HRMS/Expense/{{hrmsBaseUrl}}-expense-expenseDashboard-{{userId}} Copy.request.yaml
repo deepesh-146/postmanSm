@@ -1,0 +1,38 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/expense/expenseDashboard/{{userId}} Copy"
+url: "{{hrmsBaseUrl}}/expense/getAllExpensesForAdmin?page=1&size=5&search=&startDate=2026-01-01&endDate=2026-01-30"
+method: GET
+queryParams:
+  - key: page
+    value: "1"
+  - key: size
+    value: "5"
+  - key: search
+    value: ""
+  - key: type
+    value: other_expense
+    disabled: true
+  - key: startDate
+    value: 2026-01-01
+  - key: endDate
+    value: 2026-01-30
+body:
+  type: json
+  content: "{\r
+
+    \  \"category\": \"Food\",\r
+
+    \  \"expenseAmount\": \"250.00\",\r
+
+    \  \"endDate\": \"2023-12-01\",\r
+
+    \  \"paymentMode\": \"Debit Card\",\r
+
+    \  \"description\": \"Dinner with client to discuss project\",\r
+
+    \  \"uploadDocument\": \"this is documnet here\",\r
+
+    \  \"userId\": \"{{userId}}\"\r
+
+    }"
+order: 5000

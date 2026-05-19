@@ -1,0 +1,23 @@
+$kind: http-request
+description: Schedule a weekly attendance analytics report.
+url: "{{baseUrl}}/mis/schedules"
+method: POST
+headers:
+  Content-Type: application/json
+  x-organization-id: "{{organizationId}}"
+body:
+  type: text
+  content: |-
+    {
+      "reportName": "Weekly Attendance Report",
+      "reportType": "ATTENDANCE_ANALYTICS",
+      "frequency": "WEEKLY",
+      "recipients": [
+        {
+          "email": "hr-team@company.com"
+        }
+      ],
+      "filters": {},
+      "exportFormat": "EXCEL"
+    }
+order: 2000

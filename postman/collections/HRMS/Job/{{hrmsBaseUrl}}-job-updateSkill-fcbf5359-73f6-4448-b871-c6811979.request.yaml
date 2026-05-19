@@ -1,0 +1,17 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/job/updateSkill/fcbf5359-73f6-4448-b871-c6811979b287"
+url: "{{hrmsBaseUrl}}/job/updateSkill/fcbf5359-73f6-4448-b871-c6811979b287"
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"skillName\": \"dd\",\r
+
+    \    \"category\":\"SOFTSKILL\",\r
+
+    \    \"proficiency\": \"ADVANCED\"\r
+
+    }"
+examples: ./.resources/{{hrmsBaseUrl}}-job-updateSkill-fcbf5359-73f6-4448-b871-c6811979.resources/examples
+order: 23000

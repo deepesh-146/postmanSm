@@ -1,0 +1,14 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/tickets/escalate"
+method: PATCH
+body:
+  type: json
+  content: "{\r
+
+    \    \"employeeId\": \"903bd690-61f3-43db-9edd-d38d531c1c67\",\r
+
+    \    \"ticketId\": \"2582dd41-8782-4f2a-b3a7-bd752769d618\"\r
+
+    }"
+examples: ./.resources/Escalate Update Ticket.resources/examples
+order: 14000

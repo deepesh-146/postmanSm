@@ -1,0 +1,30 @@
+$kind: http-request
+url: "{{baseUrl}}/ticket?page=0&size=10&search=&ticketStatus=&category=&priority=&startDate=&endDate=&employeeId="
+method: GET
+queryParams:
+  - key: page
+    value: "0"
+  - key: size
+    value: "10"
+  - key: search
+    value: ""
+    description: Search by ticketNumber, subject, description, category, priority
+  - key: ticketStatus
+    value: ""
+    description: PENDING | OPEN | IN_PROGRESS | RESOLVED | CLOSED | ESCALATED | APPROVED | REJECTED
+  - key: category
+    value: ""
+    description: Filter by category name
+  - key: priority
+    value: ""
+    description: LOW | MEDIUM | HIGH | URGENT
+  - key: startDate
+    value: ""
+    description: YYYY-MM-DD
+  - key: endDate
+    value: ""
+    description: YYYY-MM-DD
+  - key: employeeId
+    value: ""
+    description: Filter by employee UUID
+order: 2000

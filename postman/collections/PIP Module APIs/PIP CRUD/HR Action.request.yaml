@@ -1,0 +1,86 @@
+$kind: http-request
+url: "{{baseUrl}}/pip"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "employeeId": "employee-uuid-here",
+      "managerId": "manager-uuid-here",
+      "hrId": "hr-uuid-here",
+      "performanceGapDescription": "Consistently missing project deadlines and deliverables over the past quarter",
+      "performanceGapCategory": "QUALITY",
+      "impactOnTeam": "Delayed project timelines affecting dependent team members",
+      "pipStartDate": "2026-02-15",
+      "pipEndDate": "2026-04-15",
+      "reviewFrequency": "BIWEEKLY",
+      "goals": [
+        {
+          "title": "Improve code review turnaround time",
+          "description": "Complete all assigned code reviews within 24 hours",
+          "baseline": "Currently averaging 72 hours for code reviews",
+          "target": "Complete reviews within 24 hours",
+          "measurementCriteria": "Track average review time from assignment to completion",
+          "deadline": "2026-03-15",
+          "kpiId": null,
+          "kraId": null,
+          "weightage": 40
+        },
+        {
+          "title": "Meet sprint delivery commitments",
+          "description": "Deliver at least 90% of committed story points each sprint",
+          "baseline": "Currently delivering 60% of committed story points",
+          "target": "90% sprint completion rate",
+          "measurementCriteria": "Sprint velocity vs commitment ratio",
+          "deadline": "2026-04-15",
+          "kpiId": null,
+          "kraId": null,
+          "weightage": 60
+        }
+      ],
+      "supportPlans": [
+        {
+          "supportType": "MENTORSHIP",
+          "title": "Weekly 1:1 with Senior Developer",
+          "description": "Pair programming sessions to improve code quality and speed",
+          "provider": "Senior Developer Name",
+          "scheduledDate": "2026-02-17"
+        },
+        {
+          "supportType": "TRAINING",
+          "title": "Time Management Workshop",
+          "description": "Attend time management and prioritization workshop",
+          "provider": "HR Training Team",
+          "scheduledDate": "2026-02-20"
+        }
+      ],
+      "milestones": [
+        {
+          "title": "Week 2 Review",
+          "description": "First bi-weekly progress review with manager",
+          "dueDate": "2026-03-01",
+          "isReviewMilestone": true
+        },
+        {
+          "title": "Week 4 Review",
+          "description": "Second bi-weekly progress review",
+          "dueDate": "2026-03-15",
+          "isReviewMilestone": true
+        },
+        {
+          "title": "Mid-Point Evaluation",
+          "description": "Comprehensive mid-point evaluation of PIP progress",
+          "dueDate": "2026-03-15",
+          "isReviewMilestone": true
+        },
+        {
+          "title": "Final Review",
+          "description": "Final PIP evaluation and outcome determination",
+          "dueDate": "2026-04-15",
+          "isReviewMilestone": true
+        }
+      ]
+    }
+order: 8000

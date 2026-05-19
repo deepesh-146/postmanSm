@@ -1,0 +1,38 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/job/createSkills/{{userId}}"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"skillsData\": [\r
+
+    \        {\r
+
+    \            \"skillName\": \"ooo\",\r
+
+    \            \"category\": \"TECHNICAL\",\r
+
+    \            \"proficiency\": \"ADVANCED\",\r
+
+    \            \"employeeMainId\": \"{{userId}}\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"skillName\": \"ooo\",\r
+
+    \            \"category\": \"TECHNICAL\",\r
+
+    \            \"proficiency\": \"ADVANCED\",\r
+
+    \            \"employeeMainId\": \"{{userId}}\"\r
+
+    \        }\r
+
+    \    ]\r
+
+    }"
+examples: ./.resources/Add Skills.resources/examples
+order: 18000

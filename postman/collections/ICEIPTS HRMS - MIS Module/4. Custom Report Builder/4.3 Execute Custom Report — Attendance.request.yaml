@@ -1,0 +1,28 @@
+$kind: http-request
+description: Custom attendance report — filter by PRESENT status.
+url: "{{baseUrl}}/mis/custom-report/execute"
+method: POST
+headers:
+  Content-Type: application/json
+  x-organization-id: "{{organizationId}}"
+body:
+  type: text
+  content: |-
+    {
+      "reportConfig": {
+        "dataSource": "attendance",
+        "fields": ["employeeMainId", "inDateTime", "outDateTime", "status", "isLate"],
+        "filters": {
+          "status": "PRESENT"
+        },
+        "sortBy": "inDateTime",
+        "sortOrder": "DESC",
+        "dateRange": {
+          "from": "2026-03-01",
+          "to": "2026-03-13"
+        }
+      },
+      "page": 1,
+      "size": 20
+    }
+order: 3000

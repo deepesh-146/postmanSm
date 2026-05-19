@@ -1,0 +1,44 @@
+$kind: http-example
+request:
+  url: "{{hrmsBaseUrl}}/employee_benefit/:benefitId"
+  method: GET
+  pathVariables:
+    benefitId: 3aef11de-b0bb-4ba7-b564-2bfbcf699254
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "414"
+    ETag: W/"19e-M5YZoGInC5r+ZZ2ybe6jf5SM+aI"
+    Date: Mon, 14 Oct 2024 03:30:30 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "status": {
+              "success": true,
+              "code": 200,
+              "message": "Employee Benefit",
+              "failure": false
+          },
+          "data": {
+              "id": "3aef11de-b0bb-4ba7-b564-2bfbcf699254",
+              "name": "Leave Allowance",
+              "type": "LEAVE",
+              "amount": 25,
+              "frequency": "YEARLY",
+              "duration": "1",
+              "comments": "TEst",
+              "generatedOn": "2024-10-13T21:59:47.000Z",
+              "generatedBy": "903bd690-61f3-43db-9edd-d38d531c1c67",
+              "createdAt": "2024-10-14T03:29:47.000Z",
+              "updatedAt": "2024-10-14T03:29:47.000Z"
+          }
+      }
+order: 1000

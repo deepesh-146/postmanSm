@@ -1,0 +1,46 @@
+$kind: http-request
+url: "{{baseUrl}}/plans"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+        "name": "Health Insurance Premium",
+        "code": "HI-001",
+        "benefitCategory": "HEALTH",
+        "description": "Company sponsored health insurance for all employees",
+        "applicableEmployeeTypes": [
+            "FULL_TIME",
+            "CONTRACT"
+        ],
+        "departmentId": null,
+        "gradeId": null,
+        "eligibleAfterMonths": 0,
+        "valueType": "FIXED",
+        "amount": 15000,
+        "maxAmount": null,
+        "currency": "INR",
+        "frequency": "YEARLY",
+        "isTaxable": false,
+        "taxSection": "80D",
+        "proofRequired": false,
+        "allowedDocumentTypes": [
+            "PDF",
+            "JPG",
+            "PNG"
+        ],
+        "approvalType": "AUTO",
+        "approvalFlow": null,
+        "autoEnroll": false,
+        "maxEnrollments": null,
+        "allowDependents": true,
+        "visibleInPortal": true,
+        "visibleToEmployee": true,
+        "policyDocumentUrl": null,
+        "effectiveFrom": "2026-04-01",
+        "effectiveTo": "2027-03-31",
+        "eligibilityRules": []
+    }
+order: 1000

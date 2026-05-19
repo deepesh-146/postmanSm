@@ -1,0 +1,13 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/announcements/announcementBulkUpload"
+url: "{{hrmsBaseUrl}}/announcements/announcementBulkUpload"
+method: POST
+body:
+  type: formdata
+  content:
+    - type: file
+      key: file
+      src:
+        - /C:/Users/mehta/Downloads/Sample Announcements.csv
+examples: ./.resources/{{hrmsBaseUrl}}-announcements-announcementBulkUpload.resources/examples
+order: 13000

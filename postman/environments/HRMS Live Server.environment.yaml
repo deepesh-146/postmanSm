@@ -1,0 +1,15 @@
+name: HRMS Live Server
+values:
+  - key: hrmsBaseUrl
+    value: 'https://hrmsbackend.iceipts.com/hrmsserver'
+  - key: TOKEN
+    value: ''
+  - key: userId
+    value: ''
+  - key: clientToken
+    value: ''
+  - key: resignationId
+    value: ee1e5951-1c60-4f9f-9982-287990332bc6
+  - key: payrollId
+    value: ''
+color: 0

@@ -1,0 +1,38 @@
+$kind: http-request
+description: Employee submits self-appraisal ratings (1-5) for each KPI. Sets employeeSubmitted=true.
+url: "{{baseUrl}}/appraisal/cycle/{{cycleId}}/bulk-self-appraisal"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+        "kpiResponses": [
+            {
+                "kpiId": "{{kpiId1}}",
+                "responses": [
+                    {
+                        "questionId": "{{questionId}}",
+                        "rating": 4,
+                        "textResponse": "Achieved 95% of quarterly revenue target through strategic client engagement",
+                        "comments": "Exceeded expectations in Q1",
+                        "isSubmitted": true
+                    }
+                ]
+            },
+            {
+                "kpiId": "{{kpiId2}}",
+                "responses": [
+                    {
+                        "questionId": "{{questionId}}",
+                        "rating": 3,
+                        "textResponse": "Acquired 8 out of 10 targeted new clients",
+                        "comments": "Slightly below target but quality clients",
+                        "isSubmitted": true
+                    }
+                ]
+            }
+        ]
+    }
+order: 3000

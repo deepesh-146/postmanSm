@@ -1,0 +1,72 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/loan-policy/getPolicyById/:policyId"
+url: "{{hrmsBaseUrl}}/loan-policy/getPolicyById/:policyId"
+method: GET
+pathVariables:
+  policyId: f0064575-955d-4b03-b69f-0251818825e7
+body:
+  type: json
+  content: "{\r
+
+    \    \"isActive\": true,\r
+
+    \    \"allowedEmployeeTypes\": [\r
+
+    \        \"Permanent\",\r
+
+    \        \"Probation\"\r
+
+    \    ],\r
+
+    \    // \"allowedDesignationIds\": [\r
+
+    \    //     \"uuid-1\",\r
+
+    \    //     \"uuid-2\"\r
+
+    \    // ],\r
+
+    \    \"minServiceMonths\": 6,\r
+
+    \    \"minSalary\": 25000,\r
+
+    \    \"maxActiveLoansAllowed\": 2,\r
+
+    \    \"maxLoanAmount\": 500000,\r
+
+    \    \"loanAmountCalculationType\": \"Multiple of Salary\",\r
+
+    \    \"multiplierOrPercentage\": 3,\r
+
+    \    \"interestRate\": 8.5,\r
+
+    \    \"interestType\": \"Reducing Balance\",\r
+
+    \    \"maxEmiPercentOfSalary\": 30,\r
+
+    \    \"minTenureMonths\": 6,\r
+
+    \    \"maxTenureMonths\": 36,\r
+
+    \    \"gracePeriodMonths\": 1,\r
+
+    \    \"prepaymentAllowed\": true,\r
+
+    \    \"prepaymentPenaltyPercent\": 2,\r
+
+    \    \"requiredDocuments\": [\r
+
+    \        \"ID Proof\",\r
+
+    \        \"Salary Slip\"\r
+
+    \    ],\r
+
+    \    \"adjustInFullAndFinal\": true,\r
+
+    \    \"recoverDuringNotice\": true,\r
+
+    \    \"convertToExternalLoan\": false\r
+
+    }"
+order: 3000

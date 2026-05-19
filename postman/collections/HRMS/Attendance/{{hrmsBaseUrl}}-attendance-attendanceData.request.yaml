@@ -1,0 +1,25 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/attendance/attendanceData"
+url: "{{hrmsBaseUrl}}/attendance/attendanceData"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"employeeId\": \"9a6b2d0c-57b7-4da2-9025-b64b6e2f4323\",\r
+
+    \    // \"month\": \"1\",\r
+
+    \    // \"year\": \"2025\",\r
+
+    \    \"startDate\": \"2025-11-24\",\r
+
+    \    \"endDate\": \"2025-11-23\"\r
+
+    }\r\n"
+auth:
+  type: bearer
+  credentials:
+    token: "{{orgToken}}"
+examples: ./.resources/{{hrmsBaseUrl}}-attendance-attendanceData.resources/examples
+order: 12000

@@ -1,0 +1,13 @@
+$kind: http-request
+description: HR responds to an employee's dispute. hrResponse is required (minimum 5 characters). Only works on DISPUTED acknowledgements.
+url: "{{baseUrl}}/acknowledgements/{{ackId}}/respond"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+        "hrResponse": "Your dispute has been reviewed. After consulting with your manager and reviewing project metrics, the score has been maintained. A detailed feedback session has been scheduled."
+    }
+order: 4000

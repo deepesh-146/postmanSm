@@ -1,0 +1,12 @@
+$kind: http-request
+description: |-
+  Get full promotion details including:
+  - Employee info
+  - Nominator info
+  - From/To designation, grade, department
+  - Appraisal cycle info
+  - Workflow instance with approval steps
+  - Full audit trail (history)
+url: "{{base_url}}/promotions/{{promotion_id}}"
+method: GET
+order: 1000

@@ -1,0 +1,30 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/payrolls/getPayrolls Copy"
+url: "{{hrmsBaseUrl}}/payrolls/getPayrollsForAI?payrollId=2f9aebfe-34e6-41af-b82f-0ee3d8d7bde2&employeeCode=EMP-39C519&employeeEmail=IndiaSalary@yopmail.com&startDate=2025-10-10&endDate=2025-10-11&departmentId=400fccb9-5c87-480a-8ae5-6e6908a6901d"
+method: GET
+queryParams:
+  - key: payrollId
+    value: 2f9aebfe-34e6-41af-b82f-0ee3d8d7bde2
+  - key: employeeCode
+    value: EMP-39C519
+  - key: employeeEmail
+    value: IndiaSalary@yopmail.com
+  - key: startDate
+    value: 2025-10-10
+  - key: endDate
+    value: 2025-10-11
+  - key: departmentId
+    value: 400fccb9-5c87-480a-8ae5-6e6908a6901d
+  - key: salaryPage
+    value: "1"
+    disabled: true
+  - key: salarySize
+    value: "5"
+    disabled: true
+  - key: pageUi
+    value: "1"
+    disabled: true
+  - key: size
+    value: "5"
+    disabled: true
+order: 19000

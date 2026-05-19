@@ -1,0 +1,28 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/training_module/groups/getById/8fb0a8aa-73e9-49fd-a42c-bb23eb42d2c8 Copy"
+url: "{{hrmsBaseUrl}}/training_module/groups/update/8fb0a8aa-73e9-49fd-a42c-bb23eb42d2c8"
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"groupName\": \"Backend Team\",\r
+
+    \    \"groupType\": \"TRAINING_GROUP\",\r
+
+    \    \"groupCode\": \"BT-001\",\r
+
+    \    \"createdDate\": \"2025-12-11T10:00:00Z\",\r
+
+    \    \"status\": \"ACTIVE\",\r
+
+    \    \"groupDescription\": \"Group for backend developers training\",\r
+
+    \    \"employeeIds\": [\r
+
+    \        \"07a37b94-58b2-498d-a1ac-b9d63a8649f8\"\r
+
+    \    ]\r
+
+    }"
+order: 4000

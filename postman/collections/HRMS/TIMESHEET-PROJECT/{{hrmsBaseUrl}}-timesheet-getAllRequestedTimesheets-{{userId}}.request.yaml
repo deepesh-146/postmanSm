@@ -1,0 +1,5 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/timesheet/getAllRequestedTimesheets/{{userId}}"
+url: "{{hrmsBaseUrl}}/timesheet/getAllRequestedTimesheets/{{userId}}"
+method: GET
+order: 8000

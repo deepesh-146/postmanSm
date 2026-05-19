@@ -1,0 +1,7 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/employee/dashboard/admindashboardstats/{{userId}} Copy"
+url: https://ai.iceipts.com/ats/api/v1/search/match-resumes?job_description=Engineer
+method: POST
+queryParams:
+  job_description: Engineer
+order: 2000

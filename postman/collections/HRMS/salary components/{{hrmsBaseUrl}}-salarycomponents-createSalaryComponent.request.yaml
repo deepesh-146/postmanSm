@@ -1,0 +1,45 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/salarycomponents/createSalaryComponent"
+url: "{{hrmsBaseUrl}}/salarycomponents/createSalaryComponent"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"salaryComponentData\": {\r
+
+    \        \"name\": \"sujay\",\r
+
+    \        \"abbr\": \"ss\",\r
+
+    \        \"type\": \"EARNING\",\r
+
+    \        \"description\": \"nice\",\r
+
+    \        \"employeeMainId\":\"eb6df26e-e0d3-4d10-8714-873fef6e213c\"\r
+
+    \    },\r
+
+    \    \"accDetails\": [\r
+
+    \        {\r
+
+    \            \"company\": \"iceitps\",\r
+
+    \            \"account\": \"ABCD1234\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"company\": \"iceitps\",\r
+
+    \            \"account\": \"ABCD1234\"\r
+
+    \        }\r
+
+    \    ]\r
+
+    }"
+examples: ./.resources/{{hrmsBaseUrl}}-salarycomponents-createSalaryComponent.resources/examples
+order: 14000

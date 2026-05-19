@@ -1,0 +1,26 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/travels/createTravelPolicy/{{userId}}"
+url: "{{hrmsBaseUrl}}/travels/createTravelPolicy/{{userId}}"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"travelClass\": \"economy\",\r
+
+    \    \"dailyAllowance\": 200,\r
+
+    \    \"hotel\": 200,\r
+
+    \    \"meals\": 200,\r
+
+    \    \"transport\": 200,\r
+
+    \    \"others\": 200,\r
+
+    \    \"preApproval\": false\r
+
+    }\r
+
+    //\"travelClass\":'economy', 'firstclass', 'business', 'ac', /'non ac', 'sleeper', 'standard'"
+order: 15000

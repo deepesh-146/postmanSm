@@ -1,0 +1,14 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/travels/admin/getTravelAnalytics"
+url: "{{hrmsBaseUrl}}/travels/admin/getTravelAnalytics"
+method: GET
+body:
+  type: json
+  content: "{\r
+
+    \  \"status\": \"APPROVED\",       // or \"REJECTED\"\r
+
+    \  \"adminComments\": \"Approved after reviewing budget availability\"\r
+
+    }\r\n"
+order: 5000

@@ -1,0 +1,24 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/appraisal/submit-answers"
+url: "{{hrmsBaseUrl}}/appraisal/submit-answers"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"AppraisalCycleId\": \"067614c5-9b30-4a6d-853a-aff64f984ec9\",\r
+
+    \    \"answers\": [\r
+
+    \        {\r
+
+    \            \"questionId\": \"d2231397-88fe-4496-976a-65f8959ec913\",\r
+
+    \            \"rating\": 4\r
+
+    \        }\r
+
+    \    ]\r
+
+    }"
+order: 5000

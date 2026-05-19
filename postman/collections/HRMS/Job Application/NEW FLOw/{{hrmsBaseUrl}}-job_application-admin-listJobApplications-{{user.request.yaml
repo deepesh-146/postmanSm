@@ -1,0 +1,17 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/job_application/admin/listJobApplications/{{userId}}"
+url: "{{hrmsBaseUrl}}/job_application/admin/listJobApplications/{{userId}}?page=1&size=2000"
+method: GET
+queryParams:
+  - key: newcandidateId
+    value: 6a49864a-e1fb-43fc-a96e-df7e51ea2501
+    disabled: true
+  - key: jobId
+    value: ""
+    disabled: true
+  - key: page
+    value: "1"
+  - key: size
+    value: "2000"
+examples: ./.resources/{{hrmsBaseUrl}}-job_application-admin-listJobApplications-{{user.resources/examples
+order: 2000

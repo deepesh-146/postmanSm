@@ -1,0 +1,27 @@
+$kind: http-request
+description: Finalize challan to make it immutable. Status changes from GENERATED to FINALIZED. Once finalized, challan cannot be edited (only cancelled).
+url: "{{hrmsBaseUrl}}/compliance/{{challanId}}/finalize"
+method: PUT
+headers:
+  Content-Type: application/json
+  Authorization: Bearer {{token}}
+body:
+  type: text
+  content: |-
+    {
+      "remarks": "Verified all employee PF contributions. Approved for EPFO submission."
+    }
+scripts:
+  - type: afterResponse
+    code: |-
+      pm.test('Status code is 200', function () {
+          pm.response.to.have.status(200);
+      });
+
+      pm.test('Challan finalized', function () {
+          var jsonData = pm.response.json();
+          pm.expect(jsonData.success).to.be.true;
+          pm.expect(jsonData.data.status).to.equal('FINALIZED');
+      });
+    language: text/javascript
+order: 1000

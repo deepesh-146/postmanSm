@@ -1,0 +1,8 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/employee/deleteCostCenter/ef1a05de-bbcb-44ec-a198-87ccff379ab0"
+url: "{{hrmsBaseUrl}}/employee/deleteCostCenter/ef1a05de-bbcb-44ec-a198-87ccff379ab0"
+method: DELETE
+body:
+  type: json
+  content: ""
+order: 5000

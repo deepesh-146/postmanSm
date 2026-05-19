@@ -1,0 +1,5 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/employee/getCostCenterById/ef1a05de-bbcb-44ec-a198-87ccff379ab0"
+url: "{{hrmsBaseUrl}}/employee/getCostCenterById/ef1a05de-bbcb-44ec-a198-87ccff379ab0"
+method: GET
+order: 3000

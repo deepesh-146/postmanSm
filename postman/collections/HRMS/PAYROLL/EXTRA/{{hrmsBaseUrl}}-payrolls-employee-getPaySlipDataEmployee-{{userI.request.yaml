@@ -1,0 +1,19 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/payrolls/employee/getPaySlipDataEmployee/{{userId}}"
+url: "{{hrmsBaseUrl}}/payrolls/employee/getPaySlipDataEmployee/{{userId}}"
+method: GET
+body:
+  type: json
+  content: "{\r
+
+    \    \"month\":\"12\",\r
+
+    \    \"year\":\"2025\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJkNjJjZDhkZS1lNjEyLTQyYmEtYjkxMi02ZDllNGNhYjFlZTkiLCJjaWQiOiJkNjJjZDhkZS1lNjEyLTQyYmEtYjkxMi02ZDllNGNhYjFlZTkiLCJpZCI6ImQ2MmNkOGRlLWU2MTItNDJiYS1iOTEyLTZkOWU0Y2FiMWVlOSIsImZpcnN0TmFtZSI6IkFEIiwiZW1haWwiOiJBREZAeW9wbWFpbC5jb20iLCJ0ZW5hbnRJZCI6IjFjMjIxNDM0LTk4MDgtNGMyYy05ZGYxLWMwNWUwZGMxNTc2ZCIsIm9yZ2FuaXphdGlvbklkIjoiY2I2ZjBlNGYtM2FlMS00ZWQ0LWJiYzktMzMyOWM4ODViYmM5Iiwib2ZmaWNlSWQiOiJlMmE1OWU5Ni03OTI5LTQ2ZGQtYjRjMC1iNDJlYWEzNmU0NzUiLCJ1c2VyUm9sZSI6IkVNUExPWUVFIiwiZW1wbG95ZWVUeXBlIjoiRU1QTE9ZRUUiLCJpYXQiOjE3NjcwOTAyMDcsImV4cCI6MTc2NzE3NjYwN30.UkQ44xzT9zSK4_rxXnjcvNKWp8Gd1KRRJcoB97dssfY
+examples: ./.resources/{{hrmsBaseUrl}}-payrolls-employee-getPaySlipDataEmployee-{{userI.resources/examples
+order: 6000

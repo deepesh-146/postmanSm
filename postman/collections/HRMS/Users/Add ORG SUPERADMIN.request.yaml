@@ -1,0 +1,32 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/employee/createFirstAdmin"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"firstName\": \"Deepesh\",\r
+
+    \    \"lastName\": \"Admin\",\r
+
+    \    \"email\": \"deepesh72@gmail.com\",\r
+
+    \    \"mobile\": \"+971501234567\",\r
+
+    \    \"password\": \"Sarah@123\",\r
+
+    \    \"gender\": \"Female\",\r
+
+    \    \"dateOfBirth\": \"1985-05-15\",\r
+
+    \    \"officeId\": \"{{officeId}}\",\r
+
+    \    \"nationality\": \"Indian\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{orgToken}}"
+examples: ./.resources/Add ORG SUPERADMIN.resources/examples
+order: 2000

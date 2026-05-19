@@ -1,0 +1,5 @@
+$kind: http-request
+description: Get detailed score for a single employee with KRA breakdown, band, calibration logs, recommendations, and acknowledgement status.
+url: "{{baseUrl}}/cycle/{{cycleId}}/employee/{{employeeId}}/score"
+method: GET
+order: 4000

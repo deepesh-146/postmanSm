@@ -1,0 +1,13 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/resignation/getEmployeePayrollDataforResignation/75f562fe-c9c5-4d4d-a4c3-b38305e2a9c1?month=03&year=2025"
+url: "{{hrmsBaseUrl}}/resignation/getEmployeePayrollDataforResignation/0c5b5932-a5df-4aea-a782-0bd76a246bbb?year=2025&month=12"
+method: GET
+queryParams:
+  - key: type
+    value: EARNING
+    disabled: true
+  - key: year
+    value: "2025"
+  - key: month
+    value: "12"
+order: 9000

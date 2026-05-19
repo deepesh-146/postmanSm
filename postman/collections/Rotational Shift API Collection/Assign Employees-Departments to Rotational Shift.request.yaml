@@ -1,0 +1,11 @@
+$kind: http-request
+name: Assign Employees/Departments to Rotational Shift
+url: "{{hrmsBaseUrl}}/rewards/admin/rotationalShift/rotateShifts?manual=true&auto=false&rotateId=f5e79d2f-ee94-4b2e-ac3c-72b2066b1b62"
+method: POST
+headers:
+  Content-Type: application/json
+queryParams:
+  manual: "true"
+  auto: "false"
+  rotateId: f5e79d2f-ee94-4b2e-ac3c-72b2066b1b62
+order: 6000

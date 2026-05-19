@@ -1,0 +1,17 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/job/updateSkill/fcbf5359-73f6-4448-b871-c6811979b287 Copy 2"
+url: "{{hrmsBaseUrl}}/job/updateGrade/79cb65c9-cc49-4523-8f88-f3fd7080dd49"
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"gradeName\": \"dd\",\r
+
+    \    \"options\":\"ENTRY-LEVEL\",\r
+
+    \    \"type\": \"C1\"\r
+
+    }"
+examples: ./.resources/{{hrmsBaseUrl}}-job-updateSkill-fcbf5359-73f6-4448-b871-c6811979-2.resources/examples
+order: 25000

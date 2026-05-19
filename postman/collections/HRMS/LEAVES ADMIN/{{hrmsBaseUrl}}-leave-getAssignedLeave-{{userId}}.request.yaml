@@ -1,0 +1,8 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/leave/getAssignedLeave/{{userId}}"
+url: "{{hrmsBaseUrl}}/leave/getAssignedLeave/{{userId}}?size=5&page=1"
+method: GET
+queryParams:
+  size: "5"
+  page: "1"
+order: 2000

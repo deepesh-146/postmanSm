@@ -1,0 +1,20 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/onboarding_step/"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"sName\": \"About HR Policy3\",\r
+
+    \    \"sType\": \"VIDEO\", \r
+
+    \    \"relatedTo\": \"HR\",\r
+
+    \    \"link\": \"https://www.youtube.com/watch?v=uEWfDKCI6s8\",\r
+
+    \    \"desc\": \"Description about the HR\"\r
+
+    }"
+examples: ./.resources/Add Step.resources/examples
+order: 1000

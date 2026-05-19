@@ -1,0 +1,45 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/employee/educationUpdate/{{educationId}}"
+url: "{{hrmsBaseUrl}}/employee/educationUpdate/{{educationId}}"
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"isCandidate\": false,\r
+
+    \    \"employeeId\": \"241e6d14-d069-41f4-b25f-719ff1d6fe9b\",\r
+
+    \    \"educationData\": {\r
+
+    \        \"clgName\": \"RPSIT\",\r
+
+    \        \"univName\": \"Magadh\",\r
+
+    \        \"clgLocation\": \"Patna\",\r
+
+    \        \"specialization\": \"Computer Engineering\",\r
+
+    \        \"degName\": \"B.Tech\",\r
+
+    \        \"courseName\": \"Graduation\",\r
+
+    \        \"startDate\": \"2016-02-02\",\r
+
+    \        \"endDate\": \"2019-02-02\",\r
+
+    \        \"officialEmail\": \"info@rpsit.org.in\",\r
+
+    \        \"officialMobile\": \"88888888888\",\r
+
+    \        \"currPursuing\": false,\r
+
+    \        \"marksheetFilePath\": \"https://morth.nic.in/sites/default/files/dd12-13_0.pdf\",\r
+
+    \        \"certFilePath\": \"https://morth.nic.in/sites/default/files/dd12-13_0.pdf\"\r
+
+    \    }\r
+
+    }"
+examples: ./.resources/{{hrmsBaseUrl}}-employee-educationUpdate-{{educationId}}.resources/examples
+order: 5000

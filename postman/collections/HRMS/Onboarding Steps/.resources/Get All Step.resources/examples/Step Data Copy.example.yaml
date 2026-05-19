@@ -1,0 +1,61 @@
+$kind: http-example
+request:
+  url: "{{hrmsBaseUrl}}/onboarding_step/"
+  method: GET
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "979"
+    ETag: W/"3d3-iht6LBZQ4e6FnXBhOmkXeVCHlHw"
+    Date: Thu, 10 Oct 2024 17:34:13 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "status": {
+              "success": true,
+              "code": 200,
+              "message": "Step Data Found",
+              "failure": false
+          },
+          "data": [
+              {
+                  "id": "2ea5dd73-ceaa-402f-af76-db9ef3bf96d7",
+                  "stepName": "HR Video",
+                  "stepType": "VIDEO",
+                  "stepRelatedTo": "Company",
+                  "stepLink": "https://www.youtube.com/watch?v=pApyQSxCNsA",
+                  "stepDecription": "Description about the Company",
+                  "createdAt": "2024-10-10T17:30:33.000Z",
+                  "updatedAt": "2024-10-10T17:30:33.000Z"
+              },
+              {
+                  "id": "79929a35-7b08-45e5-a835-2aaa455fb81b",
+                  "stepName": "About Work",
+                  "stepType": "VIDEO",
+                  "stepRelatedTo": "Tutorial",
+                  "stepLink": "https://www.youtube.com/watch?v=pApyQSxCNsA",
+                  "stepDecription": "Description about the Work",
+                  "createdAt": "2024-10-10T17:31:22.000Z",
+                  "updatedAt": "2024-10-10T17:31:22.000Z"
+              },
+              {
+                  "id": "a19a390f-3ec8-434f-846f-f8d13c554e8e",
+                  "stepName": "About HR Policy",
+                  "stepType": "VIDEO",
+                  "stepRelatedTo": "HR",
+                  "stepLink": "https://www.youtube.com/watch?v=uEWfDKCI6s8",
+                  "stepDecription": "Description about the HR",
+                  "createdAt": "2024-10-10T17:32:18.000Z",
+                  "updatedAt": "2024-10-10T17:32:18.000Z"
+              }
+          ]
+      }
+order: 1000

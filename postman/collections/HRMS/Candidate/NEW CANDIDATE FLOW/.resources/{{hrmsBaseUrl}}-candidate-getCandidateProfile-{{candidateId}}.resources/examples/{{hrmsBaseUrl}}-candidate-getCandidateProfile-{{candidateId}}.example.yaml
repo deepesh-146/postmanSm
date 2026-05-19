@@ -1,0 +1,206 @@
+$kind: http-example
+name: "{{hrmsBaseUrl}}/candidate/getCandidateProfile/{{candidateId}}"
+request:
+  url: "{{hrmsBaseUrl}}/candidate/getCandidateProfile/{{candidateId}}"
+  method: GET
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "7918"
+    ETag: W/"1eee-KMyZk1AQDPta69OShRrGMEDW/tM"
+    Date: Fri, 23 May 2025 10:04:12 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "success": true,
+          "status": 200,
+          "message": "Candidate profile fetched successfully.",
+          "data": {
+              "id": "51228e79-8a04-4735-8245-1b1de4efb113",
+              "firstName": "John1",
+              "lastName": "Doe",
+              "email": "john@example.com",
+              "mobile": "9999999999",
+              "dob": "1990-01-01T00:00:00.000Z",
+              "gender": "MALE",
+              "nationality": "Indian",
+              "address": "123 Street",
+              "city": "New York",
+              "state": "NY",
+              "zipcode": "10001",
+              "resumePath": "https://hrms-storage-iceipts.s3.ap-south-1.amazonaws.com/https%3A//linkedin.com/in/john?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT3LXCJC3ZZZWNB37%2F20250523%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20250523T100412Z&X-Amz-Expires=300&X-Amz-Signature=22d51f38544d2be40d665e8baa1a5464d1a0912b74597fe3cd1e429da6c5f501&X-Amz-SignedHeaders=host",
+              "skills": "JavaScript,Node.js,React",
+              "linkedIn": "https://linkedin.com/in/john",
+              "portfolioWebsite": "https://johnsportfolio.com",
+              "github": "https://github.com/johndoe",
+              "otp": null,
+              "otpExpires": "2025-05-21T08:42:00.000Z",
+              "isActive": true,
+              "isVerified": true,
+              "userType": "CANDIDATE",
+              "mobileotp": "268681",
+              "emailotp": "628091",
+              "isDeleted": false,
+              "createdAt": "2025-05-21T08:37:00.000Z",
+              "updatedAt": "2025-05-21T12:30:00.000Z",
+              "candidate_certificates": [
+                  {
+                      "id": "77ce6bd7-1839-4463-982d-2d6f457c11b8",
+                      "certificateName": "AWS Certified Developer1",
+                      "issuingOrganization": "Amazon",
+                      "issueDate": "2020-01-01T00:00:00.000Z",
+                      "expiryDate": "2023-01-01T00:00:00.000Z",
+                      "image": "https://hrms-storage-iceipts.s3.ap-south-1.amazonaws.com/fdsfs?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT3LXCJC3ZZZWNB37%2F20250523%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20250523T100412Z&X-Amz-Expires=300&X-Amz-Signature=441680a0f46951350dd40bec8b7f97600221e8da2983e29de757c2869d36cb20&X-Amz-SignedHeaders=host",
+                      "createdAt": "2025-05-21T12:30:01.000Z",
+                      "updatedAt": "2025-05-21T12:30:01.000Z",
+                      "newcandidateId": "51228e79-8a04-4735-8245-1b1de4efb113"
+                  }
+              ],
+              "candidate_documents": [
+                  {
+                      "id": "79b86b4e-1051-454e-b0be-3a7b73ee59b9",
+                      "type": "PASSPORT",
+                      "issueDate": "2015-01-01T00:00:00.000Z",
+                      "expiryDate": "2025-01-01T00:00:00.000Z",
+                      "passportNumber": "A1234567",
+                      "issuingCountry": "India",
+                      "visaType": null,
+                      "visaNumber": null,
+                      "aadhaarNumber": null,
+                      "nameOnAadhaar": null,
+                      "linkedPhoneNumber": null,
+                      "panNumber": null,
+                      "nameOnPan": null,
+                      "fathersName": null,
+                      "image": "https://hrms-storage-iceipts.s3.ap-south-1.amazonaws.com/fdsfs?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT3LXCJC3ZZZWNB37%2F20250523%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20250523T100412Z&X-Amz-Expires=300&X-Amz-Signature=441680a0f46951350dd40bec8b7f97600221e8da2983e29de757c2869d36cb20&X-Amz-SignedHeaders=host",
+                      "createdAt": "2025-05-21T12:30:01.000Z",
+                      "updatedAt": "2025-05-21T12:30:01.000Z",
+                      "newcandidateId": "51228e79-8a04-4735-8245-1b1de4efb113"
+                  },
+                  {
+                      "id": "b00c7efe-efc9-4aa2-ba70-0e9d44da909b",
+                      "type": "VISA",
+                      "issueDate": "2015-01-01T00:00:00.000Z",
+                      "expiryDate": "2025-01-01T00:00:00.000Z",
+                      "passportNumber": null,
+                      "issuingCountry": null,
+                      "visaType": "work visa",
+                      "visaNumber": "1233132",
+                      "aadhaarNumber": null,
+                      "nameOnAadhaar": null,
+                      "linkedPhoneNumber": null,
+                      "panNumber": null,
+                      "nameOnPan": null,
+                      "fathersName": null,
+                      "image": "https://hrms-storage-iceipts.s3.ap-south-1.amazonaws.com/fdsfs?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT3LXCJC3ZZZWNB37%2F20250523%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20250523T100412Z&X-Amz-Expires=300&X-Amz-Signature=441680a0f46951350dd40bec8b7f97600221e8da2983e29de757c2869d36cb20&X-Amz-SignedHeaders=host",
+                      "createdAt": "2025-05-21T12:30:01.000Z",
+                      "updatedAt": "2025-05-21T12:30:01.000Z",
+                      "newcandidateId": "51228e79-8a04-4735-8245-1b1de4efb113"
+                  },
+                  {
+                      "id": "f8432ceb-6a4e-432a-b86f-d534139f67a1",
+                      "type": "PAN",
+                      "issueDate": null,
+                      "expiryDate": null,
+                      "passportNumber": null,
+                      "issuingCountry": null,
+                      "visaType": null,
+                      "visaNumber": null,
+                      "aadhaarNumber": null,
+                      "nameOnAadhaar": null,
+                      "linkedPhoneNumber": null,
+                      "panNumber": "ABCDE1234F",
+                      "nameOnPan": "John Doe",
+                      "fathersName": "Richard Doe",
+                      "image": "https://hrms-storage-iceipts.s3.ap-south-1.amazonaws.com/fdsfs?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT3LXCJC3ZZZWNB37%2F20250523%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20250523T100412Z&X-Amz-Expires=300&X-Amz-Signature=441680a0f46951350dd40bec8b7f97600221e8da2983e29de757c2869d36cb20&X-Amz-SignedHeaders=host",
+                      "createdAt": "2025-05-21T12:30:01.000Z",
+                      "updatedAt": "2025-05-21T12:30:01.000Z",
+                      "newcandidateId": "51228e79-8a04-4735-8245-1b1de4efb113"
+                  },
+                  {
+                      "id": "fc36bab2-0fc0-4179-a41f-3ae635bfadb5",
+                      "type": "AADHAAR",
+                      "issueDate": null,
+                      "expiryDate": null,
+                      "passportNumber": null,
+                      "issuingCountry": null,
+                      "visaType": null,
+                      "visaNumber": null,
+                      "aadhaarNumber": "123456789012",
+                      "nameOnAadhaar": "John Doe",
+                      "linkedPhoneNumber": "9999999999",
+                      "panNumber": null,
+                      "nameOnPan": null,
+                      "fathersName": null,
+                      "image": "https://hrms-storage-iceipts.s3.ap-south-1.amazonaws.com/fdsfs?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT3LXCJC3ZZZWNB37%2F20250523%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20250523T100412Z&X-Amz-Expires=300&X-Amz-Signature=441680a0f46951350dd40bec8b7f97600221e8da2983e29de757c2869d36cb20&X-Amz-SignedHeaders=host",
+                      "createdAt": "2025-05-21T12:30:01.000Z",
+                      "updatedAt": "2025-05-21T12:30:01.000Z",
+                      "newcandidateId": "51228e79-8a04-4735-8245-1b1de4efb113"
+                  }
+              ],
+              "candidate_educations": [
+                  {
+                      "id": "714786f3-d563-448d-87ec-6acb84854c9e",
+                      "degree": "B.Tech",
+                      "specialization": "Computer Science",
+                      "institute": "ABC University",
+                      "startDate": "2010-06-01T00:00:00.000Z",
+                      "endDate": "2014-05-31T00:00:00.000Z",
+                      "image": "https://hrms-storage-iceipts.s3.ap-south-1.amazonaws.com/fdsfs?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT3LXCJC3ZZZWNB37%2F20250523%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20250523T100412Z&X-Amz-Expires=300&X-Amz-Signature=441680a0f46951350dd40bec8b7f97600221e8da2983e29de757c2869d36cb20&X-Amz-SignedHeaders=host",
+                      "createdAt": "2025-05-21T12:30:00.000Z",
+                      "updatedAt": "2025-05-21T12:30:00.000Z",
+                      "newcandidateId": "51228e79-8a04-4735-8245-1b1de4efb113",
+                      "documentId": null
+                  },
+                  {
+                      "id": "dc9d6670-8c4c-4c23-befb-56e18df87e3c",
+                      "degree": "M.Tech",
+                      "specialization": "AI",
+                      "institute": "XYZ University",
+                      "startDate": "2015-06-01T00:00:00.000Z",
+                      "endDate": "2017-05-31T00:00:00.000Z",
+                      "image": "https://hrms-storage-iceipts.s3.ap-south-1.amazonaws.com/fdsfs?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT3LXCJC3ZZZWNB37%2F20250523%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20250523T100412Z&X-Amz-Expires=300&X-Amz-Signature=441680a0f46951350dd40bec8b7f97600221e8da2983e29de757c2869d36cb20&X-Amz-SignedHeaders=host",
+                      "createdAt": "2025-05-21T12:30:00.000Z",
+                      "updatedAt": "2025-05-21T12:30:00.000Z",
+                      "newcandidateId": "51228e79-8a04-4735-8245-1b1de4efb113",
+                      "documentId": null
+                  }
+              ],
+              "candidate_uploaded_files": [
+                  {
+                      "id": "4c5ccc4c-957b-4b24-89db-d194d50a55c4",
+                      "documentType": "degree",
+                      "fileName": "DegreeCertificate.pdf",
+                      "filePath": "https://hrms-storage-iceipts.s3.ap-south-1.amazonaws.com//uploads/degree.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT3LXCJC3ZZZWNB37%2F20250523%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20250523T100412Z&X-Amz-Expires=300&X-Amz-Signature=8b0ce980ef27b5819dfdea3e7e88abc1ca54d932d9d8a1711b84cad4dbca732c&X-Amz-SignedHeaders=host",
+                      "uploadedAt": "2024-12-01T10:00:00.000Z",
+                      "createdAt": "2025-05-21T12:30:01.000Z",
+                      "updatedAt": "2025-05-21T12:30:01.000Z",
+                      "newcandidateId": "51228e79-8a04-4735-8245-1b1de4efb113"
+                  }
+              ],
+              "candidate_work_experiences": [
+                  {
+                      "id": "4aa6bd4a-46cc-4774-abc4-342d678ebfb3",
+                      "company": "Tech Corp",
+                      "jobTitle": "Software Engineer",
+                      "startDate": "2017-06-01T00:00:00.000Z",
+                      "endDate": "2019-08-31T00:00:00.000Z",
+                      "responsibility": "Worked on frontend development.",
+                      "image": "https://hrms-storage-iceipts.s3.ap-south-1.amazonaws.com/fdsfs?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT3LXCJC3ZZZWNB37%2F20250523%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20250523T100412Z&X-Amz-Expires=300&X-Amz-Signature=441680a0f46951350dd40bec8b7f97600221e8da2983e29de757c2869d36cb20&X-Amz-SignedHeaders=host",
+                      "createdAt": "2025-05-21T12:30:00.000Z",
+                      "updatedAt": "2025-05-21T12:30:00.000Z",
+                      "newcandidateId": "51228e79-8a04-4735-8245-1b1de4efb113",
+                      "documentId": null
+                  }
+              ]
+          }
+      }
+order: 1000

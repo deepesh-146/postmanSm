@@ -1,0 +1,14 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/attendance/countApprove"
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"employeeId\": \"903bd690-61f3-43db-9edd-d38d531c1c67\",\r
+
+    \    \"attendanceCountId\": \"79c3b023-158c-4542-b2b2-aea43254ef06\"\r
+
+    }"
+examples: ./.resources/Count Approve.resources/examples
+order: 22000

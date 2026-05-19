@@ -1,0 +1,7 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/referrals/interview/:referralId"
+method: PATCH
+pathVariables:
+  referralId: 7d8e66bf-65b6-4ccc-a762-fa8c0fd0866e
+examples: ./.resources/Referral Status Interview.resources/examples
+order: 7000

@@ -1,0 +1,5 @@
+$kind: http-request
+description: Returns all categories with nested subcategories.
+url: "{{base_url}}/grievances/categories/all"
+method: GET
+order: 7000

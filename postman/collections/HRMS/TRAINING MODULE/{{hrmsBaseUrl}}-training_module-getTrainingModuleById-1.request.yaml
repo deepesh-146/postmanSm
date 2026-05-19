@@ -1,0 +1,186 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/training_module/getTrainingModuleById/1"
+url: "{{hrmsBaseUrl}}/training_module/getTrainingModuleById/1"
+method: GET
+body:
+  type: json
+  content: "{\r
+
+    \    \"moduleInfo\": {\r
+
+    \        \"title\": \"Introduction to HR Policies\",\r
+
+    \        \"category\": \"Onboarding\",\r
+
+    \        \"duration\": \"2 hours\",\r
+
+    \        \"description\": \"This training module introduces new employees to the company's HR policies and procedures.\"\r
+
+    \    },\r
+
+    \    \"materials\": [\r
+
+    \        {\r
+
+    \            \"type\": \"file\",\r
+
+    \            \"title\": \"HR Policy Handbook\",\r
+
+    \            \"filePath\": \"/uploads/training/1623456789-hr-handbook.pdf\",\r
+
+    \            \"fileType\": \"application/pdf\",\r
+
+    \            \"description\": \"Complete handbook of HR policies\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"type\": \"link\",\r
+
+    \            \"title\": \"Employee Rights Video\",\r
+
+    \            \"url\": \"https://example.com/videos/employee-rights\",\r
+
+    \            \"description\": \"A video explaining employee rights and responsibilities\"\r
+
+    \        }\r
+
+    \    ],\r
+
+    \    \"quiz\": {\r
+
+    \        \"hasQuiz\": true,\r
+
+    \        \"passingScore\": 70,\r
+
+    \        \"autoEvaluate\": true,\r
+
+    \        \"showInstantFeedback\": true,\r
+
+    \        \"questions\": [\r
+
+    \            {\r
+
+    \                \"questionText\": \"What is the company's policy on remote work?\",\r
+
+    \                \"questionType\": \"single\",\r
+
+    \                \"options\": [\r
+
+    \                    {\r
+
+    \                        \"optionText\": \"Remote work is not allowed\",\r
+
+    \                        \"isCorrect\": false\r
+
+    \                    },\r
+
+    \                    {\r
+
+    \                        \"optionText\": \"Remote work is allowed with manager approval\",\r
+
+    \                        \"isCorrect\": true\r
+
+    \                    },\r
+
+    \                    {\r
+
+    \                        \"optionText\": \"Remote work is allowed for everyone\",\r
+
+    \                        \"isCorrect\": false\r
+
+    \                    },\r
+
+    \                    {\r
+
+    \                        \"optionText\": \"Remote work is only allowed on Fridays\",\r
+
+    \                        \"isCorrect\": false\r
+
+    \                    }\r
+
+    \                ]\r
+
+    \            },\r
+
+    \            {\r
+
+    \                \"questionText\": \"Which of the following are acceptable uses of company equipment? (Select all that apply)\",\r
+
+    \                \"questionType\": \"multiple\",\r
+
+    \                \"options\": [\r
+
+    \                    {\r
+
+    \                        \"optionText\": \"Work-related tasks\",\r
+
+    \                        \"isCorrect\": true\r
+
+    \                    },\r
+
+    \                    {\r
+
+    \                        \"optionText\": \"Personal social media\",\r
+
+    \                        \"isCorrect\": false\r
+
+    \                    },\r
+
+    \                    {\r
+
+    \                        \"optionText\": \"Professional development\",\r
+
+    \                        \"isCorrect\": true\r
+
+    \                    },\r
+
+    \                    {\r
+
+    \                        \"optionText\": \"Streaming entertainment\",\r
+
+    \                        \"isCorrect\": false\r
+
+    \                    }\r
+
+    \                ]\r
+
+    \            }\r
+
+    \        ]\r
+
+    \    },\r
+
+    \    \"certificate\": {\r
+
+    \        \"hasCertificate\": true,\r
+
+    \        \"requireQuizPass\": true,\r
+
+    \        \"certificatePath\": \"/uploads/certificates/1623456789-hr-certificate.pdf\"\r
+
+    \    },\r
+
+    \    \"assignment\": {\r
+
+    \        \"assignmentType\": \"department\",\r
+
+    \        \"assignedToIds\": [\r
+
+    \            1,\r
+
+    \            2,\r
+
+    \            3\r
+
+    \        ],\r
+
+    \        \"startDate\": \"2023-06-01T00:00:00.000Z\",\r
+
+    \        \"deadline\": \"2023-06-30T23:59:59.000Z\"\r
+
+    \    }\r
+
+    }"
+order: 5000

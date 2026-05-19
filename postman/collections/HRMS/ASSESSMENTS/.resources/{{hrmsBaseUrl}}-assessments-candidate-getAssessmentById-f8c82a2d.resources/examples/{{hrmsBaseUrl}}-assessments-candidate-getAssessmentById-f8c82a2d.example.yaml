@@ -1,0 +1,127 @@
+$kind: http-example
+name: "{{hrmsBaseUrl}}/assessments/candidate/getAssessmentById/f8c82a2d-3ea9-428e-af31-e47690128052"
+request:
+  url: "{{hrmsBaseUrl}}/assessments/candidate/getAssessmentById/f8c82a2d-3ea9-428e-af31-e47690128052"
+  method: GET
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "2724"
+    ETag: W/"aa4-GHQl5hk10dJJ6taIceW2N4XYPGQ"
+    Date: Tue, 01 Jul 2025 06:42:25 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "success": true,
+          "status": 200,
+          "data": {
+              "success": true,
+              "data": {
+                  "id": "f8c82a2d-3ea9-428e-af31-e47690128052",
+                  "title": "Backend Development Assessment",
+                  "category": "TECHNICAL_SKILLS",
+                  "description": "Evaluate Node.js and API skills",
+                  "duration": 60,
+                  "difficulty": "Intermediate",
+                  "instructions": "Attempt all questions. Time-bound test.",
+                  "createdAt": "2025-06-30T12:27:27.000Z",
+                  "updatedAt": "2025-06-30T12:27:27.000Z",
+                  "organizationId": "891bb2ae-588c-4518-953e-1e367e3a23df",
+                  "officeId": "8e2f4467-dff5-4717-932f-bcbc9431f5dc",
+                  "assessment_questions": [
+                      {
+                          "id": "4583ac48-cc54-4e3a-8bc9-5b711995855f",
+                          "type": "ESSAY_QUESTION",
+                          "title": "Explain RESTful APIs.",
+                          "description": "Answer in 3-4 sentences.",
+                          "points": 10,
+                          "createdAt": "2025-06-30T12:27:27.000Z",
+                          "updatedAt": "2025-06-30T12:27:27.000Z",
+                          "assessmentId": "f8c82a2d-3ea9-428e-af31-e47690128052",
+                          "assessment_options": []
+                      },
+                      {
+                          "id": "518f3fc9-cdf9-49b2-988c-63dd6c8852a9",
+                          "type": "MULTIPLE_CHOICE",
+                          "title": "What is the output of 2 + '2' in JS?",
+                          "description": "Basic JS behavior",
+                          "points": 5,
+                          "createdAt": "2025-06-30T12:27:27.000Z",
+                          "updatedAt": "2025-06-30T12:27:27.000Z",
+                          "assessmentId": "f8c82a2d-3ea9-428e-af31-e47690128052",
+                          "assessment_options": [
+                              {
+                                  "id": "2665abb2-d2c5-46e9-bb05-f821a8e3eb83",
+                                  "optionText": "4",
+                                  "isCorrect": false,
+                                  "createdAt": "2025-06-30T12:27:27.000Z",
+                                  "updatedAt": "2025-06-30T12:27:27.000Z",
+                                  "assessmentQuestionId": "518f3fc9-cdf9-49b2-988c-63dd6c8852a9"
+                              },
+                              {
+                                  "id": "d559426c-4502-4941-b9f2-87dc61a3de93",
+                                  "optionText": "NaN",
+                                  "isCorrect": false,
+                                  "createdAt": "2025-06-30T12:27:27.000Z",
+                                  "updatedAt": "2025-06-30T12:27:27.000Z",
+                                  "assessmentQuestionId": "518f3fc9-cdf9-49b2-988c-63dd6c8852a9"
+                              },
+                              {
+                                  "id": "d66a1bdb-8fdb-42d2-8a33-9ce277789f11",
+                                  "optionText": "Error",
+                                  "isCorrect": false,
+                                  "createdAt": "2025-06-30T12:27:27.000Z",
+                                  "updatedAt": "2025-06-30T12:27:27.000Z",
+                                  "assessmentQuestionId": "518f3fc9-cdf9-49b2-988c-63dd6c8852a9"
+                              },
+                              {
+                                  "id": "fae511bd-97c6-4e2e-b543-2ca5e6ffeb52",
+                                  "optionText": "22",
+                                  "isCorrect": true,
+                                  "createdAt": "2025-06-30T12:27:27.000Z",
+                                  "updatedAt": "2025-06-30T12:27:27.000Z",
+                                  "assessmentQuestionId": "518f3fc9-cdf9-49b2-988c-63dd6c8852a9"
+                              }
+                          ]
+                      },
+                      {
+                          "id": "c27c4500-ddd6-4ce6-ae41-a70cc20f9d73",
+                          "type": "CODING_CHALLENGE",
+                          "title": "Reverse a string",
+                          "description": "Write a function to reverse a string in JS.",
+                          "points": 10,
+                          "createdAt": "2025-06-30T12:27:27.000Z",
+                          "updatedAt": "2025-06-30T12:27:27.000Z",
+                          "assessmentId": "f8c82a2d-3ea9-428e-af31-e47690128052",
+                          "assessment_options": []
+                      }
+                  ],
+                  "assessment_submissions": [
+                      {
+                          "id": "08ac9878-b6ae-4da0-b8a4-9b27ee3a0b03",
+                          "status": "SUBMITTED",
+                          "startedAt": "2025-06-30T15:43:08.000Z",
+                          "submittedAt": "2025-06-30T16:50:09.000Z",
+                          "feedback": null,
+                          "score": null,
+                          "remarks": null,
+                          "newcandidate": {
+                              "id": "37968f2f-129f-4d05-9f9b-5f93f55bb2b6",
+                              "firstName": "YASH",
+                              "lastName": "KALE",
+                              "email": "sujay1@yopmail.com"
+                          }
+                      }
+                  ]
+              }
+          }
+      }
+order: 1000

@@ -1,0 +1,6 @@
+$kind: http-request
+url: "{{baseUrl}}/workflow/pendingApprovals/{{approverId}}?key=pip_plan"
+method: GET
+queryParams:
+  key: pip_plan
+order: 2000

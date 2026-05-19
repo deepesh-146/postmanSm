@@ -1,0 +1,14 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/claims/settle"
+method: PATCH
+body:
+  type: json
+  content: "{\r
+
+    \    \"claimId\": \"44d57429-b244-48dc-a55c-4eba826cde3f\",\r
+
+    \    \"notes\": \"Looks Good\"\r
+
+    }"
+examples: ./.resources/Request Claim Settlement.resources/examples
+order: 4000

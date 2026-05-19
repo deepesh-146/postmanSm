@@ -1,0 +1,13 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/workflow/pendingApprovals/{{userId}}?key=personal_data_change"
+url: "{{hrmsBaseUrl}}/workflow/pendingApprovals/{{userId}}?key=travel_request "
+method: GET
+queryParams:
+  - key: key
+    value: "travel_request "
+    description: job_requisitions or leave_request or travel_request or reimbursement_request, offerletter_request,personal_data_change,bank_account_change
+  - key: permission
+    value: PERSONAL_DATA_REQUEST
+    disabled: true
+    description: LEAVE_REQUEST,REQUISITION_REQUEST,TRAVEL_REQUEST,OFFER_REQUEST,BANK_CHANGE_REQUEST,PERSONAL_DATA_REQUEST,EXPENSE_REQUEST,PAYROLL
+order: 4000

@@ -1,0 +1,18 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/attendance/countAdd"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"month\": \"10\",\r
+
+    \    \"year\": \"2024\",\r
+
+    \    \"workingDay\": \"22\",\r
+
+    \    \"employeeId\": \"903bd690-61f3-43db-9edd-d38d531c1c67\"\r
+
+    }"
+examples: ./.resources/Count Add.resources/examples
+order: 2000

@@ -1,0 +1,14 @@
+$kind: http-request
+description: "ALTERNATIVE: Employee disputes instead of accepting. Use a different employee token to test this path."
+url: "{{baseUrl}}/appraisal-finalization/my/cycle/{{cycleId}}/acknowledge"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+        "status": "DISPUTED",
+        "disputeReason": "I believe the manager rating does not accurately reflect my contributions to the Q1 product launch and cross-team collaboration"
+    }
+order: 3000

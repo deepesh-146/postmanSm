@@ -1,0 +1,26 @@
+$kind: http-request
+description: Custom leave report — all leave requests with full details.
+url: "{{baseUrl}}/mis/custom-report/execute"
+method: POST
+headers:
+  Content-Type: application/json
+  x-organization-id: "{{organizationId}}"
+body:
+  type: text
+  content: |-
+    {
+      "reportConfig": {
+        "dataSource": "leave",
+        "fields": ["employeeMainId", "leaveType", "fromDate", "toDate", "noOfDays", "workflow_status", "reason"],
+        "filters": {},
+        "sortBy": "fromDate",
+        "sortOrder": "DESC",
+        "dateRange": {
+          "from": "2025-01-01",
+          "to": "2026-03-13"
+        }
+      },
+      "page": 1,
+      "size": 20
+    }
+order: 4000

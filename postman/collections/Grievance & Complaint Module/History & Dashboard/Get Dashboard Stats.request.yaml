@@ -1,0 +1,5 @@
+$kind: http-request
+description: "Returns: total count, count per status, SLA breached count. Results are role-filtered (employee sees own stats, HR/Admin sees org-wide)."
+url: "{{base_url}}/grievances/dashboard"
+method: GET
+order: 2000

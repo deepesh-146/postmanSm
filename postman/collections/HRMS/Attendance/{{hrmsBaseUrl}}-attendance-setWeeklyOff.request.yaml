@@ -1,0 +1,17 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/attendance/setWeeklyOff"
+url: "{{hrmsBaseUrl}}/attendance/setWeeklyOff"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"weeklyOffDays\": [ \"Friday\",\"Saturday\"],\r
+
+    \    \"pay\" : 1,\r
+
+    \    \"officeId\": \"9b048ebe-ea22-4097-8a55-cf8dbef55bc4\"\r
+
+    }\r\n"
+examples: ./.resources/{{hrmsBaseUrl}}-attendance-setWeeklyOff.resources/examples
+order: 8000

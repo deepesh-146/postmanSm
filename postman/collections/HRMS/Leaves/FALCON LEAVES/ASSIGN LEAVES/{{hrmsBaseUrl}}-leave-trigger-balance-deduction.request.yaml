@@ -1,0 +1,5 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/leave/trigger-balance-deduction"
+url: "{{hrmsBaseUrl}}/leave/trigger-balance-deduction/{{userId}}"
+method: POST
+order: 5000

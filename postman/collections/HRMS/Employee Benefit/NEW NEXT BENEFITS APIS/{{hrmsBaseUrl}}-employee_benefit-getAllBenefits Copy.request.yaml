@@ -1,0 +1,13 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/employee_benefit/getAllBenefits Copy"
+url: "{{hrmsBaseUrl}}/employee_benefit/getAllBenefits/list"
+method: GET
+body:
+  type: formdata
+  content:
+    - type: file
+      key: file
+      src:
+        - /C:/Users/mehta/Downloads/Sample Benefits.csv
+examples: ./.resources/{{hrmsBaseUrl}}-employee_benefit-getAllBenefits Copy.resources/examples
+order: 3000

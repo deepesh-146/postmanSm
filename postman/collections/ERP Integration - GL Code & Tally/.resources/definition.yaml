@@ -1,0 +1,27 @@
+$kind: collection
+description: |-
+  End-to-end GL Code mapping and Tally/SAP integration APIs.
+
+  Flow:
+  1. Configure ERP connection (POST /erp/config)
+  2. Test connection (POST /erp/test-connection)
+  3. Sync ledger masters to Tally (POST /erp/sync-ledger-masters)
+  4. Check GL mapping status (GET /erp/gl-mapping-status/:payrollId)
+  5. Generate payroll journal (POST /erp/generate-payroll-journal/:payrollId)
+  6. Push journal to Tally (POST /erp/push-to-erp/:journalId)
+  7. Check push logs (GET /erp/push-logs/:journalId)
+variables:
+  baseUrl: http://localhost:3000/api
+  token: ""
+  payrollId: ""
+  journalId: ""
+  erpConfigId: ""
+  tallyServerUrl: http://localhost
+  tallyPort: "9000"
+  tallyCompanyName: My Company
+auth:
+  - id: 5062565c-3f1e-478b-a7cc-c321f2153fe9
+    type: bearer
+    name: bearer auth
+    credentials:
+      token: "{{token}}"

@@ -1,0 +1,24 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/job/getJobByIdAi/c6a3dd7a-a719-43a8-a094-b38325f926e3"
+url: "{{hrmsBaseUrl}}/job/getJobByIdAi/c6a3dd7a-a719-43a8-a094-b38325f926e3"
+method: GET
+queryParams:
+  - key: isTaxDeclaration
+    value: "true"
+    disabled: true
+body:
+  type: text
+  content: "{\r
+
+    \    \"employeeId\": \"{{userId}}\",\r
+
+    \    \"month\": 8,\r
+
+    \    \"year\": 2025,\r
+
+    \    \"country\": \"UAE\",\r
+
+    \    \"financialYear\": \"2025-26\"\r
+
+    }"
+order: 3000

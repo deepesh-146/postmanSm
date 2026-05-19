@@ -1,0 +1,19 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/rewards/createAward/{{userId}}"
+url: "{{hrmsBaseUrl}}/rewards/createAward/{{userId}}"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"title\": \"Employee of the Month\",\r
+
+    \    \"description\": \"Awarded to the best performing employee for the month of December.\",\r
+
+    \    \"color\": \"pink\",\r
+
+    \    \"points\": 200\r
+
+    }"
+examples: ./.resources/{{hrmsBaseUrl}}-rewards-createAward-{{userId}}.resources/examples
+order: 16000

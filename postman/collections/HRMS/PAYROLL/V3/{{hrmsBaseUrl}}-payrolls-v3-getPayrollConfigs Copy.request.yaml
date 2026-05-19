@@ -1,0 +1,24 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/payrolls/v3/getPayrollConfigs Copy"
+url: "{{hrmsBaseUrl}}/payrolls/v3/getPayrollConfigs"
+method: GET
+body:
+  type: json
+  content: "{\r
+
+    \    \"payrollData\": {\r
+
+    \        \"countryId\": 1, //1=india,2=uae\r
+
+    \        \"date\": \"2025-02-04\"\r
+
+    \    },\r
+
+    \    \"employeeData\": [\r
+
+    \        \"db88d74c-3021-4a09-bcda-02a89dc55d61\"\r
+
+    \    ]\r
+
+    }"
+order: 8000

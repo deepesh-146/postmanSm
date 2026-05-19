@@ -1,0 +1,20 @@
+$kind: http-request
+description: "Create a new payout cycle (optional: link bonuses immediately)"
+url: "{{base_url}}/api/bonus/payout-cycles"
+method: POST
+headers:
+  Content-Type: application/json
+  Authorization: Bearer {{access_token}}
+body:
+  type: json
+  content: |-
+    {
+      "cycleName": "Annual Bonus - April 2025",
+      "cycleMonth": "2025-04-01",
+      "bonusIds": [
+        "{{bonus_id_1}}",
+        "{{bonus_id_2}}",
+        "{{bonus_id_3}}"
+      ]
+    }
+order: 1000

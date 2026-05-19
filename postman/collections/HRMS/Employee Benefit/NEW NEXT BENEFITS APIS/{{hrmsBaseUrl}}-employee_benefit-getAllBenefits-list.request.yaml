@@ -1,0 +1,16 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/employee_benefit/getAllBenefits/list"
+url: "{{hrmsBaseUrl}}/employee_benefit/getAllBenefits/list?size=5&page=1&catagoryType=HEALTH"
+method: GET
+queryParams:
+  - key: size
+    value: "5"
+  - key: page
+    value: "1"
+  - key: search
+    value: Health Insurance
+    disabled: true
+  - key: catagoryType
+    value: HEALTH
+examples: ./.resources/{{hrmsBaseUrl}}-employee_benefit-getAllBenefits-list.resources/examples
+order: 2000

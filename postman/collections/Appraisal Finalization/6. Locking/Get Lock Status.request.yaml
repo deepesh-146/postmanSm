@@ -1,0 +1,5 @@
+$kind: http-request
+description: Get current lock status for a cycle. Returns cycle-level lock and all employee-level locks.
+url: "{{baseUrl}}/cycle/{{cycleId}}/lock-status"
+method: GET
+order: 4000

@@ -1,0 +1,22 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/payrolls/v3/simulate"
+url: "{{hrmsBaseUrl}}/payrolls/v3/simulate"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    // \"allEmployees\": true,\r
+
+    \    \"employeeIds\" : [\"02595fd2-f430-4afe-a0de-de657162b673\"], \r
+
+    \    \"payrollData\": {\r
+
+    \        \"payrollName\": \"September 2025 Full Simulation\",\r
+
+    \        \"date\": \"2025-09-17\"\r
+
+    \    }\r
+
+    }"
+order: 5000

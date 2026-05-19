@@ -1,0 +1,5 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/leave/employee/myAppliedLeaveStatus/{{userId}}"
+url: "{{hrmsBaseUrl}}/leave/employee/myAppliedLeaveStatus/{{userId}}"
+method: GET
+order: 12000

@@ -1,0 +1,16 @@
+$kind: http-request
+description: Update approval group details (name, description, isActive status)
+url: "{{baseUrl}}/approval-groups/{{groupId}}"
+method: PUT
+headers:
+  Authorization: Bearer {{authToken}}
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "name": "Updated Finance Team",
+      "description": "Updated description for finance approval team",
+      "isActive": true
+    }
+order: 5000

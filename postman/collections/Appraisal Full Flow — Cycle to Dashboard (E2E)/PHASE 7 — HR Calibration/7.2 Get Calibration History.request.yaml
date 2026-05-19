@@ -1,0 +1,5 @@
+$kind: http-request
+description: "Full audit trail: who changed what, when, previous→new score, reason."
+url: "{{baseUrl}}/appraisal-finalization/scores/{{finalScoreId}}/calibration-history"
+method: GET
+order: 2000

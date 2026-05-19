@@ -1,0 +1,13 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/rewards/getReward/0d6330e0-9673-4e11-b75b-ff5b7d1bfb28"
+url: "{{hrmsBaseUrl}}/rewards/getReward/e1b6d27c-7b3e-4a64-add3-f46be058677b"
+method: GET
+queryParams:
+  - key: page
+    value: "1"
+    disabled: true
+  - key: size
+    value: "1"
+    disabled: true
+examples: ./.resources/{{hrmsBaseUrl}}-rewards-getReward-0d6330e0-9673-4e11-b75b-ff5b7d.resources/examples
+order: 14000

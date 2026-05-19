@@ -1,0 +1,21 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/holidays/updateHoliday/9bd01222-4159-49d4-9bf4-cde2ab8111ae"
+url: "{{hrmsBaseUrl}}/holidays/updateHoliday/82be40c5-4139-472d-8bda-79796083fdc7"
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"holidayName\": \"Diwali\",\r
+
+    \    \"description\": \"CATMAN4585\",\r
+
+    \    \"date\": null,\r
+
+    \    \"toDate\": null,\r
+
+    \    \"numberOfLeaves\": 3\r
+
+    }"
+examples: ./.resources/{{hrmsBaseUrl}}-holidays-updateHoliday-9bd01222-4159-49d4-9bf4-c.resources/examples
+order: 2000

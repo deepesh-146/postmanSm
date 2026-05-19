@@ -1,0 +1,22 @@
+$kind: http-request
+description: Harassment category. SKIPS both manager and HR. Routes directly to HR_HEAD. Highly sensitive + anonymous.
+url: "{{base_url}}/grievances/categories"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+        "name": "Harassment",
+        "code": "HARASSMENT",
+        "description": "Sexual harassment, workplace bullying, intimidation",
+        "routeTo": "HR_HEAD",
+        "skipManager": true,
+        "skipHr": true,
+        "isSensitive": true,
+        "allowAnonymous": true,
+        "defaultPriority": "CRITICAL",
+        "slaDays": 3
+    }
+order: 4000

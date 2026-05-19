@@ -1,0 +1,208 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/candidate/updateCandidateProfile/51da71bb-db94-45df-bbf6-6cd7dcb95b2f"
+url: "{{hrmsBaseUrl}}/candidate/updateCandidateProfile/b7819fd7-5559-44d3-a898-5a0c4356fde7"
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"employee\": {\r
+
+    \        \"address\": \"pp1\",\r
+
+    \        \"gender\": \"Male\",\r
+
+    \        \"dateOfBirth\": \"1993-09-29\",\r
+
+    \        \"city\": \"pp\",\r
+
+    \        \"state\": \"oo\",\r
+
+    \        \"country\": \"uu\",\r
+
+    \        \"picture\": \"oo\",\r
+
+    \        \"resume\": \"xz\",\r
+
+    \        \"firstName\": \"sujay\",\r
+
+    \        \"lastName\": \"last\"\r
+
+    \    },\r
+
+    \    \"personalData\": {\r
+
+    \        \"aadharNum\": \"585855758411\",\r
+
+    \        \"panNum\": \"HFYRSS8587R\",\r
+
+    \        \"bankAcntNum\": \"858785855855\",\r
+
+    \        \"bankAcntName\": \"HDFC\",\r
+
+    \        \"bankIfsc\": \"HDFC0000858\",\r
+
+    \        \"bankBranch\": \"Patna\",\r
+
+    \        \"passport\": \"gg\",\r
+
+    \        \"aadharFrontFilePath\": \"s\",\r
+
+    \        \"aadharBackFilePath\": \"s\",\r
+
+    \        \"panFilePath\": \"s\",\r
+
+    \        \"bankAccountPassbookPath\": \"s\"\r
+
+    \    },\r
+
+    \    \"educationData\": [\r
+
+    \        {\r
+
+    \            \"id\": \"4b42bbd9-4d0b-4f16-96b3-9795de4d474d\",\r
+
+    \            \"clgName\": \"RPSIT1\",\r
+
+    \            \"univName\": \"Magadh\",\r
+
+    \            \"clgLocation\": \"Patna\",\r
+
+    \            \"specialization\": \"Computer Engineering\",\r
+
+    \            \"degName\": \"B.Tech\",\r
+
+    \            \"courseName\": \"Graduation\",\r
+
+    \            \"startDate\": \"2016-02-02\",\r
+
+    \            \"endDate\": \"2019-02-02\",\r
+
+    \            \"currPursuing\": false,\r
+
+    \            \"marksheetPath\": \"gg\",\r
+
+    \            \"certificatePath\": \"fdscsd\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"id\": \"e91794e6-551a-4cfa-bf15-2aefce8b6e39\",\r
+
+    \            \"clgName\": \"RPSIT2\",\r
+
+    \            \"univName\": \"Magadh\",\r
+
+    \            \"clgLocation\": \"Patna\",\r
+
+    \            \"specialization\": \"Computer Engineering\",\r
+
+    \            \"degName\": \"B.Tech\",\r
+
+    \            \"courseName\": \"Graduation\",\r
+
+    \            \"startDate\": \"2016-02-02\",\r
+
+    \            \"endDate\": \"2019-02-02\",\r
+
+    \            \"currPursuing\": false,\r
+
+    \            \"marksheetPath\": \"gg\",\r
+
+    \            \"certificatePath\": \"fdscsd\"\r
+
+    \        }\r
+
+    \    ],\r
+
+    \    \"employmentData\": [\r
+
+    \        {\r
+
+    \            \"id\": \"ea95885e-b69d-4b9a-b813-f74b3cb79f36\",\r
+
+    \            \"compName\": \"CSK\",\r
+
+    \            \"jobTitle\": \"Software Developer2\",\r
+
+    \            \"location\": \"Patna\",\r
+
+    \            \"responsibility\": \"Android, Laravel\",\r
+
+    \            \"startDate\": \"2019-09-25\",\r
+
+    \            \"endDate\": \"2020-09-26\",\r
+
+    \            \"currentCompany\": false,\r
+
+    \            \"relievingLetterPath\": \"cc\",\r
+
+    \            \"experienceLetterPath\": \"cc\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"id\": \"d1601e30-eec9-4a5f-ae5a-6d42af608a72\",\r
+
+    \            \"compName\": \"CSK\",\r
+
+    \            \"jobTitle\": \"Software Developer1\",\r
+
+    \            \"location\": \"Patna\",\r
+
+    \            \"responsibility\": \"Android, Laravel\",\r
+
+    \            \"startDate\": \"2019-09-25\",\r
+
+    \            \"endDate\": \"2020-09-26\",\r
+
+    \            \"currentCompany\": false,\r
+
+    \            \"relievingLetterPath\": \"cc\",\r
+
+    \            \"experienceLetterPath\": \"cc\"\r
+
+    \        }\r
+
+    \    ],\r
+
+    \    \"certificates\": [\r
+
+    \        {\r
+
+    \            \"certFilePath\": \"vv\",\r
+
+    \            \"certName\": \"ss\"\r
+
+    \        }\r
+
+    \    ],\r
+
+    \    \"deletedEducationIds\": [\r
+
+    \        \"zyx\",\r
+
+    \        \"zyx\"\r
+
+    \    ],\r
+
+    \    \"deletedExperienceIds\": [\r
+
+    \        \"zyx\",\r
+
+    \        \"zyx\"\r
+
+    \    ],\r
+
+    \    \"deleteCertificateIds\": [\r
+
+    \        \"zyx\",\r
+
+    \        \"zyx\"\r
+
+    \    ]\r
+
+    }"
+order: 14000

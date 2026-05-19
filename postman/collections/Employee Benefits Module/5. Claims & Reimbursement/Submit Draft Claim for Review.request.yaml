@@ -1,0 +1,5 @@
+$kind: http-request
+description: Moves a DRAFT claim (with uploaded documents) to SUBMITTED status for review
+url: "{{baseUrl}}/claims/{{claimId}}/submit"
+method: PATCH
+order: 3000

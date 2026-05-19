@@ -1,0 +1,70 @@
+$kind: http-example
+request:
+  url: "{{hrmsBaseUrl}}/job/"
+  method: POST
+  body:
+    type: json
+    content: "{\r
+
+      \    \"title\": \"CEO - India\",\r
+
+      \    \"code\": \"JOB6665822\",\r
+
+      \    \"companyName\": \"iCeipts Technology\",\r
+
+      \    \"type\": \"Full Time\",\r
+
+      \    \"location\": \"Pune, Maharashtra\",\r
+
+      \    \"designationId\": \"d10e48ed-e5f7-4821-9817-8a05d673eab4\",\r
+
+      \    \"jobUnitId\": \"e71f8b2c-1c10-46f1-99a5-05c8bbfe4539\",\r
+
+      \    \"skills\": \"Dart, Flutter, Google Play Store\",\r
+
+      \    \"shifts\": \"Day Shift\",\r
+
+      \    \"description\": \"We are looking for a skilled Flutter Developer to Join our Team\",\r
+
+      \    \"benefits\": \"Health insurance, Provident Fund, Work From Home\",\r
+
+      \    \"experience\": \"3-5 Year\",\r
+
+      \    \"education\": \"Graduation\",\r
+
+      \    \"related\": \"Do you 3 and above years of experience?\",\r
+
+      \    \"salary\": \"100000 - 200000\",\r
+
+      \    \"recruiterId\": \"null\",\r
+
+      \    \"validTill\": \"2024-10-29 18:00:00\",\r
+
+      \    \"isActive\": true\r
+
+      }"
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "76"
+    ETag: W/"4c-ut/EgyS9WQE3oMFnu/2ClHVYtek"
+    Date: Wed, 09 Oct 2024 16:52:37 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "status": {
+              "success": true,
+              "code": 200,
+              "message": "Job Added",
+              "failure": false
+          }
+      }
+order: 1000

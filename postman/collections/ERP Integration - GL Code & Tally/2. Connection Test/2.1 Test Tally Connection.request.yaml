@@ -1,0 +1,25 @@
+$kind: http-request
+description: |-
+  Tests connectivity to the Tally server.
+
+  Requirements:
+  - Tally must be running on the specified server
+  - Tally ODBC/API port must be enabled (default 9000)
+
+  Response includes:
+  - success: boolean
+  - message: connection status
+  - responsePreview: first 500 chars of Tally response
+url: "{{baseUrl}}/erp/test-connection"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+        "serverUrl": "{{tallyServerUrl}}",
+        "port": {{tallyPort}},
+        "companyName": "{{tallyCompanyName}}"
+    }
+order: 1000

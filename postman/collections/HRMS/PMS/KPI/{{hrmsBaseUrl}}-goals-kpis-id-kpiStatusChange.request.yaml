@@ -1,0 +1,18 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/goals/kpis/:id/kpiStatusChange"
+url: "{{hrmsBaseUrl}}/goals/kpis/:id/kpiStatusChange"
+method: PUT
+pathVariables:
+  id: "2"
+body:
+  type: json
+  content: "{\r
+
+    \    \"status\": \"APPROVED\", //APPROVED //REJECTED\r
+
+    \    \"acceptedById\": \"{{userId}}\"\r
+
+    \    // \"rejectedById\": \"{{userId}}\"\r
+
+    }"
+order: 5000

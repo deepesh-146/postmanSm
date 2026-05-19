@@ -1,0 +1,55 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/incometax/createIncomeTax/eb6df26e-e0d3-4d10-8714-873fef6e213c"
+url: "{{hrmsBaseUrl}}/incometax/createIncomeTax/eb6df26e-e0d3-4d10-8714-873fef6e213c"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"incometaxData\": {\r
+
+    \        \"name\": \"sujay\",\r
+
+    \        \"effectiveFrom\": \"2024-10-29\",\r
+
+    \        \"company\": \"iceitps\",\r
+
+    \        \"currency\": \"INR\",\r
+
+    \        \"stdTaxExemptionAmount\": 200,\r
+
+    \        \"isTaxExemption\": false\r
+
+    \    },\r
+
+    \    \"salarySlabs\": [\r
+
+    \        {\r
+
+    \            \"company\": \"iceitps\",\r
+
+    \            \"to\": \"ABCD1234\",\r
+
+    \            \"percent\": 2,\r
+
+    \            \"condition\": \"nothing\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"company\": \"iceitps\",\r
+
+    \            \"to\": \"ABCD1234\",\r
+
+    \            \"percent\": 2,\r
+
+    \            \"condition\": \"nothing\"\r
+
+    \        }\r
+
+    \    ]\r
+
+    }"
+examples: ./.resources/{{hrmsBaseUrl}}-incometax-createIncomeTax-eb6df26e-e0d3-4d10-871.resources/examples
+order: 1000

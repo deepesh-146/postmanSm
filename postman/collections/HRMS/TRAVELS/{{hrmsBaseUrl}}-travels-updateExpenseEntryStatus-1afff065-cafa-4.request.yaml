@@ -1,0 +1,14 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/travels/updateExpenseEntryStatus/1afff065-cafa-4081-a731-b1a3c6b2f2f5"
+url: "{{hrmsBaseUrl}}/travels/updateExpenseEntryStatus/ce4429b0-0399-400f-8af6-58b05c266b5a"
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \  \"status\": \"APPROVED\",  // or \"REJECTED\"\r
+
+    \  \"adminComment\": \"Valid expense\"\r
+
+    }\r\n"
+order: 9000

@@ -1,0 +1,33 @@
+owner: "17475245"
+team: "2486942"
+lastUpdatedBy: "17475245"
+lastRevision: 1772446995000
+name: HRMS Compliance - Local Development
+color: null
+values:
+  - key: hrmsBaseUrl
+    value: http://localhost:3000
+    enabled: true
+  - key: token
+    value: ""
+    enabled: true
+  - key: payrollId
+    value: 12345678-1234-1234-1234-123456789abc
+    enabled: true
+  - key: challanId
+    value: ""
+    enabled: true
+  - key: organizationId
+    value: org12345-1234-1234-1234-123456789abc
+    enabled: true
+  - key: departmentId1
+    value: dept1234-1234-1234-1234-123456789abc
+    enabled: true
+  - key: departmentId2
+    value: dept5678-1234-1234-1234-123456789abc
+    enabled: true
+  - key: branchId
+    value: branch12-1234-1234-1234-123456789abc
+    enabled: true
+createdAt: 2026-02-09T10:48:11.000Z
+updatedAt: 2026-03-02T10:23:15.000Z

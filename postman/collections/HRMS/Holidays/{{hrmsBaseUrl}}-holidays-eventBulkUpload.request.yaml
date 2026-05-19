@@ -1,0 +1,13 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/holidays/eventBulkUpload"
+url: "{{hrmsBaseUrl}}/holidays/eventBulkUpload"
+method: POST
+body:
+  type: formdata
+  content:
+    - type: file
+      key: file
+      src:
+        - /C:/Users/mehta/Downloads/Sample Events.csv
+examples: ./.resources/{{hrmsBaseUrl}}-holidays-eventBulkUpload.resources/examples
+order: 12000

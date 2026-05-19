@@ -1,0 +1,26 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/tickets/?size=20&page=1"
+method: GET
+queryParams:
+  - key: size
+    value: "20"
+  - key: page
+    value: "1"
+  - key: search
+    value: Leave request
+    disabled: true
+  - key: ticketStatus
+    value: REJECTED
+    disabled: true
+    description: PENDING,APPROVED,REJECTED
+  - key: ticketType
+    value: SHIFT_CHANGE
+    disabled: true
+  - key: startDate
+    value: 2025-10-16
+    disabled: true
+  - key: endDate
+    value: 2025-10-16
+    disabled: true
+examples: ./.resources/Get All Ticket.resources/examples
+order: 17000

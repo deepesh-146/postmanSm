@@ -1,0 +1,6 @@
+$kind: http-request
+url: "{{hrmlbaseurl}}/policy/delete/{id}"
+method: DELETE
+headers:
+  Content-Type: application/json
+order: 5000

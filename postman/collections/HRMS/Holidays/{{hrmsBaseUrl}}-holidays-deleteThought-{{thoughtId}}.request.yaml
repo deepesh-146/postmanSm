@@ -1,0 +1,6 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/holidays/deleteThought/{{thoughtId}}"
+url: "{{hrmsBaseUrl}}/holidays/deleteThought/{{thoughtId}}"
+method: DELETE
+examples: ./.resources/{{hrmsBaseUrl}}-holidays-deleteThought-{{thoughtId}}.resources/examples
+order: 7000

@@ -1,0 +1,9 @@
+$kind: http-request
+description: Reset payslip customization to default settings. All components will be visible by default (except bankDetails which is false by default).
+url: "{{base_url}}/api/payrolls/v3/payslip/customization/reset"
+method: POST
+headers:
+  Content-Type: application/json
+  Authorization: Bearer {{access_token}}
+examples: ./.resources/Reset Payslip Customization.resources/examples
+order: 3000

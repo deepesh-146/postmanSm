@@ -1,0 +1,14 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/job/getAllPositions/eb6df26e-e0d3-4d10-8714-873fef6e213c"
+url: "{{hrmsBaseUrl}}/job/getAllPositions/{{userId}}?size=5&page=1"
+method: GET
+queryParams:
+  - key: size
+    value: "5"
+  - key: page
+    value: "1"
+  - key: search
+    value: Manager
+    disabled: true
+examples: ./.resources/{{hrmsBaseUrl}}-job-getAllPositions-eb6df26e-e0d3-4d10-8714-873f.resources/examples
+order: 16000

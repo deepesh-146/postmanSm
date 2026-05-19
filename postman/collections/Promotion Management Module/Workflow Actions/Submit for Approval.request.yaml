@@ -1,0 +1,17 @@
+$kind: http-request
+description: |-
+  Submit a DRAFT promotion for workflow approval.
+
+  Behavior:
+  - Re-validates eligibility before submission
+  - If TENANT_OWNER: auto-approves immediately
+  - If no workflow configured: auto-approves
+  - Otherwise: creates workflow instance and first approval step
+
+  Workflow entity_type: "promotion_request"
+
+  Status changes: DRAFT → PENDING_APPROVAL
+url: "{{base_url}}/promotions/{{promotion_id}}/submit"
+method: POST
+examples: ./.resources/Submit for Approval.resources/examples
+order: 1000

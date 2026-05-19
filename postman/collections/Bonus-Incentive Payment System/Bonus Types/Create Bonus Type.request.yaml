@@ -1,0 +1,18 @@
+$kind: http-request
+description: Create a new bonus type (PERCENTAGE, FIXED, or FORMULA)
+url: "{{base_url}}/api/bonus/types"
+method: POST
+headers:
+  Content-Type: application/json
+  Authorization: Bearer {{access_token}}
+body:
+  type: json
+  content: |-
+    {
+      "name": "Annual Performance Bonus",
+      "code": "ANNUAL_BONUS",
+      "calculationType": "PERCENTAGE",
+      "percentage": 10,
+      "description": "Annual performance bonus based on employee performance"
+    }
+order: 1000

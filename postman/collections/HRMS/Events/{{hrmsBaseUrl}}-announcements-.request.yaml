@@ -1,0 +1,19 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/announcements/"
+url: "{{hrmsBaseUrl}}/announcements/"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"title\": \"pp\",\r
+
+    \    \"text\": \"dvcd\",\r
+
+    \    \"announcementDate\": \"2024-11-21 11:17:32\",\r
+
+    \    \"expiresOn\": \"2024-11-21 11:17:32\"\r
+
+    }"
+examples: ./.resources/{{hrmsBaseUrl}}-announcements-.resources/examples
+order: 3000

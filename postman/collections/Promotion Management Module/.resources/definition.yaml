@@ -1,0 +1,18 @@
+$kind: collection
+description: |-
+  Complete API collection for the Promotion Management module in ICEIPTS HRMS.
+
+  Base URL: {{base_url}}/api/v1/promotions
+
+  Requires JWT token in Authorization header.
+variables:
+  base_url: http://localhost:3000/api/v1
+  auth_token: ""
+  promotion_id: ""
+  employee_id: ""
+auth:
+  - id: 7fec5629-2ece-422e-bfcf-bddafcfe57c9
+    type: bearer
+    name: bearer auth
+    credentials:
+      token: "{{clientToken}}"

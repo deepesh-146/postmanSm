@@ -1,0 +1,31 @@
+$kind: http-example
+request:
+  url: "{{hrmsBaseUrl}}/referrals/offered/:referralId"
+  method: PATCH
+  pathVariables:
+    referralId: 7d8e66bf-65b6-4ccc-a762-fa8c0fd0866e
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "83"
+    ETag: W/"53-XgqAtrBI4DwVbgkFAPTdCgAxouM"
+    Date: Mon, 14 Oct 2024 18:55:32 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "status": {
+              "success": true,
+              "code": 200,
+              "message": "Referral Offered",
+              "failure": false
+          }
+      }
+order: 1000

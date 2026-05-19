@@ -1,0 +1,14 @@
+$kind: http-request
+description: Calculate weighted final scores for ALL employees. KPI→KRA→Overall rollup. Auto-assigns band. Save the first finalScoreId.
+url: "{{baseUrl}}/appraisal-finalization/cycle/{{cycleId}}/calculate-scores"
+method: POST
+scripts:
+  - type: afterResponse
+    code: |-
+      var res = pm.response.json();
+      if (res.data && res.data.scores && res.data.scores.length > 0) {
+          pm.collectionVariables.set('finalScoreId', res.data.scores[0].id);
+          console.log('finalScoreId set:', res.data.scores[0].id);
+      }
+    language: text/javascript
+order: 1000

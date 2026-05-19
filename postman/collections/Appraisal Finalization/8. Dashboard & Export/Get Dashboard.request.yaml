@@ -1,0 +1,5 @@
+$kind: http-request
+description: "Get finalization dashboard stats: overall scores (avg/min/max), status distribution, band distribution, acknowledgement status, and recommendation summary."
+url: "{{baseUrl}}/cycle/{{cycleId}}/dashboard"
+method: GET
+order: 1000

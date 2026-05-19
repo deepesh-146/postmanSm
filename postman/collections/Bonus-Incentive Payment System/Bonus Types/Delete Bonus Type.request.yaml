@@ -1,0 +1,11 @@
+$kind: http-request
+description: Delete a bonus type (soft delete if in use, hard delete otherwise)
+url: "{{base_url}}/api/bonus/types/:id"
+method: DELETE
+headers:
+  Authorization: Bearer {{access_token}}
+pathVariables:
+  - key: id
+    value: "{{bonus_type_id}}"
+    description: Bonus Type UUID
+order: 6000

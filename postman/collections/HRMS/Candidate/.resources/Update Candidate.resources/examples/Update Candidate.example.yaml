@@ -1,0 +1,68 @@
+$kind: http-example
+request:
+  url: "{{hrmsBaseUrl}}/candidate/:candidateId"
+  method: PUT
+  pathVariables:
+    candidateId: 6979e151-2542-445c-88bd-fdc2248a8da3
+  body:
+    type: json
+    content: "{\r
+
+      \    \"firstName\": \"Sanat\",\r
+
+      \    \"lastName\": \"Kumar\",\r
+
+      \    \"mobile\": \"9801345259\",\r
+
+      \    \"email\": \"sanatmishra29@gmail.com\",\r
+
+      \    \"address\": \"412, Sector 9\",\r
+
+      \    \"gender\": \"M\",\r
+
+      \    \"dateOfBirth\": \"1993-09-29\",\r
+
+      \    \"city\": \"Panchkula\",\r
+
+      \    \"state\": \"Haryana\",\r
+
+      \    \"country\": \"India\",\r
+
+      \    \"password\": \"Admin@321\",\r
+
+      \    \"education\": \"B.Tech CSE\",\r
+
+      \    \"profession\": \"iCeipts\",\r
+
+      \    \"skills\": \"JAVA, NODE, Flutter, PHP\",\r
+
+      \    \"idcard\": \"Aadhar\",\r
+
+      \    \"picture\": \"NA\"\r
+
+      }"
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "84"
+    ETag: W/"54-Cr6ApKJCma+W6ctmJB7Z1f0onYY"
+    Date: Wed, 09 Oct 2024 17:27:52 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "status": {
+              "success": true,
+              "code": 200,
+              "message": "Candidate Updated",
+              "failure": false
+          }
+      }
+order: 1000

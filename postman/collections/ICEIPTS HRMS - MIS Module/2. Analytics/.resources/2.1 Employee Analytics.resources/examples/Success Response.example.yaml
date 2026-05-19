@@ -1,0 +1,60 @@
+$kind: http-example
+request:
+  url: "{{baseUrl}}/mis/employee-analytics?dateFrom=2025-01-01&dateTo=2026-03-13"
+  method: GET
+  headers:
+    Content-Type: application/json
+    x-organization-id: "{{organizationId}}"
+  queryParams:
+    - key: dateFrom
+      value: 2025-01-01
+    - key: dateTo
+      value: 2026-03-13
+    - key: departmentId
+      value: "{{departmentId}}"
+      disabled: true
+    - key: officeId
+      value: "{{officeId}}"
+      disabled: true
+    - key: page
+      value: "1"
+      disabled: true
+    - key: size
+      value: "10"
+      disabled: true
+response:
+  statusCode: 200
+  statusText: OK
+  body:
+    type: text
+    content: |-
+      {
+        "success": true,
+        "status": 200,
+        "message": "Employee analytics retrieved successfully",
+        "data": {
+          "totalEmployees": 1245,
+          "newHires": 47,
+          "departmentDistribution": [
+            { "departmentId": "uuid", "count": 150, "department": { "name": "Engineering" } },
+            { "departmentId": "uuid", "count": 80, "department": { "name": "HR" } }
+          ],
+          "genderDistribution": [
+            { "gender": "Male", "count": 720 },
+            { "gender": "Female", "count": 525 }
+          ],
+          "ageDistribution": [
+            { "age_group": "25-34", "count": 450 },
+            { "age_group": "35-44", "count": 380 }
+          ],
+          "tenureDistribution": [
+            { "tenure_group": "1-2 years", "count": 320 },
+            { "tenure_group": "3-5 years", "count": 280 }
+          ],
+          "headcountTrend": [
+            { "month": "2025-04", "headcount": 1200 },
+            { "month": "2025-05", "headcount": 1215 }
+          ]
+        }
+      }
+order: 1000

@@ -1,0 +1,35 @@
+$kind: http-request
+description: Create a new appraisal cycle. Status starts as PENDING. Save the returned id as cycleId.
+url: "{{baseUrl}}/appraisal/createCycle/"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+        "cycle_name": "Q1 2026 Performance Review",
+        "cycle_period": "Jan-Mar 2026",
+        "frequency": "QUARTERLY",
+        "description": "Quarterly performance review for Q1 2026",
+        "start_date": "2026-01-01",
+        "end_date": "2026-03-31",
+        "appraisal_period": "Jan 2026 - Mar 2026",
+        "feeback_period": "Apr 2026",
+        "self_appraisal_period": "Mar 2026",
+        "self_appraisal_Deadline": "2026-03-15",
+        "manager_review_period": "2026-03-25",
+        "department": {
+            "type": "all"
+        }
+    }
+scripts:
+  - type: afterResponse
+    code: |-
+      var res = pm.response.json();
+      if (res.data && res.data.id) {
+          pm.collectionVariables.set('cycleId', res.data.id);
+          console.log('cycleId set:', res.data.id);
+      }
+    language: text/javascript
+order: 1000

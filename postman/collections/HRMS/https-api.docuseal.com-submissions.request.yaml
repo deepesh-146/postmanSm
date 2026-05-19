@@ -1,0 +1,62 @@
+$kind: http-request
+name: https://api.docuseal.com/submissions
+url: https://api.docuseal.com/submissions
+method: POST
+headers:
+  X-Auth-Token: BygNW9kBufm3qZrc3YH2GRZY5FNrtBp7MShpn6ghx1L
+body:
+  type: json
+  content: "{\r
+
+    \    \"template_id\": 1358615,\r
+
+    \    \"order\": \"preserved\",\r
+
+    \    \"submitters\": [\r
+
+    \        {\r
+
+    \            \"email\": \"deepeshkushwaha072@gmail.com\",\r
+
+    \            \"fields\": [\r
+
+    \                {\r
+
+    \                    \"name\": \"name\",\r
+
+    \                    \"default_value\": \"Shiv\",\r
+
+    \                    \"readonly\": true\r
+
+    \                },\r
+
+    \                {\r
+
+    \                    \"name\": \"salary\",\r
+
+    \                    \"default_value\": \"1000000\",\r
+
+    \                    \"readonly\": true\r
+
+    \                },\r
+
+    \                {\r
+
+    \                    \"name\": \"date\",\r
+
+    \                    \"default_value\": \"2025-05-05\",\r
+
+    \                    \"readonly\": true\r
+
+    \                }\r
+
+    \            ]\r
+
+    \        }\r
+
+    \    ]\r
+
+    }"
+auth:
+  type: noauth
+order: 64000

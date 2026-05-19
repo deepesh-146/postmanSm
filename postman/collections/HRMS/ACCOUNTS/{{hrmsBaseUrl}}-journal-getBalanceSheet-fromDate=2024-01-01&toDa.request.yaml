@@ -1,0 +1,107 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/journal/getBalanceSheet?fromDate=2024-01-01&toDate=2024-12-31"
+url: "{{hrmsBaseUrl}}/journal/getBalanceSheet?fromDate=2024-01-01&toDate=2024-12-31"
+method: GET
+queryParams:
+  - key: fromDate
+    value: 2024-01-01
+  - key: toDate
+    value: 2024-12-31
+  - key: includeZeroBalances
+    value: "false"
+    disabled: true
+  - key: search
+    value: ""
+    disabled: true
+body:
+  type: text
+  content: "{\r
+
+    \    \"accountName\": \"Cash in Hand\",\r
+
+    \    \"accountNumber\": \"1001\",\r
+
+    \    \"accountType\": \"Asset\",\r
+
+    \    \"parentAccountId\": null,\r
+
+    \    \"isGroup\": false,\r
+
+    \    \"isDisabled\": false,\r
+
+    \    \"companyName\": \"iceipts\",\r
+
+    \    \"rootType\": \"Asset\",\r
+
+    \    \"currency\": \"AED\",\r
+
+    \    \"taxRate\": 5.00,\r
+
+    \    \"balanceMustBe\": \"Debit\",\r
+
+    \    \"openingBalance\": 10000.00,\r
+
+    \    \"description\": \"Cash account for daily transactions\"\r
+
+    }\r
+
+    //Parent Account\r
+
+    // {\r
+
+    //   \"accountName\": \"Current Assets\",\r
+
+    //   \"accountType\": \"Asset\",\r
+
+    //   \"isGroup\": true,\r
+
+    //   \"isDisabled\": false,\r
+
+    //   \"companyName\": \"iceipts\",\r
+
+    //   \"rootType\": \"Asset\",\r
+
+    //   \"currency\": \"AED\",\r
+
+    //   \"taxRate\": 0.00,\r
+
+    //   \"balanceMustBe\": \"Debit\",\r
+
+    //   \"openingBalance\": 0.00,\r
+
+    //   \"description\": \"Parent account for all current assets\"\r
+
+    // }\r
+
+    //Child ACCOUNTS\r
+
+    // {\r
+
+    //   \"accountName\": \"Petty Cash\",\r
+
+    //   \"accountNumber\": \"1002\",\r
+
+    //   \"accountType\": \"Asset\",\r
+
+    //   \"parentAccountId\": \"uuid-of-parent-account\",\r
+
+    //   \"isGroup\": false,\r
+
+    //   \"isDisabled\": false,\r
+
+    //   \"companyName\": \"iceipts\",\r
+
+    //   \"rootType\": \"Asset\",\r
+
+    //   \"currency\": \"AED\",\r
+
+    //   \"taxRate\": 0.00,\r
+
+    //   \"balanceMustBe\": \"Debit\",\r
+
+    //   \"openingBalance\": 500.00,\r
+
+    //   \"description\": \"Small cash for office expenses\"\r
+
+    // }"
+order: 5000

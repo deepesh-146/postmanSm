@@ -1,0 +1,12 @@
+$kind: http-request
+description: View only failed report executions for debugging.
+url: "{{baseUrl}}/mis/report-logs?status=FAILED&page=1&size=10"
+method: GET
+headers:
+  Content-Type: application/json
+  x-organization-id: "{{organizationId}}"
+queryParams:
+  status: FAILED
+  page: "1"
+  size: "10"
+order: 3000

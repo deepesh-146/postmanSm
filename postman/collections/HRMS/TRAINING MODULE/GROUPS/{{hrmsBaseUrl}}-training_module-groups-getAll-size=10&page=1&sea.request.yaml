@@ -1,0 +1,9 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/training_module/groups/getAll?size=10&page=1&search"
+url: "{{hrmsBaseUrl}}/training_module/groups/getAll?size=10&page=1&search"
+method: GET
+queryParams:
+  size: "10"
+  page: "1"
+  search: ""
+order: 2000

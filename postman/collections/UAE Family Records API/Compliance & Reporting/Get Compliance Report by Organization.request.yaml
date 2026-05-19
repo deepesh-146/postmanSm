@@ -1,0 +1,6 @@
+$kind: http-request
+url: "{{base_url}}/api/family/compliance/report?organizationId=1"
+method: GET
+queryParams:
+  organizationId: "1"
+order: 2000

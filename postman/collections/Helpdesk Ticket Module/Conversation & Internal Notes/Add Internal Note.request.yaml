@@ -1,0 +1,14 @@
+$kind: http-request
+url: "{{baseUrl}}/ticket/internal-note"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "ticketId": "{{ticketId}}",
+      "message": "Employee has a history of similar hardware issues. Check if eligible for device replacement.",
+      "attachments": []
+    }
+order: 3000

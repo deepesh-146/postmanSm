@@ -1,0 +1,72 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/referrals/policy"
+url: "{{hrmsBaseUrl}}/referrals/policy"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"eligibilityCriteria\": {\r
+
+    \        \"eligibleToRefer\": \"All Permanent Employees\",\r
+
+    \        \"eligiblePositions\": \"All Positions\",\r
+
+    \        \"customGrades\": [\r
+
+    \            \"04ef1b8c-949f-4d56-ade7-6bf5afa5427d\",\r
+
+    \            \"3b61f6b7-8268-4896-93ad-0b28f5f14f42\"\r
+
+    \        ] // Optional, required if eligibleToRefer is \"Custom Selection\"\r
+
+    \    },\r
+
+    \    \"incentiveRules\": {\r
+
+    \        \"calculationMethod\": \"Fixed Amount by Position Grade\",\r
+
+    \        \"fixedAmounts\": {\r
+
+    \            \"3b61f6b7-8268-4896-93ad-0b28f5f14f42\": 50000,\r
+
+    \            \"04ef1b8c-949f-4d56-ade7-6bf5afa5427d\": 30000\r
+
+    \        }\r
+
+    \        // \"dynamicPercentages\": {\r
+
+    \        //     \"A\": 10,\r
+
+    \        //     \"B\": 8,\r
+
+    \        //     \"C\": 5,\r
+
+    \        //     \"D\": 3,\r
+
+    \        //     \"E\": 2\r
+
+    \        // }\r
+
+    \    },\r
+
+    \    \"paymentRules\": {\r
+
+    \        \"payoutTiming\": \"On Joining\",\r
+
+    \        \"paymentMode\": \"PAYROLL\",\r
+
+    \        \"taxDeduction\": true,\r
+
+    \        \"taxDeductionRate\": 10\r
+
+    \    },\r
+
+    \    \"approvalRequired\": true,\r
+
+    \    \"budgetControl\": true,\r
+
+    \    \"isActive\": true\r
+
+    }"
+order: 1000

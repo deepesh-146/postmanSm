@@ -1,0 +1,11 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/referrals/rejected/:referralId"
+method: PATCH
+queryParams:
+  - key: ""
+    value: ""
+    disabled: true
+pathVariables:
+  referralId: 7d8e66bf-65b6-4ccc-a762-fa8c0fd0866e
+examples: ./.resources/Referral Status Rejected.resources/examples
+order: 10000

@@ -1,0 +1,20 @@
+$kind: http-request
+url: "{{base_url}}/api/family/allowances"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "employeeId": 123,
+      "familyMemberId": 2,
+      "allowanceType": "CHILD_ALLOWANCE",
+      "monthlyAmount": 500.00,
+      "currency": "AED",
+      "effectiveDate": "2025-01-01",
+      "isActive": true,
+      "approvedBy": 789,
+      "notes": "Monthly child allowance for primary school student"
+    }
+order: 2000

@@ -1,0 +1,356 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/workflow/createWorkflow/{{userId}}"
+url: "{{hrmsBaseUrl}}/workflow/createWorkflow/{{userId}}"
+method: POST
+body:
+  type: json
+  content: "// {\r
+
+    //     \"name\": \"Bonus request\",\r
+
+    //     \"entity_type\": \"employee_bonus\", //job_requisitions,travel_request,reimbursement_request\r
+
+    //     \"description\": \"Reimbursement approval process\",\r
+
+    //     \"steps\": [\r
+
+    //         {\r
+
+    //             \"step_order\": 1,\r
+
+    //             \"approver_role\": \"MANAGER\",\r
+
+    //             \"is_final_step\": true\r
+
+    //         }\r
+
+    //     ]\r
+
+    // }\r
+
+    // {\r
+
+    //     \"name\": \"Arrear request\",\r
+
+    //     \"entity_type\": \"employee_arrear\",\r
+
+    //     \"description\": \"approval process\",\r
+
+    //     \"steps\": [\r
+
+    //         {\r
+
+    //             \"step_order\": 1,\r
+
+    //             \"approver_role\": \"MANAGER\",\r
+
+    //             \"is_final_step\": false\r
+
+    //         },\r
+
+    //         {\r
+
+    //             \"step_order\": 2,\r
+
+    //             \"approver_role\": \"FINANCE\",\r
+
+    //             \"is_final_step\": true\r
+
+    //         }\r
+
+    //     ]\r
+
+    // }\r
+
+    // {\r
+
+    //     \"name\": \"Offer letter request\",\r
+
+    //     \"entity_type\": \"offerletter_request\", //job_requisitions,travel_request,reimbursement_request,offerletter_request\r
+
+    //     \"description\": \"Offer letter approval process\",\r
+
+    //     \"steps\": [\r
+
+    //         {\r
+
+    //             \"step_order\": 1,\r
+
+    //             \"approver_role\": \"MANAGER\",\r
+
+    //             \"is_final_step\": false\r
+
+    //         },\r
+
+    //         {\r
+
+    //             \"step_order\": 2,\r
+
+    //             \"approver_role\": \"FINANCE\",\r
+
+    //             \"is_final_step\": true\r
+
+    //         }\r
+
+    //     ]\r
+
+    // }\r
+
+    // {\r
+
+    //     \"name\": \"Reimbursement request\",\r
+
+    //     \"entity_type\": \"reimbursement_request\", //job_requisitions,travel_request,reimbursement_request\r
+
+    //     \"description\": \"Reimbursement approval process\",\r
+
+    //     \"steps\": [\r
+
+    //         {\r
+
+    //             \"step_order\": 1,\r
+
+    //             \"approver_role\": \"MANAGER\",\r
+
+    //             \"is_final_step\": false\r
+
+    //         },\r
+
+    //         {\r
+
+    //             \"step_order\": 2,\r
+
+    //             \"approver_role\": \"FINANCE\",\r
+
+    //             \"is_final_step\": true\r
+
+    //         }\r
+
+    //     ]\r
+
+    // }\r
+
+    // {\r
+
+    //     \"name\": \"Travel request\",\r
+
+    //     \"entity_type\": \"travel_request\", //job_requisitions,travel_request\r
+
+    //     \"description\": \"Travel approval process\",\r
+
+    //     \"steps\": [\r
+
+    //         {\r
+
+    //             \"step_order\": 1,\r
+
+    //             \"approver_role\": \"MANAGER\",\r
+
+    //             \"is_final_step\": false\r
+
+    //         },\r
+
+    //         {\r
+
+    //             \"step_order\": 2,\r
+
+    //             \"approver_role\": \"DEPTHEAD\",\r
+
+    //             \"is_final_step\": false\r
+
+    //         },\r
+
+    //         {\r
+
+    //             \"step_order\": 3,\r
+
+    //             \"approver_role\": \"FINANCE\",\r
+
+    //             \"is_final_step\": true\r
+
+    //         }\r
+
+    //     ]\r
+
+    // }\r
+
+    // {\r
+
+    //     \"name\": \"Leave request\",\r
+
+    //     \"entity_type\": \"leave_request\", //job_requisitions,travel_request\r
+
+    //     \"description\": \"Leave approval process\",\r
+
+    //     \"steps\": [\r
+
+    //         {\r
+
+    //             \"step_order\": 1,\r
+
+    //             \"approver_role\": \"MANAGER\",\r
+
+    //             \"is_final_step\": false\r
+
+    //         },\r
+
+    //         {\r
+
+    //             \"step_order\": 2,\r
+
+    //             \"approver_role\": \"HR\",\r
+
+    //             \"is_final_step\": true\r
+
+    //         }\r
+
+    //     ]\r
+
+    // }\r
+
+    // {\r
+
+    //     \"name\": \"Personal Data Changes\",\r
+
+    //     \"entity_type\": \"personal_data_change\", //job_requisitions,travel_request\r
+
+    //     \"description\": \"Personal Data Approval\",\r
+
+    //     \"steps\": [\r
+
+    //         {\r
+
+    //             \"step_order\": 1,\r
+
+    //             \"approver_role\": \"HR\",\r
+
+    //             \"is_final_step\": true\r
+
+    //         }\r
+
+    //     ]\r
+
+    // }\r
+
+    // {\r
+
+    //     \"name\": \"Requisition request\",\r
+
+    //     \"entity_type\": \"job_requisitions\", //job_requisitions\r
+
+    //     \"description\": \"Requisition approval process\",\r
+
+    //     \"steps\": [\r
+
+    //         {\r
+
+    //             \"step_order\": 1,\r
+
+    //             \"approver_role\": \"MANAGER\",\r
+
+    //             \"is_final_step\": false\r
+
+    //         },\r
+
+    //         {\r
+
+    //             \"step_order\": 2,\r
+
+    //             \"approver_role\": \"FINANCE\",\r
+
+    //             \"is_final_step\": false\r
+
+    //         },\r
+
+    //         {\r
+
+    //             \"step_order\": 3,\r
+
+    //             \"approver_role\": \"RECRUITER\",\r
+
+    //             \"is_final_step\": true\r
+
+    //         }\r
+
+    //     ]\r
+
+    // }\r
+
+    // {\r
+
+    //     \"name\": \"Bank Account Change\",\r
+
+    //     \"entity_type\": \"bank_account_change\", //job_requisitions,travel_request\r
+
+    //     \"description\": \"Bank Account Change Request Approval\",\r
+
+    //     \"steps\": [\r
+
+    //         {\r
+
+    //             \"step_order\": 1,\r
+
+    //             \"approver_role\": \"HR\",\r
+
+    //             \"is_final_step\": false\r
+
+    //         },\r
+
+    //         {\r
+
+    //             \"step_order\": 2,\r
+
+    //             \"approver_role\": \"FINANCE\",\r
+
+    //             \"is_final_step\": true\r
+
+    //         }\r
+
+    //     ]\r
+
+    // }\r
+
+    \r
+
+    // {\r
+
+    //     \"name\": \"Employee Transfer\",\r
+
+    //     \"entity_type\": \"employee_transfer\", //job_requisitions,travel_request\r
+
+    //     \"description\": \"Employee Transfer Request Approval\",\r
+
+    //     \"steps\": [\r
+
+    //         {\r
+
+    //             \"step_order\": 1,\r
+
+    //             \"approver_role\": \"MANAGER\",\r
+
+    //             \"is_final_step\": false\r
+
+    //         },\r
+
+    //         {\r
+
+    //             \"step_order\": 2,\r
+
+    //             \"approver_role\": \"HR\",\r
+
+    //             \"is_final_step\": true\r
+
+    //         }\r
+
+    //     ]\r
+
+    // }\r
+
+    \r
+
+    \r\n"
+auth:
+  type: bearer
+  credentials:
+    token: "{{orgToken}}"
+order: 2000

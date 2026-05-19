@@ -1,0 +1,14 @@
+$kind: http-request
+url: "{{baseUrl}}/ticket/close"
+method: PATCH
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "employeeId": "{{employeeId}}",
+      "ticketId": "{{ticketId}}",
+      "comment": "Issue resolved. Laptop power adapter was faulty, replaced with new one."
+    }
+order: 3000

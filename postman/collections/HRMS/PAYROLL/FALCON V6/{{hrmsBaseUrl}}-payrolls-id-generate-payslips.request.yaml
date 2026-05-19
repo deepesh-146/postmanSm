@@ -1,0 +1,20 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/payrolls/:id/generate-payslips"
+url: "{{hrmsBaseUrl}}/payrolls/:id/generate-payslips"
+method: POST
+pathVariables:
+  id: dfe21424-55fe-46e2-abfb-22749c9e3589
+body:
+  type: json
+  content: "{\r
+
+    \    //   \"employeeIds\": [\"ALL\"]\r
+
+    \    \"employeeIds\": [\r
+
+    \        \"9a6b2d0c-57b7-4da2-9025-b64b6e2f4323\"\r
+
+    \    ]\r
+
+    }"
+order: 6000

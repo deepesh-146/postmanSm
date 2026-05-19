@@ -1,0 +1,40 @@
+$kind: http-example
+request:
+  url: "{{base_url}}/promotions"
+  method: POST
+  headers:
+    Content-Type: application/json
+  body:
+    type: text
+    content: |-
+      {
+        "employeeId": "{{employee_id}}",
+        "toDesignationId": "uuid-new-designation-id",
+        "toGradeId": "uuid-new-grade-id",
+        "toDepartmentId": null,
+        "proposedSalary": 85000,
+        "salaryRevisionDetails": {
+          "salBasic": 50000,
+          "salHRA": 20000,
+          "salDA": 10000,
+          "salBonus": 5000,
+          "salPfDed": 6000
+        },
+        "promotionType": "DESIGNATION_AND_GRADE",
+        "justification": "Consistently exceeded targets for the last 3 quarters. Led the Q4 project successfully and mentored 2 junior team members.",
+        "effectiveDate": "2026-04-01",
+        "appraisalCycleId": null,
+        "remarks": "Strong candidate for senior role"
+      }
+response:
+  statusCode: 400
+  statusText: Bad Request
+  body:
+    type: text
+    content: |-
+      {
+        "success": false,
+        "status": 400,
+        "error_message": "Self-promotion is not allowed"
+      }
+order: 2000

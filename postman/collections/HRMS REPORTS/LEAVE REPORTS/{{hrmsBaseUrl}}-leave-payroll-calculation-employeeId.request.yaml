@@ -1,0 +1,7 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/leave/payroll-calculation/:employeeId"
+url: "{{hrmsBaseUrl}}/leave/payroll-calculation/:employeeId"
+method: GET
+pathVariables:
+  employeeId: 0c5b5932-a5df-4aea-a782-0bd76a246bbb
+order: 5000

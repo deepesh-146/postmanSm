@@ -1,0 +1,15 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/employee/getEmployeeCount/userId"
+url: "{{hrmsBaseUrl}}/employee/getEmployeeCount/{{userId}}?officeId=all"
+method: GET
+queryParams:
+  officeId: all
+body:
+  type: formdata
+  content: []
+auth:
+  type: bearer
+  credentials:
+    token: "{{orgToken}}"
+examples: ./.resources/{{hrmsBaseUrl}}-employee-getEmployeeCount-userId.resources/examples
+order: 9000

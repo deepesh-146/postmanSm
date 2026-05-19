@@ -1,0 +1,15 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/dashboard/employeedashboard/trainingAndLearning/{{userId}}"
+url: "{{hrmsBaseUrl}}/dashboard/employeedashboard/trainingAndLearning/{{userId}}"
+method: GET
+body:
+  type: json
+  content: "{\r
+
+    \    \"month\": \"2\",\r
+
+    \    \"year\": \"2025\"\r
+
+    }"
+examples: ./.resources/{{hrmsBaseUrl}}-dashboard-employeedashboard-trainingAndLearning-.resources/examples
+order: 28000

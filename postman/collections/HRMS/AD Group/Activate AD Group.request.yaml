@@ -1,0 +1,18 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/ad_group/activate"
+method: PATCH
+body:
+  type: json
+  content: "{\r
+
+    \    \"adGroupId\": \"06866e61-04cd-49d9-a1e6-6d88b2ae3401\",\r
+
+    \    \"employeeId\": \"2e7452c2-59d4-4718-8556-9daac56776bd\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjaWQiOiIyZTc0NTJjMi01OWQ0LTQ3MTgtODU1Ni05ZGFhYzU2Nzc2YmQiLCJmaXJzdE5hbWUiOiJTYW5hdCIsImVtYWlsIjoic2FuYXQubWlzaHJhQGljaWVwdC5jb20iLCJyb2xlIjoiRU1QTE9ZRUUiLCJpYXQiOjE3Mjk4NDkyNzUsImV4cCI6MTcyOTkzNTY3NSwiYXVkIjoiU2FuYXQifQ.H3zCJuILR11kH6wL1e02rAyShSpzWpUwJ1z_Dau2qus
+examples: ./.resources/Activate AD Group.resources/examples
+order: 4000

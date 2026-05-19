@@ -1,0 +1,12 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/timesheet/getAllTimelogbyTimesheets/{{userId}}"
+url: "{{hrmsBaseUrl}}/timesheet/getAllTimelogbyTimesheets/{{userId}}"
+method: GET
+queryParams:
+  - key: month
+    value: "3"
+    disabled: true
+  - key: status
+    value: ""
+    disabled: true
+order: 3000

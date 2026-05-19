@@ -1,0 +1,28 @@
+$kind: http-request
+description: |-
+  Approve a promotion via the workflow engine.
+
+  action: APPROVED or REJECTED
+
+  On final approval:
+  - Status → APPROVED
+  - If effectiveDate <= today → applied immediately
+  - If effectiveDate > today → applied by daily cron job
+
+  On rejection:
+  - Status → REJECTED
+  - Audit trail entry created
+  - Notification sent to employee
+url: "{{base_url}}/workflow/approve/promotion_request"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "approvalId": "uuid-workflow-approval-id",
+      "action": "APPROVED",
+      "comments": "Approved. Well-deserved promotion."
+    }
+order: 2000

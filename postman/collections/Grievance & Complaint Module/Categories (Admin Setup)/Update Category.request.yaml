@@ -1,0 +1,20 @@
+$kind: http-request
+url: "{{base_url}}/grievances/categories/{{categoryId}}"
+method: PUT
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+        "name": "Payroll & Compensation Issues",
+        "description": "Updated description",
+        "routeTo": "HR",
+        "skipManager": false,
+        "skipHr": false,
+        "isSensitive": false,
+        "allowAnonymous": false,
+        "defaultPriority": "HIGH",
+        "slaDays": 4
+    }
+order: 10000

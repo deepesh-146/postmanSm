@@ -1,0 +1,14 @@
+$kind: http-request
+url: "{{base_url}}/grievances/status"
+method: PATCH
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+        "grievanceId": "{{grievanceId}}",
+        "status": "AWAITING_INPUT",
+        "comment": "We need additional information from you. Please reply with the details."
+    }
+order: 4000

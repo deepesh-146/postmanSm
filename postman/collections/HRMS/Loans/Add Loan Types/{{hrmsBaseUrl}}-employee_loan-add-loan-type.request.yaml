@@ -1,0 +1,20 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/employee_loan/add-loan-type"
+url: "{{hrmsBaseUrl}}/employee_loan/add-loan-type"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"loanType\": \"Advance Salary\",\r
+
+    \    \"loanTypeDescription\": \"Salary advance recoverable from upcoming payroll cycles\",\r
+
+    \    \"loanTypeCode\": \"AS001\",\r
+
+    \    \"isActive\": true,\r
+
+    \    \"isDefault\": true\r
+
+    }"
+order: 1000

@@ -1,0 +1,7 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/payrolls/exportPayrollData/0856a2de-c68f-4290-9169-9692749f8fd3"
+url: "{{hrmsBaseUrl}}/payrolls/exportPayrollData/0acacd76-39b9-4276-b7cd-2e6cc150b379?userType=FINANCE"
+method: GET
+queryParams:
+  userType: FINANCE
+order: 24000

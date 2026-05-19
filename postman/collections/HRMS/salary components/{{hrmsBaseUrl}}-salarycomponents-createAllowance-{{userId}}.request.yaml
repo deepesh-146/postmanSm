@@ -1,0 +1,25 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/salarycomponents/createAllowance/{{userId}}"
+url: "{{hrmsBaseUrl}}/salarycomponents/createAllowance/{{userId}}"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"allowanceType\": \"EARNING\",\r
+
+    \    \"allowanceName\": \"Transport Allowance\",\r
+
+    \    \"allowanceDescription\": \"Allowance for transportation expenses\",\r
+
+    \    \"maxAmount\": 200,\r
+
+    \    \"minAmount\": 100,\r
+
+    \    \"regime\": \"OLD\",\r
+
+    \    \"isDeductable\":false\r
+
+    }"
+examples: ./.resources/{{hrmsBaseUrl}}-salarycomponents-createAllowance-{{userId}}.resources/examples
+order: 18000

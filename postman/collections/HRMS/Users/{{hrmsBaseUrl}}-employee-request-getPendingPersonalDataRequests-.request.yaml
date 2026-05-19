@@ -1,0 +1,13 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/employee/request/getPendingPersonalDataRequests?size=10&page=1"
+url: "{{hrmsBaseUrl}}/employee/request/getPendingPersonalDataRequests?size=10&page=1"
+method: GET
+queryParams:
+  - key: size
+    value: "10"
+  - key: page
+    value: "1"
+  - key: search
+    value: ""
+    disabled: true
+order: 42000

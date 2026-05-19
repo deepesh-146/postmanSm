@@ -1,0 +1,6 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/rewards/deleteReward/0d6330e0-9673-4e11-b75b-ff5b7d1bfb28"
+url: "{{hrmsBaseUrl}}/rewards/deleteReward/0d6330e0-9673-4e11-b75b-ff5b7d1bfb28"
+method: DELETE
+examples: ./.resources/{{hrmsBaseUrl}}-rewards-deleteReward-0d6330e0-9673-4e11-b75b-ff5.resources/examples
+order: 15000

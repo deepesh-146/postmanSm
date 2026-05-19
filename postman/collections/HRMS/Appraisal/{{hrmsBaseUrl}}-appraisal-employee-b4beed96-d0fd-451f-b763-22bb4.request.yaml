@@ -1,0 +1,8 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/appraisal/employee/b4beed96-d0fd-451f-b763-22bb40bb9802"
+url: "{{hrmsBaseUrl}}/appraisal/departmmentWiseQuestions/b0ee4f44-66f8-4887-a4be-44c155dc8e7f?size=5&page=1"
+method: GET
+queryParams:
+  size: "5"
+  page: "1"
+order: 7000

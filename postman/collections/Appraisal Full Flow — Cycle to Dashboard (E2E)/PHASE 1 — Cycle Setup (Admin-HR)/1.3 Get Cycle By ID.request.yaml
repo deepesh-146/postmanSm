@@ -1,0 +1,5 @@
+$kind: http-request
+description: Verify cycle details.
+url: "{{baseUrl}}/appraisal/getCycleById/{{cycleId}}"
+method: GET
+order: 3000

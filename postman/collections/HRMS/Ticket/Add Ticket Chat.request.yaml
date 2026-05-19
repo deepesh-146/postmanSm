@@ -1,0 +1,22 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/tickets/chat"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"ticketId\": \"2582dd41-8782-4f2a-b3a7-bd752769d618\",\r
+
+    \    \"fromEmployeeId\": \"903bd690-61f3-43db-9edd-d38d531c1c67\",\r
+
+    \    \"toEmployeeId\": \"903bd690-61f3-43db-9edd-d38d531c1c67\",\r
+
+    \    \"chatType\": \"TEXT\",\r
+
+    \    \"chatText\": \"Hi, this is a test\",\r
+
+    \    \"attachmentLink\": \"NA\"\r
+
+    }"
+examples: ./.resources/Add Ticket Chat.resources/examples
+order: 5000

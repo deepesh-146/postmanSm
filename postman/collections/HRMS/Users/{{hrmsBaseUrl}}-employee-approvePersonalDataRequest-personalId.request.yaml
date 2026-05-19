@@ -1,0 +1,18 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/employee/approvePersonalDataRequest/:personalId"
+url: "{{hrmsBaseUrl}}/employee/approvePersonalDataRequest/:personalId"
+method: PUT
+queryParams:
+  - key: search
+    value: ""
+    disabled: true
+pathVariables:
+  personalId: c2b8f00e-959c-4b6b-8344-ac1bc898ccb3
+body:
+  type: json
+  content: "{\r
+
+    \    \"comments\": \"Okay Approving This request\"\r
+
+    }"
+order: 44000

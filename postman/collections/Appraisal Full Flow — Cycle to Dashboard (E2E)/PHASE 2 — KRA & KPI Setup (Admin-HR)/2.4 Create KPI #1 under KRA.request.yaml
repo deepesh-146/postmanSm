@@ -1,0 +1,30 @@
+$kind: http-request
+description: Create first KPI under the KRA. kpiWeightage = 60%. Save returned id as kpiId1.
+url: "{{baseUrl}}/goals/addKpis/"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+        "title": "Quarterly Revenue Target",
+        "kraId": "{{kraId}}",
+        "description": "Achieve quarterly revenue of $100K",
+        "kpiWeightage": "60",
+        "targetValue": "100000",
+        "uniteMeasurement": "USD",
+        "startDate": "2026-01-01",
+        "endDate": "2026-03-31",
+        "status": "PENDING"
+    }
+scripts:
+  - type: afterResponse
+    code: |-
+      var res = pm.response.json();
+      if (res.data && res.data.id) {
+          pm.collectionVariables.set('kpiId1', res.data.id);
+          console.log('kpiId1 set:', res.data.id);
+      }
+    language: text/javascript
+order: 4000

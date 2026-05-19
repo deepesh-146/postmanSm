@@ -1,0 +1,11 @@
+$kind: http-request
+description: |-
+  Get the full audit trail for a specific promotion request.
+
+  Tracks: CREATED, UPDATED, SUBMITTED, APPROVED, REJECTED, EFFECTIVE, CANCELLED, COMMENT_ADDED
+
+  Each entry includes: action, fromStatus, toStatus, actionBy (with employee name), comments, metadata, actionDate
+url: "{{base_url}}/promotions/{{promotion_id}}/history"
+method: GET
+examples: ./.resources/Get Promotion Audit Trail.resources/examples
+order: 1000

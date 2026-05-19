@@ -1,0 +1,24 @@
+$kind: http-request
+description: Assign a bonus to an employee. Creates workflow instance for approval.
+url: "{{hrmsBaseUrl}}/bonus/assign"
+method: POST
+headers:
+  Content-Type: application/json
+  Authorization: Bearer {{access_token}}
+body:
+  type: json
+  content: |-
+    {
+        "employeeId": "053e6c9c-2365-4820-9034-64b45a072f37",
+        "amount": 22222,
+        "currency": "INR",
+        "reason": "ssssssss",
+        "remarks": "",
+        "bonusTypeId": "ed970195-158f-4d26-9ec0-b3cfebe2fd86",
+        "tdsAmount": 0
+    }
+auth:
+  type: bearer
+  credentials:
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjFjMjIxNDM0LTk4MDgtNGMyYy05ZGYxLWMwNWUwZGMxNTc2ZCIsInVzZXJJZCI6bnVsbCwidGVuYW50SWQiOiIxYzIyMTQzNC05ODA4LTRjMmMtOWRmMS1jMDVlMGRjMTU3NmQiLCJjbGllbnRJZCI6ImZhbGNvbiIsImVtYWlsIjoiYWRtaW5AZmFsY29uLmNvbSIsIm5hbWUiOiJGYWxjb24gR3JvdXAiLCJmaXJzdE5hbWUiOiJGYWxjb24gR3JvdXAiLCJ1c2VyUm9sZSI6IlRFTkFOVF9PV05FUiIsIm9yZ2FuaXphdGlvbklkIjoiY2I2ZjBlNGYtM2FlMS00ZWQ0LWJiYzktMzMyOWM4ODViYmM5IiwiaWF0IjoxNzY1OTU0NTc4LCJleHAiOjE3NjYwNDA5NzgsImF1ZCI6IkZhbGNvbiBHcm91cCJ9.THAno3FLjbGybrqYr8TnYY_nVRBP4wMMgFOm2WvxJZ8
+order: 1000

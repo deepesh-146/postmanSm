@@ -1,0 +1,42 @@
+$kind: http-example
+request:
+  url: "{{hrmsBaseUrl}}/jobUnit/:jobUnitId"
+  method: PUT
+  pathVariables:
+    jobUnitId: e71f8b2c-1c10-46f1-99a5-05c8bbfe4539
+  body:
+    type: json
+    content: "{\r
+
+      \    \"name\": \"DX\",\r
+
+      \    \"code\": \"DX-6855\",\r
+
+      \    \"unitHead\": \"ADMIN\"\r
+
+      }"
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "83"
+    ETag: W/"53-BtZdk35gApUYpvYytj2nEEdROXg"
+    Date: Wed, 09 Oct 2024 15:50:11 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "status": {
+              "success": true,
+              "code": 200,
+              "message": "Job Unit Updated",
+              "failure": false
+          }
+      }
+order: 1000

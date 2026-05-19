@@ -1,0 +1,10 @@
+$kind: http-request
+description: Get statistics for specific report type and year.
+url: "{{hrmsBaseUrl}}/compliance/statistics?reportType=PF_CHALLAN&year=2026"
+method: GET
+headers:
+  Authorization: Bearer {{token}}
+queryParams:
+  reportType: PF_CHALLAN
+  year: "2026"
+order: 3000

@@ -1,0 +1,33 @@
+$kind: http-request
+description: |-
+  Generates a journal entry from a FINALIZED payroll.
+
+  Preconditions:
+  1. Payroll must be in FINALIZED status
+  2. All salary components must have GL account mappings
+  3. No existing journal for this payroll (prevents duplicates)
+
+  Creates:
+  - Journal header (status: draft)
+  - Journal lines with debit/credit:
+    - DEBIT: Salary Expense, Employer PF Expense, Employer ESI Expense
+    - CREDIT: Employee PF Payable, Employer PF Payable, Employee ESI Payable, Employer ESI Payable, PT Payable, TDS Payable, Net Salary Payable
+
+  Response includes:
+  - journal: the created journal with all lines
+  - summary: aggregated totals, employee count, line count
+
+  The journalId is auto-saved to collection variables for use in subsequent requests.
+url: "{{baseUrl}}/erp/generate-payroll-journal/{{payrollId}}"
+method: POST
+scripts:
+  - type: afterResponse
+    code: |-
+      if (pm.response.code === 200) {
+          var jsonData = pm.response.json();
+          if (jsonData.data && jsonData.data.journal && jsonData.data.journal.id) {
+              pm.collectionVariables.set('journalId', jsonData.data.journal.id);
+          }
+      }
+    language: text/javascript
+order: 1000

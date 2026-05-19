@@ -1,0 +1,12 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/employee/uploadImage"
+url: "{{hrmsBaseUrl}}/employee/uploadImage"
+method: POST
+body:
+  type: formdata
+  content:
+    - type: file
+      key: upload
+      src:
+        - /C:/Users/Deepesh/Downloads/images.png
+order: 31000

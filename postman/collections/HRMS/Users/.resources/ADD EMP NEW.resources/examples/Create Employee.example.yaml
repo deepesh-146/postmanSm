@@ -1,0 +1,132 @@
+$kind: http-example
+request:
+  url: "{{hrmsBaseUrl}}/employee"
+  method: POST
+  body:
+    type: json
+    content: "{\r
+
+      \    \"onboardingId\": \"f778b358-2db2-4561-9c0b-dc1eda013258\",\r
+
+      \    \"offerId\": \"a2ece94b-798f-4d72-b399-8edbf164b6a3\",\r
+
+      \    \"officialEmail\": \"sanat.kumar@iceipts.com\",\r
+
+      \    \"officialMobile\": \"+919801345259\",\r
+
+      \    \"salary\": {\r
+
+      \        \"basic\": 252555,\r
+
+      \        \"hra\": 5455,\r
+
+      \        \"da\": 3565,\r
+
+      \        \"bonus\": 1585,\r
+
+      \        \"pfDed\": 2500,\r
+
+      \        \"otherEarn\": 5658,\r
+
+      \        \"otherDed\": 500,\r
+
+      \        \"otherEarnNote\": \"Bonus\",\r
+
+      \        \"otherDedNote\": \"Contribution Fee\"\r
+
+      \    },\r
+
+      \    \"health\": {\r
+
+      \        \"planName\": \"Gold Plan\",\r
+
+      \        \"coverAmt\": \"7500000\",\r
+
+      \        \"useAmt\": \"0\",\r
+
+      \        \"expDate\": \"2025-10-01\",\r
+
+      \        \"startDate\": \"2024-10-01\"\r
+
+      \    }\r
+
+      }"
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "1588"
+    ETag: W/"634-dDtRwcPqv9VCA8NqzQQl6kD62X0"
+    Date: Mon, 14 Oct 2024 03:10:21 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "status": {
+              "success": true,
+              "code": 200,
+              "message": "Employee Created",
+              "failure": false
+          },
+          "data": {
+              "id": "903bd690-61f3-43db-9edd-d38d531c1c67",
+              "firstName": "Sanat",
+              "lastName": "Kumar",
+              "candidateId": "6979e151-2542-445c-88bd-fdc2248a8da3",
+              "onboardingId": "f778b358-2db2-4561-9c0b-dc1eda013258",
+              "managerId": null,
+              "personalMail": "sanatmishra29@gmail.com",
+              "officialMail": "sanat.kumar@iceipts.com",
+              "mobileNumber": "9801345259",
+              "officialMobileNumber": "+919801345259",
+              "officalTempPass": "]F9A|~rz`:mxgLP",
+              "officalEmailPassSet": false,
+              "officialPassword": null,
+              "accountActive": false,
+              "gender": null,
+              "dateOfBirth": null,
+              "maritalStatus": null,
+              "religion": null,
+              "placeOfBith": null,
+              "nationality": null,
+              "domicile": null,
+              "disability": false,
+              "disabilityDetail": null,
+              "passportAvailable": false,
+              "passportNo": null,
+              "passportExpiryDate": null,
+              "passportIssuedDate": null,
+              "jobConfirmed": false,
+              "confirmedById": null,
+              "confirmedDate": null,
+              "confirmedNotes": null,
+              "confirmedRating": null,
+              "departmentId": "32e8b17d-29e8-4f8f-8078-8ec006e2766e",
+              "designationId": "d10e48ed-e5f7-4821-9817-8a05d673eab4",
+              "jobUnitId": "e71f8b2c-1c10-46f1-99a5-05c8bbfe4539",
+              "providentFundNum": null,
+              "salBasic": 252555,
+              "salHRA": 5455,
+              "salDA": 3565,
+              "salBonus": 1585,
+              "salPfDed": 2500,
+              "salOtherEarning": 5658,
+              "salOtherDeduction": 500,
+              "salOtherEarningNote": "Bonus",
+              "salOtherDeductionNote": "Contribution Fee",
+              "healthInsPlanName": "Gold Plan",
+              "healthInsPlanCoverAmount": "7500000",
+              "healthInsPlanUseAmount": "0",
+              "healthInsPlanExpDate": "2025-10-01T00:00:00.000Z",
+              "healthInsPlanStartDate": "2024-10-01T00:00:00.000Z",
+              "updatedAt": "2024-10-14T03:10:21.269Z",
+              "createdAt": "2024-10-14T03:10:21.269Z"
+          }
+      }
+order: 1000

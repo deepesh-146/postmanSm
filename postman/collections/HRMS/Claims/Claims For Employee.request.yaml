@@ -1,0 +1,7 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/claims/employee/:employeeId"
+method: GET
+pathVariables:
+  employeeId: 26647beb-e0a4-44f0-b166-995a35e7e59e
+examples: ./.resources/Claims For Employee.resources/examples
+order: 5000

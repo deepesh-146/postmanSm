@@ -1,0 +1,36 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/leave/balance/:employeeId Copy 2"
+url: "{{hrmsBaseUrl}}/leave/adjustBalance/:employeeId"
+method: PUT
+pathVariables:
+  employeeId: 07a37b94-58b2-498d-a1ac-b9d63a8649f8
+body:
+  type: json
+  content: "{\r
+
+    \    \"adjustments\": [\r
+
+    \        {\r
+
+    \            \"leaveTypeId\": \"652371ae-a035-4ef2-ada6-d81d64f610bf\",\r
+
+    \            \"adjustmentAmount\": 5,\r
+
+    \            \"reason\": \"Bonus leave for Q1 performance\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"leaveTypeId\": \"a6931b63-c8d2-477d-8e9f-e346196549b1\",\r
+
+    \            \"adjustmentAmount\": -2,\r
+
+    \            \"reason\": \"Correction for previous error\"\r
+
+    \        }\r
+
+    \    ]\r
+
+    }"
+order: 6000

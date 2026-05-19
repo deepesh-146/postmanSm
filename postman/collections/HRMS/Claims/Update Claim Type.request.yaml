@@ -1,0 +1,18 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/claims/type"
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"type\": \"Broadband\",\r
+
+    \    \"max\": 1000,\r
+
+    \    \"approver\": \"903bd690-61f3-43db-9edd-d38d531c1c67\",\r
+
+    \    \"typeId\": \"2dffd90e-fc02-4875-9c5a-aad71a552799\"\r
+
+    }"
+examples: ./.resources/Update Claim Type.resources/examples
+order: 8000

@@ -1,0 +1,36 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/payrollsRefactored/calculate"
+url: "{{hrmsBaseUrl}}/payrollsRefactored/calculate"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"employeeId\": 12345,\r
+
+    \  \"country\": \"IN\",\r
+
+    \  \"ctc\": 600000,\r
+
+    \  \"financialYear\": \"2025-26\",\r
+
+    \  \"employee\": {\r
+
+    \    \"name\": \"Test User\",\r
+
+    \    \"pan\": \"ABCDE1234F\",\r
+
+    \    \"city\": \"Mumbai\",\r
+
+    \    \"state\": \"Maharashtra\",\r
+
+    \    \"regime\": \"NEW\",\r
+
+    \    \"isEPSMember\": true\r
+
+    \  },\r
+
+    \  \"customAllowances\": []\r
+
+    }"
+order: 1000

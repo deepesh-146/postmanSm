@@ -1,0 +1,15 @@
+$kind: http-request
+url: "{{baseUrl}}/claims/{{claimId}}/documents"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "documentUrl": "https://storage.example.com/receipts/gym-receipt-mar2026.pdf",
+      "documentName": "gym-receipt-mar2026.pdf",
+      "documentType": "PDF",
+      "fileSize": 245000
+    }
+order: 2000

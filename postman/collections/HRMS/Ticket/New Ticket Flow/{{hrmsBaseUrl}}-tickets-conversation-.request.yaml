@@ -1,0 +1,20 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/tickets/conversation/"
+url: "{{hrmsBaseUrl}}/tickets/conversation/"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"ticketId\": \"2b153b75-739f-4352-acde-7141c0abc4dd\",\r
+
+    \    \"message\": \"We are looking into this issue. Can you provide more details?\",\r
+
+    \    \"attachments\": [\r
+
+    \        \"uploadImage/2026-01-05T09:51:28.641Z-Full yt version-Thumbnail.jpg\"\r
+
+    \    ]\r
+
+    }"
+order: 5000

@@ -1,0 +1,193 @@
+$kind: http-example
+name: "{{hrmsBaseUrl}}/job_application/admin/getJobApplications/e2b46542-fea7-4341-aae5-b0f483ebb4b6"
+request:
+  url: "{{hrmsBaseUrl}}/job_application/admin/getJobApplications/e2b46542-fea7-4341-aae5-b0f483ebb4b6"
+  method: GET
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "6596"
+    ETag: W/"19c4-zjG+7eqPwdu5vlKA1kT3L6im1Kk"
+    Date: Wed, 28 May 2025 11:55:43 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "success": true,
+          "status": 200,
+          "message": "Job applications fetched.",
+          "data": {
+              "id": "e2b46542-fea7-4341-aae5-b0f483ebb4b6",
+              "status": "APPLIED",
+              "remarks": null,
+              "isDeleted": null,
+              "isReferred": false,
+              "atsScore": 15,
+              "atsDescription": "The Candidate's background in Human Resources does not align with the requirements of a Flutter Developer role. The resume lacks evidence of relevant technical skills, experience, and education in software development.",
+              "atsSkillsMatch": "20%",
+              "atsExperienceMatch": "10%",
+              "atsEducationMatch": "10%",
+              "atsResumeSummary": "",
+              "atsExplanation": null,
+              "atsExpSum": "The Candidate has no listed relevant work experience as a Flutter Developer. The resume indicates experience in Human Resources, which is not directly relevant to the Flutter Developer role. Therefore, the experience score is very low.",
+              "atsEduSum": "The Candidate's educational background is not specified in the provided metadata. Without information on relevant degrees or coursework, the education score is low. The absence of internships also contributes to the low score.",
+              "atsSkill": "The Candidate's listed skills (Microsoft Word, Excel, HRIS, etc.) are not directly related to Flutter development. While some general skills like 'Communication Skills' might be transferable, the lack of specific technical skills for Flutter development r",
+              "atsFit": "low",
+              "createdAt": "2025-05-28T08:32:28.000Z",
+              "updatedAt": "2025-05-28T08:32:28.000Z",
+              "jobId": "f6cca240-f2ca-431c-81bc-3f1adbbb999a",
+              "organizationId": "5a83858c-d64a-465c-a8ee-57bf5285f8a6",
+              "officeId": "c47d9174-0160-426a-8587-487959309d2f",
+              "newcandidateId": "6a49864a-e1fb-43fc-a96e-df7e51ea2501",
+              "newcandidate": {
+                  "id": "6a49864a-e1fb-43fc-a96e-df7e51ea2501",
+                  "firstName": "Deepesh1",
+                  "lastName": "Test",
+                  "email": "deepeshtesting@gmail.com",
+                  "mobile": "9904580804",
+                  "dob": "2025-03-06T00:00:00.000Z",
+                  "gender": "MALE",
+                  "nationality": "Indian",
+                  "address": "123 Main Street",
+                  "city": "San Francisco",
+                  "state": "California",
+                  "zipcode": "234234234",
+                  "resumePath": "https://hrms-storage-iceipts.s3.ap-south-1.amazonaws.com/uploadImage/2025-05-27T14%3A12%3A36.725Z-Pranav1.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT3LXCJC3ZZZWNB37%2F20250528%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20250528T115543Z&X-Amz-Expires=300&X-Amz-Signature=69159948472dcd84b694fbf4382b17e66c6fbe67c6d6d59731782bdb02a2f826&X-Amz-SignedHeaders=host",
+                  "skills": null,
+                  "linkedIn": null,
+                  "portfolioWebsite": null,
+                  "github": null,
+                  "otp": null,
+                  "otpExpires": "2025-05-23T09:28:20.000Z",
+                  "isActive": true,
+                  "isVerified": true,
+                  "userType": "CANDIDATE",
+                  "mobileotp": "686398",
+                  "emailotp": "887903",
+                  "isDeleted": false,
+                  "createdAt": "2025-05-23T09:23:20.000Z",
+                  "updatedAt": "2025-05-28T08:32:27.000Z"
+              },
+              "job_application_documents": [
+                  {
+                      "id": "1948648a-1c62-458f-9935-74ea7b5cdfe9",
+                      "documentType": "EXPERIENCE",
+                      "documentId": "573cfd6c-c1e5-4f81-a341-e4ef128e8051",
+                      "isVerified": false,
+                      "status": "PENDING",
+                      "verifiedBy": null,
+                      "verifiedAt": null,
+                      "remarks": null,
+                      "createdAt": "2025-05-28T08:32:28.000Z",
+                      "updatedAt": "2025-05-28T08:32:28.000Z",
+                      "jobApplicationId": "e2b46542-fea7-4341-aae5-b0f483ebb4b6",
+                      "educationDocument": null,
+                      "experienceDocument": {
+                          "id": "573cfd6c-c1e5-4f81-a341-e4ef128e8051",
+                          "company": "ICEIPTS",
+                          "jobTitle": "asd",
+                          "startDate": "2022-02-12T00:00:00.000Z",
+                          "endDate": "2025-05-23T00:00:00.000Z",
+                          "responsibility": "asd",
+                          "image": "https://hrms-storage-iceipts.s3.ap-south-1.amazonaws.com/csdc?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT3LXCJC3ZZZWNB37%2F20250528%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20250528T115543Z&X-Amz-Expires=300&X-Amz-Signature=9d326bc835667c4cd6839159856abd7c8d6383f6e462fae4dc3cf80627ffb5e5&X-Amz-SignedHeaders=host",
+                          "createdAt": "2025-05-23T10:25:19.000Z",
+                          "updatedAt": "2025-05-28T08:32:27.000Z",
+                          "newcandidateId": "6a49864a-e1fb-43fc-a96e-df7e51ea2501",
+                          "documentId": null
+                      }
+                  },
+                  {
+                      "id": "4e8eae99-2bf7-499b-bd3f-a9324c0e8202",
+                      "documentType": "EDUCATION",
+                      "documentId": "96a80e8b-b148-499f-ae48-63a56571954c",
+                      "isVerified": false,
+                      "status": "PENDING",
+                      "verifiedBy": null,
+                      "verifiedAt": null,
+                      "remarks": null,
+                      "createdAt": "2025-05-28T08:32:28.000Z",
+                      "updatedAt": "2025-05-28T08:32:28.000Z",
+                      "jobApplicationId": "e2b46542-fea7-4341-aae5-b0f483ebb4b6",
+                      "educationDocument": {
+                          "id": "96a80e8b-b148-499f-ae48-63a56571954c",
+                          "degree": "CSE1",
+                          "specialization": "CSE1",
+                          "institute": "MSU",
+                          "startDate": "2025-05-20T00:00:00.000Z",
+                          "endDate": "2025-05-23T00:00:00.000Z",
+                          "image": "https://hrms-storage-iceipts.s3.ap-south-1.amazonaws.com/sds?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT3LXCJC3ZZZWNB37%2F20250528%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20250528T115543Z&X-Amz-Expires=300&X-Amz-Signature=f2db660ed225d8b33a6cb2364acc4e6763674c539177350f1726a4bb29ac684f&X-Amz-SignedHeaders=host",
+                          "createdAt": "2025-05-23T09:57:37.000Z",
+                          "updatedAt": "2025-05-28T08:32:27.000Z",
+                          "newcandidateId": "6a49864a-e1fb-43fc-a96e-df7e51ea2501",
+                          "documentId": null
+                      },
+                      "experienceDocument": null
+                  },
+                  {
+                      "id": "6111d8f6-dca0-4664-9a4d-8213dbdc37ee",
+                      "documentType": "EDUCATION",
+                      "documentId": "1c90c9cf-a3d5-4153-a0f9-a43fb05c6255",
+                      "isVerified": false,
+                      "status": "PENDING",
+                      "verifiedBy": null,
+                      "verifiedAt": null,
+                      "remarks": null,
+                      "createdAt": "2025-05-28T08:32:28.000Z",
+                      "updatedAt": "2025-05-28T08:32:28.000Z",
+                      "jobApplicationId": "e2b46542-fea7-4341-aae5-b0f483ebb4b6",
+                      "educationDocument": {
+                          "id": "1c90c9cf-a3d5-4153-a0f9-a43fb05c6255",
+                          "degree": "IT",
+                          "specialization": "IT",
+                          "institute": "MSU",
+                          "startDate": "2025-05-23T00:00:00.000Z",
+                          "endDate": "2025-05-23T00:00:00.000Z",
+                          "image": "https://hrms-storage-iceipts.s3.ap-south-1.amazonaws.com/dcds?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT3LXCJC3ZZZWNB37%2F20250528%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20250528T115543Z&X-Amz-Expires=300&X-Amz-Signature=0cce0a160bf81413d58db0abecdb99e636f431fa92508fc287d3928824c84d4e&X-Amz-SignedHeaders=host",
+                          "createdAt": "2025-05-23T12:02:09.000Z",
+                          "updatedAt": "2025-05-28T08:32:27.000Z",
+                          "newcandidateId": "6a49864a-e1fb-43fc-a96e-df7e51ea2501",
+                          "documentId": null
+                      },
+                      "experienceDocument": null
+                  }
+              ],
+              "job_offer": null,
+              "job_interviews": [],
+              "job_application_status_histories": [
+                  {
+                      "id": "622705ad-8373-4f9b-92a5-c36ee086985b",
+                      "status": "APPLIED",
+                      "changedBy": "6a49864a-e1fb-43fc-a96e-df7e51ea2501",
+                      "changedByRole": "CANDIDATE",
+                      "remarks": null,
+                      "createdAt": "2025-05-28T08:32:28.000Z",
+                      "updatedAt": "2025-05-28T08:32:28.000Z",
+                      "jobApplicationId": "e2b46542-fea7-4341-aae5-b0f483ebb4b6",
+                      "organizationId": null,
+                      "officeId": null
+                  }
+              ],
+              "job": {
+                  "id": "f6cca240-f2ca-431c-81bc-3f1adbbb999a",
+                  "title": "CEO - India22",
+                  "companyName": "iCeipts Technology",
+                  "jobUnitId": "05e263cb-fc50-4ebd-9fa1-9d12b240b796",
+                  "job_unit": {
+                      "id": "05e263cb-fc50-4ebd-9fa1-9d12b240b796",
+                      "department": {
+                          "id": "b678708e-4d0f-4f2a-84de-e862a38c87ec",
+                          "name": "test",
+                          "code": "3434"
+                      }
+                  }
+              }
+          }
+      }
+order: 1000

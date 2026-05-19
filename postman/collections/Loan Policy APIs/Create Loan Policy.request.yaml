@@ -1,0 +1,60 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/policy/addLoan"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+        "policy": {
+            "policyType": "LOAN",
+            "policyName": "Loan Benefits",
+            "employeeMainId": "{{userId}}"
+        },
+        "gradeRules": [
+            {
+                "gradeId": "13bb864c-b22c-4349-9a18-3a728aa607e4",
+                "employeeGrade": "A",
+                "maxLoanAmount": 500000,
+                "interestRate": 8.5,
+                "maxTenure": 60,
+                "emiStartDelay": 1,
+                "proofRequired": true
+            }
+        ],
+        "eligibility": {
+            "minServiceMonths": 12,
+            "maxConcurrentLoans": 2,
+            "salaryDeductionCapPercentage": 50,
+            "departments": [
+                "8ff5bd79-a370-4852-95fd-773f54fff306"
+            ]
+        },
+        "advanceSalary": {
+            "isEnabled": true,
+            "maxRequestsPerYear": 2,
+            "minServiceMonths": 6,
+            "approvalRequired": true,
+            "gradeRules": [
+                {
+                    "gradeId": "13bb864c-b22c-4349-9a18-3a728aa607e4",
+                    "employeeGrade": "A",
+                    "maxMonthsAdvance": 3,
+                    "maxSalaryPercent": 100
+                }
+            ],
+            "schedules": [
+                {
+                    "advancePeriodMonths": 1,
+                    "repaymentPeriodMonths": 3
+                }
+            ]
+        }
+    }
+auth:
+  type: bearer
+  credentials:
+    token: "{{clientToken}}"
+examples: ./.resources/Create Loan Policy.resources/examples
+order: 1000

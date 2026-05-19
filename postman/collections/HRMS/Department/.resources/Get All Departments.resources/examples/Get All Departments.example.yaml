@@ -1,0 +1,41 @@
+$kind: http-example
+request:
+  url: "{{hrmsBaseUrl}}/department/"
+  method: GET
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "299"
+    ETag: W/"12b-IYQXadmsxmVARmc0hwKcs97ASzU"
+    Date: Wed, 09 Oct 2024 15:33:11 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "status": {
+              "success": true,
+              "code": 200,
+              "message": "Department List",
+              "failure": false
+          },
+          "data": [
+              {
+                  "id": "32e8b17d-29e8-4f8f-8078-8ec006e2766e",
+                  "name": "CEO",
+                  "code": "CEO1111",
+                  "depHead": "null",
+                  "underDep": "null",
+                  "insideDep": "null",
+                  "createdAt": "2024-10-09T15:29:52.000Z",
+                  "updatedAt": "2024-10-09T15:29:52.000Z"
+              }
+          ]
+      }
+order: 1000

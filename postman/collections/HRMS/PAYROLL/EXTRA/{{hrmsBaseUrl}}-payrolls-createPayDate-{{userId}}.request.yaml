@@ -1,0 +1,8 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/payrolls/createPayDate/{{userId}}"
+url: "{{hrmsBaseUrl}}/payrolls/createPayDate/{{userId}}"
+method: POST
+body:
+  type: json
+  content: "{\r\n    \"pay\": 1\r\n}"
+order: 11000

@@ -1,0 +1,19 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/job_application/admin/sendOffer/{{applicationId}} Copy"
+url: "{{hrmsBaseUrl}}/job_application/sendOffer/245eaf88-f5f1-410b-b556-d3cb47fa435a"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"annualCTC\": 750000,\r
+
+    \    \"joiningDate\": \"2025-06-10\",\r
+
+    \    \"notes\": \"This offer is subject to background verification.\",\r
+
+    \    \"customMessage\": \"We are pleased to offer you the position. Please respond within 3 days.\"\r
+
+    }"
+examples: ./.resources/{{hrmsBaseUrl}}-job_application-admin-sendOffer-{{applicationId}-1.resources/examples
+order: 8000

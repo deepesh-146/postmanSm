@@ -1,0 +1,15 @@
+$kind: http-request
+description: Resolution comment is saved as the final resolution summary.
+url: "{{base_url}}/grievances/status"
+method: PATCH
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+        "grievanceId": "{{grievanceId}}",
+        "status": "RESOLVED",
+        "comment": "The salary deduction has been reversed and the corrected amount will be credited in the next payroll cycle."
+    }
+order: 5000

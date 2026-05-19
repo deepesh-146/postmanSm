@@ -1,0 +1,14 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/assets/getLetters/{{userId}}?page =1&size=10"
+url: "{{hrmsBaseUrl}}/assets/getLetters/{{userId}}?page =1&size=10"
+method: GET
+queryParams:
+  - key: letterType
+    value: OFFER
+    disabled: true
+    description: OFFER, APPOINTMENT, RELIEVING
+  - key: "page "
+    value: "1"
+  - key: size
+    value: "10"
+order: 11000

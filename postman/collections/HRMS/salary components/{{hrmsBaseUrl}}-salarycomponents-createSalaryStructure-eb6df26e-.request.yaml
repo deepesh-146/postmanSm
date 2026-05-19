@@ -1,0 +1,107 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/salarycomponents/createSalaryStructure/eb6df26e-e0d3-4d10-8714-873fef6e213c"
+url: "{{hrmsBaseUrl}}/salarycomponents/createSalaryStructure/eb6df26e-e0d3-4d10-8714-873fef6e213c"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"salaryStructureData\": {\r
+
+    \        \"name\": \"sujay\",\r
+
+    \        \"isActive\": true,\r
+
+    \        \"company\": \"iceipts\",\r
+
+    \        \"currancy\": \"INR\",\r
+
+    \        \"letterheadId\": \"8b8931a3-3460-460a-8034-ef1ee71021c8\",\r
+
+    \        \"leaveEncashAmountPerDay\": \"2000\",\r
+
+    \        \"maxBenifits\": \"1000\",\r
+
+    \        \"payrollFrequency\": \"Monthly\",\r
+
+    \        \"madeOfPayment\": \"okpk\",\r
+
+    \        \"paymentAccount\": \"okokko\"\r
+
+    \    },\r
+
+    \    \"earning\": [\r
+
+    \        {\r
+
+    \            \"component\": \"iceitps\",\r
+
+    \            \"amount\": \"ABCD1234\",\r
+
+    \            \"dependsOn\": true,\r
+
+    \            \"isTax\": true,\r
+
+    \            \"amountFormula\": true,\r
+
+    \            \"formula\": \"PPss\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"component\": \"iceitps\",\r
+
+    \            \"amount\": \"ABCD1234\",\r
+
+    \            \"dependsOn\": true,\r
+
+    \            \"isTax\": true,\r
+
+    \            \"amountFormula\": true,\r
+
+    \            \"formula\": \"PPss\"\r
+
+    \        }\r
+
+    \    ],\r
+
+    \    \"deduction\": [\r
+
+    \        {\r
+
+    \            \"component\": \"iceitps\",\r
+
+    \            \"amount\": \"ABCD1234\",\r
+
+    \            \"dependsOn\": true,\r
+
+    \            \"isTax\": true,\r
+
+    \            \"amountFormula\": true,\r
+
+    \            \"formula\": \"PPss\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"component\": \"iceitps\",\r
+
+    \            \"amount\": \"ABCD1234\",\r
+
+    \            \"dependsOn\": true,\r
+
+    \            \"isTax\": true,\r
+
+    \            \"amountFormula\": true,\r
+
+    \            \"formula\": \"PPss\"\r
+
+    \        }\r
+
+    \    ]\r
+
+    }"
+examples: ./.resources/{{hrmsBaseUrl}}-salarycomponents-createSalaryStructure-eb6df26e-.resources/examples
+order: 5000

@@ -1,0 +1,911 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/employee/addExistingEmployee Copy"
+url: "{{hrmsBaseUrl}}/employee/addExistingEmployee"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"employee\": {\r
+
+    \        \"fName\": \"John\",\r
+
+    \        \"middleName\": \"\",\r
+
+    \        \"lName\": \"Doe\",\r
+
+    \        \"officialEmail\": \"sdsd2@example.com\",\r
+
+    \        \"mobile\": \"4454545454\",\r
+
+    \        \"officalMobile\": \"4454545454\",\r
+
+    \        \"gender\": \"male\",\r
+
+    \        \"password\": \"Test@1234\",\r
+
+    \        \"dateOfBirth\": \"1990-01-01\",\r
+
+    \        \"noticePeriodDay\": 30,\r
+
+    \        \"probationPeriod\": 30,\r
+
+    \        \"marital\": \"single\",\r
+
+    \        \"religion\": \"SAMPLE\",\r
+
+    \        \"nationality\": \"Indian\",\r
+
+    \        \"domicile\": \"SAMPLE\",\r
+
+    \        \"disability\": false,\r
+
+    \        \"disabilityDetail\": \"SAMPLE\",\r
+
+    \        \"passport\": true,\r
+
+    \        \"passportNo\": \"SAMPLE\",\r
+
+    \        \"passportExpiryDate\": \"SAMPLE\",\r
+
+    \        \"passportIssuedDate\": \"SAMPLE\",\r
+
+    \        \"joiningDate\": \"2024-01-01\",\r
+
+    \        \"hrId\": \"05dc2cdd-6f02-4817-9d07-d539fdbcac27\",\r
+
+    \        \"shiftId\": \"346f6245-a61d-4550-8ef1-349d77e14f6f\",\r
+
+    \        \"managerId\": \"05dc2cdd-6f02-4817-9d07-d539fdbcac27\",\r
+
+    \        \"departmentId\": \"fd94e6dc-34bd-4012-bbdd-fcfc7fb8ad6a\",\r
+
+    \        \"gradeId\": \"775de0e0-b2e1-45e4-8f7b-3e5927022bee\",\r
+
+    \        \"jobId\": \"f4dfbd35-6d13-4fdd-99d3-d00d1907fe63\",\r
+
+    \        \"countryId\": 1,\r
+
+    \        \"probationEndDate\": \"2026-07-01\",\r
+
+    \        \"salutation\": \"Mr\",\r
+
+    \        \"status\": \"Active\",\r
+
+    \        \"employmentType\": \"Full-time\",\r
+
+    \        \"dateOfRetirement\": \"2050-01-31\",\r
+
+    \        \"emergencyContactName\": \"Harry\",\r
+
+    \        \"emergencyPhone\": \"9898989898\",\r
+
+    \        \"relation\": \"father\"\r
+
+    \    },\r
+
+    \    \"personalData\": {\r
+
+    \        \"pAddress\": \"123 Street, City\",\r
+
+    \        \"cAddress\": \"123 Street, City\",\r
+
+    \        \"pincode\": \"390001\",\r
+
+    \        \"region\": \"GUJARAT\",\r
+
+    \        \"city\": \"Vadodara\",\r
+
+    \        \"aadharNum\": \"232345457878\",\r
+
+    \        \"panNum\": \"SHSPS3433B\",\r
+
+    \        \"uan\": \"123212321232\",\r
+
+    \        \"bankAcntNum\": \"123456789012\",\r
+
+    \        \"bankAcntName\": \"SBI\",\r
+
+    \        \"bankIfsc\": \"SBIN0001234\",\r
+
+    \        \"bankBranch\": \"Main Branch\",\r
+
+    \        \"profileImage\": \"SAMPLE\",\r
+
+    \        \"bankAccountHolderName\": \"John Doe\",\r
+
+    \        \"familydetails\": [\r
+
+    \            {\r
+
+    \                \"name\": \"Samarth\",\r
+
+    \                \"relation\": \"Father\",\r
+
+    \                \"dob\": \"2000-02-02\",\r
+
+    \                \"gender\": \"Male\"\r
+
+    \            }\r
+
+    \        ],\r
+
+    \        \"mohreId\": \"45433434343434\",\r
+
+    \        \"emiratesId\": \"784454545454542\",\r
+
+    \        \"passportNo\": \"343434\",\r
+
+    \        \"passportValidTill\": \"2030-02-02\",\r
+
+    \        \"passportIssuedOnDate\": \"2022-02-02\",\r
+
+    \        \"placeOfIssue\": \"New York\",\r
+
+    \        \"employeeExitData\": {\r
+
+    \            \"resignationLetterDate\": \"2030-02-23\",\r
+
+    \            \"exitInterviewHeldOn\": \"2030-03-23\",\r
+
+    \            \"leaveEncashed\": \"No\",\r
+
+    \            \"relievingDate\": \"2030-03-23\",\r
+
+    \            \"newWorkplace\": \"Google\",\r
+
+    \            \"reasonForLeaving\": null,\r
+
+    \            \"feedback\": \"None\"\r
+
+    \        },\r
+
+    \        \"pwd_data\": {\r
+
+    \            \"challengeGroup\": \"\",\r
+
+    \            \"typeOfChallenge\": \"\",\r
+
+    \            \"degreeOfChallenge\": \"\",\r
+
+    \            \"creditFactor\": \"\",\r
+
+    \            \"officialAgency\": \"\",\r
+
+    \            \"challengeCertDate\": \"\",\r
+
+    \            \"referenceNumber\": \"\",\r
+
+    \            \"secondOfficialAgency\": \"\",\r
+
+    \            \"secondCertDate\": \"\",\r
+
+    \            \"secondReferenceNumber\": \"\",\r
+
+    \            \"disabilityCertificate\": \"\"\r
+
+    \        }\r
+
+    \    },\r
+
+    \    \"educationData\": [\r
+
+    \        {\r
+
+    \            \"clgName\": \"Test College\",\r
+
+    \            \"univName\": \"Test University\",\r
+
+    \            \"clgLocation\": \"City\",\r
+
+    \            \"specialization\": \"Computer Science\",\r
+
+    \            \"degName\": \"B.Tech\",\r
+
+    \            \"courseName\": \"Engineering\",\r
+
+    \            \"startDate\": \"2010-06-01\",\r
+
+    \            \"endDate\": \"2014-06-01\",\r
+
+    \            \"currPursuing\": false\r
+
+    \        }\r
+
+    \    ],\r
+
+    \    \"employmentData\": [],\r
+
+    \    \"salaryData\": {\r
+
+    \        \"isSalaryEnabled\": true,\r
+
+    \        \"annualCtc\": 800000,\r
+
+    \        \"age\": \"Less than 60\",\r
+
+    \        \"regime\": \"OLD\",\r
+
+    \        \"isEpsMember\": \"No\",\r
+
+    \        \"basicYearly\": 320000,\r
+
+    \        \"basicMonthly\": 26666.666666666668,\r
+
+    \        \"basicPercent\": 40,\r
+
+    \        \"daYearly\": 16000,\r
+
+    \        \"daMonthly\": 1333.3333333333333,\r
+
+    \        \"daPercentage\": 5,\r
+
+    \        \"daBasedOn\": \"basic\",\r
+
+    \        \"hraYearly\": 128000,\r
+
+    \        \"hraMonthly\": 10666.666666666666,\r
+
+    \        \"hraPercent\": 40,\r
+
+    \        \"hraBasedOn\": \"basic\",\r
+
+    \        \"bonus\": 0,\r
+
+    \        \"bonusYearly\": 26656,\r
+
+    \        \"bonusMonthly\": 2221.3333333333335,\r
+
+    \        \"bonusPercentage\": 8.33,\r
+
+    \        \"bonusBasedOn\": \"basic\",\r
+
+    \        \"specialAllowance\": 0,\r
+
+    \        \"specialAllowanceYearly\": 309344,\r
+
+    \        \"specialAllowanceMonthly\": 25778.666666666668,\r
+
+    \        \"annualGross\": 800000,\r
+
+    \        \"monthlyGross\": 66666.66666666667,\r
+
+    \        \"pf\": 0,\r
+
+    \        \"employeePfYearly\": 21600,\r
+
+    \        \"employeePfMonthly\": 1800,\r
+
+    \        \"employerPfYearly\": 21600,\r
+
+    \        \"employerPfMonthly\": 1800,\r
+
+    \        \"esi\": 0,\r
+
+    \        \"employeeEsiYearly\": 0,\r
+
+    \        \"employeeEsiMonthly\": 0,\r
+
+    \        \"employerEsiYearly\": 0,\r
+
+    \        \"employerEsiMonthly\": 0,\r
+
+    \        \"employerEpsYearly\": 0,\r
+
+    \        \"employerEpsMonthly\": 0,\r
+
+    \        \"professionalTax\": 0,\r
+
+    \        \"professionalTaxYearly\": 2400,\r
+
+    \        \"professionalTaxMonthly\": 200,\r
+
+    \        \"annualTotalYearly\": 0,\r
+
+    \        \"annualTotalMonthly\": 2000,\r
+
+    \        \"totalTax\": 62500.15000000001,\r
+
+    \        \"totalRebate\": 0,\r
+
+    \        \"finalTax\": 65000.15600000001,\r
+
+    \        \"grossIncome\": 800000,\r
+
+    \        \"standardDeduction\": 50000,\r
+
+    \        \"taxableIncome\": 750000,\r
+
+    \        \"baseTaxAmount\": 62500.15000000001,\r
+
+    \        \"surchargeAmount\": 0,\r
+
+    \        \"cessAmount\": 2500.0060000000003,\r
+
+    \        \"totalBeforeRebate\": 65000.15600000001,\r
+
+    \        \"slabWiseCalculation\": [\r
+
+    \            {\r
+
+    \                \"slabRange\": \"0 - 250,000\",\r
+
+    \                \"rate\": 0,\r
+
+    \                \"applicableIncome\": 250000,\r
+
+    \                \"taxOnSlab\": 0\r
+
+    \            },\r
+
+    \            {\r
+
+    \                \"slabRange\": \"250,001 - 500,000\",\r
+
+    \                \"rate\": 5,\r
+
+    \                \"applicableIncome\": 249999,\r
+
+    \                \"taxOnSlab\": 12499.95\r
+
+    \            },\r
+
+    \            {\r
+
+    \                \"slabRange\": \"500,001 - 1,000,000\",\r
+
+    \                \"rate\": 20,\r
+
+    \                \"applicableIncome\": 250001,\r
+
+    \                \"taxOnSlab\": 50000.200000000004\r
+
+    \            }\r
+
+    \        ],\r
+
+    \        \"summaryAnnualGrossSalary\": 800000,\r
+
+    \        \"summaryAnnualIncomeTax\": 65000.15600000001,\r
+
+    \        \"summaryAnnualNetSalary\": 710999.844,\r
+
+    \        \"summaryAnnualTotalDeductions\": 24000,\r
+
+    \        \"summaryMonthlyGrossSalary\": 66666.66666666667,\r
+
+    \        \"summaryMonthlyIncomeTax\": 5416.679666666668,\r
+
+    \        \"summaryMonthlyNetSalary\": 59249.987,\r
+
+    \        \"summaryMonthlyTotalDeductions\": 2000,\r
+
+    \        \"summaryTakeHomeAnnual\": 710999.844,\r
+
+    \        \"summaryTakeHomeMonthly\": 59249.987,\r
+
+    \        \"transportAllowance\": 0,\r
+
+    \        \"transportAllowanceYearly\": 0,\r
+
+    \        \"transportAllowanceMonthly\": 0,\r
+
+    \        \"transportAllowancePercentage\": 0,\r
+
+    \        \"otherAllowance\": 0,\r
+
+    \        \"otherAllowancesYearly\": 0,\r
+
+    \        \"otherAllowancesMonthly\": 0,\r
+
+    \        \"otherAllowancesDescription\": 0,\r
+
+    \        \"GPSSA\": 0,\r
+
+    \        \"employeeGpssaYearly\": 0,\r
+
+    \        \"employeeGpssaMonthly\": 0,\r
+
+    \        \"employerGpssaYearly\": 0,\r
+
+    \        \"employerGpssaMonthly\": 0,\r
+
+    \        \"annualTotal\": 24000,\r
+
+    \        \"monthlyTotal\": 0,\r
+
+    \        \"gratuity\": 0,\r
+
+    \        \"noOfDependents\": \"0\",\r
+
+    \        \"contractType\": \"\",\r
+
+    \        \"isGpssa\": false,\r
+
+    \        \"slabWiseCalculationJSON\": [\r
+
+    \            {\r
+
+    \                \"slabRange\": \"0 - 250,000\",\r
+
+    \                \"rate\": 0,\r
+
+    \                \"applicableIncome\": 250000,\r
+
+    \                \"taxOnSlab\": 0\r
+
+    \            },\r
+
+    \            {\r
+
+    \                \"slabRange\": \"250,001 - 500,000\",\r
+
+    \                \"rate\": 5,\r
+
+    \                \"applicableIncome\": 249999,\r
+
+    \                \"taxOnSlab\": 12499.95\r
+
+    \            },\r
+
+    \            {\r
+
+    \                \"slabRange\": \"500,001 - 1,000,000\",\r
+
+    \                \"rate\": 20,\r
+
+    \                \"applicableIncome\": 250001,\r
+
+    \                \"taxOnSlab\": 50000.200000000004\r
+
+    \            }\r
+
+    \        ]\r
+
+    \    },\r
+
+    \    \"allowanceData\": [],\r
+
+    \    \"declarationData\": [\r
+
+    \        {\r
+
+    \            \"key\": \"ppf\",\r
+
+    \            \"displaySection\": \"Section 80C (1.5 Lakh maximum)\",\r
+
+    \            \"section\": \"section80C\",\r
+
+    \            \"label\": \"PPF\",\r
+
+    \            \"value\": 1000\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"key\": \"lic\",\r
+
+    \            \"displaySection\": \"Section 80C (1.5 Lakh maximum)\",\r
+
+    \            \"section\": \"section80C\",\r
+
+    \            \"label\": \"LIC\",\r
+
+    \            \"value\": 0\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"key\": \"elss_mutual_fund\",\r
+
+    \            \"displaySection\": \"Section 80C (1.5 Lakh maximum)\",\r
+
+    \            \"section\": \"section80C\",\r
+
+    \            \"label\": \"ELSS-Mutual fund\",\r
+
+    \            \"value\": 0\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"key\": \"education_loans\",\r
+
+    \            \"displaySection\": \"Section 80C (1.5 Lakh maximum)\",\r
+
+    \            \"section\": \"section80C\",\r
+
+    \            \"label\": \"Education loans\",\r
+
+    \            \"value\": 0\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"key\": \"sukanya_samridhi_yojana\",\r
+
+    \            \"displaySection\": \"Section 80C (1.5 Lakh maximum)\",\r
+
+    \            \"section\": \"section80C\",\r
+
+    \            \"label\": \"Sukanya Samridhi Yojana\",\r
+
+    \            \"value\": 0\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"key\": \"epf\",\r
+
+    \            \"displaySection\": \"Section 80C (1.5 Lakh maximum)\",\r
+
+    \            \"section\": \"section80C\",\r
+
+    \            \"label\": \"EPF\",\r
+
+    \            \"value\": 0\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"key\": \"post_office_deposit\",\r
+
+    \            \"displaySection\": \"Section 80C (1.5 Lakh maximum)\",\r
+
+    \            \"section\": \"section80C\",\r
+
+    \            \"label\": \"Post Office Deposit\",\r
+
+    \            \"value\": 0\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"key\": \"fd_in_bank\",\r
+
+    \            \"displaySection\": \"Section 80C (1.5 Lakh maximum)\",\r
+
+    \            \"section\": \"section80C\",\r
+
+    \            \"label\": \"FD in Bank\",\r
+
+    \            \"value\": 0\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"key\": \"stamp_duty_registration_fee\",\r
+
+    \            \"displaySection\": \"Section 80C (1.5 Lakh maximum)\",\r
+
+    \            \"section\": \"section80C\",\r
+
+    \            \"label\": \"Stamp duty and registration fee\",\r
+
+    \            \"value\": 0\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"key\": \"home_loan_principal\",\r
+
+    \            \"displaySection\": \"Section 80C (1.5 Lakh maximum)\",\r
+
+    \            \"section\": \"section80C\",\r
+
+    \            \"label\": \"Home loan Principal amount repayment\",\r
+
+    \            \"value\": 0\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"key\": \"tuition_fees\",\r
+
+    \            \"displaySection\": \"Section 80C (1.5 Lakh maximum)\",\r
+
+    \            \"section\": \"section80C\",\r
+
+    \            \"label\": \"Tuition fees payment for school and colleges\",\r
+
+    \            \"value\": 0\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"key\": \"term_deposits_80c\",\r
+
+    \            \"displaySection\": \"Section 80C (1.5 Lakh maximum)\",\r
+
+    \            \"section\": \"section80C\",\r
+
+    \            \"label\": \"Term Deposits under Section 80C\",\r
+
+    \            \"value\": 0\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"key\": \"medical_self_family\",\r
+
+    \            \"displaySection\": \"Section 80D\",\r
+
+    \            \"section\": \"section80D\",\r
+
+    \            \"label\": \"Health insurance premium: Self, Spouse & Children (₹25k / ₹50k if senior)\",\r
+
+    \            \"value\": 0\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"key\": \"medical_parents\",\r
+
+    \            \"displaySection\": \"Section 80D\",\r
+
+    \            \"section\": \"section80D\",\r
+
+    \            \"label\": \"Health insurance premium: Parents (₹25k / ₹50k if senior)\",\r
+
+    \            \"value\": 0\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"key\": \"preventive_health_self\",\r
+
+    \            \"displaySection\": \"Section 80D\",\r
+
+    \            \"section\": \"section80D\",\r
+
+    \            \"label\": \"Preventive health check-up (Self/Family) – ₹5k max within above limit\",\r
+
+    \            \"value\": 0\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"key\": \"preventive_health_parents\",\r
+
+    \            \"displaySection\": \"Section 80D\",\r
+
+    \            \"section\": \"section80D\",\r
+
+    \            \"label\": \"Preventive health check-up (Parents) – ₹5k max within above limit\",\r
+
+    \            \"value\": 0\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"key\": \"self_senior_citizen\",\r
+
+    \            \"displaySection\": \"Section 80D\",\r
+
+    \            \"section\": \"section80D\",\r
+
+    \            \"label\": \"Self is Senior Citizen (Yes/No)\",\r
+
+    \            \"value\": 0\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"key\": \"parents_senior_citizen\",\r
+
+    \            \"displaySection\": \"Section 80D\",\r
+
+    \            \"section\": \"section80D\",\r
+
+    \            \"label\": \"Parents Senior Citizen (Yes/No)\",\r
+
+    \            \"value\": 0\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"key\": \"nps\",\r
+
+    \            \"displaySection\": \"Section 80CCD(1B)\",\r
+
+    \            \"section\": \"section80CCD1B\",\r
+
+    \            \"label\": \"NPS (₹50k maximum – additional to 80C)\",\r
+
+    \            \"value\": 0\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"key\": \"education_loans_interest\",\r
+
+    \            \"displaySection\": \"Section 80E\",\r
+
+    \            \"section\": \"section80E\",\r
+
+    \            \"label\": \"Education loan interest (No upper limit)\",\r
+
+    \            \"value\": 0\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"key\": \"dependent_disability_deduction\",\r
+
+    \            \"displaySection\": \"Section 80DD\",\r
+
+    \            \"section\": \"section80DD\",\r
+
+    \            \"label\": \"Deduction for dependent with disability (₹75k / ₹1.25L if severe)\",\r
+
+    \            \"value\": 0\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"key\": \"senior_citizen_medical_treatment\",\r
+
+    \            \"displaySection\": \"Section 80DDB\",\r
+
+    \            \"section\": \"section80DDB\",\r
+
+    \            \"label\": \"Medical treatment for specified diseases (₹40k / ₹1L for seniors)\",\r
+
+    \            \"value\": 0\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"key\": \"self_disability_deduction\",\r
+
+    \            \"displaySection\": \"Section 80U\",\r
+
+    \            \"section\": \"section80U\",\r
+
+    \            \"label\": \"Deduction for self disability (₹75k / ₹1.25L if severe)\",\r
+
+    \            \"value\": 0\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"key\": \"home_loan_interest\",\r
+
+    \            \"displaySection\": \"Section 24(b) 2 lakh maximum\",\r
+
+    \            \"section\": \"section24b\",\r
+
+    \            \"label\": \"Home loan interest\",\r
+
+    \            \"value\": 0\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"key\": \"hra\",\r
+
+    \            \"displaySection\": \"Others Exemption\",\r
+
+    \            \"section\": \"others\",\r
+
+    \            \"label\": \"HRA\",\r
+
+    \            \"value\": 0\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"key\": \"lta\",\r
+
+    \            \"displaySection\": \"Others Exemption\",\r
+
+    \            \"section\": \"others\",\r
+
+    \            \"label\": \"LTA\",\r
+
+    \            \"value\": 0\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"key\": \"rentPaid\",\r
+
+    \            \"displaySection\": \"Others Exemption\",\r
+
+    \            \"section\": \"others\",\r
+
+    \            \"label\": \"Rent Paid\",\r
+
+    \            \"value\": 0\r
+
+    \        }\r
+
+    \    ],\r
+
+    \    \"paymentData\": {\r
+
+    \        \"bankName\": \"SBI\",\r
+
+    \        \"accNo\": \"123456789012\",\r
+
+    \        \"ifsc\": \"SBIN0001234\",\r
+
+    \        \"branchName\": \"Main Branch\",\r
+
+    \        \"bankAccountHolderName\": \"John Doe\",\r
+
+    \        \"paymentType\": \"CHEQUE\",\r
+
+    \        \"paymentFrequency\": \"MONTHLY\"\r
+
+    \    },\r
+
+    \    \"slabWiseCalculationJSON\": [\r
+
+    \        {\r
+
+    \            \"slabRange\": \"0 - 250,000\",\r
+
+    \            \"rate\": 0,\r
+
+    \            \"applicableIncome\": 250000,\r
+
+    \            \"taxOnSlab\": 0\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"slabRange\": \"250,001 - 500,000\",\r
+
+    \            \"rate\": 5,\r
+
+    \            \"applicableIncome\": 249999,\r
+
+    \            \"taxOnSlab\": 12499.95\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"slabRange\": \"500,001 - 1,000,000\",\r
+
+    \            \"rate\": 20,\r
+
+    \            \"applicableIncome\": 250001,\r
+
+    \            \"taxOnSlab\": 50000.200000000004\r
+
+    \        }\r
+
+    \    ]\r
+
+    }"
+examples: ./.resources/{{hrmsBaseUrl}}-employee-addExistingEmployee Copy.resources/examples
+order: 8000

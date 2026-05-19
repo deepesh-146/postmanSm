@@ -1,0 +1,28 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/payrolls/v3/updatePayrollConfigs/:id"
+url: "{{hrmsBaseUrl}}/payrolls/v3/updatePayrollConfigs/:id"
+method: PUT
+pathVariables:
+  id: 099b0d05-e459-4976-a888-1381852b4371
+body:
+  type: json
+  content: "{\r
+
+    \    \"config_type\": \"salary_structure\",\r
+
+    \    \"value\": \"45.00\",\r
+
+    \    \"formula\": \"45% of CTC as per Latest Wage Code\"\r
+
+    }\r
+
+    \r
+
+    // {\r
+
+    //     \"regime\": \"old\",\r
+
+    //     \"value\": \"50001\"\r
+
+    // }"
+order: 6000

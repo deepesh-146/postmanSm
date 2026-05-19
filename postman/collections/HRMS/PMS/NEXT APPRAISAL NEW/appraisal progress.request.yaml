@@ -1,0 +1,27 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/appraisal/cycle/:cycleId/progress"
+method: GET
+pathVariables:
+  cycleId: ce3fdd1e-9604-4318-b82a-ece797e09880
+body:
+  type: json
+  content: "{\r
+
+    \    \"cycleId\": \"ce3fdd1e-9604-4318-b82a-ece797e09880\",\r
+
+    \    \"kraId\": \"1\",\r
+
+    \    \"assessmentData\": {\r
+
+    \        \"currentAchievement\": \"Achieved 120% of sales target\",\r
+
+    \        \"selfRating\": 4,\r
+
+    \        \"keyAchievements\": \"Closed 5 major deals, exceeded quarterly target\",\r
+
+    \        \"additionalComments\": \"Focused on customer retention strategies\"\r
+
+    \    }\r
+
+    }"
+order: 6000

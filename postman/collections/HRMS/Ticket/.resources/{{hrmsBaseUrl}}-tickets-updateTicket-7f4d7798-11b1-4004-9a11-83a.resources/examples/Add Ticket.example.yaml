@@ -1,0 +1,40 @@
+$kind: http-example
+request:
+  url: "{{hrmsBaseUrl}}/tickets/"
+  method: POST
+  body:
+    type: json
+    content: "{\r
+
+      \    \"description\": \"Just a check Man\",\r
+
+      \    \"employeeId\": \"903bd690-61f3-43db-9edd-d38d531c1c67\",\r
+
+      \    \"ticketCatId\": \"dfd24da3-253f-4f83-ab1c-c6527e1de830\"\r
+
+      }"
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "81"
+    ETag: W/"51-r3EyMNQ+dLBBHgYOmU3SXz2PAFU"
+    Date: Mon, 14 Oct 2024 19:01:07 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "status": {
+              "success": true,
+              "code": 200,
+              "message": "Ticket Created",
+              "failure": false
+          }
+      }
+order: 1000

@@ -1,0 +1,26 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/payrolls/v3/payroll/calendar/generate"
+url: "{{hrmsBaseUrl}}/payrolls/v3/payroll/calendar/generate"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"startDate\": \"2025-12-01\",\r
+
+    \    \"endDate\": \"2025-12-31\"\r
+
+    }\r
+
+    // POST /api/payrolls/v3/payroll/calendar/generate\r
+
+    // {\r
+
+    //   \"officeId\": \"office-uuid-here\",\r
+
+    //   \"startDate\": \"2025-01-01\",\r
+
+    //   \"endDate\": \"2025-12-31\"\r
+
+    // }"
+order: 9000

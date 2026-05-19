@@ -1,0 +1,9 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/job/getAllGrades/eb6df26e-e0d3-4d10-8714-873fef6e213c"
+url: "{{hrmsBaseUrl}}/job/getAllGrades/{{userId}}?size=1&page=1"
+method: GET
+queryParams:
+  size: "1"
+  page: "1"
+examples: ./.resources/{{hrmsBaseUrl}}-job-getAllGrades-eb6df26e-e0d3-4d10-8714-873fef6.resources/examples
+order: 22000

@@ -1,0 +1,12 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/rewards/redeemPoints/{{userId}}"
+url: "{{hrmsBaseUrl}}/rewards/redeemPoints/{{userId}}"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"rewardcatelogId\":\"48b9cd5a-968d-4d01-8a12-bb7f210337ce\"\r
+
+    }"
+order: 29000

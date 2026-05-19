@@ -1,0 +1,12 @@
+$kind: http-request
+description: "Returns: summary (total programs, assignments, completed, in_progress, completion_rate), departmentTraining."
+url: "{{baseUrl}}/mis/training-analytics?dateFrom=2025-01-01&dateTo=2026-03-13"
+method: GET
+headers:
+  Content-Type: application/json
+  x-organization-id: "{{organizationId}}"
+queryParams:
+  dateFrom: 2025-01-01
+  dateTo: 2026-03-13
+examples: ./.resources/2.7 Training Analytics.resources/examples
+order: 7000

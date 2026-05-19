@@ -1,0 +1,13 @@
+$kind: http-request
+description: List all bonus types with filters (pagination, active status, calculation type, search)
+url: "{{base_url}}/api/bonus/types?page=1&size=10&isActive=true&calculationType=PERCENTAGE&search=Annual"
+method: GET
+headers:
+  Authorization: Bearer {{access_token}}
+queryParams:
+  page: "1"
+  size: "10"
+  isActive: "true"
+  calculationType: PERCENTAGE
+  search: Annual
+order: 3000

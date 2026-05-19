@@ -1,0 +1,16 @@
+$kind: http-request
+url: "{{baseUrl}}/workflow/approveRequest/{{approverId}}?key=pip_plan"
+method: POST
+headers:
+  Content-Type: application/json
+queryParams:
+  key: pip_plan
+body:
+  type: text
+  content: |-
+    {
+      "approvalId": "workflow-approval-uuid-here",
+      "status": "REJECTED",
+      "remarks": "Need more clarity on goals and measurement criteria."
+    }
+order: 4000

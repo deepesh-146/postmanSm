@@ -1,0 +1,17 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/employee_loan/close-loan/:loanId"
+method: PUT
+pathVariables:
+  loanId: 2f4f9e66-7659-4a88-8274-75a619e4a6fa
+body:
+  type: json
+  content: "{\r
+
+    \    \"closureType\": \"SETTLEMENT\", // or \"EARLY_CLOSURE\", \"FULL_PAYMENT\", \"PARTIAL_SETTLEMENT\"\r
+
+    \    \"settlementAmount\": 7200,\r
+
+    \    \"reason\": \"Employee requested early settlement\"\r
+
+    }"
+order: 18000

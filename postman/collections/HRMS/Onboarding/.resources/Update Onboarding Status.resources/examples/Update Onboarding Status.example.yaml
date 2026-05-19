@@ -1,0 +1,38 @@
+$kind: http-example
+request:
+  url: "{{hrmsBaseUrl}}/onboarding/onboardingStatus"
+  method: PUT
+  body:
+    type: json
+    content: "{\r
+
+      \    \"onboardingId\": \"f778b358-2db2-4561-9c0b-dc1eda013258\",\r
+
+      \    \"status\": \"COMPANY_VIDEO\"\r
+
+      }"
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "92"
+    ETag: W/"5c-T84n6/R4C7SY00jnkgVE9/kyHmg"
+    Date: Mon, 14 Oct 2024 17:06:22 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "status": {
+              "success": true,
+              "code": 200,
+              "message": "Onboarding Status Updated",
+              "failure": false
+          }
+      }
+order: 1000

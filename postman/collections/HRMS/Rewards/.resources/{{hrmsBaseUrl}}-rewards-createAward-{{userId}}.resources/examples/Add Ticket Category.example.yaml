@@ -1,0 +1,48 @@
+$kind: http-example
+request:
+  url: "{{hrmsBaseUrl}}/tickets/category"
+  method: POST
+  body:
+    type: json
+    content: "{\r
+
+      \    \"name\": \"Management Level Issue\",\r
+
+      \    \"code\": \"CATMAN4585\",\r
+
+      \    \"department\": \"32e8b17d-29e8-4f8f-8078-8ec006e2766e\",\r
+
+      \    \"description\": \"epartment \",\r
+
+      \    \"priority\": \"1\",\r
+
+      \    \"slaDays\": \"1 days\",\r
+
+      \    \"employeeId\": \"903bd690-61f3-43db-9edd-d38d531c1c67\"\r
+
+      }"
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "88"
+    ETag: W/"58-BvYQmdoc22ttiAxOpQ6E+dFNpBY"
+    Date: Mon, 14 Oct 2024 18:59:52 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "status": {
+              "success": true,
+              "code": 200,
+              "message": "Ticket Category Added",
+              "failure": false
+          }
+      }
+order: 1000

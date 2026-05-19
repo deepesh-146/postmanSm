@@ -1,0 +1,8 @@
+$kind: http-request
+url: "{{baseUrl}}/ticket/category?status=ACTIVE"
+method: GET
+queryParams:
+  - key: status
+    value: ACTIVE
+    description: "Optional: ACTIVE or INACTIVE"
+order: 3000

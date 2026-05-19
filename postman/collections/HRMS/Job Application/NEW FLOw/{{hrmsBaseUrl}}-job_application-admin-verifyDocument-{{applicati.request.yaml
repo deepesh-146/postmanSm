@@ -1,0 +1,19 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/job_application/admin/verifyDocument/{{applicationId}}"
+url: "{{hrmsBaseUrl}}/job_application/admin/verifyDocument/{{applicationId}}"
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"documentId\":\"FDSF\", \r
+
+    \    \"documentType\":\"EDUCATION\" ,//\"EDUCATION\", \"EXPERIENCE\"\r
+
+    \    \"status\":\"VERIFIED\", //PENDING\", \"VERIFIED\", \"REJECTED\"\r
+
+    \    \"remarks\":\"VSWJVCS\"\r
+
+    }"
+examples: ./.resources/{{hrmsBaseUrl}}-job_application-admin-verifyDocument-{{applicati.resources/examples
+order: 4000

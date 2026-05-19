@@ -1,0 +1,31 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/employee_loan/getEmployeeLoanById/806b8f1f-55e8-4617-ab06-b4fc643712e3"
+method: GET
+body:
+  type: json
+  content: "{\r
+
+    \    \"loanType\": \"Personal Loan\",\r
+
+    \    \"loanAmount\": 50000.00,\r
+
+    \    \"loanDescription\": \"Need loan for personal expenses and home renovation\",\r
+
+    \    \"tenure\": 24,\r
+
+    \    \"employeeMainId\": \"19c85875-914b-4bf5-9eaf-8e9ce50ac6e1\",\r
+
+    \    \"managerId\": \"703514f3-c4b9-449a-bbf3-2ce177f4ff37\",\r
+
+    \    \"hrId\": \"703514f3-c4b9-449a-bbf3-2ce177f4ff37\",\r
+
+    \    \"approvedDate\": null,\r
+
+    \    \"approvedAmount\": null,\r
+
+    \    \"approvedBy\": null,\r
+
+    \    \"approvedDescription\": null\r
+
+    }"
+order: 5000

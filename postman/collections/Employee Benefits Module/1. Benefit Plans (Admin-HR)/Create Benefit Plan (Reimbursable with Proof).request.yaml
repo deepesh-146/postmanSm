@@ -1,0 +1,33 @@
+$kind: http-request
+url: "{{baseUrl}}/plans"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+        "name": "Gym Membership Reimbursement",
+        "code": "GYM-001",
+        "benefitCategory": "WELLNESS",
+        "description": "Annual gym membership reimbursement",
+        "valueType": "REIMBURSABLE",
+        "amount": 12000,
+        "maxAmount": 12000,
+        "frequency": "YEARLY",
+        "isTaxable": false,
+        "proofRequired": true,
+        "allowedDocumentTypes": [
+            "PDF",
+            "JPG",
+            "PNG"
+        ],
+        "approvalType": "MANUAL",
+        "approvalFlow": [
+            "MANAGER",
+            "HR"
+        ],
+        "effectiveFrom": "2026-04-01",
+        "effectiveTo": "2027-03-31"
+    }
+order: 3000

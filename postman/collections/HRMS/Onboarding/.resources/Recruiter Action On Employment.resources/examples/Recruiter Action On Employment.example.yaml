@@ -1,0 +1,73 @@
+$kind: http-example
+request:
+  url: "{{hrmsBaseUrl}}/employee/actionEmployment"
+  method: PUT
+  body:
+    type: json
+    content: "{\r
+
+      \    \"employeeId\": \"903bd690-61f3-43db-9edd-d38d531c1c67\",\r
+
+      \    \"source\": \"By Call\",\r
+
+      \    \"action\": \"APPROVED\",\r
+
+      \    \"recruiterId\": \"903bd690-61f3-43db-9edd-d38d531c1c67\",\r
+
+      \    \"employmentId\": \"ffafd1cc-fd8b-4a8e-b9d0-60d950d7167c\",\r
+
+      \    \"comments\": \"NA\"\r
+
+      }"
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "986"
+    ETag: W/"3da-xUU2yAZt9He6EvaHGjN7SJMuhWI"
+    Date: Mon, 14 Oct 2024 17:05:16 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "status": {
+              "success": true,
+              "code": 200,
+              "message": "Employment Data Approved",
+              "failure": false
+          },
+          "data": {
+              "id": "ffafd1cc-fd8b-4a8e-b9d0-60d950d7167c",
+              "employeeId": "903bd690-61f3-43db-9edd-d38d531c1c67",
+              "onboardingId": "f778b358-2db2-4561-9c0b-dc1eda013258",
+              "companyName": "CSK",
+              "jobTitle": "Software Developer",
+              "jobLocation": "Patna",
+              "responsibility": "Android, Laravel",
+              "startDate": "2019-09-25T00:00:00.000Z",
+              "endDate": "2020-09-26T00:00:00.000Z",
+              "companyHrEmail": "hr@csk.com",
+              "companyHrMobile": "999999999",
+              "currentCompany": false,
+              "relievingLetterPath": "https://morth.nic.in/sites/default/files/dd12-13_0.pdf",
+              "experienceLetterPath": "https://morth.nic.in/sites/default/files/dd12-13_0.pdf",
+              "sourceVerRej": "By Call",
+              "approved": true,
+              "approvedDate": "2024-10-14T11:35:16.000Z",
+              "approvedById": "903bd690-61f3-43db-9edd-d38d531c1c67",
+              "rejected": false,
+              "rejectedDate": null,
+              "rejectById": null,
+              "comments": "NA",
+              "createdAt": "2024-10-14T03:15:10.000Z",
+              "updatedAt": "2024-10-14T17:05:16.000Z",
+              "employeeMainId": null
+          }
+      }
+order: 1000

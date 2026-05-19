@@ -1,0 +1,18 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/employeePayroll/deleteSalaryPeriod/637b8c66-8035-41fa-aabd-a75b88b545d4"
+url: "{{hrmsBaseUrl}}/employeePayroll/deleteSalaryPeriod/637b8c66-8035-41fa-aabd-a75b88b545d4"
+method: DELETE
+body:
+  type: json
+  content: "{\r
+
+    \    \"periodIds\": [\r
+
+    \        \"d9a27247-a8e3-42a0-85df-efdf726f8b25\",\r
+
+    \        \"e2f461e4-87c4-4561-b80b-1e4cdd428bbc\"\r
+
+    \    ]\r
+
+    }"
+order: 5000

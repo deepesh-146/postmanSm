@@ -1,0 +1,15 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/employee_loan/changeLoanStatus/b743cabe-0de2-4cf9-bda0-c82ea2a7d0ab"
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"approved_by\": \"703514f3-c4b9-449a-bbf3-2ce177f4ff37\",\r
+
+    \    \"status\": \"Approved\"\r
+
+    \    \r
+
+    }"
+order: 8000

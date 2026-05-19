@@ -1,0 +1,6 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/salarycomponents/deleteAllowance/{{allowanceId}}"
+url: "{{hrmsBaseUrl}}/salarycomponents/deleteAllowance/{{allowanceId}}"
+method: DELETE
+examples: ./.resources/{{hrmsBaseUrl}}-salarycomponents-deleteAllowance-{{allowanceId}}.resources/examples
+order: 22000

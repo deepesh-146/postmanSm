@@ -1,0 +1,8 @@
+$kind: http-request
+url: "{{baseUrl}}/eligible/{{employeeId}}"
+method: GET
+queryParams:
+  - key: search
+    value: CI-002
+    disabled: true
+order: 2000

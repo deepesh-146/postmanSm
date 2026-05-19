@@ -1,0 +1,4 @@
+$kind: http-request
+url: "{{baseUrl}}/plans/{{benefitId}}/deactivate"
+method: PATCH
+order: 7000

@@ -1,0 +1,260 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/employee/dashboard/getDailyJobApplicationStats/{{userId}}?startDate=2025-02-01&endDate=2025-02-08 Copy"
+url: "{{hrmsBaseUrl}}/employee//updateProfile/0039c548-0e6f-400c-9aba-2c6c0526b137"
+method: PUT
+queryParams:
+  - key: year
+    value: "2025"
+    disabled: true
+body:
+  type: json
+  content: "{\r
+
+    \    \"employee\": {\r
+
+    \        \"fName\": \"Test a\",\r
+
+    \        \"middleName\": \"p\",\r
+
+    \        \"lName\": \"joi 010125\",\r
+
+    \        \"officialEmail\": \"testa@yopmail.com\",\r
+
+    \        \"mobile\": \"7238467235\",\r
+
+    \        \"officalMobile\": \"7238467235\",\r
+
+    \        \"gender\": \"male\",\r
+
+    \        \"dateOfBirth\": \"2000-01-01T00:00:00.000Z\",\r
+
+    \        \"noticePeriodDay\": 2,\r
+
+    \        \"probationPeriod\": 1,\r
+
+    \        \"marital\": \"single\",\r
+
+    \        \"religion\": \"SAMPLE\",\r
+
+    \        \"nationality\": \"Indian\",\r
+
+    \        \"domicile\": \"SAMPLE\",\r
+
+    \        \"disability\": false,\r
+
+    \        \"disabilityDetail\": \"\",\r
+
+    \        \"passport\": false,\r
+
+    \        \"passportNo\": \"872364872364\",\r
+
+    \        \"passportExpiryDate\": \"2027-01-01T00:00:00.000Z\",\r
+
+    \        \"passportIssuedDate\": \"2023-01-01T00:00:00.000Z\",\r
+
+    \        \"joiningDate\": \"2025-01-01T00:00:00.000Z\",\r
+
+    \        \"hrId\": \"2ae13cab-ec38-498b-801d-707973e2ff31\",\r
+
+    \        \"jobUnitId\": \"afa51b10-5c15-48b7-aed9-4d17e4021743\",\r
+
+    \        \"shiftId\": \"4e9c05b3-8eee-41b9-be3d-dd9dadc479a3\",\r
+
+    \        \"managerId\": \"e97c8808-954c-48dd-be79-38efc5358f05\",\r
+
+    \        \"departmentId\": \"7545e606-12ff-4e96-be46-2cb64103a284\",\r
+
+    \        \"gradeId\": \"c8c00d42-7617-41b7-9309-780d23885abf\",\r
+
+    \        \"officeId\": \"183d5b3f-bb98-4a7c-9b8f-a34117049c2e\",\r
+
+    \        \"jobId\": \"679e0f73-32cd-4ef7-9fdd-30eab9a1f0b3\",\r
+
+    \        \"countryId\": 1,\r
+
+    \        \"probationEndDate\": \"2025-02-01\",\r
+
+    \        \"salutation\": \"Ms\",\r
+
+    \        \"accountActive\": true,\r
+
+    \        \"isMobileAppAttendanceEnabled\": true,\r
+
+    \        \"employmentType\": \"Full-time\",\r
+
+    \        \"dateOfRetirement\": \"2060-01-31\",\r
+
+    \        \"emergencyContactName\": \"test dm\",\r
+
+    \        \"emergencyPhone\": \"8723623874\",\r
+
+    \        \"relation\": \"father\"\r
+
+    \    },\r
+
+    \    \"personalData\": {\r
+
+    \        \"pAddress\": \"test permtn\",\r
+
+    \        \"cAddress\": \"test ciurent\",\r
+
+    \        \"pincode\": \"443101\",\r
+
+    \        \"region\": \"MAHARASHTRA\",\r
+
+    \        \"city\": \"Buldhana\",\r
+
+    \        \"aadharNum\": \"723362487786\",\r
+
+    \        \"panNum\": \"DHEPD8321G\",\r
+
+    \        \"uan\": \"872364734877\",\r
+
+    \        \"bankAcntNum\": \"327826384626\",\r
+
+    \        \"bankAcntName\": \"icici\",\r
+
+    \        \"bankIfsc\": \"ICIC0003772\",\r
+
+    \        \"bankBranch\": \"Main Branch - ICIC\",\r
+
+    \        \"bankAccountHolderName\": \"Test a joi 010125\",\r
+
+    \        \"familydetails\": [\r
+
+    \            {\r
+
+    \                \"name\": \"fam1\",\r
+
+    \                \"relation\": \"Father\",\r
+
+    \                \"dob\": \"1950-01-01\",\r
+
+    \                \"gender\": \"Male\"\r
+
+    \            }\r
+
+    \        ],\r
+
+    \        \"mohreId\": null,\r
+
+    \        \"emiratesId\": null,\r
+
+    \        \"passportNo\": \"872364872364\",\r
+
+    \        \"passportValidTill\": \"2027-01-01T00:00:00.000Z\",\r
+
+    \        \"passportIssuedOnDate\": \"2023-01-01T00:00:00.000Z\",\r
+
+    \        \"placeOfIssue\": \"pune\",\r
+
+    \        \"employeeExitData\": null,\r
+
+    \        \"pwd_data\": {\r
+
+    \            \"challengeGroup\": \"\",\r
+
+    \            \"typeOfChallenge\": \"\",\r
+
+    \            \"degreeOfChallenge\": \"\",\r
+
+    \            \"creditFactor\": \"\",\r
+
+    \            \"officialAgency\": \"\",\r
+
+    \            \"challengeCertDate\": \"\",\r
+
+    \            \"referenceNumber\": \"\",\r
+
+    \            \"secondOfficialAgency\": \"\",\r
+
+    \            \"secondCertDate\": \"\",\r
+
+    \            \"secondReferenceNumber\": \"\",\r
+
+    \            \"disabilityCertificate\": \"\"\r
+
+    \        }\r
+
+    \    },\r
+
+    \    \"educationData\": [\r
+
+    \        {\r
+
+    \            \"clgName\": \"col\",\r
+
+    \            \"univName\": \"uni\",\r
+
+    \            \"clgLocation\": \"loc\",\r
+
+    \            \"specialization\": \"spe\",\r
+
+    \            \"degName\": \"deg\",\r
+
+    \            \"courseName\": \"cou\",\r
+
+    \            \"startDate\": \"2020-01-01T00:00:00.000Z\",\r
+
+    \            \"endDate\": \"2021-01-01T00:00:00.000Z\",\r
+
+    \            \"currPursuing\": false\r
+
+    \        }\r
+
+    \    ],\r
+
+    \    \"employmentData\": [\r
+
+    \        {\r
+
+    \            \"compName\": \"com\",\r
+
+    \            \"jobTitle\": \"job\",\r
+
+    \            \"location\": \"loc\",\r
+
+    \            \"responsibility\": \"resp\",\r
+
+    \            \"startDate\": \"2022-01-01T00:00:00.000Z\",\r
+
+    \            \"endDate\": \"2023-01-01T00:00:00.000Z\",\r
+
+    \            \"currentCompany\": false\r
+
+    \        }\r
+
+    \    ],\r
+
+    \    \"paymentData\": {\r
+
+    \        \"bankName\": \"icici\",\r
+
+    \        \"accNo\": \"327826384626\",\r
+
+    \        \"ifsc\": \"ICIC0003772\",\r
+
+    \        \"branchName\": \"Main Branch - ICIC\",\r
+
+    \        \"bankAccountHolderName\": \"Test a joi 010125\",\r
+
+    \        \"paymentType\": \"UPI\",\r
+
+    \        \"paymentFrequency\": \"MONTHLY\"\r
+
+    \    },\r
+
+    \    \"employeeExitData\": null,\r
+
+    \    \"salaryData\": {\r
+
+    \        \"isSalaryEnabled\": true\r
+
+    \    }\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{clientToken}}"
+order: 8000

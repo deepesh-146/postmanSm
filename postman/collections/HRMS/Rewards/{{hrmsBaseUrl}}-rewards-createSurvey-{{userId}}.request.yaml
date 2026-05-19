@@ -1,0 +1,55 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/rewards/createSurvey/{{userId}}"
+url: "{{hrmsBaseUrl}}/rewards/createSurvey/{{userId}}"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"title\": \"Quarterly Feedback Survey\",\r
+
+    \    \"description\": \"Collecting quarterly feedback.\",\r
+
+    \    \"type\": \"SURVEY\",\r
+
+    \    \"questions\": [\r
+
+    \        {\r
+
+    \            \"question\": \"How satisfied are you?\",\r
+
+    \            \"type\": \"RATING\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"question\": \"What can we improve?\",\r
+
+    \            \"type\": \"TEXT\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"question\": \"Choose the best activity?\",\r
+
+    \            \"type\": \"MULTIPLE_CHOICE\",\r
+
+    \            \"options\": [\r
+
+    \                \"Outing\",\r
+
+    \                \"Workshop\",\r
+
+    \                \"Training\"\r
+
+    \            ]\r
+
+    \        }\r
+
+    \    ]\r
+
+    }"
+examples: ./.resources/{{hrmsBaseUrl}}-rewards-createSurvey-{{userId}}.resources/examples
+order: 21000

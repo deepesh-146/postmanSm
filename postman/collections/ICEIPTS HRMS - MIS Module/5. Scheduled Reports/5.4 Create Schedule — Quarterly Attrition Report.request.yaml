@@ -1,0 +1,23 @@
+$kind: http-request
+description: Schedule a quarterly attrition report to leadership.
+url: "{{baseUrl}}/mis/schedules"
+method: POST
+headers:
+  Content-Type: application/json
+  x-organization-id: "{{organizationId}}"
+body:
+  type: text
+  content: |-
+    {
+      "reportName": "Quarterly Attrition Report",
+      "reportType": "ATTRITION_REPORT",
+      "frequency": "QUARTERLY",
+      "recipients": [
+        {
+          "email": "leadership@company.com"
+        }
+      ],
+      "filters": {},
+      "exportFormat": "EXCEL"
+    }
+order: 4000

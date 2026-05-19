@@ -1,0 +1,6 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/employee_loan/change-tenure/:loanId"
+method: PUT
+pathVariables:
+  loanId: 2f4f9e66-7659-4a88-8274-75a619e4a6fa
+order: 16000

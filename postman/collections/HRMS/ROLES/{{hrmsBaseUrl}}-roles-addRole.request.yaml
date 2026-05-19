@@ -1,0 +1,78 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/roles/addRole"
+url: "{{hrmsBaseUrl}}/roles/addRole"
+method: POST
+body:
+  type: json
+  content: "{   \r
+
+    \    \"roleName\": \"painter\",\r
+
+    \    \"userId\": \"{{userId}}\",\r
+
+    \    \"description\" : \"This is painter\",\r
+
+    \    \"permissionsArray\": [\r
+
+    \        {\r
+
+    \            \"adGroupId\": 6,\r
+
+    \            \"create\": true,\r
+
+    \            \"modify\": true,\r
+
+    \            \"read\": true,\r
+
+    \            \"delete\": true\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"adGroupId\": 7,\r
+
+    \            \"create\": true,\r
+
+    \            \"modify\": true,\r
+
+    \            \"read\": true,\r
+
+    \            \"delete\": true\r
+
+    \        },\r
+
+    \          {\r
+
+    \            \"adGroupId\": 8,\r
+
+    \            \"create\": true,\r
+
+    \            \"modify\": true,\r
+
+    \            \"read\": true,\r
+
+    \            \"delete\": true\r
+
+    \        },\r
+
+    \          {\r
+
+    \            \"adGroupId\": 3,\r
+
+    \            \"create\": true,\r
+
+    \            \"modify\": true,\r
+
+    \            \"read\": true,\r
+
+    \            \"delete\": true\r
+
+    \        }\r
+
+    \        \r
+
+    \    ]\r
+
+    }"
+order: 1000

@@ -1,0 +1,44 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/travels/createReimbursement/{{userId}}"
+url: "{{hrmsBaseUrl}}/travels/createReimbursement/{{userId}}"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"travelId\": \"9979d5f9-ba4d-43cf-9d67-537d8959ecbd\",\r
+
+    \    \"expenseEntries\": [\r
+
+    \        {\r
+
+    \            \"expenseType\": \"TRAVEL\",\r
+
+    \            \"date\": \"2025-05-08\",\r
+
+    \            \"amount\": 1200\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"expenseType\": \"FOOD\",\r
+
+    \            \"date\": \"2025-05-09\",\r
+
+    \            \"amount\": 450\r
+
+    \        }\r
+
+    \    ]\r
+
+    }\r
+
+    // expenseType: {\r
+
+    //     type: DataTypes.ENUM(\"TRAVEL\", \"FOOD\", \"STAY\", \"MISCELLANEOUS\"),\r
+
+    //     allowNull: false,\r
+
+    // },"
+order: 6000

@@ -1,0 +1,17 @@
+$kind: http-request
+description: Generate consolidated report with both PF and ESI side-by-side. Only supports SINGLE_CHALLAN mode.
+url: "{{hrmsBaseUrl}}/compliance/generate"
+method: POST
+headers:
+  Content-Type: application/json
+  Authorization: Bearer {{token}}
+body:
+  type: text
+  content: |-
+    {
+      "empPayrollId": "{{payrollId}}",
+      "reportType": "CONSOLIDATED_PF_ESI_SUMMARY",
+      "challanMode": "SINGLE_CHALLAN",
+      "filters": {}
+    }
+order: 4000

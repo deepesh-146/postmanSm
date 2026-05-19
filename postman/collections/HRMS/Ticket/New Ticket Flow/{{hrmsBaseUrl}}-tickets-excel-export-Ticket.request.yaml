@@ -1,0 +1,5 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/tickets/excel/export-Ticket"
+url: "{{hrmsBaseUrl}}/tickets/excel/export-Ticket"
+method: GET
+order: 9000

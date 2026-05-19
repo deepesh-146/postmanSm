@@ -1,0 +1,8 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/job_application/updateStatus/:jobApplicationId/:status"
+method: PATCH
+pathVariables:
+  jobApplicationId: 4c4053a9-75c4-420d-b918-b71622a1ed16
+  status: INTERVIEW
+examples: ./.resources/Change App Status.resources/examples
+order: 15000

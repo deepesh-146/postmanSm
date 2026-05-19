@@ -1,0 +1,4 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/employee_loan/loan-repayment-history/6a69e47b-89d5-4031-97e5-c11a666774ef"
+method: GET
+order: 14000

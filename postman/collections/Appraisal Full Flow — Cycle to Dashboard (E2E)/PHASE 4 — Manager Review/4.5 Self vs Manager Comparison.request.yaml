@@ -1,0 +1,5 @@
+$kind: http-request
+description: Compare employee self-rating vs manager rating with variance.
+url: "{{baseUrl}}/appraisal/cycle/{{cycleId}}/admin/employee/{{employeeId}}/comparison"
+method: GET
+order: 5000

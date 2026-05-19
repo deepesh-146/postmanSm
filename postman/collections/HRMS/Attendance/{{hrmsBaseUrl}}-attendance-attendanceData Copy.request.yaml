@@ -1,0 +1,9 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/attendance/attendanceData Copy"
+url: "{{hrmsBaseUrl}}/attendance/getAllEmployeeDailyAttanadenceReport/22?startDate=2025-01-15&endDate=2025-01-15"
+method: GET
+queryParams:
+  startDate: 2025-01-15
+  endDate: 2025-01-15
+examples: ./.resources/{{hrmsBaseUrl}}-attendance-attendanceData Copy.resources/examples
+order: 15000

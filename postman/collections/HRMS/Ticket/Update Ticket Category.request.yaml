@@ -1,0 +1,26 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/tickets/category"
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"name\": \"Management Level Issue\",\r
+
+    \    \"code\": \"CATMAN4585\",\r
+
+    \    \"department\": \"32e8b17d-29e8-4f8f-8078-8ec006e2766e\",\r
+
+    \    \"description\": \"epartment \",\r
+
+    \    \"priority\": \"1\",\r
+
+    \    \"slaDays\": \"1 days\",\r
+
+    \    \"employeeId\": \"903bd690-61f3-43db-9edd-d38d531c1c67\",\r
+
+    \    \"ticketCatId\": \"dfd24da3-253f-4f83-ab1c-c6527e1de830\"\r
+
+    }"
+examples: ./.resources/Update Ticket Category.resources/examples
+order: 15000

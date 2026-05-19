@@ -1,0 +1,9 @@
+$kind: http-request
+description: Download Excel file for the challan. File will be in ECR-compliant format ready for EPFO/ESIC portal upload.
+url: "{{hrmsBaseUrl}}/compliance/download/{{challanId}}"
+method: GET
+headers:
+  - key: Authorization
+    value: Bearer {{token}}
+    disabled: true
+order: 1000

@@ -1,0 +1,12 @@
+$kind: http-request
+url: "{{base_url}}/grievances/categories/{{categoryId}}/status"
+method: PATCH
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+        "status": "INACTIVE"
+    }
+order: 11000

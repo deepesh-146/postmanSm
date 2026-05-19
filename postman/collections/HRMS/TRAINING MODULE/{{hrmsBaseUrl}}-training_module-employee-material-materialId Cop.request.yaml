@@ -1,0 +1,7 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/training_module/employee/material/:materialId Copy"
+url: "{{hrmsBaseUrl}}/training_module/employee/material/:materialId"
+method: GET
+pathVariables:
+  materialId: "5"
+order: 8000

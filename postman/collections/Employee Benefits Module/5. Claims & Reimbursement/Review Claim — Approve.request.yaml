@@ -1,0 +1,13 @@
+$kind: http-request
+url: "{{baseUrl}}/claims/{{claimId}}/review"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "action": "APPROVED",
+      "comment": "Verified receipt. Approved for full amount."
+    }
+order: 4000

@@ -1,0 +1,14 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/tickets/priority"
+method: PATCH
+body:
+  type: json
+  content: "{\r
+
+    \    \"priority\": \"1\",\r
+
+    \    \"ticketId\": \"2582dd41-8782-4f2a-b3a7-bd752769d618\"\r
+
+    }"
+examples: ./.resources/Priority Update Ticket.resources/examples
+order: 12000

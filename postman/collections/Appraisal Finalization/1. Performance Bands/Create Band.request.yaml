@@ -1,0 +1,18 @@
+$kind: http-request
+description: Create a new performance band. Score ranges must not overlap with existing active bands.
+url: "{{baseUrl}}/bands"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+        "bandName": "Outstanding",
+        "minScore": 4.5,
+        "maxScore": 5.0,
+        "colorCode": "#28a745",
+        "sortOrder": 1,
+        "isActive": true
+    }
+order: 1000

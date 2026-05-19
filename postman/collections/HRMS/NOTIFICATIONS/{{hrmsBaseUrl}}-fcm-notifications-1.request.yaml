@@ -1,0 +1,10 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/fcm/notifications"
+url: "{{hrmsBaseUrl}}/fcm/notifications?userId={{userId}}&category=&label&isRead"
+method: GET
+queryParams:
+  userId: "{{userId}}"
+  category: ""
+  label: ""
+  isRead: ""
+order: 4000

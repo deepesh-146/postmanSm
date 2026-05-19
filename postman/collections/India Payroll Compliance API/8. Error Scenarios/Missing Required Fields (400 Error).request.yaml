@@ -1,0 +1,14 @@
+$kind: http-request
+description: Test with missing required fields (empPayrollId, challanMode).
+url: "{{hrmsBaseUrl}}/api/compliance/generate"
+method: POST
+headers:
+  Content-Type: application/json
+  Authorization: Bearer {{token}}
+body:
+  type: text
+  content: |-
+    {
+      "reportType": "PF_CHALLAN"
+    }
+order: 3000

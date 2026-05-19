@@ -1,0 +1,32 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/goals/getAllGoalGoalWise"
+url: "{{hrmsBaseUrl}}/goals/getAllGoalGoalWise"
+method: GET
+body:
+  type: json
+  content: "{\r
+
+    \    \"title\": \"Increase Q4 Sales Revenue by 15%\",\r
+
+    \    \"startdate\": \"2023-10-01\",\r
+
+    \    \"enddate\": \"2023-12-31\",\r
+
+    \    \"description\": \"Enhance digital marketing campaigns, leverage social media ads, and introduce strategic partnerships to boost Q4 sales by 15%.\",\r
+
+    \    \"weightage\": 35,\r
+
+    \    \"goal_type\": \"DEPARTMENT\",\r
+
+    \    \"priority\": \"Urgent\",\r
+
+    \    \"assigned_to\": \"Marketing & Sales Growth Team\",\r
+
+    \    \"departmentId\": \"085af46a-57d9-4c68-80b3-086284f90ea2\",\r
+
+    \    \"parentId\": \"{{userId}}\",\r
+
+    \    \"userId\": \"9b048ebe-ea22-4097-8a55-cf8dbef55bc4\"\r
+
+    }"
+order: 4000

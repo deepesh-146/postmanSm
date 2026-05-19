@@ -1,0 +1,43 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/employee/personalUpdate/{{personalId}}"
+url: "{{hrmsBaseUrl}}/employee/personalUpdate/{{personalId}}"
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"isCandidate\": false,\r
+
+    \    \"employeeId\": \"a6c5a61e-5c71-4043-b531-99e7bea61147\",\r
+
+    \    \"personalData\": {\r
+
+    \        \"pAddress\": \"Patna, India\",\r
+
+    \        \"cAddress\": \"Panchkula, Haryana\",\r
+
+    \        \"aadharNum\": \"444444444444\",\r
+
+    \        \"panNum\": \"DJEUJ5745W\",\r
+
+    \        \"bankAcntNum\": \"456456465465\",\r
+
+    \        \"bankAcntName\": \"Indian Bank\",\r
+
+    \        \"bankIfsc\": \"SSDF5585555\",\r
+
+    \        \"bankBranch\": \"Patna\",\r
+
+    \        \"aadharFrontPath\": \"https://morth.nic.in/sites/default/files/dd12-13_0.pdf\",\r
+
+    \        \"aadharBackPath\": \"https://morth.nic.in/sites/default/files/dd12-13_0.pdf\",\r
+
+    \        \"panPath\": \"https://morth.nic.in/sites/default/files/dd12-13_0.pdf\",\r
+
+    \        \"bankPassPath\": \"https://morth.nic.in/sites/default/files/dd12-13_0.pdf\"\r
+
+    \    }\r
+
+    }"
+examples: ./.resources/{{hrmsBaseUrl}}-employee-personalUpdate-{{personalId}}.resources/examples
+order: 3000

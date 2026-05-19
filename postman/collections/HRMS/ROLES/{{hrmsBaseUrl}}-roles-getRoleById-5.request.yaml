@@ -1,0 +1,9 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/roles/getRoleById/5"
+url: "{{hrmsBaseUrl}}/roles/getRoleById/5"
+method: GET
+queryParams:
+  - key: navigationBarData
+    value: "true"
+    disabled: true
+order: 8000

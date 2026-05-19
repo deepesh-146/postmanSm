@@ -1,0 +1,18 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/leave/leaveRequestRejectByHr"
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"employeeId\": \"903bd690-61f3-43db-9edd-d38d531c1c67\",\r
+
+    \    \"hrId\": \"903bd690-61f3-43db-9edd-d38d531c1c67\",\r
+
+    \    \"notes\": \"Rejected\",\r
+
+    \    \"leaveRequestId\": \"e942f1fa-10f6-4f0a-b172-beb9bc9fc34f\"\r
+
+    }"
+examples: ./.resources/Reject Leave By HR.resources/examples
+order: 7000

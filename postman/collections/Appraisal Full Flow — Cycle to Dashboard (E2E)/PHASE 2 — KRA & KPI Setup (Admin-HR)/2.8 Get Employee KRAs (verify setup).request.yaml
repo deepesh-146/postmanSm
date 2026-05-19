@@ -1,0 +1,5 @@
+$kind: http-request
+description: Verify KRAs with their KPIs for the employee.
+url: "{{baseUrl}}/goals/kra/employee/{{employeeId}}"
+method: GET
+order: 8000

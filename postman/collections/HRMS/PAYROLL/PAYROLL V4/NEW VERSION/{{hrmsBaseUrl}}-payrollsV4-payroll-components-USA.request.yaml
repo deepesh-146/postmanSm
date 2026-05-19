@@ -1,0 +1,86 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/payrollsV4/payroll/components/USA"
+url: "{{hrmsBaseUrl}}/payrollsV4/payroll/components/USA"
+method: GET
+queryParams:
+  - key: category
+    value: earning
+    disabled: true
+body:
+  type: json
+  content: "// {\r
+
+    //     \"componentCategory\": \"earning\",\r
+
+    //     \"country\": \"USA\",\r
+
+    //     \"key\": \"performance_bonus\",\r
+
+    //     \"componentName\": \"Performance Bonus\",\r
+
+    //     \"componentType\": \"PERCENTAGE\",\r
+
+    //     \"calculationBase\": \"BASIC\",\r
+
+    //     \"percentageValue\": 10,\r
+
+    //     \"isTaxable\": true,\r
+
+    //     \"regime\": \"BOTH\",\r
+
+    //     \"displayOrder\": 5\r
+
+    // }\r
+
+    \r
+
+    \r
+
+    \r
+
+    {\r
+
+    \  \"componentCategory\": \"standard\",\r
+
+    \  \"country\": \"USA\",\r
+
+    \  \"key\": \"basic\",\r
+
+    \  \"componentName\": \"Basic\",\r
+
+    \  \"componentType\": \"PERCENTAGE\",\r
+
+    \  \"calculationBase\": \"ADJUSTEDCTC\",\r
+
+    \  \"percentageValue\": 80,\r
+
+    \  \"displayOrder\": 1\r
+
+    }\r
+
+    \r
+
+    // {\r
+
+    //   \"componentCategory\": \"deduction\",\r
+
+    //   \"country\": \"USA\",\r
+
+    //   \"key\": \"social_security\",\r
+
+    //   \"componentName\": \"Social Security Tax\",\r
+
+    //   \"componentType\": \"PERCENTAGE\",\r
+
+    //   \"calculationBase\": \"GROSS\",\r
+
+    //   \"percentageValue\": 6.2,\r
+
+    //   \"ceiling\": 160200,\r
+
+    //   \"isMandatory\": true,\r
+
+    //   \"displayOrder\": 1\r
+
+    // }"
+order: 4000

@@ -1,0 +1,10 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/employee/approveDocumentsByCandidateId/faba04b7-80ba-417e-960b-e4e966e6e116"
+url: "{{hrmsBaseUrl}}/employee/approveDocumentsByCandidateId/666a7f3d-48df-4693-af84-7da34f38a3e0"
+method: GET
+queryParams:
+  - key: currentPhase
+    value: FIRST
+    disabled: true
+examples: ./.resources/{{hrmsBaseUrl}}-employee-approveDocumentsByCandidateId-faba04b7-.resources/examples
+order: 9000

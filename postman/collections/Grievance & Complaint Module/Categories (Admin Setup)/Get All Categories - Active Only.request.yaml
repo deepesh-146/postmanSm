@@ -1,0 +1,7 @@
+$kind: http-request
+description: Returns only ACTIVE categories.
+url: "{{base_url}}/grievances/categories/all?status=ACTIVE"
+method: GET
+queryParams:
+  status: ACTIVE
+order: 8000

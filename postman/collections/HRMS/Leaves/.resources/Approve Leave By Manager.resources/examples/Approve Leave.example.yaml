@@ -1,0 +1,42 @@
+$kind: http-example
+request:
+  url: "{{hrmsBaseUrl}}/leave/approve"
+  method: PUT
+  body:
+    type: json
+    content: "{\r
+
+      \    \"employeeId\": \"903bd690-61f3-43db-9edd-d38d531c1c67\",\r
+
+      \    \"managerId\": \"903bd690-61f3-43db-9edd-d38d531c1c67\",\r
+
+      \    \"notes\": \"Approved\",\r
+
+      \    \"leaveRequestId\": \"192c3cc3-ba49-465a-97cb-4b8c83e30dfe\"\r
+
+      }"
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "81"
+    ETag: W/"51-L0dA1ys8UbxnIQ4t/4R6TvGelII"
+    Date: Mon, 14 Oct 2024 18:17:33 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "status": {
+              "success": true,
+              "code": 200,
+              "message": "Leave Approved",
+              "failure": false
+          }
+      }
+order: 1000

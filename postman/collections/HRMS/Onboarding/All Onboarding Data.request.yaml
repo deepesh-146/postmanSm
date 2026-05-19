@@ -1,0 +1,5 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/onboarding/"
+method: GET
+examples: ./.resources/All Onboarding Data.resources/examples
+order: 29000

@@ -1,0 +1,19 @@
+$kind: http-request
+name: Create Grievance - On Behalf (HR/Admin)
+description: HR/Admin can file grievance on behalf of an employee by passing employeeId.
+url: "{{base_url}}/grievances"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+        "employeeId": "{{employeeId}}",
+        "categoryId": "{{categoryId}}",
+        "subject": "Leave balance not updated after policy change",
+        "description": "Employee reported that their leave balance was not updated after the recent policy amendment.",
+        "isAnonymous": false,
+        "priority": "MEDIUM"
+    }
+order: 3000

@@ -1,0 +1,4 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/employee_loan/getAllEmployeeLoans/{{userId}}"
+method: GET
+order: 6000

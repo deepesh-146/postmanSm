@@ -1,0 +1,16 @@
+$kind: http-request
+name: Assign / Reassign Grievance
+description: HR/Admin can assign or reassign a grievance to any employee.
+url: "{{base_url}}/grievances/assign"
+method: PATCH
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+        "grievanceId": "{{grievanceId}}",
+        "assignToEmployeeId": "{{employeeId}}",
+        "comment": "Reassigning to senior HR for further review."
+    }
+order: 9000

@@ -1,0 +1,14 @@
+$kind: http-request
+description: Deactivate a scheduled report without deleting it.
+url: "{{baseUrl}}/mis/schedules/{{scheduleId}}"
+method: PUT
+headers:
+  Content-Type: application/json
+  x-organization-id: "{{organizationId}}"
+body:
+  type: text
+  content: |-
+    {
+      "isActive": false
+    }
+order: 8000

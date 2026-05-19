@@ -1,0 +1,46 @@
+$kind: http-example
+request:
+  url: "{{hrmsBaseUrl}}/department/"
+  method: POST
+  body:
+    type: json
+    content: "{ \r
+
+      \    \"name\": \"CEO\", \r
+
+      \    \"code\": \"CEO1111\", \r
+
+      \    \"head\": \"null\", \r
+
+      \    \"under\": \"null\", \r
+
+      \    \"inside\": \"null\",\r
+
+      \    \"headUser\": true\r
+
+      }"
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "83"
+    ETag: W/"53-VZu8UkRw0oM6Ghi80ExwqFVItko"
+    Date: Wed, 09 Oct 2024 15:29:52 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "status": {
+              "success": true,
+              "code": 200,
+              "message": "Department Added",
+              "failure": false
+          }
+      }
+order: 1000

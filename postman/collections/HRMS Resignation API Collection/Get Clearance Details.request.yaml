@@ -1,0 +1,6 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/resignation/clearance/{{resignationId}}"
+method: GET
+headers:
+  Content-Type: application/json
+order: 4000

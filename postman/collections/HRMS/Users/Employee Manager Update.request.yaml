@@ -1,0 +1,14 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/employee/updateManager"
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"employeeId\": \"903bd690-61f3-43db-9edd-d38d531c1c67\",\r
+
+    \    \"managerId\": \"903bd690-61f3-43db-9edd-d38d531c1c67\"     \r
+
+    }"
+examples: ./.resources/Employee Manager Update.resources/examples
+order: 20000

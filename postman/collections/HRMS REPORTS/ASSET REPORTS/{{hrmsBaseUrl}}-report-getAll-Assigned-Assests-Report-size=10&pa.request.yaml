@@ -1,0 +1,16 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/report/getAll-Assigned-Assests-Report?size=10&page=1"
+url: "{{hrmsBaseUrl}}/report/getAll-Assigned-Assests-Report?size=10&page=1"
+method: GET
+queryParams:
+  - key: size
+    value: "10"
+  - key: page
+    value: "1"
+  - key: statusType
+    value: ASSIGNED
+    disabled: true
+  - key: condition
+    value: GOOD
+    disabled: true
+order: 1000

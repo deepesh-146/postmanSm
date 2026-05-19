@@ -1,0 +1,1130 @@
+{
+  "info": {
+    "_postman_id": "52a673d7-5cd2-4158-9a3c-8fc9db7d3241",
+    "name": "Bonus/Incentive Payment System",
+    "description": "Complete API collection for Bonus and Incentive Payment System - Individual and Batch Processing",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Individual Bonuses",
+      "item": [
+        {
+          "name": "Assign Bonus",
+          "id": "34658691-fa7e-4921-a723-9f2818773b8b",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjFjMjIxNDM0LTk4MDgtNGMyYy05ZGYxLWMwNWUwZGMxNTc2ZCIsInVzZXJJZCI6bnVsbCwidGVuYW50SWQiOiIxYzIyMTQzNC05ODA4LTRjMmMtOWRmMS1jMDVlMGRjMTU3NmQiLCJjbGllbnRJZCI6ImZhbGNvbiIsImVtYWlsIjoiYWRtaW5AZmFsY29uLmNvbSIsIm5hbWUiOiJGYWxjb24gR3JvdXAiLCJmaXJzdE5hbWUiOiJGYWxjb24gR3JvdXAiLCJ1c2VyUm9sZSI6IlRFTkFOVF9PV05FUiIsIm9yZ2FuaXphdGlvbklkIjoiY2I2ZjBlNGYtM2FlMS00ZWQ0LWJiYzktMzMyOWM4ODViYmM5IiwiaWF0IjoxNzY1OTU0NTc4LCJleHAiOjE3NjYwNDA5NzgsImF1ZCI6IkZhbGNvbiBHcm91cCJ9.THAno3FLjbGybrqYr8TnYY_nVRBP4wMMgFOm2WvxJZ8",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"employeeId\": \"053e6c9c-2365-4820-9034-64b45a072f37\",\n    \"amount\": 22222,\n    \"currency\": \"INR\",\n    \"reason\": \"ssssssss\",\n    \"remarks\": \"\",\n    \"bonusTypeId\": \"ed970195-158f-4d26-9ec0-b3cfebe2fd86\",\n    \"tdsAmount\": 0\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{hrmsBaseUrl}}/bonus/assign",
+              "host": [
+                "{{hrmsBaseUrl}}"
+              ],
+              "path": [
+                "bonus",
+                "assign"
+              ]
+            },
+            "description": "Assign a bonus to an employee. Creates workflow instance for approval."
+          },
+          "response": []
+        },
+        {
+          "name": "Get Bonus by ID",
+          "id": "956ef5b4-ec34-449e-ac74-1be6a3d7b30a",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/bonus/:id",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "bonus",
+                ":id"
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": "{{bonus_id}}",
+                  "description": "Bonus UUID"
+                }
+              ]
+            },
+            "description": "Get detailed information about a specific bonus"
+          },
+          "response": []
+        },
+        {
+          "name": "List Bonuses",
+          "id": "0d0d3584-7e94-4ef4-a5a8-940802686196",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/bonus?page=1&size=10",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "bonus"
+              ],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "1",
+                  "description": "Page number"
+                },
+                {
+                  "key": "size",
+                  "value": "10",
+                  "description": "Page size"
+                },
+                {
+                  "key": "workflow_status",
+                  "value": "APPROVED",
+                  "description": "Filter by workflow status: PENDING, APPROVED, REJECTED, COMPLETED",
+                  "disabled": true
+                },
+                {
+                  "key": "paymentStatus",
+                  "value": "PENDING",
+                  "description": "Filter by payment status: PENDING, PAID, CANCELLED",
+                  "disabled": true
+                },
+                {
+                  "key": "employeeId",
+                  "value": "{{employee_id}}",
+                  "description": "Filter by employee ID",
+                  "disabled": true
+                },
+                {
+                  "key": "month",
+                  "value": "2025-04",
+                  "description": "Filter by month (YYYY-MM format)",
+                  "disabled": true
+                }
+              ]
+            },
+            "description": "List all bonuses with pagination and filters"
+          },
+          "response": []
+        },
+        {
+          "name": "Get My Bonuses",
+          "id": "f3c32864-d787-4610-9e57-1e406ad27902",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/bonus/my",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "bonus",
+                "my"
+              ]
+            },
+            "description": "Get all bonuses for the current logged-in employee"
+          },
+          "response": []
+        },
+        {
+          "name": "Update Bonus",
+          "id": "9e0e2bed-0cad-4cfe-88ac-76dda797ce35",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"amount\": 60000,\n  \"reason\": \"Updated performance bonus\",\n  \"tdsAmount\": 6000\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url}}/api/bonus/:id",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "bonus",
+                ":id"
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": "{{bonus_id}}",
+                  "description": "Bonus UUID"
+                }
+              ]
+            },
+            "description": "Update bonus details (only before approval)"
+          },
+          "response": []
+        },
+        {
+          "name": "Mark Bonus as Paid",
+          "id": "efe28407-6713-42fb-ac31-5cce5cbeeacf",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"paymentReference\": \"TXN123456789\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url}}/api/bonus/:id/mark-paid",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "bonus",
+                ":id",
+                "mark-paid"
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": "{{bonus_id}}",
+                  "description": "Bonus UUID"
+                }
+              ]
+            },
+            "description": "Mark bonus as paid (Finance only)"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Pending Approvals",
+          "id": "2f500097-90bc-4bae-83a0-0bd002ae1300",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/bonus/pending-approvals",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "bonus",
+                "pending-approvals"
+              ]
+            },
+            "description": "Get all pending bonus approvals for current user (Manager/HR/Finance)"
+          },
+          "response": []
+        },
+        {
+          "name": "Cancel Bonus",
+          "id": "62d23dd7-6d46-4245-a551-ed56551cb82b",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/bonus/:id/cancel",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "bonus",
+                ":id",
+                "cancel"
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": "{{bonus_id}}",
+                  "description": "Bonus UUID"
+                }
+              ]
+            },
+            "description": "Cancel a bonus (only if not paid)"
+          },
+          "response": []
+        },
+        {
+          "name": "Bulk Assign Bonuses",
+          "id": "05c046ea-3389-4ddc-9482-031a4c1a7537",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"bonuses\": [\n    {\n      \"employeeId\": \"{{employee_id_1}}\",\n      \"amount\": 50000,\n      \"currency\": \"INR\",\n      \"reason\": \"Annual bonus 2024\",\n      \"tdsAmount\": 5000\n    },\n    {\n      \"employeeId\": \"{{employee_id_2}}\",\n      \"amount\": 75000,\n      \"currency\": \"INR\",\n      \"reason\": \"Annual bonus 2024\",\n      \"tdsAmount\": 7500\n    }\n  ]\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url}}/api/bonus/bulk-assign",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "bonus",
+                "bulk-assign"
+              ]
+            },
+            "description": "Create multiple bonuses at once (each goes through workflow individually)"
+          },
+          "response": []
+        }
+      ],
+      "id": "e7847724-72c1-439a-b3dc-b606ea73c0ca",
+      "description": "Individual bonus operations - assign, view, update, mark as paid"
+    },
+    {
+      "name": "Bonus Types",
+      "item": [
+        {
+          "name": "Create Bonus Type",
+          "id": "6146d00b-d3a1-4599-85f4-40d474e11c27",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Annual Performance Bonus\",\n  \"code\": \"ANNUAL_BONUS\",\n  \"calculationType\": \"PERCENTAGE\",\n  \"percentage\": 10,\n  \"description\": \"Annual performance bonus based on employee performance\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url}}/api/bonus/types",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "bonus",
+                "types"
+              ]
+            },
+            "description": "Create a new bonus type (PERCENTAGE, FIXED, or FORMULA)"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Bonus Type by ID",
+          "id": "36377224-1ec1-4dcc-96fd-f9d9755dfe0e",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/bonus/types/:id",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "bonus",
+                "types",
+                ":id"
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": "{{bonus_type_id}}",
+                  "description": "Bonus Type UUID"
+                }
+              ]
+            },
+            "description": "Get detailed information about a specific bonus type"
+          },
+          "response": []
+        },
+        {
+          "name": "List Bonus Types",
+          "id": "a5dcdecb-e150-42d5-9dee-8384793f67c8",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/bonus/types?page=1&size=10&isActive=true&calculationType=PERCENTAGE&search=Annual",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "bonus",
+                "types"
+              ],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "1"
+                },
+                {
+                  "key": "size",
+                  "value": "10"
+                },
+                {
+                  "key": "isActive",
+                  "value": "true"
+                },
+                {
+                  "key": "calculationType",
+                  "value": "PERCENTAGE"
+                },
+                {
+                  "key": "search",
+                  "value": "Annual"
+                }
+              ]
+            },
+            "description": "List all bonus types with filters (pagination, active status, calculation type, search)"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Active Bonus Types",
+          "id": "3f8e6bcd-dc79-4497-ade6-e687a3e08989",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/bonus/types/active/list",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "bonus",
+                "types",
+                "active",
+                "list"
+              ]
+            },
+            "description": "Get all active bonus types (for dropdowns)"
+          },
+          "response": []
+        },
+        {
+          "name": "Update Bonus Type",
+          "id": "73274400-6591-46c1-bd82-8aec6048a296",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Annual Performance Bonus (Updated)\",\n  \"percentage\": 12,\n  \"isActive\": true\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url}}/api/bonus/types/:id",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "bonus",
+                "types",
+                ":id"
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": "{{bonus_type_id}}",
+                  "description": "Bonus Type UUID"
+                }
+              ]
+            },
+            "description": "Update an existing bonus type"
+          },
+          "response": []
+        },
+        {
+          "name": "Delete Bonus Type",
+          "id": "9cfe4ba0-0680-47e5-b212-027b89a1873f",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/bonus/types/:id",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "bonus",
+                "types",
+                ":id"
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": "{{bonus_type_id}}",
+                  "description": "Bonus Type UUID"
+                }
+              ]
+            },
+            "description": "Delete a bonus type (soft delete if in use, hard delete otherwise)"
+          },
+          "response": []
+        }
+      ],
+      "id": "753a722c-906b-4dc6-a902-fb268233d5a1",
+      "description": "Bonus type management - create, list, update, delete bonus types"
+    },
+    {
+      "name": "Payout Cycles (Batch Processing)",
+      "item": [
+        {
+          "name": "Create Payout Cycle",
+          "id": "d39925d4-938d-4cff-b2ca-11bdb24aef90",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"cycleName\": \"Annual Bonus - April 2025\",\n  \"cycleMonth\": \"2025-04-01\",\n  \"bonusIds\": [\n    \"{{bonus_id_1}}\",\n    \"{{bonus_id_2}}\",\n    \"{{bonus_id_3}}\"\n  ]\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url}}/api/bonus/payout-cycles",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "bonus",
+                "payout-cycles"
+              ]
+            },
+            "description": "Create a new payout cycle (optional: link bonuses immediately)"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Cycle by ID",
+          "id": "06a92912-bdaa-4a9c-a56f-4a2cd70fc95a",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/bonus/payout-cycles/:id",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "bonus",
+                "payout-cycles",
+                ":id"
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": "{{cycle_id}}",
+                  "description": "Cycle UUID"
+                }
+              ]
+            },
+            "description": "Get detailed information about a payout cycle including all linked bonuses"
+          },
+          "response": []
+        },
+        {
+          "name": "List Payout Cycles",
+          "id": "cd4a2fa0-b8e1-4112-ad83-7a5a4ce48016",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/bonus/payout-cycles?page=1&size=10",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "bonus",
+                "payout-cycles"
+              ],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "1",
+                  "description": "Page number"
+                },
+                {
+                  "key": "size",
+                  "value": "10",
+                  "description": "Page size"
+                },
+                {
+                  "key": "status",
+                  "value": "FINALIZED",
+                  "description": "Filter by status: DRAFT, FINALIZED, PAID, CANCELLED",
+                  "disabled": true
+                },
+                {
+                  "key": "month",
+                  "value": "2025-04",
+                  "description": "Filter by month (YYYY-MM format)",
+                  "disabled": true
+                }
+              ]
+            },
+            "description": "List payout cycles with optional filters"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Available Bonuses",
+          "id": "f5138ef8-277b-42b3-98b1-96ff13ee9d53",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/bonus/payout-cycles/available-bonuses",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "bonus",
+                "payout-cycles",
+                "available-bonuses"
+              ],
+              "query": [
+                {
+                  "key": "employeeId",
+                  "value": "{{employee_id}}",
+                  "description": "Filter by employee ID",
+                  "disabled": true
+                },
+                {
+                  "key": "month",
+                  "value": "2025-04",
+                  "description": "Filter by month (YYYY-MM format)",
+                  "disabled": true
+                }
+              ]
+            },
+            "description": "Get bonuses available for adding to a payout cycle"
+          },
+          "response": []
+        },
+        {
+          "name": "Add Bonuses to Cycle",
+          "id": "a9e4c6e0-6b5d-4cb9-af6d-7d0873455432",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"bonusIds\": [\n    \"{{bonus_id_1}}\",\n    \"{{bonus_id_2}}\",\n    \"{{bonus_id_3}}\"\n  ]\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url}}/api/bonus/payout-cycles/:id/bonuses",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "bonus",
+                "payout-cycles",
+                ":id",
+                "bonuses"
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": "{{cycle_id}}",
+                  "description": "Cycle UUID"
+                }
+              ]
+            },
+            "description": "Add bonuses to an existing DRAFT cycle"
+          },
+          "response": []
+        },
+        {
+          "name": "Remove Bonuses from Cycle",
+          "id": "c49623ce-5ba3-4d13-b303-f4c3061170d0",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"bonusIds\": [\n    \"{{bonus_id_1}}\",\n    \"{{bonus_id_2}}\"\n  ]\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url}}/api/bonus/payout-cycles/:id/bonuses",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "bonus",
+                "payout-cycles",
+                ":id",
+                "bonuses"
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": "{{cycle_id}}",
+                  "description": "Cycle UUID"
+                }
+              ]
+            },
+            "description": "Remove bonuses from a DRAFT cycle"
+          },
+          "response": []
+        },
+        {
+          "name": "Finalize Cycle",
+          "id": "2cb93f2d-8db6-4f1f-8440-27127cd25028",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/bonus/payout-cycles/:id/finalize",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "bonus",
+                "payout-cycles",
+                ":id",
+                "finalize"
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": "{{cycle_id}}",
+                  "description": "Cycle UUID"
+                }
+              ]
+            },
+            "description": "Finalize a DRAFT cycle. Locks all bonuses and calculates totals."
+          },
+          "response": []
+        },
+        {
+          "name": "Mark Cycle as Paid",
+          "id": "276b80cc-9888-45a8-9e19-5fbd068debf8",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/bonus/payout-cycles/:id/mark-paid",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "bonus",
+                "payout-cycles",
+                ":id",
+                "mark-paid"
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": "{{cycle_id}}",
+                  "description": "Cycle UUID"
+                }
+              ]
+            },
+            "description": "Mark a FINALIZED cycle as paid. Updates all linked bonuses to PAID status."
+          },
+          "response": []
+        },
+        {
+          "name": "Cancel Cycle",
+          "id": "73ccd5ae-be5b-44ab-b3c8-11b6598ce683",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/bonus/payout-cycles/:id/cancel",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "bonus",
+                "payout-cycles",
+                ":id",
+                "cancel"
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": "{{cycle_id}}",
+                  "description": "Cycle UUID"
+                }
+              ]
+            },
+            "description": "Cancel a DRAFT cycle and unlink all bonuses"
+          },
+          "response": []
+        }
+      ],
+      "id": "a382531d-b6dc-4655-a89c-758ee8bba56b",
+      "description": "Batch processing operations - create cycles, finalize, and mark as paid"
+    },
+    {
+      "name": "Workflow (Existing)",
+      "item": [
+        {
+          "name": "Approve/Reject Bonus",
+          "id": "7d4dce42-1796-4e01-953f-76d35aed5f1e",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"approvalId\": \"{{approval_id}}\",\n  \"action\": \"APPROVED\",\n  \"comments\": \"Approved - good performance\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url}}/api/workflow/approve",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "workflow",
+                "approve"
+              ]
+            },
+            "description": "Approve or reject bonus using existing workflow approval endpoint. Use 'employee_bonus' as the key parameter if needed."
+          },
+          "response": []
+        }
+      ],
+      "id": "5db508db-e83a-4c7a-a490-cc9607e745f4",
+      "description": "Workflow approval operations (uses existing workflow system)"
+    }
+  ],
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "{{clientToken}}",
+        "type": "string"
+      }
+    ]
+  },
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "id": "31fb0f3c-367b-43e5-b705-ee9b4a29d37f",
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "id": "bf65e1fb-d273-400e-8b82-2f3710bfa500",
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "id": "92c1c664-fea7-4d7e-a832-5bb072feae6f",
+      "key": "base_url",
+      "value": "http://localhost:3000"
+    },
+    {
+      "id": "bd65a039-065b-44eb-a977-30d029399f7c",
+      "key": "access_token",
+      "value": ""
+    },
+    {
+      "id": "c848fe5c-a277-494c-b8db-a9cec383b4ab",
+      "key": "employee_id",
+      "value": ""
+    },
+    {
+      "id": "8a20539d-b080-46f1-8634-a2875ab852f2",
+      "key": "bonus_id",
+      "value": ""
+    },
+    {
+      "id": "49c4653a-9f86-436f-9724-266a9696ccb7",
+      "key": "cycle_id",
+      "value": ""
+    },
+    {
+      "id": "f898e164-0d63-4220-948c-f8fc1457045a",
+      "key": "bonus_type_id",
+      "value": ""
+    },
+    {
+      "id": "9f698c62-029e-43df-80cf-1d72d9882be7",
+      "key": "approval_id",
+      "value": ""
+    }
+  ]
+}

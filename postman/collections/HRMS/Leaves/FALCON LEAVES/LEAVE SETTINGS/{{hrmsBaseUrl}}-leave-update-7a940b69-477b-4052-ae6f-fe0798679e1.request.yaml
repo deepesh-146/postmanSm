@@ -1,0 +1,80 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/leave/update/7a940b69-477b-4052-ae6f-fe0798679e1c"
+url: "{{hrmsBaseUrl}}/leave/update/7a940b69-477b-4052-ae6f-fe0798679e1c"
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"leaveId\": \"a6931b63-c8d2-477d-8e9f-e346196549b1\",\r
+
+    \    \"entitlement\": \"Fixed\",\r
+
+    \    \"accrual\": \"Yearly\",\r
+
+    \    \"number_of_days\": 12,\r
+
+    \    \"credit_on_min_days\": \"Days Leave\",\r
+
+    \    \"eligible_for_credit\": \"On DOJ\",\r
+
+    \    \"avail_after\": \"DOJ\",\r
+
+    \    \"no_leave_if_join_after\": 15,\r
+
+    \    \"do_not_club_with\": \"Sick Leave, Casual Leave\",\r
+
+    \    \"round_off_leave_days\": \"No Round Off\",\r
+
+    \    \"allow_carryforward\": \"Yes\",\r
+
+    \    \"carryforward_limit\": 10,\r
+
+    \    \"prior_approval_required\": true,\r
+
+    \    \"prior_approval_days\": 2,\r
+
+    \    \"count_weekoff\": false,\r
+
+    \    \"count_holidays\": false,\r
+
+    \    \"count_od_wfh\": false,\r
+
+    \    \"allow_negative_balance\": false,\r
+
+    \    \"negative_leave_limit\": 0,\r
+
+    \    \"allow_half_day\": true,\r
+
+    \    \"pro_rata\": false,\r
+
+    \    \"allow_encashable\": false,\r
+
+    \    \"max_leave_at_once\": 5,\r
+
+    \    \"min_leave_at_once\": 1,\r
+
+    \    \"max_leave_in_month\": 6,\r
+
+    \    \"display_message_for_more_than\": \"Leaves\",\r
+
+    \    \"apply_from_ess\": true,\r
+
+    \    \"max_leave_instance_year\": 10,\r
+
+    \    \"no_application_in_notice_period\": false,\r
+
+    \    \"attachment_required\": true,\r
+
+    \    \"display_in_payslip\": true,\r
+
+    \    \"no_leave_in_case_esi_deducted\": false,\r
+
+    \    \"gender_specific\": \"Both\",\r
+
+    \    \"remarks\": \"Leave rules as per policy\",\r
+
+    \    \"isActive\": true\r
+
+    }"
+order: 4000

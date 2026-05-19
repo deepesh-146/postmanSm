@@ -1,0 +1,4 @@
+$kind: http-request
+url: "{{baseUrl}}/pip/{{pipId}}/progress-logs"
+method: GET
+order: 1000

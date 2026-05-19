@@ -1,0 +1,5 @@
+$kind: http-request
+description: Download existing appraisal data export for comparison with finalization export.
+url: "{{baseUrl}}/appraisal/cycle/{{cycleId}}/export"
+method: GET
+order: 3000

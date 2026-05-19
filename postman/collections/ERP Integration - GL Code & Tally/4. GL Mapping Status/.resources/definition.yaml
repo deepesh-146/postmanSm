@@ -1,0 +1,3 @@
+$kind: collection
+description: Check if salary components are properly mapped to GL accounts
+order: 4000

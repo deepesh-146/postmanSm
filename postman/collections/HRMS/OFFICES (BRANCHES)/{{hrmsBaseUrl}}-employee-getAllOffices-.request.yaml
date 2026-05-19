@@ -1,0 +1,20 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/employee/getAllOffices/"
+url: "{{hrmsBaseUrl}}/employee/getAllOffices/?page=1&size=5"
+method: GET
+queryParams:
+  - key: search
+    value: Delhi
+    disabled: true
+  - key: location
+    value: ""
+    disabled: true
+  - key: page
+    value: "1"
+  - key: size
+    value: "5"
+auth:
+  type: bearer
+  credentials:
+    token: "{{orgToken}}"
+order: 6000

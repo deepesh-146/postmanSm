@@ -1,0 +1,18 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/loan-policy/validate-eligibility/check-eligibility"
+url: "{{hrmsBaseUrl}}/loan-policy/validate-eligibility/check-eligibility"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"loanTypeId\": \"d96b3650-2af9-472c-90dc-074b0d755a2c\",\r
+
+    \    \"employeeId\": \"0c5b5932-a5df-4aea-a782-0bd76a246bbb\",\r
+
+    \    \"requestedAmount\": 40000,\r
+
+    \    \"requestedTenure\": 12\r
+
+    }"
+order: 5000

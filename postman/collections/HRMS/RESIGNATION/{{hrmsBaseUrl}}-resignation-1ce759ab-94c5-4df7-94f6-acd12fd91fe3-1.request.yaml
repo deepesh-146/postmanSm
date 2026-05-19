@@ -1,0 +1,9 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/resignation/1ce759ab-94c5-4df7-94f6-acd12fd91fe3/earnings?typeFilter=EARNING"
+url: "{{hrmsBaseUrl}}/resignation/1ce759ab-94c5-4df7-94f6-acd12fd91fe3/earnings"
+method: GET
+queryParams:
+  - key: type
+    value: EARNING
+    disabled: true
+order: 8000

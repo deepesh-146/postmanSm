@@ -1,0 +1,13 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/report/payroll/reimbursement-report?size=10&page=1"
+url: "{{hrmsBaseUrl}}/report/payroll/reimbursement-report?page=1&size=10&search=QA"
+method: GET
+queryParams:
+  page: "1"
+  size: "10"
+  search: QA
+auth:
+  type: bearer
+  credentials:
+    token: "{{clientToken}}"
+order: 6000

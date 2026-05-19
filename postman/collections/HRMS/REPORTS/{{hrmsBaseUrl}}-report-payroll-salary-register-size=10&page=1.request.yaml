@@ -1,0 +1,8 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/report/payroll/salary-register?size=10&page=1"
+url: "{{hrmsBaseUrl}}/report/payroll/salary-register?size=10&page=1"
+method: GET
+queryParams:
+  size: "10"
+  page: "1"
+order: 4000

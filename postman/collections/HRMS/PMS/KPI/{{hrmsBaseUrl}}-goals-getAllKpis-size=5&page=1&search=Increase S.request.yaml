@@ -1,0 +1,9 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/goals/getAllKpis?size=5&page=1&search=Increase Sales"
+url: "{{hrmsBaseUrl}}/goals/getAllKpis?size=5&page=1&search=Increase Sales"
+method: GET
+queryParams:
+  size: "5"
+  page: "1"
+  search: Increase Sales
+order: 2000

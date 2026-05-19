@@ -1,0 +1,16 @@
+$kind: http-request
+description: "Add a recommendation for an employee. type: PROMOTION | INCREMENT | BONUS | TRAINING | PIP | WARNING | NO_ACTION. priority: LOW | MEDIUM | HIGH. pipPlanId is optional (used when type=PIP to link existing PIP plan)."
+url: "{{baseUrl}}/scores/{{finalScoreId}}/recommendations"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+        "type": "PROMOTION",
+        "details": "Recommend promotion to Senior Engineer based on consistent outstanding performance across 3 cycles",
+        "priority": "HIGH",
+        "pipPlanId": null
+    }
+order: 1000

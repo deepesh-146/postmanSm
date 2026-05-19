@@ -1,0 +1,16 @@
+$kind: http-request
+name: Finance Approval/Rejection
+url: "{{hrmsBaseUrl}}/employee_loan/financeApproval/c0874a1e-a732-4f12-a95a-087c2e5bcf39"
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"financeId\": \"{{userId}}\",\r
+
+    \    \"status\": \"Approved\",\r
+
+    \    \"approvedAmount\": 2200\r
+
+    }"
+order: 10000

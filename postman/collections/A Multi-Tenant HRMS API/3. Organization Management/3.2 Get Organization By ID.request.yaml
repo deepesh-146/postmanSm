@@ -1,0 +1,7 @@
+$kind: http-request
+description: Get organization details by ID. Automatically scoped to tenant.
+url: "{{hrmsBaseUrl}}/organizations/{{organizationId}}"
+method: GET
+headers:
+  Authorization: Bearer {{orgToken}}
+order: 2000

@@ -1,0 +1,38 @@
+$kind: http-example
+request:
+  url: "{{hrmsBaseUrl}}/ad_group/withdraw"
+  method: PATCH
+  body:
+    type: json
+    content: "{\r
+
+      \    \"requestId\": \"53281063-d65b-4660-9c6a-7d307decf379\",\r
+
+      \    \"employeeId\": \"903bd690-61f3-43db-9edd-d38d531c1c67\"\r
+
+      }"
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "84"
+    ETag: W/"54-tkJ0AJieYl1ZmyzM6xFMqbBBm+A"
+    Date: Mon, 14 Oct 2024 17:36:53 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "status": {
+              "success": true,
+              "code": 200,
+              "message": "Request Withdrawn",
+              "failure": false
+          }
+      }
+order: 1000

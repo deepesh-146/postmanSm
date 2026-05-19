@@ -1,0 +1,40 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/employee/updateSalary/:employeeId"
+method: PUT
+pathVariables:
+  employeeId: 903bd690-61f3-43db-9edd-d38d531c1c67
+body:
+  type: json
+  content: "{\r
+
+    \    \"salaryId\": \"df7f1b41-b059-4f9e-93e1-417678bddec7\",\r
+
+    \    \"month\": \"10\",\r
+
+    \    \"year\": \"2024\",\r
+
+    \    \"basic\": 252555,\r
+
+    \    \"hra\": 5455,        \r
+
+    \    \"da\": 3565,        \r
+
+    \    \"bonus\": 1585,        \r
+
+    \    \"pf\": 2500,        \r
+
+    \    \"othEarn\": 5658,        \r
+
+    \    \"othDed\": 500,        \r
+
+    \    \"earnNote\": \"Bonus\",        \r
+
+    \    \"dedNote\": \"Contribution Fee\",        \r
+
+    \    \"notes\": \"Salary for October\",        \r
+
+    \    \"employeeId\": \"903bd690-61f3-43db-9edd-d38d531c1c67\"\r
+
+    }"
+examples: ./.resources/Employee Salary Update New Copy.resources/examples
+order: 28000

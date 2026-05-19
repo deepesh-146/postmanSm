@@ -1,0 +1,5 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/employee/dashboard/recruiterdepartmentstat/{{userId}}"
+url: "{{hrmsBaseUrl}}/employee/dashboard/recruiterdepartmentstat/{{userId}}"
+method: GET
+order: 5000

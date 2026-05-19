@@ -1,0 +1,39 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/job/createGrade/eb6df26e-e0d3-4d10-8714-873fef6e213c"
+url: "{{hrmsBaseUrl}}/job/createGrade/eb6df26e-e0d3-4d10-8714-873fef6e213c"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"gradeData\": [\r
+
+    \        {\r
+
+    \            \"gradeName\": \"ssss111\",\r
+
+    \            \"options\": \"ENTRY LEVEL\",\r
+
+    \            \"type\": \"A1\",\r
+
+    \            \"employeeMainId\": \"eb6df26e-e0d3-4d10-8714-873fef6e213c\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"gradeName\": \"ooo1111111\",\r
+
+    \            \"options\": \"ENTRY LEVEL\",\r
+
+    \            \"type\": \"A2\",\r
+
+    \            \"employeeMainId\": \"eb6df26e-e0d3-4d10-8714-873fef6e213c\"\r
+
+    \        }\r
+
+    \    ]\r
+
+    }"
+examples: ./.resources/{{hrmsBaseUrl}}-job-createGrade-eb6df26e-e0d3-4d10-8714-873fef6e.resources/examples
+order: 19000

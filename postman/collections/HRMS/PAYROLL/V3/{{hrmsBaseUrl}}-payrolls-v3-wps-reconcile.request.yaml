@@ -1,0 +1,19 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/payrolls/v3/wps/reconcile"
+url: "{{hrmsBaseUrl}}/payrolls/v3/wps/reconcile"
+method: PUT
+body:
+  type: formdata
+  content:
+    - type: text
+      key: batchId
+      value: 550e8400-e29b-41d4-a716-446655440003
+    - type: file
+      key: file
+      src: []
+      description: |-
+        employee_code,paid_amount,status,reason_code,paid_date
+        E001,5000.00,PAID,,2024-08-31
+        E002,7300.00,PAID,,2024-08-31
+        E003,4000.00,FAILED,INVALID_IBAN,2024-08-31
+order: 11000

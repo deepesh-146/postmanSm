@@ -1,0 +1,23 @@
+$kind: http-request
+description: Schedule monthly leave analytics report.
+url: "{{baseUrl}}/mis/schedules"
+method: POST
+headers:
+  Content-Type: application/json
+  x-organization-id: "{{organizationId}}"
+body:
+  type: text
+  content: |-
+    {
+      "reportName": "Monthly Leave Analytics",
+      "reportType": "LEAVE_ANALYTICS",
+      "frequency": "MONTHLY",
+      "recipients": [
+        {
+          "email": "hr-ops@company.com"
+        }
+      ],
+      "filters": {},
+      "exportFormat": "CSV"
+    }
+order: 5000

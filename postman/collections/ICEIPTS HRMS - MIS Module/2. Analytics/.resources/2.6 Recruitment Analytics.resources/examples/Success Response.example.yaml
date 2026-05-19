@@ -1,0 +1,43 @@
+$kind: http-example
+request:
+  url: "{{baseUrl}}/mis/recruitment-analytics?dateFrom=2025-01-01&dateTo=2026-03-13"
+  method: GET
+  headers:
+    Content-Type: application/json
+    x-organization-id: "{{organizationId}}"
+  queryParams:
+    dateFrom: 2025-01-01
+    dateTo: 2026-03-13
+response:
+  statusCode: 200
+  statusText: OK
+  body:
+    type: text
+    content: |-
+      {
+        "success": true,
+        "status": 200,
+        "message": "Recruitment analytics retrieved successfully",
+        "data": {
+          "pipeline": {
+            "open_positions": 15,
+            "total_applications": 245,
+            "offers_accepted": 28,
+            "offers_rejected": 5,
+            "total_offers": 35
+          },
+          "timeToHire": {
+            "avg_days_to_offer": 22.5,
+            "min_days": 7,
+            "max_days": 65
+          },
+          "sources": [
+            { "source": "LinkedIn", "count": 95 },
+            { "source": "Referral", "count": 60 },
+            { "source": "Direct", "count": 45 },
+            { "source": "Naukri", "count": 30 }
+          ],
+          "offerAcceptanceRate": "80.00"
+        }
+      }
+order: 1000

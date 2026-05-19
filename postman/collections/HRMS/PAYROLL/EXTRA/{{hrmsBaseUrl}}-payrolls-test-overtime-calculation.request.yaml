@@ -1,0 +1,20 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/payrolls/test-overtime-calculation"
+url: "{{hrmsBaseUrl}}/payrolls/test-overtime-calculation"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"employeeId\": \"{{userId}}\",\r
+
+    \    \"month\": 8,\r
+
+    \    \"year\": 2025,\r
+
+    \    \"country\": \"UAE\",\r
+
+    \    \"financialYear\": \"2025-26\"\r
+
+    }"
+order: 22000

@@ -1,0 +1,8 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/timesheet/getAllProject/{{userId}}?size=5&page=1"
+url: "{{hrmsBaseUrl}}/timesheet/getAllProject/{{userId}}?size=5&page=1"
+method: GET
+queryParams:
+  size: "5"
+  page: "1"
+order: 3000

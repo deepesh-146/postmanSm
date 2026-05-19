@@ -1,0 +1,40 @@
+$kind: http-example
+request:
+  url: "{{hrmsBaseUrl}}/tickets/working"
+  method: PATCH
+  body:
+    type: json
+    content: "{\r
+
+      \    \"comment\": \"Test\",\r
+
+      \    \"employeeId\": \"903bd690-61f3-43db-9edd-d38d531c1c67\",\r
+
+      \    \"ticketId\": \"2582dd41-8782-4f2a-b3a7-bd752769d618\"\r
+
+      }"
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "99"
+    ETag: W/"63-2GfgyWGPOUeGqE/RsYGWeS7fjAs"
+    Date: Mon, 14 Oct 2024 19:07:47 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "status": {
+              "success": true,
+              "code": 200,
+              "message": "Ticket Status changed to Working",
+              "failure": false
+          }
+      }
+order: 1000

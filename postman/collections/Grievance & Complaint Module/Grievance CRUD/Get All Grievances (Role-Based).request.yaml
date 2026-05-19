@@ -1,0 +1,8 @@
+$kind: http-request
+description: "Employee: sees own only. Manager: own + assigned. HR/Admin: all in org."
+url: "{{base_url}}/grievances?page=1&size=10"
+method: GET
+queryParams:
+  page: "1"
+  size: "10"
+order: 4000

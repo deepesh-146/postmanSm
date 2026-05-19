@@ -1,0 +1,17 @@
+$kind: http-request
+description: Add new members to an approval group
+url: "{{baseUrl}}/approval-groups/{{groupId}}/members"
+method: POST
+headers:
+  Authorization: Bearer {{authToken}}
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "employeeIds": [
+        "d103350c-b575-4852-ab1f-809557deb0e7"
+       
+      ]
+    }
+order: 6000

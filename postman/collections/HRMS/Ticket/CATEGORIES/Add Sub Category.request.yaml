@@ -1,0 +1,15 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/tickets/category"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"name\": \"Onboarding\",\r
+
+    \    \"parentId\": \"2f93cc73-a41e-45a7-8b21-031d5fdc8ce4\",\r
+
+    \    \"description\": \"New employee onboarding requests\"\r
+
+    }"
+order: 2000

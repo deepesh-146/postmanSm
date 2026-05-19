@@ -1,0 +1,7 @@
+$kind: http-request
+description: Get a specific approval group by its ID
+url: "{{baseUrl}}/approval-groups/{{groupId}}"
+method: GET
+headers:
+  Authorization: Bearer {{authToken}}
+order: 3000

@@ -1,0 +1,20 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/resignation/6e5632b2-b1d8-4f02-8b37-ab1689d7ae0b/reject"
+url: "{{hrmsBaseUrl}}/resignation/6e5632b2-b1d8-4f02-8b37-ab1689d7ae0b/reject"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"empBody\": {\r
+
+    \        \"status\": \"rejected\",\r
+
+    \        \"rejectId\": \"{{userId}}\",\r
+
+    \        \"reason\":\"CANT ACCEPT\"\r
+
+    \    }\r
+
+    }"
+order: 6000

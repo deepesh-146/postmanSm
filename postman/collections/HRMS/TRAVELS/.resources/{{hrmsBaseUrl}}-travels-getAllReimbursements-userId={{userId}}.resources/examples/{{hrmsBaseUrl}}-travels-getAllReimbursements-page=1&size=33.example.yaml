@@ -1,0 +1,122 @@
+$kind: http-example
+name: "{{hrmsBaseUrl}}/travels/getAllReimbursements?page=1&size=33"
+request:
+  url: "{{hrmsBaseUrl}}/travels/getAllReimbursements?page=1&size=33"
+  method: GET
+  queryParams:
+    - key: userId
+      value: "{{userId}}"
+      disabled: true
+    - key: page
+      value: "1"
+    - key: size
+      value: "33"
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "1731"
+    ETag: W/"6c3-/T0W+lBP2NhFEO3wIlchixDiDOk"
+    Date: Mon, 12 May 2025 20:18:23 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "success": true,
+          "status": 200,
+          "message": "Reimbursements fetched successfully.",
+          "data": {
+              "totalrows": 2,
+              "pageData": [
+                  {
+                      "id": "355969e5-7205-4db8-8aae-1531b8cb8fcc",
+                      "totalAmount": 1650,
+                      "createdAt": "2025-05-12T20:16:59.000Z",
+                      "status": "PENDING",
+                      "adminComment": null,
+                      "reviewedAt": null,
+                      "travel_expense_entries": [
+                          {
+                              "id": "ce4429b0-0399-400f-8af6-58b05c266b5a",
+                              "amount": 450,
+                              "expenseType": "FOOD",
+                              "date": "2025-05-09",
+                              "image": null,
+                              "status": "PENDING",
+                              "adminComment": null,
+                              "reviewedAt": null
+                          },
+                          {
+                              "id": "a2884976-3321-4405-a147-2dbf322e73eb",
+                              "amount": 1200,
+                              "expenseType": "TRAVEL",
+                              "date": "2025-05-08",
+                              "image": null,
+                              "status": "PENDING",
+                              "adminComment": null,
+                              "reviewedAt": null
+                          }
+                      ],
+                      "travel": {
+                          "id": "44551d36-2ef1-498d-960a-6c4feb948045",
+                          "travelPurpose": "Client meeting and site inspection1111",
+                          "destination": "Mumbai"
+                      },
+                      "employee_main": {
+                          "id": "d59277f5-83f4-473a-966d-4f319d46531f",
+                          "firstName": "Deepesh",
+                          "lastName": "Kushwaha"
+                      }
+                  },
+                  {
+                      "id": "be1fb7cd-f740-4df8-b83c-e14f709da626",
+                      "totalAmount": 1650,
+                      "createdAt": "2025-05-12T11:39:13.000Z",
+                      "status": "PENDING",
+                      "adminComment": null,
+                      "reviewedAt": null,
+                      "travel_expense_entries": [
+                          {
+                              "id": "f58c4563-c7e7-4da7-a7a8-c85e050a0941",
+                              "amount": 450,
+                              "expenseType": "FOOD",
+                              "date": "2025-05-09",
+                              "image": null,
+                              "status": "APPROVED",
+                              "adminComment": null,
+                              "reviewedAt": "2025-05-12T11:45:31.000Z"
+                          },
+                          {
+                              "id": "45eefff8-39e6-463b-848a-46f94f9d03db",
+                              "amount": 1200,
+                              "expenseType": "TRAVEL",
+                              "date": "2025-05-08",
+                              "image": null,
+                              "status": "APPROVED",
+                              "adminComment": null,
+                              "reviewedAt": "2025-05-12T11:45:31.000Z"
+                          }
+                      ],
+                      "travel": {
+                          "id": "22b82273-c379-412d-979b-f7d18c340e11",
+                          "travelPurpose": "Client meeting and site inspection",
+                          "destination": "Mumbai"
+                      },
+                      "employee_main": {
+                          "id": "d59277f5-83f4-473a-966d-4f319d46531f",
+                          "firstName": "Deepesh",
+                          "lastName": "Kushwaha"
+                      }
+                  }
+              ],
+              "totalPages": 1,
+              "currentPage": 1
+          }
+      }
+order: 1000

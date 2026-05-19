@@ -1,0 +1,13 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/holidays/BulkThoughts"
+url: "{{hrmsBaseUrl}}/holidays/BulkThoughts"
+method: POST
+body:
+  type: formdata
+  content:
+    - type: file
+      key: file
+      src:
+        - /C:/Users/mehta/Downloads/Sample thoughts.csv
+examples: ./.resources/{{hrmsBaseUrl}}-holidays-BulkThoughts.resources/examples
+order: 11000

@@ -1,0 +1,7 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/claims/manager/:managerId"
+method: GET
+pathVariables:
+  managerId: 79fc68b2-cee0-4408-ba15-3c4a2cb78dd1
+examples: ./.resources/Claims For Manager.resources/examples
+order: 6000

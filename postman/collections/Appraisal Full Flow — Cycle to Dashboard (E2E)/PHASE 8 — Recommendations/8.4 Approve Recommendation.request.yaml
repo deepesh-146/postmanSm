@@ -1,0 +1,13 @@
+$kind: http-request
+description: Approve the recommendation. Auto-sets approvedBy and approvedAt.
+url: "{{baseUrl}}/appraisal-finalization/recommendations/{{recommendationId}}/status"
+method: PATCH
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+        "status": "APPROVED"
+    }
+order: 4000

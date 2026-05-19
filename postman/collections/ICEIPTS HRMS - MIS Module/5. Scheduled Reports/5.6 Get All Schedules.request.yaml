@@ -1,0 +1,11 @@
+$kind: http-request
+description: List all scheduled reports for the organization.
+url: "{{baseUrl}}/mis/schedules?page=1&size=10"
+method: GET
+headers:
+  Content-Type: application/json
+  x-organization-id: "{{organizationId}}"
+queryParams:
+  page: "1"
+  size: "10"
+order: 6000

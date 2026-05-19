@@ -1,0 +1,5 @@
+$kind: http-request
+description: Deletes a category. Fails if any grievances are linked to it (use deactivate instead).
+url: "{{base_url}}/grievances/categories/{{categoryId}}"
+method: DELETE
+order: 14000

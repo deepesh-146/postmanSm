@@ -1,0 +1,16 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/employee/createCostCenter"
+url: "{{hrmsBaseUrl}}/employee/createCostCenter"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"costCenterCode\": \"FIN-002\",\r
+
+    \    \"costCenterName\": \"Finance Cost Center\",\r
+
+    \    \"description\": \"Handles finance & accounting related costs\"\r
+
+    }"
+order: 1000

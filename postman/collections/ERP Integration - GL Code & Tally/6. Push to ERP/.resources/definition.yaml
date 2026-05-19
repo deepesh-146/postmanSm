@@ -1,0 +1,3 @@
+$kind: collection
+description: Push journal entries to Tally/SAP
+order: 6000

@@ -1,0 +1,68 @@
+$kind: http-example
+name: "{{hrmsBaseUrl}}/rewards/admin/getNominationsSummary/{{userId}}"
+request:
+  url: "{{hrmsBaseUrl}}/rewards/admin/getNominationsSummary/{{userId}}"
+  method: GET
+  body:
+    type: json
+    content: "{\r
+
+      \  \"awardId\": \"8a687ab8-56c1-46b8-b297-fc8bcc170840\",\r
+
+      \  \"nominatedToId\": \"017bf1ca-77a0-4814-8eff-20a68aecf68a\",\r
+
+      \  \"remarks\": \"Outstanding team support\"\r
+
+      }\r\n"
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "699"
+    ETag: W/"2bb-xscUTD53M8KLi9IDU7SUsQTLBc8"
+    Date: Thu, 10 Jul 2025 20:05:17 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "success": true,
+          "status": 200,
+          "message": "Nomination summary retrieved",
+          "data": [
+              {
+                  "awardId": "8a687ab8-56c1-46b8-b297-fc8bcc170840",
+                  "nominatedToId": "017bf1ca-77a0-4814-8eff-20a68aecf68a",
+                  "nominationCount": 2,
+                  "nominee": {
+                      "id": "017bf1ca-77a0-4814-8eff-20a68aecf68a",
+                      "firstName": "Sanket ",
+                      "lastName": "Jadhav"
+                  },
+                  "award": {
+                      "id": "8a687ab8-56c1-46b8-b297-fc8bcc170840",
+                      "title": "Employee of the Month11"
+                  }
+              },
+              {
+                  "awardId": "8a687ab8-56c1-46b8-b297-fc8bcc170840",
+                  "nominatedToId": "02f4c64d-1921-4af0-9c99-c3100046c9db",
+                  "nominationCount": 1,
+                  "nominee": {
+                      "id": "02f4c64d-1921-4af0-9c99-c3100046c9db",
+                      "firstName": "Test",
+                      "lastName": "india"
+                  },
+                  "award": {
+                      "id": "8a687ab8-56c1-46b8-b297-fc8bcc170840",
+                      "title": "Employee of the Month11"
+                  }
+              }
+          ]
+      }
+order: 1000

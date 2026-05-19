@@ -1,0 +1,8 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/rewards/myRewardClaims/{{userId}}?status=PENDING"
+url: "{{hrmsBaseUrl}}/rewards/myRewardClaims/{{userId}}?status=PENDING"
+method: GET
+queryParams:
+  status: PENDING
+examples: ./.resources/{{hrmsBaseUrl}}-rewards-myRewardClaims-{{userId}}-status=PENDING.resources/examples
+order: 30000

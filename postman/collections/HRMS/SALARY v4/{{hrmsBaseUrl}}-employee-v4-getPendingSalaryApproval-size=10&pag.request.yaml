@@ -1,0 +1,15 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/employee/v4/getPendingSalaryApproval?size=10&page=1"
+url: "{{hrmsBaseUrl}}/employee/v4/getPendingSalaryApproval?size=2&page=1&approvalStatus=PENDING"
+method: GET
+queryParams:
+  - key: size
+    value: "2"
+  - key: page
+    value: "1"
+  - key: approvalStatus
+    value: PENDING
+  - key: approvalStatus
+    value: APPROVED
+    disabled: true
+order: 1000

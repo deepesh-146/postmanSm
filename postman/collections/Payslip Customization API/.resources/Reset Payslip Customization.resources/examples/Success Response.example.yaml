@@ -1,0 +1,27 @@
+$kind: http-example
+request:
+  url: "{{base_url}}/api/payrolls/v3/payslip/customization/reset"
+  method: POST
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    Content-Type: application/json
+  body:
+    type: json
+    content: |-
+      {
+        "status": "success",
+        "data": {
+          "id": "uuid-here",
+          "organizationId": "uuid-here",
+          "componentVisibility": { ... default values ... },
+          "componentOrder": [ ... default order ... ],
+          "customLabels": {},
+          "isActive": true,
+          "createdAt": "2025-01-15T10:00:00.000Z",
+          "updatedAt": "2025-01-15T10:00:00.000Z"
+        },
+        "message": "Payslip customization reset to defaults successfully"
+      }
+order: 1000

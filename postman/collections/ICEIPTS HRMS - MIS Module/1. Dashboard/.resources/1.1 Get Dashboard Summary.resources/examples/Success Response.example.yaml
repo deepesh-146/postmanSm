@@ -1,0 +1,44 @@
+$kind: http-example
+request:
+  url: "{{baseUrl}}/mis/dashboard-summary?dateFrom=2025-01-01&dateTo=2026-03-13"
+  method: GET
+  headers:
+    Content-Type: application/json
+    x-organization-id: "{{organizationId}}"
+  queryParams:
+    - key: dateFrom
+      value: 2025-01-01
+      description: Start date (YYYY-MM-DD). Defaults to start of current year
+    - key: dateTo
+      value: 2026-03-13
+      description: End date (YYYY-MM-DD). Defaults to today
+    - key: departmentId
+      value: "{{departmentId}}"
+      disabled: true
+      description: "Optional: Filter by department UUID"
+    - key: officeId
+      value: "{{officeId}}"
+      disabled: true
+      description: "Optional: Filter by office UUID"
+response:
+  statusCode: 200
+  statusText: OK
+  body:
+    type: text
+    content: |-
+      {
+        "success": true,
+        "status": 200,
+        "message": "Dashboard summary retrieved successfully",
+        "data": {
+          "dateRange": { "from": "2025-01-01", "to": "2026-03-13" },
+          "employee": { "totalActive": 1245, "newHires": 47, "totalResignations": 12, "attritionRate": 3.21 },
+          "attendance": { "attendancePercentage": 94.5 },
+          "leave": { "totalRequests": 320, "totalDaysTaken": 890.5 },
+          "payroll": { "totalGross": 15000000, "totalNet": 12500000, "employeesPaid": 1200 },
+          "recruitment": { "openPositions": 15, "totalApplications": 245 },
+          "training": { "totalPrograms": 8, "completionRate": 72.5 },
+          "performance": { "avgScore": 3.8, "totalReviews": 450 }
+        }
+      }
+order: 1000

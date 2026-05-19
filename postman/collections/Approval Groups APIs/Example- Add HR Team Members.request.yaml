@@ -1,0 +1,18 @@
+$kind: http-request
+name: "Example: Add HR Team Members"
+description: "Example: Add members to HR Approvers group"
+url: "{{baseUrl}}/api/approval-groups/key/HR_APPROVERS/members"
+method: POST
+headers:
+  Authorization: Bearer {{authToken}}
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "employeeIds": [
+        "hr-manager-uuid",
+        "hr-executive-uuid"
+      ]
+    }
+order: 10000

@@ -1,0 +1,6 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/job/deleteSkill/fcbf5359-73f6-4448-b871-c6811979b287"
+url: "{{hrmsBaseUrl}}/job/deleteSkill/fcbf5359-73f6-4448-b871-c6811979b287"
+method: DELETE
+examples: ./.resources/{{hrmsBaseUrl}}-job-deleteSkill-fcbf5359-73f6-4448-b871-c6811979.resources/examples
+order: 26000

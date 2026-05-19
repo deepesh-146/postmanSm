@@ -1,0 +1,26 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/employee_loan/update-loan-type/d96b3650-2af9-472c-90dc-074b0d755a2c"
+url: "{{hrmsBaseUrl}}/employee_loan/update-loan-type/d96b3650-2af9-472c-90dc-074b0d755a2c"
+method: PUT
+queryParams:
+  - key: search
+    value: Salary Advance
+    disabled: true
+body:
+  type: json
+  content: "{\r
+
+    \    \"loanType\": \"Salary Advance\",\r
+
+    \    \"loanTypeDescription\": \"Short-term advance against monthly salary\",\r
+
+    \    \"loanTypeCode\": \"SA002\",\r
+
+    \    \"isActive\": true,\r
+
+    \    \"isDefault\": false,\r
+
+    \    \"isTenant\": true\r
+
+    }"
+order: 4000

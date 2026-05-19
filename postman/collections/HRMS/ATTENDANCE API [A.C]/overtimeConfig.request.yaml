@@ -1,0 +1,208 @@
+$kind: http-request
+description: |-
+  StartFragment
+
+  ## What It Does
+
+  This is the **admin configuration API** that controls how overtime, double shifts, and their payments work. It follows a **hierarchy**: you can set config at **Organization**, **Office**, or **Department** level. The most specific one wins (Department > Office > Organization).
+
+  ---
+
+  ## Fields Explained
+
+  ### Core Setup
+
+  | Field | What it means |
+  | --- | --- |
+  | `level` | Where this config applies: `"ORGANIZATION"`, `"OFFICE"`, or `"DEPARTMENT"` |
+  | `levelId` | UUID of that org/office/department |
+  | `standardShiftHours` | How many hours = 1 normal shift (default: **8**) |
+  | `maxDailyWorkHours` | Cap on trackable hours per session (default: **32** = 4 shifts max) |
+  | `multiPunchEnabled` | Enable/disable the multi-punch feature |
+
+  ### Overtime Settings
+
+  | Field | What it means |
+  | --- | --- |
+  | `overtimeEnabled` | Should the system track overtime at all? |
+  | `overtimePayEnabled` | Should overtime be **paid**? (tracking can be on but payment off) |
+  | `overtimePayMode` | **How** to calculate OT payment (see below) |
+  | `overtimeMultiplier` | Used when `overtimePayMode = "MULTIPLIER"`. E.g. `1.5` means 1.5x base hourly rate |
+  | `overtimeFixedAmount` | Used when mode is `"FIXED_PER_HOUR"` or `"FIXED_FLAT"` |
+
+  **Overtime Pay Modes:**
+
+  - `"MULTIPLIER"` — OT pay = `(employee's hourly base salary) × overtimeMultiplier × OT hours`
+      
+  - `"FIXED_PER_HOUR"` — OT pay = `overtimeFixedAmount × OT hours` (e.g. Rs 200/hr × 3 hrs = Rs 600)
+      
+  - `"FIXED_FLAT"` — OT pay = `overtimeFixedAmount` flat, no matter how many OT hours (e.g. always Rs 500)
+      
+
+  ### Double Shift Settings
+
+  | Field | What it means |
+  | --- | --- |
+  | `doubleShiftEnabled` | Should the system recognize double shifts? |
+  | `doubleShiftPayEnabled` | Should double shifts be **paid**? (default: `true`) |
+  | `doubleShiftPayMode` | **How** to calculate double shift payment |
+  | `doubleShiftFixedAmount` | Used when mode is `"FIXED_FLAT"` |
+  | `doubleShiftThresholdHours` | Hours needed to qualify as double shift (default: **16**) |
+  | `doubleShiftLeaveCredit` | Auto-credit a compensatory leave for each extra shift? |
+  | `doubleShiftLeaveTypeId` | Which leave type to credit (null = auto-finds `DSCL` type) |
+
+  **Double Shift Pay Modes:**
+
+  - `"STANDARD_DAY_SALARY"` — pays the employee their normal day's wage for the extra shift
+      
+  - `"FIXED_FLAT"` — pays `doubleShiftFixedAmount` as a bonus (e.g. always Rs 1000 per double shift)
+      
+
+  ---
+
+  ## Example Scenarios
+
+  **Scenario 1:** "Pay 1.5x salary for overtime, standard salary for double shifts"
+
+  ```
+  {
+    "level": "OFFICE",
+    "levelId": "office-uuid",
+    "overtimeEnabled": true,
+    "overtimePayEnabled": true,
+    "overtimePayMode": "MULTIPLIER",
+    "overtimeMultiplier": 1.5,
+    "doubleShiftEnabled": true,
+    "doubleShiftPayMode": "STANDARD_DAY_SALARY"
+  }
+
+   ```
+
+  **Scenario 2:** "Pay Rs 200/hr for overtime, Rs 1000 flat bonus for double shift"
+
+  ```
+  {
+    "level": "DEPARTMENT",
+    "levelId": "dept-uuid",
+    "overtimeEnabled": true,
+    "overtimePayEnabled": true,
+    "overtimePayMode": "FIXED_PER_HOUR",
+    "overtimeFixedAmount": 200,
+    "doubleShiftEnabled": true,
+    "doubleShiftPayMode": "FIXED_FLAT",
+    "doubleShiftFixedAmount": 1000
+  }
+
+   ```
+
+  **Scenario 3:** "Track overtime but don't pay for it, double shifts get leave only"
+
+  ```
+  {
+    "level": "ORGANIZATION",
+    "levelId": "org-uuid",
+    "overtimeEnabled": true,
+    "overtimePayEnabled": false,
+    "doubleShiftEnabled": true,
+    "doubleShiftPayEnabled": false,
+    "doubleShiftLeaveCredit": true
+  }
+
+   ```
+
+  ---
+
+  ### How `GET /attendance/overtimeConfig` resolves
+
+  When called without `level`/`levelId` query params, it auto-resolves from `req.user`:
+
+  1. First checks **Department** config
+      
+  2. If not found, checks **Office** config
+      
+  3. If not found, checks **Organization** config
+      
+  4. If nothing found, returns hardcoded defaults
+      
+
+  This means a department can override the office config, and the office can override the org config.
+
+  EndFragment
+url: "{{hrmsBaseUrl}}/attendance/overtimeConfig"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"level\": \"OFFICE\",                     // required: \"ORGANIZATION\" | \"OFFICE\" | \"DEPARTMENT\"\r
+
+    \  \"levelId\": \"uuid-of-office\",           // required: UUID of the org/office/dept\r
+
+    \  \"standardShiftHours\": 8,               // optional (default: 8, min: 1, max: 24)\r
+
+    \  \"overtimeEnabled\": true,               // optional (default: false)\r
+
+    \  \"overtimePayEnabled\": true,            // optional (default: false)\r
+
+    \  \"overtimeMultiplier\": 1.5,             // optional (default: 1.25, min: 1, max: 10) — pay multiplier for OT\r
+
+    \  \"doubleShiftEnabled\": true,            // optional (default: true)\r
+
+    \  \"doubleShiftPayEnabled\": true,         // optional (default: true)\r
+
+    \  \"doubleShiftThresholdHours\": 16,       // optional (default: 16, min: 8, max: 48)\r
+
+    \  \"doubleShiftLeaveCredit\": true,        // optional (default: true) — auto-credit leave for double shift\r
+
+    \  \"doubleShiftLeaveTypeId\": \"uuid\",      // optional — which leave type to credit (null = auto-find DSCL)\r
+
+    \  \"maxDailyWorkHours\": 32,              // optional (default: 32, min: 8, max: 48) — cap for extreme shifts\r
+
+    \  \"multiPunchEnabled\": true              // optional (default: true)\r
+
+    }\r
+
+    /*\r
+
+    {\r
+
+    \  \"level\": \"OFFICE\",\r
+
+    \  \"levelId\": \"uuid\",\r
+
+    \  \"standardShiftHours\": 8,\r
+
+    \  \"overtimeEnabled\": true,\r
+
+    \  \"overtimePayEnabled\": true,\r
+
+    \  \"overtimeMultiplier\": 1.5,\r
+
+    \  \"overtimeFixedAmount\": 200,            // NEW — amount per OT hour (or flat)\r
+
+    \  \"overtimePayMode\": \"FIXED_PER_HOUR\",   // NEW — \"MULTIPLIER\" | \"FIXED_PER_HOUR\" | \"FIXED_FLAT\"\r
+
+    \  \"doubleShiftEnabled\": true,\r
+
+    \  \"doubleShiftPayEnabled\": true,\r
+
+    \  \"doubleShiftFixedAmount\": 1000,         // NEW — flat bonus per double shift\r
+
+    \  \"doubleShiftPayMode\": \"FIXED_FLAT\",     // NEW — \"STANDARD_DAY_SALARY\" | \"FIXED_FLAT\"\r
+
+    \  \"doubleShiftThresholdHours\": 16,\r
+
+    \  \"doubleShiftLeaveCredit\": true,\r
+
+    \  \"doubleShiftLeaveTypeId\": null,\r
+
+    \  \"maxDailyWorkHours\": 32,\r
+
+    \  \"multiPunchEnabled\": true\r
+
+    }\r
+
+    \r
+
+    */"
+order: 6000

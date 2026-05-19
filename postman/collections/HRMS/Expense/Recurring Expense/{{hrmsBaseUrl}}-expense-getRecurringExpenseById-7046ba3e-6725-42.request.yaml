@@ -1,0 +1,36 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/expense/getRecurringExpenseById/7046ba3e-6725-4255-9927-e8922e7d7043"
+url: "{{hrmsBaseUrl}}/expense/getRecurringExpenseById/7046ba3e-6725-4255-9927-e8922e7d7043"
+method: GET
+body:
+  type: json
+  content: "{\r
+
+    \    \"type\": \"mobile_expense\",\r
+
+    \    \"amount\": 100.50,\r
+
+    \    \"frequency\": \"monthly\",\r
+
+    \    \"startDate\": \"2025-08-15\",\r
+
+    \    \"endDate\": \"2026-08-15\",\r
+
+    \    \"metaData\": {\r
+
+    \        \"mobileNumber\": \"9876543210\",\r
+
+    \        \"mobileServiceProvider\": \"Airtel\",\r
+
+    \        \"paymentMode\": \"bank_transfer\",\r
+
+    \        \"remark\": \"Monthly mobile bill\",\r
+
+    \        \"uploadDocument\": \"document_link_here\",\r
+
+    \        \"uploadLink\": \"https://example.com/doc.pdf\"\r
+
+    \    }\r
+
+    }"
+order: 3000

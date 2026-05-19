@@ -1,0 +1,12 @@
+$kind: http-request
+url: "{{baseUrl}}/ticket/category/{{categoryId}}/status"
+method: PATCH
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "status": "INACTIVE"
+    }
+order: 6000

@@ -1,0 +1,8 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}appraisal/getCycleById/:cycleId"
+method: GET
+headers:
+  Content-Type: application/json
+pathVariables:
+  cycleId: 2711792c-7911-4a9d-9377-c98aa2107d0a
+order: 3000

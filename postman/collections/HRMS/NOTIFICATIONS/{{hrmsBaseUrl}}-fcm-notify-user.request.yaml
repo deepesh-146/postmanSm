@@ -1,0 +1,40 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/fcm/notify-user"
+url: "{{hrmsBaseUrl}}/fcm/notify-user"
+method: POST
+body:
+  type: json
+  content: "// {\r
+
+    //     \"userId\": \"3bfa2da7-2932-4860-bf7c-30488eab49b6\",\r
+
+    //     \"title\": \"New Alert!\",\r
+
+    //     \"body\": \"Your payslip has been generated.\"\r
+
+    // }\r
+
+    \r
+
+    {\r
+
+    \  \"userId\": \"3bfa2da7-2932-4860-bf7c-30488eab49b6\",\r
+
+    \  \"title\": \"New Payslip Available\",\r
+
+    \  \"body\": \"Tap to download your payslip for May 2025\",\r
+
+    \  \r
+
+    \  \"clickAction\": \"https://hrms.neuralhr.ai/\",\r
+
+    \  \"data\": {\r
+
+    \    \"payslipId\": \"123\",\r
+
+    \    \"type\": \"payslip\"\r
+
+    \  }\r
+
+    }\r\n"
+order: 2000

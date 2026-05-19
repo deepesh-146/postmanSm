@@ -1,0 +1,14 @@
+$kind: http-request
+url: "{{baseUrl}}/pip/{{pipId}}/goals/{{goalId}}/progress"
+method: PUT
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "progress": 100,
+      "status": "COMPLETED",
+      "completionNotes": "Consistently completing reviews within 24 hours for the past 3 weeks"
+    }
+order: 2000

@@ -1,0 +1,22 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/attendance/companyDetails/{{userId}}"
+url: "{{hrmsBaseUrl}}/attendance/companyDetails/{{userId}}"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"companyName\": \"TechFusion Pvt Ltd\",\r
+
+    \    \"taxId\": \"GSTIN123456789\",\r
+
+    \    \"address\": \"123 Tech Park, Bangalore, India\",\r
+
+    \    \"email\": \"contact@techfusion.com\",\r
+
+    \    \"phone\": \"+91-9876543210\",\r
+
+    \    \"website\": \"https://tech-fusion.com\"\r
+
+    }"
+order: 27000

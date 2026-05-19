@@ -1,0 +1,29 @@
+$kind: http-example
+request:
+  url: "{{baseUrl}}/mis/snapshots"
+  method: POST
+  headers:
+    Content-Type: application/json
+    x-organization-id: "{{organizationId}}"
+  body:
+    type: text
+    content: |-
+      {
+        "snapshotType": "DAILY"
+      }
+response:
+  statusCode: 200
+  statusText: OK
+  body:
+    type: text
+    content: |-
+      {
+        "success": true,
+        "status": 200,
+        "message": "Snapshot taken successfully",
+        "data": {
+          "snapshotsCreated": 7,
+          "date": "2026-03-13"
+        }
+      }
+order: 1000

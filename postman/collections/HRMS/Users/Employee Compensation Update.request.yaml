@@ -1,0 +1,30 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/employee/compensation/:employeeId"
+method: PUT
+pathVariables:
+  employeeId: 903bd690-61f3-43db-9edd-d38d531c1c67
+body:
+  type: json
+  content: "{\r
+
+    \    \"salBasic\": 252555,\r
+
+    \    \"salHRA\": 5455,\r
+
+    \    \"salDA\": 3565,\r
+
+    \    \"salBonus\": 1585,\r
+
+    \    \"salPfDed\": 2500,\r
+
+    \    \"salOtherEarning\": 5658,\r
+
+    \    \"salOtherDeduction\": 500,\r
+
+    \    \"salOtherEarningNote\": \"Bonus\",\r
+
+    \    \"salOtherDeductionNote\": \"Contribution Fee\"\r
+
+    }"
+examples: ./.resources/Employee Compensation Update.resources/examples
+order: 24000

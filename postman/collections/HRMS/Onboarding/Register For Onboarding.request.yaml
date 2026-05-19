@@ -1,0 +1,22 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/onboarding/register"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"jobOfferId\": \"6c166c14-17d4-4f8c-bc02-6cd89d7248a8\",\r
+
+    \    \"onboardingHrId\": \"eb6df26e-e0d3-4d10-8714-873fef6e213c\",\r
+
+    \    \"onboardingDate\": \"2024-10-10\",\r
+
+    \    \"stepIdsComp\": \"15a60d52-e063-402c-9d2d-f19a0a77f208\",\r
+
+    \    \"stepIdsTut\": \"4bc8795a-4d6f-40da-8699-f30bc905c1fc\",\r
+
+    \    \"stepIdsHr\": \"b145b967-0c1b-4cad-b082-803a9e940c97\"\r
+
+    }"
+examples: ./.resources/Register For Onboarding.resources/examples
+order: 1000

@@ -1,0 +1,27 @@
+$kind: http-request
+description: Cancel a challan. Reason is mandatory (min 10 characters). After cancellation, can regenerate new challan for same payroll + report type.
+url: "{{hrmsBaseUrl}}/compliance/{{challanId}}/cancel"
+method: PUT
+headers:
+  Content-Type: application/json
+  Authorization: Bearer {{token}}
+body:
+  type: text
+  content: |-
+    {
+      "reason": "Incorrect period selected. Need to regenerate for February 2025 instead of January 2025."
+    }
+scripts:
+  - type: afterResponse
+    code: |-
+      pm.test('Status code is 200', function () {
+          pm.response.to.have.status(200);
+      });
+
+      pm.test('Challan cancelled', function () {
+          var jsonData = pm.response.json();
+          pm.expect(jsonData.success).to.be.true;
+          pm.expect(jsonData.data.status).to.equal('CANCELLED');
+      });
+    language: text/javascript
+order: 2000

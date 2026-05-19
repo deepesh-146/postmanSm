@@ -1,0 +1,40 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/assets/createAsset/{{userId}}"
+url: "{{hrmsBaseUrl}}/assets/createAsset/{{userId}}"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"name\": \"MacBook Pro M2\",\r
+
+    \  \"category\": \"Laptop\",\r
+
+    \  \"assetType\": \"PHYSICAL\",\r
+
+    \  \"serialNumber\": \"MBP2023-XYZ3\",\r
+
+    \  \"brand\": \"Apple\",\r
+
+    \  \"model\": \"M2 Pro 14-inch\",\r
+
+    \  \"purchaseDate\": \"2023-11-15\",\r
+
+    \  \"warrantyEndDate\": \"2026-11-15\",\r
+
+    \  \"purchasePrice\": 220000,\r
+
+    \  \"supplier\": \"Tech Distributors Pvt Ltd\",\r
+
+    \  \"condition\": \"NEW\",\r
+
+    \  \"status\": \"AVAILABLE\",\r
+
+    \  \"location\": \"HQ - IT Storage\",\r
+
+    \  \"notes\": \"New device for development team\",\r
+
+    \  \"image\":\"dcwsc\"\r
+
+    }\r\n"
+order: 1000

@@ -1,0 +1,23 @@
+$kind: http-request
+description: Grouped report — count employees by gender.
+url: "{{baseUrl}}/mis/custom-report/execute"
+method: POST
+headers:
+  Content-Type: application/json
+  x-organization-id: "{{organizationId}}"
+body:
+  type: text
+  content: |-
+    {
+      "reportConfig": {
+        "dataSource": "employee",
+        "fields": ["firstName", "lastName", "gender"],
+        "filters": {
+          "isActive": true
+        },
+        "groupBy": "gender"
+      },
+      "page": 1,
+      "size": 20
+    }
+order: 2000

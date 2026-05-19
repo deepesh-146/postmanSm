@@ -1,0 +1,26 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/employee/updateBankAccount/{{userId}}"
+url: "{{hrmsBaseUrl}}/employee/updateBankAccount/{{userId}}"
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"bankAccountData\": {\r
+
+    \        \"bankAccountNum\": \"9876543210\",\r
+
+    \        \"bankAccountName\": \"HDFC Bank\",\r
+
+    \        \"bankAccountIfsc\": \"HDFC0000456\",\r
+
+    \        \"bankAccountBranch\": \"Mumbai Andheri\",\r
+
+    \        \"bankAccountHolderName\": \"Rahul Sharma\",\r
+
+    \        \"requestDate\": \"2025-08-13T10:30:00Z\"\r
+
+    \    }\r
+
+    }"
+order: 40000

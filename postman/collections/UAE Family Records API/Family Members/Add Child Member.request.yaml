@@ -1,0 +1,24 @@
+$kind: http-request
+url: "{{base_url}}/api/family/members"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "familyRecordId": 1,
+      "fullName": "Omar Al-Rashid",
+      "relationshipType": "CHILD",
+      "emiratesId": "784-2015-7654321-9",
+      "passportNumber": "B7654321",
+      "dateOfBirth": "2015-08-20",
+      "nationality": "UAE",
+      "visaNumber": "VN987654321",
+      "visaExpiryDate": "2025-12-31",
+      "visaStatus": "ACTIVE",
+      "medicalInsuranceNumber": "MI345678901",
+      "educationStatus": "PRIMARY_SCHOOL",
+      "specialNeeds": false
+    }
+order: 2000

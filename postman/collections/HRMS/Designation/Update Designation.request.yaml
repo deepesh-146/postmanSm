@@ -1,0 +1,18 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/designation/:designationId"
+method: PUT
+pathVariables:
+  designationId: 6eec0ec7-fddc-4c2f-b493-bb9568425f5e
+body:
+  type: json
+  content: "{\r
+
+    \    \"name\": \"CEO\",\r
+
+    \    \"code\": \"CEO-2222\",\r
+
+    \    \"department\": \"d8c65d24-5957-4035-a1e2-3d81c7a7a918\"\r
+
+    }"
+examples: ./.resources/Update Designation.resources/examples
+order: 2000

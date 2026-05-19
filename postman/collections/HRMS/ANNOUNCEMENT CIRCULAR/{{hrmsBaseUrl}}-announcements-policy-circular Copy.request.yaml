@@ -1,0 +1,13 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/announcements/policy-circular Copy"
+url: "{{hrmsBaseUrl}}/announcements/policy-circular/getAllPolicyCirculars?size=10&page=1"
+method: GET
+queryParams:
+  - key: search
+    value: ""
+    disabled: true
+  - key: size
+    value: "10"
+  - key: page
+    value: "1"
+order: 2000

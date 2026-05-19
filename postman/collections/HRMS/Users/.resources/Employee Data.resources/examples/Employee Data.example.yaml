@@ -1,0 +1,189 @@
+$kind: http-example
+request:
+  url: "{{hrmsBaseUrl}}/employee/:employeeId"
+  method: GET
+  pathVariables:
+    employeeId: 903bd690-61f3-43db-9edd-d38d531c1c67
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "4801"
+    ETag: W/"12c1-SdCsukUhSI+BYtwzLo8UWKf+0Yc"
+    Date: Mon, 14 Oct 2024 03:44:59 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "status": {
+              "success": true,
+              "code": 200,
+              "message": "Employee Full Data",
+              "failure": false
+          },
+          "data": {
+              "empMainData": {
+                  "id": "903bd690-61f3-43db-9edd-d38d531c1c67",
+                  "firstName": "Sanat",
+                  "lastName": "Kumar",
+                  "candidateId": "6979e151-2542-445c-88bd-fdc2248a8da3",
+                  "onboardingId": "f778b358-2db2-4561-9c0b-dc1eda013258",
+                  "managerId": "903bd690-61f3-43db-9edd-d38d531c1c67",
+                  "personalMail": "sanatmishra29@gmail.com",
+                  "officialMail": "sanat.kumar@iceipts.com",
+                  "mobileNumber": "9801345259",
+                  "officialMobileNumber": "+919801345259",
+                  "officalTempPass": "",
+                  "officalEmailPassSet": true,
+                  "officialPassword": "$2a$10$hZCI9IO0jlBAyTskme5iI.PR0v/4oB4LrMxt5W.tiXO6IfZ0uYMp.",
+                  "accountActive": true,
+                  "gender": null,
+                  "dateOfBirth": null,
+                  "maritalStatus": null,
+                  "religion": null,
+                  "placeOfBith": null,
+                  "nationality": null,
+                  "domicile": null,
+                  "disability": false,
+                  "disabilityDetail": null,
+                  "passportAvailable": false,
+                  "passportNo": null,
+                  "passportExpiryDate": null,
+                  "passportIssuedDate": null,
+                  "jobConfirmed": false,
+                  "confirmedById": null,
+                  "confirmedDate": null,
+                  "confirmedNotes": null,
+                  "confirmedRating": null,
+                  "departmentId": "32e8b17d-29e8-4f8f-8078-8ec006e2766e",
+                  "designationId": "d10e48ed-e5f7-4821-9817-8a05d673eab4",
+                  "jobUnitId": "e71f8b2c-1c10-46f1-99a5-05c8bbfe4539",
+                  "providentFundNum": null,
+                  "salBasic": 252555,
+                  "salHRA": 5455,
+                  "salDA": 3565,
+                  "salBonus": 1585,
+                  "salPfDed": 2500,
+                  "salOtherEarning": 5658,
+                  "salOtherDeduction": 500,
+                  "salOtherEarningNote": "Bonus",
+                  "salOtherDeductionNote": "Contribution Fee",
+                  "healthInsPlanName": "Gold Plan",
+                  "healthInsPlanCoverAmount": 7500000,
+                  "healthInsPlanUseAmount": 0,
+                  "healthInsPlanExpDate": "2025-10-01T00:00:00.000Z",
+                  "healthInsPlanStartDate": "2024-10-01T00:00:00.000Z",
+                  "createdAt": "2024-10-14T03:10:21.000Z",
+                  "updatedAt": "2024-10-14T03:22:39.000Z",
+                  "empOnboardingId": null
+              },
+              "personalData": {
+                  "id": "1cead5e9-8856-453a-8bee-1a9062a476f9",
+                  "employeeId": "903bd690-61f3-43db-9edd-d38d531c1c67",
+                  "onboardingId": "f778b358-2db2-4561-9c0b-dc1eda013258",
+                  "permanentAddress": "Patna, India",
+                  "currentAddress": "Panchkula, Haryana",
+                  "aadharNum": "444444444444",
+                  "panNum": "DJEUJ5745W",
+                  "bankAccountNum": "456456465465",
+                  "bankAccountName": "Indian Bank",
+                  "bankAccountIfsc": "SSDF5585555",
+                  "bankAccountBranch": "Patna",
+                  "aadharFrontFilePath": "https://morth.nic.in/sites/default/files/dd12-13_0.pdf",
+                  "aadharBackFilePath": "https://morth.nic.in/sites/default/files/dd12-13_0.pdf",
+                  "panFilePath": "https://morth.nic.in/sites/default/files/dd12-13_0.pdf",
+                  "bankAccountPassbookPath": "https://morth.nic.in/sites/default/files/dd12-13_0.pdf",
+                  "sourceVerRej": null,
+                  "approved": false,
+                  "approvedDate": null,
+                  "approvedById": null,
+                  "rejected": false,
+                  "rejectedDate": null,
+                  "rejectById": null,
+                  "comments": null,
+                  "createdAt": "2024-10-14T03:14:42.000Z",
+                  "updatedAt": "2024-10-14T03:14:42.000Z",
+                  "employeeMainId": null
+              },
+              "educationData": [
+                  {
+                      "id": "dd1106ba-0ddd-43db-9eb2-cf7d29ab0cb7",
+                      "employeeId": "903bd690-61f3-43db-9edd-d38d531c1c67",
+                      "onboardingId": "f778b358-2db2-4561-9c0b-dc1eda013258",
+                      "collegeName": "RPSIT",
+                      "universityName": "Magadh",
+                      "collegeLocation": "Patna",
+                      "specialization": "Computer Engineering",
+                      "degreeName": "B.Tech",
+                      "courseName": "Graduation",
+                      "startDate": "2016-02-02T00:00:00.000Z",
+                      "endDate": "2019-02-02T00:00:00.000Z",
+                      "collegeOfficialEmail": "info@rpsit.org.in",
+                      "collegeOfficialMobile": "88888888888",
+                      "currentlyPursuing": false,
+                      "marksheetPath": "https://morth.nic.in/sites/default/files/dd12-13_0.pdf",
+                      "certificatePath": "https://morth.nic.in/sites/default/files/dd12-13_0.pdf",
+                      "sourceVerRej": null,
+                      "approved": false,
+                      "approvedDate": null,
+                      "approvedById": null,
+                      "rejected": false,
+                      "rejectedDate": null,
+                      "rejectById": null,
+                      "comments": null,
+                      "createdAt": "2024-10-14T03:14:58.000Z",
+                      "updatedAt": "2024-10-14T03:14:58.000Z",
+                      "employeeMainId": null
+                  }
+              ],
+              "employmentData": [
+                  {
+                      "id": "ffafd1cc-fd8b-4a8e-b9d0-60d950d7167c",
+                      "employeeId": "903bd690-61f3-43db-9edd-d38d531c1c67",
+                      "onboardingId": "f778b358-2db2-4561-9c0b-dc1eda013258",
+                      "companyName": "CSK",
+                      "jobTitle": "Software Developer",
+                      "jobLocation": "Patna",
+                      "responsibility": "Android, Laravel",
+                      "startDate": "2019-09-25T00:00:00.000Z",
+                      "endDate": "2020-09-26T00:00:00.000Z",
+                      "companyHrEmail": "hr@csk.com",
+                      "companyHrMobile": "999999999",
+                      "currentCompany": false,
+                      "relievingLetterPath": "https://morth.nic.in/sites/default/files/dd12-13_0.pdf",
+                      "experienceLetterPath": "https://morth.nic.in/sites/default/files/dd12-13_0.pdf",
+                      "sourceVerRej": null,
+                      "approved": false,
+                      "approvedDate": null,
+                      "approvedById": null,
+                      "rejected": false,
+                      "rejectedDate": null,
+                      "rejectById": null,
+                      "comments": null,
+                      "createdAt": "2024-10-14T03:15:10.000Z",
+                      "updatedAt": "2024-10-14T03:15:10.000Z",
+                      "employeeMainId": null
+                  }
+              ],
+              "salarySlip": [],
+              "benefits": [
+                  {
+                      "id": "e893326b-9830-4093-9afb-31e913288a0b",
+                      "employeeId": "903bd690-61f3-43db-9edd-d38d531c1c67",
+                      "benefitId": "3aef11de-b0bb-4ba7-b564-2bfbcf699254",
+                      "generatedOn": "2024-10-13T22:14:07.000Z",
+                      "generatedBy": "903bd690-61f3-43db-9edd-d38d531c1c67",
+                      "createdAt": "2024-10-14T03:44:07.000Z",
+                      "updatedAt": "2024-10-14T03:44:07.000Z",
+                      "employeeMainId": null
+                  }
+              ]
+          }
+      }
+order: 1000

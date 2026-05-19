@@ -1,0 +1,8 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/onboarding_step/uploadInduction"
+method: POST
+body:
+  type: file
+  content:
+    src: /C:/Users/Sanat/Downloads/delete.jpeg
+order: 6000

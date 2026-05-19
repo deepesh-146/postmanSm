@@ -1,0 +1,58 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/employee/requestPersonalDataChange/{{userId}}"
+url: "{{hrmsBaseUrl}}/employee/requestPersonalDataChange/{{userId}}"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"permanentAddress\": \"123 New Street, Mumbai, Maharashtra 400001\",\r
+
+    \    \"currentAddress\": \"456 Updated Avenue, Mumbai, Maharashtra 400002\",\r
+
+    \    \"aadharNum\": \"1234 5678 9012\",\r
+
+    \    \"panNum\": \"ABCD12345\",\r
+
+    \    \"bankAccountHolderName\": \"John Doe\",\r
+
+    \    \"bankAccountNum\": \"95874512154510\",\r
+
+    \    \"bankAccountName\": \"State Bank of India\",\r
+
+    \    \"bankAccountIfsc\": \"SBIN001819\",\r
+
+    \    \"bankAccountBranch\": \"Mumbai Main Branch\",\r
+
+    \    \"mohreId\": \"MOHRE123456\",\r
+
+    \    \"emiratesId\": \"784-1234-5678901-1\",\r
+
+    \    \"passportNo\": \"A12345678\",\r
+
+    \    \"region\": \"Maharashtra\",\r
+
+    \    \"city\": \"Mumbai\",\r
+
+    \    \"pincode\": \"400001\",\r
+
+    \    \"passportValidTill\": \"2025-12-31\",\r
+
+    \    \"passportIssuedOnDate\": \"2015-01-15\",\r
+
+    \    \"placeOfIssue\": \"Mumbai\",\r
+
+    \    \"uan\": \"123456789012\",\r
+
+    \    \"profileImage\": \"https://s3.amazonaws.com/bucket/profile.jpg\",\r
+
+    \    \"aadharFrontFilePath\": \"https://s3.amazonaws.com/bucket/aadhar-front.jpg\",\r
+
+    \    \"aadharBackFilePath\": \"https://s3.amazonaws.com/bucket/aadhar-back.jpg\",\r
+
+    \    \"panFilePath\": \"https://s3.amazonaws.com/bucket/pan.jpg\",\r
+
+    \    \"bankAccountPassbookPath\": \"https://s3.amazonaws.com/bucket/passbook.jpg\"\r
+
+    }"
+order: 41000

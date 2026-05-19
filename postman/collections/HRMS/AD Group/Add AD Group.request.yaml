@@ -1,0 +1,20 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/ad_group/"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"deptId\": \"0ca2dc83-bc3b-43f7-a487-38df60e2d277\",\r
+
+    \    \"code\": \"AD-HR-ADMIN\",\r
+
+    \    \"description\": \"Permission to Add Jobs\",\r
+
+    \    \"approverId\": \"2e7452c2-59d4-4718-8556-9daac56776bd\",\r
+
+    \    \"comm\": \"This AD Group will be used to Add Jobs\"\r
+
+    }"
+examples: ./.resources/Add AD Group.resources/examples
+order: 1000

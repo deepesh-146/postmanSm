@@ -1,0 +1,14 @@
+$kind: http-request
+url: "{{baseUrl}}/ticket/conversation"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "ticketId": "{{ticketId}}",
+      "message": "Can you please provide more details about the issue? When did it start?",
+      "attachments": []
+    }
+order: 1000

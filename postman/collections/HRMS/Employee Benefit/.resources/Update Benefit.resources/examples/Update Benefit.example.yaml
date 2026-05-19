@@ -1,0 +1,52 @@
+$kind: http-example
+request:
+  url: "{{hrmsBaseUrl}}/employee_benefit/:benefitId"
+  method: PUT
+  pathVariables:
+    benefitId: 3aef11de-b0bb-4ba7-b564-2bfbcf699254
+  body:
+    type: json
+    content: "{\r
+
+      \    \"name\": \"Leave Allowance\",\r
+
+      \    \"type\": \"LEAVE\",\r
+
+      \    \"amount\": \"25\",\r
+
+      \    \"frequency\": \"YEARLY\",\r
+
+      \    \"duration\": \"1\",\r
+
+      \    \"comments\": \"TEst\",\r
+
+      \    \"dateToday\": \"2024-10-14\",\r
+
+      \    \"employeeId\": \"903bd690-61f3-43db-9edd-d38d531c1c67\"\r
+
+      }"
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "82"
+    ETag: W/"52-h7FVvxd5Hs+41CIFc8R+VYSsBBk"
+    Date: Mon, 14 Oct 2024 03:32:03 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "status": {
+              "success": true,
+              "code": 200,
+              "message": "Benefit Updated",
+              "failure": false
+          }
+      }
+order: 1000

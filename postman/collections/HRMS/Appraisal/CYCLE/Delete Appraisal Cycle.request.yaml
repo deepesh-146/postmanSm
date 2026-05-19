@@ -1,0 +1,8 @@
+$kind: http-request
+url: "{{base_url}}/deleteCycle/:cycleId"
+method: DELETE
+headers:
+  Content-Type: application/json
+pathVariables:
+  cycleId: ""
+order: 5000

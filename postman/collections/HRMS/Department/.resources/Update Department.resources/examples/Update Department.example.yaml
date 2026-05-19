@@ -1,0 +1,48 @@
+$kind: http-example
+request:
+  url: "{{hrmsBaseUrl}}/department/:departmentId"
+  method: PUT
+  pathVariables:
+    departmentId: 32e8b17d-29e8-4f8f-8078-8ec006e2766e
+  body:
+    type: json
+    content: "{ \r
+
+      \    \"name\": \"CEO\", \r
+
+      \    \"code\": \"CEO1111\", \r
+
+      \    \"head\": \"null\", \r
+
+      \    \"under\": \"null\", \r
+
+      \    \"inside\": \"null\",\r
+
+      \    \"headUser\": true\r
+
+      }"
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "85"
+    ETag: W/"55-nkBXsnz2YKhtygSWSt+b/DkCEXI"
+    Date: Wed, 09 Oct 2024 15:33:07 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "status": {
+              "success": true,
+              "code": 200,
+              "message": "Department Updated",
+              "failure": false
+          }
+      }
+order: 1000

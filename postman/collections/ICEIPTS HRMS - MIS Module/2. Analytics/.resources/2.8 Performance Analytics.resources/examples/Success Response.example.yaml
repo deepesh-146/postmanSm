@@ -1,0 +1,42 @@
+$kind: http-example
+request:
+  url: "{{baseUrl}}/mis/performance-analytics?dateFrom=2025-01-01&dateTo=2026-03-13"
+  method: GET
+  headers:
+    Content-Type: application/json
+    x-organization-id: "{{organizationId}}"
+  queryParams:
+    - key: dateFrom
+      value: 2025-01-01
+    - key: dateTo
+      value: 2026-03-13
+    - key: departmentId
+      value: "{{departmentId}}"
+      disabled: true
+response:
+  statusCode: 200
+  statusText: OK
+  body:
+    type: text
+    content: |-
+      {
+        "success": true,
+        "status": 200,
+        "message": "Performance analytics retrieved successfully",
+        "data": {
+          "scoreDistribution": [
+            { "band_name": "Outstanding", "minScore": 4.5, "maxScore": 5.0, "employee_count": 45 },
+            { "band_name": "Exceeds Expectations", "minScore": 3.5, "maxScore": 4.49, "employee_count": 180 },
+            { "band_name": "Meets Expectations", "minScore": 2.5, "maxScore": 3.49, "employee_count": 200 },
+            { "band_name": "Needs Improvement", "minScore": 1.0, "maxScore": 2.49, "employee_count": 25 }
+          ],
+          "departmentScores": [
+            { "department": "Engineering", "avg_score": 3.95, "reviews_completed": 145 },
+            { "department": "HR", "avg_score": 3.72, "reviews_completed": 35 }
+          ],
+          "completionStatus": [
+            { "cycle_name": "FY 2025-26 Annual Review", "responses_submitted": 420, "total_employees": 1245, "completion_pct": 33.73 }
+          ]
+        }
+      }
+order: 1000

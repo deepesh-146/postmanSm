@@ -1,0 +1,9 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/job/approveRequisition/8bd4b264-3d92-4af9-a98e-002deadb4c29?userId=25b2a02a-7f16-4a93-a897-5d71a3842bf0&type=MANAGER"
+url: "{{hrmsBaseUrl}}/job/approveRequisition/8bd4b264-3d92-4af9-a98e-002deadb4c29?userId=25b2a02a-7f16-4a93-a897-5d71a3842bf0&type=MANAGER"
+method: PUT
+queryParams:
+  userId: 25b2a02a-7f16-4a93-a897-5d71a3842bf0
+  type: MANAGER
+examples: ./.resources/{{hrmsBaseUrl}}-job-approveRequisition-8bd4b264-3d92-4af9-a98e-0.resources/examples
+order: 5000

@@ -1,0 +1,6 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/candidate/getCandidateProfile/8b1962cc-1b64-4425-9161-6d9e97b4f2dd"
+url: "{{hrmsBaseUrl}}/candidate/getCandidateProfile/d8730921-59bc-4f55-93e5-863acd9be669"
+method: GET
+examples: ./.resources/{{hrmsBaseUrl}}-candidate-getCandidateProfile-8b1962cc-1b64-4425.resources/examples
+order: 11000

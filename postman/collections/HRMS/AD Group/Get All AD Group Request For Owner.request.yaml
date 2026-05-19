@@ -1,0 +1,7 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/ad_group/for-owner/:ownerId"
+method: GET
+pathVariables:
+  ownerId: 903bd690-61f3-43db-9edd-d38d531c1c67
+examples: ./.resources/Get All AD Group Request For Owner.resources/examples
+order: 13000

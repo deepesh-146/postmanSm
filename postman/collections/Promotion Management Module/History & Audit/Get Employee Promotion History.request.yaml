@@ -1,0 +1,12 @@
+$kind: http-request
+description: |-
+  Get all past EFFECTIVE promotions for a specific employee.
+
+  Useful for:
+  - Employee profile page
+  - Career progression view
+  - Promotion timeline
+url: "{{base_url}}/promotions/employee/{{employee_id}}/history"
+method: GET
+examples: ./.resources/Get Employee Promotion History.resources/examples
+order: 2000

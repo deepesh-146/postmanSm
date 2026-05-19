@@ -1,0 +1,42 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/timesheet/createProject"
+url: "{{hrmsBaseUrl}}/timesheet/createProject"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"projectName\": \"AI-Powered HRMS System\",\r
+
+    \    \"startDate\": \"2025-03-01\",\r
+
+    \    \"endDate\": \"2025-12-31\",\r
+
+    \    \"internal\": \"Yes\",\r
+
+    \    \"sponsorName\": \"Tech Innovators Inc.\",\r
+
+    \    \"managerName\": \"John Doe\",\r
+
+    \    \"summary\": \"Developing an AI-driven Human Resource Management System to automate employee management.\",\r
+
+    \    \"objective\": \"To streamline HR operations using AI for attendance tracking, payroll automation, and performance analysis.\",\r
+
+    \    \"userId\": null,\r
+
+    \    \"parentId\": \"{{userId}}\",\r
+
+    \    \"sponsor_id\": \"{{userId}}\",\r
+
+    \    \"manager_id\": \"{{userId}}\",\r
+
+    \    \"employeeIds\": [\r
+
+    \        \"40af28c7-6747-4af0-b534-a7dae23e24ea\",\r
+
+    \        \"b4beed96-d0fd-451f-b763-22bb40bb9802\"\r
+
+    \    ]\r
+
+    }"
+order: 2000

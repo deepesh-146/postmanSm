@@ -1,0 +1,32 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/payrolls/v3/createPayroll"
+url: "{{hrmsBaseUrl}}/payrolls/v3/createPayroll"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"payrollData\": {\r
+
+    \        \"countryId\": 1,\r
+
+    \        \"date\": \"2026-02-06T09:57:50.614Z\",\r
+
+    \        \"payrollMonth\": \"2026-01\",\r
+
+    \        \"off_payroll\": false\r
+
+    \    },\r
+
+    \    \"employeeData\": [\r
+
+    \        \"2fac59fa-a242-4883-8900-f931758cfc29\"\r
+
+    \    ]\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjFjMjIxNDM0LTk4MDgtNGMyYy05ZGYxLWMwNWUwZGMxNTc2ZCIsInVzZXJJZCI6bnVsbCwidGVuYW50SWQiOiIxYzIyMTQzNC05ODA4LTRjMmMtOWRmMS1jMDVlMGRjMTU3NmQiLCJjbGllbnRJZCI6ImZhbGNvbiIsImVtYWlsIjoiYWRtaW5AZmFsY29uLmNvbSIsIm5hbWUiOiJGYWxjb24gR3JvdXAiLCJmaXJzdE5hbWUiOiJGYWxjb24gR3JvdXAiLCJ1c2VyUm9sZSI6IlRFTkFOVF9PV05FUiIsIm9yZ2FuaXphdGlvbklkIjoiY2I2ZjBlNGYtM2FlMS00ZWQ0LWJiYzktMzMyOWM4ODViYmM5IiwiaWF0IjoxNzY1OTU0NTc4LCJleHAiOjE3NjYwNDA5NzgsImF1ZCI6IkZhbGNvbiBHcm91cCJ9.THAno3FLjbGybrqYr8TnYY_nVRBP4wMMgFOm2WvxJZ8
+order: 2000

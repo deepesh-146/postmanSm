@@ -1,0 +1,122 @@
+$kind: http-example
+name: "{{hrmsBaseUrl}}/travels/getAllTravelRequests?page=1&size=2"
+request:
+  url: "{{hrmsBaseUrl}}/travels/getAllTravelRequests?page=1&size=2"
+  method: GET
+  queryParams:
+    - key: page
+      value: "1"
+    - key: size
+      value: "2"
+    - key: search
+      value: demoadmin
+      disabled: true
+      description: travelPurpose or destination or firstName or lastname or both
+    - key: userId
+      value: "{{userId}}"
+      disabled: true
+    - key: status
+      value: PENDING
+      disabled: true
+    - key: fromDate
+      value: 2025-05-08
+      disabled: true
+    - key: toDate
+      value: 2025-05-19
+      disabled: true
+  body:
+    type: json
+    content: "{\r
+
+      \  \"travelPurpose\": \"Client meeting and site inspection\",\r
+
+      \  \"destination\": \"Mumbai\",\r
+
+      \  \"fromDate\": \"2025-05-20\",\r
+
+      \  \"toDate\": \"2025-05-23\",\r
+
+      \  \"modeOfTravel\": \"Flight\",\r
+
+      \  \"estimatedCost\": 18000,\r
+
+      \  \"advanceRequired\": true,\r
+
+      \  \"description\": \"Visit client office and assess project site condition\"\r
+
+      }\r\n"
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "1589"
+    ETag: W/"635-xxTcRSJAqltmDX5oeH30wZ29MqY"
+    Date: Thu, 08 May 2025 20:51:13 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "success": true,
+          "status": 200,
+          "message": "Travel requests fetched successfully.",
+          "data": {
+              "totalrows": 2,
+              "pageData": [
+                  {
+                      "id": "ec795140-94d5-49e7-96a9-f6a4a60ea681",
+                      "travelPurpose": "Client meeting and site inspection",
+                      "destination": "Mumbai11",
+                      "fromDate": "2025-05-20T00:00:00.000Z",
+                      "toDate": "2025-05-23T00:00:00.000Z",
+                      "modeOfTravel": "Flight",
+                      "estimatedCost": 18000,
+                      "advanceRequired": true,
+                      "description": "Visit client office and assess project site condition",
+                      "status": "PENDING",
+                      "adminComments": null,
+                      "createdAt": "2025-05-08T20:15:36.000Z",
+                      "updatedAt": "2025-05-08T20:15:36.000Z",
+                      "organizationId": "3361c67e-ca0d-4a78-a5b4-b3b523c035f0",
+                      "officeId": "ee5226c2-97d5-46f3-bf8c-d45ca9a51c69",
+                      "employeeMainId": "032d7afc-0481-474c-9e51-4d8bf7141807",
+                      "employee_main": {
+                          "id": "032d7afc-0481-474c-9e51-4d8bf7141807",
+                          "firstName": "demoadmin",
+                          "lastName": "Test"
+                      }
+                  },
+                  {
+                      "id": "471be52c-7e6e-438a-a0fc-5346c415d9c9",
+                      "travelPurpose": "Client meeting and site inspection111",
+                      "destination": "Mumbai",
+                      "fromDate": "2025-05-20T00:00:00.000Z",
+                      "toDate": "2025-05-23T00:00:00.000Z",
+                      "modeOfTravel": "Flight",
+                      "estimatedCost": 18000,
+                      "advanceRequired": true,
+                      "description": "Visit client office and assess project site condition",
+                      "status": "PENDING",
+                      "adminComments": null,
+                      "createdAt": "2025-05-08T20:11:34.000Z",
+                      "updatedAt": "2025-05-08T20:11:34.000Z",
+                      "organizationId": "3361c67e-ca0d-4a78-a5b4-b3b523c035f0",
+                      "officeId": "ee5226c2-97d5-46f3-bf8c-d45ca9a51c69",
+                      "employeeMainId": "032d7afc-0481-474c-9e51-4d8bf7141807",
+                      "employee_main": {
+                          "id": "032d7afc-0481-474c-9e51-4d8bf7141807",
+                          "firstName": "demoadmin",
+                          "lastName": "Test"
+                      }
+                  }
+              ],
+              "totalPages": 1,
+              "currentPage": 1
+          }
+      }
+order: 1000

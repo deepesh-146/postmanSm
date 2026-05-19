@@ -1,0 +1,5 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/assessments/admin/getAllAssignments/{{userId}}"
+url: "{{hrmsBaseUrl}}/assessments/admin/getAllAssignments/{{userId}}"
+method: GET
+order: 3000

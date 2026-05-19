@@ -1,0 +1,48 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/employee/education"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"isCandidate\": false,\r
+
+    \    \"employeeId\": \"{{userId}}\",\r
+
+    \    \"educationData\": [\r
+
+    \        {\r
+
+    \            \"clgName\": \"RPSIT\",\r
+
+    \            \"univName\": \"Magadh\",\r
+
+    \            \"clgLocation\": \"Patna\",\r
+
+    \            \"specialization\": \"Computer Engineering\",\r
+
+    \            \"degName\": \"B.Tech\",\r
+
+    \            \"courseName\": \"Graduation\",\r
+
+    \            \"startDate\": \"2016-02-02\",\r
+
+    \            \"endDate\": \"2019-02-02\",\r
+
+    \            \"officialEmail\": \"info@rpsit.org.in\",\r
+
+    \            \"officialMobile\": \"88888888888\",\r
+
+    \            \"currPursuing\": \"NO\",\r
+
+    \            \"marksheetFilePath\": \"https://morth.nic.in/sites/default/files/dd12-13_0.pdf\",\r
+
+    \            \"certFilePath\": \"https://morth.nic.in/sites/default/files/dd12-13_0.pdf\"\r
+
+    \        }\r
+
+    \    ]\r
+
+    }"
+examples: ./.resources/Add Education Data.resources/examples
+order: 4000

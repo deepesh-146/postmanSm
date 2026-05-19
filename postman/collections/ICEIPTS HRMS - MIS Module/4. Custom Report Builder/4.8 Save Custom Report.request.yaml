@@ -1,0 +1,26 @@
+$kind: http-request
+description: "Save a custom report configuration for reuse. isShared: true makes it visible to all users in the organization."
+url: "{{baseUrl}}/mis/custom-report/save"
+method: POST
+headers:
+  Content-Type: application/json
+  x-organization-id: "{{organizationId}}"
+body:
+  type: text
+  content: |-
+    {
+      "reportName": "Active Employees — Engineering",
+      "description": "All active employees in the Engineering department with join date and gender",
+      "reportConfig": {
+        "dataSource": "employee",
+        "fields": ["firstName", "lastName", "email", "gender", "joiningDate"],
+        "filters": {
+          "isActive": true,
+          "departmentId": "YOUR_ENGINEERING_DEPT_UUID"
+        },
+        "sortBy": "joiningDate",
+        "sortOrder": "DESC"
+      },
+      "isShared": true
+    }
+order: 8000

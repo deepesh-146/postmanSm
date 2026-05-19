@@ -1,0 +1,15 @@
+$kind: http-request
+description: |-
+  Returns all push logs with pagination.
+
+  Query params:
+  - page: page number (0-indexed)
+  - size: page size (1-100, default 10)
+  - status: filter by QUEUED, PUSHING, SUCCESS, FAILED
+  - erpType: filter by TALLY_PRIME, TALLY_ERP9, SAP_B1, SAP_S4HANA
+url: "{{baseUrl}}/erp/push-logs?page=0&size=20"
+method: GET
+queryParams:
+  page: "0"
+  size: "20"
+order: 2000

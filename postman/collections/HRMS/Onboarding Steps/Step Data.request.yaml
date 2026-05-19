@@ -1,0 +1,7 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/onboarding_step/:stepId"
+method: GET
+pathVariables:
+  stepId: a19a390f-3ec8-434f-846f-f8d13c554e8e
+examples: ./.resources/Step Data.resources/examples
+order: 3000

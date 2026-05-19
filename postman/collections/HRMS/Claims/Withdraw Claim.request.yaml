@@ -1,0 +1,16 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/claims/withdraw"
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"employeeId\": \"903bd690-61f3-43db-9edd-d38d531c1c67\",\r
+
+    \    \"claimId\": \"44d57429-b244-48dc-a55c-4eba826cde3f\",\r
+
+    \    \"comment\": \"Will Submit again\"\r
+
+    }"
+examples: ./.resources/Withdraw Claim.resources/examples
+order: 2000

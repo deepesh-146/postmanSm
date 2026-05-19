@@ -1,0 +1,26 @@
+$kind: http-example
+request:
+  url: "{{base_url}}/promotions/{{promotion_id}}/apply"
+  method: POST
+response:
+  statusCode: 200
+  statusText: OK
+  body:
+    type: text
+    content: |-
+      {
+        "success": true,
+        "status": 200,
+        "message": "Promotion applied successfully",
+        "data": {
+          "success": true,
+          "message": "Promotion applied successfully",
+          "data": {
+            "employeeId": "uuid-employee-id",
+            "fromDesignation": "Software Engineer",
+            "toDesignation": "Senior Software Engineer",
+            "effectiveDate": "2026-04-01"
+          }
+        }
+      }
+order: 1000

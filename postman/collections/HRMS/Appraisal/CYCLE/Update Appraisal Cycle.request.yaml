@@ -1,0 +1,17 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}appraisal/updateCycle/:cycleId"
+method: PUT
+headers:
+  Content-Type: application/json
+pathVariables:
+  cycleId: 2711792c-7911-4a9d-9377-c98aa2107d0a
+body:
+  type: text
+  content: |-
+    {
+        "status": "STARTED",
+        "cycle_period": 10,
+        "start_date": "2026-01-05",
+        "end_date": "2026-01-15"
+    }
+order: 4000

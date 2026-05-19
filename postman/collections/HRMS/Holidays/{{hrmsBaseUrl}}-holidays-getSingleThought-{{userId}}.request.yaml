@@ -1,0 +1,6 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/holidays/getSingleThought/{{userId}}"
+url: "{{hrmsBaseUrl}}/holidays/getSingleThought/{{userId}}"
+method: GET
+examples: ./.resources/{{hrmsBaseUrl}}-holidays-getSingleThought-{{userId}}.resources/examples
+order: 9000

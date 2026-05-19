@@ -1,0 +1,7 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/employee/deleteVisa?id=12e9f6b3-7d07-4e9e-b28f-49e162f4d4a4"
+url: "{{hrmsBaseUrl}}/employee/deleteVisa?id=12e9f6b3-7d07-4e9e-b28f-49e162f4d4a4"
+method: DELETE
+queryParams:
+  id: 12e9f6b3-7d07-4e9e-b28f-49e162f4d4a4
+order: 5000

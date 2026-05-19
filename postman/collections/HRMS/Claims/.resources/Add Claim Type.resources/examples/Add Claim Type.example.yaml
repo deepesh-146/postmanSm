@@ -1,0 +1,40 @@
+$kind: http-example
+request:
+  url: "{{hrmsBaseUrl}}/claims/type"
+  method: POST
+  body:
+    type: json
+    content: "{\r
+
+      \    \"type\": \"Broadband\",\r
+
+      \    \"max\": 1000,\r
+
+      \    \"approver\": \"903bd690-61f3-43db-9edd-d38d531c1c67\"\r
+
+      }"
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "83"
+    ETag: W/"53-xmYBgGG1XibKgosSTkw/3+i/SKA"
+    Date: Mon, 14 Oct 2024 18:27:39 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "status": {
+              "success": true,
+              "code": 200,
+              "message": "Claim Type Added",
+              "failure": false
+          }
+      }
+order: 1000

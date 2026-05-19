@@ -1,0 +1,15 @@
+$kind: http-request
+description: "Manager/Admin approves KPI #2."
+url: "{{baseUrl}}/goals/kpis/{{kpiId2}}/kpiStatusChange"
+method: PUT
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+        "status": "APPROVED",
+        "acceptedById": "{{managerId}}",
+        "comments": "Approved"
+    }
+order: 7000

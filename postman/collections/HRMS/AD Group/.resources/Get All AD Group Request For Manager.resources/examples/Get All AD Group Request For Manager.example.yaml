@@ -1,0 +1,59 @@
+$kind: http-example
+request:
+  url: "{{hrmsBaseUrl}}/ad_group/for-manager/:managerId"
+  method: GET
+  pathVariables:
+    managerId: 903bd690-61f3-43db-9edd-d38d531c1c67
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "930"
+    ETag: W/"3a2-jsz0eyrsm2nb35Ad0bML3ibaPlc"
+    Date: Mon, 14 Oct 2024 17:50:48 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "status": {
+              "success": true,
+              "code": 200,
+              "message": "Manager AdGroup Request List Fetched",
+              "failure": false
+          },
+          "data": [
+              {
+                  "id": "19f96192-2cb6-4eda-84b8-8020e0a961d0",
+                  "employeeId": "903bd690-61f3-43db-9edd-d38d531c1c67",
+                  "adGroupId": "9284f618-45f4-4adf-b705-50f2ded871d2",
+                  "managerId": "903bd690-61f3-43db-9edd-d38d531c1c67",
+                  "ownerId": "903bd690-61f3-43db-9edd-d38d531c1c67",
+                  "requestNumber": "REQ3960796",
+                  "managerApproved": true,
+                  "adOwnerApproved": true,
+                  "busJust": "Need to Add Job",
+                  "raisedOn": "2024-10-14T12:15:23.000Z",
+                  "approvedOnManager": "2024-10-14T12:16:14.000Z",
+                  "approvedOnOwner": "2024-10-14T12:19:30.000Z",
+                  "rejectOnManager": null,
+                  "rejectOnOwner": null,
+                  "requestApproved": true,
+                  "requestRejected": false,
+                  "commentsManager": "APPROVED",
+                  "commentsOwner": "APPROVED",
+                  "reqStatus": "GROUP_APPROVED",
+                  "reqWithdrawn": false,
+                  "reqWithdrawnOn": null,
+                  "expiresOn": "2024-10-29T12:15:23.000Z",
+                  "createdAt": "2024-10-14T17:45:23.000Z",
+                  "updatedAt": "2024-10-14T17:49:30.000Z"
+              }
+          ]
+      }
+order: 1000

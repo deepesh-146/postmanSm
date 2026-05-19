@@ -1,0 +1,3 @@
+$kind: collection
+description: Category management with routing rules. Must be set up before grievances can be filed.
+order: 1000

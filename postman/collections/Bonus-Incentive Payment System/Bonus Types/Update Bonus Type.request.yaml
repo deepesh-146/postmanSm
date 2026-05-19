@@ -1,0 +1,20 @@
+$kind: http-request
+description: Update an existing bonus type
+url: "{{base_url}}/api/bonus/types/:id"
+method: PUT
+headers:
+  Content-Type: application/json
+  Authorization: Bearer {{access_token}}
+pathVariables:
+  - key: id
+    value: "{{bonus_type_id}}"
+    description: Bonus Type UUID
+body:
+  type: json
+  content: |-
+    {
+      "name": "Annual Performance Bonus (Updated)",
+      "percentage": 12,
+      "isActive": true
+    }
+order: 5000

@@ -1,0 +1,11 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/policy/getLoanById/2615912b-d275-47a0-b958-799013970100"
+method: GET
+headers:
+  Content-Type: application/json
+auth:
+  type: bearer
+  credentials:
+    token: "{{clientToken}}"
+examples: ./.resources/Get Loan Policy by ID.resources/examples
+order: 3000

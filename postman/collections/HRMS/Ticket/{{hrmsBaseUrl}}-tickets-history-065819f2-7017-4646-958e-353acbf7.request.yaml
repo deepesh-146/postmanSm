@@ -1,0 +1,6 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/tickets/history/065819f2-7017-4646-958e-353acbf7acf1"
+url: "{{hrmsBaseUrl}}/tickets/history/065819f2-7017-4646-958e-353acbf7acf1"
+method: GET
+examples: ./.resources/{{hrmsBaseUrl}}-tickets-history-065819f2-7017-4646-958e-353acbf7.resources/examples
+order: 23000

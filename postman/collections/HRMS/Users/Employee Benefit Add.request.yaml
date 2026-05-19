@@ -1,0 +1,16 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/employee/addBenefit"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"employeeId\": \"903bd690-61f3-43db-9edd-d38d531c1c67\",\r
+
+    \    \"benefitId\": \"3aef11de-b0bb-4ba7-b564-2bfbcf699254\",\r
+
+    \    \"generatedById\": \"903bd690-61f3-43db-9edd-d38d531c1c67\"    \r
+
+    }"
+examples: ./.resources/Employee Benefit Add.resources/examples
+order: 21000

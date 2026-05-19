@@ -1,0 +1,15 @@
+$kind: http-request
+description: |-
+  Check if an employee is eligible for promotion.
+
+  Validates:
+  - No active PIP
+  - Performance band meets threshold
+  - No duplicate pending promotion
+  - Minimum tenure (6 months default)
+
+  Returns eligibility status, check details, and latest performance data.
+url: "{{base_url}}/promotions/eligibility/{{employee_id}}"
+method: GET
+examples: ./.resources/Check Employee Eligibility.resources/examples
+order: 1000

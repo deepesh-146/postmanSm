@@ -1,0 +1,6 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/appraisal/deleteQuestion/044124c0-5fcc-4c28-bbbc-606899d88961"
+method: DELETE
+headers:
+  Content-Type: application/json
+order: 20000

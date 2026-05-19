@@ -1,0 +1,20 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/payrolls/getAllSalarySlabs/{{userId}}"
+url: "{{hrmsBaseUrl}}/payrolls/getAllSalarySlabs/{{userId}}?regime=OLD"
+method: GET
+queryParams:
+  regime: OLD
+body:
+  type: json
+  content: "{\r
+
+    \    \"minAmount\": 250000,\r
+
+    \    \"maxAmount\": 500000,\r
+
+    \    \"regime\": \"OLD\",\r
+
+    \    \"rate\": 5\r
+
+    }"
+order: 20000

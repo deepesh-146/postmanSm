@@ -1,0 +1,30 @@
+$kind: http-request
+description: Try to generate duplicate challan. Should return 409 Conflict if challan already exists for this payroll + report type.
+url: "{{hrmsBaseUrl}}/api/compliance/generate"
+method: POST
+headers:
+  Content-Type: application/json
+  Authorization: Bearer {{token}}
+body:
+  type: text
+  content: |-
+    {
+      "empPayrollId": "{{payrollId}}",
+      "reportType": "PF_CHALLAN",
+      "challanMode": "SINGLE_CHALLAN",
+      "filters": {}
+    }
+scripts:
+  - type: afterResponse
+    code: |-
+      pm.test('Status code is 409 Conflict', function () {
+          pm.response.to.have.status(409);
+      });
+
+      pm.test('Error message returned', function () {
+          var jsonData = pm.response.json();
+          pm.expect(jsonData).to.have.property('error');
+          pm.expect(jsonData.error).to.include('Conflict');
+      });
+    language: text/javascript
+order: 1000

@@ -1,0 +1,7 @@
+$kind: http-request
+url: "{{baseUrl}}/pip?employeeId={{userId}}&status=ACTIVE"
+method: GET
+queryParams:
+  employeeId: "{{userId}}"
+  status: ACTIVE
+order: 6000

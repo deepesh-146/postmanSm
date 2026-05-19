@@ -1,0 +1,15 @@
+$kind: http-request
+description: |-
+  Returns all push attempts for a specific journal entry.
+
+  Each log includes:
+  - status: QUEUED, PUSHING, SUCCESS, FAILED
+  - requestPayload: XML sent to Tally
+  - responsePayload: XML received from Tally
+  - errorMessage: error details if failed
+  - retryCount: number of retry attempts
+  - pushedBy: user who triggered
+  - pushedAt: timestamp
+url: "{{baseUrl}}/erp/push-logs/{{journalId}}"
+method: GET
+order: 1000

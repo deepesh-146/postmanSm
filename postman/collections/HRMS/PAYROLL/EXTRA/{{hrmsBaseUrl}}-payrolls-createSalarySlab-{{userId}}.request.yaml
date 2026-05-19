@@ -1,0 +1,18 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/payrolls/createSalarySlab/{{userId}}"
+url: "{{hrmsBaseUrl}}/payrolls/createSalarySlab/{{userId}}"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"minAmount\": 0,\r
+
+    \    \"maxAmount\": 900000,\r
+
+    \    \"regime\": \"NEW\",\r
+
+    \    \"rate\": 10\r
+
+    }"
+order: 1000

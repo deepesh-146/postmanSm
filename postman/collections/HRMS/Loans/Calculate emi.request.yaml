@@ -1,0 +1,15 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/employee_loan/emiCalculation"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"loanAmount\": 50000,\r
+
+    \    \"tenure\": 24,\r
+
+    \    \"rateOfInterest\": 10.5\r
+
+    }"
+order: 7000

@@ -1,0 +1,20 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/assessments/admin/assignAssessment/{{userId}}"
+url: "{{hrmsBaseUrl}}/assessments/admin/assignAssessment/{{userId}}"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"assessmentId\": \"Backend Development Assessment\",\r
+
+    \    \"candidates\": [\r
+
+    \        \"zza\",\r
+
+    \        \"asda\"\r
+
+    \    ]\r
+
+    }"
+order: 2000

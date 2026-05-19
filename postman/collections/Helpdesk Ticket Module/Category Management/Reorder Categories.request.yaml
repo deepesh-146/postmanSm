@@ -1,0 +1,16 @@
+$kind: http-request
+url: "{{baseUrl}}/ticket/category/reorder"
+method: PATCH
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "categories": [
+        { "id": "CATEGORY_UUID_1", "sortOrder": 1 },
+        { "id": "CATEGORY_UUID_2", "sortOrder": 2 },
+        { "id": "CATEGORY_UUID_3", "sortOrder": 3 }
+      ]
+    }
+order: 7000

@@ -1,0 +1,32 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/employee/updateVisa"
+url: "{{hrmsBaseUrl}}/employee/updateVisa"
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"visa\": {\r
+
+    \        \"id\": \"15b096d7-9a55-4a25-93c4-5edee0c6eb23\",\r
+
+    \        \"employeeMainId\": \"b4beed96-d0fd-451f-b763-22bb40bb9802\",\r
+
+    \        \"date\": \"2025-02-27\",\r
+
+    \        \"visa\": \"S1\",\r
+
+    \        \"issuingCountry\": \"United States\",\r
+
+    \        \"issued\": \"2025-04-01\",\r
+
+    \        \"expiration\": \"2025-06-10\",\r
+
+    \        \"status\": \"Active\",\r
+
+    \        \"visaType\": \"Business\"\r
+
+    \    }\r
+
+    }"
+order: 4000

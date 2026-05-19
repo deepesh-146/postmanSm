@@ -1,0 +1,5 @@
+$kind: http-request
+description: Verify all 5 bands created and sorted.
+url: "{{baseUrl}}/appraisal-finalization/bands"
+method: GET
+order: 6000

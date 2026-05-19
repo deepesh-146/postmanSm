@@ -1,0 +1,11 @@
+$kind: http-request
+description: List saved custom reports (own + shared).
+url: "{{baseUrl}}/mis/custom-report/saved?page=1&size=10"
+method: GET
+headers:
+  Content-Type: application/json
+  x-organization-id: "{{organizationId}}"
+queryParams:
+  page: "1"
+  size: "10"
+order: 9000

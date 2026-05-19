@@ -1,0 +1,38 @@
+$kind: http-example
+request:
+  url: "{{hrmsBaseUrl}}/employee/updateManager"
+  method: PUT
+  body:
+    type: json
+    content: "{\r
+
+      \    \"employeeId\": \"903bd690-61f3-43db-9edd-d38d531c1c67\",\r
+
+      \    \"managerId\": \"903bd690-61f3-43db-9edd-d38d531c1c67\"     \r
+
+      }"
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "82"
+    ETag: W/"52-rPP34ufaNDAjUKa1BRkyheM4XjE"
+    Date: Mon, 14 Oct 2024 03:22:39 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "status": {
+              "success": true,
+              "code": 200,
+              "message": "Manager Updated",
+              "failure": false
+          }
+      }
+order: 1000

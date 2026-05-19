@@ -1,0 +1,38 @@
+$kind: http-example
+request:
+  url: "{{hrmsBaseUrl}}/ad_group/deactivate"
+  method: PATCH
+  body:
+    type: json
+    content: "{\r
+
+      \    \"adGroupId\": \"9284f618-45f4-4adf-b705-50f2ded871d2\",\r
+
+      \    \"employeeId\": \"903bd690-61f3-43db-9edd-d38d531c1c67\"\r
+
+      }"
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "87"
+    ETag: W/"57-i5ZWH8L2j6O2mC+ugacc8mFgtPU"
+    Date: Mon, 14 Oct 2024 17:29:38 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "status": {
+              "success": true,
+              "code": 200,
+              "message": "AD Group DeActivated",
+              "failure": false
+          }
+      }
+order: 1000

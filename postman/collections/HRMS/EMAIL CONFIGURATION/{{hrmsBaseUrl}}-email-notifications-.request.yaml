@@ -1,0 +1,5 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/email-notifications/"
+url: "{{hrmsBaseUrl}}/email-notifications/"
+method: GET
+order: 2000

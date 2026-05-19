@@ -1,0 +1,70 @@
+$kind: http-example
+request:
+  url: "{{base_url}}/promotions?page=1&size=10&status=&employeeId=&departmentId=&search=&fromDate=&toDate="
+  method: GET
+  queryParams:
+    - key: page
+      value: "1"
+    - key: size
+      value: "10"
+    - key: status
+      value: ""
+      description: DRAFT | PENDING_APPROVAL | APPROVED | EFFECTIVE | REJECTED | CANCELLED
+    - key: employeeId
+      value: ""
+      description: Filter by specific employee UUID
+    - key: departmentId
+      value: ""
+      description: Filter by department UUID
+    - key: search
+      value: ""
+      description: Search by employee name or code
+    - key: fromDate
+      value: ""
+      description: Effective date from (YYYY-MM-DD)
+    - key: toDate
+      value: ""
+      description: Effective date to (YYYY-MM-DD)
+response:
+  statusCode: 200
+  statusText: OK
+  body:
+    type: text
+    content: |-
+      {
+        "success": true,
+        "status": 200,
+        "data": {
+          "totalItems": 25,
+          "data": [
+            {
+              "id": "uuid",
+              "status": "PENDING_APPROVAL",
+              "effectiveDate": "2026-04-01",
+              "promotionType": "DESIGNATION_AND_GRADE",
+              "performanceScore": 4.2,
+              "performanceBand": "Exceeds Expectations",
+              "currentSalary": 65000,
+              "proposedSalary": 85000,
+              "employee": {
+                "id": "uuid",
+                "firstName": "John",
+                "lastName": "Doe",
+                "employeeCode": "EMP001"
+              },
+              "nominator": {
+                "id": "uuid",
+                "firstName": "Jane",
+                "lastName": "Smith"
+              },
+              "fromDesignation": { "id": "uuid", "name": "Software Engineer" },
+              "toDesignation": { "id": "uuid", "name": "Senior Software Engineer" },
+              "fromGrade": { "id": "uuid", "gradeName": "G4" },
+              "toGrade": { "id": "uuid", "gradeName": "G5" }
+            }
+          ],
+          "totalPages": 3,
+          "currentPage": 1
+        }
+      }
+order: 1000

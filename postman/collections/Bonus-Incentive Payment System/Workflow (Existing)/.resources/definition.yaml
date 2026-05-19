@@ -1,0 +1,3 @@
+$kind: collection
+description: Workflow approval operations (uses existing workflow system)
+order: 4000

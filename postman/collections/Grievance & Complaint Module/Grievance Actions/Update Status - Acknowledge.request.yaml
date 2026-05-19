@@ -1,0 +1,14 @@
+$kind: http-request
+url: "{{base_url}}/grievances/status"
+method: PATCH
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+        "grievanceId": "{{grievanceId}}",
+        "status": "ACKNOWLEDGED",
+        "comment": "We have received your grievance and will review it shortly."
+    }
+order: 1000

@@ -1,0 +1,14 @@
+$kind: http-request
+description: Monthly snapshot for end-of-month reporting.
+url: "{{baseUrl}}/mis/snapshots"
+method: POST
+headers:
+  Content-Type: application/json
+  x-organization-id: "{{organizationId}}"
+body:
+  type: text
+  content: |-
+    {
+      "snapshotType": "MONTHLY"
+    }
+order: 2000

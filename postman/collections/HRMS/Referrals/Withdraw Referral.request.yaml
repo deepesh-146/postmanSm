@@ -1,0 +1,14 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/referrals/withdraw"
+method: PATCH
+body:
+  type: json
+  content: "{\r
+
+    \    \"employeeId\": \"903bd690-61f3-43db-9edd-d38d531c1c67\",\r
+
+    \    \"referralId\": \"7d8e66bf-65b6-4ccc-a762-fa8c0fd0866e\"\r
+
+    }"
+examples: ./.resources/Withdraw Referral.resources/examples
+order: 4000

@@ -1,0 +1,9 @@
+$kind: http-request
+description: Verify all scores now show status FINALIZED.
+url: "{{baseUrl}}/appraisal-finalization/cycle/{{cycleId}}/scores?status=FINALIZED&page=0&size=10"
+method: GET
+queryParams:
+  status: FINALIZED
+  page: "0"
+  size: "10"
+order: 3000

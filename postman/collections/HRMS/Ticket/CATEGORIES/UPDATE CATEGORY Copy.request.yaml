@@ -1,0 +1,13 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/tickets/category/:categoryId/status"
+method: PATCH
+pathVariables:
+  categoryId: 2f93cc73-a41e-45a7-8b21-031d5fdc8ce4
+body:
+  type: json
+  content: "{\r
+
+    \    \"status\":\"INACTIVE\"   // ACTIVE\r
+
+    }"
+order: 6000

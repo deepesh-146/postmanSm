@@ -1,0 +1,8 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/holidays/birthdayThisMonth/{{userId}}?month=10"
+url: "{{hrmsBaseUrl}}/holidays/birthdayThisMonth/{{userId}}?month=11"
+method: GET
+queryParams:
+  month: "11"
+examples: ./.resources/{{hrmsBaseUrl}}-holidays-birthdayThisMonth-{{userId}}-month=10.resources/examples
+order: 10000

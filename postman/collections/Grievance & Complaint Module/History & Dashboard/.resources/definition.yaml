@@ -1,0 +1,3 @@
+$kind: collection
+description: Audit trail and dashboard statistics.
+order: 5000

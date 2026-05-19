@@ -1,0 +1,28 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/tenants/{{tenantId}}/sync-payroll-config?updateExisting=true&onlyMissing=true"
+description: Update tenant configuration (branding, features, settings).
+url: "{{hrmsBaseUrl}}/tenants/{{tenantId}}/sync-payroll-config?updateExisting=true&onlyMissing=true"
+method: POST
+headers:
+  Content-Type: application/json
+queryParams:
+  updateExisting: "true"
+  onlyMissing: "true"
+body:
+  type: text
+  content: |-
+    {
+      "logoUrl": "https://example.com/logo.png",
+      "primaryColor": "#007bff",
+      "secondaryColor": "#6c757d",
+      "featureFlags": {
+        "attendance": true,
+        "payroll": true,
+        "recruitment": false
+      },
+      "customSettings": {
+        "timezone": "Asia/Kolkata",
+        "currency": "INR"
+      }
+    }
+order: 5000

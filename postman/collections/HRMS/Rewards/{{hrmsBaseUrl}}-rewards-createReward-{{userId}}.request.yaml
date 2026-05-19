@@ -1,0 +1,25 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/rewards/createReward/{{userId}}"
+url: "{{hrmsBaseUrl}}/rewards/createReward/{{userId}}"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"name\": \"R2\",\r
+
+    \    \"description\": \"pp\",\r
+
+    \    \"pointsRequired\": 20000,\r
+
+    \    \"quantityAvailable\": 100\r
+
+    }\r
+
+    //below comments not in use\r
+
+    //    \"validityStartDate\": \"2024-12-03 11:47:09\",\r
+
+    //\"validityEndDate\": \"2024-12-03 11:47:09\""
+examples: ./.resources/{{hrmsBaseUrl}}-rewards-createReward-{{userId}}.resources/examples
+order: 11000

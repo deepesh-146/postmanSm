@@ -1,0 +1,29 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/travels/createTravelRequest/{{userId}}"
+url: "{{hrmsBaseUrl}}/travels/createTravelRequest/{{userId}}"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"travelPurpose\": \"Conference1\",\r
+
+    \  \"destination\": \"Mumbai\",\r
+
+    \  \"fromDate\": \"2025-05-20\",\r
+
+    \  \"toDate\": \"2025-05-23\",\r
+
+    \  \"modeOfTravel\": \"Flight\",\r
+
+    \  \"estimatedCost\": 18000,\r
+
+    \  \"advanceRequired\": true,\r
+
+    \  \"description\": \"Visit client office and assess project site condition\",\r
+
+    \  \"image\":\"fsdfcsd\"\r
+
+    }\r\n"
+examples: ./.resources/{{hrmsBaseUrl}}-travels-createTravelRequest-{{userId}}.resources/examples
+order: 1000

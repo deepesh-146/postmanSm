@@ -1,0 +1,38 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/announcements/policy-circular Copy 3"
+url: "{{hrmsBaseUrl}}/announcements/policy-circular/updatePolicyCircularById/:id"
+method: PUT
+queryParams:
+  - key: search
+    value: ""
+    disabled: true
+pathVariables:
+  id: fc8c5164-e527-47b0-bd0f-863bd6817d54
+body:
+  type: json
+  content: "{\r
+
+    \    \"title\": \"Employee Code of Conduct Policy\",\r
+
+    \    \"description\": \"This policy outlines the expected behavior and conduct standards for all employees.\",\r
+
+    \    \"effectiveDate\": \"2024-01-15T00:00:00.000Z\",\r
+
+    \    \"expiryDate\": \"2025-01-15T00:00:00.000Z\",\r
+
+    \    \"category\": \"HR Policies\",\r
+
+    \    \"document\": \"uploadImage/2025-12-08T11:16:10.110Z-Disptacher_Flow.png\",\r
+
+    \    \"markAsImportant\": true,\r
+
+    \    \"acknowledgementRequired\": true,\r
+
+    \    \"branchIds\": [\r
+
+    \        \"fc8c5164-e527-47b0-bd0f-863bd6817d54\"\r
+
+    \    ]\r
+
+    }"
+order: 4000

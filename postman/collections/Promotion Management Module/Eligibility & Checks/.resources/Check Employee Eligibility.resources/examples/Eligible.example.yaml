@@ -1,0 +1,33 @@
+$kind: http-example
+request:
+  url: "{{base_url}}/promotions/eligibility/{{employee_id}}"
+  method: GET
+response:
+  statusCode: 200
+  statusText: OK
+  body:
+    type: text
+    content: |-
+      {
+        "success": true,
+        "status": 200,
+        "message": "Eligibility check completed",
+        "data": {
+          "eligible": true,
+          "checks": {
+            "pipCheck": { "passed": true, "detail": "No active PIP" },
+            "performanceCheck": { "passed": true, "detail": "Score: 4.2, Band: Exceeds Expectations (Rank 2)" },
+            "duplicateCheck": { "passed": true, "detail": "No pending promotion" },
+            "tenureCheck": { "passed": true, "detail": "Tenure: 24 months" }
+          },
+          "reasons": [],
+          "performanceData": {
+            "score": 4.2,
+            "bandName": "Exceeds Expectations",
+            "bandId": "uuid-band-id",
+            "cycleId": "uuid-cycle-id",
+            "finalScoreId": "uuid-final-score-id"
+          }
+        }
+      }
+order: 1000

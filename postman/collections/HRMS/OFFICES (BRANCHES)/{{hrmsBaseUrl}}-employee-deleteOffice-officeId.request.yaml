@@ -1,0 +1,16 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/employee/deleteOffice/:officeId"
+url: "{{hrmsBaseUrl}}/employee/deleteOffice/:officeId"
+method: DELETE
+pathVariables:
+  officeId: ""
+body:
+  type: json
+  content: "{\r
+
+    \    \"name\": \"Office 12\",\r
+
+    \    \"location\" : \"PUNE\"\r
+
+    }"
+order: 5000

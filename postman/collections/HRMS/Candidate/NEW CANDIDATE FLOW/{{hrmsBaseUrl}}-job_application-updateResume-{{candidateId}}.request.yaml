@@ -1,0 +1,9 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/job_application/updateResume/{{candidateId}}"
+url: "{{hrmsBaseUrl}}/job_application/updateResume/{{candidateId}}"
+method: PUT
+body:
+  type: json
+  content: "{\r\n    \"key\":\"jjj\"\r\n}"
+examples: ./.resources/{{hrmsBaseUrl}}-job_application-updateResume-{{candidateId}}.resources/examples
+order: 4000

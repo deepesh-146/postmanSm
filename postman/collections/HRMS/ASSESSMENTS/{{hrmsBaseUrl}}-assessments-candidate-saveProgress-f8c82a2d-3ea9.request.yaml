@@ -1,0 +1,42 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/assessments/candidate/saveProgress/f8c82a2d-3ea9-428e-af31-e47690128052"
+url: "{{hrmsBaseUrl}}/assessments/candidate/saveProgress/f8c82a2d-3ea9-428e-af31-e47690128052"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"answers\": [\r
+
+    \        {\r
+
+    \            \"isMultipleChoice\": true,\r
+
+    \            \"submissionId\": \"08ac9878-b6ae-4da0-b8a4-9b27ee3a0b03\",\r
+
+    \            \"questionId\": \"518f3fc9-cdf9-49b2-988c-63dd6c8852a9\",\r
+
+    \            \"answer\": [\r
+
+    \                \"A\"\r
+
+    \            ]\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"isMultipleChoice\": false,\r
+
+    \            \"submissionId\": \"08ac9878-b6ae-4da0-b8a4-9b27ee3a0b03\",\r
+
+    \            \"questionId\": \"4583ac48-cc54-4e3a-8bc9-5b711995855f\",\r
+
+    \            \"answer\": \"This is my essay answer.\"\r
+
+    \        }\r
+
+    \    ]\r
+
+    }"
+order: 8000

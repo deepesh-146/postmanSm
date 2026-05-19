@@ -1,0 +1,1509 @@
+$kind: http-example
+name: "{{hrmsBaseUrl}}/payrolls/employee/getPaySlipDataEmployee/{{userId}}"
+request:
+  url: "{{hrmsBaseUrl}}/payrolls/employee/getPaySlipDataEmployee/{{userId}}"
+  method: GET
+  body:
+    type: json
+    content: "{\r
+
+      \    \"month\":\"12\",\r
+
+      \    \"year\":\"2025\"\r
+
+      }"
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "33461"
+    ETag: W/"82b5-/B9Bzon6T6kf3orVhfIKI4thtqY"
+    Date: Tue, 30 Dec 2025 10:30:18 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: text
+    content: |-
+      {
+          "success": true,
+          "status": 200,
+          "data": {
+              "id": "b20ce3d2-1351-4ab7-8619-470fe340b488",
+              "payrollId": "PAYROLL-DECEMBER-25",
+              "empPayrollId": "77e948f8-bfb1-40d3-9d53-72d2b2bc40e4",
+              "employeeMainId": "9a6b2d0c-57b7-4da2-9025-b64b6e2f4323",
+              "country": "INDIA",
+              "currency": "INR",
+              "annualCtc": 120000,
+              "basicPercent": 40,
+              "basicYearly": 48000,
+              "basicMonthly": 690,
+              "hraPercent": 40,
+              "hraYearly": 19200,
+              "hraMonthly": 276,
+              "hraBasedOn": "",
+              "daYearly": 2400,
+              "daMonthly": 34,
+              "daPercent": 0,
+              "daBasedOn": "",
+              "bonus": 0,
+              "bonusYearly": 3998.4,
+              "bonusMonthly": 57,
+              "bonusPercentage": 8.33,
+              "bonusBasedOn": "",
+              "specialAllowance": 0,
+              "specialAllowanceYearly": 46401.600000000006,
+              "specialAllowanceMonthly": 667,
+              "transportAllowance": 0,
+              "transportAllowanceYearly": 0,
+              "transportAllowanceMonthly": 0,
+              "transportAllowancePercentage": 0,
+              "otherAllowance": 0,
+              "otherAllowancesYearly": 0,
+              "otherAllowancesMonthly": 0,
+              "otherAllowancesDescription": "0",
+              "housingAllowanceYearly": 0,
+              "housingAllowanceMonthly": 0,
+              "pf": 0,
+              "employeePfYearly": 6048,
+              "employeePfMonthly": 87,
+              "employerPfYearly": 10080,
+              "employerPfMonthly": 145,
+              "employeeVpfYearly": 50000,
+              "employeeVpfMonthly": 718,
+              "esi": 0,
+              "employeeEsiYearly": 900,
+              "employeeEsiMonthly": 13,
+              "employerEsiYearly": 3900,
+              "employerEsiMonthly": 56,
+              "professionalTax": 0,
+              "professionalTaxYearly": 0,
+              "professionalTaxMonthly": 0,
+              "GPSSA": 0,
+              "employeeGpssaYearly": 0,
+              "employeeGpssaMonthly": 0,
+              "employerGpssaYearly": 0,
+              "employerGpssaMonthly": 0,
+              "totalTax": 0,
+              "totalRebate": 0,
+              "finalTax": 0,
+              "regime": "OLD",
+              "grossIncome": 120000,
+              "standardDeduction": 50000,
+              "taxableIncome": 20000,
+              "baseTaxAmount": 0,
+              "surchargeAmount": 0,
+              "cessAmount": 0,
+              "totalBeforeRebate": 0,
+              "slabWiseCalculation": null,
+              "age": "Less than 60",
+              "paidDays": 5,
+              "absentDays": 24,
+              "overtime": 0,
+              "overtimeTotal": 0,
+              "totalOvertimeDays": 0,
+              "totalWeeklyOffs": 1,
+              "totalPaidHolidays": 0,
+              "totalPaidLeaves": 0,
+              "totalUnpaidLeaves": 0,
+              "totalHalfDays": 0,
+              "totalLateDays": 0,
+              "totalEarlyLogouts": 0,
+              "totalWorkingDays": 28,
+              "totalPresentDays": 4,
+              "grossPay": 1724,
+              "netPay": 906,
+              "totalEarnings": 1724,
+              "totalDeductions": 818,
+              "annualGross": 120000,
+              "monthlyGross": 10000,
+              "summaryAnnualGrossSalary": 120000,
+              "summaryAnnualIncomeTax": 0,
+              "summaryAnnualNetSalary": 63052,
+              "summaryAnnualTotalDeductions": 56948,
+              "summaryMonthlyGrossSalary": 10000,
+              "summaryMonthlyIncomeTax": 0,
+              "summaryMonthlyNetSalary": 5254.333333333333,
+              "summaryMonthlyTotalDeductions": 4745.666666666667,
+              "summaryTakeHomeAnnual": 63052,
+              "summaryTakeHomeMonthly": 5254.333333333333,
+              "gratuity": 0,
+              "payrollstartdate": "2025-11-02",
+              "payrollenddate": "2025-11-30",
+              "salaryBreakdownJson": null,
+              "deductionsJson": null,
+              "leavaeDataJson": "{\"employeeId\":\"9a6b2d0c-57b7-4da2-9025-b64b6e2f4323\",\"employeeName\":\"sradhasis  jethy\",\"employeeCode\":\"EMP-547DC1\",\"period\":{\"startDate\":\"2025-11-02\",\"endDate\":\"2025-11-30\"},\"summary\":{\"totalAssignedLeaves\":20,\"totalUsedLeaves\":0,\"totalRemainingLeaves\":20},\"leaveDetails\":[{\"leaveTypeId\":\"a6931b63-c8d2-477d-8e9f-e346196549b1\",\"leaveType\":\"CASUAL_LEAVE\",\"leaveCode\":\"CL\",\"leaveCategory\":\"Present\",\"assignedLeaves\":4,\"usedLeaves\":0,\"remainingLeaves\":4,\"carryForward\":1,\"year\":\"2025\",\"leavesInPeriod\":[],\"totalDaysInPeriod\":0},{\"leaveTypeId\":\"7c1f16b5-d1c3-42b2-bc9f-877f8b7dfe70\",\"leaveType\":\"HALF_DAY\",\"leaveCode\":\"HD\",\"leaveCategory\":\"Leave\",\"assignedLeaves\":4,\"usedLeaves\":0,\"remainingLeaves\":4,\"carryForward\":1,\"year\":\"2025\",\"leavesInPeriod\":[],\"totalDaysInPeriod\":0},{\"leaveTypeId\":\"9ee4c87a-fc61-4b7f-a9ee-5b6b524037a5\",\"leaveType\":\"Official Leave\",\"leaveCode\":\"OL\",\"leaveCategory\":\"Present\",\"assignedLeaves\":4,\"usedLeaves\":0,\"remainingLeaves\":4,\"carryForward\":1,\"year\":\"2025\",\"leavesInPeriod\":[],\"totalDaysInPeriod\":0},{\"leaveTypeId\":\"652371ae-a035-4ef2-ada6-d81d64f610bf\",\"leaveType\":\"Privilage Leave\",\"leaveCode\":\"PL\",\"leaveCategory\":\"Leave\",\"assignedLeaves\":4,\"usedLeaves\":0,\"remainingLeaves\":4,\"carryForward\":1,\"year\":\"2025\",\"leavesInPeriod\":[],\"totalDaysInPeriod\":0},{\"leaveTypeId\":\"ba5b16bf-2677-4abd-8df7-22043c6cf2eb\",\"leaveType\":\"Study Leave\",\"leaveCode\":\"ST\",\"leaveCategory\":\"Leave\",\"assignedLeaves\":4,\"usedLeaves\":0,\"remainingLeaves\":4,\"carryForward\":1,\"year\":\"2025\",\"leavesInPeriod\":[],\"totalDaysInPeriod\":0}],\"leavesTakenInPeriod\":[],\"totalLeavesInPeriod\":0}",
+              "leaveDataJSON": {
+                  "period": {
+                      "endDate": "2025-11-30",
+                      "startDate": "2025-11-02"
+                  },
+                  "summary": {
+                      "totalUsedLeaves": 0,
+                      "totalAssignedLeaves": 20,
+                      "totalRemainingLeaves": 20
+                  },
+                  "employeeId": "9a6b2d0c-57b7-4da2-9025-b64b6e2f4323",
+                  "employeeCode": "EMP-547DC1",
+                  "employeeName": "sradhasis  jethy",
+                  "leaveDetails": [
+                      {
+                          "year": "2025",
+                          "leaveCode": "CL",
+                          "leaveType": "CASUAL_LEAVE",
+                          "usedLeaves": 0,
+                          "leaveTypeId": "a6931b63-c8d2-477d-8e9f-e346196549b1",
+                          "carryForward": 1,
+                          "leaveCategory": "Present",
+                          "assignedLeaves": 4,
+                          "leavesInPeriod": [],
+                          "remainingLeaves": 4,
+                          "totalDaysInPeriod": 0
+                      },
+                      {
+                          "year": "2025",
+                          "leaveCode": "HD",
+                          "leaveType": "HALF_DAY",
+                          "usedLeaves": 0,
+                          "leaveTypeId": "7c1f16b5-d1c3-42b2-bc9f-877f8b7dfe70",
+                          "carryForward": 1,
+                          "leaveCategory": "Leave",
+                          "assignedLeaves": 4,
+                          "leavesInPeriod": [],
+                          "remainingLeaves": 4,
+                          "totalDaysInPeriod": 0
+                      },
+                      {
+                          "year": "2025",
+                          "leaveCode": "OL",
+                          "leaveType": "Official Leave",
+                          "usedLeaves": 0,
+                          "leaveTypeId": "9ee4c87a-fc61-4b7f-a9ee-5b6b524037a5",
+                          "carryForward": 1,
+                          "leaveCategory": "Present",
+                          "assignedLeaves": 4,
+                          "leavesInPeriod": [],
+                          "remainingLeaves": 4,
+                          "totalDaysInPeriod": 0
+                      },
+                      {
+                          "year": "2025",
+                          "leaveCode": "PL",
+                          "leaveType": "Privilage Leave",
+                          "usedLeaves": 0,
+                          "leaveTypeId": "652371ae-a035-4ef2-ada6-d81d64f610bf",
+                          "carryForward": 1,
+                          "leaveCategory": "Leave",
+                          "assignedLeaves": 4,
+                          "leavesInPeriod": [],
+                          "remainingLeaves": 4,
+                          "totalDaysInPeriod": 0
+                      },
+                      {
+                          "year": "2025",
+                          "leaveCode": "ST",
+                          "leaveType": "Study Leave",
+                          "usedLeaves": 0,
+                          "leaveTypeId": "ba5b16bf-2677-4abd-8df7-22043c6cf2eb",
+                          "carryForward": 1,
+                          "leaveCategory": "Leave",
+                          "assignedLeaves": 4,
+                          "leavesInPeriod": [],
+                          "remainingLeaves": 4,
+                          "totalDaysInPeriod": 0
+                      }
+                  ],
+                  "leavesTakenInPeriod": [],
+                  "totalLeavesInPeriod": 0
+              },
+              "calculationSnapshot": {
+                  "country": "INDIA",
+                  "currency": "INR",
+                  "loanData": {
+                      "reason": "Employee sradhasis  jethy is inactive. Skipping loan processing.",
+                      "skipped": true,
+                      "success": true,
+                      "employeeId": "9a6b2d0c-57b7-4da2-9025-b64b6e2f4323",
+                      "employeeName": "sradhasis  jethy",
+                      "skippedLoans": [],
+                      "processedLoans": [],
+                      "totalDeductionAmount": 0
+                  },
+                  "processedAt": "2025-12-30T10:22:44.804Z",
+                  "empAllowances": [],
+                  "salaryDetails": {
+                      "id": "2732d8f5-ea09-4590-9df7-d6b87c057134",
+                      "pf": 0,
+                      "age": "Less than 60",
+                      "esi": 0,
+                      "GPSSA": 0,
+                      "bonus": 0,
+                      "regime": "OLD",
+                      "isGpssa": false,
+                      "daYearly": 2400,
+                      "finalTax": 0,
+                      "gratuity": 0,
+                      "homeLoan": {},
+                      "officeId": null,
+                      "tenantId": "1c221434-9808-4c2c-9df1-c05e0dc1576d",
+                      "totalTax": 0,
+                      "annualCtc": 120000,
+                      "createdAt": "2025-11-20T13:23:51.000Z",
+                      "daBasedOn": "",
+                      "daMonthly": 200,
+                      "daPercent": 0,
+                      "hraYearly": 19200,
+                      "updatedAt": "2025-12-30T07:42:07.000Z",
+                      "approverId": null,
+                      "cessAmount": 0,
+                      "hraBasedOn": "",
+                      "hraDetails": {},
+                      "hraMonthly": 1600,
+                      "hraPercent": 40,
+                      "annualGross": 120000,
+                      "annualTotal": 56948,
+                      "basicYearly": 48000,
+                      "bonusYearly": 3998.4,
+                      "candidateId": null,
+                      "grossIncome": 120000,
+                      "isPfEnabled": true,
+                      "summaryJSON": {
+                          "annual": {
+                              "incomeTax": 0,
+                              "netSalary": 63052,
+                              "grossSalary": 120000,
+                              "totalDeductions": 56948
+                          },
+                          "monthly": {
+                              "incomeTax": 0,
+                              "netSalary": 5254.333333333333,
+                              "grossSalary": 10000,
+                              "totalDeductions": 4745.666666666667
+                          },
+                          "takeHome": {
+                              "annual": 63052,
+                              "monthly": 5254.333333333333
+                          }
+                      },
+                      "totalRebate": 0,
+                      "basicMonthly": 4000,
+                      "basicPercent": 40,
+                      "bonusBasedOn": "",
+                      "bonusMonthly": 333.2,
+                      "contractType": "LIMITED",
+                      "daPercentage": 5,
+                      "monthlyGross": 10000,
+                      "monthlyTotal": 0,
+                      "baseTaxAmount": 0,
+                      "taxableIncome": 20000,
+                      "approvalRemark": "",
+                      "approvalStatus": "APPROVED",
+                      "deductionsJSON": {
+                          "totals": {
+                              "statutory": {
+                                  "annual": 56948,
+                                  "monthly": 4745.666666666667
+                              }
+                          },
+                          "statutory": {
+                              "pf": {
+                                  "ceiling": 15000,
+                                  "employee": {
+                                      "annual": 6048,
+                                      "monthly": 504
+                                  },
+                                  "employer": {
+                                      "annual": 10080,
+                                      "monthly": 840,
+                                      "epfAnnual": 10080,
+                                      "epsAnnual": 0,
+                                      "epfMonthly": 840,
+                                      "epsMonthly": 0,
+                                      "eps_ceiling": 15000,
+                                      "pf_employee_percent": 12,
+                                      "pf_employer_percent": 20,
+                                      "eps_employer_percent": 8.33
+                                  },
+                                  "baseAmount": 4200,
+                                  "epsCeiling": 15000,
+                                  "epsEligible": false
+                              },
+                              "esi": {
+                                  "employee": {
+                                      "annual": 900,
+                                      "monthly": 75
+                                  },
+                                  "employer": {
+                                      "annual": 3900,
+                                      "monthly": 325
+                                  },
+                                  "eligibilityLimit": 21000
+                              },
+                              "vpf": {
+                                  "annual": 50000,
+                                  "monthly": 4166.666666666667
+                              },
+                              "professionalTax": {
+                                  "note": "Professional tax as per state: Odisha",
+                                  "annual": 0,
+                                  "monthly": 0,
+                                  "maxLimit": 2500,
+                                  "februaryTax": 0
+                              }
+                          },
+                          "voluntary": {}
+                      },
+                      "employeeMainId": "9a6b2d0c-57b7-4da2-9025-b64b6e2f4323",
+                      "noOfDependents": 0,
+                      "organizationId": "cb6f0e4f-3ae1-4ed4-bbc9-3329c885bbc9",
+                      "otherAllowance": 0,
+                      "bonusPercentage": 8.33,
+                      "isSalaryEnabled": true,
+                      "professionalTax": 0,
+                      "surchargeAmount": 0,
+                      "employeePfYearly": 6048,
+                      "employerPfYearly": 10080,
+                      "specialAllowance": 0,
+                      "annualTotalYearly": 0,
+                      "employeeEsiYearly": 900,
+                      "employeePfMonthly": 504,
+                      "employeeVpfYearly": 50000,
+                      "employerEpsYearly": 0,
+                      "employerEsiYearly": 3900,
+                      "employerPfMonthly": 840,
+                      "revisedSalaryJSON": "{\"approverId\":null,\"noOfDependents\":\"0\",\"contractType\":\"LIMITED\",\"isGpssa\":false,\"annualCtc\":120000,\"basicPercent\":40,\"basicYearly\":48000,\"basicMonthly\":4000,\"hraPercent\":40,\"hraYearly\":19200,\"hraMonthly\":1600,\"hraBasedOn\":\"basic\",\"daYearly\":2400,\"daMonthly\":200,\"daPercent\":0,\"daBasedOn\":\"basic\",\"daPercentage\":5,\"bonus\":0,\"bonusYearly\":3998.4,\"bonusMonthly\":333.2,\"bonusPercentage\":8.33,\"bonusBasedOn\":\"basic\",\"specialAllowance\":0,\"specialAllowanceYearly\":46401.600000000006,\"specialAllowanceMonthly\":3866.8000000000006,\"pf\":0,\"employeePfYearly\":6048,\"employeePfMonthly\":504,\"employerPfYearly\":10080,\"employerPfMonthly\":840,\"employeeVpfYearly\":50000,\"employeeVpfMonthly\":4166.666666666667,\"esi\":0,\"employeeEsiYearly\":900,\"employeeEsiMonthly\":75,\"employerEsiYearly\":3900,\"employerEsiMonthly\":325,\"employerEpsYearly\":0,\"employerEpsMonthly\":0,\"professionalTax\":0,\"professionalTaxYearly\":0,\"professionalTaxMonthly\":0,\"gratuity\":0,\"annualGross\":120000,\"monthlyGross\":10000,\"annualTotalYearly\":0,\"annualTotalMonthly\":4745.666666666667,\"totalTax\":0,\"totalRebate\":0,\"finalTax\":0,\"regime\":\"OLD\",\"age\":\"Less than 60\",\"grossIncome\":120000,\"standardDeduction\":50000,\"taxableIncome\":20000,\"baseTaxAmount\":0,\"surchargeAmount\":0,\"cessAmount\":0,\"totalBeforeRebate\":0,\"slabWiseCalculation\":[{\"slabRange\":\"0 - 2,50,000\",\"rate\":0,\"applicableIncome\":20000,\"taxOnSlab\":0}],\"GPSSA\":0,\"employeeGpssaYearly\":0,\"employeeGpssaMonthly\":0,\"employerGpssaYearly\":0,\"employerGpssaMonthly\":0,\"transportAllowance\":0,\"transportAllowanceYearly\":0,\"transportAllowanceMonthly\":0,\"transportAllowancePercentage\":0,\"otherAllowance\":0,\"otherAllowancesYearly\":0,\"otherAllowancesMonthly\":0,\"otherAllowancesDescription\":0,\"summaryAnnualGrossSalary\":120000,\"summaryAnnualIncomeTax\":0,\"summaryAnnualNetSalary\":63052,\"summaryAnnualTotalDeductions\":56948,\"summaryMonthlyGrossSalary\":10000,\"summaryMonthlyIncomeTax\":0,\"summaryMonthlyNetSalary\":5254.333333333333,\"summaryMonthlyTotalDeductions\":4745.666666666667,\"summaryTakeHomeAnnual\":63052,\"summaryTakeHomeMonthly\":5254.333333333333,\"annualTotal\":56948,\"monthlyTotal\":0,\"taxDeclarationsJSON\":{\"processed\":{\"regime\":\"OLD\",\"declarations\":[{\"section\":\"80c\",\"subsection\":[{\"key\":\"vpf\",\"value\":50000}]}],\"breakdown\":{\"80c\":{\"declared\":50000,\"allowed\":50000,\"items\":[{\"key\":\"vpf\",\"value\":50000}],\"warnings\":[]}},\"totalDeductions\":50000,\"chapterVIDeductions\":50000,\"otherDeductions\":0,\"exemptions\":0,\"warnings\":[],\"errors\":[],\"otherDeductionDetail\":[],\"section24b_Deduction\":0,\"vpf\":{\"monthly\":4166.666666666667,\"annual\":50000},\"exemptionsDetail\":[]},\"totalDeductions\":50000,\"applicableInRegime\":\"OLD\"},\"salaryBreakdownJSON\":{\"totalCTC\":120000,\"totalAllowancesAmount\":0,\"components\":{\"basic\":{\"annual\":48000,\"monthly\":4000,\"percentage\":40},\"hra\":{\"annual\":19200,\"monthly\":1600,\"percentage\":40,\"basedOn\":\"basic\"},\"da\":{\"annual\":2400,\"monthly\":200,\"percentage\":5,\"basedOn\":\"basic\"},\"bonus\":{\"annual\":3998.4,\"monthly\":333.2,\"percentage\":8.33,\"basedOn\":\"basic\"},\"specialAllowance\":{\"annual\":46401.600000000006,\"monthly\":3866.8000000000006,\"description\":\"Balancing amount after all other components (excluding employee allowances)\"}},\"totals\":{\"annualGross\":120000,\"monthlyGross\":10000,\"coreComponentsTotal\":120000,\"employeeAllowancesTotal\":0,\"taxableComponents\":{\"fullyTaxable\":100800,\"partiallyExempt\":19200,\"fullyExempt\":0}}},\"taxCalculationJSON\":{\"ctc\":120000,\"regime\":\"OLD\",\"totalTax\":0,\"totalRebate\":0,\"finalTax\":0,\"breakdown\":{\"grossIncome\":120000,\"standardDeduction\":50000,\"professionalTax\":0,\"chapterVIDeductions\":50000,\"exemptions\":0,\"otherDeductions\":0,\"section24b_Deduction\":0,\"taxableIncome\":20000,\"regime\":\"OLD\",\"rebateEligible\":false,\"slabWiseCalculation\":[{\"slabRange\":\"0 - 2,50,000\",\"rate\":0,\"applicableIncome\":20000,\"taxOnSlab\":0}],\"baseTaxAmount\":0,\"surchargeAmount\":0,\"cessAmount\":0,\"totalBeforeRebate\":0,\"effectiveTaxRate\":\"0.00\"},\"monthly\":{\"grossIncome\":10000,\"taxableIncome\":1666.6666666666667,\"baseTax\":0,\"surcharge\":0,\"cess\":0,\"rebate\":0,\"tax\":0,\"postTaxIncome\":10000,\"exemptions\":0,\"otherDeductions\":0}},\"deductionsJSON\":{\"statutory\":{\"pf\":{\"employee\":{\"monthly\":504,\"annual\":6048},\"employer\":{\"monthly\":840,\"annual\":10080,\"epfMonthly\":840,\"epfAnnual\":10080,\"epsMonthly\":0,\"epsAnnual\":0,\"pf_employee_percent\":12,\"pf_employer_percent\":20,\"eps_employer_percent\":8.33,\"eps_ceiling\":15000},\"baseAmount\":4200,\"ceiling\":15000,\"epsEligible\":false,\"epsCeiling\":15000},\"esi\":{\"employee\":{\"monthly\":75,\"annual\":900},\"employer\":{\"monthly\":325,\"annual\":3900},\"eligibilityLimit\":21000},\"professionalTax\":{\"monthly\":0,\"annual\":0,\"februaryTax\":0,\"maxLimit\":2500,\"note\":\"Professional tax as per state: Odisha\"},\"vpf\":{\"monthly\":4166.666666666667,\"annual\":50000}},\"voluntary\":{},\"totals\":{\"statutory\":{\"monthly\":4745.666666666667,\"annual\":56948}}},\"summaryJSON\":{\"annual\":{\"grossSalary\":120000,\"totalDeductions\":56948,\"incomeTax\":0,\"netSalary\":63052},\"monthly\":{\"grossSalary\":10000,\"totalDeductions\":4745.666666666667,\"incomeTax\":0,\"netSalary\":5254.333333333333},\"takeHome\":{\"monthly\":5254.333333333333,\"annual\":63052}},\"slabWiseCalculationJSON\":[{\"slabRange\":\"0 - 2,50,000\",\"rate\":0,\"applicableIncome\":20000,\"taxOnSlab\":0}],\"approvalStatus\":\"APPROVED\",\"homeLoan\":{},\"hraDetails\":{}}",
+                      "standardDeduction": 50000,
+                      "totalBeforeRebate": 0,
+                      "annualTotalMonthly": 4745.666666666667,
+                      "employeeEsiMonthly": 75,
+                      "employeeVpfMonthly": 4166.666666666667,
+                      "employerEpsMonthly": 0,
+                      "employerEsiMonthly": 325,
+                      "taxCalculationJSON": {
+                          "ctc": 120000,
+                          "regime": "OLD",
+                          "monthly": {
+                              "tax": 0,
+                              "cess": 0,
+                              "rebate": 0,
+                              "baseTax": 0,
+                              "surcharge": 0,
+                              "exemptions": 0,
+                              "grossIncome": 10000,
+                              "postTaxIncome": 10000,
+                              "taxableIncome": 1666.6666666666667,
+                              "otherDeductions": 0
+                          },
+                          "finalTax": 0,
+                          "totalTax": 0,
+                          "breakdown": {
+                              "regime": "OLD",
+                              "cessAmount": 0,
+                              "exemptions": 0,
+                              "grossIncome": 120000,
+                              "baseTaxAmount": 0,
+                              "taxableIncome": 20000,
+                              "rebateEligible": false,
+                              "otherDeductions": 0,
+                              "professionalTax": 0,
+                              "surchargeAmount": 0,
+                              "effectiveTaxRate": "0.00",
+                              "standardDeduction": 50000,
+                              "totalBeforeRebate": 0,
+                              "chapterVIDeductions": 50000,
+                              "slabWiseCalculation": [
+                                  {
+                                      "rate": 0,
+                                      "slabRange": "0 - 2,50,000",
+                                      "taxOnSlab": 0,
+                                      "applicableIncome": 20000
+                                  }
+                              ],
+                              "section24b_Deduction": 0
+                          },
+                          "totalRebate": 0
+                      },
+                      "transportAllowance": 0,
+                      "employeeGpssaYearly": 0,
+                      "employerGpssaYearly": 0,
+                      "salaryBreakdownJSON": {
+                          "totals": {
+                              "annualGross": 120000,
+                              "monthlyGross": 10000,
+                              "taxableComponents": {
+                                  "fullyExempt": 0,
+                                  "fullyTaxable": 100800,
+                                  "partiallyExempt": 19200
+                              },
+                              "coreComponentsTotal": 120000,
+                              "employeeAllowancesTotal": 0
+                          },
+                          "totalCTC": 120000,
+                          "components": {
+                              "da": {
+                                  "annual": 2400,
+                                  "basedOn": "basic",
+                                  "monthly": 200,
+                                  "percentage": 5
+                              },
+                              "hra": {
+                                  "annual": 19200,
+                                  "basedOn": "basic",
+                                  "monthly": 1600,
+                                  "percentage": 40
+                              },
+                              "basic": {
+                                  "annual": 48000,
+                                  "monthly": 4000,
+                                  "percentage": 40
+                              },
+                              "bonus": {
+                                  "annual": 3998.4,
+                                  "basedOn": "basic",
+                                  "monthly": 333.2,
+                                  "percentage": 8.33
+                              },
+                              "specialAllowance": {
+                                  "annual": 46401.600000000006,
+                                  "monthly": 3866.8000000000006,
+                                  "description": "Balancing amount after all other components (excluding employee allowances)"
+                              }
+                          },
+                          "totalAllowancesAmount": 0
+                      },
+                      "taxDeclarationsJSON": {
+                          "processed": {
+                              "vpf": {
+                                  "annual": 50000,
+                                  "monthly": 4166.666666666667
+                              },
+                              "errors": [],
+                              "regime": "OLD",
+                              "warnings": [],
+                              "breakdown": {
+                                  "80c": {
+                                      "items": [
+                                          {
+                                              "key": "vpf",
+                                              "value": 50000
+                                          }
+                                      ],
+                                      "allowed": 50000,
+                                      "declared": 50000,
+                                      "warnings": []
+                                  }
+                              },
+                              "exemptions": 0,
+                              "declarations": [
+                                  {
+                                      "section": "80c",
+                                      "subsection": [
+                                          {
+                                              "key": "vpf",
+                                              "value": 50000
+                                          }
+                                      ]
+                                  }
+                              ],
+                              "otherDeductions": 0,
+                              "totalDeductions": 50000,
+                              "exemptionsDetail": [],
+                              "chapterVIDeductions": 50000,
+                              "otherDeductionDetail": [],
+                              "section24b_Deduction": 0
+                          },
+                          "totalDeductions": 50000,
+                          "applicableInRegime": "OLD"
+                      },
+                      "employeeGpssaMonthly": 0,
+                      "employerGpssaMonthly": 0,
+                      "otherAllowancesYearly": 0,
+                      "professionalTaxYearly": 0,
+                      "summaryTakeHomeAnnual": 63052,
+                      "employeeDeduction_JSON": null,
+                      "otherAllowancesMonthly": 0,
+                      "professionalTaxMonthly": 0,
+                      "specialAllowanceYearly": 46401.600000000006,
+                      "summaryAnnualIncomeTax": 0,
+                      "summaryAnnualNetSalary": 63052,
+                      "summaryTakeHomeMonthly": 5254.333333333333,
+                      "slabWiseCalculationJSON": [
+                          {
+                              "rate": 0,
+                              "slabRange": "0 - 2,50,000",
+                              "taxOnSlab": 0,
+                              "applicableIncome": 20000
+                          }
+                      ],
+                      "specialAllowanceMonthly": 3866.8000000000006,
+                      "summaryMonthlyIncomeTax": 0,
+                      "summaryMonthlyNetSalary": 5254.333333333333,
+                      "summaryAnnualGrossSalary": 120000,
+                      "transportAllowanceYearly": 0,
+                      "summaryMonthlyGrossSalary": 10000,
+                      "transportAllowanceMonthly": 0,
+                      "otherAllowancesDescription": "0",
+                      "summaryAnnualTotalDeductions": 56948,
+                      "transportAllowancePercentage": 0,
+                      "summaryMonthlyTotalDeductions": 4745.666666666667
+                  },
+                  "attendanceData": {
+                      "calendar": [
+                          {
+                              "date": "2025-11-02",
+                              "isPaid": false,
+                              "status": "ABSENT",
+                              "details": {
+                                  "issue": "NO_RECORD",
+                                  "message": "No attendance record found - requires manual resolution"
+                              },
+                              "dayCredit": 0,
+                              "dayOfWeek": "Sunday",
+                              "attendanceId": null,
+                              "recordMissing": true,
+                              "regularizationStatus": "NOT_APPLIED"
+                          },
+                          {
+                              "date": "2025-11-03",
+                              "isPaid": false,
+                              "status": "ABSENT",
+                              "details": {
+                                  "issue": "NO_RECORD",
+                                  "message": "No attendance record found - requires manual resolution"
+                              },
+                              "dayCredit": 0,
+                              "dayOfWeek": "Monday",
+                              "attendanceId": null,
+                              "recordMissing": true,
+                              "regularizationStatus": "NOT_APPLIED"
+                          },
+                          {
+                              "date": "2025-11-04",
+                              "isPaid": false,
+                              "status": "ABSENT",
+                              "details": {
+                                  "issue": "NO_RECORD",
+                                  "message": "No attendance record found - requires manual resolution"
+                              },
+                              "dayCredit": 0,
+                              "dayOfWeek": "Tuesday",
+                              "attendanceId": null,
+                              "recordMissing": true,
+                              "regularizationStatus": "NOT_APPLIED"
+                          },
+                          {
+                              "date": "2025-11-05",
+                              "isPaid": false,
+                              "status": "ABSENT",
+                              "details": {
+                                  "issue": "NO_RECORD",
+                                  "message": "No attendance record found - requires manual resolution"
+                              },
+                              "dayCredit": 0,
+                              "dayOfWeek": "Wednesday",
+                              "attendanceId": null,
+                              "recordMissing": true,
+                              "regularizationStatus": "NOT_APPLIED"
+                          },
+                          {
+                              "date": "2025-11-06",
+                              "isPaid": false,
+                              "status": "ABSENT",
+                              "details": {
+                                  "issue": "NO_RECORD",
+                                  "message": "No attendance record found - requires manual resolution"
+                              },
+                              "dayCredit": 0,
+                              "dayOfWeek": "Thursday",
+                              "attendanceId": null,
+                              "recordMissing": true,
+                              "regularizationStatus": "NOT_APPLIED"
+                          },
+                          {
+                              "date": "2025-11-07",
+                              "isPaid": false,
+                              "status": "ABSENT",
+                              "details": {
+                                  "issue": "NO_RECORD",
+                                  "message": "No attendance record found - requires manual resolution"
+                              },
+                              "dayCredit": 0,
+                              "dayOfWeek": "Friday",
+                              "attendanceId": null,
+                              "recordMissing": true,
+                              "regularizationStatus": "NOT_APPLIED"
+                          },
+                          {
+                              "date": "2025-11-08",
+                              "isPaid": false,
+                              "status": "ABSENT",
+                              "details": {
+                                  "issue": "NO_RECORD",
+                                  "message": "No attendance record found - requires manual resolution"
+                              },
+                              "dayCredit": 0,
+                              "dayOfWeek": "Saturday",
+                              "attendanceId": null,
+                              "recordMissing": true,
+                              "regularizationStatus": "NOT_APPLIED"
+                          },
+                          {
+                              "date": "2025-11-09",
+                              "isPaid": false,
+                              "status": "ABSENT",
+                              "details": {
+                                  "issue": "NO_RECORD",
+                                  "message": "No attendance record found - requires manual resolution"
+                              },
+                              "dayCredit": 0,
+                              "dayOfWeek": "Sunday",
+                              "attendanceId": null,
+                              "recordMissing": true,
+                              "regularizationStatus": "NOT_APPLIED"
+                          },
+                          {
+                              "date": "2025-11-10",
+                              "isPaid": false,
+                              "status": "ABSENT",
+                              "details": {
+                                  "issue": "NO_RECORD",
+                                  "message": "No attendance record found - requires manual resolution"
+                              },
+                              "dayCredit": 0,
+                              "dayOfWeek": "Monday",
+                              "attendanceId": null,
+                              "recordMissing": true,
+                              "regularizationStatus": "NOT_APPLIED"
+                          },
+                          {
+                              "date": "2025-11-11",
+                              "isPaid": false,
+                              "status": "ABSENT",
+                              "details": {
+                                  "issue": "NO_RECORD",
+                                  "message": "No attendance record found - requires manual resolution"
+                              },
+                              "dayCredit": 0,
+                              "dayOfWeek": "Tuesday",
+                              "attendanceId": null,
+                              "recordMissing": true,
+                              "regularizationStatus": "NOT_APPLIED"
+                          },
+                          {
+                              "date": "2025-11-12",
+                              "isPaid": false,
+                              "status": "ABSENT",
+                              "details": {
+                                  "issue": "NO_RECORD",
+                                  "message": "No attendance record found - requires manual resolution"
+                              },
+                              "dayCredit": 0,
+                              "dayOfWeek": "Wednesday",
+                              "attendanceId": null,
+                              "recordMissing": true,
+                              "regularizationStatus": "NOT_APPLIED"
+                          },
+                          {
+                              "date": "2025-11-13",
+                              "isPaid": false,
+                              "status": "ABSENT",
+                              "details": {
+                                  "issue": "NO_RECORD",
+                                  "message": "No attendance record found - requires manual resolution"
+                              },
+                              "dayCredit": 0,
+                              "dayOfWeek": "Thursday",
+                              "attendanceId": null,
+                              "recordMissing": true,
+                              "regularizationStatus": "NOT_APPLIED"
+                          },
+                          {
+                              "date": "2025-11-14",
+                              "isPaid": false,
+                              "status": "ABSENT",
+                              "details": {
+                                  "issue": "NO_RECORD",
+                                  "message": "No attendance record found - requires manual resolution"
+                              },
+                              "dayCredit": 0,
+                              "dayOfWeek": "Friday",
+                              "attendanceId": null,
+                              "recordMissing": true,
+                              "regularizationStatus": "NOT_APPLIED"
+                          },
+                          {
+                              "date": "2025-11-15",
+                              "isPaid": false,
+                              "status": "ABSENT",
+                              "details": {
+                                  "issue": "NO_RECORD",
+                                  "message": "No attendance record found - requires manual resolution"
+                              },
+                              "dayCredit": 0,
+                              "dayOfWeek": "Saturday",
+                              "attendanceId": null,
+                              "recordMissing": true,
+                              "regularizationStatus": "NOT_APPLIED"
+                          },
+                          {
+                              "date": "2025-11-16",
+                              "isPaid": false,
+                              "status": "ABSENT",
+                              "details": {
+                                  "issue": "NO_RECORD",
+                                  "message": "No attendance record found - requires manual resolution"
+                              },
+                              "dayCredit": 0,
+                              "dayOfWeek": "Sunday",
+                              "attendanceId": null,
+                              "recordMissing": true,
+                              "regularizationStatus": "NOT_APPLIED"
+                          },
+                          {
+                              "date": "2025-11-17",
+                              "isPaid": false,
+                              "status": "ABSENT",
+                              "details": {
+                                  "issue": "NO_RECORD",
+                                  "message": "No attendance record found - requires manual resolution"
+                              },
+                              "dayCredit": 0,
+                              "dayOfWeek": "Monday",
+                              "attendanceId": null,
+                              "recordMissing": true,
+                              "regularizationStatus": "NOT_APPLIED"
+                          },
+                          {
+                              "date": "2025-11-18",
+                              "isPaid": false,
+                              "status": "ABSENT",
+                              "details": {
+                                  "issue": "NO_RECORD",
+                                  "message": "No attendance record found - requires manual resolution"
+                              },
+                              "dayCredit": 0,
+                              "dayOfWeek": "Tuesday",
+                              "attendanceId": null,
+                              "recordMissing": true,
+                              "regularizationStatus": "NOT_APPLIED"
+                          },
+                          {
+                              "date": "2025-11-19",
+                              "isPaid": false,
+                              "status": "ABSENT",
+                              "details": {
+                                  "issue": "NO_RECORD",
+                                  "message": "No attendance record found - requires manual resolution"
+                              },
+                              "dayCredit": 0,
+                              "dayOfWeek": "Wednesday",
+                              "attendanceId": null,
+                              "recordMissing": true,
+                              "regularizationStatus": "NOT_APPLIED"
+                          },
+                          {
+                              "date": "2025-11-20",
+                              "isPaid": false,
+                              "status": "ABSENT",
+                              "details": {
+                                  "issue": "NO_RECORD",
+                                  "message": "No attendance record found - requires manual resolution"
+                              },
+                              "dayCredit": 0,
+                              "dayOfWeek": "Thursday",
+                              "attendanceId": null,
+                              "recordMissing": true,
+                              "regularizationStatus": "NOT_APPLIED"
+                          },
+                          {
+                              "date": "2025-11-21",
+                              "isPaid": false,
+                              "status": "ABSENT",
+                              "details": {
+                                  "issue": "NO_RECORD",
+                                  "message": "No attendance record found - requires manual resolution"
+                              },
+                              "dayCredit": 0,
+                              "dayOfWeek": "Friday",
+                              "attendanceId": null,
+                              "recordMissing": true,
+                              "regularizationStatus": "NOT_APPLIED"
+                          },
+                          {
+                              "date": "2025-11-22",
+                              "isPaid": false,
+                              "status": "ABSENT",
+                              "details": {
+                                  "issue": "NO_RECORD",
+                                  "message": "No attendance record found - requires manual resolution"
+                              },
+                              "dayCredit": 0,
+                              "dayOfWeek": "Saturday",
+                              "attendanceId": null,
+                              "recordMissing": true,
+                              "regularizationStatus": "NOT_APPLIED"
+                          },
+                          {
+                              "date": "2025-11-23",
+                              "isPaid": false,
+                              "status": "ABSENT",
+                              "details": {
+                                  "issue": "NO_RECORD",
+                                  "message": "No attendance record found - requires manual resolution"
+                              },
+                              "dayCredit": 0,
+                              "dayOfWeek": "Sunday",
+                              "attendanceId": null,
+                              "recordMissing": true,
+                              "regularizationStatus": "NOT_APPLIED"
+                          },
+                          {
+                              "date": "2025-11-24",
+                              "isPaid": false,
+                              "status": "ABSENT",
+                              "details": {
+                                  "issue": "NO_RECORD",
+                                  "message": "No attendance record found - requires manual resolution"
+                              },
+                              "dayCredit": 0,
+                              "dayOfWeek": "Monday",
+                              "attendanceId": null,
+                              "recordMissing": true,
+                              "regularizationStatus": "NOT_APPLIED"
+                          },
+                          {
+                              "date": "2025-11-25",
+                              "isPaid": false,
+                              "status": "ABSENT",
+                              "details": {
+                                  "issue": "NO_RECORD",
+                                  "message": "No attendance record found - requires manual resolution"
+                              },
+                              "dayCredit": 0,
+                              "dayOfWeek": "Tuesday",
+                              "attendanceId": null,
+                              "recordMissing": true,
+                              "regularizationStatus": "NOT_APPLIED"
+                          },
+                          {
+                              "date": "2025-11-26",
+                              "isPaid": true,
+                              "remark": "Bulk marked present for payroll validation",
+                              "status": "PRESENT",
+                              "details": {
+                                  "inTime": "03:30:00",
+                                  "outTime": "12:30:00",
+                                  "hoursWorked": 9,
+                                  "minutesWorked": 0,
+                                  "totalMinutesWorked": 540
+                              },
+                              "dayCredit": 1,
+                              "dayOfWeek": "Wednesday",
+                              "attendanceId": "1e5afc4f-5e2a-4e0b-8f37-08e9bd1c71a8",
+                              "recordMissing": false,
+                              "regularizationStatus": "NOT_APPLIED"
+                          },
+                          {
+                              "date": "2025-11-27",
+                              "isPaid": true,
+                              "remark": "Bulk marked present for payroll validation",
+                              "status": "PRESENT",
+                              "details": {
+                                  "inTime": "03:30:00",
+                                  "outTime": "12:30:00",
+                                  "hoursWorked": 9,
+                                  "minutesWorked": 0,
+                                  "totalMinutesWorked": 540
+                              },
+                              "dayCredit": 1,
+                              "dayOfWeek": "Thursday",
+                              "attendanceId": "774b12f4-f7d2-44bc-bdac-b6464861c2f5",
+                              "recordMissing": false,
+                              "regularizationStatus": "NOT_APPLIED"
+                          },
+                          {
+                              "date": "2025-11-28",
+                              "isPaid": true,
+                              "remark": "Bulk marked present for payroll validation",
+                              "status": "PRESENT",
+                              "details": {
+                                  "inTime": "03:30:00",
+                                  "outTime": "12:30:00",
+                                  "hoursWorked": 9,
+                                  "minutesWorked": 0,
+                                  "totalMinutesWorked": 540
+                              },
+                              "dayCredit": 1,
+                              "dayOfWeek": "Friday",
+                              "attendanceId": "17419b75-c5d2-40c7-a2eb-f702fc28695c",
+                              "recordMissing": false,
+                              "regularizationStatus": "NOT_APPLIED"
+                          },
+                          {
+                              "date": "2025-11-29",
+                              "isPaid": true,
+                              "remark": "Bulk marked present for payroll validation",
+                              "status": "PRESENT",
+                              "details": {
+                                  "inTime": "03:30:00",
+                                  "outTime": "12:30:00",
+                                  "hoursWorked": 9,
+                                  "minutesWorked": 0,
+                                  "totalMinutesWorked": 540
+                              },
+                              "dayCredit": 1,
+                              "dayOfWeek": "Saturday",
+                              "attendanceId": "537da849-9f50-4480-a895-98b65ca359bf",
+                              "recordMissing": false,
+                              "regularizationStatus": "NOT_APPLIED"
+                          },
+                          {
+                              "date": "2025-11-30",
+                              "isPaid": true,
+                              "remark": "Bulk marked as weekly off for payroll validation",
+                              "status": "WEEKLY_OFF",
+                              "details": {},
+                              "dayCredit": 0,
+                              "dayOfWeek": "Sunday",
+                              "attendanceId": "45006fa0-bb48-4bc7-9b7f-b7644d7de0ab",
+                              "recordMissing": false,
+                              "regularizationStatus": "NOT_APPLIED"
+                          }
+                      ],
+                      "employee": {
+                          "id": "9a6b2d0c-57b7-4da2-9025-b64b6e2f4323",
+                          "name": "sradhasis  jethy",
+                          "employeeCode": "EMP-547DC1"
+                      },
+                      "dateRange": {
+                          "endDate": "2025-11-30",
+                          "startDate": "2025-11-02"
+                      },
+                      "statistics": {
+                          "LEAVE": 0,
+                          "ABSENT": 24,
+                          "HALFDAY": 0,
+                          "HOLIDAY": 0,
+                          "PRESENT": 4,
+                          "paidDays": 4,
+                          "LOGGED_IN": 0,
+                          "WEEKLY_OFF": 1,
+                          "paidLeaves": 0,
+                          "unpaidDays": 24,
+                          "LATE_PRESENT": 0,
+                          "paidHalfDays": 0,
+                          "paidHolidays": 0,
+                          "unpaidLeaves": 0,
+                          "lateLoginCount": 0,
+                          "paidWeeklyOffs": 1,
+                          "recordsMissing": 24,
+                          "unpaidHalfDays": 0,
+                          "earlyLogoutCount": 0,
+                          "missedPunchCount": 0,
+                          "totalOvertimeMinutes": 0
+                      },
+                      "payrollSummary": {
+                          "summary": "4/28 Working Days",
+                          "holidays": 0,
+                          "paidDays": 4,
+                          "totalDays": 29,
+                          "lateLogins": 0,
+                          "paidLeaves": 0,
+                          "unpaidDays": 24,
+                          "weeklyOffs": 1,
+                          "presentDays": 4,
+                          "totalLeaves": 0,
+                          "workingDays": 28,
+                          "earlyLogouts": 0,
+                          "paidHalfDays": 0,
+                          "paidHolidays": 0,
+                          "unpaidLeaves": 0,
+                          "lossOfPayDays": 24,
+                          "missedPunches": 0,
+                          "overtimeHours": 0,
+                          "paidWeeklyOffs": 1,
+                          "recordsMissing": 24,
+                          "unpaidHalfDays": 0,
+                          "overtimeMinutes": 0,
+                          "effectivePaidDays": 5,
+                          "effectiveUnpaidDays": 24
+                      },
+                      "payrollAnalysis": {
+                          "issues": [
+                              {
+                                  "type": "MISSING_RECORDS",
+                                  "count": 24,
+                                  "dates": [
+                                      "2025-11-02",
+                                      "2025-11-03",
+                                      "2025-11-04",
+                                      "2025-11-05",
+                                      "2025-11-06",
+                                      "2025-11-07",
+                                      "2025-11-08",
+                                      "2025-11-09",
+                                      "2025-11-10",
+                                      "2025-11-11",
+                                      "2025-11-12",
+                                      "2025-11-13",
+                                      "2025-11-14",
+                                      "2025-11-15",
+                                      "2025-11-16",
+                                      "2025-11-17",
+                                      "2025-11-18",
+                                      "2025-11-19",
+                                      "2025-11-20",
+                                      "2025-11-21",
+                                      "2025-11-22",
+                                      "2025-11-23",
+                                      "2025-11-24",
+                                      "2025-11-25"
+                                  ],
+                                  "message": "24 day(s) have missing attendance records",
+                                  "severity": "HIGH"
+                              },
+                              {
+                                  "type": "LOSS_OF_PAY",
+                                  "count": 24,
+                                  "dates": [
+                                      "2025-11-02",
+                                      "2025-11-03",
+                                      "2025-11-04",
+                                      "2025-11-05",
+                                      "2025-11-06",
+                                      "2025-11-07",
+                                      "2025-11-08",
+                                      "2025-11-09",
+                                      "2025-11-10",
+                                      "2025-11-11",
+                                      "2025-11-12",
+                                      "2025-11-13",
+                                      "2025-11-14",
+                                      "2025-11-15",
+                                      "2025-11-16",
+                                      "2025-11-17",
+                                      "2025-11-18",
+                                      "2025-11-19",
+                                      "2025-11-20",
+                                      "2025-11-21",
+                                      "2025-11-22",
+                                      "2025-11-23",
+                                      "2025-11-24",
+                                      "2025-11-25"
+                                  ],
+                                  "details": [
+                                      {
+                                          "date": "2025-11-02",
+                                          "status": "ABSENT",
+                                          "dayCredit": 0,
+                                          "leaveType": null
+                                      },
+                                      {
+                                          "date": "2025-11-03",
+                                          "status": "ABSENT",
+                                          "dayCredit": 0,
+                                          "leaveType": null
+                                      },
+                                      {
+                                          "date": "2025-11-04",
+                                          "status": "ABSENT",
+                                          "dayCredit": 0,
+                                          "leaveType": null
+                                      },
+                                      {
+                                          "date": "2025-11-05",
+                                          "status": "ABSENT",
+                                          "dayCredit": 0,
+                                          "leaveType": null
+                                      },
+                                      {
+                                          "date": "2025-11-06",
+                                          "status": "ABSENT",
+                                          "dayCredit": 0,
+                                          "leaveType": null
+                                      },
+                                      {
+                                          "date": "2025-11-07",
+                                          "status": "ABSENT",
+                                          "dayCredit": 0,
+                                          "leaveType": null
+                                      },
+                                      {
+                                          "date": "2025-11-08",
+                                          "status": "ABSENT",
+                                          "dayCredit": 0,
+                                          "leaveType": null
+                                      },
+                                      {
+                                          "date": "2025-11-09",
+                                          "status": "ABSENT",
+                                          "dayCredit": 0,
+                                          "leaveType": null
+                                      },
+                                      {
+                                          "date": "2025-11-10",
+                                          "status": "ABSENT",
+                                          "dayCredit": 0,
+                                          "leaveType": null
+                                      },
+                                      {
+                                          "date": "2025-11-11",
+                                          "status": "ABSENT",
+                                          "dayCredit": 0,
+                                          "leaveType": null
+                                      },
+                                      {
+                                          "date": "2025-11-12",
+                                          "status": "ABSENT",
+                                          "dayCredit": 0,
+                                          "leaveType": null
+                                      },
+                                      {
+                                          "date": "2025-11-13",
+                                          "status": "ABSENT",
+                                          "dayCredit": 0,
+                                          "leaveType": null
+                                      },
+                                      {
+                                          "date": "2025-11-14",
+                                          "status": "ABSENT",
+                                          "dayCredit": 0,
+                                          "leaveType": null
+                                      },
+                                      {
+                                          "date": "2025-11-15",
+                                          "status": "ABSENT",
+                                          "dayCredit": 0,
+                                          "leaveType": null
+                                      },
+                                      {
+                                          "date": "2025-11-16",
+                                          "status": "ABSENT",
+                                          "dayCredit": 0,
+                                          "leaveType": null
+                                      },
+                                      {
+                                          "date": "2025-11-17",
+                                          "status": "ABSENT",
+                                          "dayCredit": 0,
+                                          "leaveType": null
+                                      },
+                                      {
+                                          "date": "2025-11-18",
+                                          "status": "ABSENT",
+                                          "dayCredit": 0,
+                                          "leaveType": null
+                                      },
+                                      {
+                                          "date": "2025-11-19",
+                                          "status": "ABSENT",
+                                          "dayCredit": 0,
+                                          "leaveType": null
+                                      },
+                                      {
+                                          "date": "2025-11-20",
+                                          "status": "ABSENT",
+                                          "dayCredit": 0,
+                                          "leaveType": null
+                                      },
+                                      {
+                                          "date": "2025-11-21",
+                                          "status": "ABSENT",
+                                          "dayCredit": 0,
+                                          "leaveType": null
+                                      },
+                                      {
+                                          "date": "2025-11-22",
+                                          "status": "ABSENT",
+                                          "dayCredit": 0,
+                                          "leaveType": null
+                                      },
+                                      {
+                                          "date": "2025-11-23",
+                                          "status": "ABSENT",
+                                          "dayCredit": 0,
+                                          "leaveType": null
+                                      },
+                                      {
+                                          "date": "2025-11-24",
+                                          "status": "ABSENT",
+                                          "dayCredit": 0,
+                                          "leaveType": null
+                                      },
+                                      {
+                                          "date": "2025-11-25",
+                                          "status": "ABSENT",
+                                          "dayCredit": 0,
+                                          "leaveType": null
+                                      }
+                                  ],
+                                  "message": "24 day(s) marked as unpaid (LOP deduction)",
+                                  "severity": "INFO"
+                              }
+                          ],
+                          "recommendations": [
+                              "Review and create attendance records for missing days before processing payroll"
+                          ],
+                          "canProcessPayroll": false,
+                          "salaryCalculation": {
+                              "formula": "Salary = (Base Salary / Base Days) × Paid Days + Overtime",
+                              "lopDays": 24,
+                              "baseDays": 29,
+                              "paidDays": 5,
+                              "overtimeHours": 0
+                          }
+                      }
+                  },
+                  "payrollCalculation": {
+                      "da": {
+                          "monthly": 34,
+                          "fullMonthly": 200
+                      },
+                      "hra": {
+                          "monthly": 276,
+                          "fullMonthly": 1600
+                      },
+                      "basic": {
+                          "monthly": 690,
+                          "fullMonthly": 4000
+                      },
+                      "bonus": {
+                          "monthly": 57,
+                          "fullMonthly": 333
+                      },
+                      "netPay": 906,
+                      "arrears": [],
+                      "grossPay": 1724,
+                      "deductions": {
+                          "pf": {
+                              "employee": 87,
+                              "employer": 145,
+                              "fullMonthly": {
+                                  "employee": 504,
+                                  "employer": 840
+                              }
+                          },
+                          "esi": {
+                              "employee": 13,
+                              "employer": 56,
+                              "fullMonthly": {
+                                  "employee": 75,
+                                  "employer": 325
+                              }
+                          },
+                          "vpf": {
+                              "employee": 718,
+                              "fullMonthly": {
+                                  "employee": 4167
+                              }
+                          },
+                          "gpssa": {
+                              "employee": 0,
+                              "employer": 0,
+                              "fullMonthly": {
+                                  "employee": 0,
+                                  "employer": 0
+                              }
+                          },
+                          "arrear": {
+                              "pf": {
+                                  "employee": 0,
+                                  "employer": 0,
+                                  "baseAmount": 0
+                              },
+                              "esi": {
+                                  "employee": 0,
+                                  "employer": 0
+                              }
+                          },
+                          "professionalTax": 0,
+                          "professionalTaxFullMonthly": 0
+                      },
+                      "arrearAmount": 0,
+                      "totalEarnings": 1724,
+                      "overtimeAmount": 0,
+                      "arrearBreakdown": [],
+                      "otherAllowances": {
+                          "monthly": 0,
+                          "fullMonthly": 0
+                      },
+                      "totalDeductions": 818,
+                      "arrearDeductions": {
+                          "pf": {
+                              "employee": 0,
+                              "employer": 0,
+                              "baseAmount": 0
+                          },
+                          "esi": {
+                              "employee": 0,
+                              "employer": 0
+                          }
+                      },
+                      "prorationDetails": {
+                          "totalPayDays": 5,
+                          "prorationRatio": 0.1724,
+                          "fullMonthlyGross": 10000,
+                          "totalDaysInRange": 29
+                      },
+                      "specialAllowance": {
+                          "monthly": 667,
+                          "fullMonthly": 3867
+                      },
+                      "transportAllowance": {
+                          "monthly": 0,
+                          "fullMonthly": 0
+                      }
+                  }
+              },
+              "arrearAmount": 0,
+              "arrearBreakdown": [],
+              "arrearDetails": {
+                  "totalAmount": 0,
+                  "breakdown": [],
+                  "details": []
+              },
+              "loanDeductionAmount": 0,
+              "loanDataJSON": {
+                  "reason": "Employee sradhasis  jethy is inactive. Skipping loan processing.",
+                  "skipped": true,
+                  "success": true,
+                  "employeeId": "9a6b2d0c-57b7-4da2-9025-b64b6e2f4323",
+                  "employeeName": "sradhasis  jethy",
+                  "skippedLoans": [],
+                  "processedLoans": [],
+                  "totalDeductionAmount": 0
+              },
+              "tenantId": "1c221434-9808-4c2c-9df1-c05e0dc1576d",
+              "organizationId": "cb6f0e4f-3ae1-4ed4-bbc9-3329c885bbc9",
+              "createdAt": "2025-12-30T10:22:44.000Z",
+              "updatedAt": "2025-12-30T10:22:44.000Z",
+              "officeId": null,
+              "emp_payroll": {
+                  "id": "77e948f8-bfb1-40d3-9d53-72d2b2bc40e4",
+                  "payrollId": "PAYROLL-DECEMBER-25",
+                  "payrollName": null,
+                  "status": "FINALIZED",
+                  "month": null,
+                  "year": null,
+                  "startDate": null,
+                  "endDate": null,
+                  "date": "2025-12-30T10:22:41.000Z",
+                  "lockedAt": null,
+                  "lockedBy": null,
+                  "finalizedAt": null,
+                  "finalizedBy": null,
+                  "validationIssuesCount": 0,
+                  "employeesCount": 0,
+                  "processedEmployeesCount": 0,
+                  "tenantId": "1c221434-9808-4c2c-9df1-c05e0dc1576d",
+                  "organizationId": "cb6f0e4f-3ae1-4ed4-bbc9-3329c885bbc9",
+                  "createdAt": "2025-12-30T10:22:44.000Z",
+                  "updatedAt": "2025-12-30T10:22:44.000Z",
+                  "countryId": 1,
+                  "officeId": null
+              },
+              "emp_payrolls_allowances": [],
+              "employee_main": {
+                  "id": "9a6b2d0c-57b7-4da2-9025-b64b6e2f4323",
+                  "firstName": "sradhasis ",
+                  "lastName": "jethy",
+                  "joiningDate": "2025-11-18T00:00:00.000Z",
+                  "department": {
+                      "id": "88447e67-3f47-4755-8525-694158046d5d",
+                      "name": "hr",
+                      "code": "34356",
+                      "isDeleted": true,
+                      "tenantId": "1c221434-9808-4c2c-9df1-c05e0dc1576d",
+                      "organizationId": "cb6f0e4f-3ae1-4ed4-bbc9-3329c885bbc9",
+                      "createdAt": "2025-11-20T11:20:52.000Z",
+                      "updatedAt": "2025-12-05T10:47:38.000Z",
+                      "depHeadId": "36e4cb44-52c7-4948-9243-a135114c8af5",
+                      "parentDepartmentId": null
+                  }
+              },
+              "earningsBreakdown": {
+                  "basicSalary": {
+                      "rate": 4000,
+                      "earn": 690
+                  },
+                  "hra": {
+                      "rate": 1600,
+                      "earn": 276
+                  },
+                  "da": {
+                      "rate": 200,
+                      "earn": 34
+                  },
+                  "bonus": {
+                      "rate": 333.2,
+                      "earn": 57
+                  },
+                  "specialAllowance": {
+                      "rate": 3866.8,
+                      "earn": 667
+                  },
+                  "transportAllowance": {
+                      "rate": 0,
+                      "earn": 0
+                  },
+                  "otherAllowances": {
+                      "rate": 0,
+                      "earn": 0
+                  },
+                  "overtime": {
+                      "rate": 0,
+                      "earn": 0
+                  },
+                  "arrear": {
+                      "rate": 0,
+                      "earn": 0,
+                      "breakdown": [],
+                      "period": null
+                  }
+              },
+              "attendanceBreakdown": {
+                  "totalDays": 30,
+                  "workingDays": 28,
+                  "presentDays": 4,
+                  "paidDays": 5,
+                  "absentDays": 24,
+                  "weeklyOffs": 1,
+                  "paidHolidays": 0,
+                  "paidLeaves": 0,
+                  "unpaidLeaves": 0,
+                  "lossOfPayDays": 0,
+                  "halfDays": 0,
+                  "lateDays": 0,
+                  "earlyLogouts": 0,
+                  "overtimeHours": 0,
+                  "overtimeDays": 0
+              },
+              "deductionsBreakdown": {
+                  "providentFund": 87,
+                  "vpf": 718,
+                  "esi": 13,
+                  "professionalTax": 0,
+                  "incomeTax": 0,
+                  "gpssa": 0
+              },
+              "employerContributions": {
+                  "pf": 145,
+                  "esi": 56,
+                  "gpssa": 0,
+                  "total": 201
+              },
+              "payslipSummary": {
+                  "totalEarningsRate": 10000,
+                  "totalEarningsEarned": 1724,
+                  "totalDeductions": 818,
+                  "netPay": 906,
+                  "totalEmployerContributions": 201,
+                  "arrearAmount": 0
+              }
+          }
+      }
+order: 1000

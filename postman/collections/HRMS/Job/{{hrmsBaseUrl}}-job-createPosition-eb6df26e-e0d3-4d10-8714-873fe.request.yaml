@@ -1,0 +1,45 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/job/createPosition/eb6df26e-e0d3-4d10-8714-873fef6e213c"
+url: "{{hrmsBaseUrl}}/job/createPosition/eb6df26e-e0d3-4d10-8714-873fef6e213c"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"positionData\": {\r
+
+    \        \"title\": \"pp\",\r
+
+    \        \"code\": \"pp1\",\r
+
+    \        \"departmentId\": \"f1ebe2f8-9d4b-47f4-8de9-0f1712473871\",\r
+
+    \        \"reportstoId\": \"eb6df26e-e0d3-4d10-8714-873fef6e213c\",\r
+
+    \        \"gradeId\": \"19147425-7f0b-49a6-8d7f-bfa9e515d686\",\r
+
+    \        \"location\": \"pune\",\r
+
+    \        \"compensationrange\": \"100-200\",\r
+
+    \        \"employeementType\": \"FULLTIME/PARTTIME\",\r
+
+    \        \"positionStatus\": \"ACTIVE\",\r
+
+    \        \"jobdescription\": \"link\"\r
+
+    \    },\r
+
+    \    \"skills\": [\r
+
+    \        \"6fa4d8fa-b31d-42aa-a745-ec7487189bd5\",\r
+
+    \        \"7805cad5-a54e-45d7-83dc-593c70544a6d\",\r
+
+    \        \"8fe0f496-3ea5-4050-bcf4-d3fc6198c83c\"\r
+
+    \    ]\r
+
+    }"
+examples: ./.resources/{{hrmsBaseUrl}}-job-createPosition-eb6df26e-e0d3-4d10-8714-873fe.resources/examples
+order: 14000

@@ -1,0 +1,13 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/workflow/getTimeline/a020385c-f498-4f3b-b560-a11e6176d5d3?key=leave_request"
+url: "{{hrmsBaseUrl}}/workflow/getTimeline/7f30e0bb-94c5-4b7f-b8ce-6f4ef3168817?key=reimbursement_request"
+method: GET
+queryParams:
+  - key: key
+    value: reimbursement_request
+    description: job_requisitions or leave_request or travel_request offerletter_request
+auth:
+  type: bearer
+  credentials:
+    token: "{{orgToken}}"
+order: 9000

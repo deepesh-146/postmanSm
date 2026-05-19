@@ -1,0 +1,6 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/dashboard/recruiterdashboard/topPerformingRecruiters/{{userId}}"
+url: "{{hrmsBaseUrl}}/dashboard/recruiterdashboard/topPerformingRecruiters/{{userId}}"
+method: GET
+examples: ./.resources/{{hrmsBaseUrl}}-dashboard-recruiterdashboard-topPerformingRecrui.resources/examples
+order: 24000

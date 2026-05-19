@@ -1,0 +1,5 @@
+$kind: http-request
+description: Calculate final scores for ALL employees in a cycle. Fetches AppraisalResponses, computes weighted KPI→KRA→Overall rollup, auto-assigns band.
+url: "{{baseUrl}}/cycle/{{cycleId}}/calculate-scores"
+method: POST
+order: 1000

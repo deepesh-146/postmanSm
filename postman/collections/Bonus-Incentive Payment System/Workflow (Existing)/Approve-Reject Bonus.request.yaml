@@ -1,0 +1,17 @@
+$kind: http-request
+name: Approve/Reject Bonus
+description: Approve or reject bonus using existing workflow approval endpoint. Use 'employee_bonus' as the key parameter if needed.
+url: "{{base_url}}/api/workflow/approve"
+method: POST
+headers:
+  Content-Type: application/json
+  Authorization: Bearer {{access_token}}
+body:
+  type: json
+  content: |-
+    {
+      "approvalId": "{{approval_id}}",
+      "action": "APPROVED",
+      "comments": "Approved - good performance"
+    }
+order: 1000

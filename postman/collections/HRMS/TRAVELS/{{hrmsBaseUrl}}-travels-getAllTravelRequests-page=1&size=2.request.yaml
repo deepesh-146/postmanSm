@@ -1,0 +1,48 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/travels/getAllTravelRequests?page=1&size=2"
+url: "{{hrmsBaseUrl}}/travels/getAllTravelRequests?page=1&size=2"
+method: GET
+queryParams:
+  - key: page
+    value: "1"
+  - key: size
+    value: "2"
+  - key: search
+    value: demoadmin
+    disabled: true
+    description: travelPurpose or destination or firstName or lastname or both
+  - key: userId
+    value: "{{userId}}"
+    disabled: true
+  - key: status
+    value: PENDING
+    disabled: true
+  - key: fromDate
+    value: 2025-05-08
+    disabled: true
+  - key: toDate
+    value: 2025-05-19
+    disabled: true
+body:
+  type: json
+  content: "{\r
+
+    \  \"travelPurpose\": \"Client meeting and site inspection\",\r
+
+    \  \"destination\": \"Mumbai\",\r
+
+    \  \"fromDate\": \"2025-05-20\",\r
+
+    \  \"toDate\": \"2025-05-23\",\r
+
+    \  \"modeOfTravel\": \"Flight\",\r
+
+    \  \"estimatedCost\": 18000,\r
+
+    \  \"advanceRequired\": true,\r
+
+    \  \"description\": \"Visit client office and assess project site condition\"\r
+
+    }\r\n"
+examples: ./.resources/{{hrmsBaseUrl}}-travels-getAllTravelRequests-page=1&size=2.resources/examples
+order: 2000

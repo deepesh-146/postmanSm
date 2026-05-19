@@ -1,0 +1,36 @@
+$kind: http-request
+description: |-
+  Login as tenant admin. Returns list of organizations.
+
+  Default credentials:
+  - clientId: default
+  - password: Admin@123
+url: "{{hrmsBaseUrl}}/tenants/auth/tenant-login"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    // PLATFORM ADMIN
+    {
+        "clientId": "platform",
+        "email": "admin@platform.com",
+        "password": "PlatformAdmin@123"
+    }
+scripts:
+  - type: afterResponse
+    code: |-
+      if (pm.response.code === 200) {
+          const response = pm.response.json();
+          if (response.data && response.data.accessToken) {
+              pm.environment.set('platformAdmin', response.data.accessToken);
+              console.log('✅ Tenant token saved');
+          }
+          if (response.data && response.data.organizations && response.data.organizations.length > 0) {
+              pm.environment.set('organizationId', response.data.organizations[0].id);
+              console.log('✅ First organization ID saved:', response.data.organizations[0].name);
+          }
+      }
+    language: text/javascript
+order: 1000

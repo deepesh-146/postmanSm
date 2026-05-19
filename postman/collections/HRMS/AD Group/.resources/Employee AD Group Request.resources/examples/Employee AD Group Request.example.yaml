@@ -1,0 +1,42 @@
+$kind: http-example
+request:
+  url: "{{hrmsBaseUrl}}/ad_group/request"
+  method: POST
+  body:
+    type: json
+    content: "{\r
+
+      \    \"adGroupId\": \"9284f618-45f4-4adf-b705-50f2ded871d2\",\r
+
+      \    \"employeeId\": \"903bd690-61f3-43db-9edd-d38d531c1c67\",\r
+
+      \    \"managerId\": \"903bd690-61f3-43db-9edd-d38d531c1c67\",\r
+
+      \    \"busJust\": \"Need to Add Job\"\r
+
+      }"
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "112"
+    ETag: W/"70-XrO8KDcFkf23Zwh8gX9h1D0NDTc"
+    Date: Mon, 14 Oct 2024 17:36:02 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "status": {
+              "success": true,
+              "code": 200,
+              "message": "Request Raised with Request Number REQ5280999",
+              "failure": false
+          }
+      }
+order: 1000

@@ -1,0 +1,33 @@
+$kind: http-example
+name: "{{hrmsBaseUrl}}/travels/admin/reports/getDepartmentWiseTravelSpend/{{userId}}"
+request:
+  url: "{{hrmsBaseUrl}}/travels/admin/reports/getDepartmentWiseTravelSpend/{{userId}}"
+  method: GET
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "141"
+    ETag: W/"8d-3uEHo/hyIsK8gBX0IO9IzU7tnTs"
+    Date: Mon, 12 May 2025 11:51:56 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "success": true,
+          "status": 200,
+          "message": "Department-wise travel spend fetched successfully.",
+          "data": [
+              {
+                  "department": "test",
+                  "totalSpend": 1650
+              }
+          ]
+      }
+order: 1000

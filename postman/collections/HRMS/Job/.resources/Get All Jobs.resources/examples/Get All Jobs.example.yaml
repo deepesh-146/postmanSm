@@ -1,0 +1,76 @@
+$kind: http-example
+request:
+  url: "{{hrmsBaseUrl}}/job/getJobList?size=10&page=1"
+  method: GET
+  queryParams:
+    - key: size
+      value: "10"
+    - key: page
+      value: "1"
+    - key: search
+      value: ""
+      disabled: true
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "1251"
+    ETag: W/"4e3-gkawY2G90iE8dUA8TRTAEDxKkm0"
+    Date: Wed, 09 Oct 2024 17:20:16 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "status": {
+              "success": true,
+              "code": 200,
+              "message": "Job List",
+              "failure": false
+          },
+          "data": {
+              "pageData": [
+                  {
+                      "id": "cb5d4bf6-a1a3-42a5-8065-183796fd6c76",
+                      "title": "CEO - India",
+                      "code": "JOB6665822",
+                      "companyName": "iCeipts Technology",
+                      "type": "Full Time",
+                      "location": "Pune, Maharashtra",
+                      "skills": "Dart, Flutter, Google Play Store",
+                      "shifts": "Day Shift",
+                      "description": "We are looking for a skilled Flutter Developer to Join our Team",
+                      "benefits": "Health insurance, Provident Fund, Work From Home",
+                      "experience": "3-5 Year",
+                      "education": "Graduation",
+                      "related": "Do you 3 and above years of experience?",
+                      "salary": "100000 - 200000",
+                      "recruiterId": "null",
+                      "validTill": "2024-10-29T12:30:00.000Z",
+                      "isActive": 1,
+                      "job_unit_id": "e71f8b2c-1c10-46f1-99a5-05c8bbfe4539",
+                      "job_unit_name": "DX",
+                      "job_unit_unitHead": "ADMIN",
+                      "job_unit_code": "DX-6855",
+                      "job_unit_createdAt": "2024-10-09T15:49:22.000Z",
+                      "job_unit_updatedAt": "2024-10-09T15:50:11.000Z",
+                      "designation_id": "d10e48ed-e5f7-4821-9817-8a05d673eab4",
+                      "designation_name": "CEO",
+                      "designation_depId": "32e8b17d-29e8-4f8f-8078-8ec006e2766e",
+                      "designation_code": "CEO-2222",
+                      "designation_createdAt": "2024-10-09T15:43:52.000Z",
+                      "designation_updatedAt": "2024-10-09T15:43:52.000Z",
+                      "designation_departmentId": null
+                  }
+              ],
+              "currentPage": 1,
+              "totalPages": 1,
+              "totalRows": 1
+          }
+      }
+order: 1000

@@ -1,0 +1,14 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/leave/approve"
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"notes\": \"Approved\",\r
+
+    \    \"leaveRequestId\": \"98c04555-0974-4265-8edb-03cdd8eba5d2\"\r
+
+    }"
+examples: ./.resources/Approve Leave By Manager.resources/examples
+order: 5000

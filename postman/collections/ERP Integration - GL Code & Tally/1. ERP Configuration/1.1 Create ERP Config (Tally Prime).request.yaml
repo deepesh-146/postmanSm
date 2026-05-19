@@ -1,0 +1,33 @@
+$kind: http-request
+description: |-
+  Creates or updates Tally connection configuration.
+
+  erpType options: TALLY_PRIME, TALLY_ERP9, SAP_B1, SAP_S4HANA
+
+  If config already exists for the same erpType, it will be updated.
+url: "{{baseUrl}}/erp/config"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+        "erpType": "TALLY_PRIME",
+        "serverUrl": "{{tallyServerUrl}}",
+        "port": {{tallyPort}},
+        "companyName": "{{tallyCompanyName}}",
+        "isActive": true,
+        "tallyLedgerPrefix": ""
+    }
+scripts:
+  - type: afterResponse
+    code: |-
+      if (pm.response.code === 200) {
+          var jsonData = pm.response.json();
+          if (jsonData.data && jsonData.data.id) {
+              pm.collectionVariables.set('erpConfigId', jsonData.data.id);
+          }
+      }
+    language: text/javascript
+order: 1000

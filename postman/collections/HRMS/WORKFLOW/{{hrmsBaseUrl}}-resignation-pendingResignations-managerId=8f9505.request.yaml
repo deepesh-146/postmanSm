@@ -1,0 +1,12 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/resignation/pendingResignations?managerId=8f950586-d7d9-469b-947b-86141f0b302d&status=PENDING"
+url: "{{hrmsBaseUrl}}/resignation/pendingResignations?managerId=8f950586-d7d9-469b-947b-86141f0b302d&status=PENDING"
+method: GET
+queryParams:
+  managerId: 8f950586-d7d9-469b-947b-86141f0b302d
+  status: PENDING
+auth:
+  type: bearer
+  credentials:
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjaWQiOiI4Zjk1MDU4Ni1kN2Q5LTQ2OWItOTQ3Yi04NjE0MWYwYjMwMmQiLCJpZCI6IjhmOTUwNTg2LWQ3ZDktNDY5Yi05NDdiLTg2MTQxZjBiMzAyZCIsImZpcnN0TmFtZSI6IlRlc3QgMiIsImVtYWlsIjoidGVzdDczM0BnbWFpbC5jb20iLCJyb2xlIjoiRU1QTE9ZRUUiLCJpYXQiOjE3NDUzMTYwMjAsImV4cCI6MTc0NTQwMjQyMCwiYXVkIjoiVGVzdCAyIn0.G1Ebxn21W2HZDaWwS8a9LvseQwV72ydUJiZSxhzQTYA
+order: 6000

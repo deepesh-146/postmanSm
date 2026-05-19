@@ -1,0 +1,5 @@
+$kind: http-request
+description: High/medium/no variance breakdown across all ratings.
+url: "{{baseUrl}}/appraisal/cycle/{{cycleId}}/admin/variance-analysis"
+method: GET
+order: 6000

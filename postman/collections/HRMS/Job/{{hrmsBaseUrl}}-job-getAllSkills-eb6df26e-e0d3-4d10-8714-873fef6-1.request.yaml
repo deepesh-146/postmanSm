@@ -1,0 +1,6 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/job/getAllSkills/eb6df26e-e0d3-4d10-8714-873fef6e213c Copy"
+url: "{{hrmsBaseUrl}}/job/getAllSkills/eb6df26e-e0d3-4d10-8714-873fef6e213c"
+method: GET
+examples: ./.resources/{{hrmsBaseUrl}}-job-getAllSkills-eb6df26e-e0d3-4d10-8714-873fef6-1.resources/examples
+order: 21000

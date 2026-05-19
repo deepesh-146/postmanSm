@@ -1,0 +1,7 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/tickets/acknowledge/:ticketId"
+method: PATCH
+pathVariables:
+  ticketId: 2582dd41-8782-4f2a-b3a7-bd752769d618
+examples: ./.resources/Acknowledge Update Ticket.resources/examples
+order: 6000

@@ -1,0 +1,5 @@
+$kind: http-request
+description: Admin views completion rates — how many employees submitted self-appraisal and how many managers reviewed.
+url: "{{baseUrl}}/appraisal/cycle/{{cycleId}}/admin/dashboard"
+method: GET
+order: 3000

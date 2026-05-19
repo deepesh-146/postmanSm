@@ -1,0 +1,10 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/jobUnit/:jobUnitId"
+method: DELETE
+pathVariables:
+  jobUnitId: ""
+auth:
+  type: bearer
+  credentials:
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaXJzdE5hbWUiOiJGaWVsZCBNaXRyYSIsImlkIjoiYzY2NzJjNTQtODAwZC00MDBhLWFkMGItZDhkMzdmZWJkZmVjIiwiaWF0IjoxNzIyMzMxOTE4LCJleHAiOjE3NTM4Njc5MTgsImF1ZCI6IkZpZWxkIE1pdHJhIn0.NQXK6dl16vwoat9-slGirJ1RvRKNaFTHgx9PUirp5bU
+order: 5000

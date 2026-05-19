@@ -1,0 +1,22 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/employeePayroll/updateSalaryPeriod/637b8c66-8035-41fa-aabd-a75b88b545d4"
+url: "{{hrmsBaseUrl}}/employeePayroll/updateSalaryPeriod/{{userId}}"
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"salaryPeriodId\": \"7e2b15a4-ce25-426c-8db7-75146c3dfe80\",\r
+
+    \    \"name\": \"SHIV 12\",\r
+
+    \    \"companyName\": \"iceipts\",\r
+
+    \    \"startDate\": \"2024-10-01\",\r
+
+    \    \"endDate\": \"2024-10-10\",\r
+
+    \    \"userId\": \"{{userId}}\"\r
+
+    }"
+order: 4000

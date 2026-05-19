@@ -1,0 +1,22 @@
+$kind: http-request
+description: Add bonuses to an existing DRAFT cycle
+url: "{{base_url}}/api/bonus/payout-cycles/:id/bonuses"
+method: POST
+headers:
+  Content-Type: application/json
+  Authorization: Bearer {{access_token}}
+pathVariables:
+  - key: id
+    value: "{{cycle_id}}"
+    description: Cycle UUID
+body:
+  type: json
+  content: |-
+    {
+      "bonusIds": [
+        "{{bonus_id_1}}",
+        "{{bonus_id_2}}",
+        "{{bonus_id_3}}"
+      ]
+    }
+order: 5000

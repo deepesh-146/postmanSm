@@ -1,0 +1,7 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/designation/detail/:designationId"
+method: GET
+pathVariables:
+  designationId: 6eec0ec7-fddc-4c2f-b493-bb9568425f5e
+examples: ./.resources/Get Single Designation.resources/examples
+order: 4000

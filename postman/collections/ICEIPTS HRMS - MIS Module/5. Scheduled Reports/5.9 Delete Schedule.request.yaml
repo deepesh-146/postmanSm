@@ -1,0 +1,8 @@
+$kind: http-request
+description: Permanently delete a scheduled report.
+url: "{{baseUrl}}/mis/schedules/{{scheduleId}}"
+method: DELETE
+headers:
+  Content-Type: application/json
+  x-organization-id: "{{organizationId}}"
+order: 9000

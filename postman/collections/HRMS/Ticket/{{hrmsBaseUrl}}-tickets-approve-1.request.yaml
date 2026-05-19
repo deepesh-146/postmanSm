@@ -1,0 +1,15 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/tickets/approve"
+url: "{{hrmsBaseUrl}}/tickets/approve"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"ticketId\": \"a0eba3b8-40a2-4f20-b241-444b21d52e5a\",\r
+
+    \    \"comment\": \"Accepting the request\"\r
+
+    }"
+examples: ./.resources/{{hrmsBaseUrl}}-tickets-approve-1.resources/examples
+order: 24000

@@ -1,0 +1,19 @@
+$kind: http-request
+description: HR adjusts final score. Creates audit log. Band auto-recalculated. Status → CALIBRATED.
+url: "{{baseUrl}}/appraisal-finalization/scores/{{finalScoreId}}/calibrate"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+        "newScore": 4.2,
+        "reason": "Adjusted after cross-team normalization and bell curve alignment",
+        "calibratorRole": "HR",
+        "metadata": {
+            "calibrationMeeting": "2026-03-28",
+            "notes": "Score moved up based on project impact"
+        }
+    }
+order: 1000

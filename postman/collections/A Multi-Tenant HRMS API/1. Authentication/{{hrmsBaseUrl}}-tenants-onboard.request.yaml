@@ -1,0 +1,53 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/tenants/onboard"
+description: |-
+  Login as tenant admin. Returns list of organizations.
+
+  Default credentials:
+  - clientId: default
+  - password: Admin@123
+url: "{{hrmsBaseUrl}}/tenants/onboard"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "clientId": "iceipts",
+      "name": "Iceipts",
+      "email": "admin@iceipts.com",
+      "password": "5684",
+
+      "orgName": "Iceipts",
+      "orgEmail": "org@iceipts.com",
+      "adminFirstName": "Krish",
+      "adminLastName": "Patel",
+      "adminEmail": "orgadmin@iceipts.com",
+      "adminMobile": "9876543452",
+      "adminPassword": "5684",
+      "adminGender": "Male",
+      "adminDob": "1990-01-01",
+      "nationality": "Indian",
+      "maritalStatus": "Single"
+    }
+auth:
+  type: bearer
+  credentials:
+    token: "{{platformAdmin}}"
+scripts:
+  - type: afterResponse
+    code: |-
+      if (pm.response.code === 200) {
+          const response = pm.response.json();
+          if (response.data && response.data.accessToken) {
+              pm.environment.set('platformAdmin', response.data.accessToken);
+              console.log('✅ Tenant token saved');
+          }
+          if (response.data && response.data.organizations && response.data.organizations.length > 0) {
+              pm.environment.set('organizationId', response.data.organizations[0].id);
+              console.log('✅ First organization ID saved:', response.data.organizations[0].name);
+          }
+      }
+    language: text/javascript
+order: 2000

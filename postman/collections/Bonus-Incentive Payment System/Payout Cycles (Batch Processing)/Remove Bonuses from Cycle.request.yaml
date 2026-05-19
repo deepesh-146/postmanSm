@@ -1,0 +1,21 @@
+$kind: http-request
+description: Remove bonuses from a DRAFT cycle
+url: "{{base_url}}/api/bonus/payout-cycles/:id/bonuses"
+method: DELETE
+headers:
+  Content-Type: application/json
+  Authorization: Bearer {{access_token}}
+pathVariables:
+  - key: id
+    value: "{{cycle_id}}"
+    description: Cycle UUID
+body:
+  type: json
+  content: |-
+    {
+      "bonusIds": [
+        "{{bonus_id_1}}",
+        "{{bonus_id_2}}"
+      ]
+    }
+order: 6000

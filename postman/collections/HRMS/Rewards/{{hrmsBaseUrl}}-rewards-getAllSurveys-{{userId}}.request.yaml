@@ -1,0 +1,6 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/rewards/getAllSurveys/{{userId}}"
+url: "{{hrmsBaseUrl}}/rewards/getAllSurveys/{{userId}}"
+method: GET
+examples: ./.resources/{{hrmsBaseUrl}}-rewards-getAllSurveys-{{userId}}.resources/examples
+order: 23000

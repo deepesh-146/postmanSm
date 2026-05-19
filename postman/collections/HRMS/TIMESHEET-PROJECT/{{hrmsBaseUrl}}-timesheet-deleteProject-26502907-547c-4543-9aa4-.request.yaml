@@ -1,0 +1,5 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/timesheet/deleteProject/26502907-547c-4543-9aa4-a5d56941e0a3"
+url: "{{hrmsBaseUrl}}/timesheet/deleteProject/26502907-547c-4543-9aa4-a5d56941e0a3"
+method: DELETE
+order: 11000

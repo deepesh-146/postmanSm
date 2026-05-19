@@ -1,0 +1,13 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/attendance/attendanceCountForDashboard"
+url: "{{hrmsBaseUrl}}/attendance/attendanceCountForDashboard"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"date\": \"2024-11-27\"\r
+
+    }"
+examples: ./.resources/{{hrmsBaseUrl}}-attendance-attendanceCountForDashboard.resources/examples
+order: 17000

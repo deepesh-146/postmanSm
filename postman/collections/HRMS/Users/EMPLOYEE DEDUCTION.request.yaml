@@ -1,0 +1,209 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/employee/addDeclarationEmployee"
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"employeeDeduction_JSON\": {\r
+
+    \        \"noOfDependents\": 2,\r
+
+    \        \"contractType\": \"LIMITED\",\r
+
+    \        \"isGpssa\": false,\r
+
+    \        \"annualCtc\": 600000,\r
+
+    \        \"basicPercent\": 40,\r
+
+    \        \"basicYearly\": 240000,\r
+
+    \        \"basicMonthly\": 20000,\r
+
+    \        \"hraPercent\": 50,\r
+
+    \        \"hraYearly\": 120000,\r
+
+    \        \"hraMonthly\": 10000,\r
+
+    \        \"hraBasedOn\": \"YEARLY\",\r
+
+    \        \"daYearly\": 30000,\r
+
+    \        \"daMonthly\": 2500,\r
+
+    \        \"daPercent\": 5,\r
+
+    \        \"daBasedOn\": \"YEARLY\",\r
+
+    \        \"daPercentage\": 5,\r
+
+    \        \"bonus\": 15000,\r
+
+    \        \"bonusYearly\": 15000,\r
+
+    \        \"bonusMonthly\": 1250,\r
+
+    \        \"bonusPercentage\": 2.5,\r
+
+    \        \"bonusBasedOn\": \"YEARLY\",\r
+
+    \        \"specialAllowance\": 50000,\r
+
+    \        \"specialAllowanceYearly\": 50000,\r
+
+    \        \"specialAllowanceMonthly\": 4167,\r
+
+    \        \"pf\": 28800,\r
+
+    \        \"employeePfYearly\": 14400,\r
+
+    \        \"employeePfMonthly\": 1200,\r
+
+    \        \"employerPfYearly\": 14400,\r
+
+    \        \"employerPfMonthly\": 1200,\r
+
+    \        \"esi\": 3600,\r
+
+    \        \"employeeEsiYearly\": 900,\r
+
+    \        \"employeeEsiMonthly\": 75,\r
+
+    \        \"employerEsiYearly\": 2700,\r
+
+    \        \"employerEsiMonthly\": 225,\r
+
+    \        \"employerEpsYearly\": 5000,\r
+
+    \        \"employerEpsMonthly\": 417,\r
+
+    \        \"professionalTax\": 2500,\r
+
+    \        \"professionalTaxYearly\": 2500,\r
+
+    \        \"professionalTaxMonthly\": 208,\r
+
+    \        \"gratuity\": 11500,\r
+
+    \        \"annualGross\": 420000,\r
+
+    \        \"monthlyGross\": 35000,\r
+
+    \        \"annualTotalYearly\": 395000,\r
+
+    \        \"annualTotalMonthly\": 32917,\r
+
+    \        \"totalTax\": 12000,\r
+
+    \        \"totalRebate\": 12500,\r
+
+    \        \"finalTax\": 0,\r
+
+    \        \"regime\": \"old\",\r
+
+    \        \"age\": 32,\r
+
+    \        \"grossIncome\": 420000,\r
+
+    \        \"standardDeduction\": 50000,\r
+
+    \        \"taxableIncome\": 370000,\r
+
+    \        \"baseTaxAmount\": 5000,\r
+
+    \        \"surchargeAmount\": 0,\r
+
+    \        \"cessAmount\": 200,\r
+
+    \        \"totalBeforeRebate\": 5200,\r
+
+    \        \"slabWiseCalculation\": [\r
+
+    \            {\r
+
+    \                \"slab\": \"0-250000\",\r
+
+    \                \"taxRate\": 0,\r
+
+    \                \"tax\": 0\r
+
+    \            },\r
+
+    \            {\r
+
+    \                \"slab\": \"250001-500000\",\r
+
+    \                \"taxRate\": 5,\r
+
+    \                \"tax\": 6000\r
+
+    \            }\r
+
+    \        ],\r
+
+    \        \"GPSSA\": 0,\r
+
+    \        \"employeeGpssaYearly\": 0,\r
+
+    \        \"employeeGpssaMonthly\": 0,\r
+
+    \        \"employerGpssaYearly\": 0,\r
+
+    \        \"employerGpssaMonthly\": 0,\r
+
+    \        \"transportAllowance\": 19200,\r
+
+    \        \"transportAllowanceYearly\": 19200,\r
+
+    \        \"transportAllowanceMonthly\": 1600,\r
+
+    \        \"transportAllowancePercentage\": 4,\r
+
+    \        \"otherAllowance\": 5000,\r
+
+    \        \"otherAllowancesYearly\": 5000,\r
+
+    \        \"otherAllowancesMonthly\": 417,\r
+
+    \        \"otherAllowancesDescription\": \"Internet reimbursement\",\r
+
+    \        \"summaryAnnualGrossSalary\": 420000,\r
+
+    \        \"summaryAnnualIncomeTax\": 12000,\r
+
+    \        \"summaryAnnualNetSalary\": 408000,\r
+
+    \        \"summaryAnnualTotalDeductions\": 12000,\r
+
+    \        \"summaryMonthlyGrossSalary\": 35000,\r
+
+    \        \"summaryMonthlyIncomeTax\": 1000,\r
+
+    \        \"summaryMonthlyNetSalary\": 34000,\r
+
+    \        \"summaryMonthlyTotalDeductions\": 1000,\r
+
+    \        \"summaryTakeHomeAnnual\": 408000,\r
+
+    \        \"summaryTakeHomeMonthly\": 34000,\r
+
+    \        \"annualTotal\": 420000,\r
+
+    \        \"monthlyTotal\": 35000,\r
+
+    \        \"taxDeclarationsJSON\": null,\r
+
+    \        \"salaryBreakdownJSON\": null,\r
+
+    \        \"taxCalculationJSON\": null,\r
+
+    \        \"deductionsJSON\": null,\r
+
+    \        \"slabWiseCalculationJSON\": null\r
+
+    \    }\r
+
+    }"
+order: 46000

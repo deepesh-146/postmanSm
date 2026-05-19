@@ -1,0 +1,5 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/payrolls/getPaySlipData/{{empPayrollSalaryId}}"
+url: "{{hrmsBaseUrl}}/payrolls/getPaySlipData/{{empPayrollSalaryId}}"
+method: GET
+order: 10000

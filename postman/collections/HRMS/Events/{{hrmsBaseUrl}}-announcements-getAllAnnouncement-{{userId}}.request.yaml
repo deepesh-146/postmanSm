@@ -1,0 +1,6 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/announcements/getAllAnnouncement/{{userId}}"
+url: "{{hrmsBaseUrl}}/announcements/getAllAnnouncement/{{userId}}"
+method: GET
+examples: ./.resources/{{hrmsBaseUrl}}-announcements-getAllAnnouncement-{{userId}}.resources/examples
+order: 7000

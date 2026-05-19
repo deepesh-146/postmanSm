@@ -1,0 +1,6 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/rewards/admin/rotationalShift/:shiftId"
+method: GET
+pathVariables:
+  shiftId: 24dd5ad0-54f1-489b-9e28-0ca760d53b06
+order: 3000

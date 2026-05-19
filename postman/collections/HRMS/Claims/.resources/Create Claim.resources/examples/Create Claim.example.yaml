@@ -1,0 +1,50 @@
+$kind: http-example
+request:
+  url: "{{hrmsBaseUrl}}/claims/"
+  method: POST
+  body:
+    type: json
+    content: "{\r
+
+      \    \"employeeId\": \"903bd690-61f3-43db-9edd-d38d531c1c67\",\r
+
+      \    \"typeId\": \"2dffd90e-fc02-4875-9c5a-aad71a552799\",\r
+
+      \    \"amount\": 800,\r
+
+      \    \"email\": \"sanat.kumar@iceipts.com\",\r
+
+      \    \"link\": \"https://morth.nic.in/sites/default/files/dd12-13_0.pdf\",\r
+
+      \    \"vendorName\": \"JIO\",\r
+
+      \    \"receiptNumber\": \"5585855855\",\r
+
+      \    \"empComment\": \"Jio\"\r
+
+      }"
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "78"
+    ETag: W/"4e-jAlt/KaYVPDLSdWjZYJK2v+eI0w"
+    Date: Mon, 14 Oct 2024 18:29:58 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "status": {
+              "success": true,
+              "code": 200,
+              "message": "Claim Added",
+              "failure": false
+          }
+      }
+order: 1000

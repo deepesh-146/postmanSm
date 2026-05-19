@@ -1,0 +1,4 @@
+$kind: http-request
+url: "{{baseUrl}}/ticket/assignee/{{employeeId}}"
+method: GET
+order: 5000

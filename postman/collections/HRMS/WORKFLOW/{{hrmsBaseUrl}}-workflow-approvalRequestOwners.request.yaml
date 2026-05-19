@@ -1,0 +1,18 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/workflow/approvalRequestOwners"
+url: "{{hrmsBaseUrl}}/workflow/approvalRequestOwners"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"approvalId\": \"3c91e9ff-9e40-4191-a8c0-380fd08c70c5\",\r
+
+    \    \"action\": \"REJECTED\",\r
+
+    \    \"comments\": \"Reimbuhsment approved\",\r
+
+    \    \"isTenantApproved\": false\r
+
+    }"
+order: 11000

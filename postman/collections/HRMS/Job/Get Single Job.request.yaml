@@ -1,0 +1,7 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/job/detail/:jobId"
+method: GET
+pathVariables:
+  jobId: 8199a486-e2b7-4081-aa2d-bd4cfdc83ca5
+examples: ./.resources/Get Single Job.resources/examples
+order: 12000

@@ -1,0 +1,31 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/demo/getAllContactus?page=1&size=1"
+url: "{{hrmsBaseUrl}}/demo/getAllContactus?page=1&size=1"
+method: GET
+queryParams:
+  page: "1"
+  size: "1"
+body:
+  type: json
+  content: "{\r
+
+    \  \"firstName\": \"John Doe\",\r
+
+    \  \"lastName\": \"ff\",\r
+
+    \  \"companyName\": \"fddd\",\r
+
+    \  \"referral\":\"fff\",\r
+
+    \  \"country\": \"fff\",\r
+
+    \  \"type\":\"ffff\",\r
+
+    \  \"email\": \"john@example.com\",\r
+
+    \  \"message\": \"Hello\",\r
+
+    \  \"phone\": \"ffff\"\r
+
+    }"
+order: 2000

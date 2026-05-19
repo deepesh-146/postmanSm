@@ -1,0 +1,22 @@
+$kind: http-request
+description: Policy violation. Routes to ADMIN. Skips manager.
+url: "{{base_url}}/grievances/categories"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+        "name": "Policy Violation",
+        "code": "POLICY_VIOLATION",
+        "description": "Company policy breaches, compliance issues",
+        "routeTo": "ADMIN",
+        "skipManager": true,
+        "skipHr": false,
+        "isSensitive": true,
+        "allowAnonymous": true,
+        "defaultPriority": "HIGH",
+        "slaDays": 5
+    }
+order: 5000

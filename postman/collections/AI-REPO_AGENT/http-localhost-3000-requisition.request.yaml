@@ -1,0 +1,88 @@
+$kind: http-request
+name: http://localhost:3000/requisition
+url: http://localhost:4000/requisition
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"employeeId\": \"45d16f8e-ecd1-4308-b1da-23a79d7fef59\",\r
+
+    \    \"jobData\": {\r
+
+    \        \"title\": \"Node.js Developer\",\r
+
+    \        \"department\": \"Engineering\",\r
+
+    \        \"location\": \"Remote\",\r
+
+    \        \"employeeId\": \"45d16f8e-ecd1-4308-b1da-23a79d7fef59\",\r
+
+    \        \"type\": \"Full-time\",\r
+
+    \        \"jobMode\": \"WorkFromOffice\", //WorkFromOffice\r
+
+    \        \"shifts\": \"Morning\",\r
+
+    \        \"description\": \"We need an experienced developer\",\r
+
+    \        \"experience\": \"3-5 years\",\r
+
+    \        \"education\": \"B.Tech\",\r
+
+    \        \"salary\": \"6-8 LPA\",\r
+
+    \        \"minSalary\": 600000,\r
+
+    \        \"maxSalary\": 800000,\r
+
+    \        \"validTill\": \"2025-12-31\",\r
+
+    \        \"position\": \"Backend Developer\",\r
+
+    \        \"minthreshold\": 70,\r
+
+    \        \"matchthreshold\": 85,\r
+
+    \        // \"designationId\": \"444e0500-76cf-409f-8feb-58bd33ddca4a\",\r
+
+    \        \"jobDescription\": \"ddddd\",\r
+
+    \        \"requirements\": \"fdefsdf\",\r
+
+    \        \"responsibilities\": \"sdfsd\",\r
+
+    \        \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjaWQiOiJhNzc5Nzg1My1hNzM3LTQwN2YtOWYzOS1iYzE3ZTgyMzNlOGUiLCJpZCI6ImE3Nzk3ODUzLWE3MzctNDA3Zi05ZjM5LWJjMTdlODIzM2U4ZSIsImZpcnN0TmFtZSI6IlNvbmFsaSIsImVtYWlsIjoic29uYWxpOTk4OEBnbWFpbC5jb20iLCJyb2xlIjoiRU1QTE9ZRUUiLCJpYXQiOjE3NTMwNzk5NDEsImV4cCI6MTc1MzE2NjM0MSwiYXVkIjoiU29uYWxpIn0.acNWunvHip8JZ8gx9ueT0cD2UBsauBFX4-14tqxoWPI\",\r
+
+    \        // \"recuiterId\": \"45d16f8e-ecd1-4308-b1da-23a79d7fef59\",\r
+
+    \        // \"departmentId\": \"5e474fef-b67c-4499-868c-3ba3bf31f11e\",\r
+
+    \        // \"shiftId\": \"c39d0192-900a-404d-b4da-3a97bbcc5b0e\",\r
+
+    \        // \"managerId\": \"45d16f8e-ecd1-4308-b1da-23a79d7fef59\"\r
+
+    \    },\r
+
+    \    \"skills\": [\r
+
+    \        \"Basic Scripting\",\r
+
+    \        \"Azure Google Cloud Platform\"\r
+
+    \    ],\r
+
+    \    \"benefits\": [\r
+
+    \        \"Health Insurance\",\r
+
+    \        \"Remote Work\"\r
+
+    \    ]\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjaWQiOiJhNzc5Nzg1My1hNzM3LTQwN2YtOWYzOS1iYzE3ZTgyMzNlOGUiLCJpZCI6ImE3Nzk3ODUzLWE3MzctNDA3Zi05ZjM5LWJjMTdlODIzM2U4ZSIsImZpcnN0TmFtZSI6IlNvbmFsaSIsImVtYWlsIjoic29uYWxpOTk4OEBnbWFpbC5jb20iLCJyb2xlIjoiRU1QTE9ZRUUiLCJpYXQiOjE3NTMwNzk5NDEsImV4cCI6MTc1MzE2NjM0MSwiYXVkIjoiU29uYWxpIn0.acNWunvHip8JZ8gx9ueT0cD2UBsauBFX4-14tqxoWPI
+order: 1000

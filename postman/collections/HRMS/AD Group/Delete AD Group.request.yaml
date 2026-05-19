@@ -1,0 +1,13 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/ad_group/"
+method: DELETE
+body:
+  type: json
+  content: "{\r
+
+    \    \"adGroupId\": \"\",\r
+
+    \    \"employeeId\": \"\"\r
+
+    }"
+order: 5000

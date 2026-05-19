@@ -1,0 +1,40 @@
+$kind: http-request
+name: https://api.docuseal.co/v1/signing-requests
+url: https://api.docuseal.co/v1/signing-requests
+method: POST
+headers:
+  X-Auth-Token: BygNW9kBufm3qZrc3YH2GRZY5FNrtBp7MShpn6ghx1L
+body:
+  type: json
+  content: "{\r
+
+    \    \"template_id\": \"thRG4ya3xzqqqh\",\r
+
+    \    \"signers\": [\r
+
+    \        {\r
+
+    \            \"name\": \"shiv\",\r
+
+    \            \"email\": \"shiv@gmail.com\",\r
+
+    \            \"prefill_fields\": {\r
+
+    \                \"name\": \"shiv\",\r
+
+    \                \"position\": \"\",\r
+
+    \                \"date\": \"23-02-2025\",\r
+
+    \                \"salary\": \"23344\"\r
+
+    \            }\r
+
+    \        }\r
+
+    \    ]\r
+
+    },"
+auth:
+  type: noauth
+order: 62000

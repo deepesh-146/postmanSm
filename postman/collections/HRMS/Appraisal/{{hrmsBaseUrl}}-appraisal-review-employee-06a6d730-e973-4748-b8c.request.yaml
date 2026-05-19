@@ -1,0 +1,7 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/appraisal/review/employee/06a6d730-e973-4748-b8c9-efcecb47af45"
+url: "{{hrmsBaseUrl}}/appraisal/review/employee/06a6d730-e973-4748-b8c9-efcecb47af45?cycleId=067614c5-9b30-4a6d-853a-aff64f984ec9"
+method: GET
+queryParams:
+  cycleId: 067614c5-9b30-4a6d-853a-aff64f984ec9
+order: 6000

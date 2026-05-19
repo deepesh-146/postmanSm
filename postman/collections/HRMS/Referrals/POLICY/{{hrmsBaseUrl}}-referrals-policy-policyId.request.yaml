@@ -1,0 +1,7 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/referrals/policy/:policyId"
+url: "{{hrmsBaseUrl}}/referrals/policy/:policyId"
+method: GET
+pathVariables:
+  policyId: 693bd79d-3bf9-4a1c-a03e-50714f195552
+order: 3000

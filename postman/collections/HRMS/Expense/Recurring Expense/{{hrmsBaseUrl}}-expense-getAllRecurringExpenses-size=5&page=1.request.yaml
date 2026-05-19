@@ -1,0 +1,39 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/expense/getAllRecurringExpenses?size=5&page=1"
+url: "{{hrmsBaseUrl}}/expense/getAllRecurringExpenses?size=5&page=1"
+method: GET
+queryParams:
+  size: "5"
+  page: "1"
+body:
+  type: json
+  content: "{\r
+
+    \    \"type\": \"mobile_expense\",\r
+
+    \    \"amount\": 100.50,\r
+
+    \    \"frequency\": \"monthly\",\r
+
+    \    \"startDate\": \"2025-08-15\",\r
+
+    \    \"endDate\": \"2026-08-15\",\r
+
+    \    \"metaData\": {\r
+
+    \        \"mobileNumber\": \"9876543210\",\r
+
+    \        \"mobileServiceProvider\": \"Airtel\",\r
+
+    \        \"paymentMode\": \"bank_transfer\",\r
+
+    \        \"remark\": \"Monthly mobile bill\",\r
+
+    \        \"uploadDocument\": \"document_link_here\",\r
+
+    \        \"uploadLink\": \"https://example.com/doc.pdf\"\r
+
+    \    }\r
+
+    }"
+order: 2000

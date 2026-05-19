@@ -1,0 +1,55 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/incometax/updateIncomeTax/d3556941-e4ad-4177-9d02-8a43e8fd1347"
+url: "{{hrmsBaseUrl}}/incometax/updateIncomeTax/d3556941-e4ad-4177-9d02-8a43e8fd1347"
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"incometaxData\": {\r
+
+    \        \"name\": \"sujay11\",\r
+
+    \        \"effectiveFrom\": \"2025-10-29\",\r
+
+    \        \"company\": \"iceitps111\",\r
+
+    \        \"currency\": \"INR\",\r
+
+    \        \"stdTaxExemptionAmount\": 2000,\r
+
+    \        \"isTaxExemption\": true\r
+
+    \    },\r
+
+    \    \"salarySlabs\": [\r
+
+    \        {\r
+
+    \            \"company\": \"iceitps11\",\r
+
+    \            \"to\": \"ABCD123411\",\r
+
+    \            \"percent\": 211,\r
+
+    \            \"condition\": \"nothing11\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"company\": \"iceitps11\",\r
+
+    \            \"to\": \"ABCD123411\",\r
+
+    \            \"percent\": 211,\r
+
+    \            \"condition\": \"nothing11\"\r
+
+    \        }\r
+
+    \    ]\r
+
+    }"
+examples: ./.resources/{{hrmsBaseUrl}}-incometax-updateIncomeTax-d3556941-e4ad-4177-9d0.resources/examples
+order: 2000

@@ -1,0 +1,78 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/training_module/employee/material/complete"
+description: "Generated from cURL: curl -X POST \"https://<host>/training_module/employee/material/complete\" \\\r
+
+  \  -H \"Authorization: Bearer <token>\" \\\r
+
+  \  -H \"Content-Type: application/json\" \\\r
+
+  \  -d '{\r
+
+  \    \"assignmentId\": 42,\r
+
+  \    \"progressData\": {\r
+
+  \      \"materialId\": 101,\r
+
+  \      \"isCompleted\": true,\r
+
+  \      \"status\": \"completed\",\r
+
+  \      \"completionPercentage\": 100,\r
+
+  \      \"materialsCompleted\": [101, 102, 103, 104, 105],\r
+
+  \      \"quizCompleted\": true,\r
+
+  \      \"certificateIssued\": true,\r
+
+  \      \"completedDate\": \"2025-01-15T10:00:00.000Z\"\r
+
+  \    }\r
+
+  \  }"
+url: "{{hrmsBaseUrl}}/training_module/employee/material/complete"
+method: POST
+headers:
+  Authorization: Bearer <token>
+  Content-Type: application/json
+body:
+  type: json
+  content: "{\r
+
+    \    \"assignmentId\": 42,\r
+
+    \    \"progressData\": {\r
+
+    \        \"materialId\": 101,\r
+
+    \        \"isCompleted\": true,\r
+
+    \        \"status\": \"completed\",\r
+
+    \        \"completionPercentage\": 100,\r
+
+    \        \"materialsCompleted\": [\r
+
+    \            101,\r
+
+    \            102,\r
+
+    \            103,\r
+
+    \            104,\r
+
+    \            105\r
+
+    \        ],\r
+
+    \        \"quizCompleted\": true,\r
+
+    \        \"certificateIssued\": true,\r
+
+    \        \"completedDate\": \"2025-01-15T10:00:00.000Z\"\r
+
+    \    }\r
+
+    }"
+order: 9000

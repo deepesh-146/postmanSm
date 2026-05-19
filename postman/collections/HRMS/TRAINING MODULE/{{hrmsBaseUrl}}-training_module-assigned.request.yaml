@@ -1,0 +1,5 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/training_module/assigned"
+url: "{{hrmsBaseUrl}}/training_module/assigned"
+method: GET
+order: 6000

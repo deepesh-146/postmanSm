@@ -1,0 +1,22 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/rewards/admin/shiftChangeRequestStatus/8b303829-36d8-417d-9373-c6a31e61cec4"
+url: "{{hrmsBaseUrl}}/rewards/admin/shiftChangeRequestStatus/a59e0f93-4c83-4414-a984-caec48304b67"
+method: PUT
+queryParams:
+  - key: page
+    value: "1"
+    disabled: true
+  - key: size
+    value: "1"
+    disabled: true
+body:
+  type: json
+  content: "{\r
+
+    \    \"status\": \"APPROVED\",\r
+
+    \    \"adminComments\": \"OK\"\r
+
+    }"
+examples: ./.resources/{{hrmsBaseUrl}}-rewards-admin-shiftChangeRequestStatus-8b303829-.resources/examples
+order: 10000

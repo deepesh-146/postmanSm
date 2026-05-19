@@ -1,0 +1,4 @@
+$kind: http-request
+url: "{{baseUrl}}/ticket/internal-note/{{ticketId}}"
+method: GET
+order: 4000

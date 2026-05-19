@@ -1,0 +1,28 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/geofence/:officeId"
+url: "{{hrmsBaseUrl}}/geofence/:officeId"
+method: PUT
+pathVariables:
+  officeId: a790dffa-a227-4e07-b696-33a9c979c81b
+body:
+  type: json
+  content: "{\r
+
+    \    \"name\": \"AD Branch\",\r
+
+    \    \"location\": \"Malkapur\",\r
+
+    \    \"branchAddress\": \"Near Bustop\",\r
+
+    \    \"latitude\": 40.7128,\r
+
+    \    \"longitude\": -74.0060,\r
+
+    \    \"geofenceRadius\": 100,\r
+
+    \    \"locationType\": \"HEAD_OFFICE\",\r
+
+    \    \"isGeofenceActive\": true\r
+
+    }"
+order: 2000

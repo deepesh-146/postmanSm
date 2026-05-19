@@ -1,0 +1,14 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/travels/getAllReimbursements?userId={{userId}}"
+url: "{{hrmsBaseUrl}}/travels/getAllReimbursements?page=1&size=1"
+method: GET
+queryParams:
+  - key: userId
+    value: "{{userId}}"
+    disabled: true
+  - key: page
+    value: "1"
+  - key: size
+    value: "1"
+examples: ./.resources/{{hrmsBaseUrl}}-travels-getAllReimbursements-userId={{userId}}.resources/examples
+order: 7000

@@ -1,0 +1,5 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/report/payroll/reporting-structure"
+url: "{{hrmsBaseUrl}}/report/payroll/reporting-structure"
+method: GET
+order: 9000

@@ -1,0 +1,7 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/geofence/:officeId/toggle"
+url: "{{hrmsBaseUrl}}/geofence/:officeId/toggle"
+method: PATCH
+pathVariables:
+  officeId: a790dffa-a227-4e07-b696-33a9c979c81b
+order: 3000

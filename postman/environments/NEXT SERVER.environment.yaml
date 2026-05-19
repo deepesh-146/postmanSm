@@ -1,0 +1,36 @@
+owner: "17475245"
+team: "2486942"
+lastUpdatedBy: "17475245"
+lastRevision: 1776684817000
+name: NEXT SERVER
+color: null
+values:
+  - key: hrmsBaseUrl
+    value: https://hrmsbackend.iceipts.com/hrmsserver
+    enabled: true
+  - key: TOKEN
+    value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjaWQiOiI5YjA0OGViZS1lYTIyLTQwOTctOGE1NS1jZjhkYmVmNTViYzQiLCJpZCI6IjliMDQ4ZWJlLWVhMjItNDA5Ny04YTU1LWNmOGRiZWY1NWJjNCIsImZpcnN0TmFtZSI6IkRlZXBlc2giLCJlbWFpbCI6ImRlZXBlc2g3MkBnbWFpbC5jb20iLCJyb2xlIjoiU1VQRVJBRE1JTiIsImlhdCI6MTczMjg3MjA0MiwiZXhwIjoxNzMyOTU4NDQyLCJhdWQiOiJEZWVwZXNoIn0.Ofq1cQ1rxh2TCCirnTEbwbZeSneP0axzYdmDAvM0W98
+    enabled: true
+  - key: userId
+    value: ""
+    enabled: true
+  - key: clientToken
+    value: ""
+    enabled: true
+  - key: resignationId
+    value: ee1e5951-1c60-4f9f-9982-287990332bc6
+    enabled: true
+  - key: tenantToken
+    value: ""
+    enabled: true
+  - key: organizationId
+    value: ""
+    enabled: true
+  - key: orgToken
+    value: ""
+    enabled: true
+  - key: platformAdmin
+    value: ""
+    enabled: true
+createdAt: 2025-05-21T09:42:34.000Z
+updatedAt: 2026-04-20T11:33:37.000Z

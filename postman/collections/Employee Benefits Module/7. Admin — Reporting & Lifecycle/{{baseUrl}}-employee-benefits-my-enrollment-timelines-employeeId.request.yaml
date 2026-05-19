@@ -1,0 +1,7 @@
+$kind: http-request
+name: "{{baseUrl}}/employee-benefits/my-enrollment-timelines/:employeeId"
+url: "{{baseUrl}}/employee-benefits/my-enrollment-timelines/:employeeId"
+method: GET
+pathVariables:
+  employeeId: 2fac59fa-a242-4883-8900-f931758cfc29
+order: 6000

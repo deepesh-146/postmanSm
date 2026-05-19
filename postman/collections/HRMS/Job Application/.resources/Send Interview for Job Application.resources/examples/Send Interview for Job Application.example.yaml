@@ -1,0 +1,46 @@
+$kind: http-example
+request:
+  url: "{{hrmsBaseUrl}}/job_application/interview/:jobApplicationId"
+  method: POST
+  pathVariables:
+    jobApplicationId: 4c4053a9-75c4-420d-b918-b71622a1ed16
+  body:
+    type: json
+    content: "{\r
+
+      \    \"intDate\": \"28th September 2024\",\r
+
+      \    \"intStartTime\": \"12:00 PM\",\r
+
+      \    \"intEndTime\": \"01:00 PM\",\r
+
+      \    \"dateTime\": \"2024-09-28 12:00:00\",\r
+
+      \    \"link\": \"https://meet.google.com/pnd-shmi-nhh\"\r
+
+      }"
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "104"
+    ETag: W/"68-BvwiGzLOr41jjjWQXsVT275s3Bg"
+    Date: Wed, 09 Oct 2024 17:47:29 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "status": {
+              "success": true,
+              "code": 200,
+              "message": "Job Interview Email Sent to Candidate",
+              "failure": false
+          }
+      }
+order: 1000

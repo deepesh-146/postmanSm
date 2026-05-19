@@ -1,0 +1,11 @@
+$kind: http-request
+description: |-
+  Get pending promotion approvals for the current user.
+
+  This uses the existing workflow engine endpoint.
+  The key is: promotion_request
+
+  Returns workflow approvals with nested promotion request data.
+url: "{{base_url}}/workflow/pending-approvals/promotion_request"
+method: GET
+order: 1000

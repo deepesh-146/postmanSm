@@ -1,0 +1,26 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/claims/"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"employeeId\": \"903bd690-61f3-43db-9edd-d38d531c1c67\",\r
+
+    \    \"typeId\": \"2dffd90e-fc02-4875-9c5a-aad71a552799\",\r
+
+    \    \"amount\": 800,\r
+
+    \    \"email\": \"sanat.kumar@iceipts.com\",\r
+
+    \    \"link\": \"https://morth.nic.in/sites/default/files/dd12-13_0.pdf\",\r
+
+    \    \"vendorName\": \"JIO\",\r
+
+    \    \"receiptNumber\": \"5585855855\",\r
+
+    \    \"empComment\": \"Jio\"\r
+
+    }"
+examples: ./.resources/Create Claim.resources/examples
+order: 1000

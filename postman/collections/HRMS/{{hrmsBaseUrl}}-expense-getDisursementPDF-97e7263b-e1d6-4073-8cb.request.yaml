@@ -1,0 +1,11 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/expense/getDisursementPDF/97e7263b-e1d6-4073-8cb9-4fbde78dfc17"
+url: "{{hrmsBaseUrl}}/expense/getDisursementPDF/97e7263b-e1d6-4073-8cb9-4fbde78dfc17"
+method: GET
+headers:
+  X-Auth-Token: BygNW9kBufm3qZrc3YH2GRZY5FNrtBp7MShpn6ghx1L
+auth:
+  type: bearer
+  credentials:
+    token: "{{clientToken}}"
+order: 65000

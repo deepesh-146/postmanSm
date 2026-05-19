@@ -1,0 +1,24 @@
+$kind: http-request
+description: |-
+  Pushes a journal entry to the configured ERP system (Tally).
+
+  Flow:
+  1. Fetches journal with all lines
+  2. Gets active ERP config for the organization
+  3. Converts to Tally XML (Journal Voucher format)
+  4. POSTs XML to Tally server
+  5. Parses Tally response for success/failure
+  6. Logs result in erp_push_logs
+  7. Updates journal status to 'Posted' on success
+
+  Requirements:
+  - Active ERP config must exist
+  - Tally server must be reachable
+  - Ledger names in Tally must match GL account names
+
+  Errors:
+  - 400: No ERP config / journal not found
+  - 502: Tally connection failed / Tally returned error
+url: "{{baseUrl}}/erp/push-to-erp/{{journalId}}"
+method: POST
+order: 1000

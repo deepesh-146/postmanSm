@@ -1,0 +1,38 @@
+$kind: http-example
+request:
+  url: "{{hrmsBaseUrl}}/attendance/countApprove"
+  method: PUT
+  body:
+    type: json
+    content: "{\r
+
+      \    \"employeeId\": \"903bd690-61f3-43db-9edd-d38d531c1c67\",\r
+
+      \    \"attendanceCountId\": \"79c3b023-158c-4542-b2b2-aea43254ef06\"\r
+
+      }"
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "92"
+    ETag: W/"5c-RUnItFXxssGl0mQf/q2JXgHY9yo"
+    Date: Mon, 14 Oct 2024 17:53:42 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "status": {
+              "success": false,
+              "code": 200,
+              "message": "Attendance Count Verified",
+              "failure": true
+          }
+      }
+order: 1000

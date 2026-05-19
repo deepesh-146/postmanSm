@@ -1,0 +1,10 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/employee/all/getCostCenter/?size=10&page=1&status=1"
+url: "{{hrmsBaseUrl}}/employee/all/getCostCenter/?size=10&page=1&search=&status=1"
+method: GET
+queryParams:
+  size: "10"
+  page: "1"
+  search: ""
+  status: "1"
+order: 2000

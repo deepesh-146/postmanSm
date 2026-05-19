@@ -1,0 +1,97 @@
+$kind: http-example
+request:
+  url: "{{hrmsBaseUrl}}/job_application/getAllJobApplications/:candidateId/candidate?size=10&page=1&search="
+  method: GET
+  queryParams:
+    size: "10"
+    page: "1"
+    search: ""
+  pathVariables:
+    candidateId: 6979e151-2542-445c-88bd-fdc2248a8da3
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "2073"
+    ETag: W/"819-+XT6aZtKqRsW4rOSvjfwRia3+y0"
+    Date: Wed, 09 Oct 2024 17:55:32 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "status": {
+              "success": true,
+              "code": 200,
+              "message": "Job Application List By Candidate",
+              "failure": false
+          },
+          "data": {
+              "pageData": [
+                  {
+                      "id": "4c4053a9-75c4-420d-b918-b71622a1ed16",
+                      "currentPhase": "SUBMITTED",
+                      "selected": 0,
+                      "shortlisted": 0,
+                      "recruiterId": "05109fb2-0f20-4c69-bbbf-f46203b01d54",
+                      "resume": "path/resume.pdf",
+                      "related": "Yes",
+                      "currentJobTitle": "Tech Analyst",
+                      "currentCompany": "Infosys",
+                      "candidateInterviewed": 1,
+                      "candidateInterviewDate": "2024-09-28T06:30:00.000Z",
+                      "withdrawnByCandidate": 0,
+                      "candidateWithdrawDate": null,
+                      "rejectByRecruiter": 0,
+                      "recruiterRejectDate": null,
+                      "relevantExp": "5.5 years",
+                      "notes": "Working in IT Industry",
+                      "job_id": "cb5d4bf6-a1a3-42a5-8065-183796fd6c76",
+                      "job_title": "CEO - India",
+                      "job_code": "JOB6665822",
+                      "job_companyName": "iCeipts Technology",
+                      "job_type": "Full Time",
+                      "job_location": "Pune, Maharashtra",
+                      "job_designationId": "d10e48ed-e5f7-4821-9817-8a05d673eab4",
+                      "job_jobUnitId": "e71f8b2c-1c10-46f1-99a5-05c8bbfe4539",
+                      "job_skills": "Dart, Flutter, Google Play Store",
+                      "job_shifts": "Day Shift",
+                      "job_description": "We are looking for a skilled Flutter Developer to Join our Team",
+                      "job_benefits": "Health insurance, Provident Fund, Work From Home",
+                      "job_experience": "3-5 Year",
+                      "job_education": "Graduation",
+                      "job_related": "Do you 3 and above years of experience?",
+                      "job_salary": "100000 - 200000",
+                      "job_recruiterId": "null",
+                      "job_validTill": "2024-10-29T12:30:00.000Z",
+                      "job_isActive": 1,
+                      "job_createdAt": "2024-10-09T16:52:36.000Z",
+                      "job_updatedAt": "2024-10-09T16:52:36.000Z",
+                      "candidate_id": "6979e151-2542-445c-88bd-fdc2248a8da3",
+                      "candidate_firstName": "Sanat",
+                      "candidate_lastName": "Kumar",
+                      "candidate_mobile": "9801345259",
+                      "candidate_email": "sanatmishra29@gmail.com",
+                      "candidate_address": "412, Sector 9",
+                      "candidate_city": "Panchkula",
+                      "candidate_state": "Haryana",
+                      "candidate_country": "India",
+                      "candidate_password": "$2a$10$55Xtxi1DczSgfP25axh.ouu8QTjdZiQgypxES23D2amLin1cqQE8G",
+                      "candidate_education": "B.Tech CSE",
+                      "candidate_profession": "iCeipts",
+                      "candidate_skills": "JAVA, NODE, Flutter, PHP",
+                      "candidate_idcard": "Aadhar",
+                      "candidate_pictures": "NA"
+                  }
+              ],
+              "currentPage": 1,
+              "totalPages": 0,
+              "totalRows": 0
+          }
+      }
+order: 1000

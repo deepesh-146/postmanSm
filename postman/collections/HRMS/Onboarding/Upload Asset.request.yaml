@@ -1,0 +1,7 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/onboarding/uploadEmployeeAsset"
+method: POST
+body:
+  type: file
+  content: {}
+order: 25000

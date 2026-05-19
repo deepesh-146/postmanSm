@@ -1,0 +1,49 @@
+$kind: http-example
+name: "{{hrmsBaseUrl}}/dashboard/employeedashboard/attendance/{{userId}}"
+request:
+  url: "{{hrmsBaseUrl}}/dashboard/employeedashboard/attendance/{{userId}}"
+  method: POST
+  body:
+    type: json
+    content: "{\r
+
+      \    \"month\": \"2\",\r
+
+      \    \"year\": \"2025\"\r
+
+      }"
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "173"
+    ETag: W/"ad-eMi0R3Rj+rjwSx7yWEl/Rd+eTSg"
+    Date: Fri, 13 Jun 2025 10:03:24 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "success": true,
+          "status": 200,
+          "data": {
+              "statistics": {
+                  "totalWorkingDays": 20,
+                  "status": {
+                      "PRESENT": 0,
+                      "LEAVE": 0,
+                      "ABSENT": 20,
+                      "HALFDAY": 0,
+                      "WEEKLY_OFF": 8,
+                      "HOLIDAY": 0,
+                      "LOGGED_IN": 0
+                  }
+              }
+          }
+      }
+order: 1000

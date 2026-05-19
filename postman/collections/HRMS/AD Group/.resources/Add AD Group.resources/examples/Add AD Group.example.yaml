@@ -1,0 +1,44 @@
+$kind: http-example
+request:
+  url: "{{hrmsBaseUrl}}/ad_group/"
+  method: POST
+  body:
+    type: json
+    content: "{\r
+
+      \    \"deptId\": \"32e8b17d-29e8-4f8f-8078-8ec006e2766e\",\r
+
+      \    \"code\": \"JOBADDPERM\",\r
+
+      \    \"description\": \"Permission to Add Jobs\",\r
+
+      \    \"approverId\": \"903bd690-61f3-43db-9edd-d38d531c1c67\",\r
+
+      \    \"comm\": \"This AD Group will be used to Add Jobs\"\r
+
+      }"
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "81"
+    ETag: W/"51-5cx+I5n97nkhgsvclnYyjlffVJc"
+    Date: Mon, 14 Oct 2024 17:22:13 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "status": {
+              "success": true,
+              "code": 200,
+              "message": "AD Group Added",
+              "failure": false
+          }
+      }
+order: 1000

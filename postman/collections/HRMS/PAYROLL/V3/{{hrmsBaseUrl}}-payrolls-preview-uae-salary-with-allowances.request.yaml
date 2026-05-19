@@ -1,0 +1,34 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/payrolls/preview-uae-salary-with-allowances"
+url: "{{hrmsBaseUrl}}/payrolls/preview-uae-salary-with-allowances"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"ctc\": 240000,\r
+
+    \    \"employeeNationality\": \"UAE_NATIONAL\",\r
+
+    \    \"selectedAllowances\": [\r
+
+    \        {\r
+
+    \            \"allowanceId\": \"c1c2630c-6794-4b1c-bbbd-b6e5dd6f9f9f\",\r
+
+    \            \"amount\": 40000\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"allowanceId\": \"c1c2630c-6794-4b1c-bbbd-b6e5dd6f9f9a\",\r
+
+    \            \"amount\": 0\r
+
+    \        }\r
+
+    \    ]\r
+
+    }"
+order: 3000

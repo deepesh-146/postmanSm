@@ -1,0 +1,34 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/payrolls/getEMployeeTaxWise?size=2&page=1"
+url: "{{hrmsBaseUrl}}/payrolls/getEMployeeTaxWise?size=2&page=1"
+method: GET
+queryParams:
+  - key: size
+    value: "2"
+  - key: page
+    value: "1"
+  - key: isTaxDeclaration
+    value: "true"
+    disabled: true
+  - key: fromAnnualCtc
+    value: "10000"
+    disabled: true
+  - key: toAnnualCtc
+    value: "20000"
+    disabled: true
+body:
+  type: text
+  content: "{\r
+
+    \    \"employeeId\": \"{{userId}}\",\r
+
+    \    \"month\": 8,\r
+
+    \    \"year\": 2025,\r
+
+    \    \"country\": \"UAE\",\r
+
+    \    \"financialYear\": \"2025-26\"\r
+
+    }"
+order: 1000

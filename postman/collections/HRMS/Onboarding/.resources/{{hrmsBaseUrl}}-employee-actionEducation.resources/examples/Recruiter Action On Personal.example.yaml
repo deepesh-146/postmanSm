@@ -1,0 +1,74 @@
+$kind: http-example
+request:
+  url: "{{hrmsBaseUrl}}/employee/actionPersonal"
+  method: PUT
+  body:
+    type: json
+    content: "{\r
+
+      \    \"employeeId\": \"903bd690-61f3-43db-9edd-d38d531c1c67\",\r
+
+      \    \"source\": \"Verified by Call\",\r
+
+      \    \"action\": \"APPROVED\",\r
+
+      \    \"recruiterId\": \"903bd690-61f3-43db-9edd-d38d531c1c67\",\r
+
+      \    \"personalId\": \"1cead5e9-8856-453a-8bee-1a9062a476f9\",\r
+
+      \    \"comments\": \"NO comments\"\r
+
+      }"
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "1130"
+    ETag: W/"46a-bRNFGAu1BD2NSOBuV+UeEj7AQV8"
+    Date: Mon, 14 Oct 2024 17:03:44 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "status": {
+              "success": true,
+              "code": 200,
+              "message": "Personal Data Approved",
+              "failure": false
+          },
+          "data": {
+              "id": "1cead5e9-8856-453a-8bee-1a9062a476f9",
+              "employeeId": "903bd690-61f3-43db-9edd-d38d531c1c67",
+              "onboardingId": "f778b358-2db2-4561-9c0b-dc1eda013258",
+              "permanentAddress": "Patna, India",
+              "currentAddress": "Panchkula, Haryana",
+              "aadharNum": "444444444444",
+              "panNum": "DJEUJ5745W",
+              "bankAccountNum": "456456465465",
+              "bankAccountName": "Indian Bank",
+              "bankAccountIfsc": "SSDF5585555",
+              "bankAccountBranch": "Patna",
+              "aadharFrontFilePath": "https://morth.nic.in/sites/default/files/dd12-13_0.pdf",
+              "aadharBackFilePath": "https://morth.nic.in/sites/default/files/dd12-13_0.pdf",
+              "panFilePath": "https://morth.nic.in/sites/default/files/dd12-13_0.pdf",
+              "bankAccountPassbookPath": "https://morth.nic.in/sites/default/files/dd12-13_0.pdf",
+              "sourceVerRej": "Verified by Call",
+              "approved": true,
+              "approvedDate": "2024-10-14T11:33:43.000Z",
+              "approvedById": "903bd690-61f3-43db-9edd-d38d531c1c67",
+              "rejected": false,
+              "rejectedDate": null,
+              "rejectById": null,
+              "comments": "NO comments",
+              "createdAt": "2024-10-14T03:14:42.000Z",
+              "updatedAt": "2024-10-14T17:03:43.000Z",
+              "employeeMainId": null
+          }
+      }
+order: 1000

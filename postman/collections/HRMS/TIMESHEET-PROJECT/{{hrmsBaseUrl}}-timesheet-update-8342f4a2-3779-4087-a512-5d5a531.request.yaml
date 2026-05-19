@@ -1,0 +1,32 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/timesheet/update/8342f4a2-3779-4087-a512-5d5a531096a2"
+url: "{{hrmsBaseUrl}}/timesheet/update/42040fa5-d390-4119-a52c-173f2ce82785"
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"projectName\": \"Automated Payroll Processing System\",\r
+
+    \    \"startDate\": \"2025-05-01\",\r
+
+    \    \"endDate\": \"2025-11-30\",\r
+
+    \    \"internal\": \"No\",\r
+
+    \    \"sponsorName\": \"PayX Solutions\",\r
+
+    \    \"managerName\": \"Daniel White\",\r
+
+    \    \"summary\": \"Developing an automated payroll system with tax deductions, compliance checks, and salary processing.\",\r
+
+    \    \"objective\": \"To simplify payroll management by automating salary calculations, tax deductions, and employee benefits processing.\",\r
+
+    \    \"employeeIds\": [\r
+
+    \        \"fdef7746-cbdd-48f5-b707-0b5fea20921e\"\r
+
+    \    ]\r
+
+    }"
+order: 9000

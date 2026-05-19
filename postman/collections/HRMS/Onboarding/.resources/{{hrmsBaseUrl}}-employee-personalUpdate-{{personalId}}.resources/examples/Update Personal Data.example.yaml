@@ -1,0 +1,96 @@
+$kind: http-example
+request:
+  url: "{{hrmsBaseUrl}}/employee/personalUpdate"
+  method: PUT
+  body:
+    type: json
+    content: "{\r
+
+      \    \"onboardingId\": \"f778b358-2db2-4561-9c0b-dc1eda013258\",\r
+
+      \    \"employeeId\": \"f406f8fd-6b92-4e88-9dbe-5985f248cdb4\",\r
+
+      \    \"personalData\": {\r
+
+      \        \"id\": \"8233b269-4448-48bb-aa01-977673690309\",\r
+
+      \        \"pAddress\": \"Patna, India\",\r
+
+      \        \"cAddress\": \"Panchkula, Haryana\",\r
+
+      \        \"aadharNum\": \"444444444444\",\r
+
+      \        \"panNum\": \"DJEUJ5745W\",\r
+
+      \        \"bankAcntNum\": \"456456465465\",\r
+
+      \        \"bankAcntName\": \"Indian Bank\",\r
+
+      \        \"bankIfsc\": \"SSDF5585555\",\r
+
+      \        \"bankBranch\": \"Patna\",\r
+
+      \        \"aadharFrontPath\": \"https://morth.nic.in/sites/default/files/dd12-13_0.pdf\",\r
+
+      \        \"aadharBackPath\": \"https://morth.nic.in/sites/default/files/dd12-13_0.pdf\",\r
+
+      \        \"panPath\": \"https://morth.nic.in/sites/default/files/dd12-13_0.pdf\",\r
+
+      \        \"bankPassPath\": \"https://morth.nic.in/sites/default/files/dd12-13_0.pdf\"\r
+
+      \    }\r
+
+      }"
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "1051"
+    ETag: W/"41b-wYDFD2lA5M/9NNamvs6cscYEXsU"
+    Date: Fri, 11 Oct 2024 08:56:01 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "status": {
+              "success": true,
+              "code": 200,
+              "message": "Personal Data Updated",
+              "failure": false
+          },
+          "data": {
+              "id": "8233b269-4448-48bb-aa01-977673690309",
+              "employeeId": "f406f8fd-6b92-4e88-9dbe-5985f248cdb4",
+              "onboardingId": "f778b358-2db2-4561-9c0b-dc1eda013258",
+              "permanentAddress": "Patna, India",
+              "currentAddress": "Panchkula, Haryana",
+              "aadharNum": "444444444444",
+              "panNum": "DJEUJ5745W",
+              "bankAccountNum": "456456465465",
+              "bankAccountName": "Indian Bank",
+              "bankAccountIfsc": "SSDF5585555",
+              "bankAccountBranch": "Patna",
+              "aadharFrontFilePath": "https://morth.nic.in/sites/default/files/dd12-13_0.pdf",
+              "aadharBackFilePath": "https://morth.nic.in/sites/default/files/dd12-13_0.pdf",
+              "panFilePath": "https://morth.nic.in/sites/default/files/dd12-13_0.pdf",
+              "bankAccountPassbookPath": "https://morth.nic.in/sites/default/files/dd12-13_0.pdf",
+              "sourceVerRej": null,
+              "approved": false,
+              "approvedDate": null,
+              "approvedById": null,
+              "rejected": false,
+              "rejectedDate": null,
+              "rejectById": null,
+              "comments": null,
+              "createdAt": "2024-10-11T08:53:11.000Z",
+              "updatedAt": "2024-10-11T08:53:11.000Z",
+              "employeeMainId": null
+          }
+      }
+order: 1000

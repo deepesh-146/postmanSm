@@ -1,0 +1,13 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/employee_benefit/benefitsBulkUpload"
+url: "{{hrmsBaseUrl}}/employee_benefit/benefitsBulkUpload"
+method: POST
+body:
+  type: formdata
+  content:
+    - type: file
+      key: file
+      src:
+        - /C:/Users/mehta/Downloads/Sample Benefits.csv
+examples: ./.resources/{{hrmsBaseUrl}}-employee_benefit-benefitsBulkUpload.resources/examples
+order: 7000

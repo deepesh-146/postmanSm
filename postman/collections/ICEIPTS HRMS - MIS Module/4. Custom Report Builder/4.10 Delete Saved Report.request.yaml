@@ -1,0 +1,8 @@
+$kind: http-request
+description: Delete a saved custom report. Only the creator can delete.
+url: "{{baseUrl}}/mis/custom-report/saved/{{savedReportId}}"
+method: DELETE
+headers:
+  Content-Type: application/json
+  x-organization-id: "{{organizationId}}"
+order: 10000

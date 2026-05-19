@@ -1,0 +1,11 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/leave/trend-analysis?year=2026&departmentId={{departmentId}}"
+method: GET
+queryParams:
+  year: "2026"
+  departmentId: "{{departmentId}}"
+auth:
+  type: bearer
+  credentials:
+    token: "{{clientToken}}"
+order: 1000

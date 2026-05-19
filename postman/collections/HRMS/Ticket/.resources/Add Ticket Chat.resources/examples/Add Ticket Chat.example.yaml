@@ -1,0 +1,58 @@
+$kind: http-example
+request:
+  url: "{{hrmsBaseUrl}}/tickets/chat"
+  method: POST
+  body:
+    type: json
+    content: "{\r
+
+      \    \"ticketId\": \"2582dd41-8782-4f2a-b3a7-bd752769d618\",\r
+
+      \    \"fromEmployeeId\": \"903bd690-61f3-43db-9edd-d38d531c1c67\",\r
+
+      \    \"toEmployeeId\": \"903bd690-61f3-43db-9edd-d38d531c1c67\",\r
+
+      \    \"chatType\": \"TEXT\",\r
+
+      \    \"chatText\": \"Hi, this is a test\",\r
+
+      \    \"attachmentLink\": \"NA\"\r
+
+      }"
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "483"
+    ETag: W/"1e3-EsIzRFHrZmdxyLvon6+RByxsjRI"
+    Date: Mon, 14 Oct 2024 19:02:06 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "status": {
+              "success": true,
+              "code": 200,
+              "message": "Reply Added",
+              "failure": false
+          },
+          "data": {
+              "id": "bc222792-12fa-4ae6-8c1c-cf3f627ccaa5",
+              "ticketId": "2582dd41-8782-4f2a-b3a7-bd752769d618",
+              "fromEmployeeId": "903bd690-61f3-43db-9edd-d38d531c1c67",
+              "toEmployeeId": "903bd690-61f3-43db-9edd-d38d531c1c67",
+              "chatType": "TEXT",
+              "chatText": "Hi, this is a test",
+              "attachmentLink": "NA",
+              "chatDateTime": "2024-10-14T13:32:06.000Z",
+              "updatedAt": "2024-10-14T19:02:06.511Z",
+              "createdAt": "2024-10-14T19:02:06.511Z"
+          }
+      }
+order: 1000

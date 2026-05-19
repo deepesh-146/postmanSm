@@ -1,0 +1,46 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/payrolls/updatePayrollSalary/3043e01b-ee08-440d-a02d-3b89fe70c255"
+url: "{{hrmsBaseUrl}}/payrolls/updatePayrollSalary/3043e01b-ee08-440d-a02d-3b89fe70c255"
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"annualCtc\": 1000,\r
+
+    \    \"basicPercent\": 10,\r
+
+    \    \"basicYearly\": 500,\r
+
+    \    \"hraPercent\": 40,\r
+
+    \    \"hraYearly\": 400,\r
+
+    \    \"totalTax\": 0,\r
+
+    \    \"totalRebate\": 0,\r
+
+    \    \"finalTax\": 0,\r
+
+    \    \"regime\": \"OLD\",\r
+
+    \    \"age\": \"below60\",\r
+
+    \    \"paidDays\": 8,\r
+
+    \    \"grossPay\": 83.3333,\r
+
+    \    \"netPay\": 44.2222,\r
+
+    \    \"overtime\": 0,\r
+
+    \    \"overtimeTotal\": 0,\r
+
+    \    \"totalOvertimeDays\": 0,\r
+
+    \    \"totalEarnings\": 22,\r
+
+    \    \"totalDeductions\": 0\r
+
+    }"
+order: 9000

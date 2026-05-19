@@ -1,0 +1,18 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/payrolls/getSalarySlab/d8cc1191-7ff6-4e43-ab8d-87629c44dfbc"
+url: "{{hrmsBaseUrl}}/payrolls/getSalarySlab/d8cc1191-7ff6-4e43-ab8d-87629c44dfbc"
+method: GET
+body:
+  type: json
+  content: "{\r
+
+    \    \"minAmount\": 250000,\r
+
+    \    \"maxAmount\": 500000,\r
+
+    \    \"regime\": \"OLD\",\r
+
+    \    \"rate\": 5\r
+
+    }"
+order: 3000

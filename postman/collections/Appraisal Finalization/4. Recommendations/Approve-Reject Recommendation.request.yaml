@@ -1,0 +1,14 @@
+$kind: http-request
+name: Approve/Reject Recommendation
+description: "Update recommendation status. status: PROPOSED | APPROVED | REJECTED | IMPLEMENTED. If APPROVED, auto-sets approvedBy and approvedAt."
+url: "{{baseUrl}}/recommendations/{{recommendationId}}/status"
+method: PATCH
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+        "status": "APPROVED"
+    }
+order: 4000

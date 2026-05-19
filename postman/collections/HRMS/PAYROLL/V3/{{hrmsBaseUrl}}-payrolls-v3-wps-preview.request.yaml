@@ -1,0 +1,30 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/payrolls/v3/wps/preview"
+url: "{{hrmsBaseUrl}}/payrolls/v3/wps/preview"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"employer\": {\r
+
+    \        \"estId\": \"3bfa2da7-2932-4860-bf7c-30488eab49b6\",\r
+
+    \        \"name\": \"XYZ Technical Services LLC\",\r
+
+    \        \"iban\": \"AE070331234567890123456\",\r
+
+    \        \"organizationId\": \"891bb2ae-588c-4518-953e-1e367e3a23df\",\r
+
+    \        \"officeId\": \"8e2f4467-dff5-4717-932f-bcbc9431f5dc\"\r
+
+    \    },\r
+
+    \    \"payrollRunId\": \"d34623b7-0324-4663-8675-f0ea38421d51\",\r
+
+    \    \"salaryMonth\": \"202408\",\r
+
+    \    \"salaryDate\": \"2024-08-31\"\r
+
+    }"
+order: 9000

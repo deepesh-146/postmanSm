@@ -1,0 +1,13 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/job_offer/allAccOffersByCand?size=10&page=1"
+method: GET
+queryParams:
+  - key: size
+    value: "10"
+  - key: page
+    value: "1"
+  - key: search
+    value: ""
+    disabled: true
+examples: ./.resources/All Accepted Job Offers By Candidate.resources/examples
+order: 6000

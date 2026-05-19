@@ -1,0 +1,80 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/attendance/bulk-manual-update"
+url: "{{hrmsBaseUrl}}/attendance/bulk-manual-update"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"useSameTimeForAll\": true,\r
+
+    \  \"defaultInTime\": \"09:00\",\r
+
+    \  \"defaultOutTime\": \"18:00\",\r
+
+    \  \"attendanceRecords\": [\r
+
+    \    { \"employeeId\": \"{{attEMPID}}\", \"attDate\": \"2026-02-26\", \"status\": \"PRESENT\" },\r
+
+    \    { \"employeeId\": \"{{attEMPID}}\", \"attDate\": \"2026-02-27\", \"status\": \"PRESENT\" },\r
+
+    \    { \"employeeId\": \"{{attEMPID}}\", \"attDate\": \"2026-02-28\", \"status\": \"PRESENT\" },\r
+
+    \    { \"employeeId\": \"{{attEMPID}}\", \"attDate\": \"2026-03-01\", \"status\": \"PRESENT\" },\r
+
+    \    { \"employeeId\": \"{{attEMPID}}\", \"attDate\": \"2026-03-02\", \"status\": \"PRESENT\" },\r
+
+    \    { \"employeeId\": \"{{attEMPID}}\", \"attDate\": \"2026-03-03\", \"status\": \"PRESENT\" },\r
+
+    \    { \"employeeId\": \"{{attEMPID}}\", \"attDate\": \"2026-03-04\", \"status\": \"PRESENT\" },\r
+
+    \    { \"employeeId\": \"{{attEMPID}}\", \"attDate\": \"2026-03-05\", \"status\": \"PRESENT\" },\r
+
+    \    { \"employeeId\": \"{{attEMPID}}\", \"attDate\": \"2026-03-06\", \"status\": \"PRESENT\" },\r
+
+    \    { \"employeeId\": \"{{attEMPID}}\", \"attDate\": \"2026-03-07\", \"status\": \"PRESENT\" },\r
+
+    \    { \"employeeId\": \"{{attEMPID}}\", \"attDate\": \"2026-03-08\", \"status\": \"PRESENT\" },\r
+
+    \    { \"employeeId\": \"{{attEMPID}}\", \"attDate\": \"2026-03-09\", \"status\": \"PRESENT\" },\r
+
+    \    { \"employeeId\": \"{{attEMPID}}\", \"attDate\": \"2026-03-10\", \"status\": \"PRESENT\" },\r
+
+    \    { \"employeeId\": \"{{attEMPID}}\", \"attDate\": \"2026-03-11\", \"status\": \"PRESENT\" },\r
+
+    \    { \"employeeId\": \"{{attEMPID}}\", \"attDate\": \"2026-03-12\", \"status\": \"PRESENT\" },\r
+
+    \    { \"employeeId\": \"{{attEMPID}}\", \"attDate\": \"2026-03-13\", \"status\": \"PRESENT\" },\r
+
+    \    { \"employeeId\": \"{{attEMPID}}\", \"attDate\": \"2026-03-14\", \"status\": \"PRESENT\" },\r
+
+    \    { \"employeeId\": \"{{attEMPID}}\", \"attDate\": \"2026-03-15\", \"status\": \"PRESENT\" },\r
+
+    \    { \"employeeId\": \"{{attEMPID}}\", \"attDate\": \"2026-03-16\", \"status\": \"PRESENT\" },\r
+
+    \    { \"employeeId\": \"{{attEMPID}}\", \"attDate\": \"2026-03-17\", \"status\": \"PRESENT\" },\r
+
+    \    { \"employeeId\": \"{{attEMPID}}\", \"attDate\": \"2026-03-18\", \"status\": \"PRESENT\" },\r
+
+    \    { \"employeeId\": \"{{attEMPID}}\", \"attDate\": \"2026-03-19\", \"status\": \"PRESENT\" },\r
+
+    \    { \"employeeId\": \"{{attEMPID}}\", \"attDate\": \"2026-03-20\", \"status\": \"PRESENT\" },\r
+
+    \    { \"employeeId\": \"{{attEMPID}}\", \"attDate\": \"2026-03-21\", \"status\": \"PRESENT\" },\r
+
+    \    { \"employeeId\": \"{{attEMPID}}\", \"attDate\": \"2026-03-22\", \"status\": \"PRESENT\" },\r
+
+    \    { \"employeeId\": \"{{attEMPID}}\", \"attDate\": \"2026-03-23\", \"status\": \"PRESENT\" },\r
+
+    \    { \"employeeId\": \"{{attEMPID}}\", \"attDate\": \"2026-03-24\", \"status\": \"PRESENT\" },\r
+
+    \    { \"employeeId\": \"{{attEMPID}}\", \"attDate\": \"2026-03-25\", \"status\": \"PRESENT\" }\r
+
+    \  ]\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{orgToken}}"
+order: 1000

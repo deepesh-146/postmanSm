@@ -1,0 +1,20 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/settings/addConfiguration"
+url: "{{hrmsBaseUrl}}/settings/addConfiguration"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"atsResumeParsing\": false,\r
+
+    \    \"aiInterview\": true,\r
+
+    \    \"copilotKit\": false,\r
+
+    \    \"atsSearch\": false,\r
+
+    \    \"isActive\": true\r
+
+    }"
+order: 1000

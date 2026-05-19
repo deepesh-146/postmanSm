@@ -1,0 +1,23 @@
+$kind: http-request
+description: Export employee report to CSV. Response is a file download.
+url: "{{baseUrl}}/mis/custom-report/export"
+method: POST
+headers:
+  Content-Type: application/json
+  x-organization-id: "{{organizationId}}"
+body:
+  type: text
+  content: |-
+    {
+      "reportConfig": {
+        "dataSource": "employee",
+        "fields": ["firstName", "lastName", "email", "employeeCode", "joiningDate"],
+        "filters": {
+          "isActive": true
+        },
+        "sortBy": "lastName",
+        "sortOrder": "ASC"
+      },
+      "exportFormat": "CSV"
+    }
+order: 7000

@@ -1,0 +1,13 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/leave/getLeaveSettings?search&size=10&page=1"
+url: "{{hrmsBaseUrl}}/leave/getLeaveSettings?size=10&page=1"
+method: GET
+queryParams:
+  - key: size
+    value: "10"
+  - key: page
+    value: "1"
+  - key: status
+    value: "1"
+    disabled: true
+order: 2000

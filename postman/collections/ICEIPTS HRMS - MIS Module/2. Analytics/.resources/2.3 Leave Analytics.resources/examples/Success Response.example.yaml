@@ -1,0 +1,48 @@
+$kind: http-example
+request:
+  url: "{{baseUrl}}/mis/leave-analytics?dateFrom=2025-01-01&dateTo=2026-03-13"
+  method: GET
+  headers:
+    Content-Type: application/json
+    x-organization-id: "{{organizationId}}"
+  queryParams:
+    - key: dateFrom
+      value: 2025-01-01
+    - key: dateTo
+      value: 2026-03-13
+    - key: departmentId
+      value: "{{departmentId}}"
+      disabled: true
+response:
+  statusCode: 200
+  statusText: OK
+  body:
+    type: text
+    content: |-
+      {
+        "success": true,
+        "status": 200,
+        "message": "Leave analytics retrieved successfully",
+        "data": {
+          "leaveByType": [
+            { "leave_type": "CASUAL", "leave_name": "Casual Leave", "request_count": 180, "total_days": 320, "avg_days_per_request": 1.78 },
+            { "leave_type": "SICK", "leave_name": "Sick Leave", "request_count": 95, "total_days": 210, "avg_days_per_request": 2.21 }
+          ],
+          "departmentLeave": [
+            { "department": "Engineering", "total_requests": 85, "total_days": 180, "unique_employees": 60 }
+          ],
+          "monthlyTrend": [
+            { "month": "2025-01", "requests": 28, "total_days": 65 },
+            { "month": "2025-02", "requests": 32, "total_days": 72 }
+          ],
+          "approvalStats": [
+            { "status": "COMPLETED", "count": 280 },
+            { "status": "REJECTED", "count": 25 },
+            { "status": "PENDING", "count": 15 }
+          ],
+          "leaveBalanceSummary": [
+            { "leave_type": "Casual Leave", "avg_balance": 5.2, "total_used": 320, "total_remaining": 6240 }
+          ]
+        }
+      }
+order: 1000

@@ -1,0 +1,5 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/payment/claim"
+method: GET
+examples: ./.resources/All Claim Requests.resources/examples
+order: 3000

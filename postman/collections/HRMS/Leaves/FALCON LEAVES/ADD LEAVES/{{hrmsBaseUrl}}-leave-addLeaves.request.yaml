@@ -1,0 +1,18 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/leave/addLeaves"
+url: "{{hrmsBaseUrl}}/leave/addLeaves"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"type\": \"WEEK_OFF\",\r
+
+    \    \"leave_Code\": \"WO\",\r
+
+    \    \"leave_Category\": \"Week Off\",\r
+
+    \    \"leave_Description\": \"Weekly Off\"\r
+
+    }"
+order: 1000

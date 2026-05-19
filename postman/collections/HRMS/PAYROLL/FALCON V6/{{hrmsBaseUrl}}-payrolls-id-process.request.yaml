@@ -1,0 +1,22 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/payrolls/:id/process"
+url: "{{hrmsBaseUrl}}/payrolls/:id/process"
+method: POST
+pathVariables:
+  id: "{{payrollId}}"
+body:
+  type: json
+  content: "{\r
+
+    \    //   \"employeeIds\": [\"ALL\"]\r
+
+    \    \"employeeIds\": [\r
+
+    \        \"9a6b2d0c-57b7-4da2-9025-b64b6e2f4323\",\r
+
+    \        \"0c5b5932-a5df-4aea-a782-0bd76a246bbb\"\r
+
+    \    ]\r
+
+    }"
+order: 5000

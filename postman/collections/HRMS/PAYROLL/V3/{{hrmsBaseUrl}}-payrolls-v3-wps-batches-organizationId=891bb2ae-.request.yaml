@@ -1,0 +1,24 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/payrolls/v3/wps/batches?organizationId=891bb2ae-588c-4518-953e-1e367e3a23df&page=1&limit=10"
+url: "{{hrmsBaseUrl}}/payrolls/v3/wps/batches?organizationId=891bb2ae-588c-4518-953e-1e367e3a23df&page=1&limit=10"
+method: GET
+queryParams:
+  - key: organizationId
+    value: 891bb2ae-588c-4518-953e-1e367e3a23df
+  - key: status
+    value: submitted
+    disabled: true
+  - key: page
+    value: "1"
+  - key: limit
+    value: "10"
+body:
+  type: json
+  content: "{\r
+
+    \    \"batchId\": \"0d129f5d-c2bf-44f0-a82d-1a31921ad4d3\",\r
+
+    \    \"bankReference\": \"ADCB_REF_20240831_001\"\r
+
+    }"
+order: 13000

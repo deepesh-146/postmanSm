@@ -1,0 +1,9 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/referrals/"
+method: GET
+queryParams:
+  - key: search
+    value: REF NEW
+    disabled: true
+examples: ./.resources/Referral All.resources/examples
+order: 12000

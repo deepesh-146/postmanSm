@@ -1,0 +1,25 @@
+$kind: http-request
+description: Create a new organization. TenantId is automatically set from token.
+url: "{{hrmsBaseUrl}}/organizations"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+        "name": "Falcon Real Estate",
+        "email": "real@example.com"
+    }
+scripts:
+  - type: afterResponse
+    code: |-
+      if (pm.response.code === 200) {
+          const response = pm.response.json();
+          if (response.data && response.data.id) {
+              pm.environment.set('organizationId', response.data.id);
+              console.log('✅ New organization ID saved:', response.data.name);
+          }
+      }
+    language: text/javascript
+order: 3000

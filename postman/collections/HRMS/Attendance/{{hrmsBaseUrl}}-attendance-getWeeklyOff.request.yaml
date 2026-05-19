@@ -1,0 +1,6 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/attendance/getWeeklyOff"
+url: "{{hrmsBaseUrl}}/attendance/getWeeklyOff"
+method: GET
+examples: ./.resources/{{hrmsBaseUrl}}-attendance-getWeeklyOff.resources/examples
+order: 9000

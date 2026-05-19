@@ -1,0 +1,53 @@
+$kind: http-example
+request:
+  url: "{{hrmsBaseUrl}}/payment/claim"
+  method: GET
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "658"
+    ETag: W/"292-F+WKnCgWBlib7fPwXdHyonNH2hM"
+    Date: Mon, 14 Oct 2024 18:45:43 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "status": {
+              "success": true,
+              "code": 200,
+              "message": "Claim Request Found",
+              "failure": false
+          },
+          "data": [
+              {
+                  "id": "29357926-9aa0-44a9-85ac-8923ff1c1b6f",
+                  "employeeId": "903bd690-61f3-43db-9edd-d38d531c1c67",
+                  "transactionId": null,
+                  "type": "CLAIM",
+                  "claimsId": "44d57429-b244-48dc-a55c-4eba826cde3f",
+                  "salaryId": null,
+                  "screenshot": null,
+                  "status": "CREATED",
+                  "settled": false,
+                  "amount": 800,
+                  "bankAccountNum": "456456465465",
+                  "bankAccountName": "Indian Bank",
+                  "bankAccountIfsc": "SSDF5585555",
+                  "addedDate": "2024-10-14T13:13:20.000Z",
+                  "amountTransferDate": null,
+                  "transferBy": null,
+                  "requestNote": "Looks Good",
+                  "notes": null,
+                  "createdAt": "2024-10-14T18:43:20.000Z",
+                  "updatedAt": "2024-10-14T18:43:20.000Z"
+              }
+          ]
+      }
+order: 1000

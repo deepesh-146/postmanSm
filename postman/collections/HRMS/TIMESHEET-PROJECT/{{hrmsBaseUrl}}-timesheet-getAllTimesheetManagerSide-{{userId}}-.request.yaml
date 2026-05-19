@@ -1,0 +1,7 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/timesheet/getAllTimesheetManagerSide/{{userId}}?employeeId=68700d25-965a-444f-8ba3-a600dc26b30e"
+url: "{{hrmsBaseUrl}}/timesheet/getAllTimesheetManagerSide/aa311326-29e3-4611-a51f-46e454e6cc6f?employeeId={{userId}}"
+method: GET
+queryParams:
+  employeeId: "{{userId}}"
+order: 7000

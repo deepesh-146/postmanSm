@@ -1,0 +1,30 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/demo/createcontactus"
+url: "{{hrmsBaseUrl}}/demo/createcontactus"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"firstName\": \"John Doe\",\r
+
+    \  \"lastName\": \"ff\",\r
+
+    \  \"companyName\": \"fddd\",\r
+
+    \  \"referral\":\"fff\",\r
+
+    \  \"country\": \"fff\",\r
+
+    \  \"type\":\"ffff\",\r
+
+    \  \"email\": \"john@example.com\",\r
+
+    \  \"message\": \"Hello\",\r
+
+    \  \"phone\": \"ffff\",\r
+
+    \  \"noOfEmployees\": \"21211\"\r
+
+    }"
+order: 1000

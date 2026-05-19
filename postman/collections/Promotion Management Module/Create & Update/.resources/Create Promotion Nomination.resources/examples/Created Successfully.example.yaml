@@ -1,0 +1,57 @@
+$kind: http-example
+request:
+  url: "{{base_url}}/promotions"
+  method: POST
+  headers:
+    Content-Type: application/json
+  body:
+    type: text
+    content: |-
+      {
+        "employeeId": "{{employee_id}}",
+        "toDesignationId": "uuid-new-designation-id",
+        "toGradeId": "uuid-new-grade-id",
+        "toDepartmentId": null,
+        "proposedSalary": 85000,
+        "salaryRevisionDetails": {
+          "salBasic": 50000,
+          "salHRA": 20000,
+          "salDA": 10000,
+          "salBonus": 5000,
+          "salPfDed": 6000
+        },
+        "promotionType": "DESIGNATION_AND_GRADE",
+        "justification": "Consistently exceeded targets for the last 3 quarters. Led the Q4 project successfully and mentored 2 junior team members.",
+        "effectiveDate": "2026-04-01",
+        "appraisalCycleId": null,
+        "remarks": "Strong candidate for senior role"
+      }
+response:
+  statusCode: 201
+  statusText: Created
+  body:
+    type: text
+    content: |-
+      {
+        "success": true,
+        "status": 201,
+        "message": "Promotion nomination created successfully",
+        "data": {
+          "id": "uuid-promotion-id",
+          "employeeId": "uuid-employee-id",
+          "nominatedBy": "uuid-manager-id",
+          "status": "DRAFT",
+          "workflow_status": "DRAFT",
+          "fromDesignationId": "uuid-current-designation",
+          "toDesignationId": "uuid-new-designation",
+          "fromGradeId": "uuid-current-grade",
+          "toGradeId": "uuid-new-grade",
+          "currentSalary": 65000,
+          "proposedSalary": 85000,
+          "performanceScore": 4.2,
+          "performanceBand": "Exceeds Expectations",
+          "effectiveDate": "2026-04-01",
+          "createdAt": "2026-02-22T10:30:00.000Z"
+        }
+      }
+order: 1000

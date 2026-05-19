@@ -1,0 +1,14 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/job_application/signOfferLetter/{{offerLetterId}}"
+url: "{{hrmsBaseUrl}}/job_application/signOfferLetter/{{offerLetterId}}"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"newcandidateId\": \"37968f2f-129f-4d05-9f9b-5f93f55bb2b6\",\r
+
+    \  \"signedDocUrl\": \"dfascssfffffffffffff\"\r
+
+    }\r\n"
+order: 12000

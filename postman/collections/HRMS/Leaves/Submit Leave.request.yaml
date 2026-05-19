@@ -1,0 +1,24 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/leave/"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"employeeId\": \"{{userId}}\",\r
+
+    \    \"leaveTypeId\": \"a6931b63-c8d2-477d-8e9f-e346196549b1\",\r
+
+    \    \"fromDate\": \"2025-12-01\",\r
+
+    \    \"toDate\": \"2025-12-02\",\r
+
+    \    \"reason\": \"Medical leave due to health issue\",\r
+
+    \    \"leaveRequestDoc\": \"uploads/leave/doctor_certificate_1234.jpg\"\r
+
+    \    // \"skipWorkflow\": true  // ← Add this to skip workflow\r
+
+    }"
+examples: ./.resources/Submit Leave.resources/examples
+order: 2000

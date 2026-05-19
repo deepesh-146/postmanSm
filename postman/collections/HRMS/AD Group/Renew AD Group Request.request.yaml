@@ -1,0 +1,16 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/ad_group/renew"
+method: PATCH
+body:
+  type: json
+  content: "{\r
+
+    \    \"adGroupId\": \"9284f618-45f4-4adf-b705-50f2ded871d2\",\r
+
+    \    \"managerId\": \"903bd690-61f3-43db-9edd-d38d531c1c67\",\r
+
+    \    \"employeeId\": \"903bd690-61f3-43db-9edd-d38d531c1c67\"\r
+
+    }"
+examples: ./.resources/Renew AD Group Request.resources/examples
+order: 10000

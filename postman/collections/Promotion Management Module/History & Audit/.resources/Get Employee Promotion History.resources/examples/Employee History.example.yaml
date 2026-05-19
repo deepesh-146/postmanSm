@@ -1,0 +1,41 @@
+$kind: http-example
+request:
+  url: "{{base_url}}/promotions/employee/{{employee_id}}/history"
+  method: GET
+response:
+  statusCode: 200
+  statusText: OK
+  body:
+    type: text
+    content: |-
+      {
+        "success": true,
+        "status": 200,
+        "data": [
+          {
+            "id": "uuid",
+            "effectiveDate": "2026-04-01",
+            "appliedAt": "2026-04-01T00:05:00.000Z",
+            "promotionType": "DESIGNATION_AND_GRADE",
+            "currentSalary": 65000,
+            "proposedSalary": 85000,
+            "fromDesignation": { "id": "uuid", "name": "Software Engineer" },
+            "toDesignation": { "id": "uuid", "name": "Senior Software Engineer" },
+            "fromGrade": { "id": "uuid", "gradeName": "G4" },
+            "toGrade": { "id": "uuid", "gradeName": "G5" },
+            "nominator": { "id": "uuid", "firstName": "Jane", "lastName": "Smith" }
+          },
+          {
+            "id": "uuid",
+            "effectiveDate": "2025-01-15",
+            "appliedAt": "2025-01-15T00:05:00.000Z",
+            "promotionType": "DESIGNATION",
+            "fromDesignation": { "id": "uuid", "name": "Junior Developer" },
+            "toDesignation": { "id": "uuid", "name": "Software Engineer" },
+            "fromGrade": { "id": "uuid", "gradeName": "G3" },
+            "toGrade": { "id": "uuid", "gradeName": "G4" },
+            "nominator": { "id": "uuid", "firstName": "Mike", "lastName": "Manager" }
+          }
+        ]
+      }
+order: 1000

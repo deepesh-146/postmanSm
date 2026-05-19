@@ -1,0 +1,48 @@
+$kind: http-request
+description: Generate organization-wide PF challan for approved payroll run. Creates single challan with all employees.
+url: "{{hrmsBaseUrl}}/compliance/generate"
+method: POST
+headers:
+  Content-Type: application/json
+  Authorization: Bearer {{token}}
+body:
+  type: text
+  content: |-
+    {
+      "empPayrollId": "{{payrollId}}",
+      "reportType": "PF_CHALLAN",
+      "challanMode": "SINGLE_CHALLAN",
+      "filters": {}
+    }
+scripts:
+  - type: afterResponse
+    code: |-
+      // Save first challan ID for later use
+      if (pm.response.code === 200) {
+          var jsonData = pm.response.json();
+          if (jsonData.data && jsonData.data.challans && jsonData.data.challans.length > 0) {
+              pm.environment.set('challanId', jsonData.data.challans[0].id);
+              console.log('Challan ID saved: ' + jsonData.data.challans[0].id);
+          }
+      }
+
+      pm.test('Status code is 200', function () {
+          pm.response.to.have.status(200);
+      });
+
+      pm.test('Challan generated successfully', function () {
+          var jsonData = pm.response.json();
+          pm.expect(jsonData.success).to.be.true;
+          pm.expect(jsonData.data.challans).to.be.an('array');
+          pm.expect(jsonData.data.challans.length).to.equal(1);
+      });
+
+      pm.test('Challan has required fields', function () {
+          var challan = pm.response.json().data.challans[0];
+          pm.expect(challan).to.have.property('challanNumber');
+          pm.expect(challan).to.have.property('fileName');
+          pm.expect(challan).to.have.property('totalEmployees');
+          pm.expect(challan.status).to.equal('GENERATED');
+      });
+    language: text/javascript
+order: 1000

@@ -1,0 +1,18 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/payrolls/updateSalarySlab/d8cc1191-7ff6-4e43-ab8d-87629c44dfbc"
+url: "{{hrmsBaseUrl}}/payrolls/updateSalarySlab/d8cc1191-7ff6-4e43-ab8d-87629c44dfbc"
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"minAmount\": 0,\r
+
+    \    \"maxAmount\": 300000,\r
+
+    \    \"regime\": \"OLD\",\r
+
+    \    \"rate\": 5\r
+
+    }"
+order: 15000

@@ -1,0 +1,5 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/claims/expenses/3585c04c-eb99-497a-993a-c4fc14563ca8"
+url: "{{hrmsBaseUrl}}/claims/expenses/3585c04c-eb99-497a-993a-c4fc14563ca8"
+method: DELETE
+order: 8000

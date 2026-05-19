@@ -1,0 +1,111 @@
+$kind: http-example
+name: "{{hrmsBaseUrl}}/assets/getAllAssets/{{userId}}?size=10&page=1"
+request:
+  url: "{{hrmsBaseUrl}}/assets/getAllAssets/{{userId}}?size=10&page=1"
+  method: GET
+  queryParams:
+    - key: size
+      value: "10"
+    - key: page
+      value: "1"
+    - key: search
+      value: MBP2023
+      disabled: true
+    - key: status
+      value: AVAILABLE
+      disabled: true
+      description: ('AVAILABLE', 'ASSIGNED', 'IN_REPAIR', 'RETIRED'),
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "1858"
+    ETag: W/"742-JJm6yf5/hhsDCY6LCtDBvu4X02o"
+    Date: Mon, 05 May 2025 20:37:40 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "success": true,
+          "status": 200,
+          "message": "Assets fetched successfully",
+          "data": {
+              "totalrows": 2,
+              "pageData": [
+                  {
+                      "id": "b5a97bdf-528d-4751-a0bf-78d5c748f468",
+                      "name": "MacBook Pro M21",
+                      "category": "Laptop",
+                      "assetType": "PHYSICAL",
+                      "serialNumber": "MBP2023-XYZ1",
+                      "brand": "Apple",
+                      "model": "M2 Pro 14-inch",
+                      "purchaseDate": "2023-11-15",
+                      "warrantyEndDate": "2026-11-15",
+                      "purchasePrice": 220000,
+                      "supplier": "Tech Distributors Pvt Ltd",
+                      "condition": "NEW",
+                      "status": "AVAILABLE",
+                      "location": "HQ - IT Storage",
+                      "notes": "New device for development team",
+                      "isDeleted": false,
+                      "createdAt": "2025-05-05T20:01:18.000Z",
+                      "updatedAt": "2025-05-05T20:04:31.000Z",
+                      "organizationId": "3361c67e-ca0d-4a78-a5b4-b3b523c035f0",
+                      "officeId": "ee5226c2-97d5-46f3-bf8c-d45ca9a51c69",
+                      "employeeMainId": "032d7afc-0481-474c-9e51-4d8bf7141807",
+                      "employeeAssets": []
+                  },
+                  {
+                      "id": "341afd56-544c-44fd-9267-0c9bcdab6656",
+                      "name": "MacBook Pro M2",
+                      "category": "Laptop",
+                      "assetType": "PHYSICAL",
+                      "serialNumber": "MBP2023-XYZ",
+                      "brand": "Apple",
+                      "model": "M2 Pro 14-inch",
+                      "purchaseDate": "2023-11-15",
+                      "warrantyEndDate": "2026-11-15",
+                      "purchasePrice": 220000,
+                      "supplier": "Tech Distributors Pvt Ltd",
+                      "condition": "NEW",
+                      "status": "ASSIGNED",
+                      "location": "HQ - IT Storage",
+                      "notes": "New device for development team",
+                      "isDeleted": false,
+                      "createdAt": "2025-05-05T19:41:47.000Z",
+                      "updatedAt": "2025-05-05T20:32:26.000Z",
+                      "organizationId": "3361c67e-ca0d-4a78-a5b4-b3b523c035f0",
+                      "officeId": "ee5226c2-97d5-46f3-bf8c-d45ca9a51c69",
+                      "employeeMainId": "032d7afc-0481-474c-9e51-4d8bf7141807",
+                      "employeeAssets": [
+                          {
+                              "id": "943273e3-bf86-4922-b1cd-a5168816e59f",
+                              "assignedAt": "2025-05-05T20:32:26.000Z",
+                              "returnedAt": null,
+                              "returnCondition": null,
+                              "employee_main": {
+                                  "id": "032d7afc-0481-474c-9e51-4d8bf7141807",
+                                  "firstName": "demoadmin",
+                                  "lastName": "Test"
+                              },
+                              "asset": {
+                                  "id": "341afd56-544c-44fd-9267-0c9bcdab6656",
+                                  "name": "MacBook Pro M2",
+                                  "serialNumber": "MBP2023-XYZ"
+                              }
+                          }
+                      ]
+                  }
+              ],
+              "totalPages": 1,
+              "currentPage": 1
+          }
+      }
+order: 1000

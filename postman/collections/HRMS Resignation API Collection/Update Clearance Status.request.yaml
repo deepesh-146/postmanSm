@@ -1,0 +1,34 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/resignation/updateClearance"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+        "resignationId": "{{resignationId}}",
+        "clearance_type": "IT",
+        "status": "APPROVED",
+        "newFeedback": "this is joining link",
+        "letter1": "this is ltter1",
+        "letter2": "this is letter2",
+        "itApprovedDate":"2025-03-22",
+        // "adminApprovedDate":"",
+        // "financeApprovedDate":"",
+        "employeeMainId": "{{userId}}",
+        "final_recovery_amount": 100,
+        "assets": [
+            {
+                "assetType": "Mobile",
+                "submitted": true,
+                "recoveryAmount": 20
+            },
+            {
+                "assetType": "Laptop",
+                "submitted": true,
+                "recoveryAmount": 0
+            }
+        ]
+    }
+order: 5000

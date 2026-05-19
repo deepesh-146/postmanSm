@@ -1,0 +1,7 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/job_application/recruiter/accept/:jobApplicationId"
+method: PATCH
+pathVariables:
+  jobApplicationId: 274a7f81-1b10-4287-b9c8-f95ed6e301ec
+examples: ./.resources/Accept App Recruiter.resources/examples
+order: 13000

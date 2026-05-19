@@ -1,0 +1,254 @@
+$kind: http-example
+name: "{{hrmsBaseUrl}}/report/attendance/report/dynamic?startDate=2025-12-01&endDate=2025-12-17"
+request:
+  url: "{{hrmsBaseUrl}}/report/attendance/report/dynamic?startDate=2025-12-01&endDate=2025-12-17&columns=employeeName,employeeId,date,status,totalWorkHours,employeeCode&size=5&page=1"
+  method: GET
+  queryParams:
+    - key: startDate
+      value: 2025-12-01
+    - key: endDate
+      value: 2025-12-17
+    - key: columns
+      value: employeeName,employeeId,date,status,totalWorkHours,employeeCode
+    - key: status
+      value: PRESENT
+      disabled: true
+    - key: size
+      value: "5"
+    - key: page
+      value: "1"
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "2963"
+    ETag: W/"b93-m47wP/4cnL/2NN421Mf/EBz7jcE"
+    Date: Thu, 18 Dec 2025 06:46:31 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: text
+    content: |-
+      {
+          "success": true,
+          "status": 200,
+          "data": {
+              "success": true,
+              "data": [
+                  {
+                      "employeeId": "0c5b5932-a5df-4aea-a782-0bd76a246bbb",
+                      "employeeName": "Alliance Editz",
+                      "employeeCode": "EMP-BA4612",
+                      "attendanceRecords": [
+                          {
+                              "date": "2025-12-01",
+                              "status": "PRESENT",
+                              "totalWorkHours": "9.00"
+                          },
+                          {
+                              "date": "2025-12-02",
+                              "status": "PRESENT",
+                              "totalWorkHours": "9.00"
+                          },
+                          {
+                              "date": "2025-12-03",
+                              "status": "PRESENT",
+                              "totalWorkHours": "9.00"
+                          },
+                          {
+                              "date": "2025-12-04",
+                              "status": "PRESENT",
+                              "totalWorkHours": "9.00"
+                          },
+                          {
+                              "date": "2025-12-05",
+                              "status": "PRESENT",
+                              "totalWorkHours": "9.00"
+                          },
+                          {
+                              "date": "2025-12-08",
+                              "status": "PRESENT",
+                              "totalWorkHours": "9.00"
+                          },
+                          {
+                              "date": "2025-12-09",
+                              "status": "PRESENT",
+                              "totalWorkHours": "9.00"
+                          },
+                          {
+                              "date": "2025-12-10",
+                              "status": "PRESENT",
+                              "totalWorkHours": "9.00"
+                          },
+                          {
+                              "date": "2025-12-12",
+                              "status": "PRESENT",
+                              "totalWorkHours": "9.00"
+                          },
+                          {
+                              "date": "2025-12-16",
+                              "status": "PRESENT",
+                              "totalWorkHours": "9.00"
+                          },
+                          {
+                              "date": "2025-12-17",
+                              "status": "PRESENT",
+                              "totalWorkHours": "9.00"
+                          }
+                      ]
+                  },
+                  {
+                      "employeeId": "087297ac-e4e9-4a09-99aa-27167d5978e5",
+                      "employeeName": "Asutosh Satpathy",
+                      "employeeCode": "EMP-B037D3",
+                      "attendanceRecords": [
+                          {
+                              "date": "2025-12-06",
+                              "status": "PRESENT",
+                              "totalWorkHours": "0.00"
+                          }
+                      ]
+                  },
+                  {
+                      "employeeId": "eff22515-b925-4361-8418-c216b86dcf63",
+                      "employeeName": "Biswajeet Das",
+                      "employeeCode": "EMP-17EA06",
+                      "attendanceRecords": [
+                          {
+                              "date": "2025-12-11",
+                              "status": "PRESENT",
+                              "totalWorkHours": "0.00"
+                          }
+                      ]
+                  },
+                  {
+                      "employeeId": "36e4cb44-52c7-4948-9243-a135114c8af5",
+                      "employeeName": "Deepesh Mehta",
+                      "employeeCode": "EMP-95764",
+                      "attendanceRecords": [
+                          {
+                              "date": "2025-12-09",
+                              "status": "PRESENT",
+                              "totalWorkHours": "0.00"
+                          }
+                      ]
+                  },
+                  {
+                      "employeeId": "9a6b2d0c-57b7-4da2-9025-b64b6e2f4323",
+                      "employeeName": "sradhasis  jethy",
+                      "employeeCode": "EMP-547DC1",
+                      "attendanceRecords": [
+                          {
+                              "date": "2025-12-02",
+                              "status": "PRESENT",
+                              "totalWorkHours": "0.00"
+                          },
+                          {
+                              "date": "2025-12-04",
+                              "status": "PRESENT",
+                              "totalWorkHours": "0.00"
+                          },
+                          {
+                              "date": "2025-12-05",
+                              "status": "PRESENT",
+                              "totalWorkHours": "0.00"
+                          },
+                          {
+                              "date": "2025-12-06",
+                              "status": "PRESENT",
+                              "totalWorkHours": "0.00"
+                          },
+                          {
+                              "date": "2025-12-08",
+                              "status": "PRESENT",
+                              "totalWorkHours": "0.00"
+                          },
+                          {
+                              "date": "2025-12-09",
+                              "status": "PRESENT",
+                              "totalWorkHours": "0.00"
+                          },
+                          {
+                              "date": "2025-12-10",
+                              "status": "PRESENT",
+                              "totalWorkHours": "0.00"
+                          },
+                          {
+                              "date": "2025-12-11",
+                              "status": "PRESENT",
+                              "totalWorkHours": "0.00"
+                          },
+                          {
+                              "date": "2025-12-12",
+                              "status": "PRESENT",
+                              "totalWorkHours": "0.00"
+                          },
+                          {
+                              "date": "2025-12-13",
+                              "status": "PRESENT",
+                              "totalWorkHours": "0.00"
+                          },
+                          {
+                              "date": "2025-12-15",
+                              "status": "PRESENT",
+                              "totalWorkHours": "0.00"
+                          },
+                          {
+                              "date": "2025-12-16",
+                              "status": "PRESENT",
+                              "totalWorkHours": "0.00"
+                          }
+                      ]
+                  }
+              ],
+              "pagination": {
+                  "total": 7,
+                  "page": 1,
+                  "size": 5,
+                  "totalPages": 2,
+                  "totalAttendanceRecords": 29
+              },
+              "filters": {
+                  "startDate": "2025-12-01",
+                  "endDate": "2025-12-17",
+                  "employeeIds": [],
+                  "departmentIds": [],
+                  "status": [
+                      "PRESENT"
+                  ],
+                  "officeIds": [],
+                  "page": "1",
+                  "size": "5"
+              },
+              "selectedColumns": [
+                  "employeeName",
+                  "employeeId",
+                  "date",
+                  "status",
+                  "totalWorkHours",
+                  "employeeCode"
+              ],
+              "availableColumns": [
+                  "employeeName",
+                  "employeeCode",
+                  "email",
+                  "department",
+                  "date",
+                  "inTime",
+                  "outTime",
+                  "status",
+                  "totalWorkHours",
+                  "shiftName",
+                  "officeName",
+                  "empComment",
+                  "approved",
+                  "leaveType",
+                  "isPaid"
+              ]
+          }
+      }
+order: 1000

@@ -1,0 +1,8 @@
+$kind: collection
+auth:
+  - id: 31ad9f2e-5403-46be-8894-d882357d2edd
+    type: bearer
+    name: bearer auth
+    credentials:
+      token: "{{tenantToken}}"
+order: 3000

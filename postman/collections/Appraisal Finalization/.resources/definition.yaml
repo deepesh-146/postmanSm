@@ -1,0 +1,17 @@
+$kind: collection
+description: Performance Governance / Finalization Layer APIs — 24 endpoints covering Performance Bands, Score Calculation, HR Calibration, Recommendations, Employee Acknowledgement, Locking, Finalization, Dashboard & Export.
+variables:
+  baseUrl: http://localhost:3000/api/v1/appraisal-finalization
+  token: YOUR_JWT_TOKEN_HERE
+  cycleId: CYCLE_UUID_HERE
+  employeeId: EMPLOYEE_UUID_HERE
+  finalScoreId: FINAL_SCORE_UUID_HERE
+  bandId: BAND_UUID_HERE
+  recommendationId: RECOMMENDATION_UUID_HERE
+  ackId: ACKNOWLEDGEMENT_UUID_HERE
+auth:
+  - id: 2c39a94a-ec97-4dfa-bd08-c7f31e28b33b
+    type: bearer
+    name: bearer auth
+    credentials:
+      token: "{{token}}"

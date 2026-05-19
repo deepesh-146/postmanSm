@@ -1,0 +1,3 @@
+$kind: collection
+description: Bonus type management - create, list, update, delete bonus types
+order: 2000

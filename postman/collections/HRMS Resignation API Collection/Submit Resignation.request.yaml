@@ -1,0 +1,16 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/resignation/submitResignation"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+        "employeeMainId": "b4beed96-d0fd-451f-b763-22bb40bb9802",
+        "last_working_day": "2025-04-15",
+        "reason_for_resign": "Personal reasons",
+        "notes": "Looking for new opportunities",
+        "personal_email": "example@email.com"
+    }
+order: 1000

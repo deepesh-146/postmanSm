@@ -1,0 +1,19 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/employee_loan/process-payment/:loanId"
+method: POST
+pathVariables:
+  loanId: 12b1b6dc-deb2-4f84-8c3c-5115f2882ad8
+body:
+  type: json
+  content: "{\r
+
+    \    \"month\": 1,\r
+
+    \    \"year\": 2026,\r
+
+    \    \"paymentDate\": \"2026-01-15\", // Optional - defaults to deduction date\r
+
+    \    \"notes\": \"Processed manually for testing\" // Optional\r
+
+    }"
+order: 19000

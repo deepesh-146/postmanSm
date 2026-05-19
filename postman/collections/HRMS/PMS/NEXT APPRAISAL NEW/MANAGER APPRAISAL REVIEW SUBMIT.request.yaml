@@ -1,0 +1,44 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/appraisal/cycle/:cycleId/employee/:employeeId/bulk-manager-review"
+method: POST
+queryParams:
+  - key: cycleId
+    value: ""
+    disabled: true
+pathVariables:
+  cycleId: 15ff9f35-c849-44d4-a421-80e8cf049977
+  employeeId: 5324cf44-676a-4fe8-acde-1bfcfd3fc289
+body:
+  type: json
+  content: "{\r
+
+    \    \"managerResponse\": [\r
+
+    \        {\r
+
+    \            \"appraisalResponeId\": \"13cccb60-d97a-4b65-b465-331c05bc12e6\",\r
+
+    \            \"managerRating\": 3.5,\r
+
+    \            \"managerComments\": \"Keep up the good work...\",\r
+
+    \            \"managerSubmitted\": true\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"appraisalResponeId\": \"2f966175-21bb-4d35-9055-36ebe914e9f8\",\r
+
+    \            \"managerRating\": 4.0,\r
+
+    \            \"managerComments\": \"Excellent performance\",\r
+
+    \            \"managerSubmitted\": true\r
+
+    \        }\r
+
+    \    ]\r
+
+    }"
+order: 4000

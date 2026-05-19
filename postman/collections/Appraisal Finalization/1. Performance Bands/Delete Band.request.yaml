@@ -1,0 +1,5 @@
+$kind: http-request
+description: Soft-delete a performance band.
+url: "{{baseUrl}}/bands/{{bandId}}"
+method: DELETE
+order: 4000

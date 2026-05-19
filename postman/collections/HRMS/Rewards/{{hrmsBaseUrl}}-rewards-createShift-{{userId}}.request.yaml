@@ -1,0 +1,27 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/rewards/createShift/{{userId}}"
+url: "{{hrmsBaseUrl}}/rewards/createShift/{{userId}}"
+method: POST
+body:
+  type: json
+  content: "// {\r
+
+    //     \"shiftName\": \"Night Shift11111\",\r
+
+    //     \"shiftStart\": \"22:10:00\",\r
+
+    //     \"shiftEnd\": \"03:20:00\"\r
+
+    // }   \r
+
+    {\r
+
+    \    \"shiftName\": \"Day Shift11\",\r
+
+    \    \"shiftStart\": \"2025-03-27T02:30:00\",\r
+
+    \    \"shiftEnd\": \"2025-03-28T09:40:00\"\r
+
+    }"
+examples: ./.resources/{{hrmsBaseUrl}}-rewards-createShift-{{userId}}.resources/examples
+order: 1000

@@ -1,0 +1,42 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/employee/personal"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"isCandidate\": false,\r
+
+    \    \"employeeId\": \"{{userId}}\",\r
+
+    \    \"personalData\": {\r
+
+    \        \"pAddress\": \"Patna, India\",\r
+
+    \        \"cAddress\": \"Panchkula, Haryana\",\r
+
+    \        \"aadharNum\": \"444444444444\",\r
+
+    \        \"panNum\": \"DJEUJ5745W\",\r
+
+    \        \"bankAcntNum\": \"456456465465\",\r
+
+    \        \"bankAcntName\": \"Indian Bank\",\r
+
+    \        \"bankIfsc\": \"SSDF5585555\",\r
+
+    \        \"bankBranch\": \"Patna\",\r
+
+    \        \"aadharFrontPath\": \"https://morth.nic.in/sites/default/files/dd12-13_0.pdf\",\r
+
+    \        \"aadharBackPath\": \"https://morth.nic.in/sites/default/files/dd12-13_0.pdf\",\r
+
+    \        \"panPath\": \"https://morth.nic.in/sites/default/files/dd12-13_0.pdf\",\r
+
+    \        \"bankPassPath\": \"https://morth.nic.in/sites/default/files/dd12-13_0.pdf\"\r
+
+    \    }\r
+
+    }"
+examples: ./.resources/Add Personal Data.resources/examples
+order: 2000

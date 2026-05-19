@@ -1,0 +1,5 @@
+$kind: http-request
+description: Verify cycle is auto-locked after finalization.
+url: "{{baseUrl}}/appraisal-finalization/cycle/{{cycleId}}/lock-status"
+method: GET
+order: 2000

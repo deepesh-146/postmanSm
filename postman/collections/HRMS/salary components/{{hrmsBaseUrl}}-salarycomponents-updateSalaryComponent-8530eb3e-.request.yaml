@@ -1,0 +1,35 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/salarycomponents/updateSalaryComponent/8530eb3e-9e63-48ff-93d8-78c18f5476c1"
+url: "{{hrmsBaseUrl}}/salarycomponents/updateSalaryComponent/8530eb3e-9e63-48ff-93d8-78c18f5476c1"
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"salaryComponentData\": {\r
+
+    \        \"name\": \"sujay1\",\r
+
+    \        \"abbr\": \"ss1\",\r
+
+    \        \"type\": \"EARNING\",\r
+
+    \        \"description\": \"nice1\"\r
+
+    \    },\r
+
+    \    \"accDetails\": [\r
+
+    \        {\r
+
+    \            \"company\": \"iceitps111\",\r
+
+    \            \"account\": \"ABCD1234111\"\r
+
+    \        }\r
+
+    \    ]\r
+
+    }"
+examples: ./.resources/{{hrmsBaseUrl}}-salarycomponents-updateSalaryComponent-8530eb3e-.resources/examples
+order: 17000

@@ -1,0 +1,5 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/training_module/1"
+url: "{{hrmsBaseUrl}}/training_module/5"
+method: DELETE
+order: 10000

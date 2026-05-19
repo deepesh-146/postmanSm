@@ -1,0 +1,17 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/salarycomponents/updateAllowance/{{allowanceId}}"
+url: "{{hrmsBaseUrl}}/salarycomponents/updateAllowance/{{allowanceId}}"
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"allowanceName\": \"Updated Transport Allowance\",\r
+
+    \    \"allowanceDescription\": \"Updated allowance for transportation expenses\",\r
+
+    \    \"isDeleted\": false\r
+
+    }"
+examples: ./.resources/{{hrmsBaseUrl}}-salarycomponents-updateAllowance-{{allowanceId}}.resources/examples
+order: 21000

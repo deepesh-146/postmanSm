@@ -1,0 +1,30 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/rewards/admin/rotationalShift/:shiftId"
+method: PUT
+headers:
+  Content-Type: application/json
+pathVariables:
+  shiftId: 8300894d-8ab8-40ed-a845-162b33c863a5
+body:
+  type: text
+  content: |-
+    {
+        "scheduleName": "Updated Shift",
+        "scheduleDays": [
+            "tuesday",
+            "thursday"
+        ],
+        "timeOfSchedule": "20:00:00",
+        "shiftRotation": [
+            "01bb8f74-ca08-4880-a904-a227f2ccd976",
+            "161071ca-db44-49c2-ba54-9fe572bd939c"
+        ],
+        "departmentIds": [
+            "074171f6-0427-4bb2-9085-36a4a66535e2"
+        ],
+        "employeeIds": [
+            "039e3661-ff3c-40cd-88a1-13bf9f32fa3e",
+            "0513bc9b-7889-4a77-a6e7-95e152ef05f2"
+        ]
+    }
+order: 4000

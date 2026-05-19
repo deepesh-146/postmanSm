@@ -1,0 +1,15 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/job_application/getAllJobApplications/:recruiterId/recruiter?size=10&page=1"
+method: GET
+queryParams:
+  - key: size
+    value: "10"
+  - key: page
+    value: "1"
+  - key: search
+    value: ""
+    disabled: true
+pathVariables:
+  recruiterId: eb6df26e-e0d3-4d10-8714-873fef6e213c
+examples: ./.resources/All Job Application By Recruiter.resources/examples
+order: 10000

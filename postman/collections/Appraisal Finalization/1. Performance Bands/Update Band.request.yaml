@@ -1,0 +1,17 @@
+$kind: http-request
+description: Update an existing performance band.
+url: "{{baseUrl}}/bands/{{bandId}}"
+method: PUT
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+        "bandName": "Outstanding (Updated)",
+        "minScore": 4.5,
+        "maxScore": 5.0,
+        "colorCode": "#1e7e34",
+        "sortOrder": 1
+    }
+order: 3000

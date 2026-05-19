@@ -1,0 +1,7 @@
+$kind: http-request
+description: Test with non-existent challan ID.
+url: "{{hrmsBaseUrl}}/api/compliance/99999999-9999-9999-9999-999999999999/summary"
+method: GET
+headers:
+  Authorization: Bearer {{token}}
+order: 4000

@@ -1,0 +1,18 @@
+$kind: http-request
+url: "{{base_url}}/api/family/visa/tracking"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "familyMemberId": 1,
+      "visaType": "FAMILY_VISA_RENEWAL",
+      "applicationDate": "2025-01-03",
+      "expectedProcessingDays": 30,
+      "applicationFee": 500.00,
+      "status": "SUBMITTED",
+      "notes": "Annual visa renewal application submitted to MOHRE"
+    }
+order: 1000

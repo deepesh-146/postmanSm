@@ -1,0 +1,18 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/designation/"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"name\": \"CEO\",\r
+
+    \    \"code\": \"CEO-2222\",\r
+
+    \    \"department\": \"85c32fec-2cb7-4324-adc2-4c8c3cdd5aa5\",\r
+
+    \    \"officeId\" : \"{{officeId}}\"\r
+
+    }"
+examples: ./.resources/Add Designation.resources/examples
+order: 1000

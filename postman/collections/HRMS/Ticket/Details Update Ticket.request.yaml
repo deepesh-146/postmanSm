@@ -1,0 +1,14 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/tickets/detailsAdd"
+method: PATCH
+body:
+  type: json
+  content: "{\r
+
+    \    \"details\": \"Some details for the ticket\",\r
+
+    \    \"ticketId\": \"2582dd41-8782-4f2a-b3a7-bd752769d618\"\r
+
+    }"
+examples: ./.resources/Details Update Ticket.resources/examples
+order: 13000

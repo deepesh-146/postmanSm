@@ -1,0 +1,6 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/job_application/:jobApplicationId"
+method: DELETE
+pathVariables:
+  jobApplicationId: ""
+order: 16000

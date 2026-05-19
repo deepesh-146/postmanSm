@@ -1,0 +1,20 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/attendance/attendanceRule/{{userId}}"
+url: "{{hrmsBaseUrl}}/attendance/attendanceRule/{{userId}}"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"gracePeriodMinutes\": 11,\r
+
+    \    \"earlyArrivalMinutes\": 15,\r
+
+    \    \"autoCheckout\": true,\r
+
+    \    \"markMissingCheckout\": true,\r
+
+    \    \"correctionWindowDays\": 3\r
+
+    }"
+order: 25000

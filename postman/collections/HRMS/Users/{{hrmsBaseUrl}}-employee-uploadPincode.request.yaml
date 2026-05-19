@@ -1,0 +1,12 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/employee/uploadPincode"
+url: "{{hrmsBaseUrl}}/employee/uploadPincode"
+method: POST
+body:
+  type: formdata
+  content:
+    - type: file
+      key: file
+      src: /E:/WORK/DEEPESH/ICEIPTS/cimpl-backend/DOCS/iceiptPincode1.xlsx
+examples: ./.resources/{{hrmsBaseUrl}}-employee-uploadPincode.resources/examples
+order: 5000

@@ -1,0 +1,6 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/assets/admin/dashboard/getAssetLifecycleTrends/{{userId}}"
+url: "{{hrmsBaseUrl}}/assets/admin/dashboard/getAssetLifecycleTrends/{{userId}}"
+method: GET
+examples: ./.resources/{{hrmsBaseUrl}}-assets-admin-dashboard-getAssetLifecycleTrends-{.resources/examples
+order: 5000

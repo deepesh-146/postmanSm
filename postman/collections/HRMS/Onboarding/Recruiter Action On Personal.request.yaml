@@ -1,0 +1,22 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/employee/actionPersonal"
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"employeeId\": \"903bd690-61f3-43db-9edd-d38d531c1c67\",\r
+
+    \    \"source\": \"Verified by Call\",\r
+
+    \    \"action\": \"APPROVED\",\r
+
+    \    \"recruiterId\": \"903bd690-61f3-43db-9edd-d38d531c1c67\",\r
+
+    \    \"personalId\": \"1cead5e9-8856-453a-8bee-1a9062a476f9\",\r
+
+    \    \"comments\": \"NO comments\"\r
+
+    }"
+examples: ./.resources/Recruiter Action On Personal.resources/examples
+order: 11000

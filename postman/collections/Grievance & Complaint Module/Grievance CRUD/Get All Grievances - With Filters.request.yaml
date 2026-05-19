@@ -1,0 +1,24 @@
+$kind: http-request
+url: "{{base_url}}/grievances?page=1&size=10&status=SUBMITTED&startDate=2026-01-01&endDate=2026-12-31"
+method: GET
+queryParams:
+  - key: page
+    value: "1"
+  - key: size
+    value: "10"
+  - key: status
+    value: SUBMITTED
+    description: SUBMITTED | ACKNOWLEDGED | UNDER_REVIEW | INVESTIGATION | AWAITING_INPUT | RESOLVED | CLOSED | REOPENED | ESCALATED | WITHDRAWN
+  - key: priority
+    value: HIGH
+    disabled: true
+    description: LOW | MEDIUM | HIGH | CRITICAL
+  - key: startDate
+    value: 2026-01-01
+  - key: endDate
+    value: 2026-12-31
+  - key: search
+    value: salary
+    disabled: true
+    description: Searches grievanceNumber and subject
+order: 5000

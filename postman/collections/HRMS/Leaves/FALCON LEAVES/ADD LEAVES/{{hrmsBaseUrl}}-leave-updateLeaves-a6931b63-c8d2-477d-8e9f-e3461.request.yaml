@@ -1,0 +1,22 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/leave/updateLeaves/a6931b63-c8d2-477d-8e9f-e346196549b1"
+url: "{{hrmsBaseUrl}}/leave/updateLeaves/a6931b63-c8d2-477d-8e9f-e346196549b1"
+method: PUT
+queryParams:
+  - key: search
+    value: ""
+    disabled: true
+body:
+  type: json
+  content: "{\r
+
+    \    \"type\": \"CASUAL_LEAVE\",\r
+
+    \    \"leave_Code\": \"HD\",\r
+
+    \    \"leave_Category\": \"PAID\",\r
+
+    \    \"leave_Description\": \"Casual Leave\"\r
+
+    }"
+order: 4000

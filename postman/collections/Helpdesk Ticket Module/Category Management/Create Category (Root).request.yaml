@@ -1,0 +1,17 @@
+$kind: http-request
+url: "{{baseUrl}}/ticket/category"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "name": "IT Support",
+      "parentId": null,
+      "description": "All IT related issues",
+      "priority": "MEDIUM",
+      "slaDays": 3,
+      "departmentId": "DEPARTMENT_UUID_HERE"
+    }
+order: 1000

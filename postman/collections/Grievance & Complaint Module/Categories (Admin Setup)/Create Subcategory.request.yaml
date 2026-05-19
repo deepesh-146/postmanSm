@@ -1,0 +1,23 @@
+$kind: http-request
+description: Create a subcategory under a parent category. Set parentId to the parent category UUID.
+url: "{{base_url}}/grievances/categories"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+        "name": "Salary Not Credited",
+        "code": "SALARY_NOT_CREDITED",
+        "parentId": "{{categoryId}}",
+        "description": "Salary not credited on expected date",
+        "routeTo": "HR",
+        "skipManager": false,
+        "skipHr": false,
+        "isSensitive": false,
+        "allowAnonymous": false,
+        "defaultPriority": "CRITICAL",
+        "slaDays": 2
+    }
+order: 6000

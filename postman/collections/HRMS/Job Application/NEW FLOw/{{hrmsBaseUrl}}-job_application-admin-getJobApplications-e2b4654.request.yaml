@@ -1,0 +1,6 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/job_application/admin/getJobApplications/e2b46542-fea7-4341-aae5-b0f483ebb4b6"
+url: "{{hrmsBaseUrl}}/job_application/admin/getJobApplications/76da87f2-735f-4709-9bea-c2b92f13c44e"
+method: GET
+examples: ./.resources/{{hrmsBaseUrl}}-job_application-admin-getJobApplications-e2b4654.resources/examples
+order: 3000

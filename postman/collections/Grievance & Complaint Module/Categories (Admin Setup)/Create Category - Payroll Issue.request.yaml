@@ -1,0 +1,26 @@
+$kind: http-request
+description: Create a payroll issue category. Routes to HR, manager NOT skipped.
+url: "{{base_url}}/grievances/categories"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+        "name": "Payroll Issues",
+        "code": "PAYROLL",
+        "description": "Salary discrepancies, deduction errors, delayed payments",
+        "routeTo": "HR",
+        "skipManager": false,
+        "skipHr": false,
+        "isSensitive": false,
+        "allowAnonymous": false,
+        "defaultPriority": "HIGH",
+        "slaDays": 5
+    }
+auth:
+  type: bearer
+  credentials:
+    token: "{{orgToken}}"
+order: 1000

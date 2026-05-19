@@ -1,0 +1,24 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/timesheet/updateTimesheetStatus"
+url: "{{hrmsBaseUrl}}/timesheet/updateTimesheetStatus"
+method: PATCH
+body:
+  type: json
+  content: "{\r
+
+    \    \"id\": [\r
+
+    \        \"51c57f65-eb27-47cd-8295-1e14131ec39d\",\r
+
+    \        \"605aebd6-5102-446a-b172-0c85700625ba\"\r
+
+    \    ],\r
+
+    \    \"status\": \"APPROVED\",\r
+
+    \    \"approvedBy\": \"{{userId}}\",\r
+
+    \    \"description\": \"OVERTIME LOG\"\r
+
+    }"
+order: 8000

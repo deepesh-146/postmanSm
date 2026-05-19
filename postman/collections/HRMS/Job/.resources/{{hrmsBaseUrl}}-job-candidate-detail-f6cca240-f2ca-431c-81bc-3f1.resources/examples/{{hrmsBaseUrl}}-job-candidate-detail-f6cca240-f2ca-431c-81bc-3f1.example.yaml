@@ -1,0 +1,108 @@
+$kind: http-example
+name: "{{hrmsBaseUrl}}/job/candidate/detail/f6cca240-f2ca-431c-81bc-3f1adbbb999a"
+request:
+  url: "{{hrmsBaseUrl}}/job/candidate/detail/f6cca240-f2ca-431c-81bc-3f1adbbb999a"
+  method: GET
+  queryParams:
+    - key: size
+      value: "3"
+      disabled: true
+    - key: page
+      value: "1"
+      disabled: true
+    - key: search
+      value: pp
+      disabled: true
+    - key: location
+      value: mumbai
+      disabled: true
+    - key: jobType
+      value: Part
+      disabled: true
+    - key: sort
+      value: desc
+      disabled: true
+    - key: minSalary
+      value: "100"
+      disabled: true
+    - key: maxSalary
+      value: "100"
+      disabled: true
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "1416"
+    ETag: W/"588-dBseQvMDClGKsVRrJTal7Lmfi9U"
+    Date: Tue, 27 May 2025 11:39:52 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "status": {
+              "success": true,
+              "code": 200,
+              "message": "Job Data",
+              "failure": false
+          },
+          "data": {
+              "job": {
+                  "id": "f6cca240-f2ca-431c-81bc-3f1adbbb999a",
+                  "title": "CEO - India22",
+                  "code": "JB-F331C0",
+                  "companyName": "iCeipts Technology",
+                  "type": "Full Time",
+                  "jobMode": "WorkFromHome",
+                  "location": "Pune, Maharashtra",
+                  "designationId": "2d371537-9cce-4f4c-b3e4-ead1783f737a",
+                  "jobUnitId": "05e263cb-fc50-4ebd-9fa1-9d12b240b796",
+                  "shifts": "Day Shift",
+                  "description": "We are looking for a skilled Flutter Developer to Join our Team",
+                  "benefits": null,
+                  "experience": "3-5 Year",
+                  "education": "Graduation",
+                  "related": "Do you 3 and above years of experience?",
+                  "salary": "100000 - 200000",
+                  "minSalary": 100,
+                  "maxSalary": 200,
+                  "recruiterId": "d59277f5-83f4-473a-966d-4f319d46531f",
+                  "validTill": "2026-10-29T12:30:00.000Z",
+                  "isActive": true,
+                  "position": "MANAGER",
+                  "minthreshold": 10,
+                  "matchthreshold": 10,
+                  "jobDescription": "cww",
+                  "responsibilities": "cww",
+                  "requirements": "cwcw",
+                  "createdAt": "2025-05-16T09:24:19.000Z",
+                  "updatedAt": "2025-05-16T09:24:19.000Z",
+                  "organizationId": "5a83858c-d64a-465c-a8ee-57bf5285f8a6",
+                  "officeId": "c47d9174-0160-426a-8587-487959309d2f",
+                  "jobskills": [
+                      {
+                          "id": "767f3874-db55-49d2-9399-ce6ad724f056",
+                          "skill": null
+                      }
+                  ],
+                  "jobbenefits": [],
+                  "designation": {
+                      "id": "2d371537-9cce-4f4c-b3e4-ead1783f737a",
+                      "name": "dsfdfdcds",
+                      "code": "34324",
+                      "departmentId": "b678708e-4d0f-4f2a-84de-e862a38c87ec"
+                  },
+                  "job_unit": {
+                      "id": "05e263cb-fc50-4ebd-9fa1-9d12b240b796",
+                      "name": "ABCD",
+                      "code": "8768"
+                  }
+              }
+          }
+      }
+order: 1000

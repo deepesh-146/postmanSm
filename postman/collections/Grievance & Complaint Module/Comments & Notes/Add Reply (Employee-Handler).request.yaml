@@ -1,0 +1,18 @@
+$kind: http-request
+name: Add Reply (Employee/Handler)
+description: Replies are visible to both complainant and handler. If complainant replies on an anonymous grievance, their identity is auto-masked.
+url: "{{base_url}}/grievances/reply"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+        "grievanceId": "{{grievanceId}}",
+        "message": "Thank you for looking into this. Here is the payslip showing the incorrect deduction.",
+        "attachments": [
+            "https://s3.amazonaws.com/bucket/payslip-jan-2026.pdf"
+        ]
+    }
+order: 1000

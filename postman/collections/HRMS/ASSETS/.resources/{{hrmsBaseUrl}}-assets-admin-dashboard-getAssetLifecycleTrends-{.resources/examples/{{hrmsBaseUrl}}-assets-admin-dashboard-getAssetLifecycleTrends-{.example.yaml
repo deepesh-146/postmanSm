@@ -1,0 +1,36 @@
+$kind: http-example
+name: "{{hrmsBaseUrl}}/assets/admin/dashboard/getAssetLifecycleTrends/{{userId}}"
+request:
+  url: "{{hrmsBaseUrl}}/assets/admin/dashboard/getAssetLifecycleTrends/{{userId}}"
+  method: GET
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "157"
+    ETag: W/"9d-+lBqL3mZKt1rRu6x+MqJhQrPHMc"
+    Date: Fri, 09 May 2025 12:20:50 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "success": true,
+          "status": 200,
+          "message": "Asset lifecycle trends fetched successfully.",
+          "data": [
+              {
+                  "month": "May",
+                  "new": 4,
+                  "assigned": 0,
+                  "returned": 0,
+                  "retired": 0
+              }
+          ]
+      }
+order: 1000

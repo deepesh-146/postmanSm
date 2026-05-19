@@ -1,0 +1,6 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/travels/getTravelReimbursementById/22b82273-c379-412d-979b-f7d18c340e11 //travel id"
+url: "{{hrmsBaseUrl}}/travels/getTravelReimbursementById/3de76184-59f9-43ab-a6f5-62263c7b54ee"
+method: GET
+examples: ./.resources/{{hrmsBaseUrl}}-travels-getTravelReimbursementById-22b82273-c379.resources/examples
+order: 8000

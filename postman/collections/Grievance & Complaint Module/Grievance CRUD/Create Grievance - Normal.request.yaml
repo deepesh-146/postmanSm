@@ -1,0 +1,32 @@
+$kind: http-request
+description: Normal grievance (non-anonymous). Auto-assigns based on category routing rules.
+url: "{{hrmsBaseUrl}}/grievances"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+        "categoryId": "{{categoryId}}",
+        "subject": "Inappropriate behaviour by team lead",
+        "description": "My team lead has been making inappropriate remarks during meetings. This has been happening for the past 2 months. I feel uncomfortable and want this addressed confidentially.",
+        "isAnonymous": false,
+        "priority": "CRITICAL",
+        "attachments": [
+            "https://s3.amazonaws.com/bucket/evidence1.pdf"
+        ],
+        "incidentDate": "2026-02-15",
+        "incidentLocation": "Floor 3, Conference Room B",
+        "againstWhomName": "John Doe",
+        "againstWhomEmpId": "310dbdba-fd25-4345-a97d-1fff7409fb9a"
+    }
+scripts:
+  - type: afterResponse
+    code: |-
+      var jsonData = pm.response.json();
+      if (jsonData.data && jsonData.data.id) {
+          pm.collectionVariables.set('grievanceId', jsonData.data.id);
+      }
+    language: text/javascript
+order: 1000

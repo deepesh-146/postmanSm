@@ -1,0 +1,5 @@
+$kind: http-request
+description: "Returns: totalEnrolled, pendingApprovals, totalClaims, totalReimbursed"
+url: "{{baseUrl}}/admin/summary/{{benefitId}}"
+method: GET
+order: 2000

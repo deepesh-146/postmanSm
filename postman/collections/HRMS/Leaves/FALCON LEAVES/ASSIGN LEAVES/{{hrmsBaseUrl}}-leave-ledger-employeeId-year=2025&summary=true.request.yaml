@@ -1,0 +1,11 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/leave/ledger/:employeeId?year=2025&summary=true"
+url: "{{hrmsBaseUrl}}/leave/ledger/:employeeId?summary=true&startDate=2025-12-01&endDate=2025-12-10"
+method: GET
+queryParams:
+  summary: "true"
+  startDate: 2025-12-01
+  endDate: 2025-12-10
+pathVariables:
+  employeeId: "{{userId}}"
+order: 4000

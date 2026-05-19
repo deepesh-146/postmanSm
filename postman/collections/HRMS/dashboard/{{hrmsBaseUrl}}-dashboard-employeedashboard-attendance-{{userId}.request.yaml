@@ -1,0 +1,15 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/dashboard/employeedashboard/attendance/{{userId}}"
+url: "{{hrmsBaseUrl}}/dashboard/employeedashboard/attendance/{{userId}}"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"month\": \"2\",\r
+
+    \    \"year\": \"2025\"\r
+
+    }"
+examples: ./.resources/{{hrmsBaseUrl}}-dashboard-employeedashboard-attendance-{{userId}.resources/examples
+order: 26000

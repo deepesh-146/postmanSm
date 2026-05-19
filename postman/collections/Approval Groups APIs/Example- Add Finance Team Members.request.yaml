@@ -1,0 +1,19 @@
+$kind: http-request
+name: "Example: Add Finance Team Members"
+description: "Example: Add members to Finance Approvers group using group key"
+url: "{{baseUrl}}/api/approval-groups/key/FINANCE_APPROVERS/members"
+method: POST
+headers:
+  Authorization: Bearer {{authToken}}
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "employeeIds": [
+        "finance-manager-uuid",
+        "finance-executive-uuid",
+        "accounts-head-uuid"
+      ]
+    }
+order: 9000

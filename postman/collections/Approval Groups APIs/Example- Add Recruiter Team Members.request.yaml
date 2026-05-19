@@ -1,0 +1,18 @@
+$kind: http-request
+name: "Example: Add Recruiter Team Members"
+description: "Example: Add members to Recruiter Approvers group"
+url: "{{baseUrl}}/api/approval-groups/key/RECRUITER_APPROVERS/members"
+method: POST
+headers:
+  Authorization: Bearer {{authToken}}
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "employeeIds": [
+        "recruiter-1-uuid",
+        "recruiter-2-uuid"
+      ]
+    }
+order: 11000

@@ -1,0 +1,86 @@
+$kind: http-example
+request:
+  url: "{{hrmsBaseUrl}}/policy/getLoanById/9242fff2-705f-4ea2-a480-cb1a1a336c5a"
+  method: GET
+  headers:
+    Content-Type: application/json
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "1584"
+    ETag: W/"630-slCp2zhCnWQHWT+WZGaOmb3b4xU"
+    Date: Thu, 12 Jun 2025 18:09:51 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "success": true,
+          "status": 200,
+          "data": {
+              "success": true,
+              "message": "Loan policy fetched successfully",
+              "data": {
+                  "id": "9242fff2-705f-4ea2-a480-cb1a1a336c5a",
+                  "policyName": "Loan Benefits",
+                  "policyType": "LOAN",
+                  "isActive": true,
+                  "createdAt": "2025-06-12T18:08:00.000Z",
+                  "updatedAt": "2025-06-12T18:08:00.000Z",
+                  "organizationId": null,
+                  "officeId": null,
+                  "employeeMainId": "3bfa2da7-2932-4860-bf7c-30488eab49b6",
+                  "loan_grade_rules": [
+                      {
+                          "id": "1c0989ff-9533-4ca2-9df1-bb61001d2dc1",
+                          "policyId": "9242fff2-705f-4ea2-a480-cb1a1a336c5a",
+                          "grade": "A1",
+                          "maxLoanAmount": 500000,
+                          "interestRate": 8.5,
+                          "maxTenure": null,
+                          "emiStartDelay": null,
+                          "proofRequired": true,
+                          "createdAt": "2025-06-12T18:08:00.000Z",
+                          "updatedAt": "2025-06-12T18:08:00.000Z"
+                      }
+                  ],
+                  "loan_eligibility": {
+                      "id": "0085e0fb-39d5-4977-82f0-0153679fa3d0",
+                      "policyId": "9242fff2-705f-4ea2-a480-cb1a1a336c5a",
+                      "minServiceMonths": 12,
+                      "maxLoansAtOnce": null,
+                      "salaryDeductionCapPercent": null,
+                      "createdAt": "2025-06-12T18:08:00.000Z",
+                      "updatedAt": "2025-06-12T18:08:00.000Z",
+                      "loan_eligibility_departments": [
+                          {
+                              "id": "7c4f3fcf-ca1d-4f07-a717-a262b059eec9",
+                              "loanEligibilityId": "0085e0fb-39d5-4977-82f0-0153679fa3d0",
+                              "departmentId": "8ff5bd79-a370-4852-95fd-773f54fff306",
+                              "createdAt": "2025-06-12T18:08:00.000Z",
+                              "updatedAt": "2025-06-12T18:08:00.000Z"
+                          }
+                      ]
+                  },
+                  "loan_advance_salary": {
+                      "id": "212649df-64da-47fc-b61e-a224932be63f",
+                      "policyId": "9242fff2-705f-4ea2-a480-cb1a1a336c5a",
+                      "enabled": false,
+                      "maxRequestsPerYear": 2,
+                      "minServiceMonths": 6,
+                      "approvalRequired": true,
+                      "createdAt": "2025-06-12T18:08:00.000Z",
+                      "updatedAt": "2025-06-12T18:08:00.000Z",
+                      "loan_advance_salary_grades": [],
+                      "loan_advance_salary_schedules": []
+                  }
+              }
+          }
+      }
+order: 1000

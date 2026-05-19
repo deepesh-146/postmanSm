@@ -1,0 +1,22 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/onboarding/videoCompany"
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"onboardingId\": \"f778b358-2db2-4561-9c0b-dc1eda013258\",\r
+
+    \    \"videoSeen\": true,\r
+
+    \    \"idsAssignedVideo\": \"a19a390f-3ec8-434f-846f-f8d13c554e8e\",\r
+
+    \    \"idsValueVideo\": \"Completed\",\r
+
+    \    \"currentStep\": 1,\r
+
+    \    \"stepLeft\": 2\r
+
+    }"
+examples: ./.resources/Company Video Status.resources/examples
+order: 21000

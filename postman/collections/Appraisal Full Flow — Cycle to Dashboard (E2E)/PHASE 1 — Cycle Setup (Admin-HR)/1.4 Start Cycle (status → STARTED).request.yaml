@@ -1,0 +1,13 @@
+$kind: http-request
+description: Start the cycle. This activates it and sends notifications to employees.
+url: "{{baseUrl}}/appraisal/updateCycle/{{cycleId}}"
+method: PUT
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+        "status": "STARTED"
+    }
+order: 4000

@@ -1,0 +1,8 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/job/getPendingApprovalsForRequisition/25b2a02a-7f16-4a93-a897-5d71a3842bf0?role=MANAGER"
+url: "{{hrmsBaseUrl}}/job/getPendingApprovalsForRequisition/25b2a02a-7f16-4a93-a897-5d71a3842bf0?role=MANAGER"
+method: GET
+queryParams:
+  role: MANAGER
+examples: ./.resources/{{hrmsBaseUrl}}-job-getPendingApprovalsForRequisition-25b2a02a-7.resources/examples
+order: 4000

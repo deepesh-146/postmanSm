@@ -1,0 +1,14 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/ad_group/withdraw"
+method: PATCH
+body:
+  type: json
+  content: "{\r
+
+    \    \"requestId\": \"53281063-d65b-4660-9c6a-7d307decf379\",\r
+
+    \    \"employeeId\": \"903bd690-61f3-43db-9edd-d38d531c1c67\"\r
+
+    }"
+examples: ./.resources/Employee AD Group Request Withdraw.resources/examples
+order: 7000

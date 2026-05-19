@@ -1,0 +1,7 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/appraisal/employees-with-submitted-answers"
+url: "{{hrmsBaseUrl}}/appraisal/employees-with-submitted-answers"
+method: GET
+headers:
+  Content-Type: application/json
+order: 18000

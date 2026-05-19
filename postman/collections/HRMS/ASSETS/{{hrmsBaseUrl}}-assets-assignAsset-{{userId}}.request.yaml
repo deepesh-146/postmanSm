@@ -1,0 +1,14 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/assets/assignAsset/{{userId}}"
+url: "{{hrmsBaseUrl}}/assets/assignAsset/{{userId}}"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"assetId\": \"341afd56-544c-44fd-9267-0c9bcdab6656\",\r
+
+    \  \"employeeId\": \"{{userId}}\"\r
+
+    }\r\n"
+order: 8000

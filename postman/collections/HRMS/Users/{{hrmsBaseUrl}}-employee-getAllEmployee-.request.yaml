@@ -1,0 +1,40 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/employee/getAllEmployee/"
+url: "{{hrmsBaseUrl}}/employee/allEmployees/getAllEmployees?empId=2b6fdeec-b8ca-48ad-8b12-d984f8eb38eb&officeId=all&fields=id%2CprofileImage%2CemployeeCode%2Coffice.name%2Cdepartment.name%2CofficialMobileNumber%2CofficialMail%2Cgender%2CaccountActive%2Cemp_salarydetails.approvalStatus%2CpayrollLock%2CfirstName%2ClastName&sortBy=firstName&sortOrder=ASC&page=1&size=10"
+method: GET
+queryParams:
+  - key: empId
+    value: 2b6fdeec-b8ca-48ad-8b12-d984f8eb38eb
+  - key: officeId
+    value: all
+  - key: fields
+    value: id%2CprofileImage%2CemployeeCode%2Coffice.name%2Cdepartment.name%2CofficialMobileNumber%2CofficialMail%2Cgender%2CaccountActive%2Cemp_salarydetails.approvalStatus%2CpayrollLock%2CfirstName%2ClastName
+  - key: sortBy
+    value: firstName
+  - key: sortOrder
+    value: ASC
+  - key: page
+    value: "1"
+  - key: size
+    value: "10"
+  - key: ""
+    value: 6ac58035-a2e0-4767-bb6b-4a9e706f3830
+    disabled: true
+  - key: status
+    value: "true"
+    disabled: true
+  - key: orderBy
+    value: joiningDate
+    disabled: true
+  - key: managerId
+    value: 6aff9788-6890-432f-a26a-ae80928d3fe1
+    disabled: true
+  - key: isApproved
+    value: "1"
+    disabled: true
+auth:
+  type: bearer
+  credentials:
+    token: "{{clientToken}}"
+examples: ./.resources/{{hrmsBaseUrl}}-employee-getAllEmployee-.resources/examples
+order: 16000

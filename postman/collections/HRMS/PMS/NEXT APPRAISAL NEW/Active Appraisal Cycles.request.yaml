@@ -1,0 +1,25 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/appraisal/cycle/:cycleId/employee/kras"
+method: GET
+pathVariables:
+  cycleId: ce3fdd1e-9604-4318-b82a-ece797e09880
+body:
+  type: text
+  content: "{\r
+
+    \    \"AppraisalCycleId\": \"067614c5-9b30-4a6d-853a-aff64f984ec9\",\r
+
+    \    \"answers\": [\r
+
+    \        {\r
+
+    \            \"questionId\": \"d2231397-88fe-4496-976a-65f8959ec913\",\r
+
+    \            \"rating\": 4\r
+
+    \        }\r
+
+    \    ]\r
+
+    }"
+order: 2000

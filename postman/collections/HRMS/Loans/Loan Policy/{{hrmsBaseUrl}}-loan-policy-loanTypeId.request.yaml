@@ -1,0 +1,70 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/loan-policy/:loanTypeId"
+url: "{{hrmsBaseUrl}}/loan-policy/:loanTypeId"
+method: POST
+pathVariables:
+  loanTypeId: d96b3650-2af9-472c-90dc-074b0d755a2c
+body:
+  type: json
+  content: "{\r
+
+    \    \"isActive\": true,\r
+
+    \    \"allowedEmployeeTypes\": [\r
+
+    \        \"Full-timec\",\r
+
+    \        \"Full-time\",\r
+
+    \        \"Part-time\"\r
+
+    \    ],\r
+
+    \    \"minServiceMonths\": 6,\r
+
+    \    \"minSalary\": 25000,\r
+
+    \    \"maxActiveLoansAllowed\": 2,\r
+
+    \    \"maxLoanAmount\": 500000,\r
+
+    \    \"loanAmountCalculationType\": \"Multiple of Salary\",\r
+
+    \    \"multiplierOrPercentage\": 3,\r
+
+    \    \"interestRate\": 8.5,\r
+
+    \    \"interestType\": \"Reducing Balance\",\r
+
+    \    \"maxEmiPercentOfSalary\": 30,\r
+
+    \    \"minTenureMonths\": 6,\r
+
+    \    \"maxTenureMonths\": 36,\r
+
+    \    \"gracePeriodMonths\": 1,\r
+
+    \    \"prepaymentAllowed\": true,\r
+
+    \    \"prepaymentPenaltyPercent\": 2,\r
+
+    \    \"requiredDocuments\": [\r
+
+    \        \"ID Proof\",\r
+
+    \        \"Salary Slip\"\r
+
+    \    ],\r
+
+    \    \"adjustInFullAndFinal\": true,\r
+
+    \    \"recoverDuringNotice\": true,\r
+
+    \    \"convertToExternalLoan\": false,\r
+
+    \    \"intrestWaver\": false,\r
+
+    \    \"emiCalculationMethod\": \"\"\r
+
+    }"
+order: 1000

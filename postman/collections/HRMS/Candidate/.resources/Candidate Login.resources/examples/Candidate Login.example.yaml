@@ -1,0 +1,73 @@
+$kind: http-example
+request:
+  url: "{{hrmsBaseUrl}}/candidate/login"
+  method: POST
+  body:
+    type: json
+    content: "{\r
+
+      \    \"candidateEmail\": \"sanatmishra29@gmail.com\",\r
+
+      \    \"password\": \"Admin@321\",\r
+
+      \    \"ipAddress\": \"127.0.0.1\"\r
+
+      }"
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "1145"
+    ETag: W/"479-d7SP02lB9ZQrZDqp0fpn7BtemHM"
+    Date: Wed, 09 Oct 2024 17:27:08 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "status": {
+              "success": true,
+              "code": 200,
+              "message": "Candidate Logged In",
+              "failure": false
+          },
+          "data": {
+              "candidate": {
+                  "id": "6979e151-2542-445c-88bd-fdc2248a8da3",
+                  "firstName": "Sanat",
+                  "lastName": "Kumar",
+                  "mobile": "9801345259",
+                  "email": "sanatmishra29@gmail.com",
+                  "address": "412, Sector 9",
+                  "gender": null,
+                  "dateOfBirth": null,
+                  "city": "Panchkula",
+                  "state": "Haryana",
+                  "country": "India",
+                  "password": "$2a$10$55Xtxi1DczSgfP25axh.ouu8QTjdZiQgypxES23D2amLin1cqQE8G",
+                  "education": "B.Tech CSE",
+                  "profession": "iCeipts",
+                  "skills": "JAVA, NODE, Flutter, PHP",
+                  "idcard": "Aadhar",
+                  "picture": "NA",
+                  "otp": null,
+                  "otpExpires": "2024-10-09T17:30:55.000Z",
+                  "isActive": true,
+                  "isVerified": true,
+                  "userType": "CANDIDATE",
+                  "mobileotp": "434126",
+                  "emailotp": "053017",
+                  "isDeleted": false,
+                  "createdAt": "2024-10-09T17:25:55.000Z",
+                  "updatedAt": "2024-10-09T17:26:55.000Z"
+              },
+              "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaXJzdE5hbWUiOiJTYW5hdCIsImlkIjoiNjk3OWUxNTEtMjU0Mi00NDVjLTg4YmQtZmRjMjI0OGE4ZGEzIiwiaWF0IjoxNzI4NDk0ODI4LCJleHAiOjE3NjAwMzA4MjgsImF1ZCI6IlNhbmF0In0.j0Lc76txINKE9_dfZU8WY3ZDVfgPitMJLGcTRrlPtTs",
+              "refreshToken": "a881a1f5e81e072d949829ce8bf41d848866bd5a7601cc1639fb977c7f5315bbd0abd4351e04ee64"
+          }
+      }
+order: 1000

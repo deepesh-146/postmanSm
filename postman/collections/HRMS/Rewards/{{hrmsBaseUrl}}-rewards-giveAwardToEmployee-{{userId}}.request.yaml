@@ -1,0 +1,17 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/rewards/giveAwardToEmployee/{{userId}}"
+url: "{{hrmsBaseUrl}}/rewards/giveAwardToEmployee/{{userId}}"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"employeeMainId\": \"{{userId}}\",\r
+
+    \    \"awardId\": \"179d6903-e3d0-4c0b-9baf-7f8893deba95\",\r
+
+    \    \"description\": \"pp1\"\r
+
+    }"
+examples: ./.resources/{{hrmsBaseUrl}}-rewards-giveAwardToEmployee-{{userId}}.resources/examples
+order: 25000

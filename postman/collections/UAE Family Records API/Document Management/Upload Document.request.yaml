@@ -1,0 +1,23 @@
+$kind: http-request
+url: "{{base_url}}/api/family/documents/upload"
+method: POST
+body:
+  type: formdata
+  content:
+    - type: file
+      key: document
+      src:
+        - ""
+    - type: text
+      key: familyMemberId
+      value: "1"
+    - type: text
+      key: documentType
+      value: PASSPORT
+    - type: text
+      key: expiryDate
+      value: 2028-05-15
+    - type: text
+      key: description
+      value: Updated passport copy
+order: 1000

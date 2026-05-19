@@ -1,0 +1,32 @@
+$kind: http-example
+request:
+  url: "{{hrmsBaseUrl}}/job_offer/accept/:jobApplicationId/:jobOfferId"
+  method: PATCH
+  pathVariables:
+    jobApplicationId: 4c4053a9-75c4-420d-b918-b71622a1ed16
+    jobOfferId: a2ece94b-798f-4d72-b399-8edbf164b6a3
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "81"
+    ETag: W/"51-CMc5NlV+nY4DSBFfljGRCFlpST4"
+    Date: Wed, 09 Oct 2024 18:01:34 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "status": {
+              "success": true,
+              "code": 200,
+              "message": "Offer Accepted",
+              "failure": false
+          }
+      }
+order: 1000

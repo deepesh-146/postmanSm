@@ -1,0 +1,6 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/salarycomponents/getSalarySlipsById/07b04a02-ffd1-42ad-9187-4013c63601b7"
+url: "{{hrmsBaseUrl}}/salarycomponents/getSalarySlipsById/07b04a02-ffd1-42ad-9187-4013c63601b7"
+method: GET
+examples: ./.resources/{{hrmsBaseUrl}}-salarycomponents-getSalarySlipsById-07b04a02-ffd.resources/examples
+order: 4000

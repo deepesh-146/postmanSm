@@ -1,0 +1,9 @@
+$kind: http-request
+description: Returns only failed push attempts for troubleshooting.
+url: "{{baseUrl}}/erp/push-logs?status=FAILED&page=0&size=20"
+method: GET
+queryParams:
+  status: FAILED
+  page: "0"
+  size: "20"
+order: 3000

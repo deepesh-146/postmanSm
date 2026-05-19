@@ -1,0 +1,38 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/timesheet/updateSheet/{{userId}}"
+url: "{{hrmsBaseUrl}}/timesheet/updateSheet/{{userId}}"
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"projectLogs\": {\r
+
+    \        \"3571dbd5-fb35-45dd-8ad2-3065ab57914b\": {\r
+
+    \            \"employeeId\": \"b4beed96-d0fd-451f-b763-22bb40bb9802\",\r
+
+    \            \"employeeMainId\": \"8f950586-d7d9-469b-947b-86141f0b302d\",\r
+
+    \            \"parentId\": \"{{userId}}\",\r
+
+    \            \"timelog\": [\r
+
+    \                {\r
+
+    \                    \"timesheetId\": \"2447930f-f661-47c1-b9fc-280935012e41\",\r
+
+    \                    \"date\": \"2025-03-01\",\r
+
+    \                    \"hoursWorked\": 3\r
+
+    \                }\r
+
+    \            ]\r
+
+    \        }\r
+
+    \    }\r
+
+    }"
+order: 7000

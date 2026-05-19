@@ -1,0 +1,5 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/settings/addConfiguration Copy"
+url: "{{hrmsBaseUrl}}/settings/getConfiguration"
+method: GET
+order: 2000

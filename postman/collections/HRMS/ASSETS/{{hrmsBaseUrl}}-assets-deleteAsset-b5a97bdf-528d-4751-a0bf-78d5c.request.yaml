@@ -1,0 +1,9 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/assets/deleteAsset/b5a97bdf-528d-4751-a0bf-78d5c748f468/{{userId}}"
+url: "{{hrmsBaseUrl}}/assets/deleteAsset/b5a97bdf-528d-4751-a0bf-78d5c748f468/{{userId}}"
+method: DELETE
+queryParams:
+  - key: search
+    value: ""
+    disabled: true
+order: 7000

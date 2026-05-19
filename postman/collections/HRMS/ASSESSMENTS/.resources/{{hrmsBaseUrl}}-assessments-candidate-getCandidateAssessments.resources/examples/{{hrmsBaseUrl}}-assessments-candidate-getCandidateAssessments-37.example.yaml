@@ -1,0 +1,68 @@
+$kind: http-example
+name: "{{hrmsBaseUrl}}/assessments/candidate/getCandidateAssessments/37968f2f-129f-4d05-9f9b-5f93f55bb2b6"
+request:
+  url: "{{hrmsBaseUrl}}/assessments/candidate/getCandidateAssessments/37968f2f-129f-4d05-9f9b-5f93f55bb2b6"
+  method: GET
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "1367"
+    ETag: W/"557-y58HiaBhCUh7xdpPgm5WXuICkHo"
+    Date: Mon, 30 Jun 2025 16:58:07 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "success": true,
+          "status": 200,
+          "data": [
+              {
+                  "id": "82c6627e-ba96-4398-9acf-b06945a0a12a",
+                  "title": "Backend Development Assessment1",
+                  "category": "TECHNICAL_SKILLS",
+                  "description": "Evaluate Node.js and API skills",
+                  "duration": 60,
+                  "difficulty": "Intermediate",
+                  "instructions": "Attempt all questions. Time-bound test.",
+                  "createdAt": "2025-06-30T16:58:00.000Z",
+                  "updatedAt": "2025-06-30T16:58:00.000Z",
+                  "organizationId": "891bb2ae-588c-4518-953e-1e367e3a23df",
+                  "officeId": "8e2f4467-dff5-4717-932f-bcbc9431f5dc",
+                  "assessment_submission": null
+              },
+              {
+                  "id": "f8c82a2d-3ea9-428e-af31-e47690128052",
+                  "title": "Backend Development Assessment",
+                  "category": "TECHNICAL_SKILLS",
+                  "description": "Evaluate Node.js and API skills",
+                  "duration": 60,
+                  "difficulty": "Intermediate",
+                  "instructions": "Attempt all questions. Time-bound test.",
+                  "createdAt": "2025-06-30T12:27:27.000Z",
+                  "updatedAt": "2025-06-30T12:27:27.000Z",
+                  "organizationId": "891bb2ae-588c-4518-953e-1e367e3a23df",
+                  "officeId": "8e2f4467-dff5-4717-932f-bcbc9431f5dc",
+                  "assessment_submission": {
+                      "id": "08ac9878-b6ae-4da0-b8a4-9b27ee3a0b03",
+                      "status": "SUBMITTED",
+                      "startedAt": "2025-06-30T15:43:08.000Z",
+                      "submittedAt": "2025-06-30T16:50:09.000Z",
+                      "feedback": null,
+                      "score": null,
+                      "remarks": null,
+                      "createdAt": "2025-06-30T15:43:08.000Z",
+                      "updatedAt": "2025-06-30T16:50:09.000Z",
+                      "assessmentId": "f8c82a2d-3ea9-428e-af31-e47690128052",
+                      "newcandidateId": "37968f2f-129f-4d05-9f9b-5f93f55bb2b6"
+                  }
+              }
+          ]
+      }
+order: 1000

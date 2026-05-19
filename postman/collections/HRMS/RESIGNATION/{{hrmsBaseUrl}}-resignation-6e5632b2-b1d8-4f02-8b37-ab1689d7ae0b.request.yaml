@@ -1,0 +1,18 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/resignation/6e5632b2-b1d8-4f02-8b37-ab1689d7ae0b/approve"
+url: "{{hrmsBaseUrl}}/resignation/6e5632b2-b1d8-4f02-8b37-ab1689d7ae0b/approve"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"empBody\": {\r
+
+    \        \"status\": \"accepted\",\r
+
+    \        \"approverId\": \"{{userId}}\"\r
+
+    \    }\r
+
+    }"
+order: 4000

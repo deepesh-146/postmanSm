@@ -1,0 +1,35 @@
+$kind: http-example
+request:
+  url: "{{baseUrl}}/mis/training-analytics?dateFrom=2025-01-01&dateTo=2026-03-13"
+  method: GET
+  headers:
+    Content-Type: application/json
+    x-organization-id: "{{organizationId}}"
+  queryParams:
+    dateFrom: 2025-01-01
+    dateTo: 2026-03-13
+response:
+  statusCode: 200
+  statusText: OK
+  body:
+    type: text
+    content: |-
+      {
+        "success": true,
+        "status": 200,
+        "message": "Training analytics retrieved successfully",
+        "data": {
+          "summary": {
+            "total_programs": 12,
+            "total_assignments": 450,
+            "completed": 326,
+            "in_progress": 85,
+            "completion_rate": 72.44
+          },
+          "departmentTraining": [
+            { "department": "Engineering", "assignments": 120, "completed": 98, "completion_rate": 81.67 },
+            { "department": "Sales", "assignments": 80, "completed": 52, "completion_rate": 65.00 }
+          ]
+        }
+      }
+order: 1000

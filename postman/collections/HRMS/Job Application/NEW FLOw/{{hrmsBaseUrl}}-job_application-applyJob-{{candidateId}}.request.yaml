@@ -1,0 +1,13 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/job_application/applyJob/{{candidateId}}"
+url: "{{hrmsBaseUrl}}/job_application/applyJob/{{candidateId}}"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"jobId\": \"f6cca240-f2ca-431c-81bc-3f1adbbb999a\"\r
+
+    }\r\n"
+examples: ./.resources/{{hrmsBaseUrl}}-job_application-applyJob-{{candidateId}}.resources/examples
+order: 1000

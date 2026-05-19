@@ -1,0 +1,60 @@
+$kind: http-example
+request:
+  url: "{{hrmsBaseUrl}}/onboarding/:onboardingId"
+  method: GET
+  pathVariables:
+    onboardingId: f778b358-2db2-4561-9c0b-dc1eda013258
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "1155"
+    ETag: W/"483-6vkm7b3iPfA2vl3N1WENvMZVS8A"
+    Date: Mon, 14 Oct 2024 17:16:59 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "status": {
+              "success": true,
+              "code": 200,
+              "message": "Onboarding Data Present",
+              "failure": false
+          },
+          "data": {
+              "id": "f778b358-2db2-4561-9c0b-dc1eda013258",
+              "jobId": "cb5d4bf6-a1a3-42a5-8065-183796fd6c76",
+              "jobAppId": "4c4053a9-75c4-420d-b918-b71622a1ed16",
+              "candidateId": "6979e151-2542-445c-88bd-fdc2248a8da3",
+              "recruiterId": "903bd690-61f3-43db-9edd-d38d531c1c67",
+              "jobOfferId": "a2ece94b-798f-4d72-b399-8edbf164b6a3",
+              "onboardingHr": "05109fb2-0f20-4c69-bbbf-f46203b01d54",
+              "tempPass": null,
+              "accountActive": true,
+              "password": "$2a$10$tIunyC2ekyYVMU2GDhEaXe0HAhmpSNHUqDhHzhMGfwYcjBHJM.N56",
+              "onboardingDate": "2024-10-20T00:00:00.000Z",
+              "companyVideoSeen": true,
+              "tutorialVideoSeen": true,
+              "hrVideoSeen": true,
+              "currentStep": 3,
+              "stepLeft": 0,
+              "totalStep": 3,
+              "stepIdsAssignedCompVideo": "a19a390f-3ec8-434f-846f-f8d13c554e8e",
+              "stepIdsValueCompVideo": "Completed",
+              "stepIdsAssignedTutVideo": "79929a35-7b08-45e5-a835-2aaa455fb81b",
+              "stepIdsValueTutVideo": "Completed",
+              "stepIdsAssignedHrVideo": "2ea5dd73-ceaa-402f-af76-db9ef3bf96d7",
+              "stepIdsValueHrVideo": "Completed",
+              "onboardingStatus": "COMPANY_VIDEO",
+              "createdAt": "2024-10-10T18:48:24.000Z",
+              "updatedAt": "2024-10-14T17:11:41.000Z",
+              "jobApplicationId": null
+          }
+      }
+order: 1000

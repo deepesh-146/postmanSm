@@ -1,0 +1,7 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/leave/employee/:employeeId"
+method: GET
+pathVariables:
+  employeeId: "{{userId}}"
+examples: ./.resources/Get Leave For Employee.resources/examples
+order: 9000

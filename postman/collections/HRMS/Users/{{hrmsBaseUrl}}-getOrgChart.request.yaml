@@ -1,0 +1,36 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/getOrgChart"
+url: "{{hrmsBaseUrl}}/getOrgChart"
+method: GET
+scripts:
+  - type: afterResponse
+    code: "let response = pm.response.json();\r
+
+      \r
+
+      if (response.status.success) {\r
+
+      \    let userId = response.data.loginData.employee.id;\r
+
+      \    let clientToken = response.data.accessToken;\r
+
+      \r
+
+      \    pm.environment.set(\"userId\", userId);\r
+
+      \    pm.environment.set(\"clientToken\", clientToken);\r
+
+      \r
+
+      \    console.log(\"User ID:\", userId);\r
+
+      \    console.log(\"Client Token:\", clientToken);\r
+
+      } else {\r
+
+      \    console.log(\"Request failed, status:\", response.status.message);\r
+
+      }\r\n"
+    language: text/javascript
+examples: ./.resources/{{hrmsBaseUrl}}-getOrgChart.resources/examples
+order: 12000

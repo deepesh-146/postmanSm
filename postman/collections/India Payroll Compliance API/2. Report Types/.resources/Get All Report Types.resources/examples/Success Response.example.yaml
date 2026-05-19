@@ -1,0 +1,36 @@
+$kind: http-example
+request:
+  url: "{{hrmsBaseUrl}}/api/compliance/reports"
+  method: GET
+response:
+  statusCode: 200
+  statusText: OK
+  body:
+    type: json
+    content: |-
+      {
+        "success": true,
+        "data": {
+          "reports": [
+            {
+              "reportType": "PF_CHALLAN",
+              "reportName": "PF Challan (ECR)",
+              "description": "Monthly PF challan in ECR format for EPFO filing",
+              "category": "PF",
+              "supportedModes": ["SINGLE_CHALLAN", "MULTIPLE_CHALLAN"],
+              "splitByOptions": ["NONE", "PF_CODE", "BRANCH", "OFFICE"],
+              "isActive": true
+            },
+            {
+              "reportType": "ESIC_CHALLAN",
+              "reportName": "ESIC Challan",
+              "description": "Monthly ESI contribution challan",
+              "category": "ESI",
+              "supportedModes": ["SINGLE_CHALLAN", "MULTIPLE_CHALLAN"],
+              "splitByOptions": ["NONE", "ESI_CODE", "BRANCH"],
+              "isActive": true
+            }
+          ]
+        }
+      }
+order: 1000

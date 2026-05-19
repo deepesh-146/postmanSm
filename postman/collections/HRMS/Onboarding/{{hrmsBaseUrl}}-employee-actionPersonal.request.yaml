@@ -1,0 +1,19 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/employee/actionPersonal"
+url: "{{hrmsBaseUrl}}/employee/actionPersonal"
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"source\": \"Verified by Call\",\r
+
+    \    \"action\": \"ACCEPTED\",\r
+
+    \    \"comments\": \"NO comments\",\r
+
+    \    \"personalId\": \"4028e2ff-346e-4e36-905f-c3d8db17fd85\"\r
+
+    }"
+examples: ./.resources/{{hrmsBaseUrl}}-employee-actionPersonal.resources/examples
+order: 15000

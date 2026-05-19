@@ -1,0 +1,20 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/settings/addConfiguration Copy 2"
+url: https://api.docuseal.com/v1/forms
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"source_pdf\": \"https://www.adobe.com/support/products/enterprise/knowledgecenter/media/c4611_sample_explain.pdf\",\r
+
+    \    \"email\": \"a@ghmail.com\",\r
+
+    \    \"name\": \"Offer Letter Form\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: KRYqXxiZhHo76AVhX5udzYYdYYosGECbf8n3LjaNDJp
+order: 3000

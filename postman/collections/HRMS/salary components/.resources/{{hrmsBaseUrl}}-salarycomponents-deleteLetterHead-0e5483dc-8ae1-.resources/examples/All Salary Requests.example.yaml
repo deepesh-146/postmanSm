@@ -1,0 +1,53 @@
+$kind: http-example
+request:
+  url: "{{hrmsBaseUrl}}/payment/salary"
+  method: GET
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "676"
+    ETag: W/"2a4-kGmx413yKCAaZViYNbb+KMvlRp4"
+    Date: Mon, 14 Oct 2024 16:32:57 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "status": {
+              "success": true,
+              "code": 200,
+              "message": "Salary Request Found",
+              "failure": false
+          },
+          "data": [
+              {
+                  "id": "b4ccd5d4-f9db-4490-85ef-529c9a6675b3",
+                  "employeeId": "903bd690-61f3-43db-9edd-d38d531c1c67",
+                  "transactionId": null,
+                  "type": "SALARY",
+                  "claimsId": null,
+                  "salaryId": "df7f1b41-b059-4f9e-93e1-417678bddec7",
+                  "screenshot": null,
+                  "status": "CREATED",
+                  "settled": false,
+                  "amount": 265818,
+                  "bankAccountNum": "456456465465",
+                  "bankAccountName": "Indian Bank",
+                  "bankAccountIfsc": "SSDF5585555",
+                  "addedDate": "2024-10-14T11:02:53.000Z",
+                  "amountTransferDate": null,
+                  "transferBy": null,
+                  "requestNote": "Salary for October 2024",
+                  "notes": null,
+                  "createdAt": "2024-10-14T16:32:53.000Z",
+                  "updatedAt": "2024-10-14T16:32:53.000Z"
+              }
+          ]
+      }
+order: 1000

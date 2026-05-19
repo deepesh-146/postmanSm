@@ -1,0 +1,24 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/employee_loan/get-all-loan-types?size=10&page=1"
+url: "{{hrmsBaseUrl}}/employee_loan/get-all-loan-types?size=1&page=1&search=Salary Advance"
+method: GET
+queryParams:
+  size: "1"
+  page: "1"
+  search: Salary Advance
+body:
+  type: json
+  content: "{\r
+
+    \    \"loanType\": \"Personal Loan\",\r
+
+    \    \"loanTypeDescription\": \"Loan provided to employees for personal needs\",\r
+
+    \    \"loanTypeCode\": \"PL001\",\r
+
+    \    \"isActive\": true,\r
+
+    \    \"isDefault\": true\r
+
+    }"
+order: 2000

@@ -1,0 +1,20 @@
+$kind: http-request
+url: "{{base_url}}/api/family/allowances"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "employeeId": 123,
+      "familyMemberId": 1,
+      "allowanceType": "SPOUSE_ALLOWANCE",
+      "monthlyAmount": 2000.00,
+      "currency": "AED",
+      "effectiveDate": "2025-01-01",
+      "isActive": true,
+      "approvedBy": 789,
+      "notes": "Monthly spouse allowance as per UAE labor law"
+    }
+order: 1000

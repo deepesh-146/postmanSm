@@ -1,0 +1,15 @@
+$kind: http-request
+description: Employee can withdraw from SUBMITTED or ACKNOWLEDGED state only.
+url: "{{base_url}}/grievances/status"
+method: PATCH
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+        "grievanceId": "{{grievanceId}}",
+        "status": "WITHDRAWN",
+        "comment": "I no longer wish to pursue this complaint."
+    }
+order: 8000

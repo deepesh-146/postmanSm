@@ -1,0 +1,46 @@
+$kind: http-example
+request:
+  url: "{{hrmsBaseUrl}}/employee/updateHealthPlan/:employeeId"
+  method: PUT
+  pathVariables:
+    employeeId: 903bd690-61f3-43db-9edd-d38d531c1c67
+  body:
+    type: json
+    content: "{\r
+
+      \    \"planName\": \"Gold Plan\",\r
+
+      \    \"planAmount\": \"7500000\",\r
+
+      \    \"planUseAmount\": \"0\",\r
+
+      \    \"expDate\": \"2025-10-01T00:00:00.000Z\",\r
+
+      \    \"startDate\": \"2024-10-01T00:00:00.000Z\"   \r
+
+      }"
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "81"
+    ETag: W/"51-ojysAUspS239aSwoVEaxmftbf7Q"
+    Date: Mon, 14 Oct 2024 15:55:24 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "status": {
+              "success": true,
+              "code": 200,
+              "message": "Health Updated",
+              "failure": false
+          }
+      }
+order: 1000

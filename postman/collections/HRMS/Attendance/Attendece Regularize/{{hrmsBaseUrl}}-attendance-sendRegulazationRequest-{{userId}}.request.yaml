@@ -1,0 +1,26 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/attendance/sendRegulazationRequest/{{userId}}"
+url: "{{hrmsBaseUrl}}/attendance/sendRegulazationRequest/{{userId}}"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"reason\": \"Forgot to check in due to network issue\",\r
+
+    \    \"checkInTime\": \"2026-01-01T13:30:00\",\r
+
+    \    \"checkOutTime\": \"20256-01-01T22:00:00\",\r
+
+    \    \"status\": \"PENDING\",\r
+
+    \    \"empComment\": \"Was present in office, missed check-in due to app crash.\",\r
+
+    \    \"hrComment\": \"\",\r
+
+    \    \"userId\": \"{{userId}}\",\r
+
+    \    \"attendanceId\": \"ed59924d-082f-4c2c-b437-93bc9fb30c29\"\r
+
+    }"
+order: 1000

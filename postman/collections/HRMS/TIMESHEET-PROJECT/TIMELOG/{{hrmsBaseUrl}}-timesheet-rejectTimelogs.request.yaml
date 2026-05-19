@@ -1,0 +1,20 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/timesheet/rejectTimelogs"
+url: "{{hrmsBaseUrl}}/timesheet/rejectTimelogs"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"timelogIds\": [\r
+
+    \        \"0720254e-4935-4ce6-8a12-5db7737702e7\",\r
+
+    \        \"07a58929-5c38-4f2b-a5c6-fbfb819d3958\"\r
+
+    \    ],\r
+
+    \    \"remarks\": \"Work not completed according to requirements\"\r
+
+    }"
+order: 10000

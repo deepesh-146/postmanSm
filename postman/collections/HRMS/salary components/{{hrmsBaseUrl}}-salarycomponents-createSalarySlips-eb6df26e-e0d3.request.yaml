@@ -1,0 +1,115 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/salarycomponents/createSalarySlips/eb6df26e-e0d3-4d10-8714-873fef6e213c"
+url: "{{hrmsBaseUrl}}/salarycomponents/createSalarySlips/eb6df26e-e0d3-4d10-8714-873fef6e213c"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"salarySlipData\": {\r
+
+    \        \"postingDate\": \"2024-11-08 11:07:53\",\r
+
+    \        \"status\": \"active\",\r
+
+    \        \"company\": \"iceipts\",\r
+
+    \        \"letterheadId\": \"888e568f-ccef-41de-9375-0c99dd6661ba\",\r
+
+    \        \"leaveEncashAmountPerDay\": \"2000\",\r
+
+    \        \"payrollFrequency\": \"Monthly\",\r
+
+    \        \"startDate\":\"2024-11-08 11:07:53\",\r
+
+    \        \"endDate\":\"2024-11-08 11:07:53\",\r
+
+    \        \"paymentDays\":\"10\",\r
+
+    \        \"deductTaxForUnclaim\":true,\r
+
+    \        \"deductTaxForUnSubmitted\":true,\r
+
+    \        \"grossPay\":\"1000\",\r
+
+    \        \"grossPayCompanyCurrency\":\"2000\",\r
+
+    \        \"grossYearToDate\":\"1000\",\r
+
+    \        \"grossYearToDateCompanyCurrency\":\"1000\",\r
+
+    \        \"totalDeduction\": \"1000\",\r
+
+    \        \"totalDeductionCompanyCurrency\": \"1000\",\r
+
+    \        \"neyPay\": \"1000\",\r
+
+    \        \"neyPayCC\": \"1000\",\r
+
+    \        \"yeartodate\":\"1000\",\r
+
+    \        \"yeartodateCC\":\"1000\",\r
+
+    \        \"roundedTotal\":\"2000\",\r
+
+    \        \"roundedTotalCC\":\"2000\",\r
+
+    \        \"monthtodate\":\"2000\",\r
+
+    \        \"monthtodateCC\":\"2000\",\r
+
+    \        \"totalinwords\":\"1000\",\r
+
+    \        \"totalinwordsCC\":\"1000\",\r
+
+    \        \"journal\":\"12132\",\r
+
+    \        \"bankName\":\"sbi\",\r
+
+    \        \"accNo\": \"123112312\"\r
+
+    \    },\r
+
+    \    \"earning\": [\r
+
+    \        {\r
+
+    \            \"component\": \"iceitps\",\r
+
+    \            \"amount\": \"ABCD1234\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"component\": \"iceitps\",\r
+
+    \            \"amount\": \"ABCD1234\"\r
+
+    \        }\r
+
+    \    ],\r
+
+    \    \"deduction\": [\r
+
+    \        {\r
+
+    \            \"component\": \"iceitps\",\r
+
+    \            \"amount\": \"ABCD1234\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"component\": \"iceitps\",\r
+
+    \            \"amount\": \"ABCD1234\"\r
+
+    \        }\r
+
+    \    ]\r
+
+    }"
+examples: ./.resources/{{hrmsBaseUrl}}-salarycomponents-createSalarySlips-eb6df26e-e0d3.resources/examples
+order: 1000

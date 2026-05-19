@@ -1,0 +1,56 @@
+$kind: http-example
+request:
+  url: "{{hrmsBaseUrl}}/claims/employee/:employeeId"
+  method: GET
+  pathVariables:
+    employeeId: 903bd690-61f3-43db-9edd-d38d531c1c67
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "773"
+    ETag: W/"305-K9xjCS+Wa7ttWaid/n/Q9XBkstI"
+    Date: Mon, 14 Oct 2024 18:43:49 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "status": {
+              "success": true,
+              "code": 200,
+              "message": "Found Claim",
+              "failure": false
+          },
+          "data": [
+              {
+                  "id": "44d57429-b244-48dc-a55c-4eba826cde3f",
+                  "employeeId": "903bd690-61f3-43db-9edd-d38d531c1c67",
+                  "type": "2dffd90e-fc02-4875-9c5a-aad71a552799",
+                  "amount": 800,
+                  "attachmentLink": "https://morth.nic.in/sites/default/files/dd12-13_0.pdf",
+                  "managerId": "903bd690-61f3-43db-9edd-d38d531c1c67",
+                  "vendorName": "JIO",
+                  "receiptNumber": "5585855855",
+                  "empComment": "Jio",
+                  "submittedDate": "2024-10-14T12:59:58.000Z",
+                  "approved": true,
+                  "approvedBy": "903bd690-61f3-43db-9edd-d38d531c1c67",
+                  "approvedOn": "2024-10-14T13:01:12.000Z",
+                  "rejected": false,
+                  "rejectedBy": null,
+                  "rejectedOn": null,
+                  "withdrawn": false,
+                  "withdrawnDate": null,
+                  "comments": "OK",
+                  "createdAt": "2024-10-14T18:29:58.000Z",
+                  "updatedAt": "2024-10-14T18:31:12.000Z"
+              }
+          ]
+      }
+order: 1000

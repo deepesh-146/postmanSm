@@ -1,0 +1,3 @@
+$kind: collection
+description: Individual bonus operations - assign, view, update, mark as paid
+order: 1000

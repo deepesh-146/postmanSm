@@ -1,0 +1,66 @@
+$kind: http-example
+name: "{{hrmsBaseUrl}}/travels/getTravelRequestById/ec795140-94d5-49e7-96a9-f6a4a60ea681"
+request:
+  url: "{{hrmsBaseUrl}}/travels/getTravelRequestById/ec795140-94d5-49e7-96a9-f6a4a60ea681"
+  method: GET
+  body:
+    type: json
+    content: "{\r
+
+      \  \"travelPurpose\": \"Client meeting and site inspection\",\r
+
+      \  \"destination\": \"Mumbai\",\r
+
+      \  \"fromDate\": \"2025-05-20\",\r
+
+      \  \"toDate\": \"2025-05-23\",\r
+
+      \  \"modeOfTravel\": \"Flight\",\r
+
+      \  \"estimatedCost\": 18000,\r
+
+      \  \"advanceRequired\": true,\r
+
+      \  \"description\": \"Visit client office and assess project site condition\"\r
+
+      }\r\n"
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "566"
+    ETag: W/"236-iDp9vagNjufg60RiWBovm3SDr60"
+    Date: Thu, 08 May 2025 20:53:39 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "success": true,
+          "status": 200,
+          "message": "Travel request fetched successfully.",
+          "data": {
+              "id": "ec795140-94d5-49e7-96a9-f6a4a60ea681",
+              "travelPurpose": "Client meeting and site inspection",
+              "destination": "Mumbai11",
+              "fromDate": "2025-05-20T00:00:00.000Z",
+              "toDate": "2025-05-23T00:00:00.000Z",
+              "modeOfTravel": "Flight",
+              "estimatedCost": 18000,
+              "advanceRequired": true,
+              "description": "Visit client office and assess project site condition",
+              "status": "PENDING",
+              "adminComments": null,
+              "employee_main": {
+                  "id": "032d7afc-0481-474c-9e51-4d8bf7141807",
+                  "firstName": "demoadmin",
+                  "lastName": "Test"
+              }
+          }
+      }
+order: 1000

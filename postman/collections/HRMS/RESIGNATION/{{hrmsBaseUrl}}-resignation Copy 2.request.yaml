@@ -1,0 +1,15 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/resignation Copy 2"
+url: "{{hrmsBaseUrl}}/resignation/getAllResignation/{{userId}}?size=5&page=1&userId=ba79d849-1da8-4341-bdca-79f606e420c4"
+method: GET
+queryParams:
+  - key: size
+    value: "5"
+  - key: page
+    value: "1"
+  - key: userId
+    value: ba79d849-1da8-4341-bdca-79f606e420c4
+  - key: status
+    value: rejected
+    disabled: true
+order: 3000

@@ -1,0 +1,15 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/rewards/admin/actionOnRewardRequest/{{userId}}"
+url: "{{hrmsBaseUrl}}/rewards/admin/actionOnRewardRequest/{{userId}}"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"status\":\"ACCEPTED\",\r
+
+    \    \"requestId\":\"bda5da2b-6931-47f7-99a9-0e85da00ed5b\"\r
+
+    }"
+examples: ./.resources/{{hrmsBaseUrl}}-rewards-admin-actionOnRewardRequest-{{userId}}.resources/examples
+order: 33000

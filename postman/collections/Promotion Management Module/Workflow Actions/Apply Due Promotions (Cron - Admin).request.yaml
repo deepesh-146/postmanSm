@@ -1,0 +1,15 @@
+$kind: http-request
+name: Apply Due Promotions (Cron / Admin)
+description: |-
+  Trigger the cron job to apply all due promotions.
+
+  Finds all promotions where:
+  - status = APPROVED
+  - appliedAt = null
+  - effectiveDate <= today
+
+  Applies each one in its own transaction.
+url: "{{base_url}}/promotions/apply-due"
+method: POST
+examples: ./.resources/Apply Due Promotions (Cron - Admin).resources/examples
+order: 4000

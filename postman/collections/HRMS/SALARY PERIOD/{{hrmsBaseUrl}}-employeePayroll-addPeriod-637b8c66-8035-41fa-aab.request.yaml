@@ -1,0 +1,20 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/employeePayroll/addPeriod/637b8c66-8035-41fa-aabd-a75b88b545d4"
+url: "{{hrmsBaseUrl}}/employeePayroll/addPeriod/637b8c66-8035-41fa-aabd-a75b88b545d4"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"name\": \"SHIV\",\r
+
+    \    \"companyName\": \"iceipts\",\r
+
+    \    \"startDate\": \"2024-10-01\",\r
+
+    \    \"endDate\": \"2024-10-10\",\r
+
+    \    \"userId\": \"637b8c66-8035-41fa-aabd-a75b88b545d4\"\r
+
+    }"
+order: 1000

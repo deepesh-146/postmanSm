@@ -1,0 +1,17 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/candidate/validateOtp/"
+url: "{{hrmsBaseUrl}}/candidate/validateOtp/"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"otp\": \"1234\",\r
+
+    \    \"candidateData\": \"abcfg@gmail.com\",\r
+
+    \    \"validateType\": \"email\"\r
+
+    }"
+examples: ./.resources/{{hrmsBaseUrl}}-candidate-validateOtp-.resources/examples
+order: 11000

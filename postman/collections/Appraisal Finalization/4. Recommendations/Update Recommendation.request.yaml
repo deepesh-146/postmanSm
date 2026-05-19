@@ -1,0 +1,16 @@
+$kind: http-request
+description: Update recommendation details. Cannot update if status is IMPLEMENTED.
+url: "{{baseUrl}}/recommendations/{{recommendationId}}"
+method: PUT
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+        "type": "INCREMENT",
+        "details": "Updated: 15% increment recommended based on calibrated score",
+        "priority": "MEDIUM",
+        "pipPlanId": null
+    }
+order: 3000

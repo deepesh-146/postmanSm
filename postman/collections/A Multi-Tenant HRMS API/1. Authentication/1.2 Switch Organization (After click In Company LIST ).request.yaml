@@ -1,0 +1,33 @@
+$kind: http-request
+description: |-
+  Switch to a specific organization. Required before accessing any data.
+
+  Use organizationId from login response.
+url: "{{hrmsBaseUrl}}/organizations/auth/switch-organization"
+method: POST
+headers:
+  Content-Type: application/json
+  Authorization: Bearer {{tenantToken}}
+body:
+  type: text
+  content: |-
+    {
+      "organizationId": "{{organizationId}}"
+    }
+auth:
+  type: bearer
+  credentials:
+    token: "{{tenantToken}}"
+scripts:
+  - type: afterResponse
+    code: |-
+      if (pm.response.code === 200) {
+          const response = pm.response.json();
+          if (response.data && response.data.accessToken) {
+              pm.environment.set('orgToken', response.data.accessToken);
+              pm.environment.set('organizationId', response.data.organization.id);
+              console.log('✅ Organization token saved');
+          }
+      }
+    language: text/javascript
+order: 5000

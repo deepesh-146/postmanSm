@@ -1,0 +1,7 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/training_module/groups/getById/8fb0a8aa-73e9-49fd-a42c-bb23eb42d2c8"
+url: "{{hrmsBaseUrl}}/training_module/groups/getById/:groupId"
+method: GET
+pathVariables:
+  groupId: 8fb0a8aa-73e9-49fd-a42c-bb23eb42d2c8
+order: 3000

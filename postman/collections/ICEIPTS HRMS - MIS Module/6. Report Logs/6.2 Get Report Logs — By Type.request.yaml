@@ -1,0 +1,12 @@
+$kind: http-request
+description: Filter report logs by type — view all payroll report executions.
+url: "{{baseUrl}}/mis/report-logs?reportType=PAYROLL_SUMMARY&page=1&size=10"
+method: GET
+headers:
+  Content-Type: application/json
+  x-organization-id: "{{organizationId}}"
+queryParams:
+  reportType: PAYROLL_SUMMARY
+  page: "1"
+  size: "10"
+order: 2000

@@ -1,0 +1,9 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/attendance/getWeeklyOffList?page=1&size=5"
+url: "{{hrmsBaseUrl}}/attendance/getWeeklyOffList?page=1&size=5"
+method: GET
+queryParams:
+  page: "1"
+  size: "5"
+examples: ./.resources/{{hrmsBaseUrl}}-attendance-getWeeklyOffList-page=1&size=5.resources/examples
+order: 10000

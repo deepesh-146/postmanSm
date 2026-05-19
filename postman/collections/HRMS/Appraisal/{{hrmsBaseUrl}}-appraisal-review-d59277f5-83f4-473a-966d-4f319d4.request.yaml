@@ -1,0 +1,25 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/appraisal/review/d59277f5-83f4-473a-966d-4f319d46531f"
+url: "{{hrmsBaseUrl}}/appraisal/review/d59277f5-83f4-473a-966d-4f319d46531f"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+        "cycleId": "067614c5-9b30-4a6d-853a-aff64f984ec9",
+        "reviewData": [
+            {
+                "questionId": "1cd6c688-af36-4e60-8c50-58c7e24411d3",
+                "comment": "Hope you will do well next quarter!",
+                "rating": 3
+            },
+            {
+                "questionId": 102,
+                "comment": "Needs improvement in communication.",
+                "rating": 2
+            }
+        ]
+    }
+order: 15000

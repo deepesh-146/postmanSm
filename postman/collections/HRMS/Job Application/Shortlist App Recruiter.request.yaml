@@ -1,0 +1,7 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/job_application/recruiter/shortlist/:jobApplicationId"
+method: PATCH
+pathVariables:
+  jobApplicationId: 4c4053a9-75c4-420d-b918-b71622a1ed16
+examples: ./.resources/Shortlist App Recruiter.resources/examples
+order: 14000

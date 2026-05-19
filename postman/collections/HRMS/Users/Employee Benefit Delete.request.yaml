@@ -1,0 +1,15 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/employee/benefit/:employeeId"
+method: DELETE
+pathVariables:
+  employeeId: ""
+body:
+  type: json
+  content: "{\r
+
+    \    \"employeeId\": \"\",\r
+
+    \    \"benefitId\": \"\"   \r
+
+    }"
+order: 23000

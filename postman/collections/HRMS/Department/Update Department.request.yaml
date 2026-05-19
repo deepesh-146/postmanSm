@@ -1,0 +1,24 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/department/:departmentId"
+method: PUT
+pathVariables:
+  departmentId: 32e8b17d-29e8-4f8f-8078-8ec006e2766e
+body:
+  type: json
+  content: "{ \r
+
+    \    \"name\": \"Management\", \r
+
+    \    \"code\": \"MANAGEMENT1111\", \r
+
+    \    \"head\": \"903bd690-61f3-43db-9edd-d38d531c1c67\", \r
+
+    \    \"under\": \"null\", \r
+
+    \    \"inside\": \"null\",\r
+
+    \    \"headUser\": true\r
+
+    }"
+examples: ./.resources/Update Department.resources/examples
+order: 2000

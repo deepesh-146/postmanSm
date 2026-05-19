@@ -1,0 +1,56 @@
+$kind: http-example
+name: "{{hrmsBaseUrl}}/dashboard/employeedashboard/leaveBalance/{{userId}}"
+request:
+  url: "{{hrmsBaseUrl}}/dashboard/employeedashboard/leaveBalance/41a3c5bb-617e-4e40-938e-588e06c79c37"
+  method: GET
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "415"
+    ETag: W/"19f-+lnx1wo5uHGXzQbu1mkUIU08Pz0"
+    Date: Tue, 17 Jun 2025 05:51:41 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "success": true,
+          "status": 200,
+          "data": [
+              {
+                  "type": "Privilage Leave",
+                  "alloted": 10,
+                  "used": 0,
+                  "remaining": 10,
+                  "percentageRemaining": "100.00%"
+              },
+              {
+                  "type": "Sick Leave",
+                  "alloted": 10,
+                  "used": 4,
+                  "remaining": 6,
+                  "percentageRemaining": "60.00%"
+              },
+              {
+                  "type": "Compensatory Leave",
+                  "alloted": 10,
+                  "used": 0,
+                  "remaining": 10,
+                  "percentageRemaining": "100.00%"
+              },
+              {
+                  "type": "Casual Leave",
+                  "alloted": 10,
+                  "used": 0,
+                  "remaining": 10,
+                  "percentageRemaining": "100.00%"
+              }
+          ]
+      }
+order: 1000

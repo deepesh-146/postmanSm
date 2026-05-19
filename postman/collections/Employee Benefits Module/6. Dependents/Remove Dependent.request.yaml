@@ -1,0 +1,4 @@
+$kind: http-request
+url: "{{baseUrl}}/dependents/{{dependentId}}"
+method: DELETE
+order: 2000

@@ -1,0 +1,26 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/travels/getTravelPolicyById/640aabba-53b8-424e-b480-4de187e851a5"
+url: "{{hrmsBaseUrl}}/travels/getTravelPolicyById/640aabba-53b8-424e-b480-4de187e851a5"
+method: GET
+body:
+  type: json
+  content: "{\r
+
+    \  \"travelPurpose\": \"Client meeting and site inspection\",\r
+
+    \  \"destination\": \"Mumbai\",\r
+
+    \  \"fromDate\": \"2025-05-20\",\r
+
+    \  \"toDate\": \"2025-05-23\",\r
+
+    \  \"modeOfTravel\": \"Flight\",\r
+
+    \  \"estimatedCost\": 18000,\r
+
+    \  \"advanceRequired\": true,\r
+
+    \  \"description\": \"Visit client office and assess project site condition\"\r
+
+    }\r\n"
+order: 17000

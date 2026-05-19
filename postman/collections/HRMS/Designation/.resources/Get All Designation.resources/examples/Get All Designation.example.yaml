@@ -1,0 +1,40 @@
+$kind: http-example
+request:
+  url: "{{hrmsBaseUrl}}/designation/"
+  method: GET
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "314"
+    ETag: W/"13a-yhmSWcBE6alDfgZhDh1nujQF0og"
+    Date: Wed, 09 Oct 2024 15:44:19 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "status": {
+              "success": true,
+              "code": 200,
+              "message": "Designation List",
+              "failure": false
+          },
+          "data": [
+              {
+                  "id": "d10e48ed-e5f7-4821-9817-8a05d673eab4",
+                  "name": "CEO",
+                  "depId": "32e8b17d-29e8-4f8f-8078-8ec006e2766e",
+                  "code": "CEO-2222",
+                  "createdAt": "2024-10-09T15:43:52.000Z",
+                  "updatedAt": "2024-10-09T15:43:52.000Z",
+                  "departmentId": null
+              }
+          ]
+      }
+order: 1000

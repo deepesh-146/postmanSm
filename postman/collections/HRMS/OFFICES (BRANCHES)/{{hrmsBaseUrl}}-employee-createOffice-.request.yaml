@@ -1,0 +1,20 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/employee/createOffice/"
+url: "{{hrmsBaseUrl}}/employee/createOffice/"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"name\": \"Head Office\",\r
+
+    \    \"location\": \"123 Main Street, Downtown\",\r
+
+    \    \"isHeadOffice\": true\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{orgToken}}"
+order: 2000

@@ -1,0 +1,41 @@
+$kind: http-example
+request:
+  url: "{{hrmsBaseUrl}}/onboarding_step/:stepId"
+  method: GET
+  pathVariables:
+    stepId: a19a390f-3ec8-434f-846f-f8d13c554e8e
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "383"
+    ETag: W/"17f-oKkAGDPUf2+ZCks8qJg1Rb+U6qs"
+    Date: Thu, 10 Oct 2024 17:35:54 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "status": {
+              "success": true,
+              "code": 200,
+              "message": "Step Data Found",
+              "failure": false
+          },
+          "data": {
+              "id": "a19a390f-3ec8-434f-846f-f8d13c554e8e",
+              "stepName": "About HR Policy",
+              "stepType": "VIDEO",
+              "stepRelatedTo": "HR",
+              "stepLink": "https://www.youtube.com/watch?v=uEWfDKCI6s8",
+              "stepDecription": "Description about the HR",
+              "createdAt": "2024-10-10T17:32:18.000Z",
+              "updatedAt": "2024-10-10T17:32:18.000Z"
+          }
+      }
+order: 1000

@@ -1,0 +1,23 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/referrals/updateReferral/23700c79-2057-43bd-b97c-8dc9a2e07f1b"
+url: "{{hrmsBaseUrl}}/referrals/updateReferral/23700c79-2057-43bd-b97c-8dc9a2e07f1b"
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"name\": \"Mukesh\",\r
+
+    \    \"email\": \"mukesh@gmail.com\",\r
+
+    \    \"mobile\": \"857565858\",\r
+
+    \    \"dob\": \"1993-10-14\",\r
+
+    \    \"resume\": \"https://morth.nic.in/sites/default/files/dd12-13_0.pdf\",\r
+
+    \    \"comment\": \"Excellent\"\r
+
+    }"
+examples: ./.resources/{{hrmsBaseUrl}}-referrals-updateReferral-23700c79-2057-43bd-b97c.resources/examples
+order: 3000

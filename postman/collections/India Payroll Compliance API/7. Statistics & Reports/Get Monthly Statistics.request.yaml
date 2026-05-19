@@ -1,0 +1,13 @@
+$kind: http-request
+description: Get statistics for specific month and year.
+url: "{{hrmsBaseUrl}}/compliance/statistics?month=1&year=2026"
+method: GET
+headers:
+  Authorization: Bearer {{token}}
+queryParams:
+  - key: month
+    value: "1"
+    description: January
+  - key: year
+    value: "2026"
+order: 2000

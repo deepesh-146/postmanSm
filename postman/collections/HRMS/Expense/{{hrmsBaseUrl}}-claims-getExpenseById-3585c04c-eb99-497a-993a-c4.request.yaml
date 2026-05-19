@@ -1,0 +1,5 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/claims/getExpenseById/3585c04c-eb99-497a-993a-c4fc14563ca8"
+url: "{{hrmsBaseUrl}}/expense/getExpenseById/521296f0-3bd3-4e91-ab7b-6b95f3fe6d4e"
+method: GET
+order: 6000

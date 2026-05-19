@@ -1,0 +1,63 @@
+$kind: http-example
+name: "{{hrmsBaseUrl}}/dashboard/hrdashboard/recruitmentSnapshot/{{userId}}"
+request:
+  url: "{{hrmsBaseUrl}}/dashboard/hrdashboard/recruitmentSnapshot/{{userId}}"
+  method: GET
+  body:
+    type: formdata
+    content:
+      - type: file
+        key: upload
+        src:
+          - /C:/Users/mehta/Downloads/49a0ab01-22ed-46cb-aaea-07a87adcbdb7.jpg
+      - type: file
+        key: upload
+        src:
+          - /C:/Users/mehta/Downloads/49a0ab01-22ed-46cb-aaea-07a87adcbdb7.jpg
+      - type: file
+        key: upload
+        src:
+          - /C:/Users/mehta/Downloads/05734c98-2f92-4b6a-8430-1a73168f5eb9.jpg
+      - type: file
+        key: upload
+        src:
+          - /C:/Users/mehta/Downloads/b66c7f0a-5ce2-44e2-8e76-8809a4ec307a.jpg
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "314"
+    ETag: W/"13a-gNFfdZvBM327yMPsDOvJozMw1lI"
+    Date: Thu, 05 Jun 2025 17:57:19 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "success": true,
+          "status": 200,
+          "data": {
+              "openPositions": 2,
+              "applicationsThisMonth": 11,
+              "scheduledInterviews": 2,
+              "recruitmentPipeline": {
+                  "applicationReview": 1,
+                  "offerStage": 3
+              },
+              "todaysInterviews": [
+                  {
+                      "candidateName": "Deep Mehta",
+                      "date": "2025-06-05",
+                      "time": "10:00:00",
+                      "jobTitle": "Full Stack Developer",
+                      "jobCode": "JB-DCE7E4"
+                  }
+              ]
+          }
+      }
+order: 1000

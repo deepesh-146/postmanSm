@@ -1,0 +1,73 @@
+$kind: http-example
+name: "{{hrmsBaseUrl}}/rewards/myRewardClaims/{{userId}}?status=PENDING"
+request:
+  url: "{{hrmsBaseUrl}}/rewards/myRewardClaims/{{userId}}?status=PENDING"
+  method: GET
+  queryParams:
+    status: PENDING
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "999"
+    ETag: W/"3e7-G8tUYAVL4TWigOGvnU8KpLp9zms"
+    Date: Fri, 20 Dec 2024 14:13:27 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "success": true,
+          "status": 200,
+          "message": "data fetched successfully",
+          "data": [
+              {
+                  "id": "de10e18f-4763-455b-9f83-20ccdcbad661",
+                  "pointsRedeemed": 500,
+                  "status": "PENDING",
+                  "employee_main": {
+                      "id": "9b048ebe-ea22-4097-8a55-cf8dbef55bc4",
+                      "firstName": "Deepesh",
+                      "lastName": "Mehta"
+                  },
+                  "rewardcatelog": {
+                      "id": "48b9cd5a-968d-4d01-8a12-bb7f210337ce",
+                      "name": "R2",
+                      "description": "pp",
+                      "rewardType": "GIFT_CARD",
+                      "pointsRequired": 500,
+                      "quantityAvailable": 99,
+                      "validityStartDate": "2024-12-03T06:17:09.000Z",
+                      "validityEndDate": "2024-12-03T06:17:09.000Z",
+                      "status": "ACTIVE"
+                  }
+              },
+              {
+                  "id": "bda5da2b-6931-47f7-99a9-0e85da00ed5b",
+                  "pointsRedeemed": 500,
+                  "status": "ACCEPTED",
+                  "employee_main": {
+                      "id": "9b048ebe-ea22-4097-8a55-cf8dbef55bc4",
+                      "firstName": "Deepesh",
+                      "lastName": "Mehta"
+                  },
+                  "rewardcatelog": {
+                      "id": "48b9cd5a-968d-4d01-8a12-bb7f210337ce",
+                      "name": "R2",
+                      "description": "pp",
+                      "rewardType": "GIFT_CARD",
+                      "pointsRequired": 500,
+                      "quantityAvailable": 99,
+                      "validityStartDate": "2024-12-03T06:17:09.000Z",
+                      "validityEndDate": "2024-12-03T06:17:09.000Z",
+                      "status": "ACTIVE"
+                  }
+              }
+          ]
+      }
+order: 1000

@@ -1,0 +1,7 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/goals/getKpiById/:id"
+url: "{{hrmsBaseUrl}}/goals/getKpiById/:id"
+method: GET
+pathVariables:
+  id: "4"
+order: 3000

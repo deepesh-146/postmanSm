@@ -1,0 +1,31 @@
+$kind: http-example
+name: "{{hrmsBaseUrl}}/training_module/employee/quiz/:assignmentId"
+request:
+  url: "{{hrmsBaseUrl}}/training_module/employee/quiz/:assignmentId"
+  method: GET
+  pathVariables:
+    assignmentId: "20"
+response:
+  statusCode: 404
+  statusText: Not Found
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "532"
+    ETag: W/"214-7BSE5ZwaifDZEtD6RkoCWvIgcw8"
+    Date: Tue, 16 Dec 2025 06:08:08 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: text
+    content: |-
+      {
+          "success": false,
+          "status": 404,
+          "expose": true,
+          "error_message": "Training assignment not found or not assigned to employee",
+          "error_stack": "NotFoundError: Training assignment not found or not assigned to employee\n    at TrainingModuleService.getQuizForAssignment (E:\\Iceipts\\iceipts_hrms\\services\\training_module.service.js:2306:31)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at async getQuizForAssignment (E:\\Iceipts\\iceipts_hrms\\controllers\\training_module.controller.js:154:22)"
+      }
+order: 1000

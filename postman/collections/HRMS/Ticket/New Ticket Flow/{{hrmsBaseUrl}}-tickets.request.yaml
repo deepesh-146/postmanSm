@@ -1,0 +1,24 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/tickets"
+url: "{{hrmsBaseUrl}}/tickets"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"employeeId\": \"{{userId}}\",\r
+
+    \    \"subject\": \"Unable to access email\",\r
+
+    \    \"description\": \"Getting error when trying to login to company email\",\r
+
+    \    \"category\": \"IT Support\",\r
+
+    \    \"subCategory\": \"Email Issues\",\r
+
+    \    \"attachments\": \"uploadImage/2026-01-05T09:51:28.641Z-Full yt version-Thumbnail.jpg\",\r
+
+    \    \"priority\": \"HIGH\"\r
+
+    }"
+order: 1000

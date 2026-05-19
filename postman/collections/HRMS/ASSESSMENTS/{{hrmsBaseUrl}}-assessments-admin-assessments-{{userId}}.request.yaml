@@ -1,0 +1,74 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/assessments/admin/assessments/{{userId}}"
+url: "{{hrmsBaseUrl}}/assessments/admin/assessments/{{userId}}"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"title\": \"Backend Development Assessment1\",\r
+
+    \  \"category\": \"TECHNICAL_SKILLS\", //ENUM('TECHNICAL_SKILLS', 'PROBLEM_SOLVING', 'DESIGN_PRINCIPLES', 'SYSTEM_DESIGN', 'SOFT_SKILL'),\r
+
+    \  \"description\": \"Evaluate Node.js and API skills\",\r
+
+    \  \"duration\": 60,\r
+
+    \  \"difficulty\": \"Intermediate\", //ENUM('Beginner', 'Intermediate', 'Advanced'),\r
+
+    \  \"instructions\": \"Attempt all questions. Time-bound test.\",\r
+
+    \  \"questions\": [\r
+
+    \    {\r
+
+    \      \"type\": \"MULTIPLE_CHOICE\", //ENUM('MULTIPLE_CHOICE', 'CODING_CHALLENGE', 'ESSAY_QUESTION', 'DESIGN_CHALLENGE'),\r
+
+    \      \"title\": \"What is the output of 2 + '2' in JS?\",\r
+
+    \      \"points\": 5,\r
+
+    \      \"description\": \"Basic JS behavior\",\r
+
+    \      \"options\": [\r
+
+    \        { \"optionText\": \"4\", \"isCorrect\": false },\r
+
+    \        { \"optionText\": \"22\", \"isCorrect\": true },\r
+
+    \        { \"optionText\": \"NaN\", \"isCorrect\": false },\r
+
+    \        { \"optionText\": \"Error\", \"isCorrect\": false }\r
+
+    \      ]\r
+
+    \    },\r
+
+    \    {\r
+
+    \      \"type\": \"ESSAY_QUESTION\",\r
+
+    \      \"title\": \"Explain RESTful APIs.\",\r
+
+    \      \"points\": 10,\r
+
+    \      \"description\": \"Answer in 3-4 sentences.\"\r
+
+    \    },\r
+
+    \    {\r
+
+    \      \"type\": \"CODING_CHALLENGE\",\r
+
+    \      \"title\": \"Reverse a string\",\r
+
+    \      \"points\": 10,\r
+
+    \      \"description\": \"Write a function to reverse a string in JS.\"\r
+
+    \    }\r
+
+    \  ]\r
+
+    }\r\n"
+order: 1000

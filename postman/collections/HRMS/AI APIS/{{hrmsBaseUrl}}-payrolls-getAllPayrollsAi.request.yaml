@@ -1,0 +1,28 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/payrolls/getAllPayrollsAi"
+url: "{{hrmsBaseUrl}}/payrolls/getAllPayrollsAi?fromMonth=8&year=2025"
+method: GET
+queryParams:
+  - key: isTaxDeclaration
+    value: "true"
+    disabled: true
+  - key: fromMonth
+    value: "8"
+  - key: year
+    value: "2025"
+body:
+  type: text
+  content: "{\r
+
+    \    \"employeeId\": \"{{userId}}\",\r
+
+    \    \"month\": 8,\r
+
+    \    \"year\": 2025,\r
+
+    \    \"country\": \"UAE\",\r
+
+    \    \"financialYear\": \"2025-26\"\r
+
+    }"
+order: 2000

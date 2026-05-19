@@ -1,0 +1,17 @@
+$kind: http-request
+url: "{{baseUrl}}/appraisal-finalization/bands"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+        "bandName": "Meets Expectations",
+        "minScore": 2.5,
+        "maxScore": 3.49,
+        "colorCode": "#ffc107",
+        "sortOrder": 3,
+        "isActive": true
+    }
+order: 3000

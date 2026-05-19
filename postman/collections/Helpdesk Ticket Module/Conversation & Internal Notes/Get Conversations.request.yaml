@@ -1,0 +1,4 @@
+$kind: http-request
+url: "{{baseUrl}}/ticket/conversation/{{ticketId}}"
+method: GET
+order: 2000

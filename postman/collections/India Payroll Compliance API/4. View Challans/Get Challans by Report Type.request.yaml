@@ -1,0 +1,12 @@
+$kind: http-request
+description: Filter challans by report type and status.
+url: "{{hrmsBaseUrl}}/compliance/challans?reportType=PF_CHALLAN&status=GENERATED&page=1&limit=10"
+method: GET
+headers:
+  Authorization: Bearer {{token}}
+queryParams:
+  reportType: PF_CHALLAN
+  status: GENERATED
+  page: "1"
+  limit: "10"
+order: 3000

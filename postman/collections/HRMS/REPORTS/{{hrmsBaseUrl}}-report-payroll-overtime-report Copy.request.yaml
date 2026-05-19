@@ -1,0 +1,13 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/report/payroll/overtime-report Copy"
+url: "{{hrmsBaseUrl}}/report/payroll/salary-revision-history?page=1&size=10&search=LT"
+method: GET
+queryParams:
+  page: "1"
+  size: "10"
+  search: LT
+auth:
+  type: bearer
+  credentials:
+    token: "{{clientToken}}"
+order: 8000

@@ -1,0 +1,4 @@
+$kind: http-request
+url: "{{baseUrl}}/enrollment-periods/{{benefitId}}"
+method: GET
+order: 3000

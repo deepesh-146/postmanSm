@@ -1,0 +1,7 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/referrals/verification/:referralId"
+method: PATCH
+pathVariables:
+  referralId: 7d8e66bf-65b6-4ccc-a762-fa8c0fd0866e
+examples: ./.resources/Referral Status Verification.resources/examples
+order: 5000

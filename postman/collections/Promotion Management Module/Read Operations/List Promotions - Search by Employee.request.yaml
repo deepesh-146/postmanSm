@@ -1,0 +1,9 @@
+$kind: http-request
+description: Search promotions by employee firstName, lastName, or employeeCode.
+url: "{{base_url}}/promotions?page=1&size=10&search=john"
+method: GET
+queryParams:
+  page: "1"
+  size: "10"
+  search: john
+order: 5000

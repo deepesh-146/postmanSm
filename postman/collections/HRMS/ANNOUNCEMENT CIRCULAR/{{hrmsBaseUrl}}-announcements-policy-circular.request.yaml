@@ -1,0 +1,34 @@
+$kind: http-request
+name: "{{hrmsBaseUrl}}/announcements/policy-circular"
+url: "{{hrmsBaseUrl}}/announcements/policy-circular"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"title\": \"Employee Code of Conduct Policy\",\r
+
+    \    \"description\": \"This policy outlines the expected behavior and conduct standards for all employees. All employees must adhere to these guidelines to maintain a professional and respectful work environment.\",\r
+
+    \    \"effectiveDate\": \"2024-01-15T00:00:00.000Z\",\r
+
+    \    \"expiryDate\": \"2025-01-15T00:00:00.000Z\",\r
+
+    \    \"category\": \"HR Policies\",\r
+
+    \    \"document\": \"uploadImage/2025-12-08T11:26:46.277Z-Disptacher_Flow.png\",\r
+
+    \    \"createdById\": \"{{userId}}\",\r
+
+    \    \"markAsImportant\": true,\r
+
+    \    \"acknowledgementRequired\": false,\r
+
+    \    \"branchIds\": [\r
+
+    \        \"1e2ce115-37f6-4ec1-887f-2f8dc443ec81\"\r
+
+    \    ]\r
+
+    }"
+order: 1000

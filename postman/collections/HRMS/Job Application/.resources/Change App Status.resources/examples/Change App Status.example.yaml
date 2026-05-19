@@ -1,0 +1,32 @@
+$kind: http-example
+request:
+  url: "{{hrmsBaseUrl}}/job_application/updateStatus/:jobApplicationId/:status"
+  method: PATCH
+  pathVariables:
+    jobApplicationId: 4c4053a9-75c4-420d-b918-b71622a1ed16
+    status: INTERVIEW
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    X-Powered-By: Express
+    Vary: Origin
+    Access-Control-Allow-Credentials: "true"
+    Content-Type: application/json; charset=utf-8
+    Content-Length: "97"
+    ETag: W/"61-9mXmxnWDi0Yy9SI4dJK5bP9C5iU"
+    Date: Wed, 09 Oct 2024 17:56:44 GMT
+    Connection: keep-alive
+    Keep-Alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+          "status": {
+              "success": true,
+              "code": 200,
+              "message": "Job Application Status Updated",
+              "failure": false
+          }
+      }
+order: 1000

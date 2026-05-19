@@ -1,0 +1,6 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/ad_group/for-employee/:employeeId"
+method: GET
+pathVariables:
+  employeeId: 903bd690-61f3-43db-9edd-d38d531c1c67
+order: 14000

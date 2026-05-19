@@ -1,0 +1,17 @@
+$kind: http-request
+url: "{{hrmsBaseUrl}}/tickets/category/:categoryId"
+method: PATCH
+pathVariables:
+  categoryId: 2f93cc73-a41e-45a7-8b21-031d5fdc8ce4
+body:
+  type: json
+  content: "{\r
+
+    \    \"name\":\"HRA\",\r
+
+    \    \"description\":\"HRA API\",\r
+
+    \    \"priority\":\"1\"\r
+
+    }"
+order: 5000
