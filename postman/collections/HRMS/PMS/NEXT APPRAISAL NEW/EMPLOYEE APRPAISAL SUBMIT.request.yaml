@@ -3,7 +3,7 @@ url: "{{hrmsBaseUrl}}/appraisal/cycle/:cycleId/bulk-self-appraisal"
 method: POST
 queryParams:
   - key: cycleId
-    value: ""
+    value: null
     disabled: true
 pathVariables:
   cycleId: ce3fdd1e-9604-4318-b82a-ece797e09880

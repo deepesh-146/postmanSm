@@ -1,6 +1,6 @@
 $kind: collection
 auth:
-  - id: 7087e5a7-6c83-48f4-a199-d390780527cc
+  - id: 368c7a9a-e9d9-43b7-9654-c42e35b8833c
     type: bearer
     name: bearer auth
     credentials:

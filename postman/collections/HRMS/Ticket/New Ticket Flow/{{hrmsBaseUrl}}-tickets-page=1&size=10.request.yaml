@@ -4,7 +4,7 @@ url: "{{hrmsBaseUrl}}/tickets?page=1&size=10"
 method: GET
 queryParams:
   - key: search
-    value: ""
+    value: null
     disabled: true
     description: ticket number, category
   - key: page

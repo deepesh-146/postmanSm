@@ -1,6 +1,0 @@
-$kind: http-request
-name: "{{hrmsBaseUrl}}/attendance/getAllEmployeeAttanadenceReportInDetail/{{userId}}"
-url: "{{hrmsBaseUrl}}/attendance/getAllEmployeeAttanadenceReportInDetail/{{userId}}"
-method: GET
-examples: ./.resources/{{hrmsBaseUrl}}-attendance-getAllEmployeeAttanadenceReportInDeta.resources/examples
-order: 20000

@@ -7,6 +7,6 @@ queryParams:
     value: "3"
     disabled: true
   - key: status
-    value: ""
+    value: null
     disabled: true
 order: 4000

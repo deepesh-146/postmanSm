@@ -7,6 +7,5 @@ body:
   content:
     - type: file
       key: file
-      src:
-        - /C:/Users/HP/Downloads/uploadSample payroll.xlsx
+      src: /C:/Users/HP/Downloads/uploadSample payroll.xlsx
 order: 16000

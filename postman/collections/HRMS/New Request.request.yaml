@@ -6,5 +6,5 @@ body:
   content:
     - type: file
       key: file
-      src: []
-order: 60000
+      src: ""
+order: 57000

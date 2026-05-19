@@ -10,7 +10,7 @@ queryParams:
   - key: includeZeroBalances
     value: "false"
   - key: search
-    value: ""
+    value: null
     disabled: true
 body:
   type: text

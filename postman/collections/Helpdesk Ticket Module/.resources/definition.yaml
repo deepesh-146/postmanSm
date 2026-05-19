@@ -6,7 +6,7 @@ variables:
   ticketId: TICKET_UUID_HERE
   categoryId: CATEGORY_UUID_HERE
 auth:
-  - id: 838cc7cb-3c49-4009-8566-cc20e5fdd603
+  - id: dc8e4aa6-0ee8-4168-98b5-166bc2bb738e
     type: bearer
     name: bearer auth
     credentials:

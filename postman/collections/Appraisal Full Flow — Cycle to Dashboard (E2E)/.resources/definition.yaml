@@ -23,7 +23,7 @@ variables:
   recommendationId: ""
   ackId: ""
 auth:
-  - id: ec0bf7e0-7719-4178-80e9-b36289911210
+  - id: a5b4d7b1-fc35-4818-834e-a1ec6e71f78d
     type: bearer
     name: bearer auth
     credentials:

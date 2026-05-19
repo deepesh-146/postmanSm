@@ -11,7 +11,7 @@ variables:
   promotion_id: ""
   employee_id: ""
 auth:
-  - id: 7fec5629-2ece-422e-bfcf-bddafcfe57c9
+  - id: b5cbbfd0-96f8-4fe3-8dd2-a0194090115c
     type: bearer
     name: bearer auth
     credentials:

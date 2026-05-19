@@ -19,4 +19,4 @@ body:
     \    \"isTenantApproved\": false\r
 
     }"
-order: 12000
+order: 10000

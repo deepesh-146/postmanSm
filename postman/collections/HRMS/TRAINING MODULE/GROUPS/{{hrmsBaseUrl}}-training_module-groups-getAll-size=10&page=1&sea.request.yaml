@@ -5,5 +5,5 @@ method: GET
 queryParams:
   size: "10"
   page: "1"
-  search: ""
+  search: null
 order: 2000

@@ -4,7 +4,7 @@ url: "{{hrmsBaseUrl}}/assets/updateAsset/83e45692-c76b-4e35-b164-abfe4b179d3e"
 method: PUT
 queryParams:
   - key: search
-    value: ""
+    value: null
     disabled: true
 body:
   type: json

@@ -12,7 +12,7 @@ body:
   type: text
   content: |-
     {
-      "organizationId": "{{organizationId}}"
+      "organizationId": "509f3c7d-5fcb-4898-9f51-b5aea097b32e"
     }
 auth:
   type: bearer
@@ -30,4 +30,4 @@ scripts:
           }
       }
     language: text/javascript
-order: 5000
+order: 3000

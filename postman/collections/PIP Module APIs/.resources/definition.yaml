@@ -8,7 +8,7 @@ variables:
   userId: ""
   approverId: ""
 auth:
-  - id: e642770e-aa25-401c-9799-01bf9600e2c2
+  - id: 6f9264b1-4fb7-47e9-85b1-f8bea541eab9
     type: bearer
     name: bearer auth
     credentials:

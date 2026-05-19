@@ -14,7 +14,7 @@ queryParams:
     value: Asset
     description: '"Asset","Liability","Equity","Expense",'
   - key: includeZeroBalances
-    value: ""
+    value: null
 body:
   type: text
   content: "{\r

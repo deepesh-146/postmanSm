@@ -4,6 +4,6 @@ url: "{{hrmsBaseUrl}}/assets/deleteAsset/b5a97bdf-528d-4751-a0bf-78d5c748f468/{{
 method: DELETE
 queryParams:
   - key: search
-    value: ""
+    value: null
     disabled: true
 order: 7000

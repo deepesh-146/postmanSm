@@ -3,4 +3,4 @@ name: "{{hrmsBaseUrl}}/dashboard/financedashboard/statutoryDeductions/{{userId}}
 url: "{{hrmsBaseUrl}}/dashboard/financedashboard/statutoryDeductions/{{userId}}"
 method: GET
 examples: ./.resources/{{hrmsBaseUrl}}-dashboard-financedashboard-statutoryDeductions-{.resources/examples
-order: 22000
+order: 21000

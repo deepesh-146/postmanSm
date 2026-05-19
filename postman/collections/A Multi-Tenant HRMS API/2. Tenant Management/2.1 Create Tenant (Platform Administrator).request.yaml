@@ -6,59 +6,11 @@ headers:
   Content-Type: application/json
 body:
   type: text
-  content: |
-    // {
-    //   "clientId": "falcon",
-    //   "name": "Falcon Group",
-    //   "email": "admin@falcon.com",
-    //   "password": "5684"
-    // }
-
-
-    // {
-    //   "clientId": "lyfehotels.com",
-    //   "name": "Lyfe Hotels",
-    //   "email": "admin@lyfehotels.com",
-    //   "password": "5684"
-    // }
-
-    //  {
-    //     "clientId": "foldhealth.com",
-    //     "name": "Fold Health",
-    //     "email": "admin@foldhealth.com",
-    //     "password": "5684"
-    //   }
-    //   {
-    //     "clientId": "grm.com",
-    //     "name": "GRM",
-    //     "email": "admin@grm.com",
-    //     "password": "5684"
-    //   },
-
-    //   {
-    //     "clientId": "globex.com",
-    //     "name": "Globex",
-    //     "email": "admin@globex.com",
-    //     "password": "5684"
-    //   }
-
-
-    //   {
-    //     "clientId": "falconrealstate.com",
-    //     "name": "Falcon Realstate",
-    //     "email": "admin@falconrealstate.com",
-    //     "password": "5684"
-    //   }
-    //   {
-    //     "clientId": "littleaimaster.com",
-    //     "name": "Little AI Master",
-    //     "email": "admin@littleaimaster.com",
-    //     "password": "5684"
-    //   }
-    //   {
-    //     "clientId": "localaimaster.com",
-    //     "name": "Local AI Master",
-    //     "email": "admin@localaimaster.com",
-    //     "password": "5684"
-    //   }
+  content: |-
+    {
+      "clientId": "falcon",
+      "name": "Falcon Group",
+      "email": "admin@falcon.com",
+      "password": "5684"
+    }
 order: 1000

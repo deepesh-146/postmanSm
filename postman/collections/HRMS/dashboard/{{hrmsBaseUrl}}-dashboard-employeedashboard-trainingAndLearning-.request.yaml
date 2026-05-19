@@ -12,4 +12,4 @@ body:
 
     }"
 examples: ./.resources/{{hrmsBaseUrl}}-dashboard-employeedashboard-trainingAndLearning-.resources/examples
-order: 28000
+order: 27000

@@ -7,18 +7,14 @@ body:
   content:
     - type: file
       key: upload
-      src:
-        - /C:/Users/mehta/Downloads/49a0ab01-22ed-46cb-aaea-07a87adcbdb7.jpg
+      src: /C:/Users/mehta/Downloads/49a0ab01-22ed-46cb-aaea-07a87adcbdb7.jpg
     - type: file
       key: upload
-      src:
-        - /C:/Users/mehta/Downloads/49a0ab01-22ed-46cb-aaea-07a87adcbdb7.jpg
+      src: /C:/Users/mehta/Downloads/49a0ab01-22ed-46cb-aaea-07a87adcbdb7.jpg
     - type: file
       key: upload
-      src:
-        - /C:/Users/mehta/Downloads/05734c98-2f92-4b6a-8430-1a73168f5eb9.jpg
+      src: /C:/Users/mehta/Downloads/05734c98-2f92-4b6a-8430-1a73168f5eb9.jpg
     - type: file
       key: upload
-      src:
-        - /C:/Users/mehta/Downloads/b66c7f0a-5ce2-44e2-8e76-8809a4ec307a.jpg
+      src: /C:/Users/mehta/Downloads/b66c7f0a-5ce2-44e2-8e76-8809a4ec307a.jpg
 order: 36000

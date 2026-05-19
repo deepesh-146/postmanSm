@@ -6,19 +6,15 @@ body:
   type: json
   content: "{\r
 
-    \    \"employeeIds\": [\r
+    \  \"employeeIds\": [\"9a6b2d0c-57b7-4da2-9025-b64b6e2f4323\"], // or [\"ALL\"] for all employees\r
 
-    \        \"{{userId}}\"\r
+    \  \"month\": 11,        // Optional if startDate/endDate provided\r
 
-    \    ], // or [\"ALL\"] for all employees\r
+    \  \"year\": 2025,      // Optional if startDate/endDate provided\r
 
-    \    //   \"month\": \"03\",        // Optional if startDate/endDate provided\r
+    \  \"startDate\": \"2025-10-24\",  // Optional if month/year provided\r
 
-    \    //   \"year\": \"2025,      // Optional if startDate/endDate provided\r
-
-    \    \"startDate\": \"2025-02-26\", // Optional if month/year provided\r
-
-    \    \"endDate\": \"2025-03-25\" // Optional if month/year provided\r
+    \  \"endDate\": \"2025-11-23\"     // Optional if month/year provided\r
 
     }"
 auth:

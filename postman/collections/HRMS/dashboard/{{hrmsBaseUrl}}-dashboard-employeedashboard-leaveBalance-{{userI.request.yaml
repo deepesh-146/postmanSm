@@ -3,4 +3,4 @@ name: "{{hrmsBaseUrl}}/dashboard/employeedashboard/leaveBalance/{{userId}}"
 url: "{{hrmsBaseUrl}}/dashboard/employeedashboard/leaveBalance/41a3c5bb-617e-4e40-938e-588e06c79c37"
 method: GET
 examples: ./.resources/{{hrmsBaseUrl}}-dashboard-employeedashboard-leaveBalance-{{userI.resources/examples
-order: 25000
+order: 24000

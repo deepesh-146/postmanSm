@@ -13,81 +13,11 @@ body:
   type: text
   content: |-
     // FALCON
-    // {
-    //   "email": "admin@lyfehotels.com",
-    //   "password": "5684",
-    //     "clientId": "lyfehotels.com"
-    //     // "password": "12345678"
-    // }
-    // {
-    //   "clientId": "saturn",
-    // "email": "admin@saturn.com",
-    // "password": "5684",
-    // }
-    // {
-    //     "email": "admin@odiware.com",
-    //     "password": "5684",
-    //     "clientId": "odiware"
-    // }
-    // // FALCON
-    // {
-    //   "email": "admin@codetotest.com",
-    //   "password": "5684",
-    //     "clientId": "codetotest"
-    //     // "password": "12345678"
-    // }
-    // [
-    //   {
-    //     "email": "admin@freight.com",
-    //     "password": "5684",
-    //     "clientId": "freight"
-    //   },
-    //   {
-    //     "email": "admin@falconrealstate.com",
-    //     "password": "5684",
-    //     "clientId": "falconrealstate.com"
-    //   }
-    //   {
-    //     "email": "admin@littleaimaster.com",
-    //     "password": "5684",
-    //     "clientId": "littleaimaster.com"
-    //   }
-    //   {
-    //     "email": "admin@localaimaster.com",
-    //     "password": "5684",
-    //     "clientId": "localaimaster.com"
-    //   }
-    //   {
-    //     "email": "admin@codetotest.com",
-    //     "password": "5684",
-    //     "clientId": "codetotest"
-    //   },
-    //   {
-    //     "email": "admin@lyfehotels.com",
-    //     "password": "5684",
-    //     "clientId": "lyfehotels.com"
-    //   }
-    //   {
-    //     "email": "admin@foldhealth.com",
-    //     "password": "5684",
-    //     "clientId": "foldhealth.com"
-    //   }
-    //   {
-    //     "email": "admin@grm.com",
-    //     "password": "5684",
-    //     "clientId": "grm.com"
-    //   }
-    //   {
-    //     "email": "admin@globx.com",
-    //     "password": "5684",
-    //     "clientId": "globx.com"
-    //   }
-      {
-        "email": "admin@falcon.com",
-        "password": "12345678",
-        "clientId": "falcon"
-      }
-    // ]
+    {
+        "email" : "admin@falcon.com",
+        "clientId": "falcon",
+        "password": "5684"
+    }
 scripts:
   - type: afterResponse
     code: |-
@@ -104,4 +34,4 @@ scripts:
           }
       }
     language: text/javascript
-order: 4000
+order: 2000

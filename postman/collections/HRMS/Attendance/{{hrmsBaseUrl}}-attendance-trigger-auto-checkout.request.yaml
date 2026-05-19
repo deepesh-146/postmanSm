@@ -2,4 +2,4 @@ $kind: http-request
 name: "{{hrmsBaseUrl}}/attendance/trigger-auto-checkout"
 url: "{{hrmsBaseUrl}}/attendance/trigger-auto-checkout"
 method: POST
-order: 29000
+order: 28000

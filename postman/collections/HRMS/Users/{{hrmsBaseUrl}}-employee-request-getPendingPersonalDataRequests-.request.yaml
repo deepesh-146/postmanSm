@@ -8,6 +8,6 @@ queryParams:
   - key: page
     value: "1"
   - key: search
-    value: ""
+    value: null
     disabled: true
 order: 42000

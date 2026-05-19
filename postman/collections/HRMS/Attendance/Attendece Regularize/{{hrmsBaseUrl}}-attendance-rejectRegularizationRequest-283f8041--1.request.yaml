@@ -4,7 +4,7 @@ url: "{{hrmsBaseUrl}}/attendance/rejectRegularizationRequest/283f8041-5a15-4c75-
 method: PUT
 queryParams:
   - key: search
-    value: ""
+    value: null
     disabled: true
 body:
   type: json

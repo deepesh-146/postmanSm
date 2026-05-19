@@ -20,7 +20,7 @@ variables:
   tallyPort: "9000"
   tallyCompanyName: My Company
 auth:
-  - id: 5062565c-3f1e-478b-a7cc-c321f2153fe9
+  - id: c3858299-0fbe-4c81-b4b3-1b72950cafd7
     type: bearer
     name: bearer auth
     credentials:

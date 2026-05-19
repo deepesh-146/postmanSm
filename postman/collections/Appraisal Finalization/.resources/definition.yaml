@@ -10,7 +10,7 @@ variables:
   recommendationId: RECOMMENDATION_UUID_HERE
   ackId: ACKNOWLEDGEMENT_UUID_HERE
 auth:
-  - id: 2c39a94a-ec97-4dfa-bd08-c7f31e28b33b
+  - id: 01da55ba-4106-499b-a119-94fc30657d83
     type: bearer
     name: bearer auth
     credentials:

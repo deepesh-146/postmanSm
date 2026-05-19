@@ -10,7 +10,7 @@ body:
       value: 550e8400-e29b-41d4-a716-446655440003
     - type: file
       key: file
-      src: []
+      src: ""
       description: |-
         employee_code,paid_amount,status,reason_code,paid_date
         E001,5000.00,PAID,,2024-08-31

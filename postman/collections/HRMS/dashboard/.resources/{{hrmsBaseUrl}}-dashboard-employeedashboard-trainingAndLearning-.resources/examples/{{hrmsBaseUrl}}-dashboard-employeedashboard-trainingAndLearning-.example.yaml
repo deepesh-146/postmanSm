@@ -3,15 +3,6 @@ name: "{{hrmsBaseUrl}}/dashboard/employeedashboard/trainingAndLearning/{{userId}
 request:
   url: "{{hrmsBaseUrl}}/dashboard/employeedashboard/trainingAndLearning/{{userId}}"
   method: GET
-  body:
-    type: json
-    content: "{\r
-
-      \    \"month\": \"2\",\r
-
-      \    \"year\": \"2025\"\r
-
-      }"
 response:
   statusCode: 200
   statusText: OK

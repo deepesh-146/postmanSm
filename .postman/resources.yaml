@@ -1,9 +1,44 @@
-# Use this workspace to collaborate
 workspace:
-  id: 53843744-4200-416c-8ce8-3d1aa0155e5a
-
-# All resources in the `postman/` folder are automatically registered in Local View.
-# Point to additional files outside the `postman/` folder to register them individually. Example:
-#localResources:
-#  collections:
-#    - ../tests/E2E Test Collection/
+  id: 77329ba8-8c90-4179-bcad-23b08713a70a
+localResources:
+  collections:
+    - ../postman/collections/HRMS Resignation API Collection
+    - ../postman/collections/UAE Family Records API
+    - ../postman/collections/AI-REPO_AGENT
+    - ../postman/collections/Appraisal Finalization
+    - ../postman/collections/Loan Policy APIs
+    - ../postman/collections/Grievance & Complaint Module
+    - ../postman/collections/Payslip Customization API
+    - ../postman/collections/HRMS
+    - ../postman/collections/ERP Integration - GL Code & Tally
+    - ../postman/collections/Approval Groups APIs
+    - ../postman/collections/Promotion Management Module
+    - ../postman/collections/Helpdesk Ticket Module
+    - ../postman/collections/Bonus-Incentive Payment System
+    - ../postman/collections/Appraisal Full Flow — Cycle to Dashboard (E2E)
+    - ../postman/collections/PIP Module APIs
+    - ../postman/collections/A Multi-Tenant HRMS API
+    - ../postman/collections/HRMS REPORTS
+    - ../postman/collections/Rotational Shift API Collection
+    - ../postman/collections/India Payroll Compliance API
+cloudResources:
+  collections:
+    ../postman/collections/HRMS Resignation API Collection: 54983612-01934ff0-dfbf-4a44-9732-ebe795b2008d
+    ../postman/collections/UAE Family Records API: 54983612-13b12c69-0108-428a-854a-0b09e9501c01
+    ../postman/collections/AI-REPO_AGENT: 54983612-23e506bf-7e5b-4be6-a6b8-52e968fdbce4
+    ../postman/collections/Appraisal Finalization: 54983612-3132d60b-3b85-4568-bbf6-27e827af4fe5
+    ../postman/collections/Loan Policy APIs: 54983612-3fd02d9b-9cad-4205-8d5d-ed6807c9b42d
+    ../postman/collections/Grievance & Complaint Module: 54983612-56d67253-202a-4a9d-997e-e34f9273b5cf
+    ../postman/collections/Payslip Customization API: 54983612-63c35749-3f47-464c-a8c3-470e061cc8f4
+    ../postman/collections/HRMS: 54983612-7045b169-0f10-402c-86ac-1d6b50a01151
+    ../postman/collections/ERP Integration - GL Code & Tally: 54983612-79b73d43-7200-44eb-8274-122c8e1ee5c0
+    ../postman/collections/Approval Groups APIs: 54983612-895e7101-239f-40ee-bfcf-459e88146f3d
+    ../postman/collections/Promotion Management Module: 54983612-a46ad09c-c6fe-44c3-a05a-e6115dce4d44
+    ../postman/collections/Helpdesk Ticket Module: 54983612-aa933077-88ee-495f-9b9f-0938560435a2
+    ../postman/collections/Bonus-Incentive Payment System: 54983612-b76e8ba4-26ec-401f-8f31-a28f3485efe3
+    ../postman/collections/Appraisal Full Flow — Cycle to Dashboard (E2E): 54983612-bfca3b15-4eae-477d-a94e-f0c1d484e158
+    ../postman/collections/PIP Module APIs: 54983612-c1a5a21c-527b-444a-93b4-eb4b010766a5
+    ../postman/collections/A Multi-Tenant HRMS API: 54983612-e61998ef-ceae-4ab5-a829-6973a3483ac2
+    ../postman/collections/HRMS REPORTS: 54983612-f460dcfb-b8b5-442d-8e80-b5ec3196abca
+    ../postman/collections/Rotational Shift API Collection: 54983612-fd02d825-b9d8-4adb-8839-6e78ea72694d
+    ../postman/collections/India Payroll Compliance API: 54983612-fd43f0e1-ff17-4710-ac04-9c818ca3dec5

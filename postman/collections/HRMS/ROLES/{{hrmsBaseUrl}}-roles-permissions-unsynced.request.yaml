@@ -1,9 +1,0 @@
-$kind: http-request
-name: "{{hrmsBaseUrl}}/roles/permissions/unsynced"
-url: "{{hrmsBaseUrl}}/roles/permissions/unsynced"
-method: GET
-queryParams:
-  - key: navigationBarData
-    value: "true"
-    disabled: true
-order: 9000

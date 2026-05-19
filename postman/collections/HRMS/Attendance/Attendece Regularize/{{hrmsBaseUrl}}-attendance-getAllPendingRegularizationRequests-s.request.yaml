@@ -6,7 +6,7 @@ queryParams:
   - key: status
     value: PENDING
   - key: search
-    value: ""
+    value: null
     disabled: true
 body:
   type: json

@@ -7,7 +7,6 @@ body:
   content:
     - type: file
       key: file
-      src:
-        - /C:/Users/mehta/Downloads/Sample Benefits.csv
+      src: /C:/Users/mehta/Downloads/Sample Benefits.csv
 examples: ./.resources/{{hrmsBaseUrl}}-employee_benefit-benefitsBulkUpload.resources/examples
 order: 7000

@@ -6,4 +6,4 @@ auth:
   type: bearer
   credentials:
     token: "{{platformAdmin}}"
-order: 6000
+order: 4000

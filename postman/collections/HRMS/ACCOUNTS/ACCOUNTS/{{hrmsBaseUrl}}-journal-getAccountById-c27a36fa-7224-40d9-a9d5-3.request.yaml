@@ -4,7 +4,7 @@ url: "{{hrmsBaseUrl}}/journal/getAccountById/c27a36fa-7224-40d9-a9d5-3885307b2fc
 method: GET
 queryParams:
   - key: search
-    value: ""
+    value: null
     disabled: true
 body:
   type: json

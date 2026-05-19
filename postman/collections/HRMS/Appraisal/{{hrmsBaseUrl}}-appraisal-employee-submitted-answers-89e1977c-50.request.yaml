@@ -5,5 +5,5 @@ method: GET
 headers:
   Content-Type: application/json
 queryParams:
-  questionType: ""
+  questionType: null
 order: 12000

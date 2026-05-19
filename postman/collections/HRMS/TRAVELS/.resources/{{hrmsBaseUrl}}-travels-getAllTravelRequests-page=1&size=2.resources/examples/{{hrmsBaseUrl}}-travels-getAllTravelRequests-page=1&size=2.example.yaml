@@ -24,27 +24,6 @@ request:
     - key: toDate
       value: 2025-05-19
       disabled: true
-  body:
-    type: json
-    content: "{\r
-
-      \  \"travelPurpose\": \"Client meeting and site inspection\",\r
-
-      \  \"destination\": \"Mumbai\",\r
-
-      \  \"fromDate\": \"2025-05-20\",\r
-
-      \  \"toDate\": \"2025-05-23\",\r
-
-      \  \"modeOfTravel\": \"Flight\",\r
-
-      \  \"estimatedCost\": 18000,\r
-
-      \  \"advanceRequired\": true,\r
-
-      \  \"description\": \"Visit client office and assess project site condition\"\r
-
-      }\r\n"
 response:
   statusCode: 200
   statusText: OK

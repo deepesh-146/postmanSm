@@ -3,6 +3,6 @@ url: "{{hrmsBaseUrl}}/appraisal/questions/all"
 method: GET
 queryParams:
   - key: cycleId
-    value: ""
+    value: null
     disabled: true
 order: 10000

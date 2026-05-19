@@ -4,7 +4,7 @@ url: "{{hrmsBaseUrl}}/announcements/policy-circular/getAllPolicyCirculars?size=1
 method: GET
 queryParams:
   - key: search
-    value: ""
+    value: null
     disabled: true
   - key: size
     value: "10"

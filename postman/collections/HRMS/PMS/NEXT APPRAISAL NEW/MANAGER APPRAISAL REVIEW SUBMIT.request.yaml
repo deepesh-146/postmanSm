@@ -3,7 +3,7 @@ url: "{{hrmsBaseUrl}}/appraisal/cycle/:cycleId/employee/:employeeId/bulk-manager
 method: POST
 queryParams:
   - key: cycleId
-    value: ""
+    value: null
     disabled: true
 pathVariables:
   cycleId: 15ff9f35-c849-44d4-a421-80e8cf049977

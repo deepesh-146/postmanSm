@@ -1,7 +1,0 @@
-$kind: http-request
-name: /leave/carry-forward/status/:employeeId
-url: "{{hrmsBaseUrl}}/leave/carry-forward/status/:employeeId\t"
-method: GET
-pathVariables:
-  "employeeId\t": "{{attEMPID}}}"
-order: 5000

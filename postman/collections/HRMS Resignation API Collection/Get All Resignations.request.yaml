@@ -7,37 +7,9 @@ queryParams:
   - key: status
     value: ADMIN_CLEARANCE
     disabled: true
-    $type: |-
-      {
-        "type": "object",
-        "properties": {
-          "value": {
-            "type": "string",
-            "minLength": 0,
-            "maxLength": 0
-          }
-        },
-        "required": [
-          "value"
-        ]
-      }
   - key: resignationClearance_type
     value: IT
     disabled: true
-    $type: |-
-      {
-        "type": "object",
-        "properties": {
-          "value": {
-            "type": "string",
-            "minLength": 0,
-            "maxLength": 0
-          }
-        },
-        "required": [
-          "value"
-        ]
-      }
   - key: resignationStatus
     value: APPROVED
     description: APPROVED, REJECTED and PENDING

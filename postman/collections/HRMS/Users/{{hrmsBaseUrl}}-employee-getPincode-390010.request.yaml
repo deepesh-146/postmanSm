@@ -7,7 +7,6 @@ body:
   content:
     - type: file
       key: file
-      src:
-        - /C:/Users/mehta/Desktop/cimpl/DOCS/iceiptPincode1.xlsx
+      src: /C:/Users/mehta/Desktop/cimpl/DOCS/iceiptPincode1.xlsx
 examples: ./.resources/{{hrmsBaseUrl}}-employee-getPincode-390010.resources/examples
 order: 6000

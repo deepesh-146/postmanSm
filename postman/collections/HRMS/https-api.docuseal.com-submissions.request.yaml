@@ -59,4 +59,4 @@ body:
     }"
 auth:
   type: noauth
-order: 64000
+order: 61000

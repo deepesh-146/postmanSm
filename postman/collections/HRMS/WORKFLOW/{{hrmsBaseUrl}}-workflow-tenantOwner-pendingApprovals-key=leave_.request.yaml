@@ -10,4 +10,4 @@ queryParams:
     value: "10"
   - key: page
     value: "1"
-order: 10000
+order: 8000

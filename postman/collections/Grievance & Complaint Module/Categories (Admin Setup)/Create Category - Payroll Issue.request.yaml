@@ -19,8 +19,4 @@ body:
         "defaultPriority": "HIGH",
         "slaDays": 5
     }
-auth:
-  type: bearer
-  credentials:
-    token: "{{orgToken}}"
 order: 1000

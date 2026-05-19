@@ -10,4 +10,4 @@ auth:
   type: bearer
   credentials:
     token: "{{orgToken}}"
-order: 9000
+order: 7000

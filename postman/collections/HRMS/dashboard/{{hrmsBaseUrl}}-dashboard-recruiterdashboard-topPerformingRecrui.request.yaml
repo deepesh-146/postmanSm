@@ -3,4 +3,4 @@ name: "{{hrmsBaseUrl}}/dashboard/recruiterdashboard/topPerformingRecruiters/{{us
 url: "{{hrmsBaseUrl}}/dashboard/recruiterdashboard/topPerformingRecruiters/{{userId}}"
 method: GET
 examples: ./.resources/{{hrmsBaseUrl}}-dashboard-recruiterdashboard-topPerformingRecrui.resources/examples
-order: 24000
+order: 23000

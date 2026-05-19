@@ -19,7 +19,7 @@ scripts:
       console.log('Response time: ' + pm.response.responseTime + 'ms');
     language: text/javascript
 auth:
-  - id: 3c943705-23e7-4a56-a8a2-899677e30021
+  - id: 7ecec577-a798-4fa5-9c1f-568c68e325ff
     type: bearer
     name: bearer auth
     credentials:

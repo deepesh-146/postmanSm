@@ -5,6 +5,6 @@ method: GET
 queryParams:
   userId: "{{userId}}"
   category: ""
-  label: ""
-  isRead: ""
+  label: null
+  isRead: null
 order: 4000

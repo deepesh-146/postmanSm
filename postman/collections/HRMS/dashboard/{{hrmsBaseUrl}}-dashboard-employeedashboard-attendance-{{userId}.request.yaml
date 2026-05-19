@@ -12,4 +12,4 @@ body:
 
     }"
 examples: ./.resources/{{hrmsBaseUrl}}-dashboard-employeedashboard-attendance-{{userId}.resources/examples
-order: 26000
+order: 25000

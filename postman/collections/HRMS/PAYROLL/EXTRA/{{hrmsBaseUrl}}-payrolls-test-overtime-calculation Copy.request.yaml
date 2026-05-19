@@ -14,7 +14,7 @@ queryParams:
     value: "9"
     disabled: true
   - key: officeId
-    value: ""
+    value: null
     disabled: true
   - key: departmentId
     value: 883142dd-f9cb-4f9e-adc1-691c25c616b2

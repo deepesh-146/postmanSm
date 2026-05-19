@@ -2,19 +2,6 @@ $kind: http-example
 request:
   url: "{{hrmsBaseUrl}}/employee/exportEmployee/export/{{userId}}"
   method: GET
-  body:
-    type: json
-    content: "{\r
-
-      \    \"emailId\": \"deepesh72@gmail.com\",\r
-
-      \    \"password\": \"SSSD\",\r
-
-      \    \"ipAddress\": \"127.0.0.1\",\r
-
-      \    \"flag\": true\r
-
-      }"
 response:
   statusCode: 200
   statusText: OK

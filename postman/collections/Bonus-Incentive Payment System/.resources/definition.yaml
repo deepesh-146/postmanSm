@@ -10,7 +10,7 @@ variables:
   bonus_type_id: ""
   approval_id: ""
 auth:
-  - id: c421dc6d-d7c8-4060-86bd-816bf7241eb2
+  - id: 45b9759f-64d2-44dc-bf0f-c0088896df18
     type: bearer
     name: bearer auth
     credentials:

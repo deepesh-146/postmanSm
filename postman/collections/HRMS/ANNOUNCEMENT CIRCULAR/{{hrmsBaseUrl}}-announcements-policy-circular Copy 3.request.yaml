@@ -4,7 +4,7 @@ url: "{{hrmsBaseUrl}}/announcements/policy-circular/updatePolicyCircularById/:id
 method: PUT
 queryParams:
   - key: search
-    value: ""
+    value: null
     disabled: true
 pathVariables:
   id: fc8c5164-e527-47b0-bd0f-863bd6817d54

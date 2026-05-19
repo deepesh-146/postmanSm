@@ -7,7 +7,7 @@ queryParams:
     value: "3"
     disabled: true
   - key: status
-    value: ""
+    value: null
     disabled: true
 examples: ./.resources/{{hrmsBaseUrl}}-timesheet-getAllTimesheet-{{userId}}.resources/examples
 order: 2000

@@ -7,7 +7,7 @@ queryParams:
     value: 6a49864a-e1fb-43fc-a96e-df7e51ea2501
     disabled: true
   - key: jobId
-    value: ""
+    value: null
     disabled: true
   - key: page
     value: "1"

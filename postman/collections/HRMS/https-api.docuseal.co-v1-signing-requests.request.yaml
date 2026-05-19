@@ -37,4 +37,4 @@ body:
     },"
 auth:
   type: noauth
-order: 62000
+order: 59000

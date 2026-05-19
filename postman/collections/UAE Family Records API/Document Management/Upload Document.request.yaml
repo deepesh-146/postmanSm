@@ -6,8 +6,7 @@ body:
   content:
     - type: file
       key: document
-      src:
-        - ""
+      src: ""
     - type: text
       key: familyMemberId
       value: "1"

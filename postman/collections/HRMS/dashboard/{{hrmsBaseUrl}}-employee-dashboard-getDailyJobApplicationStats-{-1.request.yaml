@@ -1,6 +1,6 @@
 $kind: http-request
 name: "{{hrmsBaseUrl}}/employee/dashboard/getDailyJobApplicationStats/{{userId}}?startDate=2025-02-01&endDate=2025-02-08 Copy"
-url: "{{hrmsBaseUrl}}/employee//updateProfile/0039c548-0e6f-400c-9aba-2c6c0526b137"
+url: "{{hrmsBaseUrl}}/employee//updateProfile/90ee0d89-4960-45c2-86d6-628b56b3b7c5"
 method: PUT
 queryParams:
   - key: year
@@ -10,193 +10,91 @@ body:
   type: json
   content: "{\r
 
-    \    \"employee\": {\r
+    \    \"basicDetails\": {\r
 
-    \        \"fName\": \"Test a\",\r
+    \        \"fName\": \"Neha \",\r
 
-    \        \"middleName\": \"p\",\r
+    \        \"mName\": null,\r
 
-    \        \"lName\": \"joi 010125\",\r
+    \        \"lName\": \"Pathak\",\r
 
-    \        \"officialEmail\": \"testa@yopmail.com\",\r
+    \        \"officialEmail\": \"Pathak@gmail.com\",\r
 
-    \        \"mobile\": \"7238467235\",\r
+    \        \"officalMobile\": \"7874477777\",\r
 
-    \        \"officalMobile\": \"7238467235\",\r
+    \        \"gender\": \"Female\",\r
 
-    \        \"gender\": \"male\",\r
+    \        \"dateOfBirth\": \"01-Feb-2025\",\r
 
-    \        \"dateOfBirth\": \"2000-01-01T00:00:00.000Z\",\r
+    \        \"joiningDate\": \"01-Mar-2025\",\r
 
-    \        \"noticePeriodDay\": 2,\r
-
-    \        \"probationPeriod\": 1,\r
-
-    \        \"marital\": \"single\",\r
-
-    \        \"religion\": \"SAMPLE\",\r
+    \        \"marital\": \"Unmarried\",\r
 
     \        \"nationality\": \"Indian\",\r
 
-    \        \"domicile\": \"SAMPLE\",\r
-
     \        \"disability\": false,\r
 
-    \        \"disabilityDetail\": \"\",\r
+    \        \"disabilityDetail\": \"NA\",\r
 
     \        \"passport\": false,\r
 
-    \        \"passportNo\": \"872364872364\",\r
+    \        \"passportNo\": null,\r
 
-    \        \"passportExpiryDate\": \"2027-01-01T00:00:00.000Z\",\r
+    \        \"passportExpiryDate\": null,\r
 
-    \        \"passportIssuedDate\": \"2023-01-01T00:00:00.000Z\",\r
+    \        \"passportIssuedDate\": null,\r
 
-    \        \"joiningDate\": \"2025-01-01T00:00:00.000Z\",\r
+    \        \"departmentId\": \"81e998ef-9384-46d8-a7ec-4516970d3b8f\",\r
 
-    \        \"hrId\": \"2ae13cab-ec38-498b-801d-707973e2ff31\",\r
+    \        \"hrId\": \"cd3997bc-a189-4040-bd13-3024814c7cc3\",\r
 
-    \        \"jobUnitId\": \"afa51b10-5c15-48b7-aed9-4d17e4021743\",\r
-
-    \        \"shiftId\": \"4e9c05b3-8eee-41b9-be3d-dd9dadc479a3\",\r
-
-    \        \"managerId\": \"e97c8808-954c-48dd-be79-38efc5358f05\",\r
-
-    \        \"departmentId\": \"7545e606-12ff-4e96-be46-2cb64103a284\",\r
-
-    \        \"gradeId\": \"c8c00d42-7617-41b7-9309-780d23885abf\",\r
-
-    \        \"officeId\": \"183d5b3f-bb98-4a7c-9b8f-a34117049c2e\",\r
-
-    \        \"jobId\": \"679e0f73-32cd-4ef7-9fdd-30eab9a1f0b3\",\r
-
-    \        \"countryId\": 1,\r
-
-    \        \"probationEndDate\": \"2025-02-01\",\r
-
-    \        \"salutation\": \"Ms\",\r
-
-    \        \"accountActive\": true,\r
-
-    \        \"isMobileAppAttendanceEnabled\": true,\r
-
-    \        \"employmentType\": \"Full-time\",\r
-
-    \        \"dateOfRetirement\": \"2060-01-31\",\r
-
-    \        \"emergencyContactName\": \"test dm\",\r
-
-    \        \"emergencyPhone\": \"8723623874\",\r
-
-    \        \"relation\": \"father\"\r
+    \        \"managerId\": \"a217eb8b-e1e3-451e-9ab7-623266f8c824\"\r
 
     \    },\r
 
     \    \"personalData\": {\r
 
-    \        \"pAddress\": \"test permtn\",\r
+    \        \"pAddress\": \"C 406 equlife home behind balewadi stadium mahalunge\",\r
 
-    \        \"cAddress\": \"test ciurent\",\r
+    \        \"cAddress\": \"C 406 equlife home behind balewadi stadium mahalunge\",\r
 
-    \        \"pincode\": \"443101\",\r
+    \        \"aadharNum\": \"665577558855\",\r
 
-    \        \"region\": \"MAHARASHTRA\",\r
+    \        \"panNum\": \"NMKLJ8888I\",\r
 
-    \        \"city\": \"Buldhana\",\r
+    \        \"bankAcntNum\": \"3212343221222\",\r
 
-    \        \"aadharNum\": \"723362487786\",\r
+    \        \"bankAcntName\": \"ICICI Bank\",\r
 
-    \        \"panNum\": \"DHEPD8321G\",\r
+    \        \"bankIfsc\": \"ICIC0000421\",\r
 
-    \        \"uan\": \"872364734877\",\r
-
-    \        \"bankAcntNum\": \"327826384626\",\r
-
-    \        \"bankAcntName\": \"icici\",\r
-
-    \        \"bankIfsc\": \"ICIC0003772\",\r
-
-    \        \"bankBranch\": \"Main Branch - ICIC\",\r
-
-    \        \"bankAccountHolderName\": \"Test a joi 010125\",\r
-
-    \        \"familydetails\": [\r
-
-    \            {\r
-
-    \                \"name\": \"fam1\",\r
-
-    \                \"relation\": \"Father\",\r
-
-    \                \"dob\": \"1950-01-01\",\r
-
-    \                \"gender\": \"Male\"\r
-
-    \            }\r
-
-    \        ],\r
-
-    \        \"mohreId\": null,\r
-
-    \        \"emiratesId\": null,\r
-
-    \        \"passportNo\": \"872364872364\",\r
-
-    \        \"passportValidTill\": \"2027-01-01T00:00:00.000Z\",\r
-
-    \        \"passportIssuedOnDate\": \"2023-01-01T00:00:00.000Z\",\r
-
-    \        \"placeOfIssue\": \"pune\",\r
-
-    \        \"employeeExitData\": null,\r
-
-    \        \"pwd_data\": {\r
-
-    \            \"challengeGroup\": \"\",\r
-
-    \            \"typeOfChallenge\": \"\",\r
-
-    \            \"degreeOfChallenge\": \"\",\r
-
-    \            \"creditFactor\": \"\",\r
-
-    \            \"officialAgency\": \"\",\r
-
-    \            \"challengeCertDate\": \"\",\r
-
-    \            \"referenceNumber\": \"\",\r
-
-    \            \"secondOfficialAgency\": \"\",\r
-
-    \            \"secondCertDate\": \"\",\r
-
-    \            \"secondReferenceNumber\": \"\",\r
-
-    \            \"disabilityCertificate\": \"\"\r
-
-    \        }\r
+    \        \"bankBranch\": \"Kalyani\"\r
 
     \    },\r
+
+    \    \"salaryData\": {},\r
+
+    \    \"paymentData\": {},\r
 
     \    \"educationData\": [\r
 
     \        {\r
 
-    \            \"clgName\": \"col\",\r
+    \            \"clgName\": \"d y patil pune\",\r
 
-    \            \"univName\": \"uni\",\r
+    \            \"univName\": \"pune\",\r
 
-    \            \"clgLocation\": \"loc\",\r
+    \            \"clgLocation\": \"pune\",\r
 
-    \            \"specialization\": \"spe\",\r
+    \            \"specialization\": \"mba\",\r
 
-    \            \"degName\": \"deg\",\r
+    \            \"degName\": \"managment\",\r
 
-    \            \"courseName\": \"cou\",\r
+    \            \"courseName\": \"mba\",\r
 
-    \            \"startDate\": \"2020-01-01T00:00:00.000Z\",\r
+    \            \"startDate\": \"01-Feb-2020\",\r
 
-    \            \"endDate\": \"2021-01-01T00:00:00.000Z\",\r
+    \            \"endDate\": \"01-Apr-2022\",\r
 
     \            \"currPursuing\": false\r
 
@@ -208,53 +106,23 @@ body:
 
     \        {\r
 
-    \            \"compName\": \"com\",\r
+    \            \"compName\": \"Iceipts\",\r
 
-    \            \"jobTitle\": \"job\",\r
+    \            \"jobTitle\": null,\r
 
-    \            \"location\": \"loc\",\r
+    \            \"location\": null,\r
 
-    \            \"responsibility\": \"resp\",\r
+    \            \"responsibility\": null,\r
 
-    \            \"startDate\": \"2022-01-01T00:00:00.000Z\",\r
+    \            \"startDate\": null,\r
 
-    \            \"endDate\": \"2023-01-01T00:00:00.000Z\",\r
+    \            \"endDate\": null,\r
 
     \            \"currentCompany\": false\r
 
     \        }\r
 
-    \    ],\r
-
-    \    \"paymentData\": {\r
-
-    \        \"bankName\": \"icici\",\r
-
-    \        \"accNo\": \"327826384626\",\r
-
-    \        \"ifsc\": \"ICIC0003772\",\r
-
-    \        \"branchName\": \"Main Branch - ICIC\",\r
-
-    \        \"bankAccountHolderName\": \"Test a joi 010125\",\r
-
-    \        \"paymentType\": \"UPI\",\r
-
-    \        \"paymentFrequency\": \"MONTHLY\"\r
-
-    \    },\r
-
-    \    \"employeeExitData\": null,\r
-
-    \    \"salaryData\": {\r
-
-    \        \"isSalaryEnabled\": true\r
-
-    \    }\r
+    \    ]\r
 
     }"
-auth:
-  type: bearer
-  credentials:
-    token: "{{clientToken}}"
 order: 8000

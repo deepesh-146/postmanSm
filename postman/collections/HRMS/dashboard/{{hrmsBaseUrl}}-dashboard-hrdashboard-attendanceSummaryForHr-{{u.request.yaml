@@ -3,4 +3,4 @@ name: "{{hrmsBaseUrl}}/dashboard/hrdashboard/attendanceSummaryForHr/{{userId}}"
 url: "{{hrmsBaseUrl}}/dashboard/hrdashboard/attendanceSummaryForHr/{{userId}}"
 method: GET
 examples: ./.resources/{{hrmsBaseUrl}}-dashboard-hrdashboard-attendanceSummaryForHr-{{u.resources/examples
-order: 19000
+order: 18000

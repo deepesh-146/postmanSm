@@ -7,6 +7,5 @@ body:
   content:
     - type: file
       key: upload
-      src:
-        - /C:/Users/Deepesh/Downloads/images.png
+      src: /C:/Users/Deepesh/Downloads/images.png
 order: 31000

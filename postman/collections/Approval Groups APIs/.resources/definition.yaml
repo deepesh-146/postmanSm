@@ -5,7 +5,7 @@ variables:
   authToken: your-auth-token-here
   groupId: ""
 auth:
-  - id: 7cbc2a32-7f19-468f-884b-c7f8fd3cc213
+  - id: 887981c4-5843-4aca-916e-e1cce29508a7
     type: bearer
     name: bearer auth
     credentials:

@@ -1,15 +1,12 @@
 $kind: http-request
 name: "{{hrmsBaseUrl}}/report/payroll/pf-esi-gratuity-report"
-url: "{{hrmsBaseUrl}}/report/payroll/pf-esi-gratuity-report?page=1&size=10&search=QA&month=3&year=2026"
+url: "{{hrmsBaseUrl}}/report/payroll/pf-esi-gratuity-report?page=1&size=10&month=10&year=2025&sortBy=employeeName&sortOrder=ASC"
 method: GET
 queryParams:
   page: "1"
   size: "10"
-  search: QA
-  month: "3"
-  year: "2026"
-auth:
-  type: bearer
-  credentials:
-    token: "{{clientToken}}"
+  month: "10"
+  year: "2025"
+  sortBy: employeeName
+  sortOrder: ASC
 order: 5000

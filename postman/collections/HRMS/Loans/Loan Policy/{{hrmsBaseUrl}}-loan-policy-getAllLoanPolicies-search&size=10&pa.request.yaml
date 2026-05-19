@@ -3,7 +3,7 @@ name: "{{hrmsBaseUrl}}/loan-policy/getAllLoanPolicies?search&size=10&page=1"
 url: "{{hrmsBaseUrl}}/loan-policy/getAllLoanPolicies?search&size=1&page=1"
 method: GET
 queryParams:
-  search: ""
+  search: null
   size: "1"
   page: "1"
 body:

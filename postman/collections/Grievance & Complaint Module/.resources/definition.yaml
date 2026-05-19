@@ -17,7 +17,7 @@ variables:
   categoryId: ""
   employeeId: ""
 auth:
-  - id: 81fcec07-fc85-42bb-bc09-fc63131e33f2
+  - id: d7669dad-5634-439a-9c06-fa55152014aa
     type: bearer
     name: bearer auth
     credentials:
